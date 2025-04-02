@@ -7,5 +7,6 @@ in pkgs.mkShell {
       python-pkgs.beautifulsoup4
     ]))
     pkgs.pandoc
+    pkgs.mdbook
   ];
 }
