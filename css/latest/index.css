@@ -42,6 +42,12 @@ article {
     color: #E9B223;
     font-size: 18px;
 }
+.Press {
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #E9B223;
+    font-size: 18px;
+}
 
 time {
     font-weight: 400;
