@@ -1,0 +1,42 @@
+.logo {
+    max-width: 300px;
+    margin: auto;
+}
+
+h3 {
+    color: #06283C;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+body {
+    background-color: #f0f9ff;
+}
+
+button {
+    padding-inline: 24px;
+    padding-block: 12px;
+    font-weight: 500;
+    color: #EA580C;
+    outline: 2px solid #EA580C;
+    border-radius: 12px;
+    width: fit-content;
+    border: none;
+    background: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: #EA580C;
+    cursor: pointer;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 2em;
+    padding-top: 1em;
+}
