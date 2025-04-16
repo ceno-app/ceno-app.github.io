@@ -1,0 +1,45 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-15 23:57-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.15.1\n"
+"Language: hu\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: _tail.html%2Bfooter.div.div.p:7-9
+msgid ""
+"Ceno Browser is a project by <a href=\"https://equalitie.org\">eQualit.ie</"
+"a> – a not-for-profit Canadian organization. Everyday, eQualitie's solutions "
+"enable freedom of association for millions of people online."
+msgstr ""
+
+#: _tail.html%2Bfooter.div.div.p:8-9
+msgid "Terms of Use and Privacy Policy"
+msgstr ""
+
+#: _tail.html%2Bfooter.div.div.p:9-9
+msgid "© eQualitie 2018-2025"
+msgstr ""
+
+#: _tail.html%2Bfooter.div.div.div.div:13-13
+msgid ""
+"<a href=\"about.html\">About</a> <a href=\"community.html\">Community</a> <a "
+"href=\"faq.html\">FAQs</a> <a href=\"support.html\">Get Support</a> <a "
+"href=\"donate.html\" class=\"link-btn blue-bg\">Donate</a>"
+msgstr ""
+
+#: _tail.html%2Bfooter.div.div.div.div:20-13
+msgid ""
+"<a href=\"casestudies.html\">Case Studies</a> <a href=\"factsheet."
+"html\">Fact Sheet</a> <a href=\"../user-manual/\">User Manual</a> <a "
+"href=\"https://gitlab.com/equalitie/ouinet/blob/main/doc/ouinet-network-"
+"whitepaper.md\">Whitepaper</a> <a href=\"download.html\" class=\"link-btn "
+"orange-bg\">Download</a>"
+msgstr ""

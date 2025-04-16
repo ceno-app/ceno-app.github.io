@@ -1,0 +1,174 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-15 23:57-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.15.1\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: community.html%2Bmain.section.h1:3-9
+msgid "Let's build a better internet together"
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.h2:9-17
+msgid "Become a Bridge"
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.p:10-17
+msgid ""
+"People running Ceno from countries with open access to the internet, or from "
+"parts of the world where access to the internet is reliable, can help those "
+"in heavily restricted networks access the internet by becoming a “Bridge.” "
+"Running a Bridge is a very simple yet powerful action, enabling you to share "
+"internet content with others."
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.p:11-17
+msgid "Learn more about becoming a Bridge."
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.h4:12-17
+msgid "The simple way:"
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.p:13-17
+msgid ""
+"Run Ceno Browser on your Android device, and/or on a spare, always-on device."
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.h4:14-17
+msgid "Run the Ceno Docker Client:"
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.ol.li:16-21
+msgid ""
+"With just one command you can set up a bridge on your computer or VPS: <br /"
+"> <code>sudo docker run --name ceno-client -dv ceno:/var/opt/ouinet --"
+"network host --restart unless-stopped equalitie/ceno-client</code>"
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.ol.li:18-21
+msgid ""
+"Open a portal to the internet: Ensure UPnP is enabled on your router, or set "
+"up port forwarding."
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.ol.li:19-21
+msgid ""
+"To see if it's working, create and open a new Firefox Profile, and set the "
+"proxy to localhost, port 8077."
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.ol.li:20-21
+msgid ""
+"Install the <a href=\"https://gitlab.com/censorship-no/ceno-ext-"
+"settings\">Ceno Web Extension</a> and the provided certificate to test it "
+"out!"
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.h2:30-17
+msgid "Contribute to our code"
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.p:31-17
+msgid ""
+"Ceno is a free and open source tool, one of many developed and maintained by "
+"eQualitie. If you are interested in Ceno's source code please check the "
+"following Git repositories:"
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.ul.li:33-21
+msgid "Ceno for Android"
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.ul.li:34-21
+msgid "Ceno for Desktop"
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.ul.li:35-21
+msgid "Ceno for iOS"
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.ul.li:36-21
+msgid "Ouinet"
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.ul.li:37-21
+msgid "Ceno Docker Client"
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.p:39-17
+msgid ""
+"You may also be interested in the (no longer maintained) <a href=\"https://"
+"gitlab.com/censorship-no/ceno-archives\">previous incarnation of Ceno</a>, "
+"built on the Freenet anonymous file sharing and content publishing network."
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.h2:46-17
+msgid "Share your feedback"
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.p:47-17
+msgid ""
+"Ceno relies on user feedback to understand the needs of our users, to "
+"suggest improvements, and to identify new features. Sharing your story also "
+"helps spread the word about Ceno, which grows the network. With your "
+"consent, we may also highlight your story on our website!"
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.ul.li:49-21
+msgid "Write a review on the Play Store"
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.ul.li:50-21
+msgid "Get in touch with the team: support [at] censorship [dot] no"
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.ul.li:51-21
+msgid "Take a survey"
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.h2:61-17
+msgid "Tell your community about Ceno"
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.p:62-17
+msgid ""
+"Ceno gets better and more dependable the more people use it. Teach your "
+"friends and family how they can become Bridges or access restricted content "
+"by helping them download and use Ceno. Promote Ceno at community events by "
+"sharing materials or hosting a panel or meetup."
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.h2:69-17
+msgid "Help translate"
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.p:70-17
+msgid ""
+"Help translate the Ceno Browser app, web extension, user manual and website! "
+"We use Weblate to crowdsource translations."
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.p:71-17
+msgid "Join our Weblate"
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.p:72-17
+msgid ""
+"Please contact the Ceno team at support [at] censorship [dot] no if you're "
+"interested in becoming a reviewer for translation(s) in your language(s)."
+msgstr ""
+
+#: community.html%2Bmain.section.div.div.p:73-17
+msgid ""
+"For more information about how to use Weblate, see <a href=\"https://docs."
+"weblate.org/en/latest/index.html\">the Weblate documentation.</a>"
+msgstr ""
