@@ -1,0 +1,125 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-15 23:57-0400\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Translate Toolkit 3.15.1\n"
+"Language: fr\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: download.html%2Bmain.section.div.div.div:5-17
+msgid "Download Ceno Browser"
+msgstr ""
+
+#: download.html%2Bmain.section.div.div:5-63
+msgid "Join 566,565 other users"
+msgstr ""
+
+#: download.html%2Bmain.section.div.div.p:7-17
+msgid ""
+"The safest way to install Ceno Browser on your Android phone is through the "
+"Google Play Store:"
+msgstr ""
+
+#: download.html%2Bmain.section.div.div.div.div:10-21
+msgid "COMING SOON ON DESKTOP AND IOS"
+msgstr ""
+
+#: download.html%2Bmain.section.div.div.h4:20-17
+msgid "IMPORTANT:"
+msgstr ""
+
+#: download.html%2Bmain.section.div.div.p:21-17
+msgid ""
+"Ceno has two modes of operation - Public and Personal. You can easily toggle "
+"between them. Public mode offers the best connectivity but the least privacy "
+"- websites that you visit or share are recorded in a publicly-accessible "
+"registry (BitTorrent). Personal mode eliminates this record but may be "
+"slower and less efficient at retrieving content. See <a href=\"faq."
+"html\">the FAQ</a> or <a href=\"../user-manual\">User Manual</a> for more "
+"details on Ceno usage."
+msgstr ""
+
+#: download.html%2Bmain.section.div.p:27-13
+msgid ""
+"Alternatively, you can install Ceno via the Paskoocheh Marketplace, Github, "
+"dComms, or download the APK directly via GitLab:"
+msgstr ""
+
+#: download.html%2Bmain.section.div.h2:36-13
+msgid "Direct Download"
+msgstr ""
+
+#: download.html%2Bmain.section.div.p:37-13
+msgid ""
+"For advanced users or those unable to install Ceno Browser via the above "
+"links, you can download the latest APK directly:"
+msgstr ""
+
+#: download.html%2Bmain.section.div.h4:38-13
+msgid "Ceno Browser 2.4.2"
+msgstr ""
+
+#: download.html%2Bmain.section.div.p:43-13
+msgid ""
+"Run this to verify that the APK has a valid signature from the certificate "
+"with the fingerprint shown below:"
+msgstr ""
+
+#: download.html%2Bmain.section.div.div:44-13
+msgid ""
+"> apksigner verify --print-certs ceno-[…].apk<br> Signer #1 certificate DN: "
+"CN=equalit.ie<br> Signer #1 certificate SHA-256 digest: "
+"<br>a59d20c076f6170a2c13d9ce96cd4349688f907898dfc3c89b0ae6ebe9f7edca<br> […]"
+msgstr ""
+
+#: download.html%2Bmain.section.div.p:50-13
+msgid ""
+"You can also <a href=\"TODO\">verify</a> the signatures of file hashes "
+"against our PGP key (with fingerprint <code class=\"pubkey\">51BE 600C 2711 "
+"926C 865D F93F C7DC C123 F0DD B862</code>)"
+msgstr ""
+
+#: download.html%2Bmain.section.h1:54-9
+msgid "Use Cases"
+msgstr ""
+
+#: download.html%2Bmain.section.div.div.h2:57-17
+msgid "Open blocked sites and social media"
+msgstr ""
+
+#: download.html%2Bmain.section.div.div.p:58-17
+msgid ""
+"More and more resources are getting blocked every day. Ceno is a universal "
+"tool for accessing any website. Use public mode for reading news and "
+"browsing static sites, and switch to personal mode for social networks, "
+"YouTube, and other sites that require authentication."
+msgstr ""
+
+#: download.html%2Bmain.section.div.div.h2:65-17
+msgid "Shutdowns"
+msgstr ""
+
+#: download.html%2Bmain.section.div.div.p:66-17
+msgid ""
+"Even if a country is completely cut off from the global internet, you will "
+"still be able to access websites that Ceno caches and delivers to your "
+"country via satellite. Use Ceno as a backup in case of a shutdown!"
+msgstr ""
+
+#: download.html%2Bmain.section.div.div.h2:71-17
+msgid "Help others"
+msgstr ""
+
+#: download.html%2Bmain.section.div.div.p:72-17
+msgid ""
+"Every Ceno user can become a bridge and help others access blocked "
+"resources. Simply enable Bridge mode in your browser settings and make the "
+"internet more accessible for those who need it most."
+msgstr ""

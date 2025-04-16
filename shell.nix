@@ -8,5 +8,6 @@ in pkgs.mkShell {
     ]))
     pkgs.pandoc
     pkgs.mdbook
+    pkgs.gettext
   ];
 }
