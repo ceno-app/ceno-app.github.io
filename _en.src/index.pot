@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-17 15:21-0400\n"
+"POT-Creation-Date: 2025-04-17 15:37-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -57,8 +57,8 @@ msgid ""
 "\">Learn how.</a>"
 msgstr ""
 
-#: ./index.html%2Bmain.div.section.div.div.a.div:43-46
-msgctxt "./index.html+main.div.section.div.div.a.div:43-46"
+#: ./index.html%2Bmain.div.section.div.div.a.div:43-58
+msgctxt "./index.html+main.div.section.div.div.a.div:43-58"
 msgid "Download Ceno"
 msgstr ""
 
@@ -126,7 +126,7 @@ msgid ""
 "& promote self-expression on the internet."
 msgstr ""
 
-#: ./index.html%2Bmain.section.div.div.a.div:95-44
+#: ./index.html%2Bmain.section.div.div.a.div:95-56
 msgid "Get Ceno"
 msgstr ""
 
@@ -157,7 +157,7 @@ msgstr ""
 msgid "Tim Six"
 msgstr ""
 
-#: ./index.html%2Bmain.section.div.div.a.div:123-44
-msgctxt "./index.html+main.section.div.div.a.div:123-44"
+#: ./index.html%2Bmain.section.div.div.a.div:123-56
+msgctxt "./index.html+main.section.div.div.a.div:123-56"
 msgid "Download Ceno"
 msgstr ""
