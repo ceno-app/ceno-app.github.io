@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # Usage: ./dev.sh
 # Takes _en.src, generates all locales, and builds all their sites
 # with overwrites!
@@ -8,12 +8,12 @@
 ./pot-extract.sh
 ./po-update.sh
 
-for lang in $(./translations.sh); do
+for lang in $(cat supported_locales); do
     if [ "$lang" != "en" ]; then
         ./gen-locale.sh $lang
     fi
 
-    cd $lang
+    pushd $lang
 
     # Finally, wrap all html files in _$lang.src/ in the header and footer and write the
     # output to $lang/
@@ -38,5 +38,5 @@ for lang in $(./translations.sh); do
         mv "$tmp" "$html"
     done
 
-    cd ..
+    popd
 done
