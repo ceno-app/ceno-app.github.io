@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-15 23:57-0400\n"
+"POT-Creation-Date: 2025-04-17 14:51-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.15.1\n"
+"X-Generator: Translate Toolkit 3.11.1\n"
 
 #: ./faq.html%2Bmain.section.div.h1:4-13
 msgid "Frequently<br>Asked<br>Questions"
@@ -52,9 +52,9 @@ msgstr ""
 
 #: ./faq.html%2Bmain.section.div.details.p:29-17
 msgid ""
-"When a website is accessible from your network (e.g. accessing "
-"<i>www.canada.ca</i> from your home internet), Ceno will connect to it like "
-"a normal web browser."
+"When a website is accessible from your network (e.g. accessing <i>www.canada."
+"ca</i> from your home internet), Ceno will connect to it like a normal web "
+"browser."
 msgstr ""
 
 #: ./faq.html%2Bmain.section.div.details.p:31-17
@@ -252,9 +252,9 @@ msgstr ""
 #: ./faq.html%2Bmain.section.div.details.p:107-17
 msgid ""
 "Some of their other projects include <a href=\"https://ouisync.net\""
-">Ouisync</a>, a service for decentralized file sharing; <a href="
-"\"https://deflect.ca\">Deflect</a>, a tool for DDoS protection; Baskerville, "
-"a machine learning-based attack detection system; and the dComms deployment "
+">Ouisync</a>, a service for decentralized file sharing; <a href=\"https"
+"://deflect.ca\">Deflect</a>, a tool for DDoS protection; Baskerville, a "
+"machine learning-based attack detection system; and the dComms deployment "
 "toolkit for setting up decentralized and federated network services."
 msgstr ""
 
@@ -301,8 +301,8 @@ msgid ""
 "through a network of relays run by volunteers, and appears to originate from "
 "the IP address of an exit node. Tor is an excellent option for privacy from "
 "Internet surveillance and website operators. If it works in your network "
-"environment, we recommend it, provided that you’ve also read <a href="
-"\"https://support.torproject.org/\">their support documentation</a>."
+"environment, we recommend it, provided that you’ve also read <a href=\"https"
+"://support.torproject.org/\">their support documentation</a>."
 msgstr ""
 
 #: ./faq.html%2Bmain.section.div.details:134-43
