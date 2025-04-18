@@ -3,38 +3,41 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-15 23:57-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-04-18 14:52+0000\n"
+"Last-Translator: Максим Горпиніч <maksimgorpinic2005a@gmail.com>\n"
+"Language-Team: Ukrainian <https://hosted.weblate.org/projects/censorship-no/"
+"website-v2/website-v2-download/uk/>\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.15.1\n"
-"Language: uk\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 
 #: download.html%2Bmain.section.div.div.div:5-17
 msgid "Download Ceno Browser"
-msgstr ""
+msgstr "Завантажте браузер Ceno"
 
 #: download.html%2Bmain.section.div.div:5-63
 msgid "Join 566,565 other users"
-msgstr ""
+msgstr "Приєднайтеся до 566 565 інших користувачів"
 
 #: download.html%2Bmain.section.div.div.p:7-17
 msgid ""
 "The safest way to install Ceno Browser on your Android phone is through the "
 "Google Play Store:"
 msgstr ""
+"Найбезпечніший спосіб інсталювати Ceno Browser на ваш телефон Android – "
+"через Google Play Store:"
 
 #: download.html%2Bmain.section.div.div.div.div:10-21
 msgid "COMING SOON ON DESKTOP AND IOS"
-msgstr ""
+msgstr "НЕЗАБАРОМ НА НАСТОЛЬНОМУ ПК ТА IOS"
 
 #: download.html%2Bmain.section.div.div.h4:20-17
 msgid "IMPORTANT:"
-msgstr ""
+msgstr "ВАЖЛИВО:"
 
 #: download.html%2Bmain.section.div.div.p:21-17
 msgid ""
@@ -46,32 +49,46 @@ msgid ""
 "html\">the FAQ</a> or <a href=\"../user-manual\">User Manual</a> for more "
 "details on Ceno usage."
 msgstr ""
+"Ceno має два режими роботи - Public і Personal. Ви можете легко перемикатися "
+"між ними. Загальнодоступний режим пропонує найкраще підключення, але "
+"найменшу конфіденційність - веб-сайти, які ви відвідуєте або публікуєте, "
+"реєструються в загальнодоступному реєстрі (BitTorrent). Персональний режим "
+"усуває цей запис, але може бути повільнішим і менш ефективним для отримання "
+"вмісту. Перегляньте <a href=\"faq.html\">FAQ</a> або <a href=\"../user-"
+"manual\">Посібник користувача</a>, щоб отримати докладнішу інформацію про "
+"використання Ceno."
 
 #: download.html%2Bmain.section.div.p:27-13
 msgid ""
 "Alternatively, you can install Ceno via the Paskoocheh Marketplace, Github, "
 "dComms, or download the APK directly via GitLab:"
 msgstr ""
+"Крім того, ви можете встановити Ceno через Paskoocheh Marketplace, Github, "
+"dComms або завантажити APK безпосередньо через GitLab:"
 
 #: download.html%2Bmain.section.div.h2:36-13
 msgid "Direct Download"
-msgstr ""
+msgstr "Пряме завантаження"
 
 #: download.html%2Bmain.section.div.p:37-13
 msgid ""
 "For advanced users or those unable to install Ceno Browser via the above "
 "links, you can download the latest APK directly:"
 msgstr ""
+"Для досвідчених користувачів або тих, хто не може встановити Ceno Browser за "
+"посиланнями вище, ви можете завантажити найновіший APK напряму:"
 
 #: download.html%2Bmain.section.div.h4:38-13
 msgid "Ceno Browser 2.4.2"
-msgstr ""
+msgstr "Браузер Ceno 2.4.2"
 
 #: download.html%2Bmain.section.div.p:43-13
 msgid ""
 "Run this to verify that the APK has a valid signature from the certificate "
 "with the fingerprint shown below:"
 msgstr ""
+"Запустіть це, щоб переконатися, що APK має дійсний підпис із сертифіката з "
+"відбитком пальця, показаним нижче:"
 
 #: download.html%2Bmain.section.div.div:44-13
 msgid ""
@@ -79,6 +96,9 @@ msgid ""
 "CN=equalit.ie<br> Signer #1 certificate SHA-256 digest: "
 "<br>a59d20c076f6170a2c13d9ce96cd4349688f907898dfc3c89b0ae6ebe9f7edca<br> […]"
 msgstr ""
+"> apksigner перевірити --print-certs ceno-[…].apk<br> Signer #1 certificate "
+"DN: CN=equalit.ie<br> Signer #1 certificate SHA-256 digest: "
+"<br>a59d20c076f6170a2c13d9ce96cd4349688f907898dfc3c89b0ae6ebe9f7edca<br> […]"
 
 #: download.html%2Bmain.section.div.p:50-13
 msgid ""
@@ -86,14 +106,17 @@ msgid ""
 "against our PGP key (with fingerprint <code class=\"pubkey\">51BE 600C 2711 "
 "926C 865D F93F C7DC C123 F0DD B862</code>)"
 msgstr ""
+"Ви також можете <a href=\"TODO\">перевірити</a> підписи хешів файлів за "
+"нашим ключем PGP (з відбитком пальця <code class=\"pubkey\">51BE 600C 2711 "
+"926C 865D F93F C7DC C123 F0DD B862</code>)"
 
 #: download.html%2Bmain.section.h1:54-9
 msgid "Use Cases"
-msgstr ""
+msgstr "Випадки використання"
 
 #: download.html%2Bmain.section.div.div.h2:57-17
 msgid "Open blocked sites and social media"
-msgstr ""
+msgstr "Відкрийте заблоковані сайти та соціальні мережі"
 
 #: download.html%2Bmain.section.div.div.p:58-17
 msgid ""
@@ -102,10 +125,15 @@ msgid ""
 "browsing static sites, and switch to personal mode for social networks, "
 "YouTube, and other sites that require authentication."
 msgstr ""
+"Щодня блокується все більше ресурсів. Ceno — універсальний інструмент для "
+"доступу до будь-якого веб-сайту. Використовуйте загальнодоступний режим для "
+"читання новин і перегляду статичних сайтів, а також перемикайтеся в "
+"особистий режим для соціальних мереж, YouTube та інших сайтів, які "
+"потребують автентифікації."
 
 #: download.html%2Bmain.section.div.div.h2:65-17
 msgid "Shutdowns"
-msgstr ""
+msgstr "Відключення"
 
 #: download.html%2Bmain.section.div.div.p:66-17
 msgid ""
@@ -113,10 +141,14 @@ msgid ""
 "still be able to access websites that Ceno caches and delivers to your "
 "country via satellite. Use Ceno as a backup in case of a shutdown!"
 msgstr ""
+"Навіть якщо країна повністю відрізана від глобальної мережі Інтернет, ви все "
+"одно зможете отримати доступ до веб-сайтів, які Ceno кешує та доставляє у "
+"вашу країну через супутник. Використовуйте Ceno як резервну копію на випадок "
+"відключення!"
 
 #: download.html%2Bmain.section.div.div.h2:71-17
 msgid "Help others"
-msgstr ""
+msgstr "Допомагайте іншим"
 
 #: download.html%2Bmain.section.div.div.p:72-17
 msgid ""
@@ -124,3 +156,7 @@ msgid ""
 "resources. Simply enable Bridge mode in your browser settings and make the "
 "internet more accessible for those who need it most."
 msgstr ""
+"Кожен користувач Ceno може стати мостом і допомогти іншим отримати доступ до "
+"заблокованих ресурсів. Просто ввімкніть режим Bridge у налаштуваннях "
+"браузера та зробіть Інтернет доступнішим для тих, кому він найбільше "
+"потрібен."
