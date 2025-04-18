@@ -1,14 +1,33 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-18 18:02+0200\n"
+"PO-Revision-Date: 2025-04-18 16:02+0000\n"
+"Last-Translator: Максим Горпиніч <maksimgorpinic2005a@gmail.com>\n"
+"Language-Team: Ukrainian <https://hosted.weblate.org/projects/censorship-no/"
+"website-v2/website-v2-privacy-policy/uk/>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"Plural-Forms: nplurals=3; plural=n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Weblate 5.11.1-dev\n"
+
 #: privacy_policy.html%2Btitle:1-1
 msgid "Ceno Browser | Privacy Policy"
-msgstr ""
+msgstr "Браузер Ceno | Політика конфіденційності"
 
 #: privacy_policy.html%2Bsection.div.h1:4-1
 msgid "Ceno Browser Terms of Use & Privacy Notice"
 msgstr ""
+"Умови використання веб-переглядача Ceno та повідомлення про конфіденційність"
 
 #: privacy_policy.html%2Bsection.div.h2:6-1
 msgid "1. Overview"
-msgstr ""
+msgstr "1. Огляд"
 
 #: privacy_policy.html%2Bsection.div.p:7-1
 msgid ""
@@ -20,10 +39,17 @@ msgid ""
 "\"we\", or \"us\"). Usage of the Ceno Browser application and associated "
 "services are provided by eQualitie at no cost and are provided for use as is."
 msgstr ""
+"Ці Умови використання Ceno Browser (\"Ceno\") (\"Угода\") разом з цим "
+"Повідомленням про конфіденційність (разом - \"Умови\") є обов'язковими для "
+"всіх користувачів Ceno - однорангового мобільного веб-браузера. Встановлюючи "
+"та запускаючи додаток Ceno Browser (\"Сервіс\"), ви погоджуєтеся "
+"дотримуватися цієї Угоди між вами та eQualitie Inc. (\"eQualitie\", \"ми\" "
+"або \"нас\"). Використання додатку Ceno Browser та пов'язаних з ним послуг "
+"надається eQualitie безкоштовно і надається \"як є\"."
 
 #: privacy_policy.html%2Bsection.div.h2:9-1
 msgid "2. Terms of use"
-msgstr ""
+msgstr "2. Умови використання"
 
 #: privacy_policy.html%2Bsection.div.p:10-1
 msgid ""
@@ -33,6 +59,12 @@ msgid ""
 "the applicable laws of Quebec or Canada or the International Bill of Human "
 "Rights. This includes, but is not limited to, content that:"
 msgstr ""
+"Додаток Ceno Browser створено відповідно до цінностей eQualitie. "
+"Використовуючи це програмне забезпечення, ви погоджуєтеся, що не будете "
+"використовувати Ceno для публікації, обміну або зберігання матеріалів, які "
+"суперечать основним цінностям eQualitie, чинному законодавству Квебеку чи "
+"Канади або Міжнародному біллю про права людини. Це включає, але не "
+"обмежується контентом, який:"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:12-1
 msgid ""
@@ -40,6 +72,9 @@ msgid ""
 "underlying values or the letter of Canada's Privacy Act or PIPEDA (the "
 "Personal Information Protection and Electronic Documents Act);"
 msgstr ""
+"Порушує права на захист особистої інформації, включно з цінностями, що "
+"лежать в основі, або буквою Закону Канади про конфіденційність або PIPEDA ("
+"Закон про захист особистої інформації та електронних документів);"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:13-1
 msgid ""
@@ -48,12 +83,19 @@ msgid ""
 "sexually exploits or promotes the sexual exploitation of minors), unlawful "
 "pornography, or are otherwise indecent;"
 msgstr ""
+"Містить матеріали, що пропагують сексуальну експлуатацію дітей (включаючи "
+"матеріали, які можуть не бути незаконними матеріалами, що пропагують "
+"сексуальне насильство над дітьми, але, тим не менш, сексуально експлуатують "
+"або пропагують сексуальну експлуатацію неповнолітніх), нелегальну "
+"порнографію або є непристойними в будь-який інший спосіб;"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:14-1
 msgid ""
 "Contains or promotes extreme acts of violence or terrorist activity, "
 "including terror or violent extremist propaganda;"
 msgstr ""
+"Містить або заохочує екстремальні акти насильства чи терористичну "
+"діяльність, у тому числі терор чи насильницьку екстремістську пропаганду;"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:15-1
 msgid ""
@@ -63,16 +105,23 @@ msgid ""
 "any other characteristic(s) associated with systemic discrimination or "
 "marginalization;"
 msgstr ""
+"Пропагує фанатизм, ненависть або підбурювання до насильства щодо будь-якої "
+"особи чи групи осіб на підставі їхньої раси, релігії, етнічної "
+"приналежності, національного походження, статі, гендерної ідентичності, "
+"сексуальної орієнтації, інвалідності, вад здоров'я або будь-якої іншої "
+"ознаки (ознак), пов'язаної з системною дискримінацією або маргіналізацією;"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:16-1
 msgid ""
 "Contains files with viruses, trojans, worms, logic bombs or other material "
 "that is malicious or technologically harmful."
 msgstr ""
+"Містить файли з вірусами, троянами, хробаками, логічними бомбами або іншим "
+"шкідливим або технологічно шкідливим матеріалом."
 
 #: privacy_policy.html%2Bsection.div.p:19-1
 msgid "Content Responsibility"
-msgstr ""
+msgstr "Відповідальність за зміст"
 
 #: privacy_policy.html%2Bsection.div.p:21-1
 msgid ""
@@ -87,10 +136,21 @@ msgid ""
 "of Use, including the promotion of illegal, harmful, or otherwise prohibited "
 "material."
 msgstr ""
+"eQualitie не несе відповідальності за контент, яким користувачі обмінюються "
+"або поширюють через мережу BitTorrent або інші сторонні сервери. Хоча Ceno "
+"сприяє децентралізованому обміну контентом, відповідальність за законність "
+"та етичність контенту, яким обмінюються користувачі, лежить виключно на них. "
+"Користувачам рекомендується дотримуватися чинного законодавства та правил "
+"спільноти при використанні Сервісу. Ceno не здійснює активний моніторинг або "
+"модерацію контенту, яким обмінюються користувачі, але ми залишаємо за собою "
+"право проводити розслідування і вживати заходів (наприклад, відключати "
+"доступ до певних функцій), якщо ми отримаємо повідомлення про зловживання, "
+"що порушують ці Умови використання, включаючи просування незаконних, "
+"шкідливих або інших заборонених матеріалів."
 
 #: privacy_policy.html%2Bsection.div.h2:23-1
 msgid "3. Privacy Notice"
-msgstr ""
+msgstr "3. Повідомлення про конфіденційність"
 
 #: privacy_policy.html%2Bsection.div.p:25-1
 msgid ""
@@ -98,10 +158,13 @@ msgid ""
 "the collection, use, and disclosure of Personal Information for all users of "
 "this Service."
 msgstr ""
+"Цей розділ використовується для інформування відвідувачів про політику "
+"eQualitie щодо збору, використання та розкриття особистої інформації для "
+"всіх користувачів цієї служби."
 
 #: privacy_policy.html%2Bsection.div.h3:27-1
 msgid "3.1 Data Collection"
-msgstr ""
+msgstr "3.1 Збір даних"
 
 #: privacy_policy.html%2Bsection.div.p:29-1
 msgid ""
@@ -113,6 +176,15 @@ msgid ""
 "information (such as usage statistics) with users' prior consent and with "
 "personally identifying information removed."
 msgstr ""
+"Ceno Browser не вимагає ніякої особистої ідентифікаційної інформації для "
+"використання сервісу. Він розроблений таким чином, щоб надавати доступ до "
+"онлайн-контенту без ідентифікатора користувача, імені, псевдоніма, "
+"облікового запису користувача або будь-якої іншої форми даних користувача. "
+"eQualitie не знає, хто користується додатком і з ким користувачі "
+"синхронізують або обмінюються своїми даними. eQualitie цінує "
+"конфіденційність користувачів і збирає інформацію про користувачів ("
+"наприклад, статистику використання) тільки за попередньою згодою "
+"користувачів і з видаленням інформації, що ідентифікує особу."
 
 #: privacy_policy.html%2Bsection.div.p:31-1
 msgid ""
@@ -127,6 +199,17 @@ msgid ""
 "anonymized information about your usage of the app. Information collected is "
 "deleted every 90 days."
 msgstr ""
+"Під час процесу налаштування Ceno запитає у користувача згоду на надання нам "
+"зведеної та анонімної аналітичної інформації. Ми використовуємо <a href="
+"\"https://cleaninsights.org/\">Платформа вимірювання Clean Insights</a>, яка "
+"допомагає краще зрозуміти моделі використання програми. Дані записуються в a "
+"<a href=\"https://guardianproject.info/privacy\">спосіб збереження "
+"конфіденційності</a>: ми не використовуємо файли cookie для відстеження; ми "
+"не зберігаємо IP-адреси; ми не збираємо особисту інформацію; і ми не "
+"відстежуємо користувачів на різних сайтах. Ми використовуємо власний "
+"екземпляр <a href=\"https://matomo.org/\">Matomo</a> для збору анонімної "
+"інформації про використання вами програми. Зібрана інформація видаляється "
+"кожні 90 днів."
 
 #: privacy_policy.html%2Bsection.div.p:33-1
 msgid ""
@@ -134,6 +217,9 @@ msgid ""
 "measurements to help us understand the number of users, including the "
 "network origin ASN and country, based on browsing in Public mode."
 msgstr ""
+"Ми збираємо щогодини, щодня і щомісяця різні агреговані вимірювання, які "
+"допомагають нам зрозуміти кількість користувачів, включаючи мережу "
+"походження ASN і країну, на основі перегляду в загальнодоступному режимі."
 
 #: privacy_policy.html%2Bsection.div.p:35-1
 msgid ""
@@ -145,6 +231,13 @@ msgid ""
 "Injectors are run and managed by the Ceno team. eQualitie deletes all access "
 "logs every 24 hours."
 msgstr ""
+"Інжектори - це сервери, які можуть бачити запити на контент у мережі, "
+"включаючи IP-адресу користувача, який робить запит, і назву веб-сайту з "
+"бажаним контентом. Інжектори є необхідним компонентом мережі для 1) "
+"впровадження веб-контенту в децентралізовану мережу і 2) перевірки "
+"цілісності впровадженого контенту. У мережі Ceno інжектори запускаються і "
+"управляються командою Ceno. eQualitie видаляє всі журнали доступу кожні 24 "
+"години."
 
 #: privacy_policy.html%2Bsection.div.p:37-1
 msgid ""
@@ -155,15 +248,21 @@ msgid ""
 "are checked for liveliness every so often and are removed when they are no "
 "longer responsive to BitTorrent traffic."
 msgstr ""
+"Бутстрап-сервери - це сервери, які допомагають підключити ваш пристрій до "
+"мережі BitTorrent. Ми надсилаємо IP-адреси користувачів як на наші власні "
+"бутстрап-сервери, так і на сторонні бутстрап-сервери. Для власних бутстрап-"
+"серверів ми зберігаємо IP-адреси в кеші в пам'яті. IP-адреси час від часу "
+"перевіряються на актуальність і видаляються, якщо вони більше не реагують на "
+"трафік BitTorrent."
 
 #: privacy_policy.html%2Bsection.div.h3:39-1
 msgid "3.2 Data Sharing"
-msgstr ""
+msgstr "3.2 Обмін даними"
 
 #: privacy_policy.html%2Bsection.div.p:41-1
 msgid ""
 "Ceno Browser (and eQualitie) does not share any data with any third parties."
-msgstr ""
+msgstr "Браузер Ceno (та eQualitie) не передає жодних даних третім особам."
 
 #: privacy_policy.html%2Bsection.div.p:43-1
 msgid ""
@@ -174,6 +273,13 @@ msgid ""
 "providing a private browsing experience. Users can switch modes as needed to "
 "balance accessibility and privacy based on their preferences."
 msgstr ""
+"Програма пропонує два режими роботи - Публічний і Особистий. У "
+"загальнодоступному режимі будь-який знайдений вміст стає частиною мережі "
+"BitTorrent і може бути доступний іншим користувачам, які шукають той самий "
+"вміст. На противагу цьому, особистий режим гарантує, що ніяка активність не "
+"передається в мережу, забезпечуючи приватний перегляд. Користувачі можуть "
+"перемикати режими за потреби, щоб збалансувати доступність і "
+"конфіденційність відповідно до своїх уподобань."
 
 #: privacy_policy.html%2Bsection.div.p:45-1
 msgid ""
@@ -183,6 +289,11 @@ msgid ""
 "anyone can query the BitTorrent network for a list of IP addresses that have "
 "been associated with example.com."
 msgstr ""
+"Щоразу, коли ви запитуєте або надаєте доступ до частини вмісту в мережі "
+"BitTorrent (загальнодоступний режим), ви створюєте запис, який пов'язує вашу "
+"IP-адресу з частиною вмісту, отриманого з певного веб-сайту. Наприклад, будь-"
+"хто може запросити в мережі BitTorrent список IP-адрес, які були пов'язані з "
+"сайтом example.com."
 
 #: privacy_policy.html%2Bsection.div.p:47-1
 msgid ""
@@ -190,6 +301,9 @@ msgid ""
 "charges as content is copied from their device to the device of other Ceno "
 "users."
 msgstr ""
+"Користувачі, які обмінюються отриманим вмістом з іншими, також можуть "
+"стягувати додаткові збори за передачу даних, оскільки вміст копіюється з "
+"їхнього пристрою на пристрій інших користувачів Ceno."
 
 #: privacy_policy.html%2Bsection.div.p:49-1
 msgid ""
@@ -200,6 +314,12 @@ msgid ""
 "inside a Public tab will be shared with other Ceno users via the BitTorrent "
 "network."
 msgstr ""
+"Загальнодоступні вкладки використовують всі методи підключення, доступні в "
+"мережі Ceno, для отримання бажаного контенту. Під час перегляду за допомогою "
+"Загальнодоступної вкладки користувачі залишають запис про свою активність у "
+"загальнодоступній мережі BitTorrent (IP-адресу та веб-сайт, на який вони "
+"переходили). Вміст, отриманий пристроєм користувача в Публічній вкладці, "
+"буде доступний іншим користувачам Ceno через мережу BitTorrent."
 
 #: privacy_policy.html%2Bsection.div.p:51-1
 msgid ""
@@ -207,6 +327,9 @@ msgid ""
 "fetched and delivered to you. The search will not connect to the BitTorrent "
 "network and will not attempt to locate the content on other users' devices."
 msgstr ""
+"В особистому режимі ви зв'яжетеся з Інжекторами лише для того, щоб вони "
+"знайшли і доставили вам цей веб-сайт. Пошук не підключатиметься до мережі "
+"BitTorrent і не намагатиметься знайти вміст на пристроях інших користувачів."
 
 #: privacy_policy.html%2Bsection.div.p:53-1
 msgid ""
@@ -216,10 +339,15 @@ msgid ""
 "if the user does not want to be associated on BitTorrent with any of their "
 "browsing activity in Ceno."
 msgstr ""
+"Інформація, яку ви запитуєте та отримуєте в Особистому кабінеті, не "
+"передається нікому іншому. На BitTorrent не ведеться жодних записів про "
+"активність користувача. Особисті вкладки ідеально підходять для входу в "
+"соціальні мережі та інші акаунти, або якщо користувач не хоче, щоб "
+"BitTorrent асоціювався з будь-якою його активністю в Ceno."
 
 #: privacy_policy.html%2Bsection.div.p:55-1
 msgid "Bridges"
-msgstr ""
+msgstr "Мости"
 
 #: privacy_policy.html%2Bsection.div.p:57-1
 msgid ""
@@ -234,6 +362,16 @@ msgid ""
 "Bridge operators will have their device's IP address listed in the "
 "BitTorrent network as an accessible Bridge."
 msgstr ""
+"Щоб гарантувати, що ваш клієнт Ceno завжди може зв'язатися з інжектором, ми "
+"також створили мости. Якщо інжектори заблоковані у вашій мережі, додаток "
+"Ceno буде шукати доступних мостів, які перенаправлять запит користувача на "
+"інжектори. Користувачі можуть увімкнути режим моста в браузері Ceno Browser, "
+"щоб підвищити доступність веб-контенту для інших. Діяльність моста невидима "
+"для оператора моста (якщо тільки він активно не відстежує свій пристрій на "
+"предмет вхідних і вихідних з'єднань). Його робота полягає в отриманні "
+"мережевих запитів від інших користувачів Ceno на доступ до інжектора і "
+"переадресації цих запитів. IP-адреса пристрою оператора моста буде вказана в "
+"мережі BitTorrent як доступна для моста."
 
 #: privacy_policy.html%2Bsection.div.p:59-1
 msgid ""
@@ -242,10 +380,15 @@ msgid ""
 "on Ceno Browser usage. eQualitie is not responsible for content shared and "
 "distributed on other servers."
 msgstr ""
+"Див <a href=\"https://censorship.no//support\">FAQ</a> або <a href="
+"\"https://censorship.no/user-manual/\">Посібник користувача</a> для "
+"отримання додаткової інформації про використання браузера Ceno. eQualitie не "
+"несе відповідальності за вміст, який ділиться та розповсюджується на інших "
+"серверах."
 
 #: privacy_policy.html%2Bsection.div.h3:61-1
 msgid "3.3 Log Data"
-msgstr ""
+msgstr "3.3 Дані журналу"
 
 #: privacy_policy.html%2Bsection.div.p:63-1
 msgid ""
@@ -257,16 +400,28 @@ msgid ""
 "device unless the user decides to send it to us for support purposes, and is "
 "automatically deleted when its sizes reaches 15 MB."
 msgstr ""
+"Користувачі можуть увімкнути реєстрацію через меню налаштувань у Ceno "
+"Browser. Якщо увімкнено, Ceno Browser створює лог-файли на пристроях "
+"користувачів. Метою цих файлів є лише реєстрація активності пристрою для "
+"полегшення процесу налагодження у випадку, якщо користувач відчуває труднощі "
+"при з'єднанні з іншими користувачами або при використанні Ceno іншим чином. "
+"Лог-файл залишається на пристрої користувача, якщо тільки користувач не "
+"вирішить надіслати його нам з метою підтримки, і автоматично видаляється, "
+"коли його розмір досягає 15 МБ."
 
 #: privacy_policy.html%2Bsection.div.p:65-1
 msgid ""
 "If the user does decide to contact us, the personally identifiable data we "
 "may collect is:"
 msgstr ""
+"Якщо користувач все-таки вирішить зв’язатися з нами, персональні дані, які "
+"ми можемо збирати, це:"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:67-1
 msgid "Email address - if the user decided to contact us by email;"
 msgstr ""
+"Адреса електронної пошти - якщо користувач вирішив зв'язатися з нами "
+"електронною поштою;"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:68-1
 msgid ""
@@ -274,18 +429,21 @@ msgid ""
 "eQualitie websites, and associated metadata - for the purposes of providing "
 "technical support;"
 msgstr ""
+"Інформація, яку користувач може надати електронною поштою, через запити "
+"довідки або через веб-сайти eQualitie, а також пов’язані метадані – з метою "
+"надання технічної підтримки;"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:69-1
 msgid "Web browsing activity and history."
-msgstr ""
+msgstr "Діяльність веб-перегляду та історія."
 
 #: privacy_policy.html%2Bsection.div.p:72-1
 msgid "None of this data is shared with any third parties."
-msgstr ""
+msgstr "Жодна з цих даних не передається третім особам."
 
 #: privacy_policy.html%2Bsection.div.h3:74-1
 msgid "3.4 Crash Reporting"
-msgstr ""
+msgstr "3.4 Звіт про збої"
 
 #: privacy_policy.html%2Bsection.div.p:76-1
 msgid ""
@@ -294,6 +452,11 @@ msgid ""
 "while running the app. Crash reports are forwarded automatically to a server "
 "run by eQualitie. We use Sentry for crash reporting."
 msgstr ""
+"Користувачі можуть увімкнути повідомлення про збої через меню налаштувань у "
+"Ceno Browser. Якщо цю опцію увімкнено, Ceno Browser надсилатиме звіти про "
+"збої у разі виникнення проблем під час роботи програми. Звіти про збої "
+"автоматично надсилаються на сервер eQuality. Ми використовуємо Sentry для "
+"повідомлень про збої."
 
 #: privacy_policy.html%2Bsection.div.p:78-1
 msgid ""
@@ -301,18 +464,21 @@ msgid ""
 "aggregated into broader issues, and are deleted after the above retention "
 "period. Issues are deleted when all associated events are deleted."
 msgstr ""
+"Sentry зберігає дані про події протягом 90 днів. Окремі події об'єднуються в "
+"ширші випуски і видаляються після закінчення зазначеного вище терміну "
+"зберігання. Випуски видаляються, коли видаляються всі пов'язані з ними події."
 
 #: privacy_policy.html%2Bsection.div.h3:80-1
 msgid "3.5 Cookies"
-msgstr ""
+msgstr "3.5 Печиво"
 
 #: privacy_policy.html%2Bsection.div.p:82-1
 msgid "The Ceno Browser app does not use cookies."
-msgstr ""
+msgstr "Додаток Ceno Browser не використовує файли cookie."
 
 #: privacy_policy.html%2Bsection.div.h3:84-1
 msgid "3.6 Links to Other Sites"
-msgstr ""
+msgstr "3.6 Посилання на інші сайти"
 
 #: privacy_policy.html%2Bsection.div.p:86-1
 msgid ""
@@ -321,57 +487,74 @@ msgid ""
 "and we do not make any representations or warranties regarding their "
 "content, security, or privacy practices."
 msgstr ""
+"Ця послуга може містити посилання на веб-сайти або послуги, що надаються "
+"третіми сторонами. Ці зовнішні сайти не контролюються і не відстежуються "
+"eQuality, і ми не робимо жодних заяв або гарантій щодо їхнього змісту, "
+"безпеки або практики конфіденційності."
 
 #: privacy_policy.html%2Bsection.div.p:88-1
 msgid "By clicking on a third-party link, you acknowledge and agree that:"
-msgstr ""
+msgstr "Натискаючи посилання третьої сторони, ви визнаєте та погоджуєтесь, що:"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:90-1
 msgid ""
 "Your interactions with third-party sites are governed solely by their "
 "respective terms of use and privacy policies."
 msgstr ""
+"Ваша взаємодія зі сторонніми сайтами регулюється виключно їхніми "
+"відповідними умовами використання та політикою конфіденційності."
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:91-1
 msgid ""
 "eQualitie is not responsible for any content, data collection, or practices "
 "of third-party websites or services."
 msgstr ""
+"eQualitie не несе відповідальності за будь-який вміст, збір даних або "
+"практику сторонніх веб-сайтів або служб."
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:92-1
 msgid "Visiting external sites linked from Ceno is entirely at your own risk."
 msgstr ""
+"Відвідування зовнішніх сайтів, на які посилається Ceno, є виключно на ваш "
+"власний ризик."
 
 #: privacy_policy.html%2Bsection.div.p:94-1
 msgid "We strongly recommend that you:"
-msgstr ""
+msgstr "Ми наполегливо рекомендуємо вам:"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:96-1
 msgid ""
 "Exercise caution when clicking on links to unfamiliar or untrusted sites."
-msgstr ""
+msgstr "Будьте обережні, натискаючи посилання на незнайомі або ненадійні сайти."
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:97-1
 msgid ""
 "Review the privacy policies and terms of use of any third-party website you "
 "visit."
 msgstr ""
+"Перегляньте політику конфіденційності та умови використання будь-якого "
+"стороннього веб-сайту, який ви відвідуєте."
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:98-1
 msgid ""
 "Refrain from providing personal or sensitive information to external sites "
 "unless you are confident in their security and intent."
 msgstr ""
+"Утримайтеся від надання особистої або конфіденційної інформації зовнішнім "
+"сайтам, якщо ви не впевнені в їх безпеці та намірах."
 
 #: privacy_policy.html%2Bsection.div.p:100-1
 msgid ""
 "eQualitie disclaims all liability for any harm, loss, or damage arising from "
 "your use of third-party links or services."
 msgstr ""
+"eQualitie відмовляється від будь-якої відповідальності за будь-яку шкоду, "
+"втрату або збиток, спричинені використанням вами сторонніх посилань або "
+"послуг."
 
 #: privacy_policy.html%2Bsection.div.h3:102-1
 msgid "3.7 Children's Privacy"
-msgstr ""
+msgstr "3.7 Конфіденційність дітей"
 
 #: privacy_policy.html%2Bsection.div.p:104-1
 msgid ""
@@ -388,30 +571,45 @@ msgid ""
 "information in your country (in some countries we may allow your parent or "
 "guardian to do so on your behalf)."
 msgstr ""
+"Ми свідомо не збираємо особисту інформацію від дітей. Ми закликаємо всіх "
+"дітей ніколи не надавати будь-яку особисту інформацію через Додаток та/або "
+"Сервіси. Ми закликаємо батьків та законних опікунів контролювати "
+"використання Інтернету їхніми дітьми та сприяти дотриманню цієї Політики, "
+"проінструктувавши своїх дітей ніколи не надавати особисту інформацію через "
+"Додаток та/або Сервіси без їхнього дозволу. Якщо у вас є підстави вважати, "
+"що дитина надала нам особисту інформацію через Додаток та/або Сервіси, будь "
+"ласка, зв'яжіться з нами. Ви також повинні бути не молодше 16 років, щоб "
+"дати згоду на обробку вашої особистої інформації у вашій країні (у деяких "
+"країнах ми можемо дозволити вашим батькам або опікунам зробити це від вашого "
+"імені)."
 
 #: privacy_policy.html%2Bsection.div.h3:106-1
 msgid "3.8 Changes to these Terms"
-msgstr ""
+msgstr "3.8 Зміни цих Умов"
 
 #: privacy_policy.html%2Bsection.div.p:108-1
 msgid ""
 "We may update these Terms from time to time. Thus, you are advised to review "
 "this page periodically for any changes."
 msgstr ""
+"Ми можемо час від часу оновлювати ці Умови. Тому радимо періодично "
+"переглядати цю сторінку на предмет будь-яких змін."
 
 #: privacy_policy.html%2Bsection.div.p:110-1
 msgid "This policy is effective as of 2024-12-18."
-msgstr ""
+msgstr "Ця політика діє з 2024-12-18."
 
 #: privacy_policy.html%2Bsection.div.h2:112-1
 msgid "4. Glossary"
-msgstr ""
+msgstr "4. Глосарій"
 
 #: privacy_policy.html%2Bsection.div.p:114-1
 msgid ""
 "<b>Bootstrap Servers:</b> Servers used to help your device get into the "
 "BitTorrent network."
 msgstr ""
+"<b>Сервери Bootstrap:</b> сервери, які допомагають вашому пристрою "
+"підключитися до мережі BitTorrent."
 
 #: privacy_policy.html%2Bsection.div.p:116-1
 msgid ""
@@ -419,18 +617,26 @@ msgid ""
 "running Ceno Browser that serve to route web content requests if other "
 "connectivity mechanisms are inaccessible or unavailable."
 msgstr ""
+"<b>Мости:</b> сервери (включно з пристроями користувачів, якщо ввімкнено "
+"режим мосту), на яких працює браузер Ceno, які служать для маршрутизації "
+"запитів веб-вмісту, якщо інші механізми підключення недоступні або "
+"недоступні."
 
 #: privacy_policy.html%2Bsection.div.p:118-1
 msgid ""
 "<b>Injectors:</b> Servers run by eQualitie that route web content from "
 "origin servers to Ceno users' devices requesting that content."
 msgstr ""
+"<b>Інжектори:</b> сервери, керовані eQualitie, які направляють веб-контент "
+"із вихідних серверів на пристрої користувачів Ceno, які запитують цей вміст."
 
 #: privacy_policy.html%2Bsection.div.p:120-1
 msgid ""
 "<b>Personal Mode:</b> Browsing activity in Personal Mode is not shared with "
 "anyone else. Web content is securely retrieved from origin or via Injectors."
 msgstr ""
+"<b>Персональний режим:</b> дії в особистому режимі нікому не надаються. Веб-"
+"вміст безпечно отримується з джерела або через Injectors."
 
 #: privacy_policy.html%2Bsection.div.p:122-1
 msgid ""
@@ -439,13 +645,20 @@ msgid ""
 "this content with other Ceno users via the BitTorrent network, and leaves a "
 "public record of your device's IP address and content retrieved."
 msgstr ""
+"<b>Публічний режим:</b> Під час перегляду в публічному режимі "
+"використовуються всі доступні методи підключення для отримання веб-вмісту з "
+"мережі Ceno, обмін цим вмістом з іншими користувачами Ceno через мережу "
+"BitTorrent, а також публічний запис про IP-адресу вашого пристрою та "
+"отриманий вміст."
 
 #: privacy_policy.html%2Bsection.div.h2:124-1
 msgid "Contact Us"
-msgstr ""
+msgstr "Зв'яжіться з нами"
 
 #: privacy_policy.html%2Bsection.div.p:125-1
 msgid ""
 "If you have any questions or suggestions about this Privacy Policy, do not "
 "hesitate to contact us at: support [at] censorship [dot] no."
 msgstr ""
+"Якщо у вас є запитання чи пропозиції щодо цієї Політики конфіденційності, не "
+"соромтеся зв’язатися з нами за адресою: support [at] censorship [dot] no."
