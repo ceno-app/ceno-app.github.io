@@ -3,20 +3,21 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-15 23:57-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-04-18 14:52+0000\n"
+"Last-Translator: Максим Горпиніч <maksimgorpinic2005a@gmail.com>\n"
+"Language-Team: Ukrainian <https://hosted.weblate.org/projects/censorship-no/"
+"website-v2/website-v2-donate/uk/>\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.15.1\n"
-"Language: uk\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 
 #: donate.html%2Bmain.section.div.div.h1:5-17
 msgid "Support Ceno"
-msgstr ""
+msgstr "Підтримка Ceno"
 
 #: donate.html%2Bmain.section.div.div.p:6-17
 msgid ""
@@ -26,39 +27,45 @@ msgid ""
 "getting involved and contributing, please visit <a href=\"community."
 "html\">the Community page!</a>"
 msgstr ""
+"Ceno Browser — це абсолютно безкоштовне програмне забезпечення з відкритим "
+"кодом, яке фінансується виключно за рахунок грантів і пожертв. Нижче "
+"наведено деякі способи підтримки подальшого розвитку за допомогою фінансових "
+"внесків. Щоб дізнатися про інші способи участі та внести свій внесок, "
+"відвідайте <a href=\"community.html\">сторінку спільноти!</a>"
 
 #: donate.html%2Bmain.section.div.div.div.div.h2:12-25
 msgid "Make a Donation"
-msgstr ""
+msgstr "Зробіть пожертву"
 
 #: donate.html%2Bmain.section.div.div.div.div.p:13-25
 msgid "Make a one-time donation using our Paypal payment portal."
 msgstr ""
+"Зробіть одноразову пожертву за допомогою нашого платіжного порталу Paypal."
 
 #: donate.html%2Bmain.section.div.div.div.div.div:14-25
 msgid "Donate via PayPal"
-msgstr ""
+msgstr "Пожертвуйте через PayPal"
 
 #: donate.html%2Bmain.section.div.div.div.div.h2:20-25
 msgid "Become a Sponsor"
-msgstr ""
+msgstr "Стати спонсором"
 
 #: donate.html%2Bmain.section.div.div.div.div.p:21-25
 msgid "We are currently exploring fundraising platforms and communities:"
-msgstr ""
+msgstr "Наразі ми вивчаємо платформи та спільноти для збору коштів:"
 
 #: donate.html%2Bmain.section.div.div.div.div.div:22-25
 msgid "Sponsor on Github"
-msgstr ""
+msgstr "Спонсор на Github"
 
 #: donate.html%2Bmain.section.div.div.div.div.h2:28-25
 msgid "Donate Bitcoin"
-msgstr ""
+msgstr "Пожертвуйте біткоіни"
 
 #: donate.html%2Bmain.section.div.div.div.div.p:29-25
 msgid "Our wallet address is:"
-msgstr ""
+msgstr "Адреса нашого гаманця:"
 
 #: donate.html%2Bmain.section.div.div.div.div:29-50
 msgid "bc1q2r70hf0jks43jyykpua6uqv907zegplgfacauc"
-msgstr ""
+msgstr "bc1q2r70hf0jks43jyykpua6uqv907zegplgfacauc"
