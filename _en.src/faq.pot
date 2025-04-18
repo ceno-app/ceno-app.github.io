@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-17 17:25-0400\n"
+"POT-Creation-Date: 2025-04-18 10:49-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -41,7 +41,7 @@ msgid ""
 "Ceno is a mobile web browser based on Mozilla Android Components. It is "
 "designed for accessing and distributing web content (websites) using a novel "
 "approach that relies on BitTorrent – a decentralized file sharing network. "
-"Ceno’s advantage comes from side-stepping current Internet censorship "
+"Ceno's advantage comes from side-stepping current Internet censorship "
 "methods and allowing people to access and share web information in and "
 "across regions where connectivity has been interrupted or compromised."
 msgstr ""
@@ -70,7 +70,7 @@ msgid ""
 "In <strong>Public</strong> mode, Ceno will look into the BitTorrent network "
 "to see if another Ceno user has recently shared the requested page. If the "
 "service can identify the requested page, it will retrieve that page from "
-"another user’s device. If the content is not available, Ceno will contact "
+"another user's device. If the content is not available, Ceno will contact "
 "several Injectors to request that website and have it delivered to you."
 msgstr ""
 
@@ -79,7 +79,7 @@ msgid ""
 "In <strong>Personal</strong> mode, you will only contact the Injectors to "
 "have that website fetched and delivered to you. The search will not connect "
 "to the BitTorrent network and will not attempt to locate the content on "
-"other users’ devices."
+"other users' devices."
 msgstr ""
 
 #: ./faq.html%2Bmain.section.div.details.p:41-17
@@ -109,7 +109,7 @@ msgstr ""
 
 #: ./faq.html%2Bmain.section.div.details.p:51-17
 msgid ""
-"Our motto is ‘Share the Web!’ and essentially that is what Ceno users are "
+"Our motto is ‘Share the Web!' and essentially that is what Ceno users are "
 "doing. Most web pages have static content (something you read, watch, listen "
 "to, etc.). Static content can be packaged and shared with other users "
 "seeking the same content. Ceno uses the BitTorrent file sharing network for "
@@ -118,7 +118,7 @@ msgstr ""
 
 #: ./faq.html%2Bmain.section.div.details.p:54-17
 msgid ""
-"Ceno’s advantage is evident in a network that censors websites, or where the "
+"Ceno's advantage is evident in a network that censors websites, or where the "
 "network is weak or unstable. In these circumstances, the Ceno client is able "
 "to leverage additional methods to retrieve content and deliver it to your "
 "device. By allowing users to enable sharing of content they have recently "
@@ -174,7 +174,7 @@ msgstr ""
 
 #: ./faq.html%2Bmain.section.div.details.p:79-17
 msgid ""
-"In response to these risks, we created a ‘<strong>Personal</strong> mode’ "
+"In response to these risks, we created a ‘<strong>Personal</strong> mode' "
 "for Ceno users where the service does not interact with the BitTorrent "
 "network. We recommend this mode for users who do not want any record of "
 "their activity to appear on BitTorrent, as well for website operations that "
@@ -219,7 +219,7 @@ msgstr ""
 
 #: ./faq.html%2Bmain.section.div.details.p:95-17
 msgid ""
-"Bridge operators will have their device’s IP address listed in the "
+"Bridge operators will have their device's IP address listed in the "
 "BitTorrent network as an accessible Bridge."
 msgstr ""
 
@@ -259,7 +259,7 @@ msgid ""
 msgstr ""
 
 #: ./faq.html%2Bmain.section.div.details:110-77
-msgid "What’s the difference between using a VPN and Ceno Browser?"
+msgid "What's the difference between using a VPN and Ceno Browser?"
 msgstr ""
 
 #: ./faq.html%2Bmain.section.div.details.p:114-17
@@ -282,7 +282,7 @@ msgstr ""
 
 #: ./faq.html%2Bmain.section.div.details.p:122-17
 msgid ""
-"Ceno’s primary distinction from a VPN is that it does attempt to route all "
+"Ceno's primary distinction from a VPN is that it does attempt to route all "
 "of your website requests through the decentralized network. When a website "
 "is available without restriction, Ceno will simply connect to it like a "
 "normal web browser. Also, Ceno users cache and share content with each "
@@ -291,17 +291,17 @@ msgid ""
 msgstr ""
 
 #: ./faq.html%2Bmain.section.div.details:125-103
-msgid "What’s the difference between using the Tor and Ceno browsers?"
+msgid "What's the difference between using the Tor and Ceno browsers?"
 msgstr ""
 
 #: ./faq.html%2Bmain.section.div.details.p:129-17
 msgid ""
-"Unlike Tor Browser, Ceno Browser is not a tool for anonymity, which is Tor’s "
+"Unlike Tor Browser, Ceno Browser is not a tool for anonymity, which is Tor's "
 "primary purpose. In the Tor network, network traffic is encrypted and routed "
 "through a network of relays run by volunteers, and appears to originate from "
 "the IP address of an exit node. Tor is an excellent option for privacy from "
 "Internet surveillance and website operators. If it works in your network "
-"environment, we recommend it, provided that you’ve also read <a href=\"https"
+"environment, we recommend it, provided that you've also read <a href=\"https"
 "://support.torproject.org/\">their support documentation</a>."
 msgstr ""
 

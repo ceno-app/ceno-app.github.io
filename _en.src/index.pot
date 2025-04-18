@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-17 17:25-0400\n"
+"POT-Creation-Date: 2025-04-18 10:49-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -136,9 +136,9 @@ msgstr ""
 
 #: ./index.html%2Bmain.section.div.div.div.p:108-11
 msgid ""
-"“Extremely important program. and not only for totalitarian countries, I "
+"\"Extremely important program. and not only for totalitarian countries, I "
 "think people of the free world should also use it more often to create a "
-"cache of pages. loads faster than other browsers.”"
+"cache of pages. loads faster than other browsers.\""
 msgstr ""
 
 #: ./index.html%2Bmain.section.div.div.div.div:109-11
@@ -147,10 +147,10 @@ msgstr ""
 
 #: ./index.html%2Bmain.section.div.div.div.p:115-11
 msgid ""
-"“Awesome technology, it's free and works fine in Russia where a lot of sites "
-"are blocked. The whole image hosting of huge music platform Bandcamp is "
-"blocked here for more than a year now because of a single picture, so great "
-"to see album covers there again - and without VPN!”"
+"\"Awesome technology, it's free and works fine in Russia where a lot of "
+"sites are blocked. The whole image hosting of huge music platform Bandcamp "
+"is blocked here for more than a year now because of a single picture, so "
+"great to see album covers there again - and without VPN!\""
 msgstr ""
 
 #: ./index.html%2Bmain.section.div.div.div.div:116-11
