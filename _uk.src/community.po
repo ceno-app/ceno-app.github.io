@@ -3,24 +3,25 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-15 23:57-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-04-18 14:52+0000\n"
+"Last-Translator: Максим Горпиніч <maksimgorpinic2005a@gmail.com>\n"
+"Language-Team: Ukrainian <https://hosted.weblate.org/projects/censorship-no/"
+"website-v2/website-v2-community/uk/>\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.15.1\n"
-"Language: uk\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 
 #: community.html%2Bmain.section.h1:3-9
 msgid "Let's build a better internet together"
-msgstr ""
+msgstr "Давайте створювати кращий Інтернет разом"
 
 #: community.html%2Bmain.section.div.div.h2:9-17
 msgid "Become a Bridge"
-msgstr ""
+msgstr "Стати мостом"
 
 #: community.html%2Bmain.section.div.div.p:10-17
 msgid ""
@@ -30,23 +31,30 @@ msgid ""
 "Running a Bridge is a very simple yet powerful action, enabling you to share "
 "internet content with others."
 msgstr ""
+"Люди, які керують Ceno з країн з відкритим доступом до інтернету або з тих "
+"частин світу, де доступ до інтернету є надійним, можуть допомогти тим, хто "
+"перебуває в сильно обмежених мережах, отримати доступ до інтернету, ставши "
+"\"мостом\". Стати \"Мостом\" - це дуже проста, але потужна дія, яка дозволяє "
+"вам ділитися інтернет-контентом з іншими."
 
 #: community.html%2Bmain.section.div.div.p:11-17
 msgid "Learn more about becoming a Bridge."
-msgstr ""
+msgstr "Дізнайтеся більше про те, як стати мостом."
 
 #: community.html%2Bmain.section.div.div.h4:12-17
 msgid "The simple way:"
-msgstr ""
+msgstr "Простий спосіб:"
 
 #: community.html%2Bmain.section.div.div.p:13-17
 msgid ""
 "Run Ceno Browser on your Android device, and/or on a spare, always-on device."
 msgstr ""
+"Запустіть Ceno Browser на своєму пристрої Android та/або на запасному "
+"постійно включеному пристрої."
 
 #: community.html%2Bmain.section.div.div.h4:14-17
 msgid "Run the Ceno Docker Client:"
-msgstr ""
+msgstr "Запустіть клієнт Ceno Docker:"
 
 #: community.html%2Bmain.section.div.div.ol.li:16-21
 msgid ""
@@ -54,18 +62,26 @@ msgid ""
 "> <code>sudo docker run --name ceno-client -dv ceno:/var/opt/ouinet --"
 "network host --restart unless-stopped equalitie/ceno-client</code>"
 msgstr ""
+"За допомогою лише однієї команди ви можете налаштувати міст на своєму комп’"
+"ютері або VPS: <br /> <code>sudo docker run --name ceno-client -dv ceno:/var/"
+"opt/ouinet --network host --restart unless-stopped equalitie/ceno-"
+"client</code>"
 
 #: community.html%2Bmain.section.div.div.ol.li:18-21
 msgid ""
 "Open a portal to the internet: Ensure UPnP is enabled on your router, or set "
 "up port forwarding."
 msgstr ""
+"Відкрийте портал до Інтернету: переконайтеся, що UPnP увімкнено на вашому "
+"маршрутизаторі, або налаштуйте переадресацію портів."
 
 #: community.html%2Bmain.section.div.div.ol.li:19-21
 msgid ""
 "To see if it's working, create and open a new Firefox Profile, and set the "
 "proxy to localhost, port 8077."
 msgstr ""
+"Щоб перевірити, чи він працює, створіть і відкрийте новий профіль Firefox і "
+"встановіть проксі на localhost, порт 8077."
 
 #: community.html%2Bmain.section.div.div.ol.li:20-21
 msgid ""
@@ -73,10 +89,12 @@ msgid ""
 "settings\">Ceno Web Extension</a> and the provided certificate to test it "
 "out!"
 msgstr ""
+"Установіть <a href=\"https://gitlab.com/censorship-no/ceno-ext-settings\""
+">Ceno Web Extension</a> і наданий сертифікат, щоб перевірити його!"
 
 #: community.html%2Bmain.section.div.div.h2:30-17
 msgid "Contribute to our code"
-msgstr ""
+msgstr "Внесіть свій внесок у наш код"
 
 #: community.html%2Bmain.section.div.div.p:31-17
 msgid ""
@@ -84,26 +102,29 @@ msgid ""
 "eQualitie. If you are interested in Ceno's source code please check the "
 "following Git repositories:"
 msgstr ""
+"Ceno — це безкоштовний інструмент із відкритим кодом, один із багатьох, "
+"розроблених і підтримуваних eQualitie. Якщо вас цікавить вихідний код Ceno, "
+"будь ласка, перегляньте такі репозиторії Git:"
 
 #: community.html%2Bmain.section.div.div.ul.li:33-21
 msgid "Ceno for Android"
-msgstr ""
+msgstr "Ceno для Android"
 
 #: community.html%2Bmain.section.div.div.ul.li:34-21
 msgid "Ceno for Desktop"
-msgstr ""
+msgstr "Ceno для робочого столу"
 
 #: community.html%2Bmain.section.div.div.ul.li:35-21
 msgid "Ceno for iOS"
-msgstr ""
+msgstr "Ceno для iOS"
 
 #: community.html%2Bmain.section.div.div.ul.li:36-21
 msgid "Ouinet"
-msgstr ""
+msgstr "Ouinet"
 
 #: community.html%2Bmain.section.div.div.ul.li:37-21
 msgid "Ceno Docker Client"
-msgstr ""
+msgstr "Ceno клієнта Docker"
 
 #: community.html%2Bmain.section.div.div.p:39-17
 msgid ""
@@ -111,10 +132,14 @@ msgid ""
 "gitlab.com/censorship-no/ceno-archives\">previous incarnation of Ceno</a>, "
 "built on the Freenet anonymous file sharing and content publishing network."
 msgstr ""
+"Вас також може зацікавити (більше не обслуговується) <a href="
+"\"https://gitlab.com/censorship-no/ceno-archives\">попередня інкарнація "
+"Ceno</a>, побудована на мережі анонімного обміну файлами та публікації "
+"вмісту Freenet."
 
 #: community.html%2Bmain.section.div.div.h2:46-17
 msgid "Share your feedback"
-msgstr ""
+msgstr "Поділіться своїми відгуками"
 
 #: community.html%2Bmain.section.div.div.p:47-17
 msgid ""
@@ -123,22 +148,27 @@ msgid ""
 "helps spread the word about Ceno, which grows the network. With your "
 "consent, we may also highlight your story on our website!"
 msgstr ""
+"Ceno покладається на відгуки користувачів, щоб зрозуміти потреби наших "
+"користувачів, запропонувати покращення та визначити нові функції. Поширення "
+"вашої історії також допомагає поширювати інформацію про Ceno, що сприяє "
+"розвитку мережі. З вашої згоди ми також можемо висвітлити вашу історію на "
+"нашому веб-сайті!"
 
 #: community.html%2Bmain.section.div.div.ul.li:49-21
 msgid "Write a review on the Play Store"
-msgstr ""
+msgstr "Напишіть відгук у Play Store"
 
 #: community.html%2Bmain.section.div.div.ul.li:50-21
 msgid "Get in touch with the team: support [at] censorship [dot] no"
-msgstr ""
+msgstr "Зв’яжіться з командою: підтримка [на] цензурі [точка] №"
 
 #: community.html%2Bmain.section.div.div.ul.li:51-21
 msgid "Take a survey"
-msgstr ""
+msgstr "Пройдіть опитування"
 
 #: community.html%2Bmain.section.div.div.h2:61-17
 msgid "Tell your community about Ceno"
-msgstr ""
+msgstr "Розкажіть своїй спільноті про Ceno"
 
 #: community.html%2Bmain.section.div.div.p:62-17
 msgid ""
@@ -147,29 +177,43 @@ msgid ""
 "by helping them download and use Ceno. Promote Ceno at community events by "
 "sharing materials or hosting a panel or meetup."
 msgstr ""
+"Ceno стає кращим і надійнішим, чим більше людей ним користуються. Розкажіть "
+"своїм друзям і родичам, як вони можуть стати \"мостами\" або отримати доступ "
+"до обмеженого контенту, допомігши їм завантажити і використовувати Ceno. "
+"Популяризуйте Ceno на громадських заходах, ділячись матеріалами або "
+"організовуючи дискусії чи зустрічі."
 
 #: community.html%2Bmain.section.div.div.h2:69-17
 msgid "Help translate"
-msgstr ""
+msgstr "Допоможіть перекласти"
 
 #: community.html%2Bmain.section.div.div.p:70-17
 msgid ""
 "Help translate the Ceno Browser app, web extension, user manual and website! "
 "We use Weblate to crowdsource translations."
 msgstr ""
+"Допоможіть перекласти програму Ceno Browser, веб-розширення, посібник "
+"користувача та веб-сайт! Ми використовуємо Weblate для краудсорсингу "
+"перекладів."
 
 #: community.html%2Bmain.section.div.div.p:71-17
 msgid "Join our Weblate"
-msgstr ""
+msgstr "Приєднуйтесь до нашого Weblate"
 
 #: community.html%2Bmain.section.div.div.p:72-17
 msgid ""
 "Please contact the Ceno team at support [at] censorship [dot] no if you're "
 "interested in becoming a reviewer for translation(s) in your language(s)."
 msgstr ""
+"Будь ласка, зв’яжіться з командою Ceno за адресою підтримки [at] censorship "
+"[dot] no, якщо ви зацікавлені стати рецензентом перекладу(ів) вашою(ими) "
+"мовою(ами)."
 
 #: community.html%2Bmain.section.div.div.p:73-17
 msgid ""
 "For more information about how to use Weblate, see <a href=\"https://docs."
 "weblate.org/en/latest/index.html\">the Weblate documentation.</a>"
 msgstr ""
+"Для отримання додаткової інформації про використання Weblate перегляньте <a "
+"href=\"https://docs.weblate.org/en/latest/index.html\">документацію "
+"Weblate.</a>"
