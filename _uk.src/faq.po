@@ -3,40 +3,41 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-15 23:57-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-04-18 14:52+0000\n"
+"Last-Translator: Максим Горпиніч <maksimgorpinic2005a@gmail.com>\n"
+"Language-Team: Ukrainian <https://hosted.weblate.org/projects/censorship-no/"
+"website-v2/website-v2-faq/uk/>\n"
+"Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.15.1\n"
-"Language: uk\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 
 #: faq.html%2Bmain.section.div.h1:4-13
 msgid "Frequently<br>Asked<br>Questions"
-msgstr ""
+msgstr "Часті<br>запитання"
 
 #: faq.html%2Bmain.section:6-9
 msgid "Search"
-msgstr ""
+msgstr "Пошук"
 
 #: faq.html%2Bmain.section.div.a.div:12-28
 msgid "Read user manual"
-msgstr ""
+msgstr "Прочитайте посібник користувача"
 
 #: faq.html%2Bmain.section.div.a.div:13-28
 msgid "Read technical, in-depth whitepaper"
-msgstr ""
+msgstr "Прочитайте детальну технічну документацію"
 
 #: faq.html%2Bmain.section.div.a.div:14-28
 msgid "Read quick-start guide"
-msgstr ""
+msgstr "Прочитайте короткий посібник"
 
 #: faq.html%2Bmain.section.div:18-9
 msgid "What is Ceno Browser?"
-msgstr ""
+msgstr "Що таке браузер Ceno?"
 
 #: faq.html%2Bmain.section.div.details.p:21-17
 msgid ""
@@ -47,10 +48,17 @@ msgid ""
 "methods and allowing people to access and share web information in and "
 "across regions where connectivity has been interrupted or compromised."
 msgstr ""
+"Ceno - це мобільний веб-браузер на базі Mozilla Android Components. Він "
+"призначений для доступу та розповсюдження веб-контенту (веб-сайтів) з "
+"використанням нового підходу, що базується на BitTorrent - децентралізованій "
+"файлообмінній мережі. Перевага Ceno полягає в тому, що він обходить існуючі "
+"методи інтернет-цензури і дозволяє людям отримувати доступ до веб-інформації "
+"та обмінюватися нею в регіонах, де зв'язок був перерваний або "
+"скомпрометований, а також між ними."
 
 #: faq.html%2Bmain.section.div.details:25-48
 msgid "How does Ceno work?"
-msgstr ""
+msgstr "Як працює Ceno?"
 
 #: faq.html%2Bmain.section.div.details.p:29-17
 msgid ""
@@ -58,6 +66,9 @@ msgid ""
 "ca</i> from your home internet), Ceno will connect to it like a normal web "
 "browser."
 msgstr ""
+"Коли веб-сайт доступний у вашій мережі (наприклад, доступ до "
+"<i>www.canada.ca</i> з вашого домашнього Інтернету), Ceno підключатиметься "
+"до нього як звичайний веб-браузер."
 
 #: faq.html%2Bmain.section.div.details.p:31-17
 msgid ""
@@ -66,6 +77,10 @@ msgid ""
 "depends on whether you have chosen to use Ceno in <strong>Public</strong> or "
 "<strong>Personal</strong> mode."
 msgstr ""
+"Якщо веб-сайт недоступний через мережеву фільтрацію/цензуру, Ceno спробує "
+"отримати вміст для вас. Те, як Ceno намагається знайти вміст, залежить від "
+"того, чи ви вибрали використовувати Ceno у <strong>Загальнодоступному</"
+"strong> чи <strong>Особистому</strong> режимі."
 
 #: faq.html%2Bmain.section.div.details.p:34-17
 msgid ""
@@ -75,6 +90,12 @@ msgid ""
 "another user’s device. If the content is not available, Ceno will contact "
 "several Injectors to request that website and have it delivered to you."
 msgstr ""
+"У режимі <strong>Публічний</strong> Ceno буде шукати в мережі BitTorrent, "
+"щоб побачити, чи нещодавно інший користувач Ceno ділився запитуваною "
+"сторінкою. Якщо сервіс може ідентифікувати запитувану сторінку, він "
+"завантажить її з пристрою іншого користувача. Якщо контент недоступний, Ceno "
+"зв'яжеться з кількома інжекторами, щоб запросити цей веб-сайт і доставити "
+"його вам."
 
 #: faq.html%2Bmain.section.div.details.p:38-17
 msgid ""
@@ -83,6 +104,10 @@ msgid ""
 "to the BitTorrent network and will not attempt to locate the content on "
 "other users’ devices."
 msgstr ""
+"У режимі <strong>Персональний</strong> ви зв'яжетеся з Інжекторами лише для "
+"того, щоб вони знайшли і доставили вам цей веб-сайт. Пошук не "
+"підключатиметься до мережі BitTorrent і не намагатиметься знайти вміст на "
+"пристроях інших користувачів."
 
 #: faq.html%2Bmain.section.div.details.p:41-17
 msgid ""
@@ -92,22 +117,31 @@ msgid ""
 "Injectors. The Ceno network currently features around 6,000 Bridges. Their "
 "number is always growing."
 msgstr ""
+"Для того, щоб ваш клієнт Ceno завжди міг зв'язатися з інжектором, ми також "
+"створили мости. Якщо інжектори заблоковані у вашій мережі, додаток Ceno "
+"шукатиме доступних посередників, які переадресують ваш запит інжекторам. "
+"Наразі мережа Ceno налічує близько 6 000 бріджів. Їх кількість постійно "
+"зростає."
 
 #: faq.html%2Bmain.section.div.details.p:45-17
 msgid ""
 "For a more detailed explanation of how Ceno works, please read <a href=\"../"
 "user-manual/\">the user guide</a>."
 msgstr ""
+"Для більш детального пояснення того, як працює Ceno, прочитайте <a href"
+"=\"../user-manual/\">посібник користувача</a>."
 
 #: faq.html%2Bmain.section.div.details.p:47-17
 msgid ""
 "For a simpler explanation of how Ceno works, <a href=\"explainer."
 "html\">please read this</a>."
 msgstr ""
+"Щоб отримати простіше пояснення того, як працює Ceno, <a href="
+"\"explainer.html\">прочитайте це</a>."
 
 #: faq.html%2Bmain.section.div.details:47-111
 msgid "What are the advantages of using Ceno?"
-msgstr ""
+msgstr "Які переваги використання Ceno?"
 
 #: faq.html%2Bmain.section.div.details.p:51-17
 msgid ""
@@ -117,6 +151,11 @@ msgid ""
 "seeking the same content. Ceno uses the BitTorrent file sharing network for "
 "this."
 msgstr ""
+"Наш девіз - \"Діліться Інтернетом!\", і саме цим користувачі Ceno і "
+"займаються. Більшість веб-сторінок мають статичний контент (те, що ви "
+"читаєте, дивитеся, слухаєте тощо). Статичний контент може бути упакований і "
+"переданий іншим користувачам, які шукають такий самий контент. Для цього "
+"Ceno використовує мережу обміну файлами BitTorrent."
 
 #: faq.html%2Bmain.section.div.details.p:54-17
 msgid ""
@@ -129,6 +168,14 @@ msgid ""
 "remote area with limited access to the internet, Ceno allows you to access "
 "information that may otherwise be unavailable."
 msgstr ""
+"Перевага Ceno очевидна в мережі, де веб-сайти піддаються цензурі, або там, "
+"де мережа слабка чи нестабільна. За таких обставин клієнт Ceno може "
+"використовувати додаткові методи для отримання контенту і доставки його на "
+"свій пристрій. Дозволяючи користувачам обмінюватися нещодавно отриманим "
+"контентом, Ceno розширює доступ до Інтернету в цілому. Незалежно від того, "
+"чи живете ви в частині світу, яка обмежує доступ до контенту, чи у "
+"віддаленій місцевості з обмеженим доступом до інтернету, Ceno дозволяє вам "
+"отримати доступ до інформації, яка інакше може бути недоступною."
 
 #: faq.html%2Bmain.section.div.details.p:60-17
 msgid ""
@@ -139,6 +186,12 @@ msgid ""
 "Running a Bridge is a very simple yet powerful action, allowing you to help "
 "others access the Internet."
 msgstr ""
+"Люди, які керують Ceno з країн, де немає цензури в Інтернеті, або з тих "
+"частин світу, де доступ до Інтернету є надійним, можуть стати мостами для "
+"тих, хто перебуває в мережах з жорсткими обмеженнями. Мережа автоматично "
+"реєструє нові мости і відстежує, коли вони виходять з мережі. Стати мостом - "
+"це дуже проста, але потужна дія, яка дозволяє вам допомогти іншим отримати "
+"доступ до Інтернету."
 
 #: faq.html%2Bmain.section.div.details.p:64-17
 msgid ""
@@ -147,14 +200,19 @@ msgid ""
 "You can <a href=\"https://gitlab.com/censorship-no/ceno-browser\">inspect "
 "our code</a> or re-create the entire network yourself!"
 msgstr ""
+"Ceno — і всі супутні компоненти інструменту, які разом створюють "
+"децентралізовану мережу однорангових вузлів — це безкоштовне програмне "
+"забезпечення з відкритим кодом. Ви можете <a href="
+"\"https://gitlab.com/censorship-no/ceno-browser\">перевірити наш код</a> або "
+"самостійно створити всю мережу!"
 
 #: faq.html%2Bmain.section.div.details:66-38
 msgid "What are the risks of using Ceno?"
-msgstr ""
+msgstr "Які ризики використання Ceno?"
 
 #: faq.html%2Bmain.section.div.details.h3:70-17
 msgid "Risks for users"
-msgstr ""
+msgstr "Ризики для користувачів"
 
 #: faq.html%2Bmain.section.div.details.p:71-17
 msgid ""
@@ -166,6 +224,14 @@ msgid ""
 "particular website. For example, anyone can query the BitTorrent network for "
 "a list of IP addresses that have been associated with <i>website.com</i>."
 msgstr ""
+"Кожна технологія, яка працює з чутливими випадками використання, має свої "
+"переваги та ризики. За задумом Ceno використовує загальнодоступну мережу "
+"BitTorrent для більшої частини своїх потреб у маршрутизації та зберіганні "
+"даних. Щоразу, коли ви надсилаєте запит або ділитеся вмістом у мережі "
+"BitTorrent (публічний режим), ви створюєте запис, який пов’язує вашу IP-"
+"адресу з фрагментом вмісту, який було отримано з певного веб-сайту. "
+"Наприклад, будь-хто може запитати в мережі BitTorrent список IP-адрес, пов’"
+"язаних із <i>website.com</i>."
 
 #: faq.html%2Bmain.section.div.details.p:77-17
 msgid ""
@@ -173,6 +239,9 @@ msgid ""
 "charges as content is copied from their device to the device of other Ceno "
 "users."
 msgstr ""
+"Користувачі, які обмінюються отриманим вмістом з іншими, також можуть "
+"стягувати додаткові збори за передачу даних, оскільки вміст копіюється з "
+"їхнього пристрою на пристрій інших користувачів Ceno."
 
 #: faq.html%2Bmain.section.div.details.p:79-17
 msgid ""
@@ -183,6 +252,12 @@ msgid ""
 "require authentication (for example, when logging into your social media "
 "accounts)."
 msgstr ""
+"У відповідь на ці ризики ми створили \"<strong>Персональний</strong> режим\" "
+"для користувачів Ceno, в якому сервіс не взаємодіє з мережею BitTorrent. Ми "
+"рекомендуємо цей режим користувачам, які не хочуть, щоб записи про їхню "
+"діяльність з'являлися в BitTorrent, а також для операцій на веб-сайтах, які "
+"вимагають автентифікації (наприклад, при вході в свої акаунти в соціальних "
+"мережах)."
 
 #: faq.html%2Bmain.section.div.details.p:83-17
 msgid ""
@@ -190,6 +265,9 @@ msgid ""
 "strong> tabs in the same manner as switching between Normal and Private/"
 "Incognito tabs on your current browser."
 msgstr ""
+"Ви можете легко перемикатися між <strong>Загальнодоступними</strong> та "
+"<strong>Особистими</strong> вкладками так само, як перемикатися між "
+"Звичайними та Приватними/Анонімними вкладками у поточному браузері."
 
 #: faq.html%2Bmain.section.div.details.p:85-17
 msgid ""
@@ -200,16 +278,24 @@ msgid ""
 "the integrity of introduced content. On the Ceno network, Injectors are run "
 "and managed by the Ceno team. We periodically delete all access logs."
 msgstr ""
+"Інжектори також можуть бачити запити на контент у мережі, включаючи IP-"
+"адресу користувача, який робить запит, і назву веб-сайту з бажаним "
+"контентом. Інжектори є необхідним компонентом мережі для 1) впровадження веб-"
+"контенту в децентралізовану мережу і 2) перевірки цілісності впровадженого "
+"контенту. У мережі Ceno інжектори запускаються і управляються командою Ceno. "
+"Ми періодично видаляємо всі журнали доступу."
 
 #: faq.html%2Bmain.section.div.details.h3:90-17
 msgid "Risks for Bridge operators"
-msgstr ""
+msgstr "Ризики для операторів мостів"
 
 #: faq.html%2Bmain.section.div.details.p:91-17
 msgid ""
 "Since any user can become a Bridge, do consider the risks that are "
 "introduced by this action."
 msgstr ""
+"Оскільки будь-який користувач може стати мостом, враховуйте ризики, пов’"
+"язані з цією дією."
 
 #: faq.html%2Bmain.section.div.details.p:92-17
 msgid ""
@@ -218,12 +304,18 @@ msgid ""
 "Their job is to receive network requests from other Ceno users for access to "
 "an Injector and forward this request."
 msgstr ""
+"Діяльність моста невидима для оператора моста (за винятком випадків, коли "
+"він активно контролює свій пристрій на предмет вхідних і вихідних з'єднань). "
+"Його робота полягає в отриманні мережевих запитів від інших користувачів "
+"Ceno на доступ до Injector і переадресації цих запитів."
 
 #: faq.html%2Bmain.section.div.details.p:95-17
 msgid ""
 "Bridge operators will have their device’s IP address listed in the "
 "BitTorrent network as an accessible Bridge."
 msgstr ""
+"Оператори Bridge матимуть IP-адресу свого пристрою в мережі BitTorrent як "
+"доступний Bridge."
 
 #: faq.html%2Bmain.section.div.details.p:97-17
 msgid ""
@@ -231,10 +323,14 @@ msgid ""
 "connections. This is checked automatically by the Ceno client app upon "
 "start. Most wireless mobile carriers do not allow for incoming connections."
 msgstr ""
+"Bridging працює лише тоді, коли мережа, в якій ви перебуваєте, дозволяє "
+"вхідні з'єднання. Це перевіряється автоматично клієнтською програмою Ceno "
+"під час запуску. Більшість бездротових мобільних операторів не дозволяють "
+"вхідні з'єднання."
 
 #: faq.html%2Bmain.section.div.details:99-33
 msgid "Who develops Ceno Browser?"
-msgstr ""
+msgstr "Хто розробляє браузер Ceno?"
 
 #: faq.html%2Bmain.section.div.details.p:103-17
 msgid ""
@@ -243,6 +339,10 @@ msgid ""
 "incorporated their <a href=\"https://ouinet.work\">Ouinet network library</"
 "a> into the Firefox Android browser."
 msgstr ""
+"Ceno — це технологія, створена та підтримується канадською некомерційною "
+"організацією <a href=\"https://equalit.ie\">eQualitie</a>. Вони включили "
+"свою <a href=\"https://ouinet.work\">мережеву бібліотеку Ouinet</a> у "
+"браузер Firefox для Android."
 
 #: faq.html%2Bmain.section.div.details.p:104-17
 msgid ""
@@ -250,6 +350,9 @@ msgid ""
 "have been creating and advancing tools to protect freedom of speech, "
 "facilitate information exchange, and promote self-expression on the internet."
 msgstr ""
+"eQualitie існує вже дванадцять років, і протягом цього часу вони створюють і "
+"просувають інструменти для захисту свободи слова, сприяють обміну "
+"інформацією та самовираженню в інтернеті."
 
 #: faq.html%2Bmain.section.div.details.p:107-17
 msgid ""
@@ -260,10 +363,16 @@ msgid ""
 "dComms deployment toolkit for setting up decentralized and federated network "
 "services."
 msgstr ""
+"Деякі з їхніх інших проектів включають <a href=\"https://ouisync.net\""
+">Ouisync</a>, службу для децентралізованого обміну файлами; <a href="
+"\"https://deflect.ca\">Відхилити</a>, засіб захисту від DDoS; Baskerville, "
+"система виявлення атак на основі машинного навчання; і набір інструментів "
+"для розгортання dComms для налаштування децентралізованих і об’єднаних "
+"мережевих служб."
 
 #: faq.html%2Bmain.section.div.details:110-77
 msgid "What’s the difference between using a VPN and Ceno Browser?"
-msgstr ""
+msgstr "Яка різниця між використанням VPN і браузером Ceno?"
 
 #: faq.html%2Bmain.section.div.details.p:114-17
 msgid ""
@@ -274,6 +383,12 @@ msgid ""
 "numerous VPN providers offering a wide variety of connectivity options to "
 "help their users get around local network censorship."
 msgstr ""
+"Спочатку VPN були створені для приватного зв'язку між вашим пристроєм і "
+"сервером призначення. Оскільки інтернет-цензура стала частим явищем у всьому "
+"світі, провайдери VPN почали пропонувати свої послуги для того, щоб обійти "
+"обмеження локальних мереж. Сьогодні існує безліч VPN-провайдерів, які "
+"пропонують широкий вибір варіантів підключення, щоб допомогти своїм "
+"користувачам обійти локальну мережеву цензуру."
 
 #: faq.html%2Bmain.section.div.details.p:119-17
 msgid ""
@@ -282,6 +397,10 @@ msgid ""
 "like the trust that is required in eQualitie, who operates the Ceno "
 "Injectors)."
 msgstr ""
+"VPN можуть бачити, хто їхні клієнти і які веб-сайти вони запитують. Це "
+"передбачено конструкцією, і для цього потрібен певний рівень довіри до "
+"оператора VPN (подібно до довіри, яка потрібна eQualitie, що експлуатує "
+"інжектори Ceno Injectors)."
 
 #: faq.html%2Bmain.section.div.details.p:122-17
 msgid ""
@@ -292,10 +411,16 @@ msgid ""
 "other. This reduces the strain on censorship circumvention nodes and "
 "improves deliverability."
 msgstr ""
+"Основна відмінність Ceno від VPN полягає в тому, що він намагається "
+"маршрутизувати всі запити до вашого веб-сайту через децентралізовану мережу. "
+"Коли веб-сайт доступний без обмежень, Ceno просто підключається до нього як "
+"звичайний веб-браузер. Крім того, користувачі Ceno кешують і обмінюються "
+"контентом один з одним. Це зменшує навантаження на вузли обходу цензури і "
+"підвищує швидкість доставки."
 
 #: faq.html%2Bmain.section.div.details:125-103
 msgid "What’s the difference between using the Tor and Ceno browsers?"
-msgstr ""
+msgstr "Яка різниця між використанням браузерів Tor і Ceno?"
 
 #: faq.html%2Bmain.section.div.details.p:129-17
 msgid ""
@@ -307,10 +432,18 @@ msgid ""
 "environment, we recommend it, provided that you’ve also read <a "
 "href=\"https://support.torproject.org/\">their support documentation</a>."
 msgstr ""
+"На відміну від Tor Browser, Ceno Browser не є інструментом для анонімності, "
+"що є основною метою Tor. У мережі Tor мережевий трафік шифрується та "
+"направляється через мережу ретрансляторів, якою керують волонтери, і, "
+"здається, походить від IP-адреси вихідного вузла. Tor — чудовий варіант "
+"захисту конфіденційності від інтернет-спостереження та операторів веб-"
+"сайтів. Якщо він працює у вашому мережевому середовищі, ми рекомендуємо його "
+"за умови, що ви також прочитали <a href=\"https://support.torproject.org/\""
+">їхню документацію підтримки</a>."
 
 #: faq.html%2Bmain.section.div.details:134-43
 msgid "Whats the difference between Personal and Public tabs, again?"
-msgstr ""
+msgstr "Знову ж таки, яка різниця між особистими та публічними вкладками?"
 
 #: faq.html%2Bmain.section.div.details.p:138-17
 msgid ""
@@ -321,6 +454,12 @@ msgid ""
 "inside a Public tab will be shared with other Ceno users via the BitTorrent "
 "network."
 msgstr ""
+"Загальнодоступні вкладки використовують всі методи підключення, доступні в "
+"мережі Ceno, для отримання потрібного вам контенту. Під час перегляду за "
+"допомогою Загальнодоступної вкладки ви залишаєте запис про свою активність у "
+"загальнодоступній мережі BitTorrent (вашу IP-адресу та веб-сайт, який ви "
+"запитували). Вміст, який був отриманий вашим пристроєм в Загальнодоступній "
+"вкладці, буде доступний іншим користувачам Ceno через мережу BitTorrent."
 
 #: faq.html%2Bmain.section.div.details.p:142-17
 msgid ""
@@ -330,13 +469,20 @@ msgid ""
 "them if you do not want to be associated on BitTorrent with any of your "
 "browsing activity in Ceno."
 msgstr ""
+"Інформація, яку ви запитуєте та отримуєте в Особистому кабінеті, не "
+"передається нікому іншому. На BitTorrent не ведеться жодних записів про вашу "
+"активність. Використовуйте Особисті вкладки для входу в соціальні мережі та "
+"інші акаунти. Також використовуйте їх, якщо ви не хочете, щоб BitTorrent "
+"асоціювався з вашою активністю в Ceno."
 
 #: faq.html%2Bmain.section.div.details:145-26
 msgid "When will there be an iPhone or Windows version?"
-msgstr ""
+msgstr "Коли буде версія для iPhone чи Windows?"
 
 #: faq.html%2Bmain.section.div.details.p:149-17
 msgid ""
 "Development of Ceno Browser for iOS and Windows is currently ongoing, with "
 "plans for release in early 2025."
 msgstr ""
+"Наразі триває розробка браузера Ceno для iOS і Windows, його випуск "
+"планується на початку 2025 року."
