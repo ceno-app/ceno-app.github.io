@@ -2,16 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-18 17:06-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2025-04-18 11:22-0400\n"
+"PO-Revision-Date: 2025-04-21 23:09+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/censorship-no/"
+"website-v2/website-v2-community/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.15.1\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 
 #: community.html%2Bmain.section.h1:3-9
 msgid "Let's build a better internet together"
@@ -98,11 +99,11 @@ msgstr ""
 
 #: community.html%2Bmain.section.div.div.ul.li:36-21
 msgid "Ouinet"
-msgstr ""
+msgstr "Ouinet"
 
 #: community.html%2Bmain.section.div.div.ul.li:37-21
 msgid "Ceno Docker Client"
-msgstr ""
+msgstr "Cliente Ceno Docker"
 
 #: community.html%2Bmain.section.div.div.p:39-17
 msgid ""
@@ -133,7 +134,7 @@ msgstr ""
 
 #: community.html%2Bmain.section.div.div.ul.li:51-21
 msgid "Take a survey"
-msgstr ""
+msgstr "Participa en una encuesta"
 
 #: community.html%2Bmain.section.div.div.h2:61-17
 msgid "Tell your community about Ceno"
@@ -156,16 +157,21 @@ msgid ""
 "Help translate the Ceno Browser app, web extension, user manual and website! "
 "We use Weblate to crowdsource translations."
 msgstr ""
+"¡Ayuda a traducir la app del Navegador Ceno, la extensión web, el manual de "
+"usuaria(o) y el sitio web! Usamos Weblate para externalizar las traducciones."
 
 #: community.html%2Bmain.section.div.div.p:71-17
 msgid "Join our Weblate"
-msgstr ""
+msgstr "Únete a nuestro Weblate"
 
 #: community.html%2Bmain.section.div.div.p:72-17
 msgid ""
 "Please contact the Ceno team at support [at] censorship [dot] no if you're "
 "interested in becoming a reviewer for translation(s) in your language(s)."
 msgstr ""
+"Por favor, ponte en contacto con el equipo de Ceno en support [at] "
+"censorship [dot] no si estás interesado en convertirte en revisor de la(s) "
+"traducción(es) en tu(s) idioma(s)."
 
 #: community.html%2Bmain.section.div.div.p:73-17
 msgid ""

@@ -1,14 +1,31 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-22 01:09+0200\n"
+"PO-Revision-Date: 2025-04-21 23:09+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/censorship-no/"
+"website-v2/website-v2-privacy-policy/tr/>\n"
+"Language: tr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.11.1-dev\n"
+
 #: privacy_policy.html%2Btitle:1-1
 msgid "Ceno Browser | Privacy Policy"
-msgstr ""
+msgstr "Ceno Browser | Gizlilik ilkesi"
 
 #: privacy_policy.html%2Bsection.div.h1:4-1
 msgid "Ceno Browser Terms of Use & Privacy Notice"
-msgstr ""
+msgstr "Ceno Browser Kullanım Koşulları ve Gizlilik ilkesi"
 
 #: privacy_policy.html%2Bsection.div.h2:6-1
 msgid "1. Overview"
-msgstr ""
+msgstr "1. Kapsam"
 
 #: privacy_policy.html%2Bsection.div.p:7-1
 msgid ""
@@ -23,7 +40,7 @@ msgstr ""
 
 #: privacy_policy.html%2Bsection.div.h2:9-1
 msgid "2. Terms of use"
-msgstr ""
+msgstr "2. Kullanım koşulları"
 
 #: privacy_policy.html%2Bsection.div.p:10-1
 msgid ""
@@ -72,7 +89,7 @@ msgstr ""
 
 #: privacy_policy.html%2Bsection.div.p:19-1
 msgid "Content Responsibility"
-msgstr ""
+msgstr "İçerik sorumluluğu"
 
 #: privacy_policy.html%2Bsection.div.p:21-1
 msgid ""
@@ -90,7 +107,7 @@ msgstr ""
 
 #: privacy_policy.html%2Bsection.div.h2:23-1
 msgid "3. Privacy Notice"
-msgstr ""
+msgstr "3. Gizlilik bildirimi"
 
 #: privacy_policy.html%2Bsection.div.p:25-1
 msgid ""
@@ -101,7 +118,7 @@ msgstr ""
 
 #: privacy_policy.html%2Bsection.div.h3:27-1
 msgid "3.1 Data Collection"
-msgstr ""
+msgstr "3.1 Verilerin toplanması"
 
 #: privacy_policy.html%2Bsection.div.p:29-1
 msgid ""
@@ -158,7 +175,7 @@ msgstr ""
 
 #: privacy_policy.html%2Bsection.div.h3:39-1
 msgid "3.2 Data Sharing"
-msgstr ""
+msgstr "3.2. Verilerin paylaşılması"
 
 #: privacy_policy.html%2Bsection.div.p:41-1
 msgid ""
@@ -190,6 +207,9 @@ msgid ""
 "charges as content is copied from their device to the device of other Ceno "
 "users."
 msgstr ""
+"Alınan içeriği başkalarıyla paylaşan kullanıcılar, içerik kendi "
+"aygıtlarından diğer Ceno kullanıcılarının aygıtına kopyalandığından ek veri "
+"ücretleriyle karşılaşabilir."
 
 #: privacy_policy.html%2Bsection.div.p:49-1
 msgid ""
@@ -219,7 +239,7 @@ msgstr ""
 
 #: privacy_policy.html%2Bsection.div.p:55-1
 msgid "Bridges"
-msgstr ""
+msgstr "Köprüler"
 
 #: privacy_policy.html%2Bsection.div.p:57-1
 msgid ""
@@ -245,7 +265,7 @@ msgstr ""
 
 #: privacy_policy.html%2Bsection.div.h3:61-1
 msgid "3.3 Log Data"
-msgstr ""
+msgstr "3.3. Günlük verileri"
 
 #: privacy_policy.html%2Bsection.div.p:63-1
 msgid ""
@@ -285,7 +305,7 @@ msgstr ""
 
 #: privacy_policy.html%2Bsection.div.h3:74-1
 msgid "3.4 Crash Reporting"
-msgstr ""
+msgstr "3.4 Çökme bildirimi"
 
 #: privacy_policy.html%2Bsection.div.p:76-1
 msgid ""
@@ -301,18 +321,22 @@ msgid ""
 "aggregated into broader issues, and are deleted after the above retention "
 "period. Issues are deleted when all associated events are deleted."
 msgstr ""
+"Sentry 90 gün boyunca oluşturulan etkinlik verilerini korur. Bireysel "
+"etkinlikler daha geniş konular altında toplanır ve yukarıdaki tutma "
+"süresinden sonra silinir. Konular silindiğinde ilişkili tüm etkinliklerde "
+"silinir."
 
 #: privacy_policy.html%2Bsection.div.h3:80-1
 msgid "3.5 Cookies"
-msgstr ""
+msgstr "3.5 Tanımlama bilgileri"
 
 #: privacy_policy.html%2Bsection.div.p:82-1
 msgid "The Ceno Browser app does not use cookies."
-msgstr ""
+msgstr "Ceno Browser uygulaması tanımlama bilgilerini kullanmaz."
 
 #: privacy_policy.html%2Bsection.div.h3:84-1
 msgid "3.6 Links to Other Sites"
-msgstr ""
+msgstr "3.6 Diğer sitelere bağlantılar"
 
 #: privacy_policy.html%2Bsection.div.p:86-1
 msgid ""
@@ -391,7 +415,7 @@ msgstr ""
 
 #: privacy_policy.html%2Bsection.div.h3:106-1
 msgid "3.8 Changes to these Terms"
-msgstr ""
+msgstr "3.8 Bu hükümlerdeki değişiklikler"
 
 #: privacy_policy.html%2Bsection.div.p:108-1
 msgid ""
@@ -401,11 +425,11 @@ msgstr ""
 
 #: privacy_policy.html%2Bsection.div.p:110-1
 msgid "This policy is effective as of 2024-12-18."
-msgstr ""
+msgstr "Bu ilkeler 18.12.2024 tarihinden başlayarak etkilidir."
 
 #: privacy_policy.html%2Bsection.div.h2:112-1
 msgid "4. Glossary"
-msgstr ""
+msgstr "4. Tanımlar"
 
 #: privacy_policy.html%2Bsection.div.p:114-1
 msgid ""
@@ -442,7 +466,7 @@ msgstr ""
 
 #: privacy_policy.html%2Bsection.div.h2:124-1
 msgid "Contact Us"
-msgstr ""
+msgstr "İletişim"
 
 #: privacy_policy.html%2Bsection.div.p:125-1
 msgid ""

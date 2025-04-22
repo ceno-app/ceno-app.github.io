@@ -3,29 +3,33 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-15 23:57-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-04-21 23:09+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Tamil <https://hosted.weblate.org/projects/censorship-no/"
+"website-v2/website-v2-404/ta/>\n"
+"Language: ta\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.15.1\n"
-"Language: ta\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 
 #: 404.html%2Bdiv.div.h4:3-9
 msgid "Sorry, we can't find the page you're looking for"
-msgstr ""
+msgstr "மன்னிக்கவும், நீங்கள் தேடும் பக்கத்தை எங்களால் கண்டுபிடிக்க முடியவில்லை"
 
 #: 404.html%2Bdiv.div.p:4-9
 msgid ""
 "That link didn't work. You can return to the <a href=\"index."
 "html\">homepage</a> or get <a href=\"support.html\">support</a>."
 msgstr ""
+"அந்த இணைப்பு வேலை செய்யவில்லை. நீங்கள் <a href = \"index.html\"> முகப்புப்பக்கத்திற்கு </"
+"a> க்கு திரும்பலாம் அல்லது <a href = \"support.html\"> உதவி </a> ஐப் பெறலாம்."
 
 #: 404.html%2Bdiv.div.a[title]:6-9
 msgid "Get Ceno"
-msgstr ""
+msgstr "செனோவைப் பெறுங்கள்"
 
 #: 404.html%2Bdiv.div:5-49
 msgid "Go to censorship.no"
-msgstr ""
+msgstr "தணிக்கை செய்யச் செல்லுங்கள்"

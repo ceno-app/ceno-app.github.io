@@ -1,6 +1,24 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-22 01:12+0200\n"
+"PO-Revision-Date: 2025-04-21 23:12+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Arabic <https://hosted.weblate.org/projects/censorship-no/"
+"website-v2/website-v2-privacy-policy/ar/>\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: ENCODING\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 5.11.1-dev\n"
+
 #: privacy_policy.html%2Btitle:1-1
 msgid "Ceno Browser | Privacy Policy"
-msgstr ""
+msgstr "متصفح Ceno | سياسة الخصوصية"
 
 #: privacy_policy.html%2Bsection.div.h1:4-1
 msgid "Ceno Browser Terms of Use & Privacy Notice"
@@ -190,6 +208,8 @@ msgid ""
 "charges as content is copied from their device to the device of other Ceno "
 "users."
 msgstr ""
+"قد يتكبد المستخدمون الذين يشاركون المحتوى المسترَد مع الآخرين رسوم بيانات "
+"إضافية، حيث يتم نسخ المحتوى من أجهزتهم إلى أجهزة مستخدمي Ceno الآخرين."
 
 #: privacy_policy.html%2Bsection.div.p:49-1
 msgid ""

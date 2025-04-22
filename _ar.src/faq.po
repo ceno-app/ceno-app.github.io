@@ -3,14 +3,17 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-15 23:57-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-04-21 23:06+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Arabic <https://hosted.weblate.org/projects/censorship-no/"
+"website-v2/website-v2-faq/ar/>\n"
+"Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.15.1\n"
-"Language: ar\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 
 #: faq.html%2Bmain.section.div.h1:4-13
 msgid "Frequently<br>Asked<br>Questions"
@@ -18,7 +21,7 @@ msgstr ""
 
 #: faq.html%2Bmain.section:6-9
 msgid "Search"
-msgstr ""
+msgstr "بحث"
 
 #: faq.html%2Bmain.section.div.a.div:12-28
 msgid "Read user manual"
@@ -34,7 +37,7 @@ msgstr ""
 
 #: faq.html%2Bmain.section.div:18-9
 msgid "What is Ceno Browser?"
-msgstr ""
+msgstr "ما هو متصفح Ceno؟"
 
 #: faq.html%2Bmain.section.div.details.p:21-17
 msgid ""
@@ -45,10 +48,15 @@ msgid ""
 "methods and allowing people to access and share web information in and "
 "across regions where connectivity has been interrupted or compromised."
 msgstr ""
+"Ceno هو متصفح ويب للجوال يعتمد على مكونات Mozilla Android. إنه مصمم للوصول "
+"إلى محتوى الويب (مواقع الويب) وتوزيعه باستخدام نهج جديد يعتمد على BitTorrent "
+"- شبكة مشاركة الملفات اللامركزية. تأتي ميزة Ceno من تجنب أساليب الرقابة "
+"الحالية على الإنترنت والسماح للأشخاص بالوصول إلى معلومات الويب ومشاركتها في "
+"المناطق التي تم فيها انقطاع الاتصال أو اختراقه وعبرها."
 
 #: faq.html%2Bmain.section.div.details:25-48
 msgid "How does Ceno work?"
-msgstr ""
+msgstr "كيف يعمل سينو؟"
 
 #: faq.html%2Bmain.section.div.details.p:29-17
 msgid ""
@@ -56,6 +64,8 @@ msgid ""
 "ca</i> from your home internet), Ceno will connect to it like a normal web "
 "browser."
 msgstr ""
+"عندما يكون موقع الويب متاحًا من خلال شبكتك (مثل الوصول إلى <i>www.canada.ca</"
+"i> من الإنترنت المنزلي)، سيتصل به Ceno مثل متصفح ويب عادي."
 
 #: faq.html%2Bmain.section.div.details.p:31-17
 msgid ""
@@ -64,6 +74,10 @@ msgid ""
 "depends on whether you have chosen to use Ceno in <strong>Public</strong> or "
 "<strong>Personal</strong> mode."
 msgstr ""
+"عندما لا يمكن الوصول إلى موقع ويب بسبب التصفية/الرقابة على الشبكة، سيحاول "
+"Ceno جلب المحتوى لك. طريقة محاولة Ceno العثور على المحتوى تعتمد على ما إذا "
+"كنت قد اخترت استخدام Ceno في وضع <strong>العام</strong> أو وضع "
+"<strong>الشخصي</strong>."
 
 #: faq.html%2Bmain.section.div.details.p:34-17
 msgid ""
@@ -73,6 +87,11 @@ msgid ""
 "another user’s device. If the content is not available, Ceno will contact "
 "several Injectors to request that website and have it delivered to you."
 msgstr ""
+"في وضع <strong>العام</strong>، سيبحث Ceno في شبكة BitTorrent لمعرفة ما إذا "
+"كان مستخدم آخر لـ Ceno قد قام بمشاركة الصفحة المطلوبة مؤخرًا. إذا تمكن الخدمة "
+"من تحديد الصفحة المطلوبة، فستقوم باسترجاع تلك الصفحة من جهاز مستخدم آخر. إذا "
+"لم يكن المحتوى متاحًا، سيتصل Ceno بعدة حاقنات (Injectors) لطلب ذلك الموقع "
+"وإيصاله إليك."
 
 #: faq.html%2Bmain.section.div.details.p:38-17
 msgid ""
@@ -81,6 +100,11 @@ msgid ""
 "to the BitTorrent network and will not attempt to locate the content on "
 "other users’ devices."
 msgstr ""
+"في وضع <strong>العام</strong>، سيبحث Ceno في شبكة BitTorrent لمعرفة ما إذا "
+"كان مستخدم آخر لـ Ceno قد قام بمشاركة الصفحة المطلوبة مؤخرًا. إذا تمكن الخدمة "
+"من تحديد الصفحة المطلوبة، فستقوم باسترجاع تلك الصفحة من جهاز مستخدم آخر. إذا "
+"لم يكن المحتوى متاحًا، سيتصل Ceno بعدة حاقنات (Injectors) لطلب ذلك الموقع "
+"وإيصاله إليك."
 
 #: faq.html%2Bmain.section.div.details.p:41-17
 msgid ""
@@ -90,22 +114,29 @@ msgid ""
 "Injectors. The Ceno network currently features around 6,000 Bridges. Their "
 "number is always growing."
 msgstr ""
+"لضمان قدرة عميل Ceno على الاتصال بالحاقنات (Injectors) دائمًا، قمنا أيضًا "
+"بإنشاء الجسور (Bridges). إذا كانت الحاقنات محظورة على شبكتك، فسيبحث تطبيق "
+"Ceno عن الجسور المتاحة، والتي ستقوم بدورها بإعادة توجيه طلبك إلى الحاقنات. "
+"تحتوي شبكة Ceno حاليًا على حوالي 6000 جسر، ويستمر هذا العدد في النمو."
 
 #: faq.html%2Bmain.section.div.details.p:45-17
 msgid ""
 "For a more detailed explanation of how Ceno works, please read <a href=\"../"
 "user-manual/\">the user guide</a>."
 msgstr ""
+"لمزيد من الشرح التفصيلي عن كيفية عمل Ceno، يرجى قراءة <a href=\"../user-"
+"manual/\">الدليل المستخدم</a>."
 
 #: faq.html%2Bmain.section.div.details.p:47-17
 msgid ""
 "For a simpler explanation of how Ceno works, <a href=\"explainer."
 "html\">please read this</a>."
 msgstr ""
+"لشرح مبسط عن طريقة عمل Ceno، <a href=\"explainer.html\">يرجى قراءة هذا</a>."
 
 #: faq.html%2Bmain.section.div.details:47-111
 msgid "What are the advantages of using Ceno?"
-msgstr ""
+msgstr "ما هي مزايا استخدام Ceno؟"
 
 #: faq.html%2Bmain.section.div.details.p:51-17
 msgid ""
@@ -115,6 +146,10 @@ msgid ""
 "seeking the same content. Ceno uses the BitTorrent file sharing network for "
 "this."
 msgstr ""
+"شعارنا هو 'شارك الويب!' وهذا في الجوهر ما يفعله مستخدمو Ceno. معظم صفحات "
+"الويب تحتوي على محتوى ثابت (شيء تقرأه، تشاهده، تستمع إليه، إلخ). يمكن تجميع "
+"المحتوى الثابت ومشاركته مع مستخدمين آخرين يبحثون عن نفس المحتوى. يستخدم Ceno "
+"شبكة مشاركة الملفات BitTorrent لهذا الغرض."
 
 #: faq.html%2Bmain.section.div.details.p:54-17
 msgid ""
@@ -127,6 +162,12 @@ msgid ""
 "remote area with limited access to the internet, Ceno allows you to access "
 "information that may otherwise be unavailable."
 msgstr ""
+"تظهر ميزة Ceno بوضوح في الشبكات التي تفرض رقابة على المواقع، أو تلك الضعيفة/"
+"غير المستقرة. في هذه الظروف، يستطيع عميل Ceno استخدام وسائل إضافية لاسترداد "
+"المحتوى وإرساله لجهازك. من خلال تمكين المستخدمين من مشاركة المحتوى الذي تم "
+"استرداده مؤخراً، يوسع Ceno نطاق الوصول للإنترنت بشكل عام. سواء كنت تعيش في "
+"منطقة تفرض قيوداً على المحتوى، أو في منطقة نائية ذات اتصال محدود بالإنترنت، "
+"فإن Ceno يتيح لك الوصول إلى معلومات قد تكون غير متاحة بخلاف ذلك."
 
 #: faq.html%2Bmain.section.div.details.p:60-17
 msgid ""
@@ -137,6 +178,11 @@ msgid ""
 "Running a Bridge is a very simple yet powerful action, allowing you to help "
 "others access the Internet."
 msgstr ""
+"يمكن للأشخاص الذين يشغلون تطبيق Ceno في دول لا تفرض رقابة على الإنترنت - أو "
+"في مناطق يتمتع فيها الاتصال بالإنترنت بموثوقية عالية - أن يختاروا العمل "
+"كجسور (Bridges) لأولئك الموجودين في شبكات تخضع لقيود صارمة. تقوم الشبكة "
+"تلقائياً بإدراج الجسور الجديدة وتتابع حالات انقطاعها عن العمل. تشغيل جسر هو "
+"إجراء بسيط للغاية لكنه قوي، يسمح لك بمساعدة الآخرين على الوصول إلى الإنترنت."
 
 #: faq.html%2Bmain.section.div.details.p:64-17
 msgid ""
@@ -145,14 +191,18 @@ msgid ""
 "You can <a href=\"https://gitlab.com/censorship-no/ceno-browser\">inspect "
 "our code</a> or re-create the entire network yourself!"
 msgstr ""
+"إن Ceno - وجميع المكونات المصاحبة للأداة التي تشكّل معاً شبكة لا مركزية من "
+"الأقران والعُقَد - هو برنامج مجاني ومفتوح المصدر. يمكنك <a href="
+"\"https://gitlab.com/censorship-no/ceno-browser\\\">فحص الكود البرمجي</a> "
+"لدينا أو إعادة إنشاء الشبكة بأكملها بنفسك!"
 
 #: faq.html%2Bmain.section.div.details:66-38
 msgid "What are the risks of using Ceno?"
-msgstr ""
+msgstr "ما هي مخاطر استخدام Ceno؟"
 
 #: faq.html%2Bmain.section.div.details.h3:70-17
 msgid "Risks for users"
-msgstr ""
+msgstr "مخاطر على المستخدمين"
 
 #: faq.html%2Bmain.section.div.details.p:71-17
 msgid ""
@@ -164,6 +214,12 @@ msgid ""
 "particular website. For example, anyone can query the BitTorrent network for "
 "a list of IP addresses that have been associated with <i>website.com</i>."
 msgstr ""
+"كل تقنية تتعامل مع حالات استخدام حساسة لها مزاياها ومخاطرها. بحسب تصميمه، "
+"يعتمد Ceno على شبكة BitTorrent العامة للعديد من احتياجات التوجيه وتخزين "
+"البيانات. عندما تطلب أو تشارك محتوى على شبكة BitTorrent (في الوضع العام)، "
+"فإنك تنشئ سجلاً يربط عنوان IP الخاص بك بقطعة محتوى تم جلبها من موقع معين. على "
+"سبيل المثال، يمكن لأي شخص الاستعلام من شبكة BitTorrent عن قائمة عناوين IP "
+"المرتبطة بـ <i>website.com</i>."
 
 #: faq.html%2Bmain.section.div.details.p:77-17
 msgid ""
@@ -171,6 +227,8 @@ msgid ""
 "charges as content is copied from their device to the device of other Ceno "
 "users."
 msgstr ""
+"قد يتكبد المستخدمون الذين يشاركون المحتوى المسترَد مع الآخرين رسوم بيانات "
+"إضافية، حيث يتم نسخ المحتوى من أجهزتهم إلى أجهزة مستخدمي Ceno الآخرين."
 
 #: faq.html%2Bmain.section.div.details.p:79-17
 msgid ""
@@ -181,6 +239,11 @@ msgid ""
 "require authentication (for example, when logging into your social media "
 "accounts)."
 msgstr ""
+"استجابةً لهذه المخاطر، أضفنا 'وضع<strong> الشخصي</strong>' لمستخدمي Ceno حيث "
+"لا يتفاعل الخدمة مع شبكة BitTorrent. نوصي بهذا الوضع للمستخدمين الذين لا "
+"يريدون أي سجل لنشاطهم يظهر على BitTorrent، وكذلك لعمليات مواقع الويب التي "
+"تتطلب المصادقة (مثل تسجيل الدخول إلى حسابات وسائل التواصل الاجتماعي الخاصة "
+"بك)."
 
 #: faq.html%2Bmain.section.div.details.p:83-17
 msgid ""
@@ -198,10 +261,15 @@ msgid ""
 "the integrity of introduced content. On the Ceno network, Injectors are run "
 "and managed by the Ceno team. We periodically delete all access logs."
 msgstr ""
+"يمكن للحاقنات (Injectors) أيضًا رؤية طلبات المحتوى على الشبكة، بما في ذلك "
+"عنوان IP الخاص بالمستخدم الذي قدم الطلب واسم موقع الويب الذي يحوي المحتوى "
+"المطلوب. تُعد الحاقنات مكونًا ضروريًا للشبكة وذلك لـ: 1) إدخال محتوى الويب إلى "
+"شبكة لا مركزية، و2) المصادقة على سلامة المحتوى المُدخل. في شبكة Ceno، يتم "
+"تشغيل وإدارة الحاقنات من قبل فريق Ceno. نحذف دوريًا جميع سجلات الوصول."
 
 #: faq.html%2Bmain.section.div.details.h3:90-17
 msgid "Risks for Bridge operators"
-msgstr ""
+msgstr "مخاطر على مشغلي الجسور"
 
 #: faq.html%2Bmain.section.div.details.p:91-17
 msgid ""
@@ -232,7 +300,7 @@ msgstr ""
 
 #: faq.html%2Bmain.section.div.details:99-33
 msgid "Who develops Ceno Browser?"
-msgstr ""
+msgstr "ما هو متصفح Ceno؟"
 
 #: faq.html%2Bmain.section.div.details.p:103-17
 msgid ""

@@ -3,21 +3,22 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-15 23:57-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-04-21 23:10+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/censorship-no/"
+"website-v2/website-v2-header/ru/>\n"
+"Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.15.1\n"
-"Language: ru\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 
 #: _head.html%2Bhtml[lang]:3-1
 msgctxt "./_head.html+html[lang]:3-1"
 msgid "en"
-msgstr ""
+msgstr "ru"
 
 #: _head.html%2Bhtml.body.nav.div.div:28-13
 msgctxt "./_head.html+html.body.nav.div.div:28-13"
@@ -31,7 +32,7 @@ msgstr ""
 #: _head.html%2Bhtml.body.nav.div.div.div.label.img[alt]:37-25
 msgctxt "./_head.html+html.body.nav.div.div.div.label.img[alt]:37-25"
 msgid "Select language"
-msgstr ""
+msgstr "Выбрать язык"
 
 #.  TRANSLATORS: Replace with your language. 
 #: _head.html%2Bhtml.body.nav.div.div.div.label:36-21
@@ -62,22 +63,22 @@ msgstr ""
 #: _head.html%2Bhtml.body.nav.div.div:57-17
 msgctxt "./_head.html+html.body.nav.div.div:57-17"
 msgid "Download"
-msgstr ""
+msgstr "Скачать"
 
 #: _head.html%2Bhtml.body.nav.div.a.img[alt]:62-62
 msgid "Ceno logo"
-msgstr ""
+msgstr "Ceno лого"
 
 #: _head.html%2Bhtml.body.nav.div.div.div.label.img[alt]:67-25
 msgctxt "./_head.html+html.body.nav.div.div.div.label.img[alt]:67-25"
 msgid "Select language"
-msgstr ""
+msgstr "Выбрать язык"
 
 #.  TRANSLATORS: Please do not translate any of these. 
 #: _head.html%2Bhtml.body.nav.div.div.div.label:66-21
 msgctxt "./_head.html+html.body.nav.div.div.div.label:66-21"
 msgid "en"
-msgstr ""
+msgstr "ru"
 
 #.  Sorted alphabetically by language code. 
 #.  TRANSLATORS: Please do not translate any of these. 
@@ -103,7 +104,7 @@ msgstr ""
 #: _head.html%2Bhtml.body.nav.div.div:88-17
 msgctxt "./_head.html+html.body.nav.div.div:88-17"
 msgid "Download"
-msgstr ""
+msgstr "Скачать"
 
 #: _head.html%2Bhtml.body.nav.div.div.div:99-17
 msgctxt "./_head.html+html.body.nav.div.div.div:99-17"
@@ -116,4 +117,4 @@ msgstr ""
 
 #: _head.html%2Bhtml.body.title:109-1
 msgid "Ceno Browser | Share the Web"
-msgstr ""
+msgstr "Браузер Ceno | И себе, и людям"
