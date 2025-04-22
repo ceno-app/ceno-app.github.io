@@ -26,6 +26,10 @@ footer {
     max-height: 36px;
 }
 
+.ceno-footer-statement a {
+    color: #0B3954;
+}
+
 .footer-links {
     display: flex;
     justify-content: space-between;
