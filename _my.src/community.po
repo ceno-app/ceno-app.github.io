@@ -3,14 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-15 23:57-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-04-21 23:09+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Burmese <https://hosted.weblate.org/projects/censorship-no/"
+"website-v2/website-v2-community/my/>\n"
+"Language: my\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.15.1\n"
-"Language: my\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 
 #: community.html%2Bmain.section.h1:3-9
 msgid "Let's build a better internet together"
@@ -97,11 +99,11 @@ msgstr ""
 
 #: community.html%2Bmain.section.div.div.ul.li:36-21
 msgid "Ouinet"
-msgstr ""
+msgstr "Ouinet"
 
 #: community.html%2Bmain.section.div.div.ul.li:37-21
 msgid "Ceno Docker Client"
-msgstr ""
+msgstr "Ceno Docker သုံးစွဲသူ"
 
 #: community.html%2Bmain.section.div.div.p:39-17
 msgid ""
@@ -132,7 +134,7 @@ msgstr ""
 
 #: community.html%2Bmain.section.div.div.ul.li:51-21
 msgid "Take a survey"
-msgstr ""
+msgstr "စစ်တမ်း ဖြေဆိုရန်"
 
 #: community.html%2Bmain.section.div.div.h2:61-17
 msgid "Tell your community about Ceno"
@@ -155,16 +157,21 @@ msgid ""
 "Help translate the Ceno Browser app, web extension, user manual and website! "
 "We use Weblate to crowdsource translations."
 msgstr ""
+"Ceno ဘရောက်ဇာ အက်ပ်၊ ဝက်ဘ်အဆက်၊ သုံးစွဲသူ လက်စွဲနှင့် ဝက်ဘ်ဆိုက်ကို ကူညီ ဘာသာပြန်ဆိုပါ။ လူအစုအဝေးဖြင့် "
+"ဘာသာပြန်ဆိုနိုင်ရန်အတွက် Weblate ကို အသုံးပြုပါသည်။"
 
 #: community.html%2Bmain.section.div.div.p:71-17
 msgid "Join our Weblate"
-msgstr ""
+msgstr "ကျွန်ုပ်တို့၏ Weblate တွင် ပါဝင်လိုက်ပါ။"
 
 #: community.html%2Bmain.section.div.div.p:72-17
 msgid ""
 "Please contact the Ceno team at support [at] censorship [dot] no if you're "
 "interested in becoming a reviewer for translation(s) in your language(s)."
 msgstr ""
+"သင်သည် သင့်ဘာသာစကား(များ) နှင့် ရေးသားထားသော ဘာသာပြန်ဆိုချက်(များ) အတွက် စစ်ဆေးသူ ဖြစ်လာရန် "
+"စိတ်ဝင်စားပါက ကျေးဇူးပြု၍ support [at] censorship [dot] no မှတစ်ဆင့် Ceno အသင်းကို "
+"ဆက်သွယ်ပါ။"
 
 #: community.html%2Bmain.section.div.div.p:73-17
 msgid ""

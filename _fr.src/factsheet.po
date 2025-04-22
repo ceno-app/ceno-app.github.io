@@ -3,35 +3,36 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-15 23:57-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-04-21 23:09+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/censorship-no/"
+"website-v2/website-v2-factsheet/fr/>\n"
+"Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.15.1\n"
-"Language: fr\n"
-"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"Plural-Forms: nplurals=2; plural=n > 1;\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 
 #: factsheet.html%2Btitle:1-1
 msgid "Ceno Browser | Fact Sheet"
-msgstr ""
+msgstr "Navigateur Ceno | Feuille d’information"
 
 #: factsheet.html%2Bdiv.h1:3-5
 msgid "Ceno Fact Sheet"
-msgstr ""
+msgstr "Feuille d’information de Ceno"
 
 #: factsheet.html%2Bdiv.section.p:7-1
 msgid "Download PDF"
-msgstr ""
+msgstr "Télécharger le PDF"
 
 #: factsheet.html%2Bdiv.section.h2:9-1
 msgid "Overview"
-msgstr ""
+msgstr "Vue d’ensemble"
 
 #: factsheet.html%2Bdiv.section.h3:10-2
 msgid "What is Ceno?"
-msgstr ""
+msgstr "Qu’est ce que Ceno ?"
 
 #: factsheet.html%2Bdiv.section.p:11-2
 msgid ""
@@ -39,10 +40,13 @@ msgid ""
 "censorship methods and local Internet outages using peer-to-peer (p2p) "
 "technology"
 msgstr ""
+"Ceno est le premier navigateur mobile au monde qui contourne les méthodes "
+"actuelles de censure d’internet et les coupures locales d’internet grâce à "
+"la technologie pair à pair."
 
 #: factsheet.html%2Bdiv.section.h3:13-2
 msgid "Ceno stands for:"
-msgstr ""
+msgstr "Ceno représente :"
 
 #: factsheet.html%2Bdiv.section.ul.li:15-9
 msgid ""
@@ -50,22 +54,25 @@ msgid ""
 "Internet that is free of intrusive and unjustified surveillance, censorship "
 "and oppression"
 msgstr ""
+"<strong>ce</strong>nsorship.<strong>no</strong>, pensé dans l’optique d’un "
+"Internet exempt de surveillance intrusive et non justifiée, de censure et "
+"d’oppression."
 
 #: factsheet.html%2Bdiv.section.ul.li:16-2
 msgid "Developed and launched by <a href=\"https://equalit.ie\">eQualitie</a>"
-msgstr ""
+msgstr "Développé et lancé par <a href=\"https://equalit.ie\">eQualitie</a>."
 
 #: factsheet.html%2Bdiv.section.h3:18-2
 msgid "Works on:"
-msgstr ""
+msgstr "Fonctionne sur :"
 
 #: factsheet.html%2Bdiv.section.p:19-9
 msgid "Android mobile devices"
-msgstr ""
+msgstr "Les appareils mobiles Android."
 
 #: factsheet.html%2Bdiv.section.h3:21-2
 msgid "Get it on:"
-msgstr ""
+msgstr "Obtenez-le sur :"
 
 #: factsheet.html%2Bdiv.section.ul.li:23-9
 msgid ""
@@ -76,14 +83,20 @@ msgid ""
 "android.html?\">Paskoocheh</a>, and <a href=\"https://zanga.tech/tools/166/"
 "android.html\">Zanga.tech</a>"
 msgstr ""
+"<a href=\"https://censorship.no/download\">Le site Web de Ceno</a>, <a href="
+"\"https://play.google.com/store/apps/details?id=ie.equalit.ceno\">Google "
+"Play</a>, <a href=\"https://github.com/censorship-no/ceno-browser/releases\""
+">GitHub</a>, <a href=\"https://paskoocheh.com/tools/124/android.html?\""
+">Paskoocheh</a>, et <a href=\"https://zanga.tech/tools/166/android.html\""
+">Zanga.tech.</a>"
 
 #: factsheet.html%2Bdiv.section.ul.li:24-2
 msgid "No special permissions are required"
-msgstr ""
+msgstr "Aucune autorisation spéciale n’est nécessaire."
 
 #: factsheet.html%2Bdiv.section.h3:26-2
 msgid "Why:"
-msgstr ""
+msgstr "Pourquoi :"
 
 #: factsheet.html%2Bdiv.section.ul.li:28-9
 msgid ""
@@ -91,22 +104,30 @@ msgid ""
 "censored or Internet-restricted regions, and in countries where connectivity "
 "is unreliable or costly"
 msgstr ""
+"Conçu pour permettre aux personnes du monde entier d’accéder au contenu Web "
+"dans les régions censurées ou celles où l’accès à Internet est limité, et "
+"dans les pays où la connectivité n’est pas fiable ou trop chère."
 
 #: factsheet.html%2Bdiv.section.ul.li:29-2
 msgid ""
 "Can be used to create a bridge for others to access censored or restricted "
 "content"
 msgstr ""
+"Peut être utilisé pour créer un pont pour que les autres puissent accéder au "
+"contenu censuré ou restreint."
 
 #: factsheet.html%2Bdiv.section.h3:31-2
 msgid "So what?"
-msgstr ""
+msgstr "Et donc ?"
 
 #: factsheet.html%2Bdiv.section.ul.li:33-2
 msgid ""
 "Already helping thousands of civilians, NGOs, investigative journalists and "
 "independent media globally to access and share web content"
 msgstr ""
+"Ceno aide déjà des milliers de civils, d’ONG, de journalistes d’enquête et "
+"de médias indépendants du monde entier à accéder à des contenus Web et à les "
+"partager."
 
 #: factsheet.html%2Bdiv.section.ul.li:34-2
 msgid ""
@@ -114,47 +135,65 @@ msgid ""
 "agents, even during media censorship events, shutdowns, natural disruptions, "
 "unrest, conflict, and war"
 msgstr ""
+"Le contenu de Ceno reste stable et ne peut être supprimé de force par des "
+"agents extérieurs, même lors d’événements de censure des médias, de coupure, "
+"de perturbations naturelles, de troubles, de conflits et de guerres."
 
 #: factsheet.html%2Bdiv.section.ul.li:35-2
 msgid ""
 "Ceno’s p2p routing and distribution of storage can reduce bandwidth and "
 "energy use"
 msgstr ""
+"Le routage pair à pair et la distribution du stockage de Ceno peuvent "
+"réduire la bande passante et la consommation d’énergie."
 
 #: factsheet.html%2Bdiv.section.ul.li:36-2
 msgid ""
 "Performance improves with scale (unlike the proxy/virtual private network "
 "(VPN) model); more users reduces latency and increases storage"
 msgstr ""
+"Plus Ceno est utilisé, plus les performances s’améliorent (contrairement au "
+"modèle mandataire et réseau privé virtuel [RPV]) ; un plus grand nombre d’"
+"utilisateurs réduit la latence et augmente la capacité de stockage."
 
 #: factsheet.html%2Bdiv.section.h3:38-2
 msgid "How:"
-msgstr ""
+msgstr "Comment :"
 
 #: factsheet.html%2Bdiv.section.ul.li:40-2
 msgid ""
 "Works like BitTorrent - pulling, reserving and sharing content from many "
 "networked sources rather than from one web server source - but is a browser"
 msgstr ""
+"Ceno fonctionne comme BitTorrent en tirant, en réservant et en partageant du "
+"contenu de nombreuses sources réseau et non d’un seul serveur Web source. "
+"Mais c’est un navigateur."
 
 #: factsheet.html%2Bdiv.section.ul.li:41-2
 msgid ""
 "Underlying decentralized p2p network uses established open-source Ouinet "
 "library and BitTorrent protocols, making it resilient and reliable"
 msgstr ""
+"Le réseau pair à pair décentralisé sous-jacent utilise la bibliothèque "
+"ouverte Ouinet et les protocoles BitTorrent, bien établis, assurant sa "
+"résilience et sa fiabilité."
 
 #: factsheet.html%2Bdiv.section.ul.li:42-2
 msgid "Looks and feels like other browsers"
 msgstr ""
+"L’aspect et la convivialité de Ceno ressemblent à n’importe quel autre "
+"navigateur."
 
 #: factsheet.html%2Bdiv.section.ul.li:43-2
 msgid ""
 "Equipped to share cached content offline and on local area networks (LANs)"
 msgstr ""
+"Ceno est équipé pour partager hors ligne et sur les réseaux locaux le "
+"contenu mis en cache."
 
 #: factsheet.html%2Bdiv.section.h3:45-2
 msgid "Who is eQualitie?"
-msgstr ""
+msgstr "Qui est eQualitie ?"
 
 #: factsheet.html%2Bdiv.section.ul.li:47-9
 msgid ""
@@ -162,104 +201,124 @@ msgid ""
 "reusable systems and tools since 2010, with a focus on online privacy, "
 "resilience and self-determination"
 msgstr ""
+"eQualitie est une entreprise de sécurité numérique basée à Montréal qui "
+"développe des systèmes et des outils ouverts et réutilisables depuis 2010, "
+"axés sur la confidentialité et la protection des données personnelles en "
+"ligne, la résilience et l’autodétermination."
 
 #: factsheet.html%2Bdiv.section.ul.li:48-2
 msgid "Maintains the <a href=\"https://deflect.ca\">Deflect.ca</a> service"
 msgstr ""
+"eQualitie maintient le service <a href=\"https://deflect.ca\">Deflect.ca</a>."
 
 #: factsheet.html%2Bdiv.section.ul.li:49-2
 msgid ""
 "Leads several initiatives focused on free and secure communications in "
 "authoritarian states"
 msgstr ""
+"eQualitie dirige plusieurs initiatives axées sur la liberté et la sécurité "
+"des communications dans les États autoritaires."
 
 #: factsheet.html%2Bdiv.section.ul.li:50-2
 msgid "Founded by Dmitri Vitaliev"
-msgstr ""
+msgstr "eQualitie a été fondée par Dmitri Vitaliev."
 
 #: factsheet.html%2Bdiv.section.h3:52-2
 msgid "In use today:"
-msgstr ""
+msgstr "L’utilise aujourd’hui :"
 
 #: factsheet.html%2Bdiv.section.ul.li:54-9
 msgid "<strong>Average monthly users:</strong> 10,000+"
-msgstr ""
+msgstr "<strong>Moyenne des utilisateurs par mois :</strong> plus de 10 000."
 
 #: factsheet.html%2Bdiv.section.ul.li:55-2
 msgid "<strong>New monthly users:</strong> 10,000"
-msgstr ""
+msgstr "<strong>Nouveaux utilisateurs par mois :</strong> 10 000"
 
 #: factsheet.html%2Bdiv.section.ul.li:56-2
 msgid ""
 "<strong>Majority users by country:</strong> Ukraine 48%; Russia 17%; Iran "
 "15%; Myanmar 5%; Poland, US and Germany 3%"
 msgstr ""
+"<strong>Répartition des utilisateurs pour les principaux pays :</strong> "
+"Ukraine 48 % ; Russie 17 % ; Iran 15 % ; Birmanie 5 % ; Pologne, États-Unis "
+"et Allemagne 3 %."
 
 #: factsheet.html%2Bdiv.section.h2:60-1
 msgid "How Ceno Works"
-msgstr ""
+msgstr "Le fonctionnement de Ceno"
 
 #: factsheet.html%2Bdiv.section.div.div.div.div.div.p:67-17
 msgid "A mobile user in NYC reads a BBC.com news article on her Ceno Browser."
 msgstr ""
+"À Montréal, une utilisatrice mobile lit un article sur ici.radio-canada.ca "
+"avec son navigateur Ceno."
 
 #: factsheet.html%2Bdiv.section.div.div.div.div.div.p:76-17
 msgid "Ceno signs, caches and decentralizes the article content."
-msgstr ""
+msgstr "Ceno signe, met en cache et décentralise le contenu de l’article."
 
 #: factsheet.html%2Bdiv.section.div.div.div.div.div.p:85-17
 msgid ""
 "Ceno users everywhere access and read the same article on their mobiles, "
 "despite censorship or outages, and thereby share it with other Ceno users."
 msgstr ""
+"Partout, les utilisateurs de Ceno accèdent au même article et le lisent sur "
+"leurs appareils mobiles, malgré la censure et les coupures d’Internet, et le "
+"partagent ainsi avec d’autres utilisateurs et utilisatrices de Ceno."
 
 #: factsheet.html%2Bdiv.section.div:89-2
 msgid "Learn more in the User Manual!"
-msgstr ""
+msgstr "Apprenez-en davantage dans le manuel d’utilisation"
 
 #: factsheet.html%2Bdiv.section.h2:95-1
 msgid "Numbers"
-msgstr ""
+msgstr "Chiffres"
 
 #: factsheet.html%2Bdiv.section.h3:97-1
 msgid "Ceno to April 2022"
-msgstr ""
+msgstr "Ceno jusqu’en avril 2022"
 
 #: factsheet.html%2Bdiv.section.ul.li:99-2
 msgid "Downloads from Google Play Store: 33,297"
-msgstr ""
+msgstr "Téléchargements de Google Play : 33 297."
 
 #: factsheet.html%2Bdiv.section.ul.li:100-2
 msgid "Installs from alternative marketplaces: 6,514"
-msgstr ""
+msgstr "Installations d’autres magasins d’applis : 6 514."
 
 #: factsheet.html%2Bdiv.section.ul.li:101-2
 msgid "Pulls from Docker Hub: 597"
-msgstr ""
+msgstr "Tirages de Docker Hub : 597."
 
 #: factsheet.html%2Bdiv.section.ul.li:102-2
 msgid "Cloned from GitHub repositories: 1,768"
-msgstr ""
+msgstr "Clonages de dépôts GitHub : 1 768."
 
 #: factsheet.html%2Bdiv.section.ul.li:103-2
 msgid "Unique participants in March 2022: 28,914"
-msgstr ""
+msgstr "Participants uniques en mars 2022 : 28 914"
 
 #: factsheet.html%2Bdiv.section.ul.li:104-2
 msgid ""
 "Ceno bridges worldwide: 25 (6 in Ukraine, 9 in Russia and others in the "
 "Middle East, Eastern Europe and Asia)"
 msgstr ""
+"Ponts Ceno dans le monde : 25 (6 en Ukraine, 9 en Russie et d’autres au "
+"Moyen-Orient, en Europe de l’Est et en Asie)."
 
 #: factsheet.html%2Bdiv.section.ul.li:105-2
 msgid ""
 "Bootstrap servers to ensure that in-country nodes can use BitTorrent during "
 "complete network shutdowns: 8 (in Eastern Europe, Myanmar, Iran and Russia)"
 msgstr ""
+"Serveurs d’amorçage pour garantir que tous les nœuds intrapays peuvent "
+"utiliser BitTorrent lors de coupures totales du réseau : 8 (en Europe de l’"
+"Est, en Birmanie, en Iran et en Russie)."
 
 #: factsheet.html%2Bdiv.section.h3:107-1
 msgid "Ceno Analytics"
-msgstr ""
+msgstr "Analyse des données Ceno"
 
 #: factsheet.html%2Bdiv.section.p:108-2
 msgid ""
@@ -267,6 +326,10 @@ msgid ""
 "each user (served via injectors and received from the p2p network) and how "
 "much each user’s specific device has shared with other users."
 msgstr ""
+"Le Navigateur Ceno affiche les ressources fournies directement de l’origine "
+"à chaque utilisateur et utilisatrice (servies par des injecteurs et reçues "
+"du réseau pair à pair), ainsi que la quantité que l’appareil particulier de "
+"chaque utilisateur et utilisatrices a partagée avec d’autres utilisateurs."
 
 #: factsheet.html%2Bdiv.section.p:109-2
 msgid ""
@@ -274,6 +337,10 @@ msgid ""
 "number of reachable bridge nodes and origin sources in the DHT, and (ii) the "
 "bandwidth and number of distinct web resources served by injector servers."
 msgstr ""
+"Les principales mesures de performance pour une version en marque blanche de "
+"Ceno comprennent : (i) le nombre de nœuds-ponts et de sources d’origine "
+"accessibles dans la table de hachage ; (ii) la bande passante et le nombre "
+"de ressources Web distinctes desservies par les serveurs-injecteurs."
 
 #: factsheet.html%2Bdiv.section.p:110-2
 msgid ""
@@ -284,6 +351,13 @@ msgid ""
 "of network injectors, (ii) country of origin and (iii) queries of the "
 "distributed hash table for unique device identifiers."
 msgstr ""
+"D’autres mesures peuvent être conçues et développées pour une plus grande "
+"visibilité et une meilleure évaluation des performances, en tenant compte de "
+"la fonction de décentralisation de Ceno. Sans identifier les utilisateurs, "
+"il est possible d’estimer la participation avec précision grâce : (i) à des "
+"identificateurs réseau pseudonymes et à leur utilisation d’injecteurs réseau "
+"; (ii) au pays d’origine et (iii) aux requêtes de la table de hachage "
+"distribuée par les identificateurs uniques d’appareils."
 
 #: factsheet.html%2Bdiv.section.p:111-2
 msgid ""
@@ -291,10 +365,15 @@ msgid ""
 "users robust privacy-respecting analytics that measure metrics including "
 "distributed cache usage from the user’s vantage point."
 msgstr ""
+"L’intégration de la trousse SDK « Clean Insights » est étudiée comme façon "
+"de fournir aux utilisateurs des données d’analyse solides et respectueuses "
+"de la confidentialité et des données personnelles, avec des mesures qui "
+"comprennent l’utilisation du cache distribué, du point de vue des "
+"utilisateurs."
 
 #: factsheet.html%2Bdiv.section.h3:113-1
 msgid "Ouinet in April 2022"
-msgstr ""
+msgstr "Ouinet en avril 2022"
 
 #: factsheet.html%2Bdiv.section.p:114-2
 msgid ""
@@ -302,10 +381,13 @@ msgid ""
 "to the decentralized content-sharing network, from more than 30,000 unique "
 "websites."
 msgstr ""
+"Les injecteurs de Ouinet ont présenté environ 2 millions de pages (602 Go de "
+"données) au réseau décentralisé de partage de contenu, de plus de 30 000 "
+"sites Web uniques."
 
 #: factsheet.html%2Bdiv.section.h2:118-1
 msgid "Internet shutdowns"
-msgstr ""
+msgstr "Coupures d’Internet"
 
 #: factsheet.html%2Bdiv.section.p:119-9
 msgid ""
@@ -313,6 +395,10 @@ msgid ""
 "restriction scenarios. Precise technical information on shutdowns is often "
 "missing from media coverage. A shutdown can refer to the following:"
 msgstr ""
+"« Coupure d’Internet » est un terme général qui couvre différents scénarios "
+"de limitation de l’accès à Internet. Des informations techniques précises "
+"sur les coupures sont souvent absentes de la couverture médiatique. Une "
+"coupure peut faire référence à :"
 
 #: factsheet.html%2Bdiv.section.p.ul.li:121-9
 msgid ""
@@ -324,6 +410,14 @@ msgid ""
 "transit connections are artificially throttled (e.g., Indian Kashmir in 2019–"
 "2020 and Cuba)."
 msgstr ""
+"<strong>Niveau 1 :</strong> une défaillance totale ou partielle des services "
+"Internet, due à la censure, à des cyberattaques, à des catastrophes "
+"naturelles, à des actions ou à des erreurs de la police ou des services de "
+"sécurité. Ceno traite des scénarios de censure extrême du réseau, quand les "
+"RPV ne sont généralement plus accessibles (p. ex. en Russie en 2022, en "
+"Biélorussie en 2020 et en Iran en 2019), ou quand les connexions de transit "
+"international sont réduites artificiellement (p. ex. au Cachemire indien en "
+"2019 et 2020 et à Cuba)."
 
 #: factsheet.html%2Bdiv.section.p.ul.li:122-9
 msgid ""
@@ -332,6 +426,11 @@ msgid ""
 "country are accessible, yet the local or national network continues to "
 "function. Ceno continues to work in these localized scenarios."
 msgstr ""
+"<strong>Niveau 2 :</strong> Une interdiction des connexions de transit "
+"international (p. ex. au Kazakhstan en 2021), de sorte qu’aucun serveur ou "
+"service situé en dehors du pays n’est accessible, mais que le réseau local "
+"ou national continue de fonctionner. Ceno fonctionne toujours dans ces "
+"scénarios localisés."
 
 #: factsheet.html%2Bdiv.section.p.ul.li:123-9
 msgid ""
@@ -340,6 +439,10 @@ msgid ""
 "still works peer to peer when devices remain powered and are in close "
 "proximity."
 msgstr ""
+"<strong>Niveau 3 :</strong> Si l’électricité ne fonctionne plus lors de "
+"catastrophes nationales ou en temps de guerre (p. ex. à Mariupol en 2022). "
+"Ceno fonctionne toujours de pair à pair tant que les appareils restent "
+"alimentés et à proximité les uns des autres."
 
 #: factsheet.html%2Bdiv.section.p:125-9
 msgid ""
@@ -350,6 +453,12 @@ msgid ""
 "networks – across neighborhoods, regions and nations – from international "
 "connectivity."
 msgstr ""
+"Un nombre croissant de pays ont mis en œuvre des technologies sophistiquées "
+"de surveillance et de filtrage des réseaux afin de nuire aux méthodes "
+"existantes de contournement de la censure et de restreindre les "
+"communications et la libre circulation de l’information sur Internet. "
+"Certains ont même privé des réseaux entiers de connectivité internationale "
+"dans des quartiers, des régions, voire des pays."
 
 #: factsheet.html%2Bdiv.section.p:126-9
 msgid ""
@@ -360,10 +469,18 @@ msgid ""
 "partnerships with ISP for refraction networking, and so on) is no longer "
 "sufficient to ensure connectivity and digital content propagation."
 msgstr ""
+"La plupart des techniques de contournement utilisées aujourd’hui exigent que "
+"l’utilisateur ou l’utilisatrice se connecte d’abord à un relais dans une "
+"zone non censurée. Le jeu du chat et de la souris qui s’en suit entre le "
+"censeur et la méthode de contournement (cette dernière ayant recours à la "
+"distribution créative de mandataires, à l’obscurcissement du trafic, aux "
+"dommages collatéraux, aux partenariats avec certains FAI pour la mise en "
+"réseau par réfraction, etc.) ne suffit plus pour garantir la connectivité et "
+"la propagation du contenu numérique."
 
 #: factsheet.html%2Bdiv.section.h3:129-1
 msgid "How Ceno side-steps censorship"
-msgstr ""
+msgstr "Le contournement de la censure par Ceno"
 
 #: factsheet.html%2Bdiv.section.p:130-9
 msgid ""
@@ -376,20 +493,32 @@ msgid ""
 "environments. Wider adoption will ensure more efficient, low latency and "
 "effective decentralized peer-to-peer communications and distributed caching."
 msgstr ""
+"En fin de compte, les méthodes de censure existantes ont un point de "
+"défaillance unique : les utilisateurs et utilisatrices doivent pénétrer un "
+"pare-feu grâce auquel le censeur surveille. Comme on a pu le constater en "
+"Iran en novembre 2019, en Biélorussie en 2020, au Kazakhstan en 2021 et "
+"actuellement lors de la déconnexion de l’accès illimité à Internet en Russie "
+"cette année, les méthodes de contournement fonctionnent de moins en moins "
+"pour les utilisateurs et utilisatrices de ces pays. Ceno s’est avéré être "
+"une solution qui fonctionne dans ces environnements. Une adoption plus "
+"étendue garantira des communications décentralisées de pair à pair et une "
+"mise en cache distribuée plus efficaces, à faible latence."
 
 #: factsheet.html%2Bdiv.section.h2:134-1
 msgid "User comments"
-msgstr ""
+msgstr "Commentaires d’utilisateurs"
 
 #: factsheet.html%2Bdiv.section.h3:135-1
 msgid "Russia"
-msgstr ""
+msgstr "Russie"
 
 #: factsheet.html%2Bdiv.section.p:136-9
 msgid ""
 "“Nice browser. Without VPN I was able to open blocked resources. But it's "
 "also useful when you don't have connection.”"
 msgstr ""
+"« Un bon navigateur. Sans RPV, j’ai pu ouvrir des ressources bloquées. Mais "
+"il est également utile quand vous n’avez pas de connexion. »"
 
 #: factsheet.html%2Bdiv.section.p:137-2
 msgid ""
@@ -404,16 +533,30 @@ msgid ""
 "besides helping to access websites, it also looks quite innocent which is "
 "great.”"
 msgstr ""
+"« Parce que la Russie menace de bloquer les RPV, Ceno est prometteur. Et "
+"pour votre FAI, ça ressemble à du trafic Torrent et les torrents sont "
+"quelque chose de très courant en Russie, contrairement aux pays occidentaux "
+"où le droit d’auteur est vraiment respecté. De plus, à Moscou la police a "
+"commencé à demander aux gens de montrer leur téléphone et ils regardent les "
+"applis que vous avez. Je me suis fait contrôler ainsi. Ils regardent les RPV "
+"ou les applis de messagerie telles que Signal ou Telegram. Et Ceno ressemble "
+"à un navigateur normal, alors quand ils ont demandé ce que c’était, j’ai "
+"répondu que c’est un navigateur. Pas de problèmes, pas de questions. J’ai "
+"simplement choisi d’effacer régulièrement l’historique de navigation en "
+"fermant Ceno. Donc en plus de m’aider à accéder aux sites Web, il a l’air "
+"tout à fait anodin, ce qui est vraiment bien. »"
 
 #: factsheet.html%2Bdiv.section.p:138-2
 msgid ""
 "“Thanks for a great product. Your browser opens the site http://meduza.io "
 "much faster than the app from @meduzaproject.”"
 msgstr ""
+"« Merci pour cet excellent produit. Votre navigateur ouvre le site http://"
+"meduza.io beaucoup plus rapidement que l’appli de @meduzaproject. »"
 
 #: factsheet.html%2Bdiv.section.h3:140-1
 msgid "Myanmar"
-msgstr ""
+msgstr "Birmanie"
 
 #: factsheet.html%2Bdiv.section.p:141-2
 msgid ""
@@ -421,22 +564,30 @@ msgid ""
 "see that it works well with this app. This is our digital rights. So I will "
 "continue to use it sometimes.”"
 msgstr ""
+"« C’était gênant, à cause des sites Web bloqués. C’est bon de voir que ça "
+"fonctionne bien avec cette appli. C’est nos droits numériques. Je "
+"continuerai donc à l’utiliser parfois. »"
 
 #: factsheet.html%2Bdiv.section.p:142-2
 msgid ""
 "“There are more features I'd like to see in the app, but it is totally a "
 "convenient and useful application.”"
 msgstr ""
+"« J’aimerais que l’appli offre d’autres fonctions, mais c’est une appli "
+"vraiment pratique et utile. »"
 
 #: factsheet.html%2Bdiv.section.h3:144-1
 msgid "Iran"
-msgstr ""
+msgstr "Iran"
 
 #: factsheet.html%2Bdiv.section.p:145-2
 msgid ""
 "“This app is one of our few hopes in times of serious Internet disruptions "
 "in Iran. Please keep it going and make it better and better. Thank you.”"
 msgstr ""
+"« Cette appli est l’un de nos rares espoirs en ces temps de graves "
+"perturbations d’Internet en Iran. Faites en sorte qu’elle continue de "
+"fonctionner et améliorez-la toujours, s’il vous plaît. Merci »"
 
 #: factsheet.html%2Bdiv.section.p:146-2
 msgid ""
@@ -444,3 +595,6 @@ msgid ""
 "possibility of free use of the Internet and everything is filtered by the "
 "government, even filter breakers.”"
 msgstr ""
+"« C’est un bon navigateur, surtout pour nous, Iraniens, qui n’avons pas la "
+"possibilité d’utiliser Internet librement, car tout est filtré par le "
+"gouvernement, même les systèmes antifiltres. »"

@@ -3,30 +3,33 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-18 11:22-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-04-21 23:09+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/censorship-no/"
+"website-v2/website-v2-404/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.15.1\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 
 #: 404.html%2Bdiv.div.h4:3-9
 msgid "Sorry, we can't find the page you're looking for"
-msgstr ""
+msgstr "Lo sentimos, no podemos encontrar la página que buscas"
 
 #: 404.html%2Bdiv.div.p:4-9
 msgid ""
 "That link didn't work. You can return to the <a href=\"index."
 "html\">homepage</a> or get <a href=\"support.html\">support</a>."
 msgstr ""
+"Ese enlace no funcionaba. Puede volver a la <a href=\"index.html\">página de "
+"inicio</a> u obtener <a href=\"support.html\">soporte</a>."
 
 #: 404.html%2Bdiv.div.a[title]:6-9
 msgid "Get Ceno"
-msgstr ""
+msgstr "Obtén Ceno"
 
 #: 404.html%2Bdiv.div:5-49
 msgid "Go to censorship.no"
-msgstr ""
+msgstr "Ir a censorship.no"

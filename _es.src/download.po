@@ -3,15 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-18 11:22-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-04-21 23:09+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Spanish <https://hosted.weblate.org/projects/censorship-no/"
+"website-v2/website-v2-download/es/>\n"
 "Language: es\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.15.1\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.11.1-dev\n"
 
 #: download.html%2Bmain.section.div.div.div:5-17
 msgid "Download Ceno Browser"
@@ -26,6 +27,8 @@ msgid ""
 "The safest way to install Ceno Browser on your Android phone is through the "
 "Google Play Store:"
 msgstr ""
+"La manera más segura de instalar al Navegador Ceno en tu teléfono Android es "
+"a través de Google Play Store:"
 
 #: download.html%2Bmain.section.div.div.h4:20-17
 msgid "IMPORTANT:"
@@ -50,13 +53,16 @@ msgstr ""
 
 #: download.html%2Bmain.section.div.h2:36-13
 msgid "Direct Download"
-msgstr ""
+msgstr "Descarga Directa"
 
 #: download.html%2Bmain.section.div.p:37-13
 msgid ""
 "For advanced users or those unable to install Ceno Browser via the above "
 "links, you can download the latest APK directly:"
 msgstr ""
+"Para usuaria(o)s avanzada(o)s o para quienes no pueden instalar el Navegador "
+"Ceno a través de los vínculos de arriba, pueden descargar la APK más "
+"reciente directamente:"
 
 #: download.html%2Bmain.section.div.div:38-13
 msgid ""
