@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-22 19:37-0400\n"
+"POT-Creation-Date: 2025-04-23 16:07-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgstr ""
 #: ./index.html%2Bmain.div.section.div.ul.li:38-11
 msgid ""
 "Is your internet down or censored? You can still access content with Ceno. "
-"<a href=\"TODO\">Learn how.</a>"
+"<a href=\"/@LANG@/faq.html\">Learn how.</a>"
 msgstr ""
 
 #: ./index.html%2Bmain.div.section.div.ul.li:39-11
@@ -53,8 +53,8 @@ msgstr ""
 
 #: ./index.html%2Bmain.div.section.div.ul.li:40-11
 msgid ""
-"The more that people use it, the better it gets for everyone! <a href=\"TODO"
-"\">Learn how.</a>"
+"The more that people use it, the better it gets for everyone! <a href=\""
+"/@LANG@/faq.html\"\">Learn how.</a>"
 msgstr ""
 
 #: ./index.html%2Bmain.div.section.div.div.a.div:43-58
@@ -115,7 +115,7 @@ msgid ""
 "blockages."
 msgstr ""
 
-#: ./index.html%2Bmain.section.div.div.a.div:87-44
+#: ./index.html%2Bmain.section.div.div.a.div:87-56
 msgid "Learn how it works"
 msgstr ""
 

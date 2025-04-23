@@ -16,8 +16,6 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/static/img/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/static/img/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/static/img/favicon-16x16.png">
-    <link rel="manifest" href="../site.webmanifest">
-    <link rel="mask-icon" href="../img/safari-pinned-tab.svg" color="#e43625">
     <meta name="msapplication-TileColor" content="#e43625">
     <meta name="theme-color" content="#ffffff">
 </head>
@@ -107,8 +105,8 @@
                 <p>In <strong>Public</strong> mode, Ceno will look into the BitTorrent network to see if another Ceno user has recently shared the requested page. If the service can identify the requested page, it will retrieve that page from another user's device. If the content is not available, Ceno will contact several Injectors to request that website and have it delivered to you.</p>
                 <p>In <strong>Personal</strong> mode, you will only contact the Injectors to have that website fetched and delivered to you. The search will not connect to the BitTorrent network and will not attempt to locate the content on other users' devices.</p>
                 <p>Чтобы ваш клиент Ceno всегда мог связаться с инжектором, мы также создали мосты. Если инжекторы заблокированы в вашей сети, приложение Ceno будет искать доступные мосты, которые перешлют ваш запрос инжекторам. В настоящее время в сети Ceno насчитывается около 6 000 мостов. Их число постоянно растет.</p>
-                <p>Более подробное описание работы Ceno можно найти в <a href="../user-manual/">руководстве пользователя</a>.</p>
-                <p>Для более простого объяснения принципа работы Ceno <a href="explainer.html">пожалуйста, прочтите это</a>.</p>
+                <p>For a more detailed explanation of how Ceno works, please read <a href="/user-manual/ru/">the user guide</a>.</p>
+                <p>For a simpler explanation of how Ceno works, <a href="/ru/about.html">please read this</a>.</p>
             </details>
             <details>
                 <summary> В чем преимущества использования Ceno? </summary>
@@ -125,7 +123,7 @@
                 <p>In response to these risks, we created a ‘<strong>Personal</strong> mode' for Ceno users where the service does not interact with the BitTorrent network. We recommend this mode for users who do not want any record of their activity to appear on BitTorrent, as well for website operations that require authentication (for example, when logging into your social media accounts).</p>
                 <p>Вы можете легко переключаться между вкладками <strong>Public</strong> и <strong>Personal</strong> так же, как и между вкладками Normal и Private/Incognito в вашем обычном браузере.</p>
                 <p>Инжекторы также могут видеть запросы на получение контента в сети, включая название сайта и IP-адрес пользователя, сделавшего запрос,. Инжекторы являются необходимым сетевым компонентом для 1) внедрения веб-контента в децентрализованную сеть и 2) проверки целостности внедренного контента. В сети Ceno инжекторы запускаются и управляются командой Ceno. Мы регулярно удаляем всю историю доступа.</p>
-                <h3 style="" id="bridgemode">Риски для операторов Мостов</h3>
+                <h3 id="bridgemode">Риски для операторов Мостов</h3>
                 <p>Поскольку любой пользователь может стать мостом, следует учитывать риски, которые могут возникнуть в этом случае.</p>
                 <p>Деятельность моста незаметна для оператора моста (если только он не ведет активный мониторинг своего устройства на предмет входящих и исходящих соединений). Его задача - принимать сетевые запросы от других пользователей Ceno на доступ к инжектору и пересылать эти запросы.</p>
                 <p>Bridge operators will have their device's IP address listed in the BitTorrent network as an accessible Bridge.</p>
@@ -163,19 +161,19 @@
   <div class="footer-margin row">
     <div class="ceno-footer-statement">
         <div>
-            <a tabindex="1" class="logo" href="index.html"><img height="43" width="141" src="/static/img/logos/ceno-logo.png" /></a>
+            <a tabindex="1" class="logo" href="/ru/index.html"><img height="43" width="141" src="/static/img/logos/ceno-logo.png" /></a>
         </div>
         <p>Ceno Browser is a project by <a href="https://equalitie.org">eQualit.ie</a> – a not-for-profit Canadian organization. Everyday, eQualitie's solutions enable freedom of association for millions of people online.</p>
-        <p><a href="privacy_policy.html">Terms of Use and Privacy Policy</a></p>
+        <p><a href="/ru/privacy_policy.html">Terms of Use and Privacy Policy</a></p>
         <p>© eQualitie 2018-2025</p>
     </div>
     <div class="footer-links">
         <div class="text-links">
             <div class="link-col">
-                <a href="about.html">About</a> <a href="community.html">Community</a> <a href="faq.html">FAQs</a> <a href="support.html">Get Support</a> <a href="donate.html" class="link-btn blue-bg">Donate</a>
+                <a href="/ru/about.html">About</a> <a href="/ru/community.html">Community</a> <a href="/ru/faq.html">FAQs</a> <a href="/ru/support.html">Get Support</a> <a href="/ru/donate.html" class="link-btn blue-bg">Donate</a>
             </div>
             <div class="link-col">
-                <a href="casestudies.html">Case Studies</a> <a href="factsheet.html">Fact Sheet</a> <a href="../user-manual/">User Manual</a> <a href="https://gitlab.com/equalitie/ouinet/blob/main/doc/ouinet-network-whitepaper.md">Whitepaper</a> <a href="download.html" class="link-btn orange-bg">Download</a>
+                <a href="/ru/casestudies.html">Case Studies</a> <a href="/ru/factsheet.html">Fact Sheet</a> <a href="/ru//user-manual/">User Manual</a> <a href="https://gitlab.com/equalitie/ouinet/blob/main/doc/ouinet-network-whitepaper.md">Whitepaper</a> <a href="/ru/download.html" class="link-btn orange-bg">Download</a>
             </div>
         </div>
         <div class="social-icon-grid">
@@ -183,7 +181,7 @@
             <a href="https://twitter.com/cenobrowser"><img src="/static/img/icons/social-logos/twitter.svg" /></a>
             <a href=""><img src="/static/img/icons/social-logos/ig.svg" /></a>
             <a href=""><img src="/static/img/icons/social-logos/yt.svg" /></a>
-            <a href=""><img src="/static/img/icons/social-logos/linkedin.svg" /></a>
+            <a href="https://www.linkedin.com/company/equalit-ie"><img src="/static/img/icons/social-logos/linkedin.svg" /></a>
             <a href="mailto:support@censorship.no" class="mail-icon"><img src="/static/img/icons/social-logos/mail.svg" /></a>
             <a href=""><img src="/static/img/icons/social-logos/mastodon.svg" /></a>
             <a href="https://gitlab.com/censorship-no"><img src="/static/img/icons/social-logos/gitlab.svg" height="24" width="24" /></a>
@@ -192,5 +190,5 @@
   </div>
 </footer>
 <div class="cenoid-footer">
-    <img src="/static/img/footer/cenoid-footer.svg" />
+    <img alt="Hi, I’m Cenoid. Im here to help you understand and use Ceno better." src="/static/img/footer/cenoid-footer.svg" />
 </div>

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-22 19:37-0400\n"
+"POT-Creation-Date: 2025-04-23 16:07-0400\n"
 "PO-Revision-Date: 2025-04-21 23:09+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/censorship-no/"
@@ -19,9 +19,13 @@ msgid "Sorry, we can't find the page you're looking for"
 msgstr "Lo sentimos, no podemos encontrar la página que buscas"
 
 #: 404.html%2Bdiv.div.p:4-9
+#, fuzzy
+#| msgid ""
+#| "That link didn't work. You can return to the <a href=\"index."
+#| "html\">homepage</a> or get <a href=\"support.html\">support</a>."
 msgid ""
 "That link didn't work. You can return to the <a href=\"index."
-"html\">homepage</a> or get <a href=\"support.html\">support</a>."
+"html\">homepage</a> or get <a href=\"/en/support.html\">support</a>."
 msgstr ""
 "Ese enlace no funcionaba. Puede volver a la <a href=\"index.html\">página de "
 "inicio</a> u obtener <a href=\"support.html\">soporte</a>."
@@ -30,6 +34,6 @@ msgstr ""
 msgid "Get Ceno"
 msgstr "Obtén Ceno"
 
-#: 404.html%2Bdiv.div:5-49
+#: 404.html%2Bdiv.div:5-53
 msgid "Go to censorship.no"
 msgstr "Ir a censorship.no"
