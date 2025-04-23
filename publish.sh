@@ -21,8 +21,9 @@ for lang in $(cat supported_locales); do
     echo "wrapping $lang"
 
     for html_src in $(find ../_$lang.src -regex '.*/[^_][^/]+\.html'); do
-        page="$(basename "${html_src%%.html}")"
         html="$(echo $html_src | sed "s#../_$lang.src#.#g")"
+        page="$(echo $html_src | sed -e "s#../_$lang.src/##g" -e "s#.html##g")"
+        echo "$page"
         install -D /dev/null $html
         # TODO: Get from content source, but it must be in some translatable tag or attribute.
         # FIXME: When first adding a page, a placeholder page needs to be dropped in `en`
