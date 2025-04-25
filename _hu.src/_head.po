@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-15 23:57-0400\n"
-"PO-Revision-Date: 2025-04-21 23:09+0000\n"
+"PO-Revision-Date: 2025-04-25 15:49+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Hungarian <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-header/hu/>\n"
@@ -12,12 +12,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: _head.html%2Bhtml[lang]:3-1
 msgctxt "./_head.html+html[lang]:3-1"
 msgid "en"
-msgstr "angol"
+msgstr "hu"
 
 #: _head.html%2Bhtml.body.nav.div.div:28-13
 msgctxt "./_head.html+html.body.nav.div.div:28-13"
@@ -31,7 +31,7 @@ msgstr ""
 #: _head.html%2Bhtml.body.nav.div.div.div.label.img[alt]:37-25
 msgctxt "./_head.html+html.body.nav.div.div.div.label.img[alt]:37-25"
 msgid "Select language"
-msgstr "Kérem válasszon nyevlet"
+msgstr "Nyelvválasztás"
 
 #.  TRANSLATORS: Replace with your language. 
 #: _head.html%2Bhtml.body.nav.div.div.div.label:36-21
@@ -71,13 +71,13 @@ msgstr "A Ceno logója"
 #: _head.html%2Bhtml.body.nav.div.div.div.label.img[alt]:67-25
 msgctxt "./_head.html+html.body.nav.div.div.div.label.img[alt]:67-25"
 msgid "Select language"
-msgstr "Kérem válasszon nyevlet"
+msgstr "Nyelvválasztás"
 
 #.  TRANSLATORS: Please do not translate any of these. 
 #: _head.html%2Bhtml.body.nav.div.div.div.label:66-21
 msgctxt "./_head.html+html.body.nav.div.div.div.label:66-21"
 msgid "en"
-msgstr "angol"
+msgstr "hu"
 
 #.  Sorted alphabetically by language code. 
 #.  TRANSLATORS: Please do not translate any of these. 
