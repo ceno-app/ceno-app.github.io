@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-18 17:06-0400\n"
+"POT-Creation-Date: 2025-04-24 16:52-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -44,7 +44,7 @@ msgstr ""
 #: ./index.html%2Bmain.div.section.div.ul.li:38-11
 msgid ""
 "Is your internet down or censored? You can still access content with Ceno. "
-"<a href=\"TODO\">Learn how.</a>"
+"<a href=\"/@LANG@/faq.html\">Learn how.</a>"
 msgstr ""
 
 #: ./index.html%2Bmain.div.section.div.ul.li:39-11
@@ -52,9 +52,7 @@ msgid "VPNs blocked? You can access the web with Ceno."
 msgstr ""
 
 #: ./index.html%2Bmain.div.section.div.ul.li:40-11
-msgid ""
-"The more that people use it, the better it gets for everyone! <a href=\"TODO"
-"\">Learn how.</a>"
+msgid "The more that people use it, the better it gets for everyone!"
 msgstr ""
 
 #: ./index.html%2Bmain.div.section.div.div.a.div:43-58
@@ -90,9 +88,9 @@ msgstr ""
 
 #: ./index.html%2Bmain.div.div.section.div.p:64-11
 msgid ""
-"Ceno Browser is powered by an open source library called Ouinet that enables "
-"third party developers to incorporate the Ceno network into their apps for "
-"peer-to-peer connectivity."
+"Ceno Browser is powered by an open source library called <a href=\"https"
+"://ouinet.work\">Ouinet</a> that enables third party developers to "
+"incorporate the Ceno network into their apps for peer-to-peer connectivity."
 msgstr ""
 
 #: ./index.html%2Bmain.section.div.h2:71-7
@@ -115,7 +113,7 @@ msgid ""
 "blockages."
 msgstr ""
 
-#: ./index.html%2Bmain.section.div.div.a.div:87-44
+#: ./index.html%2Bmain.section.div.div.a.div:87-51
 msgid "Learn how it works"
 msgstr ""
 

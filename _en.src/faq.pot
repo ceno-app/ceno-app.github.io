@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-18 17:06-0400\n"
+"POT-Creation-Date: 2025-04-24 16:52-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,15 +20,15 @@ msgstr ""
 msgid "Search"
 msgstr ""
 
-#: ./faq.html%2Bmain.section.div.a.div:12-28
+#: ./faq.html%2Bmain.section.div.a.div:12-45
 msgid "Read user manual"
 msgstr ""
 
-#: ./faq.html%2Bmain.section.div.a.div:13-28
+#: ./faq.html%2Bmain.section.div.a.div:13-104
 msgid "Read technical, in-depth whitepaper"
 msgstr ""
 
-#: ./faq.html%2Bmain.section.div.a.div:14-28
+#: ./faq.html%2Bmain.section.div.a.div:14-35
 msgid "Read quick-start guide"
 msgstr ""
 
@@ -94,16 +94,16 @@ msgstr ""
 #: ./faq.html%2Bmain.section.div.details.p:45-17
 msgid ""
 "For a more detailed explanation of how Ceno works, please read <a href"
-"=\"../user-manual/\">the user guide</a>."
+"=\"/user-manual/@LANG@/\">the user guide</a>."
 msgstr ""
 
 #: ./faq.html%2Bmain.section.div.details.p:47-17
 msgid ""
-"For a simpler explanation of how Ceno works, <a href=\"explainer.html\""
+"For a simpler explanation of how Ceno works, <a href=\"/@LANG@/about.html\""
 ">please read this</a>."
 msgstr ""
 
-#: ./faq.html%2Bmain.section.div.details:47-111
+#: ./faq.html%2Bmain.section.div.details:47-115
 msgid "What are the advantages of using Ceno?"
 msgstr ""
 
