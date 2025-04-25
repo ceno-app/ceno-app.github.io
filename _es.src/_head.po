@@ -2,13 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-<<<<<<< HEAD
-"POT-Creation-Date: 2025-04-25 11:48-0400\n"
-"PO-Revision-Date: 2025-04-25 15:28+0000\n"
-=======
 "POT-Creation-Date: 2025-04-25 11:44-0400\n"
 "PO-Revision-Date: 2025-04-25 15:49+0000\n"
->>>>>>> weblate/weblate-integration
 "Last-Translator: Grant Gallo <grant@equalitie.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-header/es/>\n"
