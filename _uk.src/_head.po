@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-15 23:57-0400\n"
-"PO-Revision-Date: 2025-04-25 15:14+0000\n"
-"Last-Translator: Grant Gallo <grant@equalitie.org>\n"
+"PO-Revision-Date: 2025-04-25 15:49+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-header/uk/>\n"
 "Language: uk\n"
@@ -18,7 +18,7 @@ msgstr ""
 #: _head.html%2Bhtml[lang]:3-1
 msgctxt "./_head.html+html[lang]:3-1"
 msgid "en"
-msgstr "uk"
+msgstr "en"
 
 #: _head.html%2Bhtml.body.nav.div.div:28-13
 msgctxt "./_head.html+html.body.nav.div.div:28-13"
@@ -97,7 +97,7 @@ msgstr "Виберіть мову"
 #: _head.html%2Bhtml.body.nav.div.div.div.label:66-21
 msgctxt "./_head.html+html.body.nav.div.div.div.label:66-21"
 msgid "en"
-msgstr "uk"
+msgstr "en"
 
 #.  Sorted alphabetically by language code. 
 #.  TRANSLATORS: Please do not translate any of these. 
