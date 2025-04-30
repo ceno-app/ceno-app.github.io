@@ -121,25 +121,25 @@
                 <p>كل تقنية تتعامل مع حالات استخدام حساسة لها مزاياها ومخاطرها. بحسب تصميمه، يعتمد Ceno على شبكة BitTorrent العامة للعديد من احتياجات التوجيه وتخزين البيانات. عندما تطلب أو تشارك محتوى على شبكة BitTorrent (في الوضع العام)، فإنك تنشئ سجلاً يربط عنوان IP الخاص بك بقطعة محتوى تم جلبها من موقع معين. على سبيل المثال، يمكن لأي شخص الاستعلام من شبكة BitTorrent عن قائمة عناوين IP المرتبطة بـ <i>website.com</i>.</p>
                 <p>قد يتكبد المستخدمون الذين يشاركون المحتوى المسترَد مع الآخرين رسوم بيانات إضافية، حيث يتم نسخ المحتوى من أجهزتهم إلى أجهزة مستخدمي Ceno الآخرين.</p>
                 <p>In response to these risks, we created a ‘<strong>Personal</strong> mode' for Ceno users where the service does not interact with the BitTorrent network. We recommend this mode for users who do not want any record of their activity to appear on BitTorrent, as well for website operations that require authentication (for example, when logging into your social media accounts).</p>
-                <p>You can easily switch between <strong>Public</strong> and <strong>Personal</strong> tabs in the same manner as switching between Normal and Private/Incognito tabs on your current browser.</p>
+                <p>يمكنك التبديل بسهولة بين التبويبات <strong>العامة</strong> و<strong>الشخصية</strong> بنفس الطريقة التي تتبدل بها بين التبويبات العادية والخاصة/التخفي في متصفحك الحالي.</p>
                 <p>يمكن للحاقنات (Injectors) أيضًا رؤية طلبات المحتوى على الشبكة، بما في ذلك عنوان IP الخاص بالمستخدم الذي قدم الطلب واسم موقع الويب الذي يحوي المحتوى المطلوب. تُعد الحاقنات مكونًا ضروريًا للشبكة وذلك لـ: 1) إدخال محتوى الويب إلى شبكة لا مركزية، و2) المصادقة على سلامة المحتوى المُدخل. في شبكة Ceno، يتم تشغيل وإدارة الحاقنات من قبل فريق Ceno. نحذف دوريًا جميع سجلات الوصول.</p>
                 <h3 id="bridgemode">مخاطر على مشغلي الجسور</h3>
-                <p>Since any user can become a Bridge, do consider the risks that are introduced by this action.</p>
-                <p>Bridge activity is invisible to the Bridge operator (unless they are actively monitoring their device for incoming and outgoing connections). Their job is to receive network requests from other Ceno users for access to an Injector and forward this request.</p>
+                <p>نظرًا لأن أي مستخدم يمكنه أن يصبح جسرًا، يجب أخذ المخاطر التي قد تنشأ من هذه الخطوة بعين الاعتبار.</p>
+                <p>نشاط الجسر غير مرئي لمشغل الجسر (إلا إذا كانوا يراقبون جهازهم بنشاط لطلبات الاتصال الواردة والصادرة). مهمتهم هي استقبال طلبات الشبكة من مستخدمي Ceno الآخرين للوصول إلى المحقن وإعادة توجيه هذه الطلبات.</p>
                 <p>Bridge operators will have their device's IP address listed in the BitTorrent network as an accessible Bridge.</p>
-                <p>Bridging only works when the network that you are in allows for incoming connections. This is checked automatically by the Ceno client app upon start. Most wireless mobile carriers do not allow for incoming connections.</p>
+                <p>يعمل الجسر فقط عندما تسمح الشبكة التي تتواجد فيها بالاتصالات الواردة. يتم التحقق من ذلك تلقائيًا بواسطة تطبيق Ceno عند البدء. معظم مزودي الخدمة اللاسلكية المحمولة لا يسمحون بالاتصالات الواردة.</p>
             </details>
             <details>
                 <summary> ما هو متصفح Ceno؟ </summary>
-                <p>Ceno is a technology created and maintained by the Canadian non-profit organization <a href="https://equalit.ie">eQualitie</a>. They have incorporated their <a href="https://ouinet.work">Ouinet network library</a> into the Firefox Android browser.</p>
-                <p>eQualitie has been in existence for twelve years, during which time they have been creating and advancing tools to protect freedom of speech, facilitate information exchange, and promote self-expression on the internet.</p>
-                <p>Some of their other projects include <a href="https://ouisync.net">Ouisync</a>, a service for decentralized file sharing; <a href="https://deflect.ca">Deflect</a>, a tool for DDoS protection; Baskerville, a machine learning-based attack detection system; and the dComms deployment toolkit for setting up decentralized and federated network services.</p>
+                <p>Ceno هي تقنية تم إنشاؤها وصيانتها من قبل المنظمة غير الربحية الكندية <a href="https://equalit.ie">eQualitie</a>. لقد دمجوا مكتبة <a href="https://ouinet.work">Ouinet network</a> الخاصة بهم في متصفح فايرفوكس لنظام أندرويد.</p>
+                <p>توجد eQualitie منذ اثني عشر عامًا، حيث قامت خلالها بإنشاء وتطوير أدوات لحماية حرية التعبير، وتسهيل تبادل المعلومات، وتعزيز التعبير عن النفس على الإنترنت.</p>
+                <p>تشمل بعض مشاريعهم الأخرى <a href="https://ouisync.net">Ouisync</a>، وهو خدمة لمشاركة الملفات بشكل لامركزي؛ <a href="https://deflect.ca">Deflect</a>، وهي أداة للحماية من هجمات DDoS؛ وBaskerville، وهو نظام للكشف عن الهجمات يعتمد على التعلم الآلي؛ وأداة نشر dComms لإعداد خدمات الشبكة اللامركزية والفيدرالية.</p>
             </details>
             <details>
                 <summary> What's the difference between using a VPN and Ceno Browser? </summary>
-                <p>VPNs were initially created for private communications between your device and a destination server. As Internet censorship became a frequent occurrence around the world, VPN providers began to offer their services in order to bypass local network restrictions as well. Today, there are numerous VPN providers offering a wide variety of connectivity options to help their users get around local network censorship.
+                <p>تم إنشاء شبكات الـ VPN في البداية للتواصل الخاص بين جهازك وخادم الوجهة. ومع تزايد الرقابة على الإنترنت في جميع أنحاء العالم، بدأ مزودو الـ VPN في تقديم خدماتهم لتجاوز القيود المحلية على الشبكات أيضًا. اليوم، هناك العديد من مزودي خدمات الـ VPN الذين يقدمون مجموعة واسعة من خيارات الاتصال لمساعدة مستخدميهم على تجاوز الرقابة المحلية على الشبكات.
                 </p>
-                <p>VPNs can see who their clients are and what websites they are requesting. This is by design and a level of trust in the VPN operator is required (much like the trust that is required in eQualitie, who operates the Ceno Injectors). </p>
+                <p>يمكن لـ VPNs معرفة من هم عملاؤهم وما هي المواقع التي يطلبونها. وهذا التصميم يتطلب مستوى من الثقة في مشغل الـ VPN (تمامًا كما هو الحال مع الثقة المطلوبة في eQualitie، التي تدير محقنات Ceno). </p>
                 <p>Ceno's primary distinction from a VPN is that it does attempt to route all of your website requests through the decentralized network. When a website is available without restriction, Ceno will simply connect to it like a normal web browser. Also, Ceno users cache and share content with each other. This reduces the strain on censorship circumvention nodes and improves deliverability. </p>
             </details>
             <details>
@@ -147,12 +147,12 @@
                 <p>Unlike Tor Browser, Ceno Browser is not a tool for anonymity, which is Tor's primary purpose. In the Tor network, network traffic is encrypted and routed through a network of relays run by volunteers, and appears to originate from the IP address of an exit node. Tor is an excellent option for privacy from Internet surveillance and website operators. If it works in your network environment, we recommend it, provided that you've also read <a href="https://support.torproject.org/">their support documentation</a>.</p>
             </details>
             <details>
-                <summary> Whats the difference between Personal and Public tabs, again? </summary>
-                <p>Public tabs use all connectivity methods available in the Ceno network to get the content you want. When browsing using a Public tab you will leave a record of your activity on the public BitTorrent network (your IP address and website you requested). Content that has been retrieved by your device inside a Public tab will be shared with other Ceno users via the BitTorrent network.</p>
-                <p>Information requested and retrieved in a Personal tab is not shared with anyone else. No record of your activity is recorded on BitTorrent. Use Personal tabs for logging into social media and other accounts. Also use them if you do not want to be associated on BitTorrent with any of your browsing activity in Ceno.</p>
+                <summary> ما الفرق بين التبويبات الشخصية والعامة مرة أخرى؟ </summary>
+                <p>التبويبات العامة تستخدم جميع طرق الاتصال المتاحة في شبكة Ceno للحصول على المحتوى الذي تريده. عند التصفح باستخدام تبويب عام، ستترك سجلاً لنشاطك على شبكة BitTorrent العامة (عنوان IP الخاص بك والموقع الذي طلبته). المحتوى الذي تم استرجاعه بواسطة جهازك داخل تبويب عام سيتم مشاركته مع مستخدمي Ceno الآخرين عبر شبكة BitTorrent.</p>
+                <p>المعلومات المطلوبة والمسترجعة في تبويب شخصي لا يتم مشاركتها مع أي شخص آخر. لا يتم تسجيل أي سجل لنشاطك على شبكة BitTorrent. استخدم التبويبات الشخصية لتسجيل الدخول إلى وسائل التواصل الاجتماعي وحسابات أخرى. كما استخدمها إذا كنت لا ترغب في أن يتم ربط نشاطك على BitTorrent بأي من أنشطتك في Ceno.</p>
             </details>
             <details>
-                <summary> When will there be an iPhone or Windows version? </summary>
+                <summary> متى سيكون هناك إصدار لـ iPhone أو Windows؟ </summary>
                 <p>تجري حاليًا عملية تطوير متصفح Ceno لنظامي iOS وWindows، مع خطط للإصدار في أوائل عام 2025.</p>
             </details>
         </div>

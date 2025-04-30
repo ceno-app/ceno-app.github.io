@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-15 23:57-0400\n"
+"POT-Creation-Date: 2025-04-30 17:25-0400\n"
 "PO-Revision-Date: 2025-04-22 05:36+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/censorship-no/"
@@ -22,15 +22,15 @@ msgstr ""
 msgid "Search"
 msgstr "Buscar"
 
-#: faq.html%2Bmain.section.div.a.div:12-28
+#: faq.html%2Bmain.section.div.a.div:12-45
 msgid "Read user manual"
 msgstr ""
 
-#: faq.html%2Bmain.section.div.a.div:13-28
+#: faq.html%2Bmain.section.div.a.div:13-104
 msgid "Read technical, in-depth whitepaper"
 msgstr ""
 
-#: faq.html%2Bmain.section.div.a.div:14-28
+#: faq.html%2Bmain.section.div.a.div:14-35
 msgid "Read quick-start guide"
 msgstr ""
 
@@ -39,11 +39,20 @@ msgid "What is Ceno Browser?"
 msgstr "¿Qué es el Navegador Ceno?"
 
 #: faq.html%2Bmain.section.div.details.p:21-17
+#, fuzzy
+#| msgid ""
+#| "Ceno is a mobile web browser based on Mozilla Android Components. It is "
+#| "designed for accessing and distributing web content (websites) using a "
+#| "novel approach that relies on BitTorrent – a decentralized file sharing "
+#| "network. Ceno’s advantage comes from side-stepping current Internet "
+#| "censorship methods and allowing people to access and share web "
+#| "information in and across regions where connectivity has been interrupted "
+#| "or compromised."
 msgid ""
 "Ceno is a mobile web browser based on Mozilla Android Components. It is "
 "designed for accessing and distributing web content (websites) using a novel "
 "approach that relies on BitTorrent – a decentralized file sharing network. "
-"Ceno’s advantage comes from side-stepping current Internet censorship "
+"Ceno's advantage comes from side-stepping current Internet censorship "
 "methods and allowing people to access and share web information in and "
 "across regions where connectivity has been interrupted or compromised."
 msgstr ""
@@ -82,11 +91,19 @@ msgstr ""
 "<strong>Público</strong> o <strong>Personal</strong>."
 
 #: faq.html%2Bmain.section.div.details.p:34-17
+#, fuzzy
+#| msgid ""
+#| "In <strong>Public</strong> mode, Ceno will look into the BitTorrent "
+#| "network to see if another Ceno user has recently shared the requested "
+#| "page. If the service can identify the requested page, it will retrieve "
+#| "that page from another user’s device. If the content is not available, "
+#| "Ceno will contact several Injectors to request that website and have it "
+#| "delivered to you."
 msgid ""
 "In <strong>Public</strong> mode, Ceno will look into the BitTorrent network "
 "to see if another Ceno user has recently shared the requested page. If the "
 "service can identify the requested page, it will retrieve that page from "
-"another user’s device. If the content is not available, Ceno will contact "
+"another user's device. If the content is not available, Ceno will contact "
 "several Injectors to request that website and have it delivered to you."
 msgstr ""
 "En el modo <strong>público</strong>, Ceno buscará en la red BitTorrent para "
@@ -97,11 +114,17 @@ msgstr ""
 "solicitar esa página web y mostrarla."
 
 #: faq.html%2Bmain.section.div.details.p:38-17
+#, fuzzy
+#| msgid ""
+#| "In <strong>Personal</strong> mode, you will only contact the Injectors to "
+#| "have that website fetched and delivered to you. The search will not "
+#| "connect to the BitTorrent network and will not attempt to locate the "
+#| "content on other users’ devices."
 msgid ""
 "In <strong>Personal</strong> mode, you will only contact the Injectors to "
 "have that website fetched and delivered to you. The search will not connect "
 "to the BitTorrent network and will not attempt to locate the content on "
-"other users’ devices."
+"other users' devices."
 msgstr ""
 "En el modo <strong>personal</strong>, solo se pondrá en contacto con los "
 "inyectores para que se obtenga y se entregue esa página web. La búsqueda no "
@@ -123,28 +146,43 @@ msgstr ""
 "Puentes. El número siempre está creciendo."
 
 #: faq.html%2Bmain.section.div.details.p:45-17
+#, fuzzy
+#| msgid ""
+#| "For a more detailed explanation of how Ceno works, please read <a "
+#| "href=\"../user-manual/\">the user guide</a>."
 msgid ""
-"For a more detailed explanation of how Ceno works, please read <a href=\"../"
-"user-manual/\">the user guide</a>."
+"For a more detailed explanation of how Ceno works, please read <a href=\"/"
+"user-manual/@LANG@/\">the user guide</a>."
 msgstr ""
 "Para una explicación más detallada de cómo funciona Céno, por favor lea <a "
 "href=\"../user-manual/\">la guía del usuario</a>."
 
 #: faq.html%2Bmain.section.div.details.p:47-17
+#, fuzzy
+#| msgid ""
+#| "For a simpler explanation of how Ceno works, <a href=\"explainer."
+#| "html\">please read this</a>."
 msgid ""
-"For a simpler explanation of how Ceno works, <a href=\"explainer."
+"For a simpler explanation of how Ceno works, <a href=\"/@LANG@/about."
 "html\">please read this</a>."
 msgstr ""
-"Para una explicación más sencilla de cómo funciona Ceno, <a href="
-"\"explainer.html\">por favor, lee esto</a>."
+"Para una explicación más sencilla de cómo funciona Ceno, <a href=\"explainer."
+"html\">por favor, lee esto</a>."
 
-#: faq.html%2Bmain.section.div.details:47-111
+#: faq.html%2Bmain.section.div.details:47-115
 msgid "What are the advantages of using Ceno?"
 msgstr "¿Cuáles son las ventajas de utilizar Ceno?"
 
 #: faq.html%2Bmain.section.div.details.p:51-17
+#, fuzzy
+#| msgid ""
+#| "Our motto is ‘Share the Web!’ and essentially that is what Ceno users are "
+#| "doing. Most web pages have static content (something you read, watch, "
+#| "listen to, etc.). Static content can be packaged and shared with other "
+#| "users seeking the same content. Ceno uses the BitTorrent file sharing "
+#| "network for this."
 msgid ""
-"Our motto is ‘Share the Web!’ and essentially that is what Ceno users are "
+"Our motto is ‘Share the Web!' and essentially that is what Ceno users are "
 "doing. Most web pages have static content (something you read, watch, listen "
 "to, etc.). Static content can be packaged and shared with other users "
 "seeking the same content. Ceno uses the BitTorrent file sharing network for "
@@ -157,8 +195,18 @@ msgstr ""
 "Ceno utiliza la red de intercambio de archivos BitTorrent."
 
 #: faq.html%2Bmain.section.div.details.p:54-17
+#, fuzzy
+#| msgid ""
+#| "Ceno’s advantage is evident in a network that censors websites, or where "
+#| "the network is weak or unstable. In these circumstances, the Ceno client "
+#| "is able to leverage additional methods to retrieve content and deliver it "
+#| "to your device. By allowing users to enable sharing of content they have "
+#| "recently retrieved, Ceno expands access to the internet more generally. "
+#| "Whether you are living in a part of the world that restricts access to "
+#| "content, or in a remote area with limited access to the internet, Ceno "
+#| "allows you to access information that may otherwise be unavailable."
 msgid ""
-"Ceno’s advantage is evident in a network that censors websites, or where the "
+"Ceno's advantage is evident in a network that censors websites, or where the "
 "network is weak or unstable. In these circumstances, the Ceno client is able "
 "to leverage additional methods to retrieve content and deliver it to your "
 "device. By allowing users to enable sharing of content they have recently "
@@ -201,9 +249,8 @@ msgid ""
 msgstr ""
 "Ceno, y todos los componentes que acompañan a la herramienta y que juntos "
 "crean una red descentralizada de pares y nodos, es un software libre y de "
-"código abierto. ¡Puedes <a href="
-"\"https://gitlab.com/censorship-no/ceno-browser\"> inspeccionar nuestro "
-"código</a> o recrear la red entera tú mismo!"
+"código abierto. ¡Puedes <a href=\"https://gitlab.com/censorship-no/ceno-"
+"browser\"> inspeccionar nuestro código</a> o recrear la red entera tú mismo!"
 
 #: faq.html%2Bmain.section.div.details:66-38
 msgid "What are the risks of using Ceno?"
@@ -243,8 +290,16 @@ msgstr ""
 "tu dispositivo al dispositivo de otros usuarios de Ceno."
 
 #: faq.html%2Bmain.section.div.details.p:79-17
+#, fuzzy
+#| msgid ""
+#| "In response to these risks, we created a ‘<strong>Personal</strong> mode’ "
+#| "for Ceno users where the service does not interact with the BitTorrent "
+#| "network. We recommend this mode for users who do not want any record of "
+#| "their activity to appear on BitTorrent, as well for website operations "
+#| "that require authentication (for example, when logging into your social "
+#| "media accounts)."
 msgid ""
-"In response to these risks, we created a ‘<strong>Personal</strong> mode’ "
+"In response to these risks, we created a ‘<strong>Personal</strong> mode' "
 "for Ceno users where the service does not interact with the BitTorrent "
 "network. We recommend this mode for users who do not want any record of "
 "their activity to appear on BitTorrent, as well for website operations that "
@@ -310,8 +365,12 @@ msgstr ""
 "otros usuarios de Ceno para acceder a un inyector y reenviarlas."
 
 #: faq.html%2Bmain.section.div.details.p:95-17
+#, fuzzy
+#| msgid ""
+#| "Bridge operators will have their device’s IP address listed in the "
+#| "BitTorrent network as an accessible Bridge."
 msgid ""
-"Bridge operators will have their device’s IP address listed in the "
+"Bridge operators will have their device's IP address listed in the "
 "BitTorrent network as an accessible Bridge."
 msgstr ""
 "Los operadores del puente tendrán la dirección IP del dispositivo en la "
@@ -363,15 +422,17 @@ msgid ""
 "dComms deployment toolkit for setting up decentralized and federated network "
 "services."
 msgstr ""
-"Algunos de sus otros proyectos incluyen <a href=\"https://ouisync.net\""
-">Ouisync</a>, un servicio para compartir archivos de forma descentralizada; "
-"<a href=\"https://deflect.ca\">Deflect</a>, una herramienta para la "
-"protección DDoS; Baskerville, un sistema de detección de ataques basado en "
-"aprendizaje automático; y el kit de herramientas de implementación de dComms "
-"para configurar servicios de red descentralizados y federados."
+"Algunos de sus otros proyectos incluyen <a href=\"https://ouisync."
+"net\">Ouisync</a>, un servicio para compartir archivos de forma "
+"descentralizada; <a href=\"https://deflect.ca\">Deflect</a>, una herramienta "
+"para la protección DDoS; Baskerville, un sistema de detección de ataques "
+"basado en aprendizaje automático; y el kit de herramientas de implementación "
+"de dComms para configurar servicios de red descentralizados y federados."
 
 #: faq.html%2Bmain.section.div.details:110-77
-msgid "What’s the difference between using a VPN and Ceno Browser?"
+#, fuzzy
+#| msgid "What’s the difference between using a VPN and Ceno Browser?"
+msgid "What's the difference between using a VPN and Ceno Browser?"
 msgstr "¿Cuál es la diferencia entre usar una VPN y Ceno Browser?"
 
 #: faq.html%2Bmain.section.div.details.p:114-17
@@ -404,8 +465,16 @@ msgstr ""
 "opera los inyectores Ceno)."
 
 #: faq.html%2Bmain.section.div.details.p:122-17
+#, fuzzy
+#| msgid ""
+#| "Ceno’s primary distinction from a VPN is that it does attempt to route "
+#| "all of your website requests through the decentralized network. When a "
+#| "website is available without restriction, Ceno will simply connect to it "
+#| "like a normal web browser. Also, Ceno users cache and share content with "
+#| "each other. This reduces the strain on censorship circumvention nodes and "
+#| "improves deliverability."
 msgid ""
-"Ceno’s primary distinction from a VPN is that it does attempt to route all "
+"Ceno's primary distinction from a VPN is that it does attempt to route all "
 "of your website requests through the decentralized network. When a website "
 "is available without restriction, Ceno will simply connect to it like a "
 "normal web browser. Also, Ceno users cache and share content with each "
@@ -420,17 +489,29 @@ msgstr ""
 "nodos de elusión de la censura y mejora la capacidad de entrega."
 
 #: faq.html%2Bmain.section.div.details:125-103
-msgid "What’s the difference between using the Tor and Ceno browsers?"
+#, fuzzy
+#| msgid "What’s the difference between using the Tor and Ceno browsers?"
+msgid "What's the difference between using the Tor and Ceno browsers?"
 msgstr "¿Cuál es la diferencia entre utilizar los Navegadores Tor y Ceno?"
 
 #: faq.html%2Bmain.section.div.details.p:129-17
+#, fuzzy
+#| msgid ""
+#| "Unlike Tor Browser, Ceno Browser is not a tool for anonymity, which is "
+#| "Tor’s primary purpose. In the Tor network, network traffic is encrypted "
+#| "and routed through a network of relays run by volunteers, and appears to "
+#| "originate from the IP address of an exit node. Tor is an excellent option "
+#| "for privacy from Internet surveillance and website operators. If it works "
+#| "in your network environment, we recommend it, provided that you’ve also "
+#| "read <a href=\"https://support.torproject.org/\">their support "
+#| "documentation</a>."
 msgid ""
-"Unlike Tor Browser, Ceno Browser is not a tool for anonymity, which is Tor’s "
+"Unlike Tor Browser, Ceno Browser is not a tool for anonymity, which is Tor's "
 "primary purpose. In the Tor network, network traffic is encrypted and routed "
 "through a network of relays run by volunteers, and appears to originate from "
 "the IP address of an exit node. Tor is an excellent option for privacy from "
 "Internet surveillance and website operators. If it works in your network "
-"environment, we recommend it, provided that you’ve also read <a "
+"environment, we recommend it, provided that you've also read <a "
 "href=\"https://support.torproject.org/\">their support documentation</a>."
 msgstr ""
 "A diferencia del Navegador Tor, el Navegador Ceno no es una herramienta para "
@@ -439,8 +520,8 @@ msgstr ""
 "administrados por voluntarios, y parece originarse a partir de la dirección "
 "IP de un nodo de salida. Tor es una excelente opción para la privacidad y "
 "contra la vigilancia de Internet y operadores de páginas web. Si funciona en "
-"tu entorno de red, lo recomendamos, siempre que también hayas leído <a href="
-"\"https://support.torproject.org/\">su documentación de soporte</a>."
+"tu entorno de red, lo recomendamos, siempre que también hayas leído <a "
+"href=\"https://support.torproject.org/\">su documentación de soporte</a>."
 
 #: faq.html%2Bmain.section.div.details:134-43
 msgid "Whats the difference between Personal and Public tabs, again?"
