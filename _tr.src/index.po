@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-15 23:57-0400\n"
+"POT-Creation-Date: 2025-04-30 16:16-0400\n"
 "PO-Revision-Date: 2025-04-21 23:06+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/censorship-no/"
@@ -29,141 +29,145 @@ msgstr ""
 msgid "Join 566,565 other users"
 msgstr ""
 
-#: index.html%2Bmain.section.div.div.div:11-9
-msgid "COMING SOON ON DESKTOP"
-msgstr ""
-
-#: index.html%2Bmain.section.div.h2:17-7
+#: index.html%2Bmain.section.div.h2:23-7
 msgid "Ceno in Media"
 msgstr ""
 
-#: index.html%2Bmain.div.section.div.h1:29-9
+#: index.html%2Bmain.div.section.div.h1:35-9
 msgid "Browse with a superpower"
 msgstr ""
 
-#: index.html%2Bmain.div.section.div.p:30-9
+#: index.html%2Bmain.div.section.div.p:36-9
 msgid ""
 "Ceno is the world's first browser that allows people to access blocked "
 "content with the help of other Ceno users."
 msgstr ""
 
-#: index.html%2Bmain.div.section.div.ul.li:32-11
+#: index.html%2Bmain.div.section.div.ul.li:38-11
 msgid ""
 "Is your internet down or censored? You can still access content with Ceno. "
-"<a href=\"TODO\">Learn how.</a>"
+"<a href=\"/@LANG@/faq.html\">Learn how.</a>"
 msgstr ""
 
-#: index.html%2Bmain.div.section.div.ul.li:33-11
+#: index.html%2Bmain.div.section.div.ul.li:39-11
 msgid "VPNs blocked? You can access the web with Ceno."
 msgstr ""
 
-#: index.html%2Bmain.div.section.div.ul.li:34-11
-msgid ""
-"The more that people use it, the better it gets for everyone! <a "
-"href=\"TODO\">Learn how.</a>"
+#: index.html%2Bmain.div.section.div.ul.li:40-11
+msgid "The more that people use it, the better it gets for everyone!"
 msgstr ""
 
-#: index.html%2Bmain.div.section.div.div.a.div:37-46
-msgctxt "./index.html+main.div.section.div.div.a.div:37-46"
+#: index.html%2Bmain.div.section.div.div.a.div:43-58
+#, fuzzy
+#| msgctxt "./index.html+main.div.section.div.div.a.div:37-46"
+#| msgid "Download Ceno"
+msgctxt "./index.html+main.div.section.div.div.a.div:43-58"
 msgid "Download Ceno"
 msgstr "Ceno indir"
 
-#: index.html%2Bmain.div.div.section.div.h2:47-11
+#: index.html%2Bmain.div.div.section.div.h2:53-11
 msgid "Resilient"
 msgstr ""
 
-#: index.html%2Bmain.div.div.section.div.p:48-11
+#: index.html%2Bmain.div.div.section.div.p:54-11
 msgid ""
 "Websites are shared by a global network of peers, and stored in a "
 "distributed cache for availability when traditional networks are blocked or "
 "go down."
 msgstr ""
 
-#: index.html%2Bmain.div.div.section.div.h2:52-11
+#: index.html%2Bmain.div.div.section.div.h2:58-11
 msgid "Lower data cost"
 msgstr ""
 
-#: index.html%2Bmain.div.div.section.div.p:53-11
+#: index.html%2Bmain.div.div.section.div.p:59-11
 msgid ""
 "You pay lower data cost because Ceno Browser routes user traffic through "
 "peer-to-peer networks, while still providing you with circumvention "
 "capability."
 msgstr ""
 
-#: index.html%2Bmain.div.div.section.div.h2:57-11
+#: index.html%2Bmain.div.div.section.div.h2:63-11
 msgid "Free and open source"
 msgstr ""
 
-#: index.html%2Bmain.div.div.section.div.p:58-11
+#: index.html%2Bmain.div.div.section.div.p:64-11
 msgid ""
-"Ceno Browser is powered by an open source library called Ouinet that enables "
-"third party developers to incorporate the Ceno network into their apps for "
-"peer-to-peer connectivity."
+"Ceno Browser is powered by an open source library called <a href=\"https://"
+"ouinet.work\">Ouinet</a> that enables third party developers to incorporate "
+"the Ceno network into their apps for peer-to-peer connectivity."
 msgstr ""
 
-#: index.html%2Bmain.section.div.h2:65-7
+#: index.html%2Bmain.section.div.h2:71-7
 msgid "Be prepared with Ceno"
 msgstr ""
 
-#: index.html%2Bmain.section.div.div.div.p:69-11
+#: index.html%2Bmain.section.div.div.div.p:75-11
 msgid ""
 "Don't wait until the next time the internet is blocked to find a solution. "
 "Download Ceno now."
 msgstr ""
 
-#: index.html%2Bmain.section.div.div.div.p:73-11
+#: index.html%2Bmain.section.div.div.div.p:79-11
 msgid "Help yourself and others. Keep Ceno installed and use it frequently."
 msgstr ""
 
-#: index.html%2Bmain.section.div.div.div.p:77-11
+#: index.html%2Bmain.section.div.div.div.p:83-11
 msgid ""
 "Share websites you access to help build resilience against internet "
 "blockages."
 msgstr ""
 
-#: index.html%2Bmain.section.div.div.a.div:81-44
+#: index.html%2Bmain.section.div.div.a.div:87-51
 msgid "Learn how it works"
 msgstr ""
 
-#: index.html%2Bmain.section.div.div:87-7
+#: index.html%2Bmain.section.div.div:93-7
 msgid ""
 "Ceno is designed by <a>eQualitie</a>, a non-profit creating free & open "
 "source tools to protect freedom of speech, facilitate information exchange, "
 "& promote self-expression on the internet."
 msgstr ""
 
-#: index.html%2Bmain.section.div.div.a.div:89-44
+#: index.html%2Bmain.section.div.div.a.div:95-56
 msgid "Get Ceno"
 msgstr "Ceno'yu edinin"
 
-#: index.html%2Bmain.section.div.h2:99-7
+#: index.html%2Bmain.section.div.h2:105-7
 msgid "What Ceno users say"
 msgstr ""
 
-#: index.html%2Bmain.section.div.div.div.p:102-11
+#: index.html%2Bmain.section.div.div.div.p:108-11
 msgid ""
-"“Extremely important program. and not only for totalitarian countries, I "
+"\"Extremely important program. and not only for totalitarian countries, I "
 "think people of the free world should also use it more often to create a "
-"cache of pages. loads faster than other browsers.”"
+"cache of pages. loads faster than other browsers.\""
 msgstr ""
 
-#: index.html%2Bmain.section.div.div.div.div.label:105-13
+#: index.html%2Bmain.section.div.div.div.div:109-11
 msgid "Yuriy Karetin"
 msgstr ""
 
-#: index.html%2Bmain.section.div.div.div.p:109-11
+#: index.html%2Bmain.section.div.div.div.p:115-11
 msgid ""
-"“Awesome technology, it's free and works fine in Russia where a lot of sites "
-"are blocked. The whole image hosting of huge music platform Bandcamp is "
-"blocked here for more than a year now because of a single picture, so great "
-"to see album covers there again - and without VPN!”"
+"\"Awesome technology, it's free and works fine in Russia where a lot of "
+"sites are blocked. The whole image hosting of huge music platform Bandcamp "
+"is blocked here for more than a year now because of a single picture, so "
+"great to see album covers there again - and without VPN!\""
 msgstr ""
 
-#: index.html%2Bmain.section.div.div.div.div.label:112-13
+#: index.html%2Bmain.section.div.div.div.div:116-11
 msgid "Tim Six"
 msgstr ""
 
-#: index.html%2Bmain.section.div.div.a.div:117-44
-msgctxt "./index.html+main.section.div.div.a.div:117-44"
+#: index.html%2Bmain.section.div.div.a.div:123-56
+#, fuzzy
+#| msgctxt "./index.html+main.div.section.div.div.a.div:37-46"
+#| msgid "Download Ceno"
+msgctxt "./index.html+main.section.div.div.a.div:123-56"
 msgid "Download Ceno"
 msgstr "Ceno indir"
+
+#~ msgctxt "./index.html+main.section.div.div.a.div:117-44"
+#~ msgid "Download Ceno"
+#~ msgstr "Ceno indir"

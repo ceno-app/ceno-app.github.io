@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-15 23:57-0400\n"
+"POT-Creation-Date: 2025-04-30 16:16-0400\n"
 "PO-Revision-Date: 2025-04-21 23:09+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/censorship-no/"
@@ -46,8 +46,7 @@ msgstr "حامی مالی شوید"
 
 #: donate.html%2Bmain.section.div.div.div.div.p:21-25
 msgid "We are currently exploring fundraising platforms and communities:"
-msgstr ""
-"ما در حال حاضر مشغول بررسی پلتفرم‌ها و گروه‌های جمع‌آوری کمک مالی هستیم:"
+msgstr "ما در حال حاضر مشغول بررسی پلتفرم‌ها و گروه‌های جمع‌آوری کمک مالی هستیم:"
 
 #: donate.html%2Bmain.section.div.div.div.div.div:22-25
 msgid "Sponsor on Github"
