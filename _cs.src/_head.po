@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-30 16:16-0400\n"
-"PO-Revision-Date: 2025-04-22 05:36+0000\n"
+"PO-Revision-Date: 2025-04-30 21:00+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-header/cs/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: _head.html%2Bhtml[lang]:3-1
 msgctxt "./_head.html+html[lang]:3-1"
@@ -28,9 +28,6 @@ msgid ""
 msgstr ""
 
 #: _head.html%2Bhtml.body.nav.div.div.div.label.img[alt]:35-25
-#, fuzzy
-#| msgctxt "./_head.html+html.body.nav.div.div.div.label.img[alt]:37-25"
-#| msgid "Select language"
 msgctxt "./_head.html+html.body.nav.div.div.div.label.img[alt]:35-25"
 msgid "Select language"
 msgstr "Výběr jazyka"
@@ -62,9 +59,6 @@ msgid ""
 msgstr ""
 
 #: _head.html%2Bhtml.body.nav.div.div:55-17
-#, fuzzy
-#| msgctxt "./_head.html+html.body.nav.div.div:57-17"
-#| msgid "Download"
 msgctxt "./_head.html+html.body.nav.div.div:55-17"
 msgid "Download"
 msgstr "Stahování"
@@ -74,18 +68,12 @@ msgid "Ceno logo"
 msgstr "Ceno logo"
 
 #: _head.html%2Bhtml.body.nav.div.div.div.label.img[alt]:65-25
-#, fuzzy
-#| msgctxt "./_head.html+html.body.nav.div.div.div.label.img[alt]:37-25"
-#| msgid "Select language"
 msgctxt "./_head.html+html.body.nav.div.div.div.label.img[alt]:65-25"
 msgid "Select language"
 msgstr "Výběr jazyka"
 
 #.  TRANSLATORS: Replace with your lowercase language code. 
 #: _head.html%2Bhtml.body.nav.div.div.div:62-17
-#, fuzzy
-#| msgctxt "./_head.html+html[lang]:3-1"
-#| msgid "en"
 msgctxt "./_head.html+html.body.nav.div.div.div:62-17"
 msgid "en"
 msgstr "cz"
@@ -113,9 +101,6 @@ msgstr ""
 
 #.  These spans are used to create the animated hamburger button 
 #: _head.html%2Bhtml.body.nav.div.div:86-17
-#, fuzzy
-#| msgctxt "./_head.html+html.body.nav.div.div:57-17"
-#| msgid "Download"
 msgctxt "./_head.html+html.body.nav.div.div:86-17"
 msgid "Download"
 msgstr "Stahování"
