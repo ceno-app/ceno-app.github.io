@@ -3,6 +3,8 @@
 # Takes _en.src, generates all locales, and builds all their sites
 # with overwrites!
 
+set -e
+
 ./build.sh
 
 ./pot-extract.sh
