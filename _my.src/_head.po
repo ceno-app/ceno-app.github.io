@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-15 23:57-0400\n"
-"PO-Revision-Date: 2025-04-30 20:28+0000\n"
+"PO-Revision-Date: 2025-04-30 21:00+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Burmese <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-header/my/>\n"
@@ -28,9 +28,6 @@ msgid ""
 msgstr ""
 
 #: _head.html%2Bhtml.body.nav.div.div.div.label.img[alt]:35-25
-#, fuzzy
-#| msgctxt "./_head.html+html.body.nav.div.div.div.label.img[alt]:37-25"
-#| msgid "Select language"
 msgctxt "./_head.html+html.body.nav.div.div.div.label.img[alt]:35-25"
 msgid "Select language"
 msgstr "Select language"
@@ -94,9 +91,6 @@ msgstr ""
 "item\" lang=\"ur\" hreflang=\"ur\" href=\"../ur/@PAGE@.html\">اردو</a>"
 
 #: _head.html%2Bhtml.body.nav.div.div:55-17
-#, fuzzy
-#| msgctxt "./_head.html+html.body.nav.div.div:57-17"
-#| msgid "Download"
 msgctxt "./_head.html+html.body.nav.div.div:55-17"
 msgid "Download"
 msgstr "ဒေါင်းလုပ်ဒ်"
@@ -106,18 +100,12 @@ msgid "Ceno logo"
 msgstr "Ceno လိုဂို"
 
 #: _head.html%2Bhtml.body.nav.div.div.div.label.img[alt]:65-25
-#, fuzzy
-#| msgctxt "./_head.html+html.body.nav.div.div.div.label.img[alt]:37-25"
-#| msgid "Select language"
 msgctxt "./_head.html+html.body.nav.div.div.div.label.img[alt]:65-25"
 msgid "Select language"
 msgstr "Select language"
 
 #.  TRANSLATORS: Replace with your lowercase language code. 
 #: _head.html%2Bhtml.body.nav.div.div.div:62-17
-#, fuzzy
-#| msgctxt "./_head.html+html[lang]:3-1"
-#| msgid "en"
 msgctxt "./_head.html+html.body.nav.div.div.div:62-17"
 msgid "en"
 msgstr "my"
@@ -177,9 +165,6 @@ msgstr ""
 
 #.  These spans are used to create the animated hamburger button 
 #: _head.html%2Bhtml.body.nav.div.div:86-17
-#, fuzzy
-#| msgctxt "./_head.html+html.body.nav.div.div:57-17"
-#| msgid "Download"
 msgctxt "./_head.html+html.body.nav.div.div:86-17"
 msgid "Download"
 msgstr "ဒေါင်းလုပ်ဒ်"
