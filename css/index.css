@@ -313,6 +313,7 @@ li {
     font-weight: 200;
     color: #0B3954;
     margin-bottom: 0.6em;
+    z-index: 5;
 }
 
 .larc {
