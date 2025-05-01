@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-30 17:25-0400\n"
-"PO-Revision-Date: 2025-04-18 14:52+0000\n"
-"Last-Translator: Максим Горпиніч <maksimgorpinic2005a@gmail.com>\n"
+"PO-Revision-Date: 2025-05-01 06:53+0000\n"
+"Last-Translator: Максим Горпиніч <maksimgorpinic4@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-factsheet/uk/>\n"
 "Language: uk\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: factsheet.html%2Btitle:1-1
 msgid "Ceno Browser | Fact Sheet"
@@ -36,19 +36,14 @@ msgid "What is Ceno?"
 msgstr "Що є Ceno?"
 
 #: factsheet.html%2Bdiv.section.p:11-2
-#, fuzzy
-#| msgid ""
-#| "The world’s first mobile browser that circumvents current Internet "
-#| "censorship methods and local Internet outages using peer-to-peer (p2p) "
-#| "technology"
 msgid ""
 "The world's first mobile browser that circumvents current Internet "
 "censorship methods and local Internet outages using peer-to-peer (p2p) "
 "technology"
 msgstr ""
-"Перший у світі мобільний браузер, який обходить поточні методи інтернет-"
-"цензури та локальні збої в Інтернеті за допомогою технології однорангового "
-"зв’язку (p2p)"
+"Перший у світі мобільний браузер, який обходить сучасні методи цензури "
+"Інтернету та локальні збої в Інтернеті за допомогою технології peer-to-peer "
+"(p2p)"
 
 #: factsheet.html%2Bdiv.section.h3:13-2
 msgid "Ceno stands for:"
@@ -145,16 +140,12 @@ msgstr ""
 "природних збоїв, заворушень, конфліктів і війни"
 
 #: factsheet.html%2Bdiv.section.ul.li:35-2
-#, fuzzy
-#| msgid ""
-#| "Ceno’s p2p routing and distribution of storage can reduce bandwidth and "
-#| "energy use"
 msgid ""
 "Ceno's p2p routing and distribution of storage can reduce bandwidth and "
 "energy use"
 msgstr ""
-"P2P-маршрутизація та розподіл сховища від Ceno можуть зменшити пропускну "
-"здатність і використання енергії"
+"P2P-маршрутизація та розподіл сховища Ceno можуть зменшити пропускну "
+"здатність та споживання енергії"
 
 #: factsheet.html%2Bdiv.section.ul.li:36-2
 msgid ""
@@ -324,19 +315,15 @@ msgid "Ceno Analytics"
 msgstr "Ceno Analytics"
 
 #: factsheet.html%2Bdiv.section.p:108-2
-#, fuzzy
-#| msgid ""
-#| "The Ceno browser displays the resources provided directly from the origin "
-#| "to each user (served via injectors and received from the p2p network) and "
-#| "how much each user’s specific device has shared with other users."
 msgid ""
 "The Ceno browser displays the resources provided directly from the origin to "
 "each user (served via injectors and received from the p2p network) and how "
 "much each user's specific device has shared with other users."
 msgstr ""
-"Браузер Ceno відображає ресурси, надані безпосередньо з джерела для кожного "
-"користувача (обслуговується через інжектори та отримується з мережі p2p) і "
-"скільки конкретний пристрій кожного користувача надав іншим користувачам."
+"Браузер Ceno відображає ресурси, надані безпосередньо від джерела кожному "
+"користувачеві (подані через інжектори та отримані з p2p-мережі), а також те, "
+"скільки конкретний пристрій кожного користувача поділився з іншими "
+"користувачами."
 
 #: factsheet.html%2Bdiv.section.p:109-2
 msgid ""
@@ -350,14 +337,6 @@ msgstr ""
 "обслуговуються серверами-інжекторами."
 
 #: factsheet.html%2Bdiv.section.p:110-2
-#, fuzzy
-#| msgid ""
-#| "Other metrics can be designed and developed for greater visibility and "
-#| "performance measurement, taking into account Ceno’s decentralization "
-#| "function. Without identifying users, it is possible to closely estimate "
-#| "participation through (i) pseudonymous network identifiers and their "
-#| "usage of network injectors, (ii) country of origin and (iii) queries of "
-#| "the distributed hash table for unique device identifiers."
 msgid ""
 "Other metrics can be designed and developed for greater visibility and "
 "performance measurement, taking into account Ceno's decentralization "
@@ -374,37 +353,28 @@ msgstr ""
 "унікальних ідентифікаторів пристроїв."
 
 #: factsheet.html%2Bdiv.section.p:111-2
-#, fuzzy
-#| msgid ""
-#| "Integration of the Clean Insights SDK is being explored as a way to give "
-#| "users robust privacy-respecting analytics that measure metrics including "
-#| "distributed cache usage from the user’s vantage point."
 msgid ""
 "Integration of the Clean Insights SDK is being explored as a way to give "
 "users robust privacy-respecting analytics that measure metrics including "
 "distributed cache usage from the user's vantage point."
 msgstr ""
-"Інтеграція пакета SDK Clean Insights розглядається як спосіб надати "
-"користувачам надійну аналітику з дотриманням конфіденційності, яка вимірює "
-"показники, зокрема використання розподіленого кешу, з точки зору користувача."
+"Інтеграція Clean Insights SDK досліджується як спосіб надання користувачам "
+"надійної аналітики з дотриманням конфіденційності, яка вимірює показники, "
+"включаючи використання розподіленого кешу, з точки зору користувача."
 
 #: factsheet.html%2Bdiv.section.h3:113-1
 msgid "Ouinet in April 2022"
 msgstr "Уінет у квітні 2022 року"
 
 #: factsheet.html%2Bdiv.section.p:114-2
-#, fuzzy
-#| msgid ""
-#| "Ouinet’s injectors introduced approximately 2 million pages (602 GB of "
-#| "data) to the decentralized content-sharing network, from more than 30,000 "
-#| "unique websites."
 msgid ""
 "Ouinet's injectors introduced approximately 2 million pages (602 GB of data) "
 "to the decentralized content-sharing network, from more than 30,000 unique "
 "websites."
 msgstr ""
-"Інжектори Ouinet представили приблизно 2 мільйони сторінок (602 ГБ даних) у "
-"децентралізовану мережу обміну вмістом із понад 30 000 унікальних веб-сайтів."
+"Інжектори Ouinet впровадили приблизно 2 мільйони сторінок (602 ГБ даних) до "
+"децентралізованої мережі обміну контентом з понад 30 000 унікальних "
+"веб-сайтів."
 
 #: factsheet.html%2Bdiv.section.h2:118-1
 msgid "Internet shutdowns"
@@ -479,14 +449,6 @@ msgstr ""
 "зв'язку."
 
 #: factsheet.html%2Bdiv.section.p:126-9
-#, fuzzy
-#| msgid ""
-#| "Most circumvention techniques in use today require the user to first "
-#| "connect to a relay located in an uncensored zone. The resulting “cat and "
-#| "mouse” game between censor and circumvention method (with the latter "
-#| "resorting to creative proxy distribution, traffic obfuscation, collateral "
-#| "damage, partnerships with ISP for refraction networking, and so on) is no "
-#| "longer sufficient to ensure connectivity and digital content propagation."
 msgid ""
 "Most circumvention techniques in use today require the user to first connect "
 "to a relay located in an uncensored zone. The resulting \"cat and mouse\" "
@@ -495,12 +457,12 @@ msgid ""
 "partnerships with ISP for refraction networking, and so on) is no longer "
 "sufficient to ensure connectivity and digital content propagation."
 msgstr ""
-"Більшість методів обходу, що використовуються сьогодні, вимагають, щоб "
-"користувач спочатку підключився до ретранслятора, розташованого в "
-"нецензурованій зоні. Гра в \"кішки-мишки\" між цензором і методом обходу "
-"(коли останній вдається до креативного розподілу проксі, маскування трафіку, "
-"супутньої шкоди, партнерства з провайдером для створення мережі заломлення "
-"тощо) більше не є достатньою для забезпечення зв'язку і поширення цифрового "
+"Більшість методів обходу, що використовуються сьогодні, вимагають від "
+"користувача спочатку підключення до ретранслятора, розташованого в зоні без "
+"цензури. Гра в «кішки-мишки» між цензурою та методом обходу (причому "
+"останній вдається до креативного розподілу проксі, обфускації трафіку, "
+"побічної шкоди, партнерства з інтернет-провайдерами для мереж рефракції тощо)"
+" більше не є достатньою для забезпечення зв'язку та поширення цифрового "
 "контенту."
 
 #: factsheet.html%2Bdiv.section.h3:129-1
@@ -536,30 +498,14 @@ msgid "Russia"
 msgstr "Росія"
 
 #: factsheet.html%2Bdiv.section.p:136-9
-#, fuzzy
-#| msgid ""
-#| "“Nice browser. Without VPN I was able to open blocked resources. But it's "
-#| "also useful when you don't have connection.”"
 msgid ""
 "\"Nice browser. Without VPN I was able to open blocked resources. But it's "
 "also useful when you don't have connection.\""
 msgstr ""
-"\"Гарний браузер. Без VPN я міг відкривати заблоковані ресурси. Але він "
-"також корисний, коли у вас немає з’єднання.\""
+"\"Гарний браузер. Без VPN я зміг відкрити заблоковані ресурси. Але він також "
+"корисний, коли у вас немає з’єднання.\""
 
 #: factsheet.html%2Bdiv.section.p:137-2
-#, fuzzy
-#| msgid ""
-#| "“Because Russia threatens to block VPNs, Ceno is promising. Also because "
-#| "for your ISP it's like some Torrent traffic, and torrents are something "
-#| "very normalized in Russia unlike western countries where copyright is "
-#| "really respected. Also in Moscow police started asking people to show "
-#| "their phones and they look at apps that you have. I had this kind of "
-#| "control. They look at VPNs or messengers like Signal or Telegram. And "
-#| "Ceno looks like a normal browser, so when they asked what it is I said it "
-#| "is a browser, no problem, no questions. I just chose to regularly clear "
-#| "browsing history at exit. So besides helping to access websites, it also "
-#| "looks quite innocent which is great.”"
 msgid ""
 "\"Because Russia threatens to block VPNs, Ceno is promising. Also because "
 "for your ISP it's like some Torrent traffic, and torrents are something very "
@@ -585,77 +531,54 @@ msgstr ""
 "цілком невинно, що дуже добре.\""
 
 #: factsheet.html%2Bdiv.section.p:138-2
-#, fuzzy
-#| msgid ""
-#| "“Thanks for a great product. Your browser opens the site http://meduza.io "
-#| "much faster than the app from @meduzaproject.”"
 msgid ""
 "\"Thanks for a great product. Your browser opens the site http://meduza.io "
 "much faster than the app from @meduzaproject.\""
 msgstr ""
-"“Дякуємо за чудовий продукт. Ваш браузер відкриває сайт http://meduza.io "
-"набагато швидше, ніж додаток від @meduzaproject.»"
+"\"Дякую за чудовий продукт. Ваш браузер відкриває сайт http://meduza.io "
+"набагато швидше, ніж додаток від @meduzaproject..\""
 
 #: factsheet.html%2Bdiv.section.h3:140-1
 msgid "Myanmar"
 msgstr "М'янма"
 
 #: factsheet.html%2Bdiv.section.p:141-2
-#, fuzzy
-#| msgid ""
-#| "“There was a lot of inconvenience due to the blocked websites. It's good "
-#| "to see that it works well with this app. This is our digital rights. So I "
-#| "will continue to use it sometimes.”"
 msgid ""
 "\"There was a lot of inconvenience due to the blocked websites. It's good to "
 "see that it works well with this app. This is our digital rights. So I will "
 "continue to use it sometimes.\""
 msgstr ""
-"\"Було багато незручностей через заблоковані веб-сайти. Приємно бачити, що "
-"він добре працює з цією програмою. Це наші цифрові права. Тому я "
-"продовжуватиму використовувати її іноді.\""
+"\"Було багато незручностей через блокування вебсайтів. Приємно бачити, що "
+"все добре працює з цим додатком. Це наші цифрові права. Тож я продовжуватиму "
+"іноді ним користуватися..\""
 
 #: factsheet.html%2Bdiv.section.p:142-2
-#, fuzzy
-#| msgid ""
-#| "“There are more features I'd like to see in the app, but it is totally a "
-#| "convenient and useful application.”"
 msgid ""
 "\"There are more features I'd like to see in the app, but it is totally a "
 "convenient and useful application.\""
 msgstr ""
-"“Є більше функцій, які я хотів би бачити в додатку, але це цілком зручний і "
-"корисний додаток.”"
+"\"Є більше функцій, які я хотів би бачити в додатку, але це цілком зручний "
+"та корисний додаток..\""
 
 #: factsheet.html%2Bdiv.section.h3:144-1
 msgid "Iran"
 msgstr "Іран"
 
 #: factsheet.html%2Bdiv.section.p:145-2
-#, fuzzy
-#| msgid ""
-#| "“This app is one of our few hopes in times of serious Internet "
-#| "disruptions in Iran. Please keep it going and make it better and better. "
-#| "Thank you.”"
 msgid ""
 "\"This app is one of our few hopes in times of serious Internet disruptions "
 "in Iran. Please keep it going and make it better and better. Thank you.\""
 msgstr ""
-"\"Цей додаток є однією з наших небагатьох надій у часи серйозних збоїв в "
-"Інтернеті в Ірані. Будь ласка, продовжуйте працювати та робіть його все "
-"кращим. Дякуємо.\""
+"\"Цей додаток — одна з наших небагатьох надій у часи серйозних перебоїв з "
+"Інтернетом в Ірані. Будь ласка, продовжуйте його та робіть його ще кращим. "
+"Дякуємо..\""
 
 #: factsheet.html%2Bdiv.section.p:146-2
-#, fuzzy
-#| msgid ""
-#| "“It is a good browser, especially for us Iranians, who do not have the "
-#| "possibility of free use of the Internet and everything is filtered by the "
-#| "government, even filter breakers.”"
 msgid ""
 "\"It is a good browser, especially for us Iranians, who do not have the "
 "possibility of free use of the Internet and everything is filtered by the "
 "government, even filter breakers.\""
 msgstr ""
-"“Це хороший браузер, особливо для нас, іранців, які не мають можливості "
-"безкоштовного користування Інтернетом і все фільтрується урядом, навіть "
-"зламники фільтрів.”"
+"`Це хороший браузер, особливо для нас, іранців, які не мають можливості "
+"вільно користуватися Інтернетом, і все фільтрується урядом, навіть ті, хто "
+"перериває фільтри.'"
