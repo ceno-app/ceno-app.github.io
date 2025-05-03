@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-01 09:48-0400\n"
-"PO-Revision-Date: 2025-04-30 21:00+0000\n"
+"PO-Revision-Date: 2025-05-04 09:01+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Indonesian <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-header/id/>\n"
@@ -17,7 +17,7 @@ msgstr ""
 #: _head.html%2Bhtml[lang]:3-1
 msgctxt "./_head.html+html[lang]:3-1"
 msgid "en"
-msgstr "id"
+msgstr "en"
 
 #: _head.html%2Bhtml.body.nav.div.div:26-13
 msgid ""
@@ -76,7 +76,7 @@ msgstr "Pilih bahasa"
 #: _head.html%2Bhtml.body.nav.div.div.div:62-17
 msgctxt "./_head.html+html.body.nav.div.div.div:62-17"
 msgid "en"
-msgstr "id"
+msgstr "en"
 
 #.  Sorted alphabetically by language code. 
 #.  TRANSLATORS: Please do not translate any of these. 
