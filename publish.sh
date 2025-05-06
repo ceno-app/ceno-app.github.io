@@ -19,7 +19,7 @@ for lang in $(cat supported_locales); do
 
     RTL_LANGUAGES="ar fa ur"
 
-    if echo "$RTL_LANGUAGES" | grep -qE "\b$1\b"; then
+    if echo "$RTL_LANGUAGES" | grep -qE "\b$lang\b"; then
         dir="rtl"
     fi
 
