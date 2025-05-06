@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-30 17:25-0400\n"
+"POT-Creation-Date: 2025-05-06 12:58-0400\n"
 "PO-Revision-Date: 2025-05-03 05:01+0000\n"
 "Last-Translator: Максим Горпиніч <maksimgorpinic4@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/censorship-no/"
@@ -56,8 +56,8 @@ msgid ""
 "<a href=\"/@LANG@/faq.html\">Learn how.</a>"
 msgstr ""
 "Ваш інтернет не працює або його цензурують? Ви все ще можете отримати доступ "
-"до контенту за допомогою Ceno. <a href=\"/@LANG@/faq.html\">Дізнайтеся "
-"як.</a>"
+"до контенту за допомогою Ceno. <a href=\"/@LANG@/faq.html\">Дізнайтеся як.</"
+"a>"
 
 #: index.html%2Bmain.div.section.div.ul.li:39-11
 msgid "VPNs blocked? You can access the web with Ceno."
@@ -111,15 +111,15 @@ msgid ""
 "ouinet.work\">Ouinet</a> that enables third party developers to incorporate "
 "the Ceno network into their apps for peer-to-peer connectivity."
 msgstr ""
-"Браузер Ceno працює на базі бібліотеки з відкритим кодом під назвою <a href="
-"\"https://ouinet.work\">Ouinet</a>, яка дозволяє стороннім розробникам "
+"Браузер Ceno працює на базі бібліотеки з відкритим кодом під назвою <a "
+"href=\"https://ouinet.work\">Ouinet</a>, яка дозволяє стороннім розробникам "
 "інтегрувати мережу Ceno у свої програми для peer-to-peer обміну даними."
 
-#: index.html%2Bmain.section.div.h2:71-7
+#: index.html%2Bmain.section.div.h2:73-7
 msgid "Be prepared with Ceno"
 msgstr "Будьте готові з Ceno"
 
-#: index.html%2Bmain.section.div.div.div.p:75-11
+#: index.html%2Bmain.section.div.div.div.p:77-11
 msgid ""
 "Don't wait until the next time the internet is blocked to find a solution. "
 "Download Ceno now."
@@ -127,13 +127,13 @@ msgstr ""
 "Не чекайте наступного разу, коли Інтернет буде заблоковано, щоб знайти "
 "рішення. Завантажте Ceno зараз."
 
-#: index.html%2Bmain.section.div.div.div.p:79-11
+#: index.html%2Bmain.section.div.div.div.p:81-11
 msgid "Help yourself and others. Keep Ceno installed and use it frequently."
 msgstr ""
 "Допоможіть собі та іншим. Тримайте Ceno встановленим і часто використовуйте "
 "його."
 
-#: index.html%2Bmain.section.div.div.div.p:83-11
+#: index.html%2Bmain.section.div.div.div.p:85-11
 msgid ""
 "Share websites you access to help build resilience against internet "
 "blockages."
@@ -141,11 +141,16 @@ msgstr ""
 "Діліться веб-сайтами, до яких ви маєте доступ, щоб допомогти створити "
 "стійкість проти блокувань Інтернету."
 
-#: index.html%2Bmain.section.div.div.a.div:87-51
+#: index.html%2Bmain.section.div.div.a.div:89-51
 msgid "Learn how it works"
 msgstr "Дізнайтеся, як це працює"
 
-#: index.html%2Bmain.section.div.div:93-7
+#: index.html%2Bmain.section.div.div:95-7
+#, fuzzy
+#| msgid ""
+#| "Ceno is designed by <a>eQualitie</a>, a non-profit creating free & open "
+#| "source tools to protect freedom of speech, facilitate information "
+#| "exchange, & promote self-expression on the internet."
 msgid ""
 "Ceno is designed by <a href=\"https://equalitie.org\">eQualitie</a>, a non-"
 "profit creating free & open source tools to protect freedom of speech, "
@@ -156,15 +161,15 @@ msgstr ""
 "кодом для захисту свободи слова, сприяння обміну інформацією та просування "
 "самовираження в Інтернеті."
 
-#: index.html%2Bmain.section.div.div.a.div:95-56
+#: index.html%2Bmain.section.div.div.a.div:97-56
 msgid "Get Ceno"
 msgstr "Отримати Ceno"
 
-#: index.html%2Bmain.section.div.h2:105-7
+#: index.html%2Bmain.section.div.h2:107-7
 msgid "What Ceno users say"
 msgstr "Що кажуть користувачі Ceno"
 
-#: index.html%2Bmain.section.div.div.div.p:108-11
+#: index.html%2Bmain.section.div.div.div.p:110-11
 msgid ""
 "\"Extremely important program. and not only for totalitarian countries, I "
 "think people of the free world should also use it more often to create a "
@@ -174,11 +179,11 @@ msgstr ""
 "що люди вільного світу також повинні використовувати її частіше для "
 "створення кешу сторінок. Завантажується швидше, ніж інші браузери.\""
 
-#: index.html%2Bmain.section.div.div.div.div:109-11
+#: index.html%2Bmain.section.div.div.div.div:111-11
 msgid "Yuriy Karetin"
 msgstr "Юрій Каретін"
 
-#: index.html%2Bmain.section.div.div.div.p:115-11
+#: index.html%2Bmain.section.div.div.div.p:117-11
 msgid ""
 "\"Awesome technology, it's free and works fine in Russia where a lot of "
 "sites are blocked. The whole image hosting of huge music platform Bandcamp "
@@ -190,14 +195,35 @@ msgstr ""
 "Bandcamp заблоковано тут вже більше року через одне зображення, тому чудово "
 "знову побачити там обкладинки альбомів — і без VPN!»"
 
-#: index.html%2Bmain.section.div.div.div.div:116-11
+#: index.html%2Bmain.section.div.div.div.div:118-11
 msgid "Tim Six"
 msgstr "Тім Сікс"
 
-#: index.html%2Bmain.section.div.div.a.div:123-56
-msgctxt "./index.html+main.section.div.div.a.div:123-56"
+#: index.html%2Bmain.section.div.div.a.div:125-56
+#, fuzzy
+#| msgctxt "./index.html+main.div.section.div.div.a.div:43-58"
+#| msgid "Download Ceno"
+msgctxt "./index.html+main.section.div.div.a.div:125-56"
 msgid "Download Ceno"
 msgstr "Завантажити Ceno"
+
+#, fuzzy
+#~| msgctxt "./index.html+main.div.section.div.div.a.div:43-58"
+#~| msgid "Download Ceno"
+#~ msgctxt "./index.html+main.section.div.div.a.div:149-56"
+#~ msgid "Download Ceno"
+#~ msgstr "Завантажити Ceno"
+
+#, fuzzy
+#~| msgctxt "./index.html+main.div.section.div.div.a.div:43-58"
+#~| msgid "Download Ceno"
+#~ msgctxt "./index.html+main.section.div.div.a.div:147-56"
+#~ msgid "Download Ceno"
+#~ msgstr "Завантажити Ceno"
+
+#~ msgctxt "./index.html+main.section.div.div.a.div:123-56"
+#~ msgid "Download Ceno"
+#~ msgstr "Завантажити Ceno"
 
 #~ msgid "COMING SOON ON DESKTOP"
 #~ msgstr "НЕЗАБАРОМ НА КОМП'ЮТЕРІ"

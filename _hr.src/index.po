@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-01 09:48-0400\n"
+"POT-Creation-Date: 2025-05-06 12:58-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -95,57 +95,57 @@ msgid ""
 "the Ceno network into their apps for peer-to-peer connectivity."
 msgstr ""
 
-#: index.html%2Bmain.section.div.h2:71-7
+#: index.html%2Bmain.section.div.h2:73-7
 msgid "Be prepared with Ceno"
 msgstr ""
 
-#: index.html%2Bmain.section.div.div.div.p:75-11
+#: index.html%2Bmain.section.div.div.div.p:77-11
 msgid ""
 "Don't wait until the next time the internet is blocked to find a solution. "
 "Download Ceno now."
 msgstr ""
 
-#: index.html%2Bmain.section.div.div.div.p:79-11
+#: index.html%2Bmain.section.div.div.div.p:81-11
 msgid "Help yourself and others. Keep Ceno installed and use it frequently."
 msgstr ""
 
-#: index.html%2Bmain.section.div.div.div.p:83-11
+#: index.html%2Bmain.section.div.div.div.p:85-11
 msgid ""
 "Share websites you access to help build resilience against internet "
 "blockages."
 msgstr ""
 
-#: index.html%2Bmain.section.div.div.a.div:87-51
+#: index.html%2Bmain.section.div.div.a.div:89-51
 msgid "Learn how it works"
 msgstr ""
 
-#: index.html%2Bmain.section.div.div:93-7
+#: index.html%2Bmain.section.div.div:95-7
 msgid ""
 "Ceno is designed by <a href=\"https://equalitie.org\">eQualitie</a>, a non-"
 "profit creating free & open source tools to protect freedom of speech, "
 "facilitate information exchange, & promote self-expression on the internet."
 msgstr ""
 
-#: index.html%2Bmain.section.div.div.a.div:95-56
+#: index.html%2Bmain.section.div.div.a.div:97-56
 msgid "Get Ceno"
 msgstr ""
 
-#: index.html%2Bmain.section.div.h2:105-7
+#: index.html%2Bmain.section.div.h2:107-7
 msgid "What Ceno users say"
 msgstr ""
 
-#: index.html%2Bmain.section.div.div.div.p:108-11
+#: index.html%2Bmain.section.div.div.div.p:110-11
 msgid ""
 "\"Extremely important program. and not only for totalitarian countries, I "
 "think people of the free world should also use it more often to create a "
 "cache of pages. loads faster than other browsers.\""
 msgstr ""
 
-#: index.html%2Bmain.section.div.div.div.div:109-11
+#: index.html%2Bmain.section.div.div.div.div:111-11
 msgid "Yuriy Karetin"
 msgstr ""
 
-#: index.html%2Bmain.section.div.div.div.p:115-11
+#: index.html%2Bmain.section.div.div.div.p:117-11
 msgid ""
 "\"Awesome technology, it's free and works fine in Russia where a lot of "
 "sites are blocked. The whole image hosting of huge music platform Bandcamp "
@@ -153,11 +153,11 @@ msgid ""
 "great to see album covers there again - and without VPN!\""
 msgstr ""
 
-#: index.html%2Bmain.section.div.div.div.div:116-11
+#: index.html%2Bmain.section.div.div.div.div:118-11
 msgid "Tim Six"
 msgstr ""
 
-#: index.html%2Bmain.section.div.div.a.div:123-56
-msgctxt "./index.html+main.section.div.div.a.div:123-56"
+#: index.html%2Bmain.section.div.div.a.div:125-56
+msgctxt "./index.html+main.section.div.div.a.div:125-56"
 msgid "Download Ceno"
 msgstr ""
