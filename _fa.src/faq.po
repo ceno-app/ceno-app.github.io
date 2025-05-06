@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-06 12:58-0400\n"
-"PO-Revision-Date: 2025-04-21 23:06+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2025-05-06 17:19-0400\n"
+"PO-Revision-Date: 2025-05-06 21:18+0000\n"
+"Last-Translator: Grant Gallo <grant@equalitie.org>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-faq/fa/>\n"
 "Language: fa\n"
@@ -12,11 +12,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: faq.html%2Bmain.section.div.h1:4-13
 msgid "Frequently<br>Asked<br>Questions"
-msgstr ""
+msgstr "پرسش‌های رایج"
 
 #: faq.html%2Bmain.section:6-9
 msgid "Search"
@@ -24,15 +24,15 @@ msgstr "جست‌وجو"
 
 #: faq.html%2Bmain.section.div.a.div:12-45
 msgid "Read user manual"
-msgstr ""
+msgstr "راهنمای کاربر را بخوانید"
 
 #: faq.html%2Bmain.section.div.a.div:13-104
 msgid "Read technical, in-depth whitepaper"
-msgstr ""
+msgstr "مستندات فنی و دقیق را بخوانید"
 
 #: faq.html%2Bmain.section.div.a.div:14-35
 msgid "Read quick-start guide"
-msgstr ""
+msgstr "راهنمای شروع سریع را بخوانید"
 
 #: faq.html%2Bmain.section.div:18-9
 msgid "What is Ceno Browser?"
@@ -155,16 +155,12 @@ msgstr ""
 "راهنمای کاربر</a> را بخوانید."
 
 #: faq.html%2Bmain.section.div.details.p:47-17
-#, fuzzy
-#| msgid ""
-#| "For a simpler explanation of how Ceno works, <a href=\"explainer."
-#| "html\">please read this</a>."
 msgid ""
 "For a simpler explanation of how Ceno works, <a href=\"/@LANG@/about."
 "html\">please read this</a>."
 msgstr ""
-"برای توضیح ساده‌تر از نحوه کار سنو، لطفا <a href=\"explainer.html\">این‌جا را "
-"بخوانید</a>."
+"برای توضیح ساده‌تر از نحوه کار سنو، لطفا <a href=\"/@LAN@/about.html\">این‌جا "
+"را بخوانید</a>."
 
 #: faq.html%2Bmain.section.div.details:47-115
 msgid "What are the advantages of using Ceno?"

@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-06 12:58-0400\n"
-"PO-Revision-Date: 2025-04-21 23:09+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2025-05-06 17:19-0400\n"
+"PO-Revision-Date: 2025-05-06 21:18+0000\n"
+"Last-Translator: Grant Gallo <grant@equalitie.org>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-community/fa/>\n"
 "Language: fa\n"
@@ -12,15 +12,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: community.html%2Bmain.section.h1:3-9
 msgid "Let's build a better internet together"
-msgstr ""
+msgstr "بیایید با هم اینترنت بهتری بسازیم"
 
 #: community.html%2Bmain.section.div.div.h2:9-17
 msgid "Become a Bridge"
-msgstr ""
+msgstr "تبدیل به یک پل شوید"
 
 #: community.html%2Bmain.section.div.div.p:10-17
 msgid ""
@@ -30,10 +30,15 @@ msgid ""
 "Running a Bridge is a very simple yet powerful action, enabling you to share "
 "internet content with others."
 msgstr ""
+"افرادی که در کشورها یا مناطقی با دسترسی آزاد و پایدار به اینترنت ساکن‌اند و "
+"از سِنو استفاده می‌کنند، می‌توانند با تبدیل شدن به یک «پل» به کسانی که در "
+"شبکه‌های به‌شدت محدود قرار دارند کمک کنند تا به اینترنت دسترسی داشته باشند. "
+"اجرای پل اقدامی بسیار ساده و در عین حال قدرتمند است که به شما امکان می‌دهد "
+"محتوای اینترنت را با دیگران به اشتراک بگذارید."
 
 #: community.html%2Bmain.section.div.div.p:11-17
 msgid "Learn more about becoming a Bridge."
-msgstr ""
+msgstr "درباره چگونگی تبدیل شدن به پل بیشتر بدانید"
 
 #: community.html%2Bmain.section.div.div.h4:12-17
 msgid "The simple way:"
@@ -76,7 +81,7 @@ msgstr ""
 
 #: community.html%2Bmain.section.div.div.h2:30-17
 msgid "Contribute to our code"
-msgstr ""
+msgstr "در توسعه کد ما مشارکت کنید"
 
 #: community.html%2Bmain.section.div.div.p:31-17
 msgid ""
@@ -84,6 +89,9 @@ msgid ""
 "eQualitie. If you are interested in Ceno's source code please check the "
 "following Git repositories:"
 msgstr ""
+"سِنو یک ابزار رایگان و متن‌باز و یکی از مجموعه ابزارهای متعددی است که توسط "
+"eQualitie توسعه یافته و نگهداری می‌شود. اگر به کد منبع سِنو علاقه‌مند هستید، "
+"لطفا مخازن گیت زیر را بررسی کنید:"
 
 #: community.html%2Bmain.section.div.div.ul.li:33-21
 msgid "Ceno for Android"
@@ -111,10 +119,13 @@ msgid ""
 "gitlab.com/censorship-no/ceno-archives\">previous incarnation of Ceno</a>, "
 "built on the Freenet anonymous file sharing and content publishing network."
 msgstr ""
+"همچنین ممکن است به نسخه قدیمی‌تر سِنو (که دیگر پشتیبانی نمی‌شود) علاقه‌مند باشید "
+"که بر اساس شبکه ناشناس به اشتراک‌گذاری فایل و انتشار محتوای Freenet ساخته شده "
+"بود."
 
 #: community.html%2Bmain.section.div.div.h2:46-17
 msgid "Share your feedback"
-msgstr ""
+msgstr "نظر و پیشنهاد خود را در میان بگذارید"
 
 #: community.html%2Bmain.section.div.div.p:47-17
 msgid ""
@@ -123,14 +134,18 @@ msgid ""
 "helps spread the word about Ceno, which grows the network. With your "
 "consent, we may also highlight your story on our website!"
 msgstr ""
+"سِنو برای آگاهی از نیازهای کاربران، بهبود برنامه و تعیین ویژگی‌های جدید به "
+"بازخورد کاربران متکی است. در میان گذاشتن تجربه‌تان همچنین به گسترش آگاهی "
+"درباره سِنو کمک می‌کند و شبکه را گسترش می‌دهد. با رضایت خودتان، ممکن است تجربه "
+"شما را در وب‌سایت‌مان نیز منتشر کنیم!"
 
 #: community.html%2Bmain.section.div.div.ul.li:49-21
 msgid "Write a review on the Play Store"
-msgstr ""
+msgstr "نظر خود را در پلی استور بنویسید"
 
 #: community.html%2Bmain.section.div.div.ul.li:50-21
 msgid "Get in touch with the team: support [at] censorship [dot] no"
-msgstr ""
+msgstr "با تیم ما تماس بگیرید: support [at] censorship [dot] no"
 
 #: community.html%2Bmain.section.div.div.ul.li:51-21
 msgid "Take a survey"
@@ -138,7 +153,7 @@ msgstr "شرکت در نظرخواهی"
 
 #: community.html%2Bmain.section.div.div.h2:61-17
 msgid "Tell your community about Ceno"
-msgstr ""
+msgstr "سِنو را به اطرافیان خود معرفی کنید"
 
 #: community.html%2Bmain.section.div.div.p:62-17
 msgid ""
@@ -147,10 +162,15 @@ msgid ""
 "by helping them download and use Ceno. Promote Ceno at community events by "
 "sharing materials or hosting a panel or meetup."
 msgstr ""
+"هرچه افراد بیشتری از سِنو استفاده کنند، عملکرد آن بهتر و قابل ‌اعتمادتر می‌شود. "
+"با کمک به خانواده و دوستان خود برای دانلود و استفاده از سنو، به آن‌ها آموزش "
+"دهید که چگونه تبدیل به یک پل شوند یا به محتوای مسدودشده دسترسی پیدا کنند. با "
+"معرفی مطالب مرتبط یا برگزاری نشست و گردهمایی، سنو را در رویدادهای اجتماعی "
+"معرفی کنید."
 
 #: community.html%2Bmain.section.div.div.h2:69-17
 msgid "Help translate"
-msgstr ""
+msgstr "به ترجمه سنو کمک کنید"
 
 #: community.html%2Bmain.section.div.div.p:70-17
 msgid ""
@@ -177,3 +197,4 @@ msgid ""
 "For more information about how to use Weblate, see <a href=\"https://docs."
 "weblate.org/en/latest/index.html\">the Weblate documentation.</a>"
 msgstr ""
+"برای اطلاعات بیشتر درباره شیوه استفاده از Weblate، مستندات Weblate را ببینید."
