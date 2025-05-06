@@ -412,3 +412,39 @@ li {
     font-size: 18px;
 }
 
+.flexboxes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flexboxes h1 {
+    text-align: center;
+    font-size: 32px;
+    color: #0B3954;
+    margin-bottom: 2em;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+    max-width: 900px;
+    gap: 3em;
+    align-items: center;
+    margin-bottom: 2em;
+}
+
+@media (max-width: 1100px) {
+    .flex {
+        flex-direction: column-reverse;
+        margin-inline: 2em;
+        gap: 2em;
+    }
+    .frev {
+        flex-direction: column;
+    }
+}
+
+.flex img {
+    max-height: 300px;
+}

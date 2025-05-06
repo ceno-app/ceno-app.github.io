@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-01 09:48-0400\n"
-"PO-Revision-Date: 2025-04-21 23:06+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2025-05-06 12:58-0400\n"
+"PO-Revision-Date: 2025-05-06 16:48+0000\n"
+"Last-Translator: Grant Gallo <grant@equalitie.org>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-faq/ru/>\n"
 "Language: ru\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: faq.html%2Bmain.section.div.h1:4-13
 msgid "Frequently<br>Asked<br>Questions"
@@ -21,7 +21,7 @@ msgstr "Часто<br>задаваемые<br>вопросы"
 
 #: faq.html%2Bmain.section:6-9
 msgid "Search"
-msgstr ""
+msgstr "Найти"
 
 #: faq.html%2Bmain.section.div.a.div:12-45
 msgid "Read user manual"
@@ -147,16 +147,12 @@ msgstr ""
 "растет."
 
 #: faq.html%2Bmain.section.div.details.p:45-17
-#, fuzzy
-#| msgid ""
-#| "For a more detailed explanation of how Ceno works, please read <a "
-#| "href=\"../user-manual/\">the user guide</a>."
 msgid ""
 "For a more detailed explanation of how Ceno works, please read <a href=\"/"
 "user-manual/@LANG@/\">the user guide</a>."
 msgstr ""
-"Более подробное описание работы Ceno можно найти в <a href=\"../user-manual/"
-"\">руководстве пользователя</a>."
+"Более подробное описание работы Ceno можно найти в <a href=\"/user-manual/"
+"@LANG@/\">руководстве пользователя</a>."
 
 #: faq.html%2Bmain.section.div.details.p:47-17
 #, fuzzy

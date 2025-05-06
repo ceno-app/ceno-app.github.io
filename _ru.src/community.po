@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-01 09:48-0400\n"
-"PO-Revision-Date: 2025-04-21 23:09+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2025-05-06 12:58-0400\n"
+"PO-Revision-Date: 2025-05-06 16:48+0000\n"
+"Last-Translator: Grant Gallo <grant@equalitie.org>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-community/ru/>\n"
 "Language: ru\n"
@@ -13,15 +13,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: community.html%2Bmain.section.h1:3-9
 msgid "Let's build a better internet together"
-msgstr ""
+msgstr "Строим свободный интернет вместе"
 
 #: community.html%2Bmain.section.div.div.h2:9-17
 msgid "Become a Bridge"
-msgstr ""
+msgstr "Стань мостом"
 
 #: community.html%2Bmain.section.div.div.p:10-17
 msgid ""
@@ -31,10 +31,17 @@ msgid ""
 "Running a Bridge is a very simple yet powerful action, enabling you to share "
 "internet content with others."
 msgstr ""
+"Включи режим моста, если в твоей стране доступ к интернету свободный, и "
+"помоги другим получить доступ к заблокированным ресурсам. Твоё устройство "
+"будет прокси-сервером для доступа к заблокированным ресурсам.Это работает "
+"как торренты: люди в ситуации цензуры смогут скачать копию запрашиваемой "
+"страницы у тебя, если твоё устройство уже когда-то её открывало. Мосты — "
+"суперсила сети Ceno, которая позволяет сотням тысяч пользователей не терять "
+"доступ к независимым источникам информации."
 
 #: community.html%2Bmain.section.div.div.p:11-17
 msgid "Learn more about becoming a Bridge."
-msgstr ""
+msgstr "Узнать больше о работе мостов"
 
 #: community.html%2Bmain.section.div.div.h4:12-17
 msgid "The simple way:"
@@ -77,7 +84,7 @@ msgstr ""
 
 #: community.html%2Bmain.section.div.div.h2:30-17
 msgid "Contribute to our code"
-msgstr ""
+msgstr "Пиши код с нами"
 
 #: community.html%2Bmain.section.div.div.p:31-17
 msgid ""
@@ -85,6 +92,9 @@ msgid ""
 "eQualitie. If you are interested in Ceno's source code please check the "
 "following Git repositories:"
 msgstr ""
+"Ceno — приложение с открытым исходным кодом, один из ряда проектов такого "
+"толка, выпущенных eQualitie. Исходный код Ceno можно изучить в публичных "
+"репозиториях:"
 
 #: community.html%2Bmain.section.div.div.ul.li:33-21
 msgid "Ceno for Android"
@@ -115,7 +125,7 @@ msgstr ""
 
 #: community.html%2Bmain.section.div.div.h2:46-17
 msgid "Share your feedback"
-msgstr ""
+msgstr "Оставь фидбек"
 
 #: community.html%2Bmain.section.div.div.p:47-17
 msgid ""
@@ -124,14 +134,19 @@ msgid ""
 "helps spread the word about Ceno, which grows the network. With your "
 "consent, we may also highlight your story on our website!"
 msgstr ""
+"Команде разработчиков Ceno очень важен фидбек — так мы понимаем, с чем "
+"возникают сложности, каких функций не хватает, и как нам улучшаться. А "
+"особенно рады мы будем добрым историям об использовании Ceno — это поможет "
+"нам распространять информацию о браузере, увеличивать сети и делать её "
+"сильнее и устойчивее."
 
 #: community.html%2Bmain.section.div.div.ul.li:49-21
 msgid "Write a review on the Play Store"
-msgstr ""
+msgstr "Оставь отзыв в Play Store"
 
 #: community.html%2Bmain.section.div.div.ul.li:50-21
 msgid "Get in touch with the team: support [at] censorship [dot] no"
-msgstr ""
+msgstr "Пришли свою историю нам на почту: support [at] censorship [dot] no"
 
 #: community.html%2Bmain.section.div.div.ul.li:51-21
 msgid "Take a survey"
@@ -139,7 +154,7 @@ msgstr "Пройти опрос"
 
 #: community.html%2Bmain.section.div.div.h2:61-17
 msgid "Tell your community about Ceno"
-msgstr ""
+msgstr "Расскажи о Ceno друзьям и близким"
 
 #: community.html%2Bmain.section.div.div.p:62-17
 msgid ""
@@ -148,10 +163,16 @@ msgid ""
 "by helping them download and use Ceno. Promote Ceno at community events by "
 "sharing materials or hosting a panel or meetup."
 msgstr ""
+"Чем больше людей использует Ceno, тем надёжнее он становится. Настрой Ceno "
+"для своей семьи и расскажи о браузере друзьям — так ты не потеряешь связь "
+"даже в ситуации сплинтернета или шатдауна. А твои близкие смогут читать "
+"независимые СМИ, даже если они находятся под цензурой. Журналисты и "
+"работники медиа могут добавить ссылку на Ceno на страницу о том, как не "
+"терять доступ к медиа во время блокировок."
 
 #: community.html%2Bmain.section.div.div.h2:69-17
 msgid "Help translate"
-msgstr ""
+msgstr "Стань переводчиком-волонтёром"
 
 #: community.html%2Bmain.section.div.div.p:70-17
 msgid ""

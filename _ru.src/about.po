@@ -2,25 +2,28 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-01 09:48-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2025-05-06 12:58-0400\n"
+"PO-Revision-Date: 2025-05-06 16:48+0000\n"
+"Last-Translator: Grant Gallo <grant@equalitie.org>\n"
+"Language-Team: Russian <https://hosted.weblate.org/projects/censorship-no/"
+"website-v2/website-v2-about/ru/>\n"
 "Language: ru\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.15.1\n"
 "Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
 "n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: about.html%2Bmain.section.div.div:4-13
 msgid "Ceno is building a borderless internet"
-msgstr ""
+msgstr "Миссия Ceno — интернет без границ"
 
 #: about.html%2Bmain.section.div.p:5-13
 msgid "Our motto is ‘Share the Web!' because that is what our users do."
 msgstr ""
+"Наш девиз — “И себе, и людям!”, потому что Ceno работает за счёт помощи "
+"пользователей друг другу."
 
 #: about.html%2Bmain.section.div.p:12-13
 msgid ""
@@ -30,6 +33,12 @@ msgid ""
 "People using Ceno Browser are able to access a library of saved internet "
 "content that continues to be available during service interruptions."
 msgstr ""
+"Ограничения доступа к интернету и веб-сайтам — проблема, с которой "
+"сталкивается всё больше людей в разных странах. И есть много приложений и "
+"сервисов, чтобы этому противостоять.<br> Но <b>Ceno — уникальный сервис</b>, "
+"который работает иначе, чем другие приложения для обхода цензуры. "
+"Пользователи Ceno создают альтернативную сеть с сохранённым контентом, "
+"доступ к которому не потеряется даже при отключении от мировой сети."
 
 #: about.html%2Bmain.section.div.div.div.p:16-21
 msgid ""
@@ -42,18 +51,26 @@ msgid ""
 "Bridges can share content with people using Ceno in heavily restricted "
 "networks."
 msgstr ""
+"Сеть Ceno работает на основе BitTorrent, позволяет пользователям кэшировать "
+"контент веб-страниц и по запросу автоматически делиться им с другими людьми. "
+"То есть, если сайт СМИ заблокирован в России, а в Италии доступен, "
+"пользователь из Саратова может скачать копию сайта из кэша пользователя из "
+"Пизы, и читать новости в обход цензуры. Устройство пользователя из Пизы в "
+"таком случае работает как <b>мост</b> между суверенным и свободным "
+"интернетом. Быть мостом — опция, которую можно включить в настройках "
+"браузера. Её можно включить и выключить нажатием одной кнопки."
 
 #: about.html%2Bmain.section.div.div.div.div.a.div:19-89
 msgid "Become a bridge"
-msgstr ""
+msgstr "Стать мостом"
 
 #: about.html%2Bmain.section.div.div.div.div.a.div:20-67
 msgid "Learn how Ceno works"
-msgstr ""
+msgstr "Узнать больше о Ceno"
 
 #: about.html%2Bmain.section.div.h2:28-13
 msgid "The team behind Ceno"
-msgstr ""
+msgstr "Команда Ceno"
 
 #: about.html%2Bmain.section.div.div.p:30-17
 msgid ""
@@ -63,6 +80,12 @@ msgid ""
 "of experience creating and advancing tools to protect freedom of speech, "
 "facilitate information exchange, and promote self-expression on the internet."
 msgstr ""
+"Ceno разработан и поддерживается канадской некоммерческой организацией <a "
+"href=\"https://equalitie.org\">eQualitie</a> в соответствии с ценностями из "
+"статей 18, 19 и 20 Универсальной декларации прав человека. За нашими плечами "
+"— двенадцать лет работы по созданию технических инструментов, которые "
+"поддерживают свободу слова, свободу доступа к информации и возможность "
+"самовыражения и самореализации людей с помощью интернета."
 
 #: about.html%2Bmain.section.div.div.p:31-17
 msgid ""
@@ -71,16 +94,25 @@ msgid ""
 "You can <a href=\"https://gitlab.com/censorship-no\">inspect our code</a> or "
 "re-create the entire network yourself!"
 msgstr ""
+"Ceno — и все технологии, которые мы используем для его работы, доступны "
+"бесплатно и имеют открытый исходный код. Вот тут можно найти <a "
+"href=\"https://gitlab.com/censorship-no\">код</a>, изучить его устройство, а "
+"при желании даже создать свою сеть с таким же принципом работы."
 
 #: about.html%2Bmain.section.div.div.h2:44-17
 msgid "Is Ceno for me?"
-msgstr ""
+msgstr "Для кого подходит Ceno?"
 
 #: about.html%2Bmain.section.div.div.div.p:46-21
 msgid ""
 "Ceno is for everyone. It can replace your existing mobile browser as it "
 "shares many of the same functions and features."
 msgstr ""
+"Ceno подходит для любого интернет-пользователя. К Ceno нужно привыкнуть — "
+"некоторые функции этого браузера уникальны. Но в остальном Ceno можно "
+"использовать как обычный браузер. Ceno может быть как браузером по умолчанию "
+"так и инструментом, который стоит держать на устройстве на случай перебоев в "
+"работе сети."
 
 #: about.html%2Bmain.section.div.div.div.p:47-21
 msgid ""
@@ -89,57 +121,65 @@ msgid ""
 "benefit is that you can choose to help other Ceno users while you browse by "
 "becoming a Bridge."
 msgstr ""
+"Если ты используешь Ceno в регионе с активной интернет-цензурой, он поможет "
+"не терять доступ к заблокированным или замедленным сайтам. Если ты в "
+"эмиграции, а сайт родной страны, который тебе нужен — под санкциями, то Ceno "
+"тоже поможет. Если ты живёшь там, где защищается свобода слова, но хочешь "
+"помочь людям в других странах — с Ceno это не сложно сделать, включив режим "
+"моста."
 
 #: about.html%2Bmain.section.div.div.div.p:48-21
 msgid ""
 "Ceno is especially useful for people facing internet censorship or "
 "connectivity issues."
 msgstr ""
+"Чтобы понять, в каких обстоятельствах Ceno особенно полезен, можно почитать "
+"истории пользователей."
 
 #: about.html%2Bmain.section.div.div:54-13
 msgctxt "./about.html+main.section.div.div:54-13"
 msgid "Citizen"
-msgstr ""
+msgstr "читатели новостей"
 
 #: about.html%2Bmain.section.div.div:58-13
 msgctxt "./about.html+main.section.div.div:58-13"
 msgid "Student"
-msgstr ""
+msgstr "любители фанфиков"
 
 #: about.html%2Bmain.section.div.div:62-13
 msgid "Human rights defender"
-msgstr ""
+msgstr "журналисты"
 
 #: about.html%2Bmain.section.div.div:66-13
 msgctxt "./about.html+main.section.div.div:66-13"
 msgid "Journalist"
-msgstr ""
+msgstr "эмигранты, которым иногда нужны госуслуги"
 
 #: about.html%2Bmain.section.div.div:70-13
 msgctxt "./about.html+main.section.div.div:70-13"
 msgid "Technologist"
-msgstr ""
+msgstr "Активисты"
 
 #: about.html%2Bmain.section.div.div:74-13
 msgid "Diaspora user"
-msgstr ""
+msgstr "правозащитники"
 
 #: about.html%2Bmain.section.div.div.div:79-17
 msgctxt "./about.html+main.section.div.div.div:79-17"
 msgid "Citizen"
-msgstr ""
+msgstr "читатели новостей"
 
 #: about.html%2Bmain.section.div.div.div:83-17
 msgctxt "./about.html+main.section.div.div.div:83-17"
 msgid "Student"
-msgstr ""
+msgstr "любители фанфиков"
 
 #: about.html%2Bmain.section.div.div.div:87-17
 msgctxt "./about.html+main.section.div.div.div:87-17"
 msgid "Technologist"
-msgstr ""
+msgstr "Активисты"
 
 #: about.html%2Bmain.section.div.div.div:91-17
 msgctxt "./about.html+main.section.div.div.div:91-17"
 msgid "Journalist"
-msgstr ""
+msgstr "эмигранты, которым иногда нужны госуслуги"
