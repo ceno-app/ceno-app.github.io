@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-06 17:19-0400\n"
+"POT-Creation-Date: 2025-05-06 20:26-0400\n"
 "PO-Revision-Date: 2025-04-21 23:06+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/censorship-no/"
@@ -18,27 +18,31 @@ msgstr ""
 msgid "Frequently<br>Asked<br>Questions"
 msgstr ""
 
+#: faq.html%2Bmain.section.form.input[value]:9-13
+msgid "(ceno.network OR ceno.website OR ceno.app)"
+msgstr ""
+
 #: faq.html%2Bmain.section:6-9
 msgid "Search"
 msgstr ""
 
-#: faq.html%2Bmain.section.div.a.div:12-45
+#: faq.html%2Bmain.section.div.a.div:13-45
 msgid "Read user manual"
 msgstr ""
 
-#: faq.html%2Bmain.section.div.a.div:13-104
+#: faq.html%2Bmain.section.div.a.div:14-104
 msgid "Read technical, in-depth whitepaper"
 msgstr ""
 
-#: faq.html%2Bmain.section.div.a.div:14-35
+#: faq.html%2Bmain.section.div.a.div:15-35
 msgid "Read quick-start guide"
 msgstr ""
 
-#: faq.html%2Bmain.section.div:18-9
+#: faq.html%2Bmain.section.div:19-9
 msgid "What is Ceno Browser?"
 msgstr "Co je prohlížeč Ceno?"
 
-#: faq.html%2Bmain.section.div.details.p:21-17
+#: faq.html%2Bmain.section.div.details.p:22-17
 #, fuzzy
 #| msgid ""
 #| "Ceno is a mobile web browser based on Mozilla Android Components. It is "
@@ -64,11 +68,11 @@ msgstr ""
 "webových informací v regionech a mezi nimi, kde bylo připojení přerušeno "
 "nebo kompromitováno."
 
-#: faq.html%2Bmain.section.div.details:25-48
+#: faq.html%2Bmain.section.div.details:26-48
 msgid "How does Ceno work?"
 msgstr "Jak Ceno funguje?"
 
-#: faq.html%2Bmain.section.div.details.p:29-17
+#: faq.html%2Bmain.section.div.details.p:30-17
 msgid ""
 "When a website is accessible from your network (e.g. accessing <i>www.canada."
 "ca</i> from your home internet), Ceno will connect to it like a normal web "
@@ -78,7 +82,7 @@ msgstr ""
 "gov.cz</i> z vašeho domácího internetu), Ceno se k ní připojí jako normální "
 "prohlížeč."
 
-#: faq.html%2Bmain.section.div.details.p:31-17
+#: faq.html%2Bmain.section.div.details.p:32-17
 msgid ""
 "When a website is not accessible due to network filtering/censorship, Ceno "
 "will attempt to get the content for you. How Ceno attempts to find content "
@@ -90,7 +94,7 @@ msgstr ""
 "záleží, jak jste se rozhodli Ceno používat, jestli v módu <strong>Veřejný</"
 "strong> nebo <strong>Osobní</strong>."
 
-#: faq.html%2Bmain.section.div.details.p:34-17
+#: faq.html%2Bmain.section.div.details.p:35-17
 #, fuzzy
 #| msgid ""
 #| "In <strong>Public</strong> mode, Ceno will look into the BitTorrent "
@@ -112,7 +116,7 @@ msgstr ""
 "Pokud obsah není dostupný, Ceno kontaktuje několik \"Vpichovacích\" serverů "
 "aby ji pro Vás získal a doručil."
 
-#: faq.html%2Bmain.section.div.details.p:38-17
+#: faq.html%2Bmain.section.div.details.p:39-17
 #, fuzzy
 #| msgid ""
 #| "In <strong>Personal</strong> mode, you will only contact the Injectors to "
@@ -130,7 +134,7 @@ msgstr ""
 "Vyhledávání se nepřipojí k sítí BitTorrent a nebude se pokoušet vyhledat "
 "obsah na zařízení jiných uživatelů."
 
-#: faq.html%2Bmain.section.div.details.p:41-17
+#: faq.html%2Bmain.section.div.details.p:42-17
 msgid ""
 "To ensure that your Ceno client can always contact an Injector, we have also "
 "created Bridges. If the Injectors are blocked on your network, the Ceno app "
@@ -144,7 +148,7 @@ msgstr ""
 "Mostech, které Vaši žádost přesměrují na \"Vpichovač\". Síť Ceno právě "
 "nabízí okolo 6000 Mostů. A jejich množství stále přibývá."
 
-#: faq.html%2Bmain.section.div.details.p:45-17
+#: faq.html%2Bmain.section.div.details.p:46-17
 #, fuzzy
 #| msgid ""
 #| "For a more detailed explanation of how Ceno works, please read <a "
@@ -156,7 +160,7 @@ msgstr ""
 "Pro detajlnější vysvětlení jak Ceno funguje, si prosím přečtěte <a href=\"../"
 "user-manual/\">Uživatelskou příručku</a>."
 
-#: faq.html%2Bmain.section.div.details.p:47-17
+#: faq.html%2Bmain.section.div.details.p:48-17
 #, fuzzy
 #| msgid ""
 #| "For a simpler explanation of how Ceno works, <a href=\"explainer."
@@ -168,11 +172,11 @@ msgstr ""
 "Pro jednodušší vysvětlení jak Ceno funguje, <a href=\"explainer.html\">si "
 "prosím přečtěte toto</a>."
 
-#: faq.html%2Bmain.section.div.details:47-115
+#: faq.html%2Bmain.section.div.details:48-115
 msgid "What are the advantages of using Ceno?"
 msgstr "Jaké jsou výhody používání Ceno?"
 
-#: faq.html%2Bmain.section.div.details.p:51-17
+#: faq.html%2Bmain.section.div.details.p:52-17
 #, fuzzy
 #| msgid ""
 #| "Our motto is ‘Share the Web!’ and essentially that is what Ceno users are "
@@ -193,7 +197,7 @@ msgstr ""
 "sdílen s ostatními uživateli, kteří hledají ten samý obsah. Ceno pro tohle "
 "využívá síť sdílení souborů BitTorrent."
 
-#: faq.html%2Bmain.section.div.details.p:54-17
+#: faq.html%2Bmain.section.div.details.p:55-17
 #, fuzzy
 #| msgid ""
 #| "Ceno’s advantage is evident in a network that censors websites, or where "
@@ -223,7 +227,7 @@ msgstr ""
 "internetu, Ceno vám umožňuje přístup k informacím, které by jinak mohly být "
 "nedostupné."
 
-#: faq.html%2Bmain.section.div.details.p:60-17
+#: faq.html%2Bmain.section.div.details.p:61-17
 msgid ""
 "People running Ceno from countries that do not censor the Internet - or from "
 "parts of the world where access to the internet is reliable - can choose to "
@@ -239,7 +243,7 @@ msgstr ""
 "jednoduchá, ale mocná akce, která Vám umožní pomáhat ostatním s přístupem k "
 "internetu."
 
-#: faq.html%2Bmain.section.div.details.p:64-17
+#: faq.html%2Bmain.section.div.details.p:65-17
 msgid ""
 "Ceno - and all accompanying components of the tool that together create a "
 "decentralized network of peers and nodes - is free and open source software. "
@@ -251,15 +255,15 @@ msgstr ""
 "software. Můžete <a href=\"https://gitlab.com/censorship-no/ceno-"
 "browser\">oveřit náš kód</a> nebo sami znovu-vytvořit celou síť!"
 
-#: faq.html%2Bmain.section.div.details:66-38
+#: faq.html%2Bmain.section.div.details:67-38
 msgid "What are the risks of using Ceno?"
 msgstr "Jaká jsou rizika spojená s používáním Ceno?"
 
-#: faq.html%2Bmain.section.div.details.h3:70-17
+#: faq.html%2Bmain.section.div.details.h3:71-17
 msgid "Risks for users"
 msgstr "Rizika pro uživatele"
 
-#: faq.html%2Bmain.section.div.details.p:71-17
+#: faq.html%2Bmain.section.div.details.p:72-17
 msgid ""
 "Every technology that deals with sensitive use cases has its advantages and "
 "risks. By design, Ceno is using the public BitTorrent network for much of "
@@ -277,7 +281,7 @@ msgstr ""
 "se například může dotázat na síť BitTorrent na seznam IP adres, které byly "
 "spojeny s <i>website.com</i>."
 
-#: faq.html%2Bmain.section.div.details.p:77-17
+#: faq.html%2Bmain.section.div.details.p:78-17
 msgid ""
 "Users sharing retrieved content with others may also incur additional data "
 "charges as content is copied from their device to the device of other Ceno "
@@ -287,7 +291,7 @@ msgstr ""
 "další poplatky za data, protože je obsah zkopírován z jejich zařízení do "
 "zařízení jiných uživatelů Ceno."
 
-#: faq.html%2Bmain.section.div.details.p:79-17
+#: faq.html%2Bmain.section.div.details.p:80-17
 #, fuzzy
 #| msgid ""
 #| "In response to these risks, we created a ‘<strong>Personal</strong> mode’ "
@@ -311,14 +315,14 @@ msgstr ""
 "vyžadují ověření (například při přihlašování k vašim účtům na sociálních "
 "sítích)."
 
-#: faq.html%2Bmain.section.div.details.p:83-17
+#: faq.html%2Bmain.section.div.details.p:84-17
 msgid ""
 "You can easily switch between <strong>Public</strong> and <strong>Personal</"
 "strong> tabs in the same manner as switching between Normal and Private/"
 "Incognito tabs on your current browser."
 msgstr ""
 
-#: faq.html%2Bmain.section.div.details.p:85-17
+#: faq.html%2Bmain.section.div.details.p:86-17
 msgid ""
 "Injectors can also see requests for content on the network, including the IP "
 "address of the user making the request and the name of the website with the "
@@ -328,17 +332,17 @@ msgid ""
 "and managed by the Ceno team. We periodically delete all access logs."
 msgstr ""
 
-#: faq.html%2Bmain.section.div.details.h3:90-17
+#: faq.html%2Bmain.section.div.details.h3:91-17
 msgid "Risks for Bridge operators"
 msgstr ""
 
-#: faq.html%2Bmain.section.div.details.p:91-17
+#: faq.html%2Bmain.section.div.details.p:92-17
 msgid ""
 "Since any user can become a Bridge, do consider the risks that are "
 "introduced by this action."
 msgstr ""
 
-#: faq.html%2Bmain.section.div.details.p:92-17
+#: faq.html%2Bmain.section.div.details.p:93-17
 msgid ""
 "Bridge activity is invisible to the Bridge operator (unless they are "
 "actively monitoring their device for incoming and outgoing connections). "
@@ -350,7 +354,7 @@ msgstr ""
 "síťové požadavky od ostatních uživatelů Ceno o přístup k Injektoru a "
 "předávat tento požadavek."
 
-#: faq.html%2Bmain.section.div.details.p:95-17
+#: faq.html%2Bmain.section.div.details.p:96-17
 #, fuzzy
 #| msgid ""
 #| "Bridge operators will have their device’s IP address listed in the "
@@ -362,7 +366,7 @@ msgstr ""
 "Operátoři mostu budou mít IP adresu svého zařízení uvedenou v síti "
 "BitTorrent jako přístupný most."
 
-#: faq.html%2Bmain.section.div.details.p:97-17
+#: faq.html%2Bmain.section.div.details.p:98-17
 msgid ""
 "Bridging only works when the network that you are in allows for incoming "
 "connections. This is checked automatically by the Ceno client app upon "
@@ -373,11 +377,11 @@ msgstr ""
 "při spuštění. Většina bezdrátových mobilních operátorů neumožňuje příchozí "
 "připojení."
 
-#: faq.html%2Bmain.section.div.details:99-33
+#: faq.html%2Bmain.section.div.details:100-33
 msgid "Who develops Ceno Browser?"
 msgstr ""
 
-#: faq.html%2Bmain.section.div.details.p:103-17
+#: faq.html%2Bmain.section.div.details.p:104-17
 msgid ""
 "Ceno is a technology created and maintained by the Canadian non-profit "
 "organization <a href=\"https://equalit.ie\">eQualitie</a>. They have "
@@ -389,7 +393,7 @@ msgstr ""
 "Android začlenili svou <a href=\"https://ouinet.work\">síťovou knihovnu "
 "Ouinet</a>."
 
-#: faq.html%2Bmain.section.div.details.p:104-17
+#: faq.html%2Bmain.section.div.details.p:105-17
 msgid ""
 "eQualitie has been in existence for twelve years, during which time they "
 "have been creating and advancing tools to protect freedom of speech, "
@@ -399,7 +403,7 @@ msgstr ""
 "nástroje na ochranu svobody slova, usnadnění výměny informací a podporu "
 "sebevyjádření na internetu."
 
-#: faq.html%2Bmain.section.div.details.p:107-17
+#: faq.html%2Bmain.section.div.details.p:108-17
 msgid ""
 "Some of their other projects include <a href=\"https://ouisync."
 "net\">Ouisync</a>, a service for decentralized file sharing; <a "
@@ -409,11 +413,11 @@ msgid ""
 "services."
 msgstr ""
 
-#: faq.html%2Bmain.section.div.details:110-77
+#: faq.html%2Bmain.section.div.details:111-77
 msgid "What's the difference between using a VPN and Ceno Browser?"
 msgstr ""
 
-#: faq.html%2Bmain.section.div.details.p:114-17
+#: faq.html%2Bmain.section.div.details.p:115-17
 msgid ""
 "VPNs were initially created for private communications between your device "
 "and a destination server. As Internet censorship became a frequent "
@@ -423,7 +427,7 @@ msgid ""
 "help their users get around local network censorship."
 msgstr ""
 
-#: faq.html%2Bmain.section.div.details.p:119-17
+#: faq.html%2Bmain.section.div.details.p:120-17
 msgid ""
 "VPNs can see who their clients are and what websites they are requesting. "
 "This is by design and a level of trust in the VPN operator is required (much "
@@ -431,7 +435,7 @@ msgid ""
 "Injectors)."
 msgstr ""
 
-#: faq.html%2Bmain.section.div.details.p:122-17
+#: faq.html%2Bmain.section.div.details.p:123-17
 msgid ""
 "Ceno's primary distinction from a VPN is that it does attempt to route all "
 "of your website requests through the decentralized network. When a website "
@@ -441,11 +445,11 @@ msgid ""
 "improves deliverability."
 msgstr ""
 
-#: faq.html%2Bmain.section.div.details:125-103
+#: faq.html%2Bmain.section.div.details:126-103
 msgid "What's the difference between using the Tor and Ceno browsers?"
 msgstr ""
 
-#: faq.html%2Bmain.section.div.details.p:129-17
+#: faq.html%2Bmain.section.div.details.p:130-17
 msgid ""
 "Unlike Tor Browser, Ceno Browser is not a tool for anonymity, which is Tor's "
 "primary purpose. In the Tor network, network traffic is encrypted and routed "
@@ -456,11 +460,11 @@ msgid ""
 "href=\"https://support.torproject.org/\">their support documentation</a>."
 msgstr ""
 
-#: faq.html%2Bmain.section.div.details:134-43
+#: faq.html%2Bmain.section.div.details:135-43
 msgid "Whats the difference between Personal and Public tabs, again?"
 msgstr ""
 
-#: faq.html%2Bmain.section.div.details.p:138-17
+#: faq.html%2Bmain.section.div.details.p:139-17
 msgid ""
 "Public tabs use all connectivity methods available in the Ceno network to "
 "get the content you want. When browsing using a Public tab you will leave a "
@@ -470,7 +474,7 @@ msgid ""
 "network."
 msgstr ""
 
-#: faq.html%2Bmain.section.div.details.p:142-17
+#: faq.html%2Bmain.section.div.details.p:143-17
 msgid ""
 "Information requested and retrieved in a Personal tab is not shared with "
 "anyone else. No record of your activity is recorded on BitTorrent. Use "
@@ -479,11 +483,11 @@ msgid ""
 "browsing activity in Ceno."
 msgstr ""
 
-#: faq.html%2Bmain.section.div.details:145-26
+#: faq.html%2Bmain.section.div.details:146-26
 msgid "When will there be an iPhone or Windows version?"
 msgstr ""
 
-#: faq.html%2Bmain.section.div.details.p:149-17
+#: faq.html%2Bmain.section.div.details.p:150-17
 msgid ""
 "Development of Ceno Browser for iOS and Windows is currently ongoing, with "
 "plans for release in early 2025."

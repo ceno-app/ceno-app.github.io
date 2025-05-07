@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-06 17:19-0400\n"
+"POT-Creation-Date: 2025-05-06 20:26-0400\n"
 "PO-Revision-Date: 2025-04-30 21:00+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/censorship-no/"
@@ -14,12 +14,7 @@ msgstr ""
 "Plural-Forms: nplurals=3; plural=((n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2);\n"
 "X-Generator: Weblate 5.12-dev\n"
 
-#: _head.html%2Bhtml[lang]:3-1
-msgctxt "./_head.html+html[lang]:3-1"
-msgid "en"
-msgstr "cz"
-
-#: _head.html%2Bhtml.body.nav.div.div:26-13
+#: _head.html%2Bbody.nav.div.div:24-13
 msgid ""
 "<a href=\"/@LANG@/about.html\">About</a> <a href=\"/@LANG@/community."
 "html\">Get Involved</a> <a href=\"/@LANG@/faq.html\">FAQ</a> <a href=\"/"
@@ -27,20 +22,23 @@ msgid ""
 "html\">Donate</a>"
 msgstr ""
 
-#: _head.html%2Bhtml.body.nav.div.div.div.label.img[alt]:35-25
-msgctxt "./_head.html+html.body.nav.div.div.div.label.img[alt]:35-25"
+#: _head.html%2Bbody.nav.div.div.div.label.img[alt]:33-25
+#, fuzzy
+#| msgctxt "./_head.html+html.body.nav.div.div.div.label.img[alt]:35-25"
+#| msgid "Select language"
+msgctxt "./_head.html+body.nav.div.div.div.label.img[alt]:33-25"
 msgid "Select language"
 msgstr "Výběr jazyka"
 
 #.  TRANSLATORS: Replace with your language. 
-#: _head.html%2Bhtml.body.nav.div.div.div:32-17
+#: _head.html%2Bbody.nav.div.div.div:30-17
 msgid "English"
 msgstr ""
 
 #.  Sorted alphabetically by language code. 
 #.  TRANSLATORS: Please do not translate any of these. 
-#: _head.html%2Bhtml.body.nav.div.div.div.div:40-21
-msgctxt "./_head.html+html.body.nav.div.div.div.div:40-21"
+#: _head.html%2Bbody.nav.div.div.div.div:38-21
+msgctxt "./_head.html+body.nav.div.div.div.div:38-21"
 msgid ""
 "<a class=\"navbar-item\" lang=\"ar\" hreflang=\"ar\" href=\"../ar/@PAGE@."
 "html\">العربية</a> <a class=\"navbar-item\" lang=\"en\" hreflang=\"en\" "
@@ -58,30 +56,38 @@ msgid ""
 "item\" lang=\"ur\" hreflang=\"ur\" href=\"../ur/@PAGE@.html\">اردو</a>"
 msgstr ""
 
-#: _head.html%2Bhtml.body.nav.div.div:55-17
-msgctxt "./_head.html+html.body.nav.div.div:55-17"
+#: _head.html%2Bbody.nav.div.div:53-17
+#, fuzzy
+#| msgctxt "./_head.html+html.body.nav.div.div:55-17"
+#| msgid "Download"
+msgctxt "./_head.html+body.nav.div.div:53-17"
 msgid "Download"
 msgstr "Stahování"
 
-#: _head.html%2Bhtml.body.nav.div.a.img[alt]:60-62
+#: _head.html%2Bbody.nav.div.a.img[alt]:58-62
 msgid "Ceno logo"
 msgstr "Ceno logo"
 
-#: _head.html%2Bhtml.body.nav.div.div.div.label.img[alt]:65-25
-msgctxt "./_head.html+html.body.nav.div.div.div.label.img[alt]:65-25"
+#: _head.html%2Bbody.nav.div.div.div.label.img[alt]:63-25
+#, fuzzy
+#| msgctxt "./_head.html+html.body.nav.div.div.div.label.img[alt]:35-25"
+#| msgid "Select language"
+msgctxt "./_head.html+body.nav.div.div.div.label.img[alt]:63-25"
 msgid "Select language"
 msgstr "Výběr jazyka"
 
 #.  TRANSLATORS: Replace with your lowercase language code. 
-#: _head.html%2Bhtml.body.nav.div.div.div:62-17
-msgctxt "./_head.html+html.body.nav.div.div.div:62-17"
+#: _head.html%2Bbody.nav.div.div.div:60-17
+#, fuzzy
+#| msgctxt "./_head.html+html[lang]:3-1"
+#| msgid "en"
 msgid "en"
 msgstr "cz"
 
 #.  Sorted alphabetically by language code. 
 #.  TRANSLATORS: Please do not translate any of these. 
-#: _head.html%2Bhtml.body.nav.div.div.div.div:71-21
-msgctxt "./_head.html+html.body.nav.div.div.div.div:71-21"
+#: _head.html%2Bbody.nav.div.div.div.div:69-21
+msgctxt "./_head.html+body.nav.div.div.div.div:69-21"
 msgid ""
 "<a class=\"navbar-item\" lang=\"ar\" hreflang=\"ar\" href=\"../ar/@PAGE@."
 "html\">العربية</a> <a class=\"navbar-item\" lang=\"en\" hreflang=\"en\" "
@@ -100,12 +106,15 @@ msgid ""
 msgstr ""
 
 #.  These spans are used to create the animated hamburger button 
-#: _head.html%2Bhtml.body.nav.div.div:86-17
-msgctxt "./_head.html+html.body.nav.div.div:86-17"
+#: _head.html%2Bbody.nav.div.div:84-17
+#, fuzzy
+#| msgctxt "./_head.html+html.body.nav.div.div:55-17"
+#| msgid "Download"
+msgctxt "./_head.html+body.nav.div.div:84-17"
 msgid "Download"
 msgstr "Stahování"
 
-#: _head.html%2Bhtml.body.nav.div.div.div:97-17
+#: _head.html%2Bbody.nav.div.div.div:95-17
 msgid ""
 "<a href=\"/@LANG@/about.html\">About</a> <a href=\"/@LANG@/community."
 "html\">Get Involved</a> <a href=\"/@LANG@/faq.html\">FAQ</a> <a href=\"/"
@@ -113,9 +122,21 @@ msgid ""
 "html\">Donate</a>"
 msgstr ""
 
-#: _head.html%2Bhtml.body.title:107-1
+#: _head.html%2Bbody.title:105-1
 msgid "Ceno Browser | Share the Web"
 msgstr ""
+
+#~ msgctxt "./_head.html+html.body.nav.div.div.div.label.img[alt]:65-25"
+#~ msgid "Select language"
+#~ msgstr "Výběr jazyka"
+
+#~ msgctxt "./_head.html+html.body.nav.div.div.div:62-17"
+#~ msgid "en"
+#~ msgstr "cz"
+
+#~ msgctxt "./_head.html+html.body.nav.div.div:86-17"
+#~ msgid "Download"
+#~ msgstr "Stahování"
 
 #~ msgctxt "./_head.html+html.body.nav.div.div.div.label.img[alt]:67-25"
 #~ msgid "Select language"
