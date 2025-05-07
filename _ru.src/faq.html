@@ -5,7 +5,8 @@
             <img src="/static/img/faq/question.svg" />
         </div>
         <form id="searchForm" action="https://duckduckgo.com/" method="GET">
-            <input type="search" placeholder="Type something to search using Duckduckgo" />
+            <input id="q" type="text" name="q" placeholder="Type something to search using Duckduckgo" />
+            <input type="hidden" name="sites" value="(ceno.network OR ceno.website OR ceno.app)">
             <button type="submit">Найти</button>
         </form>
         <div class="link-container">
