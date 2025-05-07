@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-15 23:57-0400\n"
-"PO-Revision-Date: 2025-04-21 23:12+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2025-05-07 08:46+0000\n"
+"Last-Translator: Kaya Zeren <kayazeren@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-latest/tr/>\n"
 "Language: tr\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: latest/index.html%2Bmain.h1:2-1
 msgid "latest"
@@ -28,7 +28,7 @@ msgstr "15 Aralık 2022"
 
 #: latest/index.html%2Bmain.section.article.h1:13-5
 msgid "Ceno proves itself in Iran during Internet shutdowns"
-msgstr "Ceno İran'daki İnternet kesintilerinde kendini gösterdi"
+msgstr "Ceno İran'daki internet kesintilerinde kendini gösterdi"
 
 #: latest/index.html%2Bmain.section.article.div:17-5
 msgid ""
