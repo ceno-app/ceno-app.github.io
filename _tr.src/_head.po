@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-06 20:26-0400\n"
-"PO-Revision-Date: 2025-05-01 02:38+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2025-05-08 16:48-0400\n"
+"PO-Revision-Date: 2025-05-07 08:46+0000\n"
+"Last-Translator: Kaya Zeren <kayazeren@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-header/tr/>\n"
 "Language: tr\n"
@@ -28,7 +28,7 @@ msgstr ""
 #| msgid "Select language"
 msgctxt "./_head.html+body.nav.div.div.div.label.img[alt]:33-25"
 msgid "Select language"
-msgstr "Dil seç"
+msgstr "Dili seçin"
 
 #.  TRANSLATORS: Replace with your language. 
 #: _head.html%2Bbody.nav.div.div.div:30-17
@@ -106,7 +106,7 @@ msgstr "Ceno logosu"
 #| msgid "Select language"
 msgctxt "./_head.html+body.nav.div.div.div.label.img[alt]:63-25"
 msgid "Select language"
-msgstr "Dil seç"
+msgstr "Dili seçin"
 
 #.  TRANSLATORS: Replace with your lowercase language code. 
 #: _head.html%2Bbody.nav.div.div.div:60-17
