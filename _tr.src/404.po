@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-06 20:26-0400\n"
-"PO-Revision-Date: 2025-04-21 23:09+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2025-05-06 17:19-0400\n"
+"PO-Revision-Date: 2025-05-07 08:46+0000\n"
+"Last-Translator: Kaya Zeren <kayazeren@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-404/tr/>\n"
 "Language: tr\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: 404.html%2Bdiv.div.h4:3-9
 msgid "Sorry, we can't find the page you're looking for"
@@ -32,7 +32,7 @@ msgstr ""
 
 #: 404.html%2Bdiv.div.a[title]:6-9
 msgid "Get Ceno"
-msgstr "Ceno'yu edinin"
+msgstr "Ceno edinin"
 
 #: 404.html%2Bdiv.div:5-53
 msgid "Go to censorship.no"

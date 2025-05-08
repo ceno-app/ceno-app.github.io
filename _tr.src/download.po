@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-06 20:26-0400\n"
-"PO-Revision-Date: 2025-04-21 23:09+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2025-05-06 17:19-0400\n"
+"PO-Revision-Date: 2025-05-07 08:46+0000\n"
+"Last-Translator: Kaya Zeren <kayazeren@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-download/tr/>\n"
 "Language: tr\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: download.html%2Bmain.section.div.div.div:5-17
 msgid "Download Ceno Browser"
@@ -27,7 +27,7 @@ msgid ""
 "The safest way to install Ceno Browser on your Android phone is through the "
 "Google Play Store:"
 msgstr ""
-"Ceno Browser Android telefonunuza kurmanın en güvenli yolu Google Play Store "
+"Android telefonunuza Ceno Browser kurmanın en güvenli yolu Google Play Store "
 "kullanmaktır:"
 
 #: download.html%2Bmain.section.div.div.h4:20-17
@@ -53,7 +53,7 @@ msgstr ""
 
 #: download.html%2Bmain.section.div.h2:36-13
 msgid "Direct Download"
-msgstr "Direkt İndirme"
+msgstr "Doğrudan indirme"
 
 #: download.html%2Bmain.section.div.p:37-13
 msgid ""

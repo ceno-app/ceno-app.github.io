@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-15 23:57-0400\n"
-"PO-Revision-Date: 2025-04-21 23:09+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2025-05-07 08:46+0000\n"
+"Last-Translator: Kaya Zeren <kayazeren@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-ceno-in-iran/tr/>\n"
 "Language: tr\n"
@@ -12,12 +12,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: latest/ceno-iran.html%2Btitle:1-1
 msgctxt "./latest/ceno-iran.html+title:1-1"
 msgid "Ceno proves itself in Iran during Internet shutdowns"
-msgstr "Ceno İran'daki İnternet kesintilerinde kendini gösterdi"
+msgstr "Ceno İran'daki internet kesintilerinde kendini gösterdi"
 
 #: latest/ceno-iran.html%2Bmain:2-1
 msgid "main img { max-width: 400px; margin-inline: auto; }"
@@ -26,7 +26,7 @@ msgstr ""
 #: latest/ceno-iran.html%2Bmain.h1:8-1
 msgctxt "./latest/ceno-iran.html+main.h1:8-1"
 msgid "Ceno proves itself in Iran during Internet shutdowns"
-msgstr "Ceno İran'daki İnternet kesintilerinde kendini gösterdi"
+msgstr "Ceno İran'daki internet kesintilerinde kendini gösterdi"
 
 #: latest/ceno-iran.html%2Bmain.h2:10-1
 msgid ""
@@ -34,7 +34,7 @@ msgid ""
 "information regardless of censorship"
 msgstr ""
 "İnsanların sansürü aşarak bilgilere ulaşmasını ve paylaşmasını sağlayan, "
-"merkezi olmayan mobil İnternet tarayıcısı"
+"merkezi olmayan mobil internet tarayıcısı"
 
 #: latest/ceno-iran.html%2Bmain.p:14-1
 msgid ""
@@ -62,7 +62,7 @@ msgstr ""
 "artırıyor. İran'da Eylül ortasında protestolar artmaya başladığından beri "
 "rejim, özellikle intranet altyapısı olan Ulusal Bilgi Ağı (NIN) dışındaki "
 "iletişimi bastırmakta saldırgan davranıyor. Yetkililer diğer şeylerin "
-"yanında İnternet sitelerini ve sosyal ağları engelliyor, mobil verileri "
+"yanında internet sitelerini ve sosyal ağları engelliyor, mobil verileri "
 "devre dışı bırakıyor, DNS hizmetlerini şifreliyor ve ağları çökertiyor."
 
 #: latest/ceno-iran.html%2Bmain.p:31-1
@@ -84,7 +84,7 @@ msgstr ""
 "kullanımı, Rusya, Afganistan, Ukrayna, Pakistan, Hindistan, Yemen, Bangladeş "
 "ve Myanmar gibi sansür uygulanan diğer ülkelerde de artmayı sürdürüyor. Her "
 "kurulum, aygıtlar arasında köprüler oluşturuyor ve kullanıcıların "
-"engellenen, süzülen ve sansürlenen İnternet içeriğini paylaşmalarını "
+"engellenen, süzülen ve sansürlenen internet içeriğini paylaşmalarını "
 "sağlayarak ağı genişletiyor."
 
 #: latest/ceno-iran.html%2Bmain.p:40-1
@@ -97,8 +97,8 @@ msgid ""
 msgstr ""
 "eQualitie kurucusu ve yöneticisi Dmitri Vitaliev, “Gerektiğinde Ceno ile "
 "yapılanları izlemek memnuniyet verici” diyor. “İran halkı, bilgiye özgürce "
-"erişemediği yerlerden, İnternet üzerinde gezinebilmek ve İran ağından "
-"sansürlenen bilgilere özgürce erişebilmek için Ceno'ya güvenebilirler.”"
+"erişemediği yerlerden, internet üzerinde gezinebilmek ve İran ağından "
+"sansürlenen bilgilere özgürce erişebilmek için Ceno ağına güvenebilirler.”"
 
 #: latest/ceno-iran.html%2Bmain.p:45-1
 msgid ""
