@@ -1,9 +1,17 @@
+@font-face {
+    font-family: "Vazirmatn";
+    src:
+        url(../static/fonts/Vazirmatn.woff2) format("woff2");
+
+    unicode-range: U+0600-1EEFF;
+}
+
 :root {
-  font-family: Inter, sans-serif;
+  font-family: Vazirmatn, Inter, sans-serif;
   font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
 }
 @supports (font-variation-settings: normal) {
-  :root { font-family: InterVariable, sans-serif; }
+  :root { font-family: Vazirmatn, InterVariable, sans-serif; }
 }
 
 html {
@@ -13,7 +21,6 @@ html {
     --ceno-prim-700: #0369A1;
     --ceno-sec-500: #ea580c;
     --ceno-sec-700: #C2410C;
-    font-family: Inter, sans-serif !important;
     --lg-break: 1100px;
     --med-break: 600px;
 }
