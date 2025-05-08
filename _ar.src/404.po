@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-06 17:19-0400\n"
-"PO-Revision-Date: 2025-04-22 05:36+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2025-05-08 09:03+0000\n"
+"Last-Translator: abdelbasset jabrane <ribago9317@cubene.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-404/ar/>\n"
 "Language: ar\n"
@@ -13,23 +13,19 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: 404.html%2Bdiv.div.h4:3-9
 msgid "Sorry, we can't find the page you're looking for"
 msgstr "عذرًا، لا يمكننا العثور على الصفحة التي تبحث عنها"
 
 #: 404.html%2Bdiv.div.p:4-9
-#, fuzzy
-#| msgid ""
-#| "That link didn't work. You can return to the <a href=\"index."
-#| "html\">homepage</a> or get <a href=\"support.html\">support</a>."
 msgid ""
 "That link didn't work. You can return to the <a href=\"index."
 "html\">homepage</a> or get <a href=\"/en/support.html\">support</a>."
 msgstr ""
-"هذا الرابط لا يعمل. يمكنك العودة إلى <a href=\"index.html\">homepage</a> or "
-"get <a href=\"support.html\">support</a>."
+"<p>هذا الرابط لم يعمل. يمكنك العودة إلى <a href=\"index.html\">الصفحة "
+"الرئيسية</a> أو الحصول على <a href=\"/en/support.html\">الدعم</a>.</p>"
 
 #: 404.html%2Bdiv.div.a[title]:6-9
 msgid "Get Ceno"
