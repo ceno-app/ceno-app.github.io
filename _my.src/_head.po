@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-06 20:26-0400\n"
-"PO-Revision-Date: 2025-05-08 17:57+0000\n"
+"PO-Revision-Date: 2025-05-09 15:55+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Burmese <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-header/my/>\n"
@@ -88,7 +88,7 @@ msgstr ""
 #: _head.html%2Bbody.nav.div.div:53-17
 msgctxt "./_head.html+body.nav.div.div:53-17"
 msgid "Download"
-msgstr "‌ဒေါင်းလုပ်ဒ်"
+msgstr "ဒေါင်းလုပ်ဒ်"
 
 #: _head.html%2Bbody.nav.div.a.img[alt]:58-62
 msgid "Ceno logo"
@@ -161,7 +161,7 @@ msgstr ""
 #: _head.html%2Bbody.nav.div.div:84-17
 msgctxt "./_head.html+body.nav.div.div:84-17"
 msgid "Download"
-msgstr "‌ဒေါင်းလုပ်ဒ်"
+msgstr "ဒေါင်းလုပ်ဒ်"
 
 #: _head.html%2Bbody.nav.div.div.div:95-17
 msgid ""
