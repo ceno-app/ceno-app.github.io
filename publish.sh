@@ -8,7 +8,6 @@ set -e
 ./build.sh
 
 ./pot-extract.sh
-./po-update.sh
 
 for lang in $(cat supported_locales); do
     if [ "$lang" != "en" ]; then
