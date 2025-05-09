@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-08 16:48-0400\n"
-"PO-Revision-Date: 2025-04-30 21:00+0000\n"
+"PO-Revision-Date: 2025-05-08 17:57+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Czech <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-header/cs/>\n"
@@ -23,9 +23,6 @@ msgid ""
 msgstr ""
 
 #: _head.html%2Bbody.nav.div.div.div.label.img[alt]:33-25
-#, fuzzy
-#| msgctxt "./_head.html+html.body.nav.div.div.div.label.img[alt]:35-25"
-#| msgid "Select language"
 msgctxt "./_head.html+body.nav.div.div.div.label.img[alt]:33-25"
 msgid "Select language"
 msgstr "Výběr jazyka"
@@ -57,9 +54,6 @@ msgid ""
 msgstr ""
 
 #: _head.html%2Bbody.nav.div.div:53-17
-#, fuzzy
-#| msgctxt "./_head.html+html.body.nav.div.div:55-17"
-#| msgid "Download"
 msgctxt "./_head.html+body.nav.div.div:53-17"
 msgid "Download"
 msgstr "Stahování"
@@ -69,18 +63,12 @@ msgid "Ceno logo"
 msgstr "Ceno logo"
 
 #: _head.html%2Bbody.nav.div.div.div.label.img[alt]:63-25
-#, fuzzy
-#| msgctxt "./_head.html+html.body.nav.div.div.div.label.img[alt]:35-25"
-#| msgid "Select language"
 msgctxt "./_head.html+body.nav.div.div.div.label.img[alt]:63-25"
 msgid "Select language"
 msgstr "Výběr jazyka"
 
 #.  TRANSLATORS: Replace with your lowercase language code. 
 #: _head.html%2Bbody.nav.div.div.div:60-17
-#, fuzzy
-#| msgctxt "./_head.html+html[lang]:3-1"
-#| msgid "en"
 msgid "en"
 msgstr "cz"
 
@@ -107,9 +95,6 @@ msgstr ""
 
 #.  These spans are used to create the animated hamburger button 
 #: _head.html%2Bbody.nav.div.div:84-17
-#, fuzzy
-#| msgctxt "./_head.html+html.body.nav.div.div:55-17"
-#| msgid "Download"
 msgctxt "./_head.html+body.nav.div.div:84-17"
 msgid "Download"
 msgstr "Stahování"

@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-08 16:48-0400\n"
-"PO-Revision-Date: 2025-05-01 13:51+0000\n"
+"PO-Revision-Date: 2025-05-09 15:35+0000\n"
 "Last-Translator: Максим Горпиніч <maksimgorpinic4@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-header/uk/>\n"
@@ -28,9 +28,6 @@ msgstr ""
 "donate.html\">Зробити пожертву</a>"
 
 #: _head.html%2Bbody.nav.div.div.div.label.img[alt]:33-25
-#, fuzzy
-#| msgctxt "./_head.html+html.body.nav.div.div.div.label.img[alt]:35-25"
-#| msgid "Select language"
 msgctxt "./_head.html+body.nav.div.div.div.label.img[alt]:33-25"
 msgid "Select language"
 msgstr "Виберіть мову"
@@ -43,24 +40,6 @@ msgstr "Українська"
 #.  Sorted alphabetically by language code. 
 #.  TRANSLATORS: Please do not translate any of these. 
 #: _head.html%2Bbody.nav.div.div.div.div:38-21
-#, fuzzy
-#| msgctxt "./_head.html+html.body.nav.div.div.div.div:40-21"
-#| msgid ""
-#| "<a class=\"navbar-item\" lang=\"ar\" hreflang=\"ar\" href=\"../ar/@PAGE@."
-#| "html\">العربية</a> <a class=\"navbar-item\" lang=\"en\" hreflang=\"en\" "
-#| "href=\"../en/@PAGE@.html\">English</a> <a class=\"navbar-item\" "
-#| "lang=\"es\" hreflang=\"es\" href=\"../es/@PAGE@.html\">Español</a> <a "
-#| "class=\"navbar-item\" lang=\"fa\" hreflang=\"fa\" href=\"../fa/@PAGE@."
-#| "html\">فارسی</a> <a class=\"navbar-item\" lang=\"fr\" hreflang=\"fr\" "
-#| "href=\"../fr/@PAGE@.html\">Français</a> <a class=\"navbar-item\" "
-#| "lang=\"my\" hreflang=\"my\" href=\"../my/@PAGE@.html\">မြန်မာစာ</a> <a "
-#| "class=\"navbar-item\" lang=\"pt_BR\" hreflang=\"pt_BR\" href=\"../pt_BR/"
-#| "@PAGE@.html\">Português</a> <a class=\"navbar-item\" lang=\"ru\" "
-#| "hreflang=\"ru\" href=\"../ru/@PAGE@.html\">Pусский</a> <a class=\"navbar-"
-#| "item\" lang=\"tr\" hreflang=\"tr\" href=\"../tr/@PAGE@.html\">Türkçe</a> "
-#| "<a class=\"navbar-item\" lang=\"uk\" hreflang=\"uk\" href=\"../uk/@PAGE@."
-#| "html\">Українська</a> <a class=\"navbar-item\" lang=\"ur\" "
-#| "hreflang=\"ur\" href=\"../ur/@PAGE@.html\">اردو</a>"
 msgctxt "./_head.html+body.nav.div.div.div.div:38-21"
 msgid ""
 "<a class=\"navbar-item\" lang=\"ar\" hreflang=\"ar\" href=\"../ar/@PAGE@."
@@ -95,9 +74,6 @@ msgstr ""
 "href=\"../ur/@PAGE@.html\">Урду</a>"
 
 #: _head.html%2Bbody.nav.div.div:53-17
-#, fuzzy
-#| msgctxt "./_head.html+html.body.nav.div.div:55-17"
-#| msgid "Download"
 msgctxt "./_head.html+body.nav.div.div:53-17"
 msgid "Download"
 msgstr "Завантажити"
@@ -107,42 +83,18 @@ msgid "Ceno logo"
 msgstr "Логотип Ceno"
 
 #: _head.html%2Bbody.nav.div.div.div.label.img[alt]:63-25
-#, fuzzy
-#| msgctxt "./_head.html+html.body.nav.div.div.div.label.img[alt]:35-25"
-#| msgid "Select language"
 msgctxt "./_head.html+body.nav.div.div.div.label.img[alt]:63-25"
 msgid "Select language"
 msgstr "Виберіть мову"
 
 #.  TRANSLATORS: Replace with your lowercase language code. 
 #: _head.html%2Bbody.nav.div.div.div:60-17
-#, fuzzy
-#| msgctxt "./_head.html+html[lang]:3-1"
-#| msgid "en"
 msgid "en"
 msgstr "en"
 
 #.  Sorted alphabetically by language code. 
 #.  TRANSLATORS: Please do not translate any of these. 
 #: _head.html%2Bbody.nav.div.div.div.div:69-21
-#, fuzzy
-#| msgctxt "./_head.html+html.body.nav.div.div.div.div:40-21"
-#| msgid ""
-#| "<a class=\"navbar-item\" lang=\"ar\" hreflang=\"ar\" href=\"../ar/@PAGE@."
-#| "html\">العربية</a> <a class=\"navbar-item\" lang=\"en\" hreflang=\"en\" "
-#| "href=\"../en/@PAGE@.html\">English</a> <a class=\"navbar-item\" "
-#| "lang=\"es\" hreflang=\"es\" href=\"../es/@PAGE@.html\">Español</a> <a "
-#| "class=\"navbar-item\" lang=\"fa\" hreflang=\"fa\" href=\"../fa/@PAGE@."
-#| "html\">فارسی</a> <a class=\"navbar-item\" lang=\"fr\" hreflang=\"fr\" "
-#| "href=\"../fr/@PAGE@.html\">Français</a> <a class=\"navbar-item\" "
-#| "lang=\"my\" hreflang=\"my\" href=\"../my/@PAGE@.html\">မြန်မာစာ</a> <a "
-#| "class=\"navbar-item\" lang=\"pt_BR\" hreflang=\"pt_BR\" href=\"../pt_BR/"
-#| "@PAGE@.html\">Português</a> <a class=\"navbar-item\" lang=\"ru\" "
-#| "hreflang=\"ru\" href=\"../ru/@PAGE@.html\">Pусский</a> <a class=\"navbar-"
-#| "item\" lang=\"tr\" hreflang=\"tr\" href=\"../tr/@PAGE@.html\">Türkçe</a> "
-#| "<a class=\"navbar-item\" lang=\"uk\" hreflang=\"uk\" href=\"../uk/@PAGE@."
-#| "html\">Українська</a> <a class=\"navbar-item\" lang=\"ur\" "
-#| "hreflang=\"ur\" href=\"../ur/@PAGE@.html\">اردو</a>"
 msgctxt "./_head.html+body.nav.div.div.div.div:69-21"
 msgid ""
 "<a class=\"navbar-item\" lang=\"ar\" hreflang=\"ar\" href=\"../ar/@PAGE@."
@@ -178,9 +130,6 @@ msgstr ""
 
 #.  These spans are used to create the animated hamburger button 
 #: _head.html%2Bbody.nav.div.div:84-17
-#, fuzzy
-#| msgctxt "./_head.html+html.body.nav.div.div:55-17"
-#| msgid "Download"
 msgctxt "./_head.html+body.nav.div.div:84-17"
 msgid "Download"
 msgstr "Завантажити"
