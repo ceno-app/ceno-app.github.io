@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-04-15 23:57-0400\n"
+"POT-Creation-Date: 2025-05-08 16:48-0400\n"
 "PO-Revision-Date: 2025-04-21 23:12+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Burmese <https://hosted.weblate.org/projects/censorship-no/"
@@ -18,7 +18,7 @@ msgstr ""
 msgid "latest"
 msgstr ""
 
-#: latest/index.html%2Bmain.section.article.label:10-5
+#: latest/index.html%2Bmain.section.article:9-5
 msgid "Press Release"
 msgstr ""
 
@@ -26,17 +26,16 @@ msgstr ""
 msgid "December 15, 2022"
 msgstr "ဒီဇင်ဘာ ၁၅၊ ၂၀၂၂"
 
-#: latest/index.html%2Bmain.section.article.h1:13-5
+#: latest/index.html%2Bmain.section.article.h1:12-5
 msgid "Ceno proves itself in Iran during Internet shutdowns"
-msgstr ""
-"Ceno သည် အီရန်တွင် အင်တာနက်ဖြတ်တောက်ခြင်း ကာလအတွင်း ကိုယ့်ကိုယ်ကို သက်သေပြသထား"
+msgstr "Ceno သည် အီရန်တွင် အင်တာနက်ဖြတ်တောက်ခြင်း ကာလအတွင်း ကိုယ့်ကိုယ်ကို သက်သေပြသထား"
 
-#: latest/index.html%2Bmain.section.article.div:17-5
+#: latest/index.html%2Bmain.section.article.div:15-5
 msgid ""
 "eQualitie is pleased to announce that its Ceno Browser is fulfilling its "
 "mission of assisting thousands in Iran, while also…"
 msgstr ""
 
-#: latest/index.html%2Bmain.section.article:19-13
+#: latest/index.html%2Bmain.section.article:15-155
 msgid "Read more"
 msgstr ""
