@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-08 16:48-0400\n"
-"PO-Revision-Date: 2025-05-01 13:51+0000\n"
+"POT-Creation-Date: 2025-05-06 20:26-0400\n"
+"PO-Revision-Date: 2025-05-09 15:35+0000\n"
 "Last-Translator: Максим Горпиніч <maksimgorpinic4@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-faq/uk/>\n"
@@ -21,7 +21,7 @@ msgstr "Часті<br>запитання"
 
 #: faq.html%2Bmain.section.form.input[value]:9-13
 msgid "(ceno.network OR ceno.website OR ceno.app)"
-msgstr ""
+msgstr "(ceno.network АБО ceno.website АБО ceno.app)"
 
 #: faq.html%2Bmain.section:6-9
 msgid "Search"
