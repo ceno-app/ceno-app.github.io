@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 13:34-0400\n"
+"POT-Creation-Date: 2025-05-10 18:09-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.11.1\n"
+"X-Generator: Translate Toolkit 3.15.1\n"
 
 #: ./download.html%2Bmain.section.div.div.div:5-17
 msgid "Download Ceno Browser"
@@ -59,19 +59,20 @@ msgstr ""
 
 #: ./download.html%2Bmain.section.div.div:38-13
 msgid ""
-"<strong>Ceno for Android:</strong> <a href=\"https://ceno-download.s3."
-"amazonaws.com/ceno/v2.4.3/ceno-arm64-v8a-release-2.4.3-2025-03-24_1503.apk\""
-">arm64 (most common)</a> / <a href=\"https://ceno-download.s3.amazonaws.com/"
-"ceno/v2.4.3/ceno-armeabi-v7a-release-2.4.3-2025-03-24_1503.apk\">arm</a> / "
-"<a href=\"https://ceno-download.s3.amazonaws.com/ceno/v2.4.3/"
+"<strong>Ceno for Android:</strong> <a href=\"https://ceno-"
+"download.s3.amazonaws.com/ceno/v2.4.3/ceno-arm64-v8a-"
+"release-2.4.3-2025-03-24_1503.apk\">arm64 (most common)</a> / <a href=\"https"
+"://ceno-download.s3.amazonaws.com/ceno/v2.4.3/ceno-armeabi-v7a-"
+"release-2.4.3-2025-03-24_1503.apk\">arm</a> / <a href=\"https://ceno-"
+"download.s3.amazonaws.com/ceno/v2.4.3/"
 "ceno-x86_64-release-2.4.3-2025-03-24_1503.apk\">x86_64</a>"
 msgstr ""
 
 #: ./download.html%2Bmain.section.div.div:42-13
 msgid ""
-"<strong>Ceno for Windows:</strong> <a href=\"https://ceno-download.s3."
-"amazonaws.com/ceno-desktop/v0.0.1/ceno-alpha-windows-x86_64-system-0.0."
-"1-20250425123522.exe\">x86_64 (system-install)</a>"
+"<strong>Ceno for Windows:</strong> <a href=\"https://ceno-"
+"download.s3.amazonaws.com/ceno-desktop/v0.0.1/ceno-alpha-"
+"windows-x86_64-system-0.0.1-20250425123522.exe\">x86_64 (system-install)</a>"
 msgstr ""
 
 #: ./download.html%2Bmain.section.div.p:46-13
@@ -89,11 +90,12 @@ msgstr ""
 
 #: ./download.html%2Bmain.section.div.p:53-13
 msgid ""
-"You can also verify the <a href=\"https://ceno-download.s3.amazonaws.com/"
-"ceno/v2.4.3/sha256sums.txt\">signatures</a> of <a href=\"https://ceno-"
-"download.s3.amazonaws.com/ceno/v2.4.3/sha256sums.txt.asc\">file hashes</a> "
-"against our PGP key (with fingerprint <code class=\"pubkey\">51BE 600C 2711 "
-"926C 865D F93F C7DC C123 F0DD B862</code>)"
+"You can also verify the <a href="
+"\"https://ceno-download.s3.amazonaws.com/ceno/v2.4.3/sha256sums.txt\""
+">signatures</a> of <a href="
+"\"https://ceno-download.s3.amazonaws.com/ceno/v2.4.3/sha256sums.txt.asc\""
+">file hashes</a> against our PGP key (with fingerprint <code class=\"pubkey\""
+">51BE 600C 2711 926C 865D F93F C7DC C123 F0DD B862</code>)"
 msgstr ""
 
 #: ./download.html%2Bmain.section.h1:57-9
