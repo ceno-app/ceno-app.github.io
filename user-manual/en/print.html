@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html lang="en" class="light" dir="ltr">
+<html lang="en" class="light sidebar-visible" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
@@ -8,7 +8,7 @@
 
 
         <!-- Custom HTML head -->
-        
+
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
@@ -25,26 +25,29 @@
         <link rel="stylesheet" href="fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="highlight.css">
-        <link rel="stylesheet" href="tomorrow-night.css">
-        <link rel="stylesheet" href="ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
-    </head>
-    <body class="sidebar-visible no-js">
-    <div id="body-container">
-        <!-- Provide site root to javascript -->
-        <script>
-            var path_to_root = "";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
-        </script>
 
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
@@ -58,24 +61,22 @@
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
-            var theme;
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
-            var html = document.querySelector('html');
+            const html = document.documentElement;
             html.classList.remove('light')
             html.classList.add(theme);
-            var body = document.querySelector('body');
-            body.classList.remove('no-js')
-            body.classList.add('js');
+            html.classList.add("js");
         </script>
 
         <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var body = document.querySelector('body');
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -83,43 +84,25 @@
                 sidebar = 'hidden';
             }
             sidebar_toggle.checked = sidebar === 'visible';
-            body.classList.remove('sidebar-visible');
-            body.classList.add("sidebar-" + sidebar);
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="index.html">Censorship.no!</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="intro/index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="intro/ceno.html"><strong aria-hidden="true">1.1.</strong> What is Ceno Browser?</a></li><li class="chapter-item expanded "><a href="intro/ouinet.html"><strong aria-hidden="true">1.2.</strong> What is Ouinet?</a></li><li class="chapter-item expanded "><a href="intro/qsg.html"><strong aria-hidden="true">1.3.</strong> Quick start guide</a></li><li class="chapter-item expanded "><a href="intro/faq.html"><strong aria-hidden="true">1.4.</strong> Frequently Asked Questions</a></li></ol></li><li class="chapter-item expanded "><a href="concepts/index.html"><strong aria-hidden="true">2.</strong> Main concepts</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="concepts/how.html"><strong aria-hidden="true">2.1.</strong> How does it work?</a></li><li class="chapter-item expanded "><a href="concepts/public-personal.html"><strong aria-hidden="true">2.2.</strong> Public vs. Personal browsing</a></li><li class="chapter-item expanded "><a href="concepts/advantages.html"><strong aria-hidden="true">2.3.</strong> Advantages of using Ceno/Ouinet</a></li><li class="chapter-item expanded "><a href="concepts/risks.html"><strong aria-hidden="true">2.4.</strong> Risks in using Ceno/Ouinet</a></li></ol></li><li class="chapter-item expanded "><a href="browser/index.html"><strong aria-hidden="true">3.</strong> Using Ceno Browser</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="browser/install.html"><strong aria-hidden="true">3.1.</strong> Installing Ceno</a></li><li class="chapter-item expanded "><a href="browser/public-personal.html"><strong aria-hidden="true">3.2.</strong> Using Public or Personal browsing</a></li><li class="chapter-item expanded "><a href="browser/settings.html"><strong aria-hidden="true">3.3.</strong> Ceno settings</a></li><li class="chapter-item expanded "><a href="browser/testing.html"><strong aria-hidden="true">3.4.</strong> Testing the Browser</a></li><li class="chapter-item expanded "><a href="browser/bridging.html"><strong aria-hidden="true">3.5.</strong> Helping others</a></li><li class="chapter-item expanded "><a href="browser/troubleshooting.html"><strong aria-hidden="true">3.6.</strong> Troubleshooting</a></li></ol></li><li class="chapter-item expanded "><a href="client/front-end.html"><strong aria-hidden="true">4.</strong> Annex: The Ouinet client front-end</a></li></ol>
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
-
-        <!-- Track and set sidebar scroll position -->
-        <script>
-            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
-            sidebarScrollbox.addEventListener('click', function(e) {
-                if (e.target.tagName === 'A') {
-                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
-                }
-            }, { passive: true });
-            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
-            sessionStorage.removeItem('sidebar-scroll');
-            if (sidebarScrollTop) {
-                // preserve sidebar scroll position when navigating via links within sidebar
-                sidebarScrollbox.scrollTop = sidebarScrollTop;
-            } else {
-                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
-                var activeSection = document.querySelector('#sidebar .active');
-                if (activeSection) {
-                    activeSection.scrollIntoView({ block: 'center' });
-                }
-            }
-        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
                         <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
@@ -129,6 +112,7 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
@@ -228,44 +212,6 @@
 <li>Refer to the <a href="intro/../browser/troubleshooting.html">troubleshooting guide</a>.</li>
 <li>Contact us by writing to <a href="mailto:intro/cenoers@equalitie.org">cenoers@equalitie.org</a>.</li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="frequently-asked-questions"><a class="header" href="#frequently-asked-questions">Frequently Asked Questions</a></h1>
-<h2 id="usage"><a class="header" href="#usage">Usage</a></h2>
-<h3 id="can-ceno-browser-replace-my-current-browser-chromefirefoxsafari"><a class="header" href="#can-ceno-browser-replace-my-current-browser-chromefirefoxsafari">Can Ceno Browser replace my current browser (Chrome/Firefox/Safari)?</a></h3>
-<p>Short answer: yes, at least for some non-critical browsing.</p>
-<p>Since Ceno is based on Mozilla Firefox for Android, it provides all the features that are expected from a modern browser.  However, its reliance on Ouinet technology for retrieving web content may affect its operation in subtle ways (some of them potentially involving your privacy).</p>
-<p>Also, since Ceno and Ouinet are under continuous development, you may experience some instability.  That may also mean that backwards-incompatible changes are introduced which require you to uninstall the application or remove stored data (including bookmarks and site settings) before upgrading.</p>
-<p>For important work on Web sites not subject to censorship, we recommend that you use your habitual Web browser instead of Ceno.  Please read the section on <a href="intro/../concepts/risks.html">risks</a> for more information.</p>
-<h2 id="can-i-use-ceno-browser-to-access-twitter-facebook-and-gmail"><a class="header" href="#can-i-use-ceno-browser-to-access-twitter-facebook-and-gmail">Can I use Ceno Browser to access Twitter, Facebook and Gmail?</a></h2>
-<p>Short answer: yes, by using Personal tabs.</p>
-<p>Although Ceno strives to provide a user experience as similar to normal Web browsing as possible, some of the techniques used to avoid network interference do not play well with such dynamic sites.  This is the case with Ceno's default mode of operation (i.e. public browsing), since it strips down all private data (like passwords and cookies) from Web traffic to ensure that it does not leak to other untrusted Ceno or Ouinet users.</p>
-<p>To avoid this and enable the use of such dynamic sites in Ceno, you can use Personal tabs (i.e. private browsing), which leave private data intact and keep connections to the sites encrypted and thus protected from everyone else.  However, this requires that network traffic from your device can reach those websites in some way.</p>
-<p>For further details, please refer to the section on the differences between <a href="intro/../concepts/public-personal.html">Public and Personal browsing</a>.</p>
-<h2 id="privacy-and-security"><a class="header" href="#privacy-and-security">Privacy and security</a></h2>
-<h3 id="will-my-device-store-content-that-i-did-not-request"><a class="header" href="#will-my-device-store-content-that-i-did-not-request">Will my device store content that I did not request?</a></h3>
-<p>Short answer: no.</p>
-<p>Ceno only shares content that you requested (using <a href="intro/../concepts/public-personal.html">Public browsing</a>).</p>
-<p>Please note that a malicious website may still try to trick your browser into retrieving content from other sites without your knowledge so as to force your device to store and share it with other users.  While Firefox code already does a pretty good job at detecting and blocking such attempts, you should still avoid visiting suspicious sites.</p>
-<p>Read more about how your Ceno Browser retrieves and shares Web content with others <a href="intro/../concepts/how.html">here</a>.</p>
-<h3 id="can-anyone-see-if-i-am-using-ceno-browser-to-access-censored-web-sites"><a class="header" href="#can-anyone-see-if-i-am-using-ceno-browser-to-access-censored-web-sites">Can anyone see if I am using Ceno Browser to access censored Web sites?</a></h3>
-<p>Short answer: yes, with some technical knowledge and resources.</p>
-<p>Ceno is not an anonymity tool.  An attacker able to spy on your network traffic can see content being requested from or served to another user from your device.  The attacker can also assess whether you are sharing a particular website, although they cannot list all the content that you are sharing.</p>
-<p>However, content being retrieved into the network for the first time or using <a href="intro/../concepts/public-personal.html">Personal browsing</a> will travel over encrypted connections.  See <a href="intro/../concepts/how.html">how content retrieval works</a> and the associated <a href="intro/../concepts/risks.html">risks</a> for more information.</p>
-<h2 id="resource-usage"><a class="header" href="#resource-usage">Resource usage</a></h2>
-<h3 id="does-ceno-browser-use-a-lot-of-data"><a class="header" href="#does-ceno-browser-use-a-lot-of-data">Does Ceno Browser use a lot of data?</a></h3>
-<p>Short answer: more than your usual browser.</p>
-<p>Whenever your Ceno Browser serves content to another user or forwards their traffic, it is consuming extra data depending on factors like how popular or large the content is, and how well-connected your device is.  Sharing more content also implies more overhead.</p>
-<p>Although Ceno is much lighter in resources than other data-sharing applications, it can still result in increased data usage and fees.  We recommend keeping an eye on the app's data usage (under Android settings) and running Ceno while connected to Wi-Fi instead of using mobile data.</p>
-<h3 id="does-ceno-browser-use-a-lot-of-battery-on-my-device"><a class="header" href="#does-ceno-browser-use-a-lot-of-battery-on-my-device">Does Ceno Browser use a lot of battery on my device?</a></h3>
-<p>Short answer: more than your usual browser.</p>
-<p>Ceno and Ouinet use various techniques for different users to cooperate in avoiding network interference and outages.  Serving content to and forwarding traffic for other users consumes extra power.  Also, even when your device is not actively helping other users, it still needs to stay reachable over the network, which prevents the use of some energy-saving features.</p>
-<p>The net result is that Ceno may keep on draining your battery even when not in use.  Our tests have not shown power consumption hiking too much, but your mileage may vary.  When in need of battery, we recommend stopping Ceno completely (it offers a convenient shortcut for this, see <a href="intro/../browser/install.html">here</a>).</p>
-<h3 id="do-i-need-to-be-connected-to-wi-fi-to-use-ceno-browser"><a class="header" href="#do-i-need-to-be-connected-to-wi-fi-to-use-ceno-browser">Do I need to be connected to Wi-Fi to use Ceno Browser?</a></h3>
-<p>Short answer: no, but we strongly recommend it.</p>
-<p>Although Ceno should work fine on a mobile connection, there are two reasons why we recommend using a Wi-Fi connection instead:</p>
-<ol>
-<li>Ceno consumes an extra amount of data which may result in a higher phone bill (see above).</li>
-<li>Mobile connections often make reaching your device more difficult from the outside than Wi-Fi ones, thus decreasing the chances that you can help other users get content.</li>
-</ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="main-concepts"><a class="header" href="#main-concepts">Main concepts</a></h1>
 <p>To fulfill its objective of circumventing several kinds of network interference and shortages, Ceno makes use of assorted techniques from the fields of the World Wide Web, file-sharing systems and advanced cryptography.  These techniques are cleverly combined by Ouinet so as to make the experience of using Ceno as close as possible to normal Web browsing.</p>
 <p>Nonetheless, to get the most out of Ceno it is helpful to understand how Ouinet operates, the different ways it can be used depending on the kind of content we are trying to access, and the advantages and risks that they entail.  This chapter will cover these topics.</p>
@@ -276,7 +222,7 @@
 <blockquote>
 <p><strong>Technical note:</strong> There is in fact one small gotcha.  Since the client acts as an HTTP proxy running on your device, for the client to be able to decrypt and act upon HTTPS content requests, the application using the client (i.e. the Web browser part – like Firefox in Ceno) needs to accept a special certificate issued by the client itself (and only used on your device).  Ceno Browser already takes care of setting this certificate up for its private use so that you do not need to worry.</p>
 </blockquote>
-<p>However, these direct paths may not be available.  For instance, your Internet service provider (ISP) may be blocking access to <em>X</em>'s origin server or the proxy because of a state order (even if other traffic is still allowed).  As the user of the top left client depicted below, both attempts to reach content <em>X</em> (the little document close to its origin server) would fail for you.  You may also note the &quot;injector&quot; node on the diagram.  We will explain that in a moment.</p>
+<p>However, these direct paths may not be available.  For instance, your Internet service provider (ISP) may be blocking access to <em>X</em>'s origin server or the proxy because of a state order (even if other traffic is still allowed).  As the user of the top left client depicted below, both attempts to reach content <em>X</em> (the little document close to its origin server) would fail for you.  You may also note the "injector" node on the diagram.  We will explain that in a moment.</p>
 <p><img src="concepts/images/user-flow-0.svg" alt="Figure: Client cannot reach content directly" /></p>
 <p>With a normal browser you would be out of luck.  However, with Ouinet you can ask other clients for their copies of content <em>X</em>, should they already have a copy.  Let us see how Ouinet performs this request.</p>
 <h2 id="searching-for-shared-content"><a class="header" href="#searching-for-shared-content">Searching for shared content</a></h2>
@@ -456,7 +402,7 @@
 <p>Every time you start the app, a Ceno icon will appear on your device's notification bar.  This icon represents the <em>Ceno Browser service</em>, which is the part of Ceno that runs permanently (even when you are not browsing) and allows other clients to use your device as a bridge and retrieve content from it at any time.</p>
 <p>Since running such service uses network and processor resources, you may want to stop it whenever you are on the move (i.e. not connected to Wi-Fi or far from a charger).  Tapping on the notification attached to the icon will stop both Ceno and its service at once (until you open Ceno again).</p>
 <p><img src="browser/images/tap-stop.png" alt="Figure: Tap on the notification to stop the Ceno service" /></p>
-<h2 id="purging-all-ceno-data-the-panic-button"><a class="header" href="#purging-all-ceno-data-the-panic-button">Purging all Ceno data (the &quot;panic button&quot;)</a></h2>
+<h2 id="purging-all-ceno-data-the-panic-button"><a class="header" href="#purging-all-ceno-data-the-panic-button">Purging all Ceno data (the "panic button")</a></h2>
 <p>The <em>Ceno Browser service</em> notification shown above includes a few accompanying actions which can be triggered by tapping on them.  The <em>Home</em> action will just open Ceno with a new public browsing tab showing its home page.  The <em>Erase</em> action demands more explanation.</p>
 <blockquote>
 <p><strong>Note:</strong> If the actions below the notification are not visible, drag the notification from its center towards the bottom to unfold it.  If you can only see the <em>Home</em> action, your device may be too old to support the <em>Erase</em> action.</p>
@@ -533,7 +479,7 @@
 <h2 id="purging-the-local-cache"><a class="header" href="#purging-the-local-cache">Purging the local cache</a></h2>
 <p>Next to the <em>Local cache size</em> value above, there is a button which allows you to stop seeding and drop all content shared by your device over Ouinet.  This allows you to free up some storage space in your device while keeping other Ceno settings like Favorites.</p>
 <p>If you want to clear Ceno's normal browsing cache (the one used by the browser but not shared with others) or other items like cookies, browsing history or favorites, you should choose <em>Settings</em> in the app's main menu, then <em>Clear private data</em>.  You will be asked about which items you want to clear.</p>
-<p>To drop everything at the same time (especially if you are in a hurry), please learn how to use the &quot;panic button&quot; feature described in <a href="browser/install.html">Installing Ceno</a>.</p>
+<p>To drop everything at the same time (especially if you are in a hurry), please learn how to use the "panic button" feature described in <a href="browser/install.html">Installing Ceno</a>.</p>
 <h2 id="collecting-log-messages"><a class="header" href="#collecting-log-messages">Collecting log messages</a></h2>
 <p>At the bottom of the page there is an <em>Enable log file</em> check box that allows you to collect all of Ouinet's internal messages and download them to a file.  This should only be used when diagnosing some problem in Ceno; just follow these steps:</p>
 <ol>
@@ -571,13 +517,13 @@
 <li>Go back to Ceno's home page and visit the same site in the same manner as you did above (i.e. by selecting one of the recommended web sites or entering its URL in the address bar).</li>
 <li>The chosen site should eventually show up.</li>
 </ol>
-<p>If it does not work, your Wi-Fi network may be blocking direct communication between its devices.  This &quot;client isolation&quot; may happen in public networks like those of parks, bars or hotels.  Please try again on a different network.</p>
+<p>If it does not work, your Wi-Fi network may be blocking direct communication between its devices.  This "client isolation" may happen in public networks like those of parks, bars or hotels.  Please try again on a different network.</p>
 <p>If it works, it means that both devices are able to deliver that content to other clients.  Pushing the Ceno address bar icon should show a popup like the one below, where only <em>Shared by other Ceno users</em> has a non-zero value.</p>
 <p><img src="browser/images/sources-dcache.png" alt="Figure: Sources used when testing distributed cache retrieval" /></p>
 <p>Finally, you may have also noticed that there is a counter for <em>Shared by you</em>.  This is not a different source <em>per se</em>: elements counted here are indeed part of the distributed cache, but they happen to already be stored in your device, so Ceno does not need to retrieve them over the network.</p>
 <h2 id="getting-content-from-remote-users"><a class="header" href="#getting-content-from-remote-users">Getting content from remote users</a></h2>
 <p>We have done a small-scale test of the distributed cache.  Let us now test how it works over the Internet.</p>
-<p>After successfully completing the test above, leave Ceno running on the first device as with the previous test, and stop Ceno on the second device (by showing its notifications and pushing &quot;Tap to stop&quot;).</p>
+<p>After successfully completing the test above, leave Ceno running on the first device as with the previous test, and stop Ceno on the second device (by showing its notifications and pushing "Tap to stop").</p>
 <p>This time you will need a third device, but it must be connected to a different Wi-Fi network (maybe another friend can help from home).  The steps to follow for that device are exactly the same as those in the previous test.</p>
 <p>If the third device can load the site used for the test, you are all set.  The first device is able to seed content to others, and it can most probably also act as a bridge.</p>
 <p>Congratulations!</p>
@@ -685,8 +631,8 @@
 <h2 id="all-widgets-are-grayed-out-in-the-ceno-settings-page"><a class="header" href="#all-widgets-are-grayed-out-in-the-ceno-settings-page">All widgets are grayed-out in the <em>Ceno Settings</em> page</a></h2>
 <p>The Ceno Extension has loaded, but it has not yet been able to retrieve status from Ouinet.  Since it may take a moment for Ouinet to be ready, please be patient.</p>
 <p>If the Settings page stays like that after more than two minutes, Ouinet may have encountered some issue while starting.</p>
-<p>Try to visit some page, if possible one which is usually available.  If you get an error like &quot;Failed to retrieve the resource (after attempting all configured mechanisms)&quot;, Ceno may be experiencing some issues with general connectivity (like being unable to join the BitTorrent network).  If you are on a mobile connection, try again with Wi-Fi.</p>
-<p>If you get an error like &quot;The proxy server is refusing connections&quot; when visiting the page, try to stop other applications which may be offering some service to the device, then restart Ceno.</p>
+<p>Try to visit some page, if possible one which is usually available.  If you get an error like "Failed to retrieve the resource (after attempting all configured mechanisms)", Ceno may be experiencing some issues with general connectivity (like being unable to join the BitTorrent network).  If you are on a mobile connection, try again with Wi-Fi.</p>
+<p>If you get an error like "The proxy server is refusing connections" when visiting the page, try to stop other applications which may be offering some service to the device, then restart Ceno.</p>
 <blockquote>
 <p><strong>Technical note:</strong> This may happen if another application is already listening on TCP ports <code>127.0.0.1:8077</code> or <code>127.0.0.1:8078</code>.</p>
 </blockquote>
@@ -695,7 +641,7 @@
 <p>When you launch Ceno, the state may read <code>starting</code> for a few seconds; this is normal.  However, if the state remains <code>starting</code> for too long, it may be a signal of serious connectivity issues that preclude the application from reaching the BitTorrent network.  Please check your network connection and try restarting Ceno.  If you have a working connection but the state remains <code>starting</code>, please contact us (especially if the state was <code>started</code> in some previous run).</p>
 <p>One possible reason for not being able to get into BitTorrent (more so when you run Ceno for the first time), is that the default bootstrap servers used by the Ouinet client are blocked or unreachable.  In that case you may want to try providing Ceno with extra BitTorrent bootstrap servers in the <a href="browser/settings.html">Settings page</a>.  You can ask us if you do not know of any such server.  After setting the extra bootstraps, please restart the application.  If the problem persists, contact us.</p>
 <p>If you ever see some other state, there may be some internal error in the Ouinet client.  Please report the issue to us.</p>
-<h2 id="accessing-some-content-shows-failed-to-retrieve-the-resource"><a class="header" href="#accessing-some-content-shows-failed-to-retrieve-the-resource">Accessing some content shows &quot;Failed to retrieve the resource&quot;</a></h2>
+<h2 id="accessing-some-content-shows-failed-to-retrieve-the-resource"><a class="header" href="#accessing-some-content-shows-failed-to-retrieve-the-resource">Accessing some content shows "Failed to retrieve the resource"</a></h2>
 <p>This means that Ceno tried all available mechanisms to access the content, but none of them succeeded.</p>
 <p>You should make sure that the following requirements are fulfilled for Ceno to work:</p>
 <ul>
@@ -745,7 +691,7 @@
 <h2 id="others-cannot-retrieve-content-seeded-by-my-device"><a class="header" href="#others-cannot-retrieve-content-seeded-by-my-device">Others cannot retrieve content seeded by my device</a></h2>
 <p>First, make sure that your device is still seeding the content by going to the <a href="browser/settings.html"><em>Ceno Settings</em> page</a>, only leaving the <em>Shared by other Ceno users</em> source box checked, then accessing that content again: it should load (at least partially), and tapping the Ceno address bar icon should only show non-zero values under <em>Shared by other Ceno users</em> or <em>Shared by you</em>.</p>
 <p>If the content does not load, it could be that Ceno has already removed it, since it automatically cleans up stale content (older than a week by default) from your local cache.  Enable the <em>Via the Ceno network (public)</em> source in the Settings page and access the content again.  Please allow a couple of minutes to pass for the device to announce the content in the distributed cache index.  Make <em>Shared by other Ceno users</em> the only checked box again and access the content once more; if it still does not load, it may be that the particular content is not deemed safe for sharing by Ouinet.</p>
-<p>If the previous step works, but another device with only the <em>Shared by other Ceno users</em> source enabled still shows &quot;Failed to retrieve the resource…&quot;, there are two possible scenarios.  If both devices are in the same network (e.g. on the same Wi-Fi access point), it could be that the network does not allow direct communication between devices connected to it.  This happens in some public Wi-Fi networks, so try using a private one.</p>
+<p>If the previous step works, but another device with only the <em>Shared by other Ceno users</em> source enabled still shows "Failed to retrieve the resource…", there are two possible scenarios.  If both devices are in the same network (e.g. on the same Wi-Fi access point), it could be that the network does not allow direct communication between devices connected to it.  This happens in some public Wi-Fi networks, so try using a private one.</p>
 <p>If the devices are in different networks, it could be due to a variety of reasons.  One of them is that the network of the first device does not allow incoming connections: if you open its <em>Ceno Settings</em> page, under <em>Reachability status</em> it should say <em>reachable</em> or <em>likely reachable</em>.  Otherwise seeding may not be possible from that network as it is.</p>
 <blockquote>
 <p><strong>Technical note:</strong> If your device reports <em>undecided</em> reachability and you can change the configuration of the access point, you may create a permanent port forwarding rule towards your client.  See <a href="browser/bridging.html">here</a> for further instructions.</p>

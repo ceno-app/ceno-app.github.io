@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
-<html lang="fa" class="light" dir="rtl">
+<html lang="fa" class="light sidebar-visible" dir="rtl">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>نصب Ceno - دفترچه‌ی راهنمای کاربر Censorship.no! (سنو)</title>
+        <title>Installing Ceno - دفترچه‌ی راهنمای کاربر Censorship.no! (سنو)</title>
 
 
         <!-- Custom HTML head -->
-        
+
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
@@ -24,26 +24,29 @@
         <link rel="stylesheet" href="../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../highlight.css">
-        <link rel="stylesheet" href="../tomorrow-night.css">
-        <link rel="stylesheet" href="../ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
-    </head>
-    <body class="sidebar-visible no-js">
-    <div id="body-container">
-        <!-- Provide site root to javascript -->
-        <script>
-            var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
-        </script>
 
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
@@ -57,24 +60,22 @@
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
-            var theme;
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
-            var html = document.querySelector('html');
+            const html = document.documentElement;
             html.classList.remove('light')
             html.classList.add(theme);
-            var body = document.querySelector('body');
-            body.classList.remove('no-js')
-            body.classList.add('js');
+            html.classList.add("js");
         </script>
 
         <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var body = document.querySelector('body');
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -82,43 +83,25 @@
                 sidebar = 'hidden';
             }
             sidebar_toggle.checked = sidebar === 'visible';
-            body.classList.remove('sidebar-visible');
-            body.classList.add("sidebar-" + sidebar);
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Censorship.no!</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../intro/index.html"><strong aria-hidden="true">1.</strong> مقدمه</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../intro/ceno.html"><strong aria-hidden="true">1.1.</strong> مرورگر سنو چیست؟</a></li><li class="chapter-item expanded "><a href="../intro/ouinet.html"><strong aria-hidden="true">1.2.</strong> Ouinet چیست؟</a></li><li class="chapter-item expanded "><a href="../intro/qsg.html"><strong aria-hidden="true">1.3.</strong> راهنمای شروع سریع</a></li><li class="chapter-item expanded "><a href="../intro/faq.html"><strong aria-hidden="true">1.4.</strong> پرسش‌های متداول</a></li></ol></li><li class="chapter-item expanded "><a href="../concepts/index.html"><strong aria-hidden="true">2.</strong> مفاهیم اصلی</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../concepts/how.html"><strong aria-hidden="true">2.1.</strong> این مرورگر چگونه کار می‌کند؟</a></li><li class="chapter-item expanded "><a href="../concepts/public-personal.html"><strong aria-hidden="true">2.2.</strong> Public vs. Personal browsing</a></li><li class="chapter-item expanded "><a href="../concepts/advantages.html"><strong aria-hidden="true">2.3.</strong> امتیازهای استفاده از Ceno/Ouinet</a></li><li class="chapter-item expanded "><a href="../concepts/risks.html"><strong aria-hidden="true">2.4.</strong> خطرات استفاده از Ceno/Ouinet</a></li></ol></li><li class="chapter-item expanded "><a href="../browser/index.html"><strong aria-hidden="true">3.</strong> استفاده از مرورگرCeno</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../browser/install.html" class="active"><strong aria-hidden="true">3.1.</strong> نصب Ceno</a></li><li class="chapter-item expanded "><a href="../browser/public-personal.html"><strong aria-hidden="true">3.2.</strong> Using Public or Personal browsing</a></li><li class="chapter-item expanded "><a href="../browser/settings.html"><strong aria-hidden="true">3.3.</strong> تنظیمات Ceno</a></li><li class="chapter-item expanded "><a href="../browser/testing.html"><strong aria-hidden="true">3.4.</strong> آزمایش مرورگر</a></li><li class="chapter-item expanded "><a href="../browser/bridging.html"><strong aria-hidden="true">3.5.</strong> کمک به دیگران</a></li><li class="chapter-item expanded "><a href="../browser/troubleshooting.html"><strong aria-hidden="true">3.6.</strong> شناسایی و رفع اشکال</a></li></ol></li><li class="chapter-item expanded "><a href="../client/front-end.html"><strong aria-hidden="true">4.</strong> پیوست: فرانت‌اند سرویس‌گیرنده‌ی Ouinet</a></li></ol>
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
-
-        <!-- Track and set sidebar scroll position -->
-        <script>
-            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
-            sidebarScrollbox.addEventListener('click', function(e) {
-                if (e.target.tagName === 'A') {
-                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
-                }
-            }, { passive: true });
-            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
-            sessionStorage.removeItem('sidebar-scroll');
-            if (sidebarScrollTop) {
-                // preserve sidebar scroll position when navigating via links within sidebar
-                sidebarScrollbox.scrollTop = sidebarScrollTop;
-            } else {
-                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
-                var activeSection = document.querySelector('#sidebar .active');
-                if (activeSection) {
-                    activeSection.scrollIntoView({ block: 'center' });
-                }
-            }
-        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
                         <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
@@ -128,6 +111,7 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
@@ -177,33 +161,67 @@
                         <h1 id="نصب-ceno"><a class="header" href="#نصب-ceno">نصب Ceno</a></h1>
 <p>مرورگر Ceno را می‌توان از طریق این روش‌ها نصب کرد:</p>
 <ul>
-<li><a href="https://play.google.com/store/apps/details?id=ie.equalit.ceno">گوگل‌پلی</a> (<em>مرورگر سنو</em> از <em>eQualitie</em>): منبع پیشنهادشده برای اغلب کاربران اندروید.</li>
-<li><a href="https://gitlab.com/censorship-no/ceno-browser/releases">گیت‌هاب</a>: برای دستگاه اندرویدی بدون گوگل‌پلی.</li>
-<li><a href="https://paskoocheh.com/tools/124/android.html">پس‌کوچه</a>: برای کاربران ساکن در کشورهایی که دسترسی به کانال‌های قبلی در آن‌ها مسدود است.</li>
+<li><a href="https://play.google.com/store/apps/details?id=ie.equalit.ceno">Google Play</a> (<em>Ceno Browser</em> from <em>eQualitie</em>): the recommended
+source for most Android users.</li>
+<li><a href="https://gitlab.com/censorship-no/ceno-browser/-/releases">Gitlab</a>: for Android devices without Google Play.</li>
+<li><a href="https://paskoocheh.com/tools/124/android.html">Paskoocheh</a>: for users in countries blocking access to the
+previous channels.</li>
 </ul>
-<p>Ceno به یک دستگاه با معماری کامپیوتری ARM64 یا ARM32 با قابلیت نئون نیاز دارد که دارای سیستم‌عامل اندروید نسخه Android 4.1 Jelly Bean به بالا باشد، بنابراین برای اکثر دستگاه‌های تلفن همراه منتشر شده از اواخر سال ۲۰۱۲ به بعد باید امکان‌پذیر باشد. Ceno برای اجرا به مجوزهای خاص نیاز ندارد.</p>
+<p>Ceno به یک دستگاه با معماری کامپیوتری ARM64 یا ARM32 با قابلیت نئون نیاز دارد که
+دارای سیستم‌عامل اندروید نسخه Android 4.1 Jelly Bean به بالا باشد، بنابراین برای
+اکثر دستگاه‌های تلفن همراه منتشر شده از اواخر سال ۲۰۱۲ به بعد باید امکان‌پذیر
+باشد. Ceno برای اجرا به مجوزهای خاص نیاز ندارد.</p>
 <blockquote>
-<p><strong>هشدار:</strong> لطفاً درباره‌ی نصب مرورگر Ceno از منابعی غیر از موارد فهرست‌شده در بالا <em>به‌شدت مراقب و مشکوک</em> باشید. به خاطر ماهیت این نرم‌افزار، کاربران بالقوه‌ی آن می‌توانند هدف انواع و اقسام نسخه‌های جعلی یا دستکاری‌شده‌ای قرار گیرند که برای نقض حریم خصوصی کاربر یا حمله به سایر کاربران Ceno و Ouinet به کار می‌روند. اگر در این‌باره تردیدی دارید، لطفاً پیش از نصب یک نرم‌افزار مشکوک با نشانی <a href="mailto:cenoers@equalitie.org">cenoers@equalitie.org</a> تماس بگیرید.</p>
+<p><strong>Warning:</strong> Please be <em>extremely skeptical</em> about installing Ceno Browser
+from sources other than the ones listed above. Because of the application's
+nature, their potential users may become a target for all kinds of fake or
+manipulated versions used to violate user privacy or attack other Ceno and
+Ouinet users. If in doubt, please contact <a href="mailto:cenoers@equalitie.org">cenoers@equalitie.org</a> before
+installing a suspicious app.</p>
 </blockquote>
 <h2 id="متوقفکردن-کامل-ceno"><a class="header" href="#متوقفکردن-کامل-ceno">متوقف‌کردن کامل Ceno</a></h2>
-<p>هربار که نرم‌افزار را آغاز می‌کنید، یک نشان Ceno روی نوار اطلاع‌رسانی دستگاه‌تان ظاهر خواهد شد. این نشان <em>خدمات مرورگر Ceno</em> را بازمی‌کند، که بخشی از Ceno است که به‌طور دائمی و همیشگی اجرا می‌شود (حتی وقتی شما مرور نمی‌کنید) و به سایر سرویس‌گیرندگان اجازه می‌دهد تا از دستگاه‌تان به‌عنوان یک پل استفاده کنند و محتوا را هرزمان از آن بازیابی کنند.</p>
-<p>از آن‌جا که اجرای خدماتی ازاین‌دست از شبکه و منابع پردازشگر استفاده می‌کند، شاید بخواهید در حال حرکت و در بیرون از خانه آن را متوقف کنید (یعنی هرگاه به اینترنت بی‌سیم یا وای‌فای وصل نیستید یا شارژری در دسترس ندارید). انگشت‌فشردن بر اطلاع‌رسان پیوسته به این نشان هم Ceno و هم خدمات‌اش را در آن واحد متوقف خواهد کرد (تا زمانی که سنو را از نو باز کنید).</p>
-<p><img src="images/tap-stop.png" alt="شکل: روی گزینه اطلاع‌رسانی ضربه بزنید تا خدمات سنو را متوقف کنید" /></p>
+<p>هربار که نرم‌افزار را آغاز می‌کنید، یک نشان Ceno روی نوار اطلاع‌رسانی دستگاه‌تان
+ظاهر خواهد شد. این نشان <em>خدمات مرورگر Ceno</em> را بازمی‌کند، که بخشی از Ceno است که
+به‌طور دائمی و همیشگی اجرا می‌شود (حتی وقتی شما مرور نمی‌کنید) و به سایر
+سرویس‌گیرندگان اجازه می‌دهد تا از دستگاه‌تان به‌عنوان یک پل استفاده کنند و محتوا
+را هرزمان از آن بازیابی کنند.</p>
+<p>از آن‌جا که اجرای خدماتی ازاین‌دست از شبکه و منابع پردازشگر استفاده می‌کند، شاید
+بخواهید در حال حرکت و در بیرون از خانه آن را متوقف کنید (یعنی هرگاه به اینترنت
+بی‌سیم یا وای‌فای وصل نیستید یا شارژری در دسترس ندارید). انگشت‌فشردن بر
+اطلاع‌رسان پیوسته به این نشان هم Ceno و هم خدمات‌اش را در آن واحد متوقف خواهد
+کرد (تا زمانی که سنو را از نو باز کنید).</p>
+<p><img src="images/tap-stop.png" alt="Figure: Tap on the notification to stop the Ceno service" /></p>
 <h2 id="پالایش-تمام-دادههای-سنو-دکمه-هراس"><a class="header" href="#پالایش-تمام-دادههای-سنو-دکمه-هراس">پالایش تمام داده‌های سنو («دکمه‌ هراس»)</a></h2>
-<p>اطلاع‌رسان <em>خدمات مرورگر Ceno</em> که در بالا نشان داده شد چند گزینه را همراه با هم دربردارد که می‌توانند با فشردن انگشت روی آن‌ها فعال شوند. گزینه‌ی <em>خانه</em> فقط Ceno را با یک زبانه‌ جدید مرور عمومی خواهد گشود که صفحه‌ی خانگی‌اش را نشان می‌دهد. گزینه‌ی <em>پاک‌کردن</em> نیازمند توضیح بیشتری است.</p>
+<p>اطلاع‌رسان <em>خدمات مرورگر Ceno</em> که در بالا نشان داده شد چند گزینه را همراه با هم
+دربردارد که می‌توانند با فشردن انگشت روی آن‌ها فعال شوند. گزینه‌ی <em>خانه</em> فقط
+Ceno را با یک زبانه‌ جدید مرور عمومی خواهد گشود که صفحه‌ی خانگی‌اش را نشان
+می‌دهد. گزینه‌ی <em>پاک‌کردن</em> نیازمند توضیح بیشتری است.</p>
 <blockquote>
-<p><strong>نکته:</strong> اگر گزینه‌های زیر بخش اطلاع‌رسانی را نمی‌بینید، مستطیل اطلاع‌رسانی را از وسط بگیرید و به طرف پایین بکشید تا آن را نمایان کنید.(اگر شما فقط گزینه «صفحه‌ اصلی»(Home) را می‌بینید، دستگاه شما احتمالا برای پشتیبانی از گزینه «حذف و پاک‌سازی» خیلی قدیمی باشد.)</p>
+<p><strong>نکته:</strong> اگر گزینه‌های زیر بخش اطلاع‌رسانی را نمی‌بینید، مستطیل اطلاع‌رسانی
+را از وسط بگیرید و به طرف پایین بکشید تا آن را نمایان کنید.(اگر شما فقط گزینه
+«صفحه‌ اصلی»(Home) را می‌بینید، دستگاه شما احتمالا برای پشتیبانی از گزینه «حذف
+و پاک‌سازی» خیلی قدیمی باشد.)</p>
 </blockquote>
-<p>اگر زمانی نیاز داشتید که Ceno را به‌سرعت متوقف کنید و تمام داده‌های مرتبط با آن را به کلی پاک کنید (نه فقط محتوای انبارشده، بلکه همچنین تنظیماتی مانند صفحه‌های محبوب، رمزهای عبور و تمام سوابق مرور)، می‌توانید روی گزینه‌ی <em>پاک‌کردن</em> ضربه بزنید. برای پرهیز از پاک‌شدن تصادفی داده‌هایتان، این گزینه هنوز هیچ‌چیز را حذف نخواهد کرد، بلکه فقط یک گزینه‌ی افزوده را برای لحظه‌ای کوتاه نشان می‌دهد، همان‌طور که در پایین به تصویر کشیده شده است:</p>
-<p><img src="images/tap-purge.png" alt="شکل: آخرین گزینه سنو را متوقف می‌کند و تمام داده‌های آن را پاک می‌کند" /></p>
-<p>اگر روی <em>بله</em> انگشت بفشارید، سنو متوقف خواهد شد و تمام داده‌هایش <em>بی‌هیچ پرسش دیگری</em> حذف خواهد شد، طوری که انگار هیچ‌گاه از سنو استفاده نکرده بودید.</p>
+<p>اگر زمانی نیاز داشتید که Ceno را به‌سرعت متوقف کنید و تمام داده‌های مرتبط با آن
+را به کلی پاک کنید (نه فقط محتوای انبارشده، بلکه همچنین تنظیماتی مانند صفحه‌های
+محبوب، رمزهای عبور و تمام سوابق مرور)، می‌توانید روی گزینه‌ی <em>پاک‌کردن</em> ضربه
+بزنید. برای پرهیز از پاک‌شدن تصادفی داده‌هایتان، این گزینه هنوز هیچ‌چیز را حذف
+نخواهد کرد، بلکه فقط یک گزینه‌ی افزوده را برای لحظه‌ای کوتاه نشان می‌دهد،
+همان‌طور که در پایین به تصویر کشیده شده است:</p>
+<p><img src="images/tap-purge.png" alt="Figure: The last action stops Ceno and clears all its data" /></p>
+<p>اگر روی <em>بله</em> انگشت بفشارید، سنو متوقف خواهد شد و تمام داده‌هایش <em>بی‌هیچ پرسش
+دیگری</em> حذف خواهد شد، طوری که انگار هیچ‌گاه از سنو استفاده نکرده بودید.</p>
 <p>اگر روی این گزینه تقه نزنید در عرض چند ثانیه از بین خواهد رفت.</p>
 <blockquote>
-<p><strong>نکته:</strong> روش توصیف‌شده در بالا نیازمند آن است که Ceno روی دستگاه‌تان در حال اجرا باشد. برای رسیدن به همین اثر وقتی Ceno متوقف می‌شود، شما می‌توانید از صفحه‌ی <em>تنظیمات</em> عمومی اندروید استفاده کنید و، تحت مدخل <em>نرم‌افزارها</em>، Ceno را انتخاب کنید و سپس <em>داده‌ها را پاک کنید</em>.</p>
+<p><strong>نکته:</strong> روش توصیف‌شده در بالا نیازمند آن است که Ceno روی دستگاه‌تان در حال
+اجرا باشد. برای رسیدن به همین اثر وقتی Ceno متوقف می‌شود، شما می‌توانید از
+صفحه‌ی <em>تنظیمات</em> عمومی اندروید استفاده کنید و، تحت مدخل <em>نرم‌افزارها</em>، Ceno را
+انتخاب کنید و سپس <em>داده‌ها را پاک کنید</em>.</p>
 <p>به‌عنوان یک جایگزین شدیدتر، می‌توانید این نرم‌افزار را به‌طور کامل حذف کنید.</p>
 </blockquote>
 <blockquote>
-<p><strong>هشدار:</strong> اندروید ممکن است همچنان ردپاهای دیگری از کاربرد یک نرم‌افزار را به غیر از داده‌هایش نگه دارد؛ برای نمونه در گزارش سیستم‌.</p>
+<p><strong>هشدار:</strong> اندروید ممکن است همچنان ردپاهای دیگری از کاربرد یک نرم‌افزار را به
+غیر از داده‌هایش نگه دارد؛ برای نمونه در گزارش سیستم‌.</p>
 </blockquote>
 
                     </main>

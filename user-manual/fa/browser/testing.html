@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
-<html lang="fa" class="light" dir="rtl">
+<html lang="fa" class="light sidebar-visible" dir="rtl">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>آزمایش مرورگر - دفترچه‌ی راهنمای کاربر Censorship.no! (سنو)</title>
+        <title>Testing the Browser - دفترچه‌ی راهنمای کاربر Censorship.no! (سنو)</title>
 
 
         <!-- Custom HTML head -->
-        
+
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
@@ -24,26 +24,29 @@
         <link rel="stylesheet" href="../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../highlight.css">
-        <link rel="stylesheet" href="../tomorrow-night.css">
-        <link rel="stylesheet" href="../ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
-    </head>
-    <body class="sidebar-visible no-js">
-    <div id="body-container">
-        <!-- Provide site root to javascript -->
-        <script>
-            var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
-        </script>
 
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
@@ -57,24 +60,22 @@
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
-            var theme;
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
-            var html = document.querySelector('html');
+            const html = document.documentElement;
             html.classList.remove('light')
             html.classList.add(theme);
-            var body = document.querySelector('body');
-            body.classList.remove('no-js')
-            body.classList.add('js');
+            html.classList.add("js");
         </script>
 
         <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var body = document.querySelector('body');
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -82,43 +83,25 @@
                 sidebar = 'hidden';
             }
             sidebar_toggle.checked = sidebar === 'visible';
-            body.classList.remove('sidebar-visible');
-            body.classList.add("sidebar-" + sidebar);
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Censorship.no!</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../intro/index.html"><strong aria-hidden="true">1.</strong> مقدمه</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../intro/ceno.html"><strong aria-hidden="true">1.1.</strong> مرورگر سنو چیست؟</a></li><li class="chapter-item expanded "><a href="../intro/ouinet.html"><strong aria-hidden="true">1.2.</strong> Ouinet چیست؟</a></li><li class="chapter-item expanded "><a href="../intro/qsg.html"><strong aria-hidden="true">1.3.</strong> راهنمای شروع سریع</a></li><li class="chapter-item expanded "><a href="../intro/faq.html"><strong aria-hidden="true">1.4.</strong> پرسش‌های متداول</a></li></ol></li><li class="chapter-item expanded "><a href="../concepts/index.html"><strong aria-hidden="true">2.</strong> مفاهیم اصلی</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../concepts/how.html"><strong aria-hidden="true">2.1.</strong> این مرورگر چگونه کار می‌کند؟</a></li><li class="chapter-item expanded "><a href="../concepts/public-personal.html"><strong aria-hidden="true">2.2.</strong> Public vs. Personal browsing</a></li><li class="chapter-item expanded "><a href="../concepts/advantages.html"><strong aria-hidden="true">2.3.</strong> امتیازهای استفاده از Ceno/Ouinet</a></li><li class="chapter-item expanded "><a href="../concepts/risks.html"><strong aria-hidden="true">2.4.</strong> خطرات استفاده از Ceno/Ouinet</a></li></ol></li><li class="chapter-item expanded "><a href="../browser/index.html"><strong aria-hidden="true">3.</strong> استفاده از مرورگرCeno</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../browser/install.html"><strong aria-hidden="true">3.1.</strong> نصب Ceno</a></li><li class="chapter-item expanded "><a href="../browser/public-personal.html"><strong aria-hidden="true">3.2.</strong> Using Public or Personal browsing</a></li><li class="chapter-item expanded "><a href="../browser/settings.html"><strong aria-hidden="true">3.3.</strong> تنظیمات Ceno</a></li><li class="chapter-item expanded "><a href="../browser/testing.html" class="active"><strong aria-hidden="true">3.4.</strong> آزمایش مرورگر</a></li><li class="chapter-item expanded "><a href="../browser/bridging.html"><strong aria-hidden="true">3.5.</strong> کمک به دیگران</a></li><li class="chapter-item expanded "><a href="../browser/troubleshooting.html"><strong aria-hidden="true">3.6.</strong> شناسایی و رفع اشکال</a></li></ol></li><li class="chapter-item expanded "><a href="../client/front-end.html"><strong aria-hidden="true">4.</strong> پیوست: فرانت‌اند سرویس‌گیرنده‌ی Ouinet</a></li></ol>
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
-
-        <!-- Track and set sidebar scroll position -->
-        <script>
-            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
-            sidebarScrollbox.addEventListener('click', function(e) {
-                if (e.target.tagName === 'A') {
-                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
-                }
-            }, { passive: true });
-            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
-            sessionStorage.removeItem('sidebar-scroll');
-            if (sidebarScrollTop) {
-                // preserve sidebar scroll position when navigating via links within sidebar
-                sidebarScrollbox.scrollTop = sidebarScrollTop;
-            } else {
-                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
-                var activeSection = document.querySelector('#sidebar .active');
-                if (activeSection) {
-                    activeSection.scrollIntoView({ block: 'center' });
-                }
-            }
-        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
                         <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
@@ -128,6 +111,7 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
@@ -175,42 +159,100 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="تست-مرورگر"><a class="header" href="#تست-مرورگر">تست مرورگر</a></h1>
-<p>حالا که می‌دانید چگونه باید Ceno را <a href="install.html">نصب</a> و <a href="settings.html">تنظیم</a> کنید، بیایید برخی مراحل را دنبال کنیم تا بسنجیم که آیا ویژگی‌های مختلف خاص Ouinet درست کار می‌کنند. این فرایند شامل فعال‌سازی و غیرفعال‌سازی گزینشی سازوکارهای متفاوت دسترسی خواهد بود. اما به یاد داشته باشید که در استفاده‌ی روزمره از Ceno، شما به‌ندرت نیازی به تغییر تنظیمات پیش‌فرض نرم‌افزار خواهید داشت.</p>
-<p>‬برای کامل‌کردن تمام تست‌های پایین نیاز به دست‌کم دو دستگاه خواهید داشت که به یک شبکه‌ی وای‌فای مشترک وصل باشند، و نیز یک دستگاه سوم روی یک شبکه‌ی کاملاً متفاوت.</p>
-<p>تمام تست‌ها با استفاده از <a href="public-private.html">مرور عمومی</a> اجرا خواهند شد. اگر چیزی طبق انتظار کار نکرد، لطفاً بردبار باشید و بخش مربوط به <a href="troubleshooting.html">شناسایی و رفع اشکالات</a> را چک کنید. به‌طور مشخص، اگر مرورگر در حین بارگذاری یک صفحه بیشتر از چند دقیقه گیر کرد، می‌توانید دکمه‌ی توقف را بفشارید و آن را از نو بارگذاری کنید (گرچه این کار ممکن است باعث تغییر اندکی در نتایج شود).</p>
+<p>Now that you know how to <a href="install.html">install</a> and <a href="settings.html">configure</a>
+Ceno, let us follow some steps to test whether different Ouinet-specific
+features work. This will involve selectively enabling and disabling different
+access mechanisms. Keep in mind however that in day-to-day usage of Ceno, you
+will seldom need to change the default settings at all.</p>
+<p>‬برای کامل‌کردن تمام تست‌های پایین نیاز به دست‌کم دو دستگاه خواهید داشت که به یک
+شبکه‌ی وای‌فای مشترک وصل باشند، و نیز یک دستگاه سوم روی یک شبکه‌ی کاملاً متفاوت.</p>
+<p>All of the tests will be performed using <a href="public-private.html">public browsing</a>.
+If something does not work as expected, please be patient and check the section
+on <a href="troubleshooting.html">troubleshooting</a>. Specifically, if the browser gets
+stuck for more than a couple of minutes while loading a page, you may hit stop
+and reload it (although this may alter results slightly).</p>
 <h2 id="دسترسی-به-یک-injector"><a class="header" href="#دسترسی-به-یک-injector">دسترسی به یک injector</a></h2>
-<p>بیایید نخست چک کنیم که آیا مرورگر Ceno شما می‌تواند به یک injector دسترسی پیدا کند. این شاید پیش‌پاافتاده به نظر بیاید، اما سرویس‌گیرنده‌ی شما پیشاپیش چندین ویژگی Ouinet را در این فرایند به کار خواهد بست: جست‌وجوی نشانی injector در انبوهه‌ی injector ها، تلاش برای تماس مستقیم با آن و، اگر این injector از سوی ارائه‌دهنده‌ی دسترسی یا کشورتان مسدود شده بود، جست‌وجوی انبوهه‌ی پل و تلاش برای تماس با injector از طریق یک سرویس‌گیرنده‌ی Ouinet.</p>
+<p>بیایید نخست چک کنیم که آیا مرورگر Ceno شما می‌تواند به یک injector دسترسی پیدا
+کند. این شاید پیش‌پاافتاده به نظر بیاید، اما سرویس‌گیرنده‌ی شما پیشاپیش چندین
+ویژگی Ouinet را در این فرایند به کار خواهد بست: جست‌وجوی نشانی injector در
+انبوهه‌ی injector ها، تلاش برای تماس مستقیم با آن و، اگر این injector از سوی
+ارائه‌دهنده‌ی دسترسی یا کشورتان مسدود شده بود، جست‌وجوی انبوهه‌ی پل و تلاش برای
+تماس با injector از طریق یک سرویس‌گیرنده‌ی Ouinet.</p>
 <p>در نخستین دستگاه این مرحله‌ها را اجرا کنید:</p>
 <ol>
 <li>پیش از هرچیز، Ceno را نصب و اجرا کنید. صفحه‌ی خانگی آن ظاهر خواهد شد.</li>
-<li>منوی اصلی نرم‌افزار را باز کنید و <em>Ceno</em> را انتخاب کنید تا صفحه‌ی <em>تنظیمات Ceno</em> باز شود. چون ما فقط می‌خواهیم دسترسی به injector را تست کنیم، تمام جعبه‌های مربوط به منابع محتوا به جز <em>از طریق شبکه‌ی (عمومی) سنو</em> را غیرفعال کنید.</li>
-<li>به صفحه‌ی خانگی Ceno بازگردید. یا یکی از وب‌سایت‌های توصیه‌شده را انتخاب کنید، یا نشانی اینترنتی سایتی دیگر را در نوار نشانی بالای پنجره‌ی مرورگر وارد کنید. اگر سایتی را سراغ دارید که معمولاً برای شما مسدود شده است، نشانی همان سایت را وارد کنید!</li>
+<li>Open the app's main menu and choose <em>Settings</em> to open the <em>Ceno Settings</em>
+page. Since we only want to test injector access, uncheck all the boxes for
+content sources except <em>Via the Ceno network (public)</em>.</li>
+<li>به صفحه‌ی خانگی Ceno بازگردید. یا یکی از وب‌سایت‌های توصیه‌شده را انتخاب
+کنید، یا نشانی اینترنتی سایتی دیگر را در نوار نشانی بالای پنجره‌ی مرورگر وارد
+کنید. اگر سایتی را سراغ دارید که معمولاً برای شما مسدود شده است، نشانی همان
+سایت را وارد کنید!</li>
 <li>سایت انتخاب‌شده باید سرانجام دیده شود.</li>
 </ol>
-<p><strong>نکته:</strong> اگر به جای صفحه‌ی واقعی یک صفحه‌ی جعلی را دریافت می‌کنید، در ابتدای نشانی اینترنتی سایت در نوار آدرس (به جای <code>http://</code>) <code>https://</code> را وارد کنید و تست را تکرار کنید.</p>
-<p>اگر سایت بارگذاری نشد، می‌توانید خوشحال باشید که دستگاه‌تان می‌تواند به injector دسترسی پیدا کند! از آن‌جا که شما می‌توانید انبوهه‌ها را به پرسش بکشید و با سرویس‌گیرنده‌های دیگر تماس بگیرید، شما همچنین احتمالاً می‌توانید محتوای برگرفته از کش توزیع‌شده را بازیابی کنید.</p>
-<p>در ضمن، اگر علامت Ceno در نوار نشانی را بفشارید، یک پنجره‌ی جدید مانند پنجره‌ی پایینی گشوده خواهد شد، که نشان می‌دهد چند عنصر از سایت از منابع متفاوت بازیابی شده است. فقط <em>از طریق شبکه‌ی (عمومی) Ceno</em> باید یک ارزش غیر-صفر داشته باشد چرا که سایر منابع غیرفعال شده‌اند.</p>
-<p><img src="images/sources-inject.png" alt="شکل: منابع به‌کار رفته هنگام تست injection" /></p>
-<p>در مقابل، اگر از مرور خصوصی با تنظیمات پیش‌فرض استفاده کرده‌اید، شاید پنجره‌ی بازشونده مانند پنجره‌ی پایینی دیده باشید، با شمارش‌های غیر-صفری در بخش <em>مستقیم از وب‌سایت</em> یا <em>از طریق شبکه‌ی (عمومی) Ceno</em>.</p>
-<p><img src="images/sources-proxy.png" alt="شکل: منابع به‌کاررفته با مرور خصوصی" /></p>
+<p><strong>نکته:</strong> اگر به جای صفحه‌ی واقعی یک صفحه‌ی جعلی را دریافت می‌کنید، در ابتدای
+نشانی اینترنتی سایت در نوار آدرس (به جای <code>http://</code>) <code>https://</code> را وارد کنید و
+تست را تکرار کنید.</p>
+<p>اگر سایت بارگذاری نشد، می‌توانید خوشحال باشید که دستگاه‌تان می‌تواند به injector
+دسترسی پیدا کند! از آن‌جا که شما می‌توانید انبوهه‌ها را به پرسش بکشید و با
+سرویس‌گیرنده‌های دیگر تماس بگیرید، شما همچنین احتمالاً می‌توانید محتوای برگرفته
+از کش توزیع‌شده را بازیابی کنید.</p>
+<p>در ضمن، اگر علامت Ceno در نوار نشانی را بفشارید، یک پنجره‌ی جدید مانند پنجره‌ی
+پایینی گشوده خواهد شد، که نشان می‌دهد چند عنصر از سایت از منابع متفاوت بازیابی
+شده است. فقط <em>از طریق شبکه‌ی (عمومی) Ceno</em> باید یک ارزش غیر-صفر داشته باشد چرا
+که سایر منابع غیرفعال شده‌اند.</p>
+<p><img src="images/sources-inject.png" alt="Figure: Sources used when testing injection" /></p>
+<p>In contrast, if you had used Personal browsing with default settings, you may
+have seen a popup like the one below, with non-zero counts in <em>Direct from
+website</em> or <em>Via Ceno network (private)</em>.</p>
+<p><img src="images/sources-proxy.png" alt="Figure: Sources used with private browsing" /></p>
 <h2 id="دریافت-محتوا-از-کاربران-نزدیک"><a class="header" href="#دریافت-محتوا-از-کاربران-نزدیک">دریافت محتوا از کاربران نزدیک</a></h2>
-<p>از آن‌جا که نخستین دستگاه‌تان توانست محتوایی را از یک injector دریافت کند، بیایید تست کنیم که آیا این دستگاه می‌تواند آن را با دستگاه دیگری روی کش توزیع‌شده به اشتراک بگذارد. ساده‌ترین راه استفاده از پشتیبانی دستگاه-به-دستگاه Ceno برای چک‌کردن این است که آیا دریافت و راستی‌آزمایی محتوای امضاشده درست کار می‌کند یا نه.</p>
-<p>پس از تکمیل موفقیت‌آمیز تست بالا روی دستگاه نخست، Ceno را روی آن در حال اجرا بگذارید (علامت Ceno باید در نوار اطلاع‌رسانی آن ظاهر شود). سپس دستگاه دیگری را در اختیار بگیرید (می‌توانید یکی از دوستان‌تان را دعوت کنید تا در انجام این تست به شما کمک کند) و آن را به همان شبکه‌ی وای‌فای وصل کنید. سپس، مراحل زیر را روی دستگاه دوم انجام دهید:</p>
+<p>از آن‌جا که نخستین دستگاه‌تان توانست محتوایی را از یک injector دریافت کند،
+بیایید تست کنیم که آیا این دستگاه می‌تواند آن را با دستگاه دیگری روی کش
+توزیع‌شده به اشتراک بگذارد. ساده‌ترین راه استفاده از پشتیبانی دستگاه-به-دستگاه
+Ceno برای چک‌کردن این است که آیا دریافت و راستی‌آزمایی محتوای امضاشده درست کار
+می‌کند یا نه.</p>
+<p>پس از تکمیل موفقیت‌آمیز تست بالا روی دستگاه نخست، Ceno را روی آن در حال اجرا
+بگذارید (علامت Ceno باید در نوار اطلاع‌رسانی آن ظاهر شود). سپس دستگاه دیگری را
+در اختیار بگیرید (می‌توانید یکی از دوستان‌تان را دعوت کنید تا در انجام این تست
+به شما کمک کند) و آن را به همان شبکه‌ی وای‌فای وصل کنید. سپس، مراحل زیر را روی
+دستگاه دوم انجام دهید:</p>
 <ol>
 <li>در صورت نیاز Ceno را نصب کنید و مانند قبل آن را اجرا کنید.</li>
-<li>مانند قبل صفحه‌ی <em>تنظیمات Ceno</em> را باز کنید. از آن‌جا که ما فقط می‌خواهیم دسترسی به کش توزیع‌شده را تست کنیم، تمام جعبه‌های مربوط به منابع محتوا به جز <em>به‌اشتراک‌گذاشته‌شده از سوی سایر کاربران Ceno</em> را غیرفعال کنید.</li>
-<li>به صفحه‌ی خانگی Ceno بازگردید و از همان سایت به همان شیوه‌ی قبلی در بالا بازدید کنید (یعنی با انتخاب یکی از وب‌سایت‌های توصیه‌شده یا واردکردن نشانی اینترنتی آن در نوار نشانی).</li>
+<li>مانند قبل صفحه‌ی <em>تنظیمات Ceno</em> را باز کنید. از آن‌جا که ما فقط می‌خواهیم
+دسترسی به کش توزیع‌شده را تست کنیم، تمام جعبه‌های مربوط به منابع محتوا به جز
+<em>به‌اشتراک‌گذاشته‌شده از سوی سایر کاربران Ceno</em> را غیرفعال کنید.</li>
+<li>به صفحه‌ی خانگی Ceno بازگردید و از همان سایت به همان شیوه‌ی قبلی در بالا
+بازدید کنید (یعنی با انتخاب یکی از وب‌سایت‌های توصیه‌شده یا واردکردن نشانی
+اینترنتی آن در نوار نشانی).</li>
 <li>سایت انتخاب‌شده باید سرانجام دیده شود.</li>
 </ol>
-<p>اگر این کار نتیجه نمی‌دهد، شبکه‌ی بی‌سیم شما احتمالاً ارتباط مستقیم بین دستگاه‌هایش را مسدود می‌کند. این «انزوای سرویس‌گیرنده» می‌تواند در شبکه‌های همگانی مانند شبکه‌های موجود در پارک‌ها، بارها یا هتل‌ها پیش آید. لطفاً روی یک شبکه‌ی دیگر دوباره امتحان کنید.</p>
-<p>اگر سایت کار کرد، این به معنای آن است که هردو دستگاه قادر به رساندن آن محتوا به سرویس‌گیرندگان دیگر هستند. فشردن علامت نوار نشانی Ceno باید پنجره‌ی بازشونده‌ای را مانند پنجره‌ی پایینی نشان دهد، که در آن فقط <em>به‌اشتراک‌گذاشته‌شده از سوی سایر کاربران Ceno</em> یک ارزش غیر-صفر دارد.</p>
-<p><img src="images/sources-dcache.png" alt="شکل: منابع به‌کاررفته هنگام تست بازیابی کش توزیع‌شده" /></p>
-<p>سرانجام، شاید به این نکته نیز دقت کرده باشید که شمارشگری برای <em>به‌اشتراک‌گذاشته‌شده از سوی شما</em> وجود دارد. این منبعی متفاوت <em>به معنای واقعی کلمه</em> نیست: عناصر شمارش‌شده در این‌جا در حقیقت بخشی از کش توزیع‌شده‌اند، اما آن‌ها پیشاپیش در دستگاه شما ذخیره شده‌اند، بنابراین Ceno نیازی به بازیابی آن‌ها روی شبکه ندارد.</p>
+<p>اگر این کار نتیجه نمی‌دهد، شبکه‌ی بی‌سیم شما احتمالاً ارتباط مستقیم بین
+دستگاه‌هایش را مسدود می‌کند. این «انزوای سرویس‌گیرنده» می‌تواند در شبکه‌های
+همگانی مانند شبکه‌های موجود در پارک‌ها، بارها یا هتل‌ها پیش آید. لطفاً روی یک
+شبکه‌ی دیگر دوباره امتحان کنید.</p>
+<p>اگر سایت کار کرد، این به معنای آن است که هردو دستگاه قادر به رساندن آن محتوا به
+سرویس‌گیرندگان دیگر هستند. فشردن علامت نوار نشانی Ceno باید پنجره‌ی بازشونده‌ای
+را مانند پنجره‌ی پایینی نشان دهد، که در آن فقط <em>به‌اشتراک‌گذاشته‌شده از سوی سایر
+کاربران Ceno</em> یک ارزش غیر-صفر دارد.</p>
+<p><img src="images/sources-dcache.png" alt="Figure: Sources used when testing distributed cache retrieval" /></p>
+<p>سرانجام، شاید به این نکته نیز دقت کرده باشید که شمارشگری برای
+<em>به‌اشتراک‌گذاشته‌شده از سوی شما</em> وجود دارد. این منبعی متفاوت <em>به معنای واقعی
+کلمه</em> نیست: عناصر شمارش‌شده در این‌جا در حقیقت بخشی از کش توزیع‌شده‌اند، اما
+آن‌ها پیشاپیش در دستگاه شما ذخیره شده‌اند، بنابراین Ceno نیازی به بازیابی آن‌ها
+روی شبکه ندارد.</p>
 <h2 id="دریافت-محتوا-از-کاربران-دور"><a class="header" href="#دریافت-محتوا-از-کاربران-دور">دریافت محتوا از کاربران دور</a></h2>
-<p>ما یک تست مقیاس کوچک از کش توزیع‌شده انجام داده‌ایم. بیایید حالا تست کنیم که چگونه روی اینترنت کار می‌کند.</p>
-<p>پس از اتمام موفقیت‌آمیز تست بالا، مانند تست قبلی Ceno را در حال اجرا روی دستگاه اول رها کنید، و روی دستگاه دوم Ceno را متوقف کنید (با نمایش اطلاع‌رسانی‌های آن و فشردن گزینه‌ی «برای توقف اینجا را بفشارید»).</p>
-<p>این بار به یک دستگاه سوم نیاز دارید، اما این دستگاه باید به یک شبکه‌ی وای‌فای متفاوت وصل باشد (شاید دوستی دیگر بتواند از خانه به شما کمک کند). مراحل لازم برای آن دستگاه درست مانند همان مراحل اجراشده در تست قبلی هستند.</p>
-<p>اگر دستگاه سوم می‌تواند سایت به‌کاررفته برای تست را بارگذاری کند، شما کاملاً آماده‌اید. نخستین دستگاه قادر به بذرپاشی محتوا به دیگران است، و می‌تواند به احتمال قوی به‌عنوان یک پل نیز عمل کند.</p>
+<p>ما یک تست مقیاس کوچک از کش توزیع‌شده انجام داده‌ایم. بیایید حالا تست کنیم که
+چگونه روی اینترنت کار می‌کند.</p>
+<p>پس از اتمام موفقیت‌آمیز تست بالا، مانند تست قبلی Ceno را در حال اجرا روی دستگاه
+اول رها کنید، و روی دستگاه دوم Ceno را متوقف کنید (با نمایش اطلاع‌رسانی‌های آن و
+فشردن گزینه‌ی «برای توقف اینجا را بفشارید»).</p>
+<p>این بار به یک دستگاه سوم نیاز دارید، اما این دستگاه باید به یک شبکه‌ی وای‌فای
+متفاوت وصل باشد (شاید دوستی دیگر بتواند از خانه به شما کمک کند). مراحل لازم برای
+آن دستگاه درست مانند همان مراحل اجراشده در تست قبلی هستند.</p>
+<p>اگر دستگاه سوم می‌تواند سایت به‌کاررفته برای تست را بارگذاری کند، شما کاملاً
+آماده‌اید. نخستین دستگاه قادر به بذرپاشی محتوا به دیگران است، و می‌تواند به
+احتمال قوی به‌عنوان یک پل نیز عمل کند.</p>
 <p>تبریک می‌گوییم!</p>
 
                     </main>
