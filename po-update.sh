@@ -5,7 +5,7 @@
 set -e
 
 # HTML translations.
-for po in $(find . -maxdepth 2 -name '*.po'); do
+for po in $(find . -maxdepth 10 -name '*.po'); do
     pot="_en.src/$(echo "$po" | sed -E 's#^\./[^/]+/##')t"
     msgmerge -q --previous -U --backup=none "$po" "$pot"
 done
