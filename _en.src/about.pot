@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 13:34-0400\n"
+"POT-Creation-Date: 2025-05-10 18:09-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.11.1\n"
+"X-Generator: Translate Toolkit 3.15.1\n"
 
 #: ./about.html%2Bmain.section.div.div:4-13
 msgid "Ceno is building a borderless internet"
@@ -94,50 +94,50 @@ msgid ""
 "connectivity issues."
 msgstr ""
 
-#: ./about.html%2Bmain.section.div.div:54-13
-msgctxt "./about.html+main.section.div.div:54-13"
+#: ./about.html%2Bmain.section.div.div.label:56-17
+msgctxt "./about.html+main.section.div.div.label:56-17"
 msgid "Citizen"
 msgstr ""
 
-#: ./about.html%2Bmain.section.div.div:58-13
-msgctxt "./about.html+main.section.div.div:58-13"
+#: ./about.html%2Bmain.section.div.div.label:60-17
+msgctxt "./about.html+main.section.div.div.label:60-17"
 msgid "Student"
 msgstr ""
 
-#: ./about.html%2Bmain.section.div.div:62-13
+#: ./about.html%2Bmain.section.div.div.label:64-17
 msgid "Human rights defender"
 msgstr ""
 
-#: ./about.html%2Bmain.section.div.div:66-13
-msgctxt "./about.html+main.section.div.div:66-13"
+#: ./about.html%2Bmain.section.div.div.label:68-17
+msgctxt "./about.html+main.section.div.div.label:68-17"
 msgid "Journalist"
 msgstr ""
 
-#: ./about.html%2Bmain.section.div.div:70-13
-msgctxt "./about.html+main.section.div.div:70-13"
+#: ./about.html%2Bmain.section.div.div.label:72-17
+msgctxt "./about.html+main.section.div.div.label:72-17"
 msgid "Technologist"
 msgstr ""
 
-#: ./about.html%2Bmain.section.div.div:74-13
+#: ./about.html%2Bmain.section.div.div.label:76-17
 msgid "Diaspora user"
 msgstr ""
 
-#: ./about.html%2Bmain.section.div.div.div:79-17
-msgctxt "./about.html+main.section.div.div.div:79-17"
+#: ./about.html%2Bmain.section.div.div.div.label:81-21
+msgctxt "./about.html+main.section.div.div.div.label:81-21"
 msgid "Citizen"
 msgstr ""
 
-#: ./about.html%2Bmain.section.div.div.div:83-17
-msgctxt "./about.html+main.section.div.div.div:83-17"
+#: ./about.html%2Bmain.section.div.div.div.label:85-21
+msgctxt "./about.html+main.section.div.div.div.label:85-21"
 msgid "Student"
 msgstr ""
 
-#: ./about.html%2Bmain.section.div.div.div:87-17
-msgctxt "./about.html+main.section.div.div.div:87-17"
+#: ./about.html%2Bmain.section.div.div.div.label:89-21
+msgctxt "./about.html+main.section.div.div.div.label:89-21"
 msgid "Technologist"
 msgstr ""
 
-#: ./about.html%2Bmain.section.div.div.div:91-17
-msgctxt "./about.html+main.section.div.div.div:91-17"
+#: ./about.html%2Bmain.section.div.div.div.label:93-21
+msgctxt "./about.html+main.section.div.div.div.label:93-21"
 msgid "Journalist"
 msgstr ""

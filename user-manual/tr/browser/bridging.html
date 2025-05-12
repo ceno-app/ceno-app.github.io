@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
-<html lang="tr" class="light" dir="ltr">
+<html lang="tr" class="light sidebar-visible" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Başkalarına yardım etmek - Censorship.no! Kullanıcı Rehberi</title>
+        <title>Helping others - Censorship.no! Kullanıcı Rehberi</title>
 
 
         <!-- Custom HTML head -->
-        
+
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
@@ -24,26 +24,29 @@
         <link rel="stylesheet" href="../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../highlight.css">
-        <link rel="stylesheet" href="../tomorrow-night.css">
-        <link rel="stylesheet" href="../ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
-    </head>
-    <body class="sidebar-visible no-js">
-    <div id="body-container">
-        <!-- Provide site root to javascript -->
-        <script>
-            var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
-        </script>
 
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
@@ -57,24 +60,22 @@
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
-            var theme;
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
-            var html = document.querySelector('html');
+            const html = document.documentElement;
             html.classList.remove('light')
             html.classList.add(theme);
-            var body = document.querySelector('body');
-            body.classList.remove('no-js')
-            body.classList.add('js');
+            html.classList.add("js");
         </script>
 
         <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var body = document.querySelector('body');
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -82,43 +83,25 @@
                 sidebar = 'hidden';
             }
             sidebar_toggle.checked = sidebar === 'visible';
-            body.classList.remove('sidebar-visible');
-            body.classList.add("sidebar-" + sidebar);
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Censorship.no!</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../intro/index.html"><strong aria-hidden="true">1.</strong> Giriş</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../intro/ceno.html"><strong aria-hidden="true">1.1.</strong> Ceno Browser nedir?</a></li><li class="chapter-item expanded "><a href="../intro/ouinet.html"><strong aria-hidden="true">1.2.</strong> Ouinet nedir?</a></li><li class="chapter-item expanded "><a href="../intro/qsg.html"><strong aria-hidden="true">1.3.</strong> Hızlı başlama rehberi</a></li><li class="chapter-item expanded "><a href="../intro/faq.html"><strong aria-hidden="true">1.4.</strong> Sıkça sorulan sorular</a></li></ol></li><li class="chapter-item expanded "><a href="../concepts/index.html"><strong aria-hidden="true">2.</strong> Temel kavramlar</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../concepts/how.html"><strong aria-hidden="true">2.1.</strong> Nasıl çalışıyor?</a></li><li class="chapter-item expanded "><a href="../concepts/public-personal.html"><strong aria-hidden="true">2.2.</strong> Public vs. Personal browsing</a></li><li class="chapter-item expanded "><a href="../concepts/advantages.html"><strong aria-hidden="true">2.3.</strong> Ceno/Ouinet kullanmanın faydaları</a></li><li class="chapter-item expanded "><a href="../concepts/risks.html"><strong aria-hidden="true">2.4.</strong> Ceno/Ouinet kullanmanın tehlikeleri</a></li></ol></li><li class="chapter-item expanded "><a href="../browser/index.html"><strong aria-hidden="true">3.</strong> Ceno Browser kullanmak</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../browser/install.html"><strong aria-hidden="true">3.1.</strong> Ceno kurmak</a></li><li class="chapter-item expanded "><a href="../browser/public-personal.html"><strong aria-hidden="true">3.2.</strong> Using Public or Personal browsing</a></li><li class="chapter-item expanded "><a href="../browser/settings.html"><strong aria-hidden="true">3.3.</strong> Ceno ayarları</a></li><li class="chapter-item expanded "><a href="../browser/testing.html"><strong aria-hidden="true">3.4.</strong> Tarayıcıyı denemek</a></li><li class="chapter-item expanded "><a href="../browser/bridging.html" class="active"><strong aria-hidden="true">3.5.</strong> Başkalarına yardım etmek</a></li><li class="chapter-item expanded "><a href="../browser/troubleshooting.html"><strong aria-hidden="true">3.6.</strong> Sorun gidermek</a></li></ol></li><li class="chapter-item expanded "><a href="../client/front-end.html"><strong aria-hidden="true">4.</strong> Ek: Ouinet istemcisi ön yüzü</a></li></ol>
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
-
-        <!-- Track and set sidebar scroll position -->
-        <script>
-            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
-            sidebarScrollbox.addEventListener('click', function(e) {
-                if (e.target.tagName === 'A') {
-                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
-                }
-            }, { passive: true });
-            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
-            sessionStorage.removeItem('sidebar-scroll');
-            if (sidebarScrollTop) {
-                // preserve sidebar scroll position when navigating via links within sidebar
-                sidebarScrollbox.scrollTop = sidebarScrollTop;
-            } else {
-                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
-                var activeSection = document.querySelector('#sidebar .active');
-                if (activeSection) {
-                    activeSection.scrollIntoView({ block: 'center' });
-                }
-            }
-        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
                         <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
@@ -128,6 +111,7 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
@@ -175,30 +159,65 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="diğer-ceno-kullanıcılarının-internet-üzerinde-gezinmesine-yardımcı-olmak"><a class="header" href="#diğer-ceno-kullanıcılarının-internet-üzerinde-gezinmesine-yardımcı-olmak">Diğer Ceno kullanıcılarının internet üzerinde gezinmesine yardımcı olmak</a></h1>
-<p>Bağlanan tüm katılımcılardan (bu sizi de içeriyor) eşler arası bir ağ kurulur. Katılımcıların artması, ağı hızlandırır ve güçlendirir. Ceno Browser uygulamasını internet sansürü uygulamayan (veya az uygulayan) bir ülkeden kullanıyorsanız, bir <strong>köprü</strong> katılımcısı olarak diğer Ceno kullanıcılarına yardım etmeyi düşünebilirsiniz. Böylece aşırı sansür uygulanan ülkelerde yaşayan istemciler ve içerik ekleyiciler arasındaki trafiği aktarabilirsiniz. Onların trafiğini göremeyecek (şifrelenmiş olarak aktarılır) veya aygıtınızda tutmayacaksınız.</p>
+<p>Bağlanan tüm katılımcılardan (bu sizi de içeriyor) eşler arası bir ağ kurulur.
+Katılımcıların artması, ağı hızlandırır ve güçlendirir. Ceno Browser
+uygulamasını internet sansürü uygulamayan (veya az uygulayan) bir ülkeden
+kullanıyorsanız, bir <strong>köprü</strong> katılımcısı olarak diğer Ceno kullanıcılarına
+yardım etmeyi düşünebilirsiniz. Böylece aşırı sansür uygulanan ülkelerde yaşayan
+istemciler ve içerik ekleyiciler arasındaki trafiği aktarabilirsiniz. Onların
+trafiğini göremeyecek (şifrelenmiş olarak aktarılır) veya aygıtınızda
+tutmayacaksınız.</p>
 <blockquote>
-<p><strong>Not:</strong> Bu bölümde anlatılan yapılandırma aynı zamanda dağıtılmış ön bellekteki diğer istemcilere verimli olarak içerik göndermenizi sağlayabilir. Bu yüzden sansür uygulanan bir ülkede bulunuyorsanız bu Ceno yapılandırmasını kullanmayı değerlendirin (ama <a href="../concepts/risks.html">tehlikeleri</a> unutmayın).</p>
+<p><strong>Note:</strong> The configuration described in this section may also help your
+device to effectively seed content to others on the distributed cache, so
+please consider applying it as well when using Ceno in a censoring country
+(but keep in mind the <a href="../concepts/risks.html">risks</a> of serving such content to
+others).</p>
 </blockquote>
 <h2 id="nasıl-bir-ceno-köprüsü-olunur"><a class="header" href="#nasıl-bir-ceno-köprüsü-olunur">Nasıl bir Ceno köprüsü olunur</a></h2>
-<p>Bu özellik zaten Ceno Browser uygulamasının içinde vardır. Aygıtınızın, UPnP etkinleştirilmiş veya Ceno için açık bağlantı noktası yönlendirmesi yapılandırılmış olan bir kablosuz ağa bağlı olması gereklidir. Ayrıntılar için bir sonraki bölüme bakın.</p>
-<p>Bununla birlikte, Android aygıtlar yalnızca etkin olarak kullanılırken köprü işlevi görebilir. Güç koruma özellikleri Ceno işlemlerini kısıtlar.</p>
+<p>Bu özellik zaten Ceno Browser uygulamasının içinde vardır. Aygıtınızın, UPnP
+etkinleştirilmiş veya Ceno için açık bağlantı noktası yönlendirmesi
+yapılandırılmış olan bir kablosuz ağa bağlı olması gereklidir. Ayrıntılar için
+bir sonraki bölüme bakın.</p>
+<p>Bununla birlikte, Android aygıtlar yalnızca etkin olarak kullanılırken köprü
+işlevi görebilir. Güç koruma özellikleri Ceno işlemlerini kısıtlar.</p>
 <blockquote>
-<p><strong>Teknik not:</strong> Bunun asıl nedeni Android üzerindeki <a href="https://developer.android.com/training/monitoring-device-state/doze-standby" title="Android Developers – Optimize for Doze and App Standby">hazırda bekleme kipi</a> tarafından Ouinet kitaplığının çalışmasının yavaşlatılmasıdır. Ne yazık ki Ceno uygulamasını pil iyileştirme ayarlarından çıkartmak Ouinet için geçerli olmuyor. Bunun yanında aygıtınızın Ceno uygulamasını da etkileyebilecek pil koruma özellikleri olabilir. Lütfen aygıtınızın markasına <a href="https://dontkillmyapp.com/">Don't kill my app!</a> üzerinden bakın.</p>
+<p><strong>Technical note:</strong> This is mainly due to Android's <a href="https://developer.android.com/training/monitoring-device-state/doze-standby" title="Android Developers – Optimize for Doze and App Standby">Doze mode</a> slowing down
+the operation of the native Ouinet library. Unfortunately, disabling battery
+optimization for Ceno does not seem to exclude Ouinet from it. Your particular
+device may also include its own power-saving features which may interfere with
+Ceno; please check <a href="https://dontkillmyapp.com/">Don't kill my app!</a> for your device's brand.</p>
 </blockquote>
-<p>Ceno uygulamasını yapılandırılmış bir kablosuz ağ üzerinde kalıcı olarak çalışan ve her zaman erişilebilecek bir köprü olarak kullanmak istiyorsanız, şunları yapmalısınız:</p>
+<p>Ceno uygulamasını yapılandırılmış bir kablosuz ağ üzerinde kalıcı olarak çalışan
+ve her zaman erişilebilecek bir köprü olarak kullanmak istiyorsanız, şunları
+yapmalısınız:</p>
 <ol>
 <li>
 <p>Aygıtınız sürekli fişe takılı olmalı.</p>
-<ol>
-<li>Aygıtın ekranı sürekli açık olmalı.Bu kullanım Android ekran koruyucusunu kullanarak aşırı güç tüketimi olmadan sağlanabilir. <em>Ayarlar &gt; Ekran &gt; Ekran koruyucu (ya da Daydream)</em> bölümünden etkinleştirebilirsiniz. <em>Saat</em> seçeneğini seçin. Menüden <em>Ekran koruyucu başlangıç zamanı</em> seçip, <em>Şarj olurken</em> ya da <em>Her zaman</em> seçeneğini seçin. Aygıt etkin kullanılmadığında siyah arka planda karartılmış olarak saat görüntülenir.</li>
-</ol>
-<p>Ekranı kapatacağı için aygıtı kilitlemek için güç tuşunu kullanmayın. Aygıt ekranı açıkken bir süre sonra kendini kilitler.</p>
+</li>
+<li>
+<p>Aygıtın ekranı sürekli açık olmalı.</p>
+<p>Bu kullanım Android ekran koruyucusunu kullanarak aşırı güç tüketimi olmadan
+sağlanabilir. <em>Ayarlar &gt; Ekran &gt; Ekran koruyucu (ya da Daydream)</em> bölümünden
+etkinleştirebilirsiniz. <em>Saat</em> seçeneğini seçin. Menüden <em>Ekran koruyucu
+başlangıç zamanı</em> seçip, <em>Şarj olurken</em> ya da <em>Her zaman</em> seçeneğini seçin.
+Aygıt etkin kullanılmadığında siyah arka planda karartılmış olarak saat
+görüntülenir.</p>
+<p>Ekranı kapatacağı için aygıtı kilitlemek için güç tuşunu kullanmayın. Aygıt
+ekranı açıkken bir süre sonra kendini kilitler.</p>
 </li>
 </ol>
-<p>Bu seçenek uygun değilse, henüz pes etmeyin! Sürekli açık iyi bir internet bağlantısı bulunan bir bilgisayarınız varsa okumayı sürdürün.</p>
+<p>Bu seçenek uygun değilse, henüz pes etmeyin! Sürekli açık iyi bir internet
+bağlantısı bulunan bir bilgisayarınız varsa okumayı sürdürün.</p>
 <h2 id="bilgisayarda-köprü-çalıştırmak"><a class="header" href="#bilgisayarda-köprü-çalıştırmak">Bilgisayarda köprü çalıştırmak</a></h2>
-<p>Bilgisayarınız <a href="https://tr.wikipedia.org/wiki/Docker">Docker depoları</a> kullanabiliyorsa, köprü olarak çalışması için yapılandırılmış Ceno istemcisi çalıştırabilirsiniz. Docker kurulu değilse bilgisayarınıza uygun <a href="https://docs.docker.com/engine/install/">Docker yazılımını kurmak</a> için yönergelere bakabilirsiniz. Debian tabanlı Ubuntu ya da Linux Mint gibi sistemler için, şu komutu yürütmeniz yeterlidir: <code>sudo apt install docker.io</code></p>
-<p>Ceno istemcisini depoda çalıştırmak için şu komutu uçbirim uygulamanızda yürütmeniz yeterlidir (korkutucu görünüyor ama kopyalayıp komut satırına yapıştırabilirsiniz):</p>
+<p>If your computer supports <a href="https://en.wikipedia.org/wiki/Docker_(software)">Docker containers</a>, you can run a
+pre-configured Ceno client on it to act as a bridge. If Docker is not yet
+installed, please follow the instructions to <a href="https://docs.docker.com/engine/install/">install the Docker
+Engine</a> in your platform. For Debian derivatives like Ubuntu or
+Linux Mint, you can just run: <code>sudo apt install docker.io</code></p>
+<p>Ceno istemcisini depoda çalıştırmak için şu komutu uçbirim uygulamanızda
+yürütmeniz yeterlidir (korkutucu görünüyor ama kopyalayıp komut satırına
+yapıştırabilirsiniz):</p>
 <pre><code class="language-sh">sudo docker run --name ceno-client \
   -dv Ceno:/var/opt/ouinet --network host \
   --restart unless-stopped equalitie/Ceno-client
@@ -209,52 +228,67 @@
   -p 127.0.0.1:8077-8078:8077-8078 -p 28729:28729/udp \
   --restart unless-stopped equalitie/ceno-client
 </code></pre>
-<p>Bu komut, durdurulmadığı sürece her açılışta <code>ceno-client</code> adında bir depo başlatır. Deponun yönetimi hakkında ayrıntılı bilgi almak için <a href="https://gitlab.com/censorship-no/ceno-docker-client#running-the-client">Ceno Docker istemcisi belgeleri</a> bölümüne bakabilirsiniz.</p>
+<p>The command will start a container named <code>ceno-client</code> that will run on every
+boot unless you explicitly tell it to stop. Please check the <a href="https://gitlab.com/censorship-no/ceno-docker-client#running-the-client">Ceno Docker client
+documentation</a> for more information on how to manipulate the
+container.</p>
 <blockquote>
-<p><strong>Not:</strong> Bu istemcinin <em>Ceno ayarları</em> yoktur: Aşağıda ayarlara erişmeniz istendiğinde, neredeyse aynı bilgilerin bulunduğu <a href="../client/front-end.html">istemci ön yüzünü</a> açın.</p>
+<p><strong>Note:</strong> This client has no <em>Ceno Settings</em>: when instructed below to access
+that page, open instead the <a href="../client/front-end.html">client front-end</a>, which
+contains mostly equivalent information.</p>
 </blockquote>
 <h2 id="kablosuz-yönlendiricinizde-upnp-ayarını-açmak"><a class="header" href="#kablosuz-yönlendiricinizde-upnp-ayarını-açmak">Kablosuz yönlendiricinizde UPnP ayarını açmak</a></h2>
-<p><a href="https://tr.wikipedia.org/wiki/UPnP">UPnP</a>, Ceno Browser uygulamanızın Ceno ağına erişilebilir olmasını sağlamanın en kolay yoludur. <a href="settings.html">Ceno ayarları</a> bölümünde yerel ağınızdaki UPnP durumunu görebilirsiniz.</p>
+<p><a href="https://en.wikipedia.org/wiki/Universal_Plug_and_Play">UPnP</a> is the easiest way of making your Ceno Browser (or computer client)
+reachable to the Ceno network. The <a href="settings.html">Ceno Settings</a> page will
+indicate the UPnP status on your local network.</p>
 <blockquote>
-<p><strong>Not:</strong> Kablosuz ağınızdaki UPnP ayarını açmak aygıtlarınızın dışarıya açık olmasına neden olabilir. <a href="https://tr.phhsnews.com/articles/howto/is-upnp-a-security-risk.html">Tehlikelerin</a> farkında olun ve aşağıda belirtilen farklı yöntemlere göz atın.</p>
+<p><strong>Note:</strong> Enabling UPnP on the Wi-Fi router may expose devices on your network
+to external interference. Please make yourself <a href="https://www.howtogeek.com/122487/htg-explains-is-upnp-a-security-risk">aware of the
+risks</a> and also consider using alternative methods as explained
+below.</p>
 </blockquote>
-<p>Aşağıdaki durum UPnP özelliğinin çalışmadığını ya da kablosuz yönlendiricinizde kullanılamadığını gösterir:</p>
+<p>Aşağıdaki durum UPnP özelliğinin çalışmadığını ya da kablosuz yönlendiricinizde
+kullanılamadığını gösterir:</p>
 <blockquote>
 <p><strong>Erişilebilirlik durumu</strong></p>
-</blockquote>
 <pre><code>undecided
 </code></pre>
-<blockquote>
 <p><strong>UPnP durumu</strong></p>
-</blockquote>
 <pre><code>disabled / inactive
 </code></pre>
-<p>Aşağıdaki durum UPnP özelliğinin büyük olasılıkla çalıştığını ve bağlantının Ceno tarafından denetlendiğini gösterir:</p>
+</blockquote>
+<p>Aşağıdaki durum UPnP özelliğinin büyük olasılıkla çalıştığını ve bağlantının
+Ceno tarafından denetlendiğini gösterir:</p>
 <blockquote>
 <p><strong>Erişilebilirlik durumu</strong></p>
-</blockquote>
 <pre><code>undecided
 </code></pre>
-<blockquote>
 <p><strong>UPnP durumu</strong></p>
-</blockquote>
 <pre><code>enabled
 </code></pre>
-<p>Aşağıdaki durum UPnP özelliğinin çalıştığını ve bağlantıların diğer Ceno kullanıcılarına köprü olarak aktarılabileceğini gösterir:</p>
+</blockquote>
+<p>Aşağıdaki durum UPnP özelliğinin çalıştığını ve bağlantıların diğer Ceno
+kullanıcılarına köprü olarak aktarılabileceğini gösterir:</p>
 <blockquote>
 <p><strong>Erişilebilirlik durumu</strong></p>
-</blockquote>
 <pre><code>likely reachable / reachable
 </code></pre>
-<blockquote>
 <p><strong>UPnP durumu</strong></p>
-</blockquote>
 <pre><code>enabled
 </code></pre>
-<blockquote>
-<p><strong>Not:</strong> UPnP çalışıyor olsa bile yönlendiricinize ağ dışından erişilemeyebilir. <em>Ceno ayarlarındaki</em> <em>Dış UDP uç noktaları</em> değerleri <code>100.A.B.C:D</code> şeklindeki bir IP adresinde A değeri 64 ile 127 arasında olan bir <a href="https://www.technopat.net/2021/06/13/cgnat-carrier-grade-nat-nedir/">CGNAT</a> adresiyse (kişisel kullanım sağlayan internet hizmeti sağlayıcılarında sık görülür), özel <code>10.A.B.C:D</code>, <code>172.A.B.C:D</code>,<code>192.168.B.C:D</code> ve A değeri 16 ile 31 arasında olan bir adres ise bu durum görülebilir. Bu durumda internet hizmeti sağlayıcınıza ya da ağ yöneticinize ulaşarak, yönlendiriciniz için herkese açık bir adres alın ya da dış uç noktalara bağlantı noktası yönlendirmesi yapın.</p>
 </blockquote>
-<p>Piyasada bir çok kablosuz yönlendirici var ve hepsinin kendine özgü çeşitli özellikleri var. Bazı markaların UPnP açma yönergelerinin (İngilizce) bulunduğu listeye bakabilirsiniz:</p>
+<blockquote>
+<p><strong>Note:</strong> Even if UPnP is working, your router may still not be reachable from
+the outside. This can be the case when <em>Ceno Settings</em> reports <em>External UDP
+endpoints</em> which look like <a href="https://en.wikipedia.org/wiki/Carrier-grade_NAT">CGNAT</a> addresses <code>100.X.Y.Z:N</code> with X between 64
+and 127 (increasingly common among home ISPs), or like private addresses
+<code>10.X.Y.Z:N</code>, <code>172.X.Y.Z:N</code> with X between 16 and 31, and <code>192.168.X.Y:N</code>. If
+so, please contact your ISP or network administrator to get a public address
+on your router or to establish port forwardings to the external endpoint.</p>
+</blockquote>
+<p>Piyasada bir çok kablosuz yönlendirici var ve hepsinin kendine özgü çeşitli
+özellikleri var. Bazı markaların UPnP açma yönergelerinin (İngilizce) bulunduğu
+listeye bakabilirsiniz:</p>
 <ul>
 <li><a href="https://www.linksys.com/us/support-article?articleNum=138290">Linksys</a></li>
 <li><a href="https://eu.dlink.com/uk/en/support/faq/routers/wired-routers/di-series/how-do-i-enable-upnp-on-my-router">D-Link</a></li>
@@ -265,15 +299,26 @@
 <li><a href="https://www.geekzone.co.nz/forums.asp?forumid=66&amp;topicid=205740&amp;page_no=5#1725168">Ubiquiti</a></li>
 </ul>
 <h2 id="upnp-yerine-bağlantı-noktası-yönlendirmesi-kullanmak"><a class="header" href="#upnp-yerine-bağlantı-noktası-yönlendirmesi-kullanmak">UPnP yerine bağlantı noktası yönlendirmesi kullanmak</a></h2>
-<p>Yönlendiricinizin UPnP seçeneğini açmak yerine Ceno ağındaki bağlantıların aygıtınıza yönlendirilmesi için bir bağlantı noktası yönlendirme kuralı oluşturabilirsiniz. Yönlendiricinin yönetim arayüzüne girmeli ve <em>bağlantı noktası (port) yönlendirme</em> seçeneğini bulmalısınız. Hangi IP adresi ve bağlantı noktasına yönlendirme yapmanız gerektiğini öğrenmek için, <em>Ceno ayarları</em> bölümünü açın ve <em>Yerel UDP uç noktaları</em> bölümüne bakın.</p>
+<p>Yönlendiricinizin UPnP seçeneğini açmak yerine Ceno ağındaki bağlantıların
+aygıtınıza yönlendirilmesi için bir bağlantı noktası yönlendirme kuralı
+oluşturabilirsiniz. Yönlendiricinin yönetim arayüzüne girmeli ve <em>bağlantı
+noktası (port) yönlendirme</em> seçeneğini bulmalısınız. Hangi IP adresi ve bağlantı
+noktasına yönlendirme yapmanız gerektiğini öğrenmek için, <em>Ceno ayarları</em>
+bölümünü açın ve <em>Yerel UDP uç noktaları</em> bölümüne bakın.</p>
 <blockquote>
 <p><strong>Yerel UDP uç noktaları</strong></p>
-</blockquote>
 <pre><code>192.168.1.132:28729
 </code></pre>
-<p>Bağlantı noktası yönlendirme UDP (TCP değil) iletişim kuralına özgü olmalıdır. Ceno ilk kez açıldığında rastgele bir bağlantı noktası seçer ve sonraki açılışlarında aynı bağlantı noktasını kullanır. Ancak aygıtınızın yerel ağdaki IP adresi zaman zaman değişebilir. Aygıtınızın Ceno ağına erişilebileceğinden emin olmak için arada bir <em>Ceno ayarları</em> bölümüne bakmalısınız.</p>
+</blockquote>
+<p>Bağlantı noktası yönlendirme UDP (TCP değil) iletişim kuralına özgü olmalıdır.
+Ceno ilk kez açıldığında rastgele bir bağlantı noktası seçer ve sonraki
+açılışlarında aynı bağlantı noktasını kullanır. Ancak aygıtınızın yerel ağdaki
+IP adresi zaman zaman değişebilir. Aygıtınızın Ceno ağına erişilebileceğinden
+emin olmak için arada bir <em>Ceno ayarları</em> bölümüne bakmalısınız.</p>
 <blockquote>
-<p><strong>Teknik not:</strong> Ayrıca yönlendiricinizden aygıtınızın yerel IP adresini sabitleyebilirsiniz (örneğin DHCP ayarlarından aygıtınızın MAC adresine bir sabit IP atayabilirsiniz.</p>
+<p><strong>Teknik not:</strong> Ayrıca yönlendiricinizden aygıtınızın yerel IP adresini
+sabitleyebilirsiniz (örneğin DHCP ayarlarından aygıtınızın MAC adresine bir
+sabit IP atayabilirsiniz.</p>
 </blockquote>
 
                     </main>

@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
-<html lang="tr" class="light" dir="ltr">
+<html lang="tr" class="light sidebar-visible" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Ceno kurmak - Censorship.no! Kullanıcı Rehberi</title>
+        <title>Installing Ceno - Censorship.no! Kullanıcı Rehberi</title>
 
 
         <!-- Custom HTML head -->
-        
+
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
@@ -24,26 +24,29 @@
         <link rel="stylesheet" href="../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../highlight.css">
-        <link rel="stylesheet" href="../tomorrow-night.css">
-        <link rel="stylesheet" href="../ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
-    </head>
-    <body class="sidebar-visible no-js">
-    <div id="body-container">
-        <!-- Provide site root to javascript -->
-        <script>
-            var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
-        </script>
 
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
@@ -57,24 +60,22 @@
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
-            var theme;
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
-            var html = document.querySelector('html');
+            const html = document.documentElement;
             html.classList.remove('light')
             html.classList.add(theme);
-            var body = document.querySelector('body');
-            body.classList.remove('no-js')
-            body.classList.add('js');
+            html.classList.add("js");
         </script>
 
         <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var body = document.querySelector('body');
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -82,43 +83,25 @@
                 sidebar = 'hidden';
             }
             sidebar_toggle.checked = sidebar === 'visible';
-            body.classList.remove('sidebar-visible');
-            body.classList.add("sidebar-" + sidebar);
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Censorship.no!</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../intro/index.html"><strong aria-hidden="true">1.</strong> Giriş</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../intro/ceno.html"><strong aria-hidden="true">1.1.</strong> Ceno Browser nedir?</a></li><li class="chapter-item expanded "><a href="../intro/ouinet.html"><strong aria-hidden="true">1.2.</strong> Ouinet nedir?</a></li><li class="chapter-item expanded "><a href="../intro/qsg.html"><strong aria-hidden="true">1.3.</strong> Hızlı başlama rehberi</a></li><li class="chapter-item expanded "><a href="../intro/faq.html"><strong aria-hidden="true">1.4.</strong> Sıkça sorulan sorular</a></li></ol></li><li class="chapter-item expanded "><a href="../concepts/index.html"><strong aria-hidden="true">2.</strong> Temel kavramlar</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../concepts/how.html"><strong aria-hidden="true">2.1.</strong> Nasıl çalışıyor?</a></li><li class="chapter-item expanded "><a href="../concepts/public-personal.html"><strong aria-hidden="true">2.2.</strong> Public vs. Personal browsing</a></li><li class="chapter-item expanded "><a href="../concepts/advantages.html"><strong aria-hidden="true">2.3.</strong> Ceno/Ouinet kullanmanın faydaları</a></li><li class="chapter-item expanded "><a href="../concepts/risks.html"><strong aria-hidden="true">2.4.</strong> Ceno/Ouinet kullanmanın tehlikeleri</a></li></ol></li><li class="chapter-item expanded "><a href="../browser/index.html"><strong aria-hidden="true">3.</strong> Ceno Browser kullanmak</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../browser/install.html" class="active"><strong aria-hidden="true">3.1.</strong> Ceno kurmak</a></li><li class="chapter-item expanded "><a href="../browser/public-personal.html"><strong aria-hidden="true">3.2.</strong> Using Public or Personal browsing</a></li><li class="chapter-item expanded "><a href="../browser/settings.html"><strong aria-hidden="true">3.3.</strong> Ceno ayarları</a></li><li class="chapter-item expanded "><a href="../browser/testing.html"><strong aria-hidden="true">3.4.</strong> Tarayıcıyı denemek</a></li><li class="chapter-item expanded "><a href="../browser/bridging.html"><strong aria-hidden="true">3.5.</strong> Başkalarına yardım etmek</a></li><li class="chapter-item expanded "><a href="../browser/troubleshooting.html"><strong aria-hidden="true">3.6.</strong> Sorun gidermek</a></li></ol></li><li class="chapter-item expanded "><a href="../client/front-end.html"><strong aria-hidden="true">4.</strong> Ek: Ouinet istemcisi ön yüzü</a></li></ol>
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
-
-        <!-- Track and set sidebar scroll position -->
-        <script>
-            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
-            sidebarScrollbox.addEventListener('click', function(e) {
-                if (e.target.tagName === 'A') {
-                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
-                }
-            }, { passive: true });
-            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
-            sessionStorage.removeItem('sidebar-scroll');
-            if (sidebarScrollTop) {
-                // preserve sidebar scroll position when navigating via links within sidebar
-                sidebarScrollbox.scrollTop = sidebarScrollTop;
-            } else {
-                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
-                var activeSection = document.querySelector('#sidebar .active');
-                if (activeSection) {
-                    activeSection.scrollIntoView({ block: 'center' });
-                }
-            }
-        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
                         <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
@@ -128,6 +111,7 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
@@ -177,33 +161,62 @@
                         <h1 id="ceno-kurmak"><a class="header" href="#ceno-kurmak">Ceno kurmak</a></h1>
 <p>Ceno Browser şu kaynaklardan kurulabilir:</p>
 <ul>
-<li><a href="https://play.google.com/store/apps/details?id=ie.equalit.ceno">Google Play</a> (<em>eQualitie</em> tarafından <em>Ceno Browser</em>): çoğu Android kullanıcı için önerilen kaynak.</li>
-<li><a href="https://gitlab.com/censorship-no/ceno-browser/releases">Gitlab</a>: Google Play bulunmayan Android aygıtlar için.</li>
-<li><a href="https://paskoocheh.com/tools/124/android.html">Paskoocheh</a>: Diğer yöntemlere erişilmesine izin verilmeyen ülkelerdeki kullanıcılar için.</li>
+<li><a href="https://play.google.com/store/apps/details?id=ie.equalit.ceno">Google Play</a> (<em>Ceno Browser</em> from <em>eQualitie</em>): the recommended
+source for most Android users.</li>
+<li><a href="https://gitlab.com/censorship-no/ceno-browser/-/releases">Gitlab</a>: for Android devices without Google Play.</li>
+<li><a href="https://paskoocheh.com/tools/124/android.html">Paskoocheh</a>: for users in countries blocking access to the
+previous channels.</li>
 </ul>
-<p>Ceno için en az Android 4.1 Jelly Bean ile çalışan, ARM64 ya da Neon destekli ARM32 bir aygıt gerekir. 2012 yılının sonundan bugüne kadar çıkmış çoğu aygıt desteklenir. Ceno çalışmak için <em>özel bir izne</em> gerek duymaz.</p>
+<p>Ceno için en az Android 4.1 Jelly Bean ile çalışan, ARM64 ya da Neon destekli
+ARM32 bir aygıt gerekir. 2012 yılının sonundan bugüne kadar çıkmış çoğu aygıt
+desteklenir. Ceno çalışmak için <em>özel bir izne</em> gerek duymaz.</p>
 <blockquote>
-<p>** Uyarı:** Lütfen yukarıda listelenenler dışında bir kaynaktan Ceno Browser kurarken <em>son derece şüpheci</em> olun. Uygulamanın doğası gereği kullanıcıları, diğer Ceno ve Ouinet kullanıcılarına saldırmak ve kullanıcıların özel bilgilerini ele geçirmek için kullanılan her türlü sahte veya değiştirilmiş sürümün hedefi olabilir. Şüpheniz varsa, lütfen uygulamayı kurmadan önce <a href="mailto:cenoers@equalitie.org">cenoers@equalitie.org</a> adresinden bize iletin.</p>
+<p><strong>Warning:</strong> Please be <em>extremely skeptical</em> about installing Ceno Browser
+from sources other than the ones listed above. Because of the application's
+nature, their potential users may become a target for all kinds of fake or
+manipulated versions used to violate user privacy or attack other Ceno and
+Ouinet users. If in doubt, please contact <a href="mailto:cenoers@equalitie.org">cenoers@equalitie.org</a> before
+installing a suspicious app.</p>
 </blockquote>
 <h2 id="ceno-uygulamasını-tamamen-kapatmak"><a class="header" href="#ceno-uygulamasını-tamamen-kapatmak">Ceno uygulamasını tamamen kapatmak</a></h2>
-<p>Uygulama her açıldığında aygıtınızın bildirim çubuğunda bir Ceno simgesi belirir. Bu simge görünürken <em>Ceno Browser hizmeti</em> arka planda (uygulamayı kullanmadığınızda bile) çalışıyor ve içeriklere erişmek isteyen başkalarının aygıtınızı köprü olarak kullanmasını sağlıyor demektir.</p>
-<p>Böyle bir hizmetin sürekli çalışması ağ ve işlemci kaynaklarını kullanacağından, dışardayken (kablosuz ağa bağlı olmadığınızda ya da şarj aletiniz yanınızda olmadığında) bunu kapatmak isteyebilirsiniz. Simgedeki bildirime dokunduğunuzda, Ceno hizmeti, Ceno yeniden açılana kadar kapatılır.</p>
-<p><img src="images/tap-stop.png" alt="Görsel: Ceno hizmetini durdurmak için bildirime dokunun" /></p>
-<h2 id="tüm-ceno-verilerini-silmek-panik-düğmesi"><a class="header" href="#tüm-ceno-verilerini-silmek-panik-düğmesi">Tüm Ceno verilerini silmek (&quot;panik&quot; düğmesi)</a></h2>
-<p>Yukarıda gösterilen <em>Ceno Browser hizmeti</em> bildirimine dokunarak bazı işlemler yapılabilir. <em>Giriş sayfası</em> işlemi, herkese açık yeni bir Ceno sekmesi açar ve giriş sayfasını gösterir. <em>Sil</em> işlemini daha ayrıntılı açıklamak gerekir.</p>
+<p>Uygulama her açıldığında aygıtınızın bildirim çubuğunda bir Ceno simgesi
+belirir. Bu simge görünürken <em>Ceno Browser hizmeti</em> arka planda (uygulamayı
+kullanmadığınızda bile) çalışıyor ve içeriklere erişmek isteyen başkalarının
+aygıtınızı köprü olarak kullanmasını sağlıyor demektir.</p>
+<p>Böyle bir hizmetin sürekli çalışması ağ ve işlemci kaynaklarını kullanacağından,
+dışardayken (kablosuz ağa bağlı olmadığınızda ya da şarj aletiniz yanınızda
+olmadığında) bunu kapatmak isteyebilirsiniz. Simgedeki bildirime dokunduğunuzda,
+Ceno hizmeti, Ceno yeniden açılana kadar kapatılır.</p>
+<p><img src="images/tap-stop.png" alt="Figure: Tap on the notification to stop the Ceno service" /></p>
+<h2 id="tüm-ceno-verilerini-silmek-panik-düğmesi"><a class="header" href="#tüm-ceno-verilerini-silmek-panik-düğmesi">Tüm Ceno verilerini silmek ("panik" düğmesi)</a></h2>
+<p>Yukarıda gösterilen <em>Ceno Browser hizmeti</em> bildirimine dokunarak bazı işlemler
+yapılabilir. <em>Giriş sayfası</em> işlemi, herkese açık yeni bir Ceno sekmesi açar ve
+giriş sayfasını gösterir. <em>Sil</em> işlemini daha ayrıntılı açıklamak gerekir.</p>
 <blockquote>
-<p><strong>Not:</strong> Bildirimin altındaki işlemler görüntülenmiyorsa bildirimin ortasından aşağıya doğru çekerek bildirimi genişletmeye çalışın. Yalnızca <em>Giriş sayfası</em> işlemini görüyorsanız, aygıtınız <em>Sil</em> işlemini desteklemeyecek kadar eski olabilir.</p>
+<p><strong>Not:</strong> Bildirimin altındaki işlemler görüntülenmiyorsa bildirimin ortasından
+aşağıya doğru çekerek bildirimi genişletmeye çalışın. Yalnızca <em>Giriş sayfası</em>
+işlemini görüyorsanız, aygıtınız <em>Sil</em> işlemini desteklemeyecek kadar eski
+olabilir.</p>
 </blockquote>
-<p>Ceno uygulamasını hızlıca durdurup ilişkili tüm verileri (ön bellekteki verilerin yanında, yer imleri, parolalar ve gezinme geçmişi gibi ayarlar) silmeniz gerekirse, <em>Sil</em> düğmesine dokunabilirsiniz. Yanlışlıkla dokunduğunuzda verilerinizi kaybetmemeniz için, veriler hemen silinmez ve kısa bir süre için aşağıdaki gibi bir ek ileti görüntülenir:</p>
-<p><img src="images/tap-purge.png" alt="Görsel: Tüm Ceno verilerini silip uygulamayı durdurmak için son işlem" /></p>
-<p><em>Evet</em> (görseldeki Yes) işlemine dokunursanız Ceno durdurulur ve tüm veriler <em>hiçbir soru sorulmadan</em> silinir. Aygıtınız hiç Ceno kullanmamış gibi olur.</p>
+<p>Ceno uygulamasını hızlıca durdurup ilişkili tüm verileri (ön bellekteki
+verilerin yanında, yer imleri, parolalar ve gezinme geçmişi gibi ayarlar)
+silmeniz gerekirse, <em>Sil</em> düğmesine dokunabilirsiniz. Yanlışlıkla dokunduğunuzda
+verilerinizi kaybetmemeniz için, veriler hemen silinmez ve kısa bir süre için
+aşağıdaki gibi bir ek ileti görüntülenir:</p>
+<p><img src="images/tap-purge.png" alt="Figure: The last action stops Ceno and clears all its data" /></p>
+<p><em>Evet</em> (görseldeki Yes) işlemine dokunursanız Ceno durdurulur ve tüm veriler
+<em>hiçbir soru sorulmadan</em> silinir. Aygıtınız hiç Ceno kullanmamış gibi olur.</p>
 <p>Bu işleme dokunmazsanız birkaç saniye sonra kendiliğinden kaybolur.</p>
 <blockquote>
-<p><strong>Not:</strong> Yukarıda belirtilen yöntem için Ceno aygıtınızda çalışıyor olmalıdır. Ceno kapalıyken aynı işlemi yapmak için Android genel <em>Ayarlar</em> bölümüne giderek <em>Uygulamalar</em> kısmından Ceno'yu seçip <em>Verileri temizle</em> seçeneğini kullanabilirsiniz.</p>
+<p><strong>Not:</strong> Yukarıda belirtilen yöntem için Ceno aygıtınızda çalışıyor olmalıdır.
+Ceno kapalıyken aynı işlemi yapmak için Android genel <em>Ayarlar</em> bölümüne
+giderek <em>Uygulamalar</em> kısmından Ceno'yu seçip <em>Verileri temizle</em> seçeneğini
+kullanabilirsiniz.</p>
 <p>Ya da daha sert bir yöntem olarak, uygulamayı kaldırabilirsiniz.</p>
 </blockquote>
 <blockquote>
-<p><strong>Dikkat:</strong> Android Ceno uygulamasının kullanılmasından kalan izleri uygulama verileri dışında sistem kayıtları gibi konumlarda tutabilir.</p>
+<p><strong>Dikkat:</strong> Android Ceno uygulamasının kullanılmasından kalan izleri uygulama
+verileri dışında sistem kayıtları gibi konumlarda tutabilir.</p>
 </blockquote>
 
                     </main>
