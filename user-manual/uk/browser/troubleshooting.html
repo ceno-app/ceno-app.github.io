@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
-<html lang="uk" class="light" dir="ltr">
+<html lang="uk" class="light sidebar-visible" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Усунення несправностей - Посібник користувача Censorship.no!</title>
+        <title>Troubleshooting - Посібник користувача Censorship.no!</title>
 
 
         <!-- Custom HTML head -->
-        
+
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
@@ -24,26 +24,29 @@
         <link rel="stylesheet" href="../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../highlight.css">
-        <link rel="stylesheet" href="../tomorrow-night.css">
-        <link rel="stylesheet" href="../ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
-    </head>
-    <body class="sidebar-visible no-js">
-    <div id="body-container">
-        <!-- Provide site root to javascript -->
-        <script>
-            var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
-        </script>
 
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
@@ -57,24 +60,22 @@
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
-            var theme;
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
-            var html = document.querySelector('html');
+            const html = document.documentElement;
             html.classList.remove('light')
             html.classList.add(theme);
-            var body = document.querySelector('body');
-            body.classList.remove('no-js')
-            body.classList.add('js');
+            html.classList.add("js");
         </script>
 
         <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var body = document.querySelector('body');
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -82,43 +83,25 @@
                 sidebar = 'hidden';
             }
             sidebar_toggle.checked = sidebar === 'visible';
-            body.classList.remove('sidebar-visible');
-            body.classList.add("sidebar-" + sidebar);
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Censorship.no!</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../intro/index.html"><strong aria-hidden="true">1.</strong> Ознайомлення</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../intro/ceno.html"><strong aria-hidden="true">1.1.</strong> Що таке браузер Ceno?</a></li><li class="chapter-item expanded "><a href="../intro/ouinet.html"><strong aria-hidden="true">1.2.</strong> Що таке Ouinet?</a></li><li class="chapter-item expanded "><a href="../intro/qsg.html"><strong aria-hidden="true">1.3.</strong> Короткий посібник</a></li><li class="chapter-item expanded "><a href="../intro/faq.html"><strong aria-hidden="true">1.4.</strong> Часті питання</a></li></ol></li><li class="chapter-item expanded "><a href="../concepts/index.html"><strong aria-hidden="true">2.</strong> Основні поняття</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../concepts/how.html"><strong aria-hidden="true">2.1.</strong> Як це працює?</a></li><li class="chapter-item expanded "><a href="../concepts/public-personal.html"><strong aria-hidden="true">2.2.</strong> Public vs. Personal browsing</a></li><li class="chapter-item expanded "><a href="../concepts/advantages.html"><strong aria-hidden="true">2.3.</strong> Переваги використання Ceno/Ouinet</a></li><li class="chapter-item expanded "><a href="../concepts/risks.html"><strong aria-hidden="true">2.4.</strong> Ризики під час використання Ceno/Ouinet</a></li></ol></li><li class="chapter-item expanded "><a href="../browser/index.html"><strong aria-hidden="true">3.</strong> Використання браузера Ceno</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../browser/install.html"><strong aria-hidden="true">3.1.</strong> Встановлення Ceno</a></li><li class="chapter-item expanded "><a href="../browser/public-personal.html"><strong aria-hidden="true">3.2.</strong> Using Public or Personal browsing</a></li><li class="chapter-item expanded "><a href="../browser/settings.html"><strong aria-hidden="true">3.3.</strong> Налаштування Ceno</a></li><li class="chapter-item expanded "><a href="../browser/testing.html"><strong aria-hidden="true">3.4.</strong> Тестування браузера</a></li><li class="chapter-item expanded "><a href="../browser/bridging.html"><strong aria-hidden="true">3.5.</strong> Допомога іншим</a></li><li class="chapter-item expanded "><a href="../browser/troubleshooting.html" class="active"><strong aria-hidden="true">3.6.</strong> Усунення несправностей</a></li></ol></li><li class="chapter-item expanded "><a href="../client/front-end.html"><strong aria-hidden="true">4.</strong> Додаток: Зовнішній інтерфейс клієнта Ouinet</a></li></ol>
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
-
-        <!-- Track and set sidebar scroll position -->
-        <script>
-            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
-            sidebarScrollbox.addEventListener('click', function(e) {
-                if (e.target.tagName === 'A') {
-                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
-                }
-            }, { passive: true });
-            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
-            sessionStorage.removeItem('sidebar-scroll');
-            if (sidebarScrollTop) {
-                // preserve sidebar scroll position when navigating via links within sidebar
-                sidebarScrollbox.scrollTop = sidebarScrollTop;
-            } else {
-                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
-                var activeSection = document.querySelector('#sidebar .active');
-                if (activeSection) {
-                    activeSection.scrollIntoView({ block: 'center' });
-                }
-            }
-        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
                         <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
@@ -128,6 +111,7 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
@@ -175,75 +159,211 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="Усунення-несправностей"><a class="header" href="#Усунення-несправностей">Усунення несправностей</a></h1>
-<p>У цьому розділі Ви знайдете поради, що необхідно робити при виникненні різноманітних несправностей із CENO та Ouinet. Будь ласка, майте на увазі, що це експериментальні проєкти, і їхня робота залежить від багатьох факторів, що залежать не тільки від нас, зокрема конфігурації та стану мережевої інфраструктури, від того, який вміст завантажували інші користувачі та характеристики їхніх зʼєднань.</p>
-<p>Якщо Ви й досі стикаєтеся з проблемами, будь ласка, повідомте про них за адресою <a href="mailto:cenoers@equalitie.org">cenoers@equalitie.org</a>. Ми спробуємо допомогти Вам у вирішенні цих проблем.</p>
+<p>У цьому розділі Ви знайдете поради, що необхідно робити при виникненні
+різноманітних несправностей із CENO та Ouinet. Будь ласка, майте на увазі, що це
+експериментальні проєкти, і їхня робота залежить від багатьох факторів, що
+залежать не тільки від нас, зокрема конфігурації та стану мережевої
+інфраструктури, від того, який вміст завантажували інші користувачі та
+характеристики їхніх зʼєднань.</p>
+<p>If problems still persist, please report them to <a href="mailto:cenoers@equalitie.org">cenoers@equalitie.org</a>. We
+will try to help you with them.</p>
 <h2 id="У-меню-програми-немає-пункту-ceno"><a class="header" href="#У-меню-програми-немає-пункту-ceno">У меню програми немає пункту CENO</a></h2>
 <p>Можливо, розширення CENO все ще завантажується. Зачекайте.</p>
 <h2 id="На-сторінці-Налаштування-ceno-всі-віджети-виділені-сірим-кольором"><a class="header" href="#На-сторінці-Налаштування-ceno-всі-віджети-виділені-сірим-кольором">На сторінці <em>Налаштування CENO</em> всі віджети виділені сірим кольором</a></h2>
-<p>Розширення CENO вже завантажилося, але воно ще не набуло статусу від Ouinet. Оскільки підготовка Ouinet може зайняти якийсь час, будь ласка, зачекайте.</p>
-<p>Якщо сторінка налаштувань залишається в такому стані більше, ніж дві хвилини, можливо, Ouinet зіткнувся з проблемою під час запуску.</p>
-<p>Спробуйте відвідати одну зі сторінок сайту, бажано ту, яка зазвичай Вам доступна. Якщо Ви отримаєте помилку типу «Не вдалося завантажити ресурс (після спроби використання всіх налаштованих схем)», можливо, CENO має деякі проблеми зі загальним підключенням (наприклад, не може приєднатися до мережі BitTorrent). Якщо Ви підключені через мобільний інтернет, спробуйте знову за допомогою Wi-Fi.</p>
-<p>Якщо при відвідуванні сторінки Ви отримуєте помилку типу «Проксі-сервер відмовляє в підключенні», спробуйте зупинити інші програми, що працюють на пристрої, а потім перезапустіть CENO.</p>
+<p>Розширення CENO вже завантажилося, але воно ще не набуло статусу від Ouinet.
+Оскільки підготовка Ouinet може зайняти якийсь час, будь ласка, зачекайте.</p>
+<p>Якщо сторінка налаштувань залишається в такому стані більше, ніж дві хвилини,
+можливо, Ouinet зіткнувся з проблемою під час запуску.</p>
+<p>Спробуйте відвідати одну зі сторінок сайту, бажано ту, яка зазвичай Вам
+доступна. Якщо Ви отримаєте помилку типу «Не вдалося завантажити ресурс (після
+спроби використання всіх налаштованих схем)», можливо, CENO має деякі проблеми
+зі загальним підключенням (наприклад, не може приєднатися до мережі BitTorrent).
+Якщо Ви підключені через мобільний інтернет, спробуйте знову за допомогою Wi-Fi.</p>
+<p>Якщо при відвідуванні сторінки Ви отримуєте помилку типу «Проксі-сервер
+відмовляє в підключенні», спробуйте зупинити інші програми, що працюють на
+пристрої, а потім перезапустіть CENO.</p>
 <blockquote>
-<p><strong>Технічна примітка:</strong> Це може статися, якщо інша програма вже прослуховує TCP порти <code>127.0.0.1:8077</code> або <code>127.0.0.1:8078</code>.</p>
+<p><strong>Технічна примітка:</strong> Це може статися, якщо інша програма вже прослуховує TCP
+порти <code>127.0.0.1:8077</code> або <code>127.0.0.1:8078</code>.</p>
 </blockquote>
 <h2 id="Стан-клієнта-ouinet-в-налаштуваннях-ceno--не-запущений"><a class="header" href="#Стан-клієнта-ouinet-в-налаштуваннях-ceno--не-запущений"><em>Стан клієнта Ouinet</em> в <em>налаштуваннях CENO</em> – не <code>запущений</code></a></h2>
-<p>Клієнт Ouinet, який працює через CENO, виявляє проблеми під час запуску на Вашому пристрої.</p>
-<p>Коли Ви запускаєте CENO, стан може читатися як «запускається» протягом кількох секунд; це нормально. Однак, якщо статус «запускається» залишається занадто довго, це може бути сигналом про серйозні проблеми зі зʼєднанням, які заважають програмі досягти мережі BitTorrent. Перевірте зʼєднання з мережею та спробуйте перезапустити CENO. Якщо Ваше з’єднання робоче, але статус й далі залишається «запускається», то зв’яжіться з нами (особливо, якщо статус було <code>запущено</code> під час попереднього запуску).</p>
-<p>Однією з можливих причин відсутності доступу до BitTorrent (особливо, коли ви запускаєте CENO вперше) є те, що сервери завантаження за замовчуванням, які використовує клієнт Ouinet, заблоковані або недоступні. У такому випадку ви можете спробувати надати CENO додаткові сервери завантаження BitTorrent на [сторінці налаштувань] (settings.md). Ви можете запитати нас, якщо ви не знаєте жодного такого сервера. Після встановлення додаткових параметрів завантаження перезапустіть програму. Якщо проблема не зникне, зв’яжіться з нами.</p>
-<p>Якщо Ви коли-небудь побачите інший статус, то, можливо, в клієнті Ouinet виникла внутрішня помилка. Будь ласка, повідомте нас про цю проблему.</p>
+<p>Клієнт Ouinet, який працює через CENO, виявляє проблеми під час запуску на
+Вашому пристрої.</p>
+<p>Коли Ви запускаєте CENO, стан може читатися як «запускається» протягом кількох
+секунд; це нормально. Однак, якщо статус «запускається» залишається занадто
+довго, це може бути сигналом про серйозні проблеми зі зʼєднанням, які заважають
+програмі досягти мережі BitTorrent. Перевірте зʼєднання з мережею та спробуйте
+перезапустити CENO. Якщо Ваше з’єднання робоче, але статус й далі залишається
+«запускається», то зв’яжіться з нами (особливо, якщо статус було <code>запущено</code> під
+час попереднього запуску).</p>
+<p>One possible reason for not being able to get into BitTorrent (more so when you
+run Ceno for the first time), is that the default bootstrap servers used by the
+Ouinet client are blocked or unreachable. In that case you may want to try
+providing Ceno with extra BitTorrent bootstrap servers in the <a href="settings.html">Settings
+page</a>. You can ask us if you do not know of any such server. After
+setting the extra bootstraps, please restart the application. If the problem
+persists, contact us.</p>
+<p>Якщо Ви коли-небудь побачите інший статус, то, можливо, в клієнті Ouinet виникла
+внутрішня помилка. Будь ласка, повідомте нас про цю проблему.</p>
 <h2 id="Під-час-доступу-до-вмісту-зʼявляється-повідомлення-Не-вдалося-завантажити-ресурс"><a class="header" href="#Під-час-доступу-до-вмісту-зʼявляється-повідомлення-Не-вдалося-завантажити-ресурс">Під час доступу до вмісту зʼявляється повідомлення «Не вдалося завантажити ресурс»</a></h2>
-<p>Це означає, що CENO випробував усі доступні механізми аби отримати доступ до вмісту, але жоден із них не спрацював.</p>
+<p>Це означає, що CENO випробував усі доступні механізми аби отримати доступ до
+вмісту, але жоден із них не спрацював.</p>
 <p>Ви повинні переконатися, що для роботи CENO виконуються такі вимоги:</p>
 <ul>
-<li>Ви використовуєте останню версію браузера CENO. Застарілі версії можуть не працювати з новими інʼєкторами або іншими клієнтами. Перевірте <a href="install.html">посібник зі встановлення</a>, щоб дізнатися, де отримати нові версії.</li>
-<li>Усі механізми доступу на сторінці <a href="settings.html">Налаштування</a> включені. В іншому випадку CENO не зможе оминути деякі проблеми з доступом до вмісту.</li>
-<li>Ваш пристрій має підключення до мережі, тобто Ваш звичайний веб-браузер може відкривати сайти. CENO та Ouinet не можуть працювати, якщо всі мережеві підключення відключені (хоча користувачі можуть знайти загальну точку доступу Wi-Fi для поширення вмісту від пристрою до пристрою безпосередньо).</li>
+<li>You are running a recent version of Ceno Browser. Obsolete versions may not be
+able to communicate with newer injectors or other clients. Check the
+<a href="install.html">installation instructions</a> to know where to get new versions.</li>
+<li>All access mechanisms in the <a href="settings.html">Settings page</a> are enabled.
+Otherwise Ceno will not be able to circumvent some connectivity issues when
+accessing content.</li>
+<li>Ваш пристрій має підключення до мережі, тобто Ваш звичайний веб-браузер може
+відкривати сайти. CENO та Ouinet не можуть працювати, якщо всі мережеві
+підключення відключені (хоча користувачі можуть знайти загальну точку доступу
+Wi-Fi для поширення вмісту від пристрою до пристрою безпосередньо).</li>
 </ul>
-<p>У такому випадку варто пояснити, що може статися, коли всі механізми доступу виходять із ладу, щоб дати Вам уявлення про Ваші шанси отримати вміст за допомогою CENO.</p>
+<p>У такому випадку варто пояснити, що може статися, коли всі механізми доступу
+виходять із ладу, щоб дати Вам уявлення про Ваші шанси отримати вміст за
+допомогою CENO.</p>
 <h3 id="Вихідний-доступ"><a class="header" href="#Вихідний-доступ">Вихідний доступ</a></h3>
-<p>Ваш браузер CENO не може безпосередньо звʼязатися з вихідним сервером вмісту. Або ж у сервера є якісь проблеми (наприклад, він не працює або зазнає атаки), або хтось заважає Вам підключитися до нього.</p>
-<p>CENO створено для вирішення таких проблем, тому інші механізми доступу повинні допомогти з цим.</p>
+<p>Ваш браузер CENO не може безпосередньо звʼязатися з вихідним сервером вмісту.
+Або ж у сервера є якісь проблеми (наприклад, він не працює або зазнає атаки),
+або хтось заважає Вам підключитися до нього.</p>
+<p>CENO створено для вирішення таких проблем, тому інші механізми доступу повинні
+допомогти з цим.</p>
 <h3 id="Доступ-до-проксіінʼєктора"><a class="header" href="#Доступ-до-проксіінʼєктора">Доступ до проксі/інʼєктора</a></h3>
-<p>Хтось втручається у Ваше підключення до Інтернет-адрес зі списку інʼєкторів. Рано чи пізно це мало б статися, адже CENO (як і Ouinet) стають все більш помітними, і тому CENO вдається до доступу до інʼєкторів через інших клієнтів, що виступають у ролі мостів.</p>
+<p>Хтось втручається у Ваше підключення до Інтернет-адрес зі списку інʼєкторів.
+Рано чи пізно це мало б статися, адже CENO (як і Ouinet) стають все більш
+помітними, і тому CENO вдається до доступу до інʼєкторів через інших клієнтів,
+що виступають у ролі мостів.</p>
 <p>Існують різні причини, через які CENO не може звʼязатися з такими клієнтами:</p>
 <ul>
 <li>
-<p>Жоден інший клієнт недоступний для Вас. Якщо тільки невелика кількість клієнтів Ouinet зараз у мережі, цілком можливо, що жоден з них не перебуває в мережі, що доступна ззовні. Ця ситуація буде менш імовірною зі зростанням популярності CENO та Ouinet та появи більшої кількості клієнтів з різними можливостями підключення.У найгіршому випадку, зʼєднання між клієнтами Ouinet ідентифікуються цензором і блокуються. Це досить малоймовірний сценарій (оскільки може призвести до блокування всього трафіку BitTorrent) і в даний час виходить за рамки можливостей Ouinet, але ми плануємо зробити мережу більш стійкою до таких атак.</p>
+<p>Жоден інший клієнт недоступний для Вас. Якщо тільки невелика кількість
+клієнтів Ouinet зараз у мережі, цілком можливо, що жоден з них не перебуває в
+мережі, що доступна ззовні. Ця ситуація буде менш імовірною зі зростанням
+популярності CENO та Ouinet та появи більшої кількості клієнтів з різними
+можливостями підключення.</p>
+<p>У найгіршому випадку, зʼєднання між клієнтами Ouinet ідентифікуються цензором
+і блокуються. Це досить малоймовірний сценарій (оскільки може призвести до
+блокування всього трафіку BitTorrent) і в даний час виходить за рамки
+можливостей Ouinet, але ми плануємо зробити мережу більш стійкою до таких
+атак.</p>
 </li>
 <li>
-<p>Жоден інший клієнт не може звʼязатися з інʼєктором. Оскільки малоймовірно, що всі інʼєктори перестали працювати одночасно, це може означати, що Ви можете звʼязатися тільки з тими клієнтами Ouinet, у яких, як і у Вас, теж є проблеми з мережевими перешкодами.Це може статися, коли весь трафік, що виходить або входить до країни, де Ви перебуваєте, перерваний. У цьому випадку CENO отримує і використовує вміст із розподіленого кешу, навіть якщо він застарів.</p>
+<p>Жоден інший клієнт не може звʼязатися з інʼєктором. Оскільки малоймовірно, що
+всі інʼєктори перестали працювати одночасно, це може означати, що Ви можете
+звʼязатися тільки з тими клієнтами Ouinet, у яких, як і у Вас, теж є проблеми
+з мережевими перешкодами.</p>
+<p>Це може статися, коли весь трафік, що виходить або входить до країни, де Ви
+перебуваєте, перерваний. У цьому випадку CENO отримує і використовує вміст із
+розподіленого кешу, навіть якщо він застарів.</p>
+<p>Знову ж таки, у міру зростання популярності CENO та Ouinet, збільшується
+ймовірність того, що для вас є хоча б кілька клієнтів, що мають доступ до
+міжнародних сайтів. Навіть якщо доступ нестабільний, буде достатньо одного
+клієнта Ouinet, який передає вміст у країну, щоб цей вміст поширювався (через
+розподілений кеш) без подальшого доступу до зовнішнього світу.</p>
 </li>
 </ul>
-<p>Знову ж таки, у міру зростання популярності CENO та Ouinet, збільшується ймовірність того, що для вас є хоча б кілька клієнтів, що мають доступ до міжнародних сайтів. Навіть якщо доступ нестабільний, буде достатньо одного клієнта Ouinet, який передає вміст у країну, щоб цей вміст поширювався (через розподілений кеш) без подальшого доступу до зовнішнього світу.</p>
-<p>Зрештою, ми самі підтримуємо кілька клієнтів Ouinet із хорошим зʼєднанням у вільних від цензури країнах (ми сподіваємося), щоб спробувати уникнути таких двох ситуацій, але, будь ласка, майте на увазі: клієнти з такими стабільними Інтернет-адресами також можуть бути заблоковані.</p>
+<p>Зрештою, ми самі підтримуємо кілька клієнтів Ouinet із хорошим зʼєднанням у
+вільних від цензури країнах (ми сподіваємося), щоб спробувати уникнути таких
+двох ситуацій, але, будь ласка, майте на увазі: клієнти з такими стабільними
+Інтернет-адресами також можуть бути заблоковані.</p>
 <h3 id="Розподілений-кеш"><a class="header" href="#Розподілений-кеш">Розподілений кеш</a></h3>
-<p>Майте на увазі, що абсолютною вимогою для отримання будь-якого вмісту з розподіленого кешу є те, що він вже був завантажений іншим користувачем CENO або Ouinet. Це означає, що популярний вміст буде завантажений в мережу з більшою ймовірністю, а спеціалізований – з меншою, якщо хтось не буде цілеспрямовано поширювати його через CENO або інший клієнт Ouinet (що може додатково наразити його на деякі <a href="../concepts/risks.html">ризики</a>).</p>
-<p>Зверніть увагу, що певний вміст, який не вважається безпечним для розповсюдження, ніколи не буде завантажений незалежно від того, скільки людей отримають його за допомогою публічного перегляду. До цієї категорії відноситься вміст, позначений вихідним сервером як приватний, вміст, що потребує автентифікації, та певний трафік, яким обмінюються певні динамічні веб-програми.</p>
-<p>Також зверніть увагу, що клієнти, які зберігають копії завантаженого вмісту, повинні бути доступними для Вас у мережі. Тут також застосовані всі умови, описані в попередньому пункті доступу до клієнтів мосту.</p>
+<p>Keep in mind that an absolute requirement to be able to retrieve any content
+from the distributed cache is that it has already been injected by some other
+Ceno or Ouinet user. This means that popular content is more likely to
+eventually get injected and replicated in a natural manner, while more obscure
+content is less so, unless someone takes care of using Ceno or some other Ouinet
+client to inject and keep seeding it (which may further expose them to some
+<a href="../concepts/risks.html">risks</a>).</p>
+<p>Зверніть увагу, що певний вміст, який не вважається безпечним для
+розповсюдження, ніколи не буде завантажений незалежно від того, скільки людей
+отримають його за допомогою публічного перегляду. До цієї категорії відноситься
+вміст, позначений вихідним сервером як приватний, вміст, що потребує
+автентифікації, та певний трафік, яким обмінюються певні динамічні веб-програми.</p>
+<p>Також зверніть увагу, що клієнти, які зберігають копії завантаженого вмісту,
+повинні бути доступними для Вас у мережі. Тут також застосовані всі умови,
+описані в попередньому пункті доступу до клієнтів мосту.</p>
 <h3 id="Примітка-щодо-сайтів-які-працюють-на-протоколі-http"><a class="header" href="#Примітка-щодо-сайтів-які-працюють-на-протоколі-http">Примітка щодо сайтів, які працюють на протоколі HTTP</a></h3>
-<p>CENO автоматично перемикається на більш безпечний протокол HTTPS для доступу до сайтів, до яких можна було б отримати доступ за допомогою звичайного, незахищеного HTTP. Це робиться за допомогою вбудованого розширення <a href="https://github.com/Rob--W/https-by-default">HTTPS by default</a>, коли ви вводите тільки доменне ім’я, наприклад, <code>example.com</code> або URL-адресу HTTP, як-от <code>http://example.com/…</code>, у відповідному полі браузера, або коли ви переходите за посиланням із такою URL-адресою на сторінці.</p>
-<p>Автоматичне перемикання на HTTPS здійснюється, щоб запобігти перехопленню HTTP-з’єднання з боку зловмисників та подальшого його перенаправлення на сервер зловмисників, що веде на фальшивий контент (наприклад, повідомлення щодо блокування). Цей вид викрадення є простим для виявлення за допомогою HTTPS, тому CENO може обійти це перехоплення замість того, аби завантажувати фальшивий контент.</p>
-<p>Хоча це звучить доволі дивно сьогодні, однак деякі сайти досі не підтримують HTTPS, і жоден механізм доступу для цих сайтів не працює. Якщо ви стовідсотково впевнені у сайті, який щойно не завантажився в CENO, ви можете відредагувати його URL-адресу вручну у відповідному полі браузера, змінивши &quot;https://&quot; на &quot;http://&quot; і спробувати завантажити ще раз.</p>
-<p>Якщо ви хочете завжди мати доступ до конкретного сайту, що працює на незахищенному протоколі HTTP, ви можете вручну додати сайт як постійний виняток, а саме:</p>
+<p>Ceno automatically switches to the more secure HTTPS protocol to access sites
+which would otherwise be accessed using plain, insecure HTTP. This is done by
+the embedded <a href="https://github.com/Rob--W/https-by-default">HTTPS by default</a> extension when you enter a bare domain name
+like <code>example.com</code> or an HTTP URL like <code>http://example.com/…</code> in the location
+bar, or when you follow a link with such a URL in a page.</p>
+<p>Автоматичне перемикання на HTTPS здійснюється, щоб запобігти перехопленню
+HTTP-з’єднання з боку зловмисників та подальшого його перенаправлення на сервер
+зловмисників, що веде на фальшивий контент (наприклад, повідомлення щодо
+блокування). Цей вид викрадення є простим для виявлення за допомогою HTTPS, тому
+CENO може обійти це перехоплення замість того, аби завантажувати фальшивий
+контент.</p>
+<p>Хоча це звучить доволі дивно сьогодні, однак деякі сайти досі не підтримують
+HTTPS, і жоден механізм доступу для цих сайтів не працює. Якщо ви стовідсотково
+впевнені у сайті, який щойно не завантажився в CENO, ви можете відредагувати
+його URL-адресу вручну у відповідному полі браузера, змінивши "https://" на
+"http://" і спробувати завантажити ще раз.</p>
+<p>Якщо ви хочете завжди мати доступ до конкретного сайту, що працює на
+незахищенному протоколі HTTP, ви можете вручну додати сайт як постійний виняток,
+а саме:</p>
 <ol>
-<li>У головному меню додатку виберіть <em>HTTPS by default</em>. Ви побачите сторінку налаштувань цього розширення.</li>
-<li>Введіть доменне ім’я сайту в текстове поле, як показано нижче. Подивіться, як ви можете ввести відразу кілька сайтів, розділивши їх пробілами або новими рядками. Зауважте, що введення &quot;example.com&quot; також включатиме всі сайти в цьому домені, наприклад, &quot;www.example.com&quot; або &quot;x.y.example.com&quot;.</li>
-<li>Як тільки ви завершили дію, поверніться на попередню сторінку або ж закрийте вкладку.</li>
+<li>У головному меню додатку виберіть <em>HTTPS by default</em>. Ви побачите сторінку
+налаштувань цього розширення.</li>
+<li>Введіть доменне ім’я сайту в текстове поле, як показано нижче. Подивіться, як
+ви можете ввести відразу кілька сайтів, розділивши їх пробілами або новими
+рядками. Зауважте, що введення "example.com" також включатиме всі сайти в
+цьому домені, наприклад, "www.example.com" або "x.y.example.com".</li>
+<li>Як тільки ви завершили дію, поверніться на попередню сторінку або ж закрийте
+вкладку.</li>
 </ol>
-<p><img src="images/httpsbd-exceptions.png" alt="Рисунок: Як додати сайти як винятки, що працюють на протоколі HTTP" /></p>
-<p><strong>Примітка.</strong> Якщо сайт доступний лише через незахищенний протокол HTTP, і його перехопив цензор, вам потрібно буде перейти на <a href="settings.html">сторінку налаштувань</a>, вимкнути доступ до Origin, і спробуйте ще раз. Зверніть увагу, що цей параметр впливає на всі сайти, і CENO не запам’ятовує його для наступних запусків. Ми радимо вам зв’язатися з адміністраторами сайту та порадити їм увімкнути підтримку захищенного протоколу HTTPS.</p>
+<p><img src="images/httpsbd-exceptions.png" alt="Figure: Adding exceptions for HTTP-only sites" /></p>
+<p><strong>Note:</strong> In the unfortunate case that a site is only accessible via HTTP, and
+it is also being hijacked by a censor, you will need to go to the <a href="settings.html">Settings
+page</a>, disable Origin access, and try again. Please note that this
+setting affects all sites, and it is not remembered by Ceno for subsequent runs.
+We encourage you to contact the site administrators and tell them to enable
+HTTPS support.</p>
 <h2 id="На-сторінці-відображається-фальшивий-вміст-як-от-повідомлення-про-блокування"><a class="header" href="#На-сторінці-відображається-фальшивий-вміст-як-от-повідомлення-про-блокування">На сторінці відображається фальшивий вміст (як-от повідомлення про блокування)</a></h2>
-<p>Ця ситуація може статися, якщо ви використовували стару версію CENO для відвідування заблокованого сайту в минулому, і хтось перехопив з’єднання і перенаправив його на сервер зловмисників. Потім CENO запам’ятав це перенаправлення, і тепер браузер автоматично відкриває останній сайт при спробі відвідати перший.</p>
-<p>Один із способів вирішити цю проблему — очистити звичайний кеш перегляду CENO, вибравши <em>Налаштування</em> в головному меню програми, потім <em>Очистити особисті дані</em> і відімкнути всі поля, окрім <em>Кеш</em>, перш ніж натиснути <em>Очистити дані</em>.</p>
-<p>Зауважте, що CENO версія 1.3.0 і новіші версії уникають перехоплення нещодавно відвідуваних сайтів, адже завжди використовують HTTPS, як це було пояснено у попередньому розділі.</p>
+<p>Ця ситуація може статися, якщо ви використовували стару версію CENO для
+відвідування заблокованого сайту в минулому, і хтось перехопив з’єднання і
+перенаправив його на сервер зловмисників. Потім CENO запам’ятав це
+перенаправлення, і тепер браузер автоматично відкриває останній сайт при спробі
+відвідати перший.</p>
+<p>Один із способів вирішити цю проблему — очистити звичайний кеш перегляду CENO,
+вибравши <em>Налаштування</em> в головному меню програми, потім <em>Очистити особисті
+дані</em> і відімкнути всі поля, окрім <em>Кеш</em>, перш ніж натиснути <em>Очистити дані</em>.</p>
+<p>Зауважте, що CENO версія 1.3.0 і новіші версії уникають перехоплення нещодавно
+відвідуваних сайтів, адже завжди використовують HTTPS, як це було пояснено у
+попередньому розділі.</p>
 <h2 id="Користувачі-не-можуть-отримати-вміст-що-роздається-моїм-пристроєм"><a class="header" href="#Користувачі-не-можуть-отримати-вміст-що-роздається-моїм-пристроєм">Користувачі не можуть отримати вміст, що роздається моїм пристроєм</a></h2>
-<p>По-перше, переконайтеся, що Ваш пристрій все ще роздає вміст. Перейдіть на сторінку <a href="settings.html"><em>Налаштування CENO</em></a>, залиште позначеним лише прапорець <em>Надано іншими користувачами CENO</em>, а потім знову спробуйте завантажити вміст: він повинен завантажитися (принаймні частково), а натискання на значок адресного рядка CENO має показати ненульові значення лише в розділах <em>Надано іншими користувачами CENO</em> або <em>Надано Вами</em>.</p>
-<p>Якщо вміст не завантажується, можливо, CENO вже видалив його, оскільки він автоматично очищає застарілий вміст (за замовчуванням більше тижня) з локального кешу. Увімкніть режим <em>Публічної мережі CENO</em> на сторінці налаштувань та знову отримайте доступ до вмісту. Будь ласка, зачекайте кілька хвилин, щоб пристрій вніс вміст в індекс розподіленого кешу. Знову встановіть прапорець <em>Надано іншими користувачами CENO</em> та знову спробуйте завантажити вміст; якщо він, як і раніше, не завантажується, ймовірно, Ouinet не вважає цей вміст безпечним для загального доступу.</p>
-<p>Якщо попередній крок працює, але інший пристрій, на якому ввімкнено лише режим <em>Надано іншими користувачами CENO</em>, як і раніше показує повідомлення «Не вдалося завантажити ресурс...», можливі два сценарії. Якщо обидва пристрої знаходяться в одній мережі (наприклад, на одній точці доступу Wi-Fi), може виявитися, що мережа не дозволяє безпосередній обмін даними між приєднаними до неї пристроями. Це відбувається в деяких публічних мережах Wi-Fi, тому спробуйте використати приватну мережу.</p>
-<p>Якщо пристрої перебувають в різних мережах, може бути кілька причин. Одна з них — мережа першого пристрою не дозволяє вхідні зʼєднання: якщо Ви відкриєте сторінку <em>Налаштування CENO</em>, в розділі <em>Стан доступності</em> має бути написано <em>доступно</em> або <em>ймовірно доступно</em>. Інакше передача даних із цієї мережі неможлива.</p>
+<p>First, make sure that your device is still seeding the content by going to the
+<a href="settings.html"><em>Ceno Settings</em> page</a>, only leaving the <em>Shared by other Ceno
+users</em> source box checked, then accessing that content again: it should load (at
+least partially), and tapping the Ceno address bar icon should only show
+non-zero values under <em>Shared by other Ceno users</em> or <em>Shared by you</em>.</p>
+<p>Якщо вміст не завантажується, можливо, CENO вже видалив його, оскільки він
+автоматично очищає застарілий вміст (за замовчуванням більше тижня) з локального
+кешу. Увімкніть режим <em>Публічної мережі CENO</em> на сторінці налаштувань та знову
+отримайте доступ до вмісту. Будь ласка, зачекайте кілька хвилин, щоб пристрій
+вніс вміст в індекс розподіленого кешу. Знову встановіть прапорець <em>Надано
+іншими користувачами CENO</em> та знову спробуйте завантажити вміст; якщо він, як і
+раніше, не завантажується, ймовірно, Ouinet не вважає цей вміст безпечним для
+загального доступу.</p>
+<p>Якщо попередній крок працює, але інший пристрій, на якому ввімкнено лише режим
+<em>Надано іншими користувачами CENO</em>, як і раніше показує повідомлення «Не вдалося
+завантажити ресурс...», можливі два сценарії. Якщо обидва пристрої знаходяться в
+одній мережі (наприклад, на одній точці доступу Wi-Fi), може виявитися, що
+мережа не дозволяє безпосередній обмін даними між приєднаними до неї пристроями.
+Це відбувається в деяких публічних мережах Wi-Fi, тому спробуйте використати
+приватну мережу.</p>
+<p>Якщо пристрої перебувають в різних мережах, може бути кілька причин. Одна з них
+— мережа першого пристрою не дозволяє вхідні зʼєднання: якщо Ви відкриєте
+сторінку <em>Налаштування CENO</em>, в розділі <em>Стан доступності</em> має бути написано
+<em>доступно</em> або <em>ймовірно доступно</em>. Інакше передача даних із цієї мережі
+неможлива.</p>
 <blockquote>
-<p><strong>Технічна примітка:</strong> Якщо Ваш пристрій повідомляє про <em>невизначену</em> доступність і Ви здатні змінити конфігурацію точки доступу, Ви можете створити постійне правило переадресації портів для Вашого клієнта. Докладніші інструкції дивіться <a href="bridging.html">тут</a>.</p>
+<p><strong>Technical note:</strong> If your device reports <em>undecided</em> reachability and you
+can change the configuration of the access point, you may create a permanent
+port forwarding rule towards your client. See <a href="bridging.html">here</a> for further
+instructions.</p>
 </blockquote>
 
                     </main>

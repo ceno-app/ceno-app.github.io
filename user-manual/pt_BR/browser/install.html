@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
-<html lang="pt_BR" class="light" dir="ltr">
+<html lang="pt_BR" class="light sidebar-visible" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Instalando o Ceno - Censorship.no! Manual de Usuário</title>
+        <title>Installing Ceno - Censorship.no! Manual de Usuário</title>
 
 
         <!-- Custom HTML head -->
-        
+
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
@@ -24,26 +24,29 @@
         <link rel="stylesheet" href="../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../highlight.css">
-        <link rel="stylesheet" href="../tomorrow-night.css">
-        <link rel="stylesheet" href="../ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
-    </head>
-    <body class="sidebar-visible no-js">
-    <div id="body-container">
-        <!-- Provide site root to javascript -->
-        <script>
-            var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
-        </script>
 
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
@@ -57,24 +60,22 @@
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
-            var theme;
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
-            var html = document.querySelector('html');
+            const html = document.documentElement;
             html.classList.remove('light')
             html.classList.add(theme);
-            var body = document.querySelector('body');
-            body.classList.remove('no-js')
-            body.classList.add('js');
+            html.classList.add("js");
         </script>
 
         <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var body = document.querySelector('body');
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -82,43 +83,25 @@
                 sidebar = 'hidden';
             }
             sidebar_toggle.checked = sidebar === 'visible';
-            body.classList.remove('sidebar-visible');
-            body.classList.add("sidebar-" + sidebar);
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Censorship.no!</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../intro/index.html"><strong aria-hidden="true">1.</strong> Introdução</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../intro/ceno.html"><strong aria-hidden="true">1.1.</strong> O que é o Navegador Ceno?</a></li><li class="chapter-item expanded "><a href="../intro/ouinet.html"><strong aria-hidden="true">1.2.</strong> O que é Ouinet?</a></li><li class="chapter-item expanded "><a href="../intro/qsg.html"><strong aria-hidden="true">1.3.</strong> Guia para Início Rápido</a></li><li class="chapter-item expanded "><a href="../intro/faq.html"><strong aria-hidden="true">1.4.</strong> Perguntas Mais Frequentes</a></li></ol></li><li class="chapter-item expanded "><a href="../concepts/index.html"><strong aria-hidden="true">2.</strong> Conceitos Principais</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../concepts/how.html"><strong aria-hidden="true">2.1.</strong> Como funciona?</a></li><li class="chapter-item expanded "><a href="../concepts/public-personal.html"><strong aria-hidden="true">2.2.</strong> Public vs. Personal browsing</a></li><li class="chapter-item expanded "><a href="../concepts/advantages.html"><strong aria-hidden="true">2.3.</strong> Vantagens de usar Ceno/Ouinet</a></li><li class="chapter-item expanded "><a href="../concepts/risks.html"><strong aria-hidden="true">2.4.</strong> Riscos de usar Ceno/Ouinet</a></li></ol></li><li class="chapter-item expanded "><a href="../browser/index.html"><strong aria-hidden="true">3.</strong> Usando o Navegador Ceno</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../browser/install.html" class="active"><strong aria-hidden="true">3.1.</strong> Instalando o Ceno</a></li><li class="chapter-item expanded "><a href="../browser/public-personal.html"><strong aria-hidden="true">3.2.</strong> Using Public or Personal browsing</a></li><li class="chapter-item expanded "><a href="../browser/settings.html"><strong aria-hidden="true">3.3.</strong> Configurações do Ceno</a></li><li class="chapter-item expanded "><a href="../browser/testing.html"><strong aria-hidden="true">3.4.</strong> Testando o Navegador</a></li><li class="chapter-item expanded "><a href="../browser/bridging.html"><strong aria-hidden="true">3.5.</strong> Ajudando outras pessoas</a></li><li class="chapter-item expanded "><a href="../browser/troubleshooting.html"><strong aria-hidden="true">3.6.</strong> Solução de problemas</a></li></ol></li><li class="chapter-item expanded "><a href="../client/front-end.html"><strong aria-hidden="true">4.</strong> Anexo: o cliente front-end da Ouinet</a></li></ol>
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
-
-        <!-- Track and set sidebar scroll position -->
-        <script>
-            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
-            sidebarScrollbox.addEventListener('click', function(e) {
-                if (e.target.tagName === 'A') {
-                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
-                }
-            }, { passive: true });
-            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
-            sessionStorage.removeItem('sidebar-scroll');
-            if (sidebarScrollTop) {
-                // preserve sidebar scroll position when navigating via links within sidebar
-                sidebarScrollbox.scrollTop = sidebarScrollTop;
-            } else {
-                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
-                var activeSection = document.querySelector('#sidebar .active');
-                if (activeSection) {
-                    activeSection.scrollIntoView({ block: 'center' });
-                }
-            }
-        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
                         <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
@@ -128,6 +111,7 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
@@ -177,33 +161,69 @@
                         <h1 id="instalando-o-ceno"><a class="header" href="#instalando-o-ceno">Instalando o Ceno</a></h1>
 <p>O Navegador Ceno pode ser instalado via os seguintes meios:</p>
 <ul>
-<li><a href="https://play.google.com/store/apps/details?id=ie.equalit.ceno">Google Play</a> (<em>Navegador Ceno</em> da <em>eQualitie</em>): a fonte recomendada para maioria dos usuários de Android.</li>
-<li><a href="https://gitlab.com/censorship-no/ceno-browser/releases">Gitlab</a>: para dispositivos Android sem o Google Play.</li>
-<li><a href="https://paskoocheh.com/tools/124/android.html">Paskoocheh</a>: para usuários em países que bloqueiam o acesso aos canais anteriores.</li>
+<li><a href="https://play.google.com/store/apps/details?id=ie.equalit.ceno">Google Play</a> (<em>Ceno Browser</em> from <em>eQualitie</em>): the recommended
+source for most Android users.</li>
+<li><a href="https://gitlab.com/censorship-no/ceno-browser/-/releases">Gitlab</a>: for Android devices without Google Play.</li>
+<li><a href="https://paskoocheh.com/tools/124/android.html">Paskoocheh</a>: for users in countries blocking access to the
+previous channels.</li>
 </ul>
-<p>Ceno requer um dispositivo ARM64 ou um ARM32 compatível com Neon, rodando no mínimo Android 4.1 Jelly Bean. Logo, deve funcionar na maioria dos dispositivos móveis lançados do fim de 2012 em diante. Ceno <em>não precisa de permissões especiais</em> para ser executado.</p>
+<p>Ceno requer um dispositivo ARM64 ou um ARM32 compatível com Neon, rodando no
+mínimo Android 4.1 Jelly Bean. Logo, deve funcionar na maioria dos dispositivos
+móveis lançados do fim de 2012 em diante. Ceno <em>não precisa de permissões
+especiais</em> para ser executado.</p>
 <blockquote>
-<p><strong>Aviso:</strong> Por favor, seja uma pessoa <em>extremamente cética</em> quanto à instalar o Navegador Ceno de fontes diferentes das listadas acima. Por causa da natureza da aplicação, seus usuários em potencial podem se tornar um alvo para todos os tipos de versões falsas ou manipuladas, usadas para violar a privacidade do usuário ou atacar outros usuários do Ceno e da Ouinet. Quando estiver em dúvida, por favor contate <a href="mailto:cenoers@equalitie.org">cenoers@equalitie.org</a> antes de instalar o aplicativo suspeito.</p>
+<p><strong>Warning:</strong> Please be <em>extremely skeptical</em> about installing Ceno Browser
+from sources other than the ones listed above. Because of the application's
+nature, their potential users may become a target for all kinds of fake or
+manipulated versions used to violate user privacy or attack other Ceno and
+Ouinet users. If in doubt, please contact <a href="mailto:cenoers@equalitie.org">cenoers@equalitie.org</a> before
+installing a suspicious app.</p>
 </blockquote>
 <h2 id="interromper-o-ceno-completamente"><a class="header" href="#interromper-o-ceno-completamente">Interromper o Ceno completamente</a></h2>
-<p>Todas as vezes em que você iniciar o aplicativo, um ícone do Ceno aparecerá na barra de notificações de seu dispositivo. Esse ícone representa o <em>serviço do Navegador Ceno</em>, a parte do Ceno que é executada permanentemente (mesmo quando você não está navegando) e permite que outros clientes usem seu dispositivo como uma ponte e recuperem conteúdo dela a qualquer momento.</p>
-<p>Já que a execução desse serviço consome muitos recursos de rede e processamento, você pode querer interrompê-la a qualquer momento que estiver em trânsito (isto é, não conectado ao WiFi ou longe de um carregador). Tocar na notificação acoplada ao ícone irá interromper tanto o Ceno quanto o seu serviço de uma só vez (até que você abra o Ceno novamente).</p>
-<p><img src="images/tap-stop.png" alt="Figura: Toque na notificação para interromper o serviço do Ceno" /></p>
-<h2 id="limpando-todos-os-dados-do-ceno-o-botão-de-pânico"><a class="header" href="#limpando-todos-os-dados-do-ceno-o-botão-de-pânico">Limpando todos os dados do Ceno (o &quot;botão de pânico&quot;)</a></h2>
-<p>A notificação do <em>serviço do Navegador Ceno</em> mostrada acima inclui algumas ações associadas que podem ser desencadeadas ao serem tocadas. A ação <em>Início</em> irá apenas abrir o Ceno com uma nova aba de navegação pública mostrando sua página inicial. Já a ação <em>Apagar</em> demanda mais explicação.</p>
+<p>Todas as vezes em que você iniciar o aplicativo, um ícone do Ceno aparecerá na
+barra de notificações de seu dispositivo. Esse ícone representa o <em>serviço do
+Navegador Ceno</em>, a parte do Ceno que é executada permanentemente (mesmo quando
+você não está navegando) e permite que outros clientes usem seu dispositivo como
+uma ponte e recuperem conteúdo dela a qualquer momento.</p>
+<p>Já que a execução desse serviço consome muitos recursos de rede e processamento,
+você pode querer interrompê-la a qualquer momento que estiver em trânsito (isto
+é, não conectado ao WiFi ou longe de um carregador). Tocar na notificação
+acoplada ao ícone irá interromper tanto o Ceno quanto o seu serviço de uma só
+vez (até que você abra o Ceno novamente).</p>
+<p><img src="images/tap-stop.png" alt="Figure: Tap on the notification to stop the Ceno service" /></p>
+<h2 id="limpando-todos-os-dados-do-ceno-o-botão-de-pânico"><a class="header" href="#limpando-todos-os-dados-do-ceno-o-botão-de-pânico">Limpando todos os dados do Ceno (o "botão de pânico")</a></h2>
+<p>A notificação do <em>serviço do Navegador Ceno</em> mostrada acima inclui algumas ações
+associadas que podem ser desencadeadas ao serem tocadas. A ação <em>Início</em> irá
+apenas abrir o Ceno com uma nova aba de navegação pública mostrando sua página
+inicial. Já a ação <em>Apagar</em> demanda mais explicação.</p>
 <blockquote>
-<p><strong>Nota:</strong> Se as ações abaixo da notificação não estiverem visíveis, arraste a notificação do centro até a parte inferior para mostrá-la. Se você apenas consegue ver a ação <em>Início</em>, pode ser que seu dispositivo seja muito antigo para suportar a ação <em>Apagar</em>.</p>
+<p><strong>Nota:</strong> Se as ações abaixo da notificação não estiverem visíveis, arraste a
+notificação do centro até a parte inferior para mostrá-la. Se você apenas
+consegue ver a ação <em>Início</em>, pode ser que seu dispositivo seja muito antigo
+para suportar a ação <em>Apagar</em>.</p>
 </blockquote>
-<p>Caso alguma vez precise interromper o Ceno rapidamente e limpar absolutamente todos os dados relacionados a ele (não apenas o conteúdo em cache, mas também configurações como favoritos, senhas e todo o histórico de navegação), você pode tocar em <em>Apagar</em>. Para evitar perder todos os seus dados acidentalmente, essa ação ainda não removerá tudo, mas apenas mostrar uma ação adicional por um breve momento, como ilustrado abaixo:</p>
-<p><img src="images/tap-purge.png" alt="Figura: A última ação interrompe o Ceno e limpa todos os seus dados" /></p>
-<p>Se você tocar na ação <em>Sim</em>, o Ceno irá ser interrompido e todos os seus dados serão removidos <em>sem mais perguntas</em>, efetivamente deixando seu dispositivo como se o Ceno nunca tivesse sido usado.</p>
+<p>Caso alguma vez precise interromper o Ceno rapidamente e limpar absolutamente
+todos os dados relacionados a ele (não apenas o conteúdo em cache, mas também
+configurações como favoritos, senhas e todo o histórico de navegação), você pode
+tocar em <em>Apagar</em>. Para evitar perder todos os seus dados acidentalmente, essa
+ação ainda não removerá tudo, mas apenas mostrar uma ação adicional por um breve
+momento, como ilustrado abaixo:</p>
+<p><img src="images/tap-purge.png" alt="Figure: The last action stops Ceno and clears all its data" /></p>
+<p>Se você tocar na ação <em>Sim</em>, o Ceno irá ser interrompido e todos os seus dados
+serão removidos <em>sem mais perguntas</em>, efetivamente deixando seu dispositivo como
+se o Ceno nunca tivesse sido usado.</p>
 <p>Se você não tocar na ação, ela desaparecerá em alguns segundos.</p>
 <blockquote>
-<p><strong>Nota:</strong> O método descrito acima requer que o Ceno esteja sendo executado em seu dispositivo. Para atingir o mesmo efeito quando o Ceno estiver interrompido, você pode usar a página das <em>Configurações</em> gerais do Android e, sob a entrada <em>Aplicativos</em>, escolher Ceno e então <em>Limpar dados</em>.</p>
-<p>Como alternativa mais radical, você pode desinstalar completamente o aplicativo.</p>
+<p><strong>Nota:</strong> O método descrito acima requer que o Ceno esteja sendo executado em
+seu dispositivo. Para atingir o mesmo efeito quando o Ceno estiver
+interrompido, você pode usar a página das <em>Configurações</em> gerais do Android e,
+sob a entrada <em>Aplicativos</em>, escolher Ceno e então <em>Limpar dados</em>.</p>
+<p>Como alternativa mais radical, você pode desinstalar completamente o
+aplicativo.</p>
 </blockquote>
 <blockquote>
-<p><strong>Aviso:</strong> O Android ainda pode manter, além dos dados, outros traços de uso de um aplicativo; por exemplo no seu log do sistema.</p>
+<p><strong>Aviso:</strong> O Android ainda pode manter, além dos dados, outros traços de uso
+de um aplicativo; por exemplo no seu log do sistema.</p>
 </blockquote>
 
                     </main>

@@ -29,7 +29,8 @@ for dir in $(find ../_en.src -type d -not -wholename "../_en.src"); do
     done
     echo "<main>" > tmp
     dirname=$(basename $dir)
-    echo "<h1 class='title'>$dirname</h1>" >> tmp
+    title=$(echo $dirname | tr - " ")
+    echo "<h1 class='title'>$title</h1>" >> tmp
     echo "<section>" >> tmp
     cat tmpmeta | sort -r >> sortedmeta
     while read line; do

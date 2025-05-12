@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
-<html lang="fr" class="light" dir="ltr">
+<html lang="fr" class="light sidebar-visible" dir="ltr">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Qu’est-ce que Ouinet ? - Censorship.no! Manuel de l&#x27;Utilisateur</title>
+        <title>What is Ouinet? - Censorship.no! Manuel de l&#x27;Utilisateur</title>
 
 
         <!-- Custom HTML head -->
-        
+
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
@@ -24,26 +24,29 @@
         <link rel="stylesheet" href="../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../highlight.css">
-        <link rel="stylesheet" href="../tomorrow-night.css">
-        <link rel="stylesheet" href="../ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
-    </head>
-    <body class="sidebar-visible no-js">
-    <div id="body-container">
-        <!-- Provide site root to javascript -->
-        <script>
-            var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
-        </script>
 
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
@@ -57,24 +60,22 @@
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
-            var theme;
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
-            var html = document.querySelector('html');
+            const html = document.documentElement;
             html.classList.remove('light')
             html.classList.add(theme);
-            var body = document.querySelector('body');
-            body.classList.remove('no-js')
-            body.classList.add('js');
+            html.classList.add("js");
         </script>
 
         <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var body = document.querySelector('body');
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -82,43 +83,25 @@
                 sidebar = 'hidden';
             }
             sidebar_toggle.checked = sidebar === 'visible';
-            body.classList.remove('sidebar-visible');
-            body.classList.add("sidebar-" + sidebar);
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Censorship.no!</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../intro/index.html"><strong aria-hidden="true">1.</strong> Introduction</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../intro/ceno.html"><strong aria-hidden="true">1.1.</strong> Qu’est-ce que le Navigateur Ceno ?</a></li><li class="chapter-item expanded "><a href="../intro/ouinet.html" class="active"><strong aria-hidden="true">1.2.</strong> Qu’est-ce que Ouinet ?</a></li><li class="chapter-item expanded "><a href="../intro/qsg.html"><strong aria-hidden="true">1.3.</strong> Guide de démarrage</a></li><li class="chapter-item expanded "><a href="../intro/faq.html"><strong aria-hidden="true">1.4.</strong> Foire aux questions</a></li></ol></li><li class="chapter-item expanded "><a href="../concepts/index.html"><strong aria-hidden="true">2.</strong> Principaux concepts</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../concepts/how.html"><strong aria-hidden="true">2.1.</strong> Comment ça fonctionne ?</a></li><li class="chapter-item expanded "><a href="../concepts/public-personal.html"><strong aria-hidden="true">2.2.</strong> Public vs. Personal browsing</a></li><li class="chapter-item expanded "><a href="../concepts/advantages.html"><strong aria-hidden="true">2.3.</strong> Avantages de l’utilisation de Ceno et Ouinet</a></li><li class="chapter-item expanded "><a href="../concepts/risks.html"><strong aria-hidden="true">2.4.</strong> Risques inhérents à Ceno et Ouinet</a></li></ol></li><li class="chapter-item expanded "><a href="../browser/index.html"><strong aria-hidden="true">3.</strong> Utiliser le Navigateur Ceno</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../browser/install.html"><strong aria-hidden="true">3.1.</strong> Installer Ceno</a></li><li class="chapter-item expanded "><a href="../browser/public-personal.html"><strong aria-hidden="true">3.2.</strong> Using Public or Personal browsing</a></li><li class="chapter-item expanded "><a href="../browser/settings.html"><strong aria-hidden="true">3.3.</strong> Paramètres de Ceno</a></li><li class="chapter-item expanded "><a href="../browser/testing.html"><strong aria-hidden="true">3.4.</strong> Tester le navigateur</a></li><li class="chapter-item expanded "><a href="../browser/bridging.html"><strong aria-hidden="true">3.5.</strong> Aider les autres</a></li><li class="chapter-item expanded "><a href="../browser/troubleshooting.html"><strong aria-hidden="true">3.6.</strong> Dépannage</a></li></ol></li><li class="chapter-item expanded "><a href="../client/front-end.html"><strong aria-hidden="true">4.</strong> Annexe : La page frontale du client Ouinet</a></li></ol>
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
-
-        <!-- Track and set sidebar scroll position -->
-        <script>
-            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
-            sidebarScrollbox.addEventListener('click', function(e) {
-                if (e.target.tagName === 'A') {
-                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
-                }
-            }, { passive: true });
-            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
-            sessionStorage.removeItem('sidebar-scroll');
-            if (sidebarScrollTop) {
-                // preserve sidebar scroll position when navigating via links within sidebar
-                sidebarScrollbox.scrollTop = sidebarScrollTop;
-            } else {
-                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
-                var activeSection = document.querySelector('#sidebar .active');
-                if (activeSection) {
-                    activeSection.scrollIntoView({ block: 'center' });
-                }
-            }
-        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
                         <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
@@ -128,6 +111,7 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
@@ -175,19 +159,45 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="quest-ce-que-ouinet-"><a class="header" href="#quest-ce-que-ouinet-">Qu’est-ce que Ouinet ?</a></h1>
-<p>[Ouinet][Ouinet] est une technologie de base qui permet au Navigateur Ceno de partager du contenu Web avec d’autres appareils. Ouinet se présente sous la forme d’un code informatique réutilisable (une bibliothèque) qu’une application telle que Ceno peut utiliser pour participer à un réseau de nœuds coopératifs qui communiquent directement ([pair à pair][Pair à pair] pour faciliter l’accès aux nouveaux contenus Web et leur stockage, ainsi que pour demander et fournir à d’autres des contenus auxquels ils ont déjà accédé.</p>
-<p>Ouinet repose sur une ingénieuse combinaison de technologies existantes et sur leur utilisation pour accomplir chacune de ses fonctions : la localisation d’autres participants.tes se fait avec des techniques provenant du monde du partage de fichiers (la table de hachage distribuée de BitTorrent), la communication avec eux.elles fait appel à des protocoles Web et de partage de fichiers courants (les requêtes au mandataire HTTP et µTP de BitTorrent), et les normes modernes du secteur assurent la sécurité des communications et l’authenticité des contenus échangés (le chiffrement TLS et les signatures Ed25519). Ouinet permet au besoin de remplacer certaines technologies par d’autres (par exemple, certaines utilisations de µTP peuvent être remplacées par les transports enfichables de Tor).</p>
-<p>Sur les appareils mobiles, Ouinet peut être intégré dans les applications des utilisateurs finaux (en tant que bibliothèque Android). Sur les ordinateurs, il peut être utilisé par des clients Web normaux tels que les navigateurs (en tant que mandataire HTTP local).</p>
-<p>Comme c’est le cas du Navigateur Ceno, Ouinet est développé par [eQualitie][eQualitie] en tant que logiciel libre et à code source ouvert.</p>
+<p><a href="https://gitlab.com/equalitie/ouinet/">Ouinet</a> is a core technology that allows Ceno Browser to share Web content
+with other devices. Ouinet comes in the form of reusable computer code (a
+library) that an application like Ceno can use to become a participant in a
+network of cooperating nodes that communicate directly (<a href="https://en.wikipedia.org/wiki/Peer-to-peer">peer-to-peer</a> or
+P2P) to help access and store new Web content, and to request and deliver
+previously accessed content to others.</p>
+<p>Ouinet repose sur une ingénieuse combinaison de technologies existantes et sur
+leur utilisation pour accomplir chacune de ses fonctions : la localisation
+d’autres participants.tes se fait avec des techniques provenant du monde du
+partage de fichiers (la table de hachage distribuée de BitTorrent), la
+communication avec eux.elles fait appel à des protocoles Web et de partage de
+fichiers courants (les requêtes au mandataire HTTP et µTP de BitTorrent), et les
+normes modernes du secteur assurent la sécurité des communications et
+l’authenticité des contenus échangés (le chiffrement TLS et les signatures
+Ed25519). Ouinet permet au besoin de remplacer certaines technologies par
+d’autres (par exemple, certaines utilisations de µTP peuvent être remplacées par
+les transports enfichables de Tor).</p>
+<p>Sur les appareils mobiles, Ouinet peut être intégré dans les applications des
+utilisateurs finaux (en tant que bibliothèque Android). Sur les ordinateurs, il
+peut être utilisé par des clients Web normaux tels que les navigateurs (en tant
+que mandataire HTTP local).</p>
+<p>Same as Ceno Browser, Ouinet is developed by <a href="https://equalit.ie/">eQualitie</a> as
+Free/Libre/Open-Source software.</p>
 <h2 id="À-qui-sadresse-ouinet-"><a class="header" href="#À-qui-sadresse-ouinet-">À qui s’adresse Ouinet ?</a></h2>
-<p>Ouinet est surtout utile pour les développeurs de logiciels, les créateurs de contenu et les éditeurs qui souhaitent permettre aux utilisateurs et aux utilisatrice de leurs applications de partager avec d’autres le contenu récupéré. Cela réduit la demande globale sur le serveur d’application et améliore l’accessibilité du contenu pour les ceux et celles situés dans des pays où l’accès à ce serveur est bloqué.</p>
-<p>Notez que Ouinet est un projet expérimental qui évolue : dans certains scénarios, des fonctions pourraient ne pas fonctionner avec suffisamment de fiabilité, des bogues pourraient exister et des plantages se produire. Nous vous encourageons à nous contacter par courriel à <a href="mailto%E2%80%AF:cenoers@equalitie.org">cenoers@equalitie.org</a>, à le tester et à nous faire part de vos commentaires. Ils sont les bienvenus !</p>
+<p>Ouinet est surtout utile pour les développeurs de logiciels, les créateurs de
+contenu et les éditeurs qui souhaitent permettre aux utilisateurs et aux
+utilisatrice de leurs applications de partager avec d’autres le contenu
+récupéré. Cela réduit la demande globale sur le serveur d’application et
+améliore l’accessibilité du contenu pour les ceux et celles situés dans des pays
+où l’accès à ce serveur est bloqué.</p>
+<p>Please note that Ouinet is an evolving experimental project: some features may
+not work reliably enough in certain scenarios, bugs may exist and crashes may
+occur. We encourage you to reach out to us at <a href="mailto:cenoers@equalitie.org">cenoers@equalitie.org</a>, test it
+and report back - your feedback is very welcome!</p>
 <blockquote>
-<p><strong>Avertissement :</strong> <em>Ouinet n’est pas un outil d’anonymisation</em>. Si vous avez des doutes sur pertinence pour une tâche donnée, n’hésitez pas à nous contacter.</p>
+<p><strong>Avertissement :</strong> <em>Ouinet n’est pas un outil d’anonymisation</em>. Si vous avez
+des doutes sur pertinence pour une tâche donnée, n’hésitez pas à nous
+contacter.</p>
 </blockquote>
-<p>[Ouinet] : https://gitlab.com/equalitie/ouinet/
-[Pair à pair] : https://fr.wikipedia.org/wiki/Pair-%C3%A0-pair
-[eQualitie]: https://equalit.ie/fr/</p>
 
                     </main>
 

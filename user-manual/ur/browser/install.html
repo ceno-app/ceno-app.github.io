@@ -1,13 +1,13 @@
 <!DOCTYPE HTML>
-<html lang="ur" class="light" dir="rtl">
+<html lang="ur" class="light sidebar-visible" dir="rtl">
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Ceno انسٹال کرنا - Censorship.no! یوزر مینوئل</title>
+        <title>Installing Ceno - Censorship.no! یوزر مینوئل</title>
 
 
         <!-- Custom HTML head -->
-        
+
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="theme-color" content="#ffffff">
@@ -24,26 +24,29 @@
         <link rel="stylesheet" href="../fonts/fonts.css">
 
         <!-- Highlight.js Stylesheets -->
-        <link rel="stylesheet" href="../highlight.css">
-        <link rel="stylesheet" href="../tomorrow-night.css">
-        <link rel="stylesheet" href="../ayu-highlight.css">
+        <link rel="stylesheet" id="highlight-css" href="../highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="../tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="../ayu-highlight.css">
 
         <!-- Custom theme stylesheets -->
 
-    </head>
-    <body class="sidebar-visible no-js">
-    <div id="body-container">
-        <!-- Provide site root to javascript -->
-        <script>
-            var path_to_root = "../";
-            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "light";
-        </script>
 
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "../";
+            const default_light_theme = "light";
+            const default_dark_theme = "navy";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="../toc.js"></script>
+    </head>
+    <body>
+    <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
             try {
-                var theme = localStorage.getItem('mdbook-theme');
-                var sidebar = localStorage.getItem('mdbook-sidebar');
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
 
                 if (theme.startsWith('"') && theme.endsWith('"')) {
                     localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
@@ -57,24 +60,22 @@
 
         <!-- Set the theme before any content is loaded, prevents flash -->
         <script>
-            var theme;
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
             try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
             if (theme === null || theme === undefined) { theme = default_theme; }
-            var html = document.querySelector('html');
+            const html = document.documentElement;
             html.classList.remove('light')
             html.classList.add(theme);
-            var body = document.querySelector('body');
-            body.classList.remove('no-js')
-            body.classList.add('js');
+            html.classList.add("js");
         </script>
 
         <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
 
         <!-- Hide / unhide sidebar before it is displayed -->
         <script>
-            var body = document.querySelector('body');
-            var sidebar = null;
-            var sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
             if (document.body.clientWidth >= 1080) {
                 try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
                 sidebar = sidebar || 'visible';
@@ -82,43 +83,25 @@
                 sidebar = 'hidden';
             }
             sidebar_toggle.checked = sidebar === 'visible';
-            body.classList.remove('sidebar-visible');
-            body.classList.add("sidebar-" + sidebar);
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
-            <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../index.html">Censorship.no!</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="../intro/index.html"><strong aria-hidden="true">1.</strong> تعارف</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../intro/ceno.html"><strong aria-hidden="true">1.1.</strong> Ceno براؤزر کیا ہے؟</a></li><li class="chapter-item expanded "><a href="../intro/ouinet.html"><strong aria-hidden="true">1.2.</strong> Ouinet کیا ہے؟</a></li><li class="chapter-item expanded "><a href="../intro/qsg.html"><strong aria-hidden="true">1.3.</strong> فوری آغاز گائیڈ</a></li><li class="chapter-item expanded "><a href="../intro/faq.html"><strong aria-hidden="true">1.4.</strong> اکثر پوچھے گئے سوالات</a></li></ol></li><li class="chapter-item expanded "><a href="../concepts/index.html"><strong aria-hidden="true">2.</strong> مرکزی تصورات</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../concepts/how.html"><strong aria-hidden="true">2.1.</strong> یہ کیسے کام کرتا ہے؟</a></li><li class="chapter-item expanded "><a href="../concepts/public-private.html"><strong aria-hidden="true">2.2.</strong> عوامی بمقابلہ نجی براؤزنگ</a></li><li class="chapter-item expanded "><a href="../concepts/advantages.html"><strong aria-hidden="true">2.3.</strong> Ceno/Ouinet استعمال کرنے کے فوائد</a></li><li class="chapter-item expanded "><a href="../concepts/risks.html"><strong aria-hidden="true">2.4.</strong> Ceno/Ouinet استعمال کرنے میں خطرات</a></li></ol></li><li class="chapter-item expanded "><a href="../browser/index.html"><strong aria-hidden="true">3.</strong> Ceno براؤزر کا استعمال کرتے ہوئے</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../browser/install.html" class="active"><strong aria-hidden="true">3.1.</strong> Ceno انسٹال کرنا</a></li><li class="chapter-item expanded "><a href="../browser/public-personal.html"><strong aria-hidden="true">3.2.</strong> Using Public or Personal browsing</a></li><li class="chapter-item expanded "><a href="../browser/settings.html"><strong aria-hidden="true">3.3.</strong> Ceno ترتیبات</a></li><li class="chapter-item expanded "><a href="../browser/testing.html"><strong aria-hidden="true">3.4.</strong> براؤزر کی جانچ کرنا</a></li><li class="chapter-item expanded "><a href="../browser/bridging.html"><strong aria-hidden="true">3.5.</strong> دوسروں کی مدد کرنا</a></li><li class="chapter-item expanded "><a href="../browser/troubleshooting.html"><strong aria-hidden="true">3.6.</strong> خرابیوں کا سراغ لگانا</a></li></ol></li><li class="chapter-item expanded "><a href="../client/front-end.html"><strong aria-hidden="true">4.</strong> ملحقہ: Ouinet کلائنٹ فرنٹ اینڈ</a></li></ol>
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="../toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
             </div>
-            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
-
-        <!-- Track and set sidebar scroll position -->
-        <script>
-            var sidebarScrollbox = document.querySelector('#sidebar .sidebar-scrollbox');
-            sidebarScrollbox.addEventListener('click', function(e) {
-                if (e.target.tagName === 'A') {
-                    sessionStorage.setItem('sidebar-scroll', sidebarScrollbox.scrollTop);
-                }
-            }, { passive: true });
-            var sidebarScrollTop = sessionStorage.getItem('sidebar-scroll');
-            sessionStorage.removeItem('sidebar-scroll');
-            if (sidebarScrollTop) {
-                // preserve sidebar scroll position when navigating via links within sidebar
-                sidebarScrollbox.scrollTop = sidebarScrollTop;
-            } else {
-                // scroll sidebar to current active section when navigating via "next/previous chapter" buttons
-                var activeSection = document.querySelector('#sidebar .active');
-                if (activeSection) {
-                    activeSection.scrollIntoView({ block: 'center' });
-                }
-            }
-        </script>
 
         <div id="page-wrapper" class="page-wrapper">
 
             <div class="page">
-                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar-hover-placeholder"></div>
                 <div id="menu-bar" class="menu-bar sticky">
                     <div class="left-buttons">
                         <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
@@ -128,6 +111,7 @@
                             <i class="fa fa-paint-brush"></i>
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
@@ -177,33 +161,68 @@
                         <h1 id="ceno-انسٹال-کرنا"><a class="header" href="#ceno-انسٹال-کرنا">Ceno انسٹال کرنا</a></h1>
 <p>Ceno براؤزر کو درج ذیل ذرائع سے انسٹال کیا جا سکتا ہے:</p>
 <ul>
-<li><a href="https://play.google.com/store/apps/details?id=ie.equalit.ceno">Google Play</a> (<em>Ceno براؤزر</em> eQualitie* کی طرف سے): زیادہ تر اینڈرائیڈ صارفین کے لیے تجویز کردہ ذریعہ۔</li>
-<li><a href="https://gitlab.com/censorship-no/ceno-browser/releases">Gitlab</a>: Google Play کے بغیر اینڈرائیڈ ڈیوائسز کے لیے۔</li>
-<li><a href="https://paskoocheh.com/tools/124/android.html">Paskoocheh</a>: پچھلے چینلز تک رسائی کو مسدود کرنے والے ممالک کے صارفین کے لیے۔</li>
+<li><a href="https://play.google.com/store/apps/details?id=ie.equalit.ceno">Google Play</a> (<em>Ceno Browser</em> from <em>eQualitie</em>): the recommended
+source for most Android users.</li>
+<li><a href="https://gitlab.com/censorship-no/ceno-browser/-/releases">Gitlab</a>: for Android devices without Google Play.</li>
+<li><a href="https://paskoocheh.com/tools/124/android.html">Paskoocheh</a>: for users in countries blocking access to the
+previous channels.</li>
 </ul>
-<p>Ceno کو کم از کم اینڈرائیڈ 4.1 Jelly Bean چلانے والے ARM64 یا Neon کے قابل ARM32 ڈیوائس کی ضرورت ہے، اس طرح 2012 کے اواخر سے جاری ہونے والے زیادہ تر موبائل ڈیوائسز کو کام کرنا چاہیے۔ Ceno کو چلانے کے لیے <em>کسی خاص اجازت کی ضرورت نہیں</em> ہے۔</p>
+<p>Ceno کو کم از کم اینڈرائیڈ 4.1 Jelly Bean چلانے والے ARM64 یا Neon کے قابل ARM32
+ڈیوائس کی ضرورت ہے، اس طرح 2012 کے اواخر سے جاری ہونے والے زیادہ تر موبائل
+ڈیوائسز کو کام کرنا چاہیے۔ Ceno کو چلانے کے لیے <em>کسی خاص اجازت کی ضرورت نہیں</em>
+ہے۔</p>
 <blockquote>
-<p><strong>انتباہ:</strong> براہ کرم اوپر درج کردہ ذرائع کے علاوہ دیگر ذرائع سے Ceno براؤزر انسٹال کرنے کے بارے میں <em>انتہائی محتاط</em> رہیں۔ ایپلیکیشن کی نوعیت کی وجہ سے، ان کے ممکنہ صارفین ہر قسم کے جعلی یا ہیرا پھیری والے ورژنز کا نشانہ بن سکتے ہیں جو صارف کی رازداری کی خلاف ورزی کرنے یا دوسرے Ceno اور Ouinet صارفین پر حملہ کرنے کے لیے استعمال ہوتے ہیں۔ اگر شک ہو تو، مشتبہ ایپ کو انسٹال کرنے سے پہلے براہ کرم <a href="mailto:cenoers@equalitie.org">cenoers@equalitie.org</a> سے رابطہ کریں۔</p>
+<p><strong>Warning:</strong> Please be <em>extremely skeptical</em> about installing Ceno Browser
+from sources other than the ones listed above. Because of the application's
+nature, their potential users may become a target for all kinds of fake or
+manipulated versions used to violate user privacy or attack other Ceno and
+Ouinet users. If in doubt, please contact <a href="mailto:cenoers@equalitie.org">cenoers@equalitie.org</a> before
+installing a suspicious app.</p>
 </blockquote>
 <h2 id="ceno-کو-مکمل-طور-پر-روکنا"><a class="header" href="#ceno-کو-مکمل-طور-پر-روکنا">Ceno کو مکمل طور پر روکنا</a></h2>
-<p>جب بھی آپ ایپ شروع کریں گے، آپ کے ڈیوائس کے نوٹیفکیشن بار پر ایک Ceno آئیکن ظاہر ہوگا۔ یہ آئیکن <em>Ceno براؤزر سروس</em> کی نمائندگی کرتا ہے، جو Ceno کا وہ حصہ ہے جو مستقل طور پر چلتا ہے (یہاں تک کہ جب آپ براؤز نہیں کر رہے ہوتے ہیں) اور دوسرے کلائنٹس کو آپ کے ڈیوائس کو ایک پل کے طور پر استعمال کرنے اور کسی بھی وقت اس سے مواد بازیافت کرنے کی اجازت دیتا ہے۔</p>
-<p>چونکہ اس طرح کی سروس چلانے میں نیٹ ورک اور پروسیسر کے وسائل استعمال ہوتے ہیں، اس لیے جب بھی آپ چلتے پھرتے ہوں (یعنی وائی فائی سے منسلک نہ ہوں یا چارجر سے دور ہوں) تو آپ اسے روک سکتے ہیں۔ آئیکن کے ساتھ منسلک نوٹیفکیشن پر دبانے سے Ceno اور اس کی سروس دونوں ایک ساتھ بند ہو جائیں گی (جب تک کہ آپ Ceno کو دوبارہ نہیں کھولیں گے)۔</p>
-<p><img src="images/tap-stop.png" alt="تصویر: Ceno سروس کو روکنے کے لیے نوٹیفکیشن پر دبائيں" /></p>
-<h2 id="تمام-ceno-ڈیٹا-کو-صاف-کرنا-گھبراہٹ-کا-بٹن"><a class="header" href="#تمام-ceno-ڈیٹا-کو-صاف-کرنا-گھبراہٹ-کا-بٹن">تمام Ceno ڈیٹا کو صاف کرنا (&quot;گھبراہٹ کا بٹن&quot;)</a></h2>
-<p>اوپر دکھائے گئے <em>Ceno براؤزر سروس</em> نوٹیفکیشن میں کچھ ساتھ والی کارروائیاں شامل ہیں جن كو دبانے پر متحرک کیا جاسکتا ہے۔ <em>ہوم</em> ایکشن صرف Ceno کو ایک نئے عوامی براؤزنگ ٹیب کے ساتھ کھولے گا جس کا ہوم صفحہ دکھایا جائے گا۔ <em>مٹا دیں</em> ایکشن مزید وضاحت کا مطالبہ کرتا ہے۔</p>
+<p>جب بھی آپ ایپ شروع کریں گے، آپ کے ڈیوائس کے نوٹیفکیشن بار پر ایک Ceno آئیکن ظاہر
+ہوگا۔ یہ آئیکن <em>Ceno براؤزر سروس</em> کی نمائندگی کرتا ہے، جو Ceno کا وہ حصہ ہے جو
+مستقل طور پر چلتا ہے (یہاں تک کہ جب آپ براؤز نہیں کر رہے ہوتے ہیں) اور دوسرے
+کلائنٹس کو آپ کے ڈیوائس کو ایک پل کے طور پر استعمال کرنے اور کسی بھی وقت اس سے
+مواد بازیافت کرنے کی اجازت دیتا ہے۔</p>
+<p>چونکہ اس طرح کی سروس چلانے میں نیٹ ورک اور پروسیسر کے وسائل استعمال ہوتے ہیں، اس
+لیے جب بھی آپ چلتے پھرتے ہوں (یعنی وائی فائی سے منسلک نہ ہوں یا چارجر سے دور
+ہوں) تو آپ اسے روک سکتے ہیں۔ آئیکن کے ساتھ منسلک نوٹیفکیشن پر دبانے سے Ceno اور
+اس کی سروس دونوں ایک ساتھ بند ہو جائیں گی (جب تک کہ آپ Ceno کو دوبارہ نہیں
+کھولیں گے)۔</p>
+<p><img src="images/tap-stop.png" alt="Figure: Tap on the notification to stop the Ceno service" /></p>
+<h2 id="تمام-ceno-ڈیٹا-کو-صاف-کرنا-گھبراہٹ-کا-بٹن"><a class="header" href="#تمام-ceno-ڈیٹا-کو-صاف-کرنا-گھبراہٹ-کا-بٹن">تمام Ceno ڈیٹا کو صاف کرنا ("گھبراہٹ کا بٹن")</a></h2>
+<p>اوپر دکھائے گئے <em>Ceno براؤزر سروس</em> نوٹیفکیشن میں کچھ ساتھ والی کارروائیاں شامل
+ہیں جن كو دبانے پر متحرک کیا جاسکتا ہے۔ <em>ہوم</em> ایکشن صرف Ceno کو ایک نئے عوامی
+براؤزنگ ٹیب کے ساتھ کھولے گا جس کا ہوم صفحہ دکھایا جائے گا۔ <em>مٹا دیں</em> ایکشن مزید
+وضاحت کا مطالبہ کرتا ہے۔</p>
 <blockquote>
-<p><strong>نوٹ:</strong> اگر نوٹیفکیشن کے نیچے کی کارروائیاں نظر نہیں آ رہی ہیں، تو اسے کھولنے کے لیے نوٹیفکیشن کو اس کے مرکز سے نیچے کی طرف کھینچیں۔ اگر آپ صرف * ہوم * ایکشن دیکھ سکتے ہیں تو ، آپ کا ڈیوائس <em>مٹا دیں</em> عمل کی حمایت کرنے کے لئے بہت پرانا ہوسکتا ہے۔</p>
+<p><strong>نوٹ:</strong> اگر نوٹیفکیشن کے نیچے کی کارروائیاں نظر نہیں آ رہی ہیں، تو اسے کھولنے
+کے لیے نوٹیفکیشن کو اس کے مرکز سے نیچے کی طرف کھینچیں۔ اگر آپ صرف * ہوم *
+ایکشن دیکھ سکتے ہیں تو ، آپ کا ڈیوائس <em>مٹا دیں</em> عمل کی حمایت کرنے کے لئے بہت
+پرانا ہوسکتا ہے۔</p>
 </blockquote>
-<p>کیا آپ کو کبھی بھی Ceno کو فوری طور پر روکنے اور اس سے متعلق تمام ڈیٹا کو صاف کرنے کی ضرورت پڑے گی (نہ صرف کیش شدہ مواد، بلکہ ترتیبات جیسے پسندیدہ، پاس ورڈ اور تمام براؤزنگ کی سرگزشت بھی)، آپ <em>مٹا دیں</em> كو دبا سکتے ہیں۔ آپ کا ڈیٹا حادثاتی طور پر ضائع ہونے سے بچنے کے لیے، یہ ابھی تک کچھ بھی نہیں ہٹائے گا، لیکن صرف ایک مختصر لمحے کے لیے ایک اضافی کارروائی دکھائیں، جیسا کہ ذیل کی تصویر میں دکھایا گیا ہے:</p>
-<p><img src="images/tap-purge.png" alt="تصویر: آخری کارروائی Ceno کو روکتی ہے اور اس کے تمام ڈیٹا کو صاف کرتی ہے" /></p>
-<p>اگر آپ <em>جی ہاں</em> ایکشن پر دباتے ہیں، تو Ceno روک دیا جائے گا اور اس کا تمام ڈیٹا <em>بغیر مزید سوالات کے</em> ہٹا دیا جائے گا، مؤثر طریقے سے آپ کے ڈیوائس کو ایسے چھوڑ دیا جائے گا جیسے Ceno کبھی استعمال نہیں کیا گیا ہو۔</p>
+<p>کیا آپ کو کبھی بھی Ceno کو فوری طور پر روکنے اور اس سے متعلق تمام ڈیٹا کو صاف
+کرنے کی ضرورت پڑے گی (نہ صرف کیش شدہ مواد، بلکہ ترتیبات جیسے پسندیدہ، پاس ورڈ
+اور تمام براؤزنگ کی سرگزشت بھی)، آپ <em>مٹا دیں</em> كو دبا سکتے ہیں۔ آپ کا ڈیٹا
+حادثاتی طور پر ضائع ہونے سے بچنے کے لیے، یہ ابھی تک کچھ بھی نہیں ہٹائے گا، لیکن
+صرف ایک مختصر لمحے کے لیے ایک اضافی کارروائی دکھائیں، جیسا کہ ذیل کی تصویر میں
+دکھایا گیا ہے:</p>
+<p><img src="images/tap-purge.png" alt="Figure: The last action stops Ceno and clears all its data" /></p>
+<p>اگر آپ <em>جی ہاں</em> ایکشن پر دباتے ہیں، تو Ceno روک دیا جائے گا اور اس کا تمام ڈیٹا
+<em>بغیر مزید سوالات کے</em> ہٹا دیا جائے گا، مؤثر طریقے سے آپ کے ڈیوائس کو ایسے چھوڑ
+دیا جائے گا جیسے Ceno کبھی استعمال نہیں کیا گیا ہو۔</p>
 <p>اگر آپ کارروائی پر نہیں دباتے ہیں، تو یہ چند سیکنڈ میں ختم ہو جائے گا۔</p>
 <blockquote>
-<p><strong>نوٹ:</strong> اوپر بیان کردہ طریقہ کا تقاضا ہے کہ Ceno آپ کے ڈیوائس پر چل رہا ہو۔ اسی اثر کو پورا کرنے کے لیے جب Ceno روک دیا جاتا ہے، آپ اینڈرائیڈ کا عمومی <em>ترتیبات</em> صفحہ استعمال کرسکتے ہیں اور <em>ایپس</em> کے اندراج کے تحت، Ceno اور پھر <em>ڈیٹا صاف کریں</em> کا انتخاب کرسکتے ہیں۔</p>
+<p><strong>نوٹ:</strong> اوپر بیان کردہ طریقہ کا تقاضا ہے کہ Ceno آپ کے ڈیوائس پر چل رہا ہو۔
+اسی اثر کو پورا کرنے کے لیے جب Ceno روک دیا جاتا ہے، آپ اینڈرائیڈ کا عمومی
+<em>ترتیبات</em> صفحہ استعمال کرسکتے ہیں اور <em>ایپس</em> کے اندراج کے تحت، Ceno اور پھر
+<em>ڈیٹا صاف کریں</em> کا انتخاب کرسکتے ہیں۔</p>
 <p>ایک سخت متبادل کے طور پر، آپ ایپ کو مکمل طور پر اَن انسٹال کر سکتے ہیں۔</p>
 </blockquote>
 <blockquote>
-<p><strong>انتباہ:</strong> اینڈرائیڈ اب بھی اپنے ڈیٹا کے علاوہ کسی ایپ کے استعمال کرنے کے دیگر نشانات رکھ سکتا ہے، مثال کے طور پر اس کے سسٹم لاگ میں۔</p>
+<p><strong>انتباہ:</strong> اینڈرائیڈ اب بھی اپنے ڈیٹا کے علاوہ کسی ایپ کے استعمال کرنے کے
+دیگر نشانات رکھ سکتا ہے، مثال کے طور پر اس کے سسٹم لاگ میں۔</p>
 </blockquote>
 
                     </main>
