@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-10 18:09-0400\n"
+"POT-Creation-Date: 2025-05-12 14:01-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.15.1\n"
+"X-Generator: Translate Toolkit 3.11.1\n"
 
 #: ./latest/ceno-iran.html%2Btitle:1-1
 msgctxt "./latest/ceno-iran.html+title:1-1"
@@ -26,13 +26,13 @@ msgctxt "./latest/ceno-iran.html+main.h1:8-1"
 msgid "Ceno proves itself in Iran during Internet shutdowns"
 msgstr ""
 
-#: ./latest/ceno-iran.html%2Bmain.h2:10-1
+#: ./latest/ceno-iran.html%2Bmain.h2:9-1
 msgid ""
 "Decentralized mobile web browser enables people to access and share "
 "information regardless of censorship"
 msgstr ""
 
-#: ./latest/ceno-iran.html%2Bmain.p:14-1
+#: ./latest/ceno-iran.html%2Bmain.p:10-1
 msgid ""
 "<strong>Montreal, December 15, 2022</strong> – eQualitie is pleased to "
 "announce that its Ceno Browser is fulfilling its mission of assisting "
@@ -43,7 +43,7 @@ msgid ""
 "thousands in Iran, even while their Internet connections have been thwarted."
 msgstr ""
 
-#: ./latest/ceno-iran.html%2Bmain.p:22-1
+#: ./latest/ceno-iran.html%2Bmain.p:11-1
 msgid ""
 "Internet shutdowns are becoming more common in undemocratic countries, "
 "intensifying the need for decentralized services and tools such as Ceno. In "
@@ -54,7 +54,7 @@ msgid ""
 "mobile data; encrypting DNS services; and collapsing networks."
 msgstr ""
 
-#: ./latest/ceno-iran.html%2Bmain.p:31-1
+#: ./latest/ceno-iran.html%2Bmain.p:13-1
 msgid ""
 "Ceno has persisted around these ploys, using its robust peer-to-peer "
 "backbone, Ouinet, to sidestep every blockage, filter, shutdown and attack. "
@@ -67,7 +67,7 @@ msgid ""
 "content."
 msgstr ""
 
-#: ./latest/ceno-iran.html%2Bmain.p:40-1
+#: ./latest/ceno-iran.html%2Bmain.p:14-1
 msgid ""
 "“It is gratifying to watch Ceno in action when it matters,” said Dmitri "
 "Vitaliev, founder and director of eQualitie. “Where the people of Iran could "
@@ -76,14 +76,14 @@ msgid ""
 "censored on the Iranian network.”"
 msgstr ""
 
-#: ./latest/ceno-iran.html%2Bmain.p:45-1
+#: ./latest/ceno-iran.html%2Bmain.p:15-1
 msgid ""
 "“Impressive platform,” states a Google Play Store reviewer. “You can’t "
 "imagine how useful and brilliant it is if you don’t live in countries like "
 "Iran.”"
 msgstr ""
 
-#: ./latest/ceno-iran.html%2Bmain.p:48-1
+#: ./latest/ceno-iran.html%2Bmain.p:16-1
 msgid ""
 "Ceno works on Android devices, and version 2.0 s set to be released in the "
 "coming week on Google Play, <a href=\"/download\">censorship.no</a> and "
@@ -91,12 +91,12 @@ msgid ""
 "Gitlab. Ceno is one of several digital democratization projects envisioned "
 "and developed by eQualitie, which partners with organizations such as the "
 "Toronto-based technology group ASL19 to offer practical responses to online "
-"access and information challenges. For more information, <a href="
-"\"https://ceno.app/en/factsheet.html\">access the Ceno fact sheet</a>. About "
+"access and information challenges. For more information, <a href=\"https"
+"://ceno.app/en/factsheet.html\">access the Ceno fact sheet</a>. About "
 "eQualitie"
 msgstr ""
 
-#: ./latest/ceno-iran.html%2Bmain.p:57-1
+#: ./latest/ceno-iran.html%2Bmain.p:17-1
 msgid ""
 "Since its foundation in 2010, eQualitie has been inspired by the principles "
 "of freedom of expression and association as defined in Articles 18, 19 and "
