@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-12 14:01-0400\n"
-"PO-Revision-Date: 2025-04-30 21:00+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2025-05-13 20:01+0000\n"
+"Last-Translator: Mayssemb <mayssem.boulajfene@medtech.tn>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-faq/ar/>\n"
 "Language: ar\n"
@@ -17,11 +17,11 @@ msgstr ""
 
 #: faq.html%2Bmain.section.div.h1:4-13
 msgid "Frequently<br>Asked<br>Questions"
-msgstr ""
+msgstr "الأسئلة<br>المتكررة"
 
 #: faq.html%2Bmain.section.form.input[value]:9-13
 msgid "(ceno.network OR ceno.website OR ceno.app)"
-msgstr ""
+msgstr "(‏ceno.network أو ceno.website أو ceno.app)"
 
 #: faq.html%2Bmain.section:6-9
 msgid "Search"
@@ -29,15 +29,15 @@ msgstr "بحث"
 
 #: faq.html%2Bmain.section.div.a.div:13-45
 msgid "Read user manual"
-msgstr ""
+msgstr "اقرأ دليل المستخدم"
 
 #: faq.html%2Bmain.section.div.a.div:14-104
 msgid "Read technical, in-depth whitepaper"
-msgstr ""
+msgstr "اقرأ الورقة البيضاء التقنية المتعمقة"
 
 #: faq.html%2Bmain.section.div.a.div:15-35
 msgid "Read quick-start guide"
-msgstr ""
+msgstr "اقرأ دليل البدء السريع"
 
 #: faq.html%2Bmain.section.div:19-9
 msgid "What is Ceno Browser?"
@@ -358,6 +358,7 @@ msgid ""
 "Bridge operators will have their device's IP address listed in the "
 "BitTorrent network as an accessible Bridge."
 msgstr ""
+"سيتم إدراج عنوان IP لجهاز مشغلي الجسر في شبكة BitTorrent كجسر قابل للوصول."
 
 #: faq.html%2Bmain.section.div.details.p:98-17
 msgid ""
@@ -410,7 +411,7 @@ msgstr ""
 
 #: faq.html%2Bmain.section.div.details:111-77
 msgid "What's the difference between using a VPN and Ceno Browser?"
-msgstr ""
+msgstr "ما الفرق بين استخدام VPN ومتصفح Ceno؟"
 
 #: faq.html%2Bmain.section.div.details.p:115-17
 msgid ""
@@ -447,10 +448,14 @@ msgid ""
 "other. This reduces the strain on censorship circumvention nodes and "
 "improves deliverability."
 msgstr ""
+"الفرق الرئيسي بين Ceno وVPN هو أن Ceno يحاول توجيه جميع طلباتك للمواقع عبر "
+"الشبكة اللامركزية. عندما تكون الموقع متاحًا بدون قيود، سيتصل Ceno بها ببساطة "
+"كمتصفح عادي. أيضًا، يقوم مستخدمو Ceno بتخزين ومشاركة المحتوى مع بعضهم البعض. "
+"هذا يقلل من الضغط على عقد تجاوز الرقابة ويحسن من سرعة الوصول."
 
 #: faq.html%2Bmain.section.div.details:126-103
 msgid "What's the difference between using the Tor and Ceno browsers?"
-msgstr ""
+msgstr "ما الفرق بين استخدام متصفح تور ومتصفح سينو؟"
 
 #: faq.html%2Bmain.section.div.details.p:130-17
 msgid ""
@@ -462,6 +467,12 @@ msgid ""
 "environment, we recommend it, provided that you've also read <a "
 "href=\"https://support.torproject.org/\">their support documentation</a>."
 msgstr ""
+"على عكس متصفح تور، لا يُعتبر متصفح سينو أداة للخصوصية، وهي الغاية الرئيسية من "
+"استخدام تور. في شبكة تور، يتم تشفير حركة المرور وتوجيهها عبر شبكة من الخوادم "
+"التي يديرها متطوعون، ويبدو أنها تأتي من عنوان IP الخاص بعقدة الخروج. يُعتبر "
+"تور خيارًا ممتازًا للخصوصية من مراقبة الإنترنت ومشغلي المواقع. إذا كان يعمل في "
+"بيئة شبكتك، نوصي باستخدامه، بشرط أن تكون قد قرأت أيضًا <a href="
+"\"https://support.torproject.org/\">وثائق الدعم الخاصة بهم</a>."
 
 #: faq.html%2Bmain.section.div.details:135-43
 msgid "Whats the difference between Personal and Public tabs, again?"
