@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-14 16:11-0400\n"
 "PO-Revision-Date: 2025-05-14 23:12+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-case-studies/es/>\n"
 "Language: es\n"
@@ -16,15 +16,15 @@ msgstr ""
 
 #: ./case-studies/index.html%2Bmain.h1:2-1
 msgid "case studies"
-msgstr ""
+msgstr "estudios de casos"
 
 #: ./case-studies/index.html%2Bmain.section.article:9-5
 msgid "Case Study"
-msgstr ""
+msgstr "Estudio de casos"
 
 #: ./case-studies/index.html%2Bmain.section.article.div:11-5
 msgid "December, 2022"
-msgstr ""
+msgstr "Diciembre, 2022"
 
 #: ./case-studies/index.html%2Bmain.section.article.h1:12-5
 msgid "Highlights from the Ground in Iran"
