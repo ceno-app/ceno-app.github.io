@@ -1,6 +1,6 @@
 <img src="img/logo_ceno.png" width=250px alt="Ceno Browser logo">
 
-This is the website for [Ceno Browser](https://censorship.no) - a web browser designed to circumvent censorship by routing traffic through intermediate ephemeral nodes (bridges).
+This is the website for [Ceno Browser](https://ceno.app) - a web browser designed to circumvent censorship by routing traffic through intermediate ephemeral nodes (bridges).
 
 Once the content is in the censored zone - and if it's not private - it is then further distributed by those nodes in a BitTorrent-like fashion.
 
@@ -59,7 +59,7 @@ Go into any of the plain {lang} directories, the common case is to view the Engl
 ![Flow for publishing translation updates](./_project-docs/update-translations.svg)
 ## Additional Resources
 
-- [Ceno Browser Branding & Style Guide](https://censorship.no/en/branding.html)
+- [Ceno Browser Branding & Style Guide](https://ceno.app/en/branding.html)
 - [Ceno Browser project on Weblate](https://hosted.weblate.org/projects/censorship-no/)
 
 ## License
@@ -68,5 +68,5 @@ This source code is subject to the terms of the [Creative Commons Attribution-Sh
 
 ## Feedback
 
-We welcome both positive and negative feedback, bug reports and feature requests, as well as questions at support@censorship.no.
+We welcome both positive and negative feedback, bug reports and feature requests, as well as questions at support@ceno.app.
 Our PGP key fingerprint is: 51BE 600C 2711 926C 865D F93F C7DC C123 F0DD B862
