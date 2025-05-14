@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-14 16:11-0400\n"
-"PO-Revision-Date: 2025-05-14 23:12+0000\n"
+"PO-Revision-Date: 2025-05-15 13:31+0000\n"
 "Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-case-studies/es/>\n"
@@ -28,7 +28,7 @@ msgstr "Diciembre, 2022"
 
 #: ./case-studies/index.html%2Bmain.section.article.h1:12-5
 msgid "Highlights from the Ground in Iran"
-msgstr "Lo más destacado desde el Terreno en Irán"
+msgstr "Aspectos destacados de la Tierra en Irán"
 
 #: ./case-studies/index.html%2Bmain.section.article.div:15-5
 msgid ""
@@ -38,7 +38,12 @@ msgid ""
 "available, Ceno users can still access blocked web content. Users have been "
 "able to access…"
 msgstr ""
+"Las experiencias de los usuarios han variado de región a región, ya que los "
+"ISP han aplicado medidas de censura e interrupción de Internet de manera "
+"inconsistente. Cuando la intranet de Irán (Red Nacional de Información o NIN)"
+" es la única conexión disponible, los usuarios de Ceno todavía pueden "
+"acceder al contenido web bloqueado. Los usuarios han podido acceder.."
 
 #: ./case-studies/index.html%2Bmain.section.article:15-337
 msgid "Read more"
-msgstr ""
+msgstr "Leer más"
