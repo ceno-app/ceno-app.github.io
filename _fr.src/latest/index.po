@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-12 14:01-0400\n"
-"PO-Revision-Date: 2025-04-21 23:12+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2025-05-14 20:09+0000\n"
+"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-latest/fr/>\n"
 "Language: fr\n"
@@ -12,30 +12,32 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: latest/index.html%2Bmain.h1:2-1
 msgid "latest"
-msgstr ""
+msgstr "les plus récentes"
 
 #: latest/index.html%2Bmain.section.article:9-5
 msgid "Press Release"
-msgstr ""
+msgstr "Communiqué de presse"
 
 #: latest/index.html%2Bmain.section.article.div:11-5
 msgid "December 15, 2022"
-msgstr "15 décembre 2022"
+msgstr "15 décembre 2022"
 
 #: latest/index.html%2Bmain.section.article.h1:12-5
 msgid "Ceno proves itself in Iran during Internet shutdowns"
-msgstr "Ceno fait ses preuves en Iran lors des coupures d’Internet"
+msgstr "Ceno se prouve en Iran pendant Arrêts Internet"
 
 #: latest/index.html%2Bmain.section.article.div:15-5
 msgid ""
 "eQualitie is pleased to announce that its Ceno Browser is fulfilling its "
 "mission of assisting thousands in Iran, while also…"
 msgstr ""
+"eQualitie est heureux d'annoncer que son Ceno Browser remplit sa mission "
+"d'aider des milliers en Iran, tout en.."
 
 #: latest/index.html%2Bmain.section.article:15-155
 msgid "Read more"
-msgstr ""
+msgstr "Lire la suite"
