@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-14 16:11-0400\n"
-"PO-Revision-Date: 2025-05-14 20:09+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2025-05-14 23:11+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-community/fr/>\n"
 "Language: fr\n"
@@ -122,7 +122,7 @@ msgstr "Ouinet"
 
 #: community.html%2Bmain.section.div.div.ul.li:37-21
 msgid "Ceno Docker Client"
-msgstr "Ceno Docker Client"
+msgstr "le client Docker de Ceno"
 
 #: community.html%2Bmain.section.div.div.p:39-17
 msgid ""
@@ -162,7 +162,7 @@ msgstr "Entrez en contact avec l'équipe : soutien [à] la censure [point] non"
 
 #: community.html%2Bmain.section.div.div.ul.li:51-21
 msgid "Take a survey"
-msgstr "Faites une enquête"
+msgstr "Répondez à un sondage"
 
 #: community.html%2Bmain.section.div.div.h2:61-17
 msgid "Tell your community about Ceno"
@@ -188,22 +188,22 @@ msgid ""
 "Help translate the Ceno Browser app, web extension, user manual and website! "
 "We use Weblate to crowdsource translations."
 msgstr ""
-"Aidez à traduire l'application Ceno Browser, l'extension web, le manuel "
-"d'utilisation et le site web! Nous utilisons Weblate pour les traductions "
-"crowdsource."
+"Aidez-nous à traduire l'appli, l'extension Web, le manuel d'utilisation et "
+"le site Web du Navigateur Ceno. Nous utilisons Weblate pour des traductions "
+"collaboratives."
 
 #: community.html%2Bmain.section.div.div.p:71-17
 msgid "Join our Weblate"
-msgstr "Rejoignez notre Weblate"
+msgstr "Joignez-vous à notre Weblate"
 
 #: community.html%2Bmain.section.div.div.p:72-17
 msgid ""
 "Please contact the Ceno team at support [at] censorship [dot] no if you're "
 "interested in becoming a reviewer for translation(s) in your language(s)."
 msgstr ""
-"Veuillez contacter l'équipe Ceno à la censure [at] [dot] non si vous êtes "
-"intéressé à devenir un évaluateur pour la traduction(s) dans votre(s) "
-"langue(s)."
+"Veuillez contacter l’équipe de Ceno à support [arobase] censorship [point] "
+"no (ou remplissez le formulaire de contact ci-dessous) si vous souhaitez "
+"réviser les traductions dans vôtre langue."
 
 #: community.html%2Bmain.section.div.div.p:73-17
 msgid ""
