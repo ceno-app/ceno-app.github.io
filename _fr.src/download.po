@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 13:34-0400\n"
-"PO-Revision-Date: 2025-04-21 23:09+0000\n"
+"POT-Creation-Date: 2025-05-14 16:11-0400\n"
+"PO-Revision-Date: 2025-05-14 21:11+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-download/fr/>\n"
@@ -12,27 +12,27 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: download.html%2Bmain.section.div.div.div:5-17
 msgid "Download Ceno Browser"
-msgstr ""
+msgstr "Télécharger Ceno Browser"
 
 #: download.html%2Bmain.section.div.div:5-63
 msgid "Join 566,565 other users"
-msgstr ""
+msgstr "Rejoignez 566,565 autres utilisateurs"
 
 #: download.html%2Bmain.section.div.div.p:7-17
 msgid ""
 "The safest way to install Ceno Browser on your Android phone is through the "
 "Google Play Store:"
 msgstr ""
-"La façon la plus sûre d’installer le Navigateur Ceno sur votre appareil "
-"Android est Google Play :"
+"Le moyen le plus sûr d'installer Ceno Browser sur votre téléphone Android "
+"est à travers le Google Play Store:"
 
 #: download.html%2Bmain.section.div.div.h4:20-17
 msgid "IMPORTANT:"
-msgstr ""
+msgstr "IMPORTANT :"
 
 #: download.html%2Bmain.section.div.div.p:21-17
 msgid ""
@@ -44,12 +44,22 @@ msgid ""
 "html\">the FAQ</a> or <a href=\"../user-manual\">User Manual</a> for more "
 "details on Ceno usage."
 msgstr ""
+"Ceno a deux modes de fonctionnement - Public et Personnel. Vous pouvez "
+"facilement vous écarter entre eux. Le mode public offre la meilleure "
+"connectivité mais le moins de confidentialité - les sites que vous visitez "
+"ou partagez sont enregistrés dans un registre accessible au public "
+"(BitTorrent). Le mode personnel élimine ce disque mais peut être plus lent "
+"et moins efficace pour récupérer le contenu. Voir <a href=\"faq.html\"> la "
+"FAQ</a> ou <a href=\"../user-manual\">User Manual</a> pour plus de détails "
+"sur l'utilisation de Ceno."
 
 #: download.html%2Bmain.section.div.p:27-13
 msgid ""
 "Alternatively, you can install Ceno via the Paskoocheh Marketplace, Github, "
 "dComms, or download the APK directly via GitLab:"
 msgstr ""
+"Alternativement, vous pouvez installer Ceno via la Marketplace Paskoocheh, "
+"Github, dComms, ou télécharger l'APK directement via GitLab:"
 
 #: download.html%2Bmain.section.div.h2:36-13
 msgid "Direct Download"
@@ -60,9 +70,9 @@ msgid ""
 "For advanced users or those unable to install Ceno Browser via the above "
 "links, you can download the latest APK directly:"
 msgstr ""
-"Les utilisateurs expérimentés et ceux qui ne parviennent pas à installer le "
-"Navigateur Ceno avec les liens ci-dessus peuvent télécharger le dernier APK "
-"directement :"
+"Pour les utilisateurs avancés ou ceux qui ne peuvent pas installer Ceno "
+"Browser via les liens ci-dessus, vous pouvez télécharger la dernière APK "
+"directement:"
 
 #: download.html%2Bmain.section.div.div:38-13
 msgid ""
@@ -73,6 +83,12 @@ msgid ""
 "a> / <a href=\"https://ceno-download.s3.amazonaws.com/ceno/v2.4.3/ceno-"
 "x86_64-release-2.4.3-2025-03-24_1503.apk\">x86_64</a>"
 msgstr ""
+"<strong> Ceno for Android:</strong> <a href=\"https://ceno-download.s3."
+"amazonaws.com/ceno/v2.4.3/ceno-arm64-v8a-release-2.4.3-2025-03-24_1503."
+"apk\">arm64 (presque courant)</a> / <a href=\"https://ceno-download.s3."
+"amazonaws.com/ceno/v2.4.3/ceno-armeabi-v7a-release-2.4.3-2025-03-24_1503."
+"apk\">arm</a> / <a href=\"https://ceno-download.s3.amazonaws.com/ceno/v2.4.3/"
+"ceno-x86_64-release-2.4.3-2025-03-24_1503.apk\">x86_64</a>"
 
 #: download.html%2Bmain.section.div.div:42-13
 msgid ""
@@ -80,12 +96,17 @@ msgid ""
 "amazonaws.com/ceno-desktop/v0.0.1/ceno-alpha-windows-x86_64-"
 "system-0.0.1-20250425123522.exe\">x86_64 (system-install)</a>"
 msgstr ""
+"<strong>Ceno for Windows:</strong> <a href=\"https://ceno-download.s3."
+"amazonaws.com/ceno-desktop/v0.0.1/ceno-alpha-windows-x86_64-"
+"system-0.0.1-20250425123522.exe\">x86_64 (system-install)</a>"
 
 #: download.html%2Bmain.section.div.p:46-13
 msgid ""
 "Run this to verify that the APK has a valid signature from the certificate "
 "with the fingerprint shown below:"
 msgstr ""
+"Exécutez ceci pour vérifier que l'APK a une signature valide du certificat "
+"avec l'empreinte indiquée ci-dessous:"
 
 #: download.html%2Bmain.section.div.div:47-13
 msgid ""
@@ -93,6 +114,10 @@ msgid ""
 "CN=equalit.ie<br> Signer #1 certificate SHA-256 digest: "
 "<br>a59d20c076f6170a2c13d9ce96cd4349688f907898dfc3c89b0ae6ebe9f7edca<br> […]"
 msgstr ""
+"phy apksigner vérifier --print-certs certificat no 1 DN: CN=equalit.ie "
+"canadienne Signer #1 certificate SHA-256 digest: "
+"a59d20c076f6170a2c13d9ce96cd4349688f907898dfc3c89b0ae6ebe9f7edca absorber "
+"[...]"
 
 #: download.html%2Bmain.section.div.p:53-13
 msgid ""
@@ -102,14 +127,19 @@ msgid ""
 "against our PGP key (with fingerprint <code class=\"pubkey\">51BE 600C 2711 "
 "926C 865D F93F C7DC C123 F0DD B862</code>)"
 msgstr ""
+"Vous pouvez également vérifier les hashes <a href=\"https://ceno-download.s3."
+"amazonaws.com/ceno/v2.4.3/sha256sums.txt\"></a> de <a href=\"https://ceno-"
+"download.s3.amazonaws.com/ceno/v2.4.3/sha256sums.txt.asc\"> fichier</a> "
+"contre notre clé PGP (avec empreinte digitale <code class=\"pubkey\">51BE "
+"600C 2711 926C 865D F93F C7DC C123 F0DD B862</code>)"
 
 #: download.html%2Bmain.section.h1:57-9
 msgid "Use Cases"
-msgstr ""
+msgstr "Cas d ' utilisation"
 
 #: download.html%2Bmain.section.div.div.h2:60-17
 msgid "Open blocked sites and social media"
-msgstr ""
+msgstr "Sites bloqués ouverts et médias sociaux"
 
 #: download.html%2Bmain.section.div.div.p:61-17
 msgid ""
@@ -118,10 +148,15 @@ msgid ""
 "browsing static sites, and switch to personal mode for social networks, "
 "YouTube, and other sites that require authentication."
 msgstr ""
+"De plus en plus de ressources sont bloquées chaque jour. Ceno est un outil "
+"universel pour accéder à tout site web. Utilisez le mode public pour lire "
+"les nouvelles et parcourir les sites statiques, et passez au mode personnel "
+"pour les réseaux sociaux, YouTube et autres sites qui nécessitent une "
+"authentification."
 
 #: download.html%2Bmain.section.div.div.h2:68-17
 msgid "Shutdowns"
-msgstr ""
+msgstr "Tais-toi"
 
 #: download.html%2Bmain.section.div.div.p:69-17
 msgid ""
@@ -129,10 +164,13 @@ msgid ""
 "still be able to access websites that Ceno caches and delivers to your "
 "country via satellite. Use Ceno as a backup in case of a shutdown!"
 msgstr ""
+"Même si un pays est complètement coupé de l'Internet mondial, vous serez "
+"toujours en mesure d'accéder aux sites Web que Ceno cache et livre à votre "
+"pays par satellite. Utilisez Ceno comme une sauvegarde en cas d'arrêt!"
 
 #: download.html%2Bmain.section.div.div.h2:74-17
 msgid "Help others"
-msgstr ""
+msgstr "Aide les autres"
 
 #: download.html%2Bmain.section.div.div.p:75-17
 msgid ""
@@ -140,3 +178,7 @@ msgid ""
 "resources. Simply enable Bridge mode in your browser settings and make the "
 "internet more accessible for those who need it most."
 msgstr ""
+"Chaque utilisateur Ceno peut devenir un pont et aider les autres à accéder "
+"aux ressources bloquées. Il suffit de activer le mode Bridge dans les "
+"paramètres de votre navigateur et de rendre l'Internet plus accessible pour "
+"ceux qui en ont le plus besoin."

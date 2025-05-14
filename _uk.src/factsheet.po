@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 13:34-0400\n"
-"PO-Revision-Date: 2025-05-01 06:53+0000\n"
+"POT-Creation-Date: 2025-05-14 16:11-0400\n"
+"PO-Revision-Date: 2025-05-13 20:01+0000\n"
 "Last-Translator: Максим Горпиніч <maksimgorpinic4@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-factsheet/uk/>\n"
@@ -76,8 +76,16 @@ msgid "Get it on:"
 msgstr "Отримати це на:"
 
 #: factsheet.html%2Bdiv.section.ul.li:23-9
+#, fuzzy
+#| msgid ""
+#| "<a href=\"https://censorship.no/download\">Ceno website</a>, <a "
+#| "href=\"https://play.google.com/store/apps/details?id=ie.equalit."
+#| "ceno\">Google Play</a>, <a href=\"https://github.com/censorship-no/ceno-"
+#| "browser/releases\">Github</a>, <a href=\"https://paskoocheh.com/tools/124/"
+#| "android.html?\">Paskoocheh</a>, and <a href=\"https://zanga.tech/"
+#| "tools/166/android.html\">Zanga.tech</a>"
 msgid ""
-"<a href=\"https://censorship.no/download\">Ceno website</a>, <a "
+"<a href=\"https://ceno.app/en/download.html\">Ceno website</a>, <a "
 "href=\"https://play.google.com/store/apps/details?id=ie.equalit."
 "ceno\">Google Play</a>, <a href=\"https://github.com/censorship-no/ceno-"
 "browser/releases\">Github</a>, <a href=\"https://paskoocheh.com/tools/124/"
@@ -312,7 +320,7 @@ msgstr ""
 
 #: factsheet.html%2Bdiv.section.h3:107-1
 msgid "Ceno Analytics"
-msgstr "Ceno Analytics"
+msgstr "Аналітика Ceno"
 
 #: factsheet.html%2Bdiv.section.p:108-2
 msgid ""

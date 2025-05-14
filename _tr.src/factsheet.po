@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 13:34-0400\n"
-"PO-Revision-Date: 2025-05-12 17:53+0000\n"
-"Last-Translator: Kaya Zeren <kayazeren@gmail.com>\n"
+"POT-Creation-Date: 2025-05-14 16:11-0400\n"
+"PO-Revision-Date: 2025-05-14 21:11+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-factsheet/tr/>\n"
 "Language: tr\n"
@@ -77,19 +77,27 @@ msgid "Get it on:"
 msgstr "Nereden edinilebilir:"
 
 #: factsheet.html%2Bdiv.section.ul.li:23-9
+#, fuzzy
+#| msgid ""
+#| "<a href=\"https://censorship.no/download\">Ceno website</a>, <a "
+#| "href=\"https://play.google.com/store/apps/details?id=ie.equalit."
+#| "ceno\">Google Play</a>, <a href=\"https://github.com/censorship-no/ceno-"
+#| "browser/releases\">Github</a>, <a href=\"https://paskoocheh.com/tools/124/"
+#| "android.html?\">Paskoocheh</a>, and <a href=\"https://zanga.tech/"
+#| "tools/166/android.html\">Zanga.tech</a>"
 msgid ""
-"<a href=\"https://censorship.no/download\">Ceno website</a>, <a "
+"<a href=\"https://ceno.app/en/download.html\">Ceno website</a>, <a "
 "href=\"https://play.google.com/store/apps/details?id=ie.equalit."
 "ceno\">Google Play</a>, <a href=\"https://github.com/censorship-no/ceno-"
 "browser/releases\">Github</a>, <a href=\"https://paskoocheh.com/tools/124/"
 "android.html?\">Paskoocheh</a>, and <a href=\"https://zanga.tech/tools/166/"
 "android.html\">Zanga.tech</a>"
 msgstr ""
-"<a href=\"https://censorship.no/download\">Ceno resmi sitesi</a>, <a "
+"<a href=\"https://censorship.no/download\">Ceno sitesi</a>, <a "
 "href=\"https://play.google.com/store/apps/details?id=ie.equalit."
 "ceno\">Google Play</a>, <a href=\"https://github.com/censorship-no/ceno-"
-"browser/releases\">Github</a>, <a href=\"https://paskoocheh.com/tools/124/"
-"android.html?\">Paskoocheh</a>, ve <a href=\"https://zanga.tech/tools/166/"
+"browser/releases\">GitHub</a>, <a href=\"https://paskoocheh.com/tools/124/"
+"android.html?\">Paskoocheh</a> ve <a href=\"https://zanga.tech/tools/166/"
 "android.html\">Zanga.tech</a>"
 
 #: factsheet.html%2Bdiv.section.ul.li:24-2
@@ -108,16 +116,16 @@ msgid ""
 msgstr ""
 "Dünyanın herhangi bir yerindeki insanların, internet erişiminin "
 "sansürlendiği veya kısıtlandığı bölgelerden ve bağlantının dengesiz veya "
-"maliyetli olduğu ülkelerden internet içeriğine erişmelerini sağlayacak "
-"şekilde tasarlanmıştır"
+"maliyetli olduğu ülkelerden internet içeriklerine erişmelerini sağlamak "
+"üzere tasarlanmıştır"
 
 #: factsheet.html%2Bdiv.section.ul.li:29-2
 msgid ""
 "Can be used to create a bridge for others to access censored or restricted "
 "content"
 msgstr ""
-"Başkalarının sansürlenmiş veya kısıtlanmış içeriğe erişmesini sağlayan bir "
-"köprü oluşturmak için kullanılabilir"
+"Başkalarının sansürlenmiş veya kısıtlanmış içeriklere erişmesini sağlayan "
+"bir köprü oluşturmak için kullanılabilir"
 
 #: factsheet.html%2Bdiv.section.h3:31-2
 msgid "So what?"
@@ -129,8 +137,8 @@ msgid ""
 "independent media globally to access and share web content"
 msgstr ""
 "Şu anda Dünya çapında binlerce sivilin, sivil toplum kuruluşunun, "
-"araştırmacı gazetecinin ve bağımsız basının internet içeriğine erişmesine ve "
-"paylaşmasına yardımcı oluyor"
+"araştırmacı gazetecinin ve bağımsız basının internet içeriklerine erişmesine "
+"ve paylaşmasına yardımcı oluyor"
 
 #: factsheet.html%2Bdiv.section.ul.li:34-2
 msgid ""
@@ -251,7 +259,8 @@ msgstr "Ceno nasıl çalışır"
 #: factsheet.html%2Bdiv.section.div.div.div.div.div.p:67-17
 msgid "A mobile user in NYC reads a BBC.com news article on her Ceno Browser."
 msgstr ""
-"New York'taki bir kullanıcı Ceno Browser kullanarak bir BBC.com haberi okur."
+"New York içinde bir kullanıcı Ceno Browser kullanarak bir BBC.com haberi "
+"okur."
 
 #: factsheet.html%2Bdiv.section.div.div.div.div.div.p:76-17
 msgid "Ceno signs, caches and decentralizes the article content."
@@ -276,11 +285,11 @@ msgstr "Sayılar"
 
 #: factsheet.html%2Bdiv.section.h3:97-1
 msgid "Ceno to April 2022"
-msgstr "2022 Nisan ayına kadar Ceno'nun gelişimi"
+msgstr "2022 Nisan ayında Ceno"
 
 #: factsheet.html%2Bdiv.section.ul.li:99-2
 msgid "Downloads from Google Play Store: 33,297"
-msgstr "Google Play üzerinde indirilme: 33.297"
+msgstr "Google Play üzerinden indirilme: 33.297"
 
 #: factsheet.html%2Bdiv.section.ul.li:100-2
 msgid "Installs from alternative marketplaces: 6,514"
@@ -288,7 +297,7 @@ msgstr "Diğer uygulama mağazalarından indirilme: 6.514"
 
 #: factsheet.html%2Bdiv.section.ul.li:101-2
 msgid "Pulls from Docker Hub: 597"
-msgstr "Docker üzerinden kopyalanma: 597"
+msgstr "Docker Hub üzerinden alınma: 597"
 
 #: factsheet.html%2Bdiv.section.ul.li:102-2
 msgid "Cloned from GitHub repositories: 1,768"
@@ -303,8 +312,8 @@ msgid ""
 "Ceno bridges worldwide: 25 (6 in Ukraine, 9 in Russia and others in the "
 "Middle East, Eastern Europe and Asia)"
 msgstr ""
-"Dünya çapındaki Ceno köprüleri: 25 (Ukrayna'da 6 tane, Rusya'da 9 tane ve "
-"kalanı Orta Doğu, Doğu Avrupa ve Asya'da)"
+"Dünya çapındaki Ceno köprüleri: 25 (Ukrayna 6, Rusya 9 ve kalanı Orta Doğu, "
+"Doğu Avrupa ve Asya'da)"
 
 #: factsheet.html%2Bdiv.section.ul.li:105-2
 msgid ""
@@ -488,7 +497,7 @@ msgstr ""
 
 #: factsheet.html%2Bdiv.section.h3:129-1
 msgid "How Ceno side-steps censorship"
-msgstr "Ceno sansürün etrafından nasıl dolaşır"
+msgstr "Ceno sansürü nasıl aşar"
 
 #: factsheet.html%2Bdiv.section.p:130-9
 msgid ""
@@ -501,7 +510,7 @@ msgid ""
 "environments. Wider adoption will ensure more efficient, low latency and "
 "effective decentralized peer-to-peer communications and distributed caching."
 msgstr ""
-"Var olan sansür yöntemlerinin tek bir hata noktası vardır: Kullanıcıların "
+"Var olan sansür yöntemlerinin tek bir zayıf noktası vardır: Kullanıcıların "
 "sansürün uygulandığı bir güvenlik duvarından geçmesi gerekir. 2019 Kasım "
 "ayında İran'da, 2020 yılında Belarus'ta, 2021 yılında Kazakistan'da ve bu "
 "yıl Rusya'da süren internet erişiminin kesilmesi sırasında görüldüğü gibi, "
