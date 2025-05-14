@@ -1,18 +1,18 @@
 <main>
     <section class="faq-header">
         <div class="faq-head-title">
-            <h1>Frequently<br>Asked<br>Questions</h1>
+            <h1>Questions<br>Fréquemment<br>Posées</h1>
             <img src="/static/img/faq/question.svg" />
         </div>
         <form id="searchForm" action="https://duckduckgo.com/" method="GET">
             <input id="q" type="text" name="q" placeholder="Type something to search using Duckduckgo" />
-            <input type="hidden" name="sites" value="(ceno.network OR ceno.website OR ceno.app)">
-            <button type="submit">Search</button>
+            <input type="hidden" name="sites" value="(ceno.network OU ceno.website OU ceno.app)">
+            <button type="submit">Chercher</button>
         </form>
         <div class="link-container">
-            <a href="../user-manual/@LANG@"><div>Read user manual</div></a>
-            <a href="https://gitlab.com/equalitie/ouinet/-/blob/main/doc/ouinet-network-whitepaper.md"><div>Read technical, in-depth whitepaper</div></a>
-            <a href="TODO" hidden><div>Read quick-start guide</div></a>
+            <a href="../user-manual/@LANG@"><div>Lire le manuel de l'utilisateur</div></a>
+            <a href="https://gitlab.com/equalitie/ouinet/-/blob/main/doc/ouinet-network-whitepaper.md"><div>Lire le livre blanc technique et approfondi</div></a>
+            <a href="TODO" hidden><div>Lire le guide de démarrage rapide</div></a>
         </div>
     </section>
     <section class="fff-bg">
@@ -43,7 +43,7 @@
                 <h3>Risques pour les utilisateurs</h3>
                 <p>Chaque technologie traitant de cas d’utilisation sensibles présente ses avantages et ses risques. De par sa conception, Ceno utilise le réseau public BitTorrent pour une grande partie de ses besoins de routage et de stockage de données. Chaque fois que vous demandez ou partagez un élément de contenu sur le réseau BitTorrent (mode public), vous créez un enregistrement qui associe votre adresse IP à un élément de contenu récupéré d'un site Web particulier. Par exemple, n'importe qui peut interroger le réseau BitTorrent pour obtenir une liste d'adresses IP associées à <i>website.com</i>.</p>
                 <p>Les utilisateurs partageant le contenu récupéré avec d'autres peuvent également encourir des frais de données supplémentaires lorsque le contenu est copié de leur appareil vers l'appareil d'autres utilisateurs de Ceno.</p>
-                <p>In response to these risks, we created a ‘<strong>Personal</strong> mode' for Ceno users where the service does not interact with the BitTorrent network. We recommend this mode for users who do not want any record of their activity to appear on BitTorrent, as well for website operations that require authentication (for example, when logging into your social media accounts).</p>
+                <p>En réponse à ces risques, nous avons créé un "mode <strong>Personnel</strong>" pour les utilisateurs de Ceno dans lequel le service n'interagit pas avec le réseau BitTorrent. Nous recommandons ce mode aux utilisateurs qui ne souhaitent qu'aucun enregistrement de leur activité apparaisse sur BitTorrent, ainsi que pour les opérations sur des sites web qui nécessitent une authentification (par exemple, lors de la connexion à vos comptes de réseaux sociaux).</p>
                 <p>Vous pouvez facilement basculer entre les onglets <strong>Public</strong> et <strong>Personnel</strong> de la même manière que vous basculez entre les onglets Normal et Privé/Incognito sur votre navigateur actuel.</p>
                 <p>Les injecteurs peuvent également voir les demandes de contenu sur le réseau, y compris l'adresse IP de l'utilisateur qui fait la demande et le nom du site web proposant le contenu souhaité. Les injecteurs sont un composant réseau nécessaire pour 1) introduire du contenu Web dans un réseau décentralisé et 2) authentifier l'intégrité du contenu introduit. Sur le réseau Ceno, les injecteurs sont gérés et gérés par l'équipe Ceno. Nous supprimons périodiquement tous les journaux d'accès.</p>
                 <h3 id="bridgemode">Risques pour les opérateurs de ponts</h3>
