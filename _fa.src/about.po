@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-12 14:01-0400\n"
-"PO-Revision-Date: 2025-05-06 21:18+0000\n"
-"Last-Translator: Grant Gallo <grant@equalitie.org>\n"
+"PO-Revision-Date: 2025-05-14 19:12+0000\n"
+"Last-Translator: Mehdi Oloomi <mehdi@equalitie.org>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-about/fa/>\n"
 "Language: fa\n"
@@ -21,8 +21,8 @@ msgstr "سنو اینترنتی بی‌مرز می‌سازد"
 #: about.html%2Bmain.section.div.p:5-13
 msgid "Our motto is ‘Share the Web!' because that is what our users do."
 msgstr ""
-"شعار ما این است: «وب را دست‌به‌دست کن!» زیرا این همان کاری است که مردم به کمک "
-"سنو انجام می‌دهند."
+"شعار ما این است: «وب را دست‌به‌دست کن!» چون این همان کاری است که کاربران به "
+"کمک سنو انجام می‌دهند."
 
 #: about.html%2Bmain.section.div.p:12-13
 msgid ""
@@ -32,11 +32,11 @@ msgid ""
 "People using Ceno Browser are able to access a library of saved internet "
 "content that continues to be available during service interruptions."
 msgstr ""
-"برای افرادی که با محدودیت‌های اینترنت مواجه هستند ابزارهای زیادی وجود دارد، "
-"اما این ابزارها اغلب در هنگام قطعی اینترنت، انسداد شبکه، از کار افتادن VPN‌ها "
-"و دیگر اختلالات کمکی نمی‌کنند.  اما سِنو فرق دارد. افرادی که از مرورگر سِنو استفاده می‌کنند، می‌توانند به "
+"برای افرادی که با محدودیت‌های اینترنت مواجه‌اند ابزارهای زیادی وجود دارد، اما "
+"این ابزارها اغلب در هنگام قطعی اینترنت، انسداد شبکه، از کار افتادن VPN‌ها و "
+"دیگر اختلالات کارساز نیستند. اما سنو فرق دارد. کاربران سنو، می‌توانند به "
 "کتابخانه‌ای از محتوای ذخیره‌شده اینترنت دسترسی داشته باشند که حتی در زمان "
-"اختلال نیز در دسترس باشد."
+"اختلال نیز در دسترس است."
 
 #: about.html%2Bmain.section.div.div.div.p:16-21
 msgid ""
@@ -51,20 +51,20 @@ msgid ""
 msgstr ""
 "اینجاست که دست‌به‌دست کردن وب معنا پیدا می‌کند: کاربرانی که به محتوا یا یک شبکه "
 "پایدار دسترسی دارند، با جمع‌آوری و اشتراک‌گذاری محتوا، به کمک کسانی می‌آیند که "
-"دسترسی ندارند. برای مثال، یک کاربر سِنو در آذربایجان می‌تواند یک مقاله "
-"مسدودشده را بخواند اگر کاربر دیگری در ایتالیا همان مقاله را در مرورگر خود "
-"باز کرده باشد.  این امکان از طریق کاربرانی میسر شده که سِنو را از کشورهایی با دسترسی قابل "
-"اعتمادتر و بازتر به اینترنت اجرا می‌کنند – ما این کاربران را «پل» می‌نامیم. "
-"پل‌های ارتباطی می‌توانند محتوای اینترنت را با افرادی که از سِنو در شبکه‌های "
-"به‌شدت محدودشده استفاده می‌کنند، به اشتراک بگذارند."
+"از دسترسی محروم‌اند. برای مثال، <b>یک کاربر سِنو در کشور آذربایجان می‌تواند یک "
+"مقاله مسدودشده را بخواند اگر کاربر دیگری در ایتالیا همان مقاله را در مرورگر "
+"خود باز کرده باشد.</b> این امکان از طریق کاربرانی میسر شده که سِنو را از "
+"کشورهایی با دسترسی قابل اعتمادتر و بازتر به اینترنت اجرا می‌کنند – ما این "
+"کاربران را «<b>پل</b>» می‌نامیم. پل‌های ارتباطی می‌توانند محتوای اینترنت را با "
+"کاربران سِنو در شبکه‌های شدیدا محدود به اشتراک بگذارند."
 
 #: about.html%2Bmain.section.div.div.div.div.a.div:19-89
 msgid "Become a bridge"
-msgstr "ببینید سِنو چگونه کار می‌کند"
+msgstr "یک پل اتصال بسازید"
 
 #: about.html%2Bmain.section.div.div.div.div.a.div:20-67
 msgid "Learn how Ceno works"
-msgstr "یک پل اتصال بسازید"
+msgstr "ببینید سِنو چگونه کار می‌کند"
 
 #: about.html%2Bmain.section.div.h2:28-13
 msgid "The team behind Ceno"
@@ -78,10 +78,11 @@ msgid ""
 "of experience creating and advancing tools to protect freedom of speech, "
 "facilitate information exchange, and promote self-expression on the internet."
 msgstr ""
-"سِنو توسط سازمان غیرانتفاعی کانادایی eQualitie در حمایت از مواد ۱۸، ۱۹ و ۲۰ "
-"اعلامیه جهانی حقوق بشر ساخته شده و نگهداری می‌شود. ما بیش از ده سال تجربه را "
-"در ایجاد و ارتقای ابزارهایی برای محافظت از آزادی بیان، تسهیل تبادل اطلاعات، "
-"و ترویج خودبیانگری در اینترنت پشت سر گذاشته‌ایم."
+"سِنو توسط سازمان غیرانتفاعی کانادایی <a href=\"https://equalitie.org\""
+">eQualitie</a> در حمایت از مواد ۱۸، ۱۹ و ۲۰ اعلامیه جهانی حقوق بشر ساخته شده "
+"و نگهداری می‌شود. ما بیش از ده سال تجربه برای ایجاد و ارتقای ابزارهای محافظت "
+"از آزادی بیان، تسهیل تبادل اطلاعات، و ترویج خودبیانگری در اینترنت پشت سر "
+"گذاشته‌ایم."
 
 #: about.html%2Bmain.section.div.div.p:31-17
 msgid ""
@@ -91,8 +92,9 @@ msgid ""
 "re-create the entire network yourself!"
 msgstr ""
 "سِنو – و تمام اجزای همراه این ابزار که با هم یک شبکه غیرمتمرکز از کاربران "
-"همتا و گره‌ها را ایجاد می‌کنند – یک نرم‌افزار رایگان و متن‌باز است. می‌توانید کد "
-"ما را بررسی کنید یا کل شبکه را خودتان بازسازی کنید!"
+"همتا و گره‌ها را ایجاد می‌کنند – نرم‌افزاری رایگان و متن‌باز است. می‌توانید <a "
+"href=\"https://gitlab.com/censorship-no\">کد ما را بررسی کنید</a> یا کل شبکه "
+"را خودتان بازسازی کنید!"
 
 #: about.html%2Bmain.section.div.div.h2:44-17
 msgid "Is Ceno for me?"
@@ -104,7 +106,7 @@ msgid ""
 "shares many of the same functions and features."
 msgstr ""
 "سِنو به کار همه می‌آید. این مرورگر می‌تواند جایگزین مرورگر فعلی موبایل‌تان شود، "
-"زیرا بسیاری از عملکردها و ویژگی‌های مشابه را دارد."
+"زیرا بسیاری از عملکردها و ویژگی‌های مشابه آن را دارد."
 
 #: about.html%2Bmain.section.div.div.div.p:47-21
 msgid ""
@@ -115,7 +117,7 @@ msgid ""
 msgstr ""
 "اگر در منطقه‌ای با دسترسی آزاد به اینترنت از سِنو استفاده می‌کنید، محتوا را "
 "همان ‌طور که در یک مرورگر معمولی بارگذاری می‌شود مشاهده خواهید کرد. مزیت سنو "
-"این است که می‌توانید هنگام مرور، با تبدیل شدن به یک پل، به سایر کاربران سِنو "
+"این است که می‌توانید هنگام مرور، با تبدیل شدن به یک پل به سایر کاربران سِنو "
 "کمک کنید."
 
 #: about.html%2Bmain.section.div.div.div.p:48-21
@@ -124,53 +126,52 @@ msgid ""
 "connectivity issues."
 msgstr ""
 "سِنو به‌ویژه برای افرادی که با سانسور اینترنت یا مشکلات اتصال مواجه هستند مفید "
-"است. برای آشنایی با شرایطی که سِنو می‌تواند به‌طور خاص کمک‌کننده باشد، نمونه "
-"تجربه کاربران ما را بخوانید."
+"است."
 
 #: about.html%2Bmain.section.div.div:54-13
 msgctxt "./about.html+main.section.div.div:54-13"
 msgid "Citizen"
-msgstr ""
+msgstr "شهروند"
 
 #: about.html%2Bmain.section.div.div:58-13
 msgctxt "./about.html+main.section.div.div:58-13"
 msgid "Student"
-msgstr ""
+msgstr "دانشجو"
 
 #: about.html%2Bmain.section.div.div:62-13
 msgid "Human rights defender"
-msgstr ""
+msgstr "فعال حقوق بشر"
 
 #: about.html%2Bmain.section.div.div:66-13
 msgctxt "./about.html+main.section.div.div:66-13"
 msgid "Journalist"
-msgstr ""
+msgstr "روزنامه‌نگار"
 
 #: about.html%2Bmain.section.div.div:70-13
 msgctxt "./about.html+main.section.div.div:70-13"
 msgid "Technologist"
-msgstr ""
+msgstr "کارشناس فناوری"
 
 #: about.html%2Bmain.section.div.div:74-13
 msgid "Diaspora user"
-msgstr ""
+msgstr "کاربر خارج‌نشین"
 
 #: about.html%2Bmain.section.div.div.div:79-17
 msgctxt "./about.html+main.section.div.div.div:79-17"
 msgid "Citizen"
-msgstr ""
+msgstr "شهروند"
 
 #: about.html%2Bmain.section.div.div.div:83-17
 msgctxt "./about.html+main.section.div.div.div:83-17"
 msgid "Student"
-msgstr ""
+msgstr "دانشجو"
 
 #: about.html%2Bmain.section.div.div.div:87-17
 msgctxt "./about.html+main.section.div.div.div:87-17"
 msgid "Technologist"
-msgstr ""
+msgstr "کارشناس فناوری"
 
 #: about.html%2Bmain.section.div.div.div:91-17
 msgctxt "./about.html+main.section.div.div.div:91-17"
 msgid "Journalist"
-msgstr ""
+msgstr "روزنامه‌نگار"
