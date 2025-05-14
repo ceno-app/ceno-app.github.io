@@ -1,19 +1,18 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 13:34-0400\n"
-"PO-Revision-Date: 2025-04-22 05:36+0000\n"
+"POT-Creation-Date: 2025-05-14 16:11-0400\n"
+"PO-Revision-Date: 2025-05-14 21:11+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-privacy-policy/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: ENCODING\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: privacy_policy.html%2Btitle:1-1
 msgid "Ceno Browser | Privacy Policy"
@@ -257,8 +256,8 @@ msgstr ""
 
 #: privacy_policy.html%2Bsection.div.p:59-1
 msgid ""
-"See the <a href=\"https://censorship.no//support\">FAQ</a> or <a "
-"href=\"https://censorship.no/user-manual/\">User Manual</a> for more details "
+"See the <a href=\"https://ceno.app/en/support.html\">FAQ</a> or <a "
+"href=\"https://ceno.app/user-manual/en/\">User Manual</a> for more details "
 "on Ceno Browser usage. eQualitie is not responsible for content shared and "
 "distributed on other servers."
 msgstr ""
@@ -321,18 +320,22 @@ msgid ""
 "aggregated into broader issues, and are deleted after the above retention "
 "period. Issues are deleted when all associated events are deleted."
 msgstr ""
+"Sentry conserve les données d'événements en production pendant 90 jours. Les "
+"événements individuels sont regroupés en questions plus larges et sont "
+"supprimés après la période de conservation ci-dessus. Les questions sont "
+"supprimées lorsque tous les événements associés sont supprimés."
 
 #: privacy_policy.html%2Bsection.div.h3:80-1
 msgid "3.5 Cookies"
-msgstr ""
+msgstr "3.5 Cookies"
 
 #: privacy_policy.html%2Bsection.div.p:82-1
 msgid "The Ceno Browser app does not use cookies."
-msgstr ""
+msgstr "L'application Ceno Browser n'utilise pas de cookies."
 
 #: privacy_policy.html%2Bsection.div.h3:84-1
 msgid "3.6 Links to Other Sites"
-msgstr ""
+msgstr "3.6 Liens vers d'autres sites"
 
 #: privacy_policy.html%2Bsection.div.p:86-1
 msgid ""
@@ -341,57 +344,74 @@ msgid ""
 "and we do not make any representations or warranties regarding their "
 "content, security, or privacy practices."
 msgstr ""
+"Ce service peut contenir des liens vers des sites Web ou des services "
+"exploités par des tiers. Ces sites externes ne sont pas contrôlés ou "
+"surveillés par eQualitie, et nous ne faisons aucune représentation ou "
+"garantie concernant leur contenu, leur sécurité ou leurs pratiques de "
+"confidentialité."
 
 #: privacy_policy.html%2Bsection.div.p:88-1
 msgid "By clicking on a third-party link, you acknowledge and agree that:"
-msgstr ""
+msgstr "En cliquant sur un lien tiers, vous reconnaissez et acceptez que :"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:90-1
 msgid ""
 "Your interactions with third-party sites are governed solely by their "
 "respective terms of use and privacy policies."
 msgstr ""
+"Vos interactions avec des sites tiers sont régies uniquement par leurs "
+"conditions d'utilisation respectives et leurs politiques de confidentialité."
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:91-1
 msgid ""
 "eQualitie is not responsible for any content, data collection, or practices "
 "of third-party websites or services."
 msgstr ""
+"eQualitie n'est pas responsable de tout contenu, collecte de données ou "
+"pratique de sites Web ou de services tiers."
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:92-1
 msgid "Visiting external sites linked from Ceno is entirely at your own risk."
-msgstr ""
+msgstr "Visiter des sites externes liés à Ceno est entièrement à vos risques."
 
 #: privacy_policy.html%2Bsection.div.p:94-1
 msgid "We strongly recommend that you:"
-msgstr ""
+msgstr "Nous vous recommandons fortement:"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:96-1
 msgid ""
 "Exercise caution when clicking on links to unfamiliar or untrusted sites."
 msgstr ""
+"Exercer la prudence en cliquant sur les liens vers des sites non familiers "
+"ou non confinés."
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:97-1
 msgid ""
 "Review the privacy policies and terms of use of any third-party website you "
 "visit."
 msgstr ""
+"Consultez les politiques de confidentialité et les conditions d'utilisation "
+"de tout site Web tiers que vous visitez."
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:98-1
 msgid ""
 "Refrain from providing personal or sensitive information to external sites "
 "unless you are confident in their security and intent."
 msgstr ""
+"Ne pas fournir de renseignements personnels ou sensibles à des sites "
+"externes, sauf si vous êtes confiant dans leur sécurité et leur intention."
 
 #: privacy_policy.html%2Bsection.div.p:100-1
 msgid ""
 "eQualitie disclaims all liability for any harm, loss, or damage arising from "
 "your use of third-party links or services."
 msgstr ""
+"eQualitie décline toute responsabilité pour tout dommage, perte ou dommage "
+"découlant de votre utilisation de liens ou de services tiers."
 
 #: privacy_policy.html%2Bsection.div.h3:102-1
 msgid "3.7 Children's Privacy"
-msgstr ""
+msgstr "3.7 Protection des enfants"
 
 #: privacy_policy.html%2Bsection.div.p:104-1
 msgid ""
@@ -408,30 +428,48 @@ msgid ""
 "information in your country (in some countries we may allow your parent or "
 "guardian to do so on your behalf)."
 msgstr ""
+"Nous ne recueillons pas sciemment les informations personnelles "
+"identifiables des enfants. Nous encourageons tous les enfants à ne jamais "
+"soumettre d'informations personnelles identifiables par le biais de la "
+"demande et/ou des services. Nous encourageons les parents et les tuteurs "
+"légaux à surveiller leurs enfants Utilisation de l'Internet et pour aider à "
+"faire respecter cette Politique en instruisant leurs enfants à ne jamais "
+"fournir d'informations personnelles identifiables par l'intermédiaire de la "
+"Application et/ou des Services sans leur permission. Si vous avez des "
+"raisons de croire qu'un enfant nous a fourni des renseignements personnels "
+"identifiables par l'entremise de la demande et/ou des services, veuillez "
+"nous contacter. Vous devez également avoir au moins 16 ans pour consentir au "
+"traitement de vos renseignements personnels identifiables dans votre pays "
+"(dans certains pays, nous pouvons permettre à votre parent ou tuteur de le "
+"faire en votre nom)."
 
 #: privacy_policy.html%2Bsection.div.h3:106-1
 msgid "3.8 Changes to these Terms"
-msgstr ""
+msgstr "3.8 Modifications aux présentes conditions"
 
 #: privacy_policy.html%2Bsection.div.p:108-1
 msgid ""
 "We may update these Terms from time to time. Thus, you are advised to review "
 "this page periodically for any changes."
 msgstr ""
+"Nous pouvons mettre à jour ces Conditions de temps à autre. Ainsi, il vous "
+"est conseillé de revoir cette page périodiquement pour tout changement."
 
 #: privacy_policy.html%2Bsection.div.p:110-1
 msgid "This policy is effective as of 2024-12-18."
-msgstr ""
+msgstr "Cette politique est en vigueur à compter de 2024-12-18."
 
 #: privacy_policy.html%2Bsection.div.h2:112-1
 msgid "4. Glossary"
-msgstr ""
+msgstr "4. Glossaire"
 
 #: privacy_policy.html%2Bsection.div.p:114-1
 msgid ""
 "<b>Bootstrap Servers:</b> Servers used to help your device get into the "
 "BitTorrent network."
 msgstr ""
+"<b>Bootstrap Servers:</b> Les serveurs utilisés pour aider votre appareil à "
+"accéder au réseau BitTorrent."
 
 #: privacy_policy.html%2Bsection.div.p:116-1
 msgid ""
@@ -439,18 +477,28 @@ msgid ""
 "running Ceno Browser that serve to route web content requests if other "
 "connectivity mechanisms are inaccessible or unavailable."
 msgstr ""
+"<b>Bridges:</b> Serveurs (y compris les appareils d'utilisateurs si le mode "
+"pont est activé) utilisant Ceno Browser qui servent à l'acheminement des "
+"requêtes de contenu web si d'autres mécanismes de connectivité sont "
+"inaccessibles ou indisponibles."
 
 #: privacy_policy.html%2Bsection.div.p:118-1
 msgid ""
 "<b>Injectors:</b> Servers run by eQualitie that route web content from "
 "origin servers to Ceno users' devices requesting that content."
 msgstr ""
+"<b>Injecteurs:</b> Les serveurs exécutent par eQualitie que routent le "
+"contenu web des serveurs d'origine vers les appareils d'utilisateurs Ceno "
+"demandant ce contenu."
 
 #: privacy_policy.html%2Bsection.div.p:120-1
 msgid ""
 "<b>Personal Mode:</b> Browsing activity in Personal Mode is not shared with "
 "anyone else. Web content is securely retrieved from origin or via Injectors."
 msgstr ""
+"<b> Mode personnel:</b> L'activité de croissance en mode personnel n'est "
+"partagée avec personne d'autre. Le contenu Web est récupéré en toute "
+"sécurité depuis l'origine ou via Injectors."
 
 #: privacy_policy.html%2Bsection.div.p:122-1
 msgid ""
@@ -459,13 +507,21 @@ msgid ""
 "this content with other Ceno users via the BitTorrent network, and leaves a "
 "public record of your device's IP address and content retrieved."
 msgstr ""
+"<b> Mode public:</b> L'activité de navigation en mode public utilise toutes "
+"les méthodes de connectivité disponibles pour récupérer le contenu Web du "
+"réseau Ceno, partage ce contenu avec d'autres utilisateurs Ceno via le "
+"réseau BitTorrent et laisse un enregistrement public de l'adresse IP et du "
+"contenu de votre appareil récupérés."
 
 #: privacy_policy.html%2Bsection.div.h2:124-1
 msgid "Contact Us"
-msgstr ""
+msgstr "Nous contacter"
 
 #: privacy_policy.html%2Bsection.div.p:125-1
 msgid ""
 "If you have any questions or suggestions about this Privacy Policy, do not "
 "hesitate to contact us at: support [at] censorship [dot] no."
 msgstr ""
+"Si vous avez des questions ou des suggestions à propos de cette Politique de "
+"confidentialité, n'hésitez pas à nous contacter à : support [at] censure "
+"[dot] no."

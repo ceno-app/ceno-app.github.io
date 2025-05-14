@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-09 13:34-0400\n"
-"PO-Revision-Date: 2025-05-12 17:53+0000\n"
-"Last-Translator: Kaya Zeren <kayazeren@gmail.com>\n"
+"POT-Creation-Date: 2025-05-14 16:11-0400\n"
+"PO-Revision-Date: 2025-05-14 21:11+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-404/tr/>\n"
 "Language: tr\n"
@@ -19,21 +19,19 @@ msgid "Sorry, we can't find the page you're looking for"
 msgstr "Ne yazık ki, aradığınız sayfayı bulamıyoruz"
 
 #: 404.html%2Bdiv.div.p:4-9
-#, fuzzy
-#| msgid ""
-#| "That link didn't work. You can return to the <a href=\"index."
-#| "html\">homepage</a> or get <a href=\"support.html\">support</a>."
 msgid ""
 "That link didn't work. You can return to the <a href=\"index."
 "html\">homepage</a> or get <a href=\"/en/support.html\">support</a>."
 msgstr ""
-"Bu bağlantı çalışmıyor. <a href=\"index.html\">Giriş</a> ya da<a "
-"href=\"support.html\">yardım</a> sayfasına dönebilirsiniz."
+"Bu bağlantı çalışmıyor. <a href=\"index.html\">Giriş</a> ya da<a href=\"/tr/"
+"support.html\">destek</a> sayfasına dönebilirsiniz."
 
 #: 404.html%2Bdiv.div.a[title]:6-9
 msgid "Get Ceno"
 msgstr "Ceno edinin"
 
 #: 404.html%2Bdiv.div:5-53
-msgid "Go to censorship.no"
+#, fuzzy
+#| msgid "Go to censorship.no"
+msgid "Go to ceno.app"
 msgstr "censorship.no sitesine git"
