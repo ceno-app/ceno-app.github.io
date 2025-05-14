@@ -237,8 +237,8 @@ msgstr ""
 
 #: privacy_policy.html%2Bsection.div.p:59-1
 msgid ""
-"See the <a href=\"https://censorship.no//support\">FAQ</a> or <a "
-"href=\"https://censorship.no/user-manual/\">User Manual</a> for more details "
+"See the <a href=\"https://ceno.app/en/support.html\">FAQ</a> or <a "
+"href=\"https://ceno.app/user-manual/en/\">User Manual</a> for more details "
 "on Ceno Browser usage. eQualitie is not responsible for content shared and "
 "distributed on other servers."
 msgstr ""
