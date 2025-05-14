@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-14 16:11-0400\n"
-"PO-Revision-Date: 2025-05-14 20:09+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2025-05-14 21:09+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-index/fr/>\n"
 "Language: fr\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #: index.html%2Bmain.section.div.div:5-7
 msgid "Share the web!"
-msgstr "Partagez le web !"
+msgstr "Partagez le Web"
 
 #: index.html%2Bmain.section.div.p:6-7
 msgid ""
@@ -156,7 +156,7 @@ msgstr ""
 
 #: index.html%2Bmain.section.div.div.a.div:97-56
 msgid "Get Ceno"
-msgstr "Va chercher Ceno"
+msgstr "Obtenir Ceno"
 
 #: index.html%2Bmain.section.div.h2:107-7
 msgid "What Ceno users say"
