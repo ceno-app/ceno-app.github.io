@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-14 16:11-0400\n"
-"PO-Revision-Date: 2025-05-14 20:09+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2025-05-14 21:11+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-latest/fr/>\n"
 "Language: fr\n"
@@ -24,11 +24,11 @@ msgstr "Communiqué de presse"
 
 #: latest/index.html%2Bmain.section.article.div:11-5
 msgid "December 15, 2022"
-msgstr "15 décembre 2022"
+msgstr "15 décembre 2022"
 
 #: latest/index.html%2Bmain.section.article.h1:12-5
 msgid "Ceno proves itself in Iran during Internet shutdowns"
-msgstr "Ceno se prouve en Iran pendant Arrêts Internet"
+msgstr "Ceno fait ses preuves en Iran lors des coupures d’Internet"
 
 #: latest/index.html%2Bmain.section.article.div:15-5
 msgid ""
