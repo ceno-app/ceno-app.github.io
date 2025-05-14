@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-12 14:01-0400\n"
-"PO-Revision-Date: 2025-05-06 19:53+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2025-05-14 20:09+0000\n"
+"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-index/fr/>\n"
 "Language: fr\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #: index.html%2Bmain.section.div.div:5-7
 msgid "Share the web!"
-msgstr "Partagez le Web"
+msgstr "Partagez le web !"
 
 #: index.html%2Bmain.section.div.p:6-7
 msgid ""
@@ -24,38 +24,47 @@ msgid ""
 "information, even when your internet access has been interrupted or cut off. "
 "With the help of other users, Ceno helps you sidestep internet censorship."
 msgstr ""
+"Ceno est un navigateur mobile gratuit qui vous permet d'accéder et de "
+"partager des informations Web, même lorsque votre accès Internet a été "
+"interrompu ou coupé. Avec l'aide d'autres utilisateurs, Ceno vous aide à la "
+"censure sur Internet."
 
 #: index.html%2Bmain.section.div:6-232
 msgid "Join 566,565 other users"
-msgstr ""
+msgstr "Rejoignez 566,565 autres utilisateurs"
 
 #: index.html%2Bmain.section.div.h2:23-7
 msgid "Ceno in Media"
-msgstr ""
+msgstr "Ceno in Media"
 
 #: index.html%2Bmain.div.section.div.h1:35-9
 msgid "Browse with a superpower"
-msgstr ""
+msgstr "Parcourir avec une superpuissance"
 
 #: index.html%2Bmain.div.section.div.p:36-9
 msgid ""
 "Ceno is the world's first browser that allows people to access blocked "
 "content with the help of other Ceno users."
 msgstr ""
+"Ceno est le premier navigateur du monde qui permet aux gens d'accéder au "
+"contenu bloqué avec l'aide d'autres utilisateurs de Ceno."
 
 #: index.html%2Bmain.div.section.div.ul.li:38-11
 msgid ""
 "Is your internet down or censored? You can still access content with Ceno. "
 "<a href=\"/@LANG@/faq.html\">Learn how.</a>"
 msgstr ""
+"Est-ce que votre internet est en bas ou censuré ? Vous pouvez toujours "
+"accéder au contenu avec Ceno. <a href=\"/@LANG@/faq.html\">Apprenez "
+"comment.</a>"
 
 #: index.html%2Bmain.div.section.div.ul.li:39-11
 msgid "VPNs blocked? You can access the web with Ceno."
-msgstr ""
+msgstr "Les VPN bloqués ? Vous pouvez accéder au web avec Ceno."
 
 #: index.html%2Bmain.div.section.div.ul.li:40-11
 msgid "The more that people use it, the better it gets for everyone!"
-msgstr ""
+msgstr "Plus les gens l'utilisent, mieux c'est pour tout le monde!"
 
 #: index.html%2Bmain.div.section.div.div.a.div:43-58
 msgctxt "./index.html+main.div.section.div.div.a.div:43-58"
@@ -64,7 +73,7 @@ msgstr "Télécharger Ceno"
 
 #: index.html%2Bmain.div.div.section.div.h2:53-11
 msgid "Resilient"
-msgstr ""
+msgstr "Resilient"
 
 #: index.html%2Bmain.div.div.section.div.p:54-11
 msgid ""
@@ -72,10 +81,13 @@ msgid ""
 "distributed cache for availability when traditional networks are blocked or "
 "go down."
 msgstr ""
+"Les sites Web sont partagés par un réseau mondial de pairs, et stockés dans "
+"un cache distribué pour la disponibilité lorsque les réseaux traditionnels "
+"sont bloqués ou descendent."
 
 #: index.html%2Bmain.div.div.section.div.h2:58-11
 msgid "Lower data cost"
-msgstr ""
+msgstr "Coût des données"
 
 #: index.html%2Bmain.div.div.section.div.p:59-11
 msgid ""
@@ -83,10 +95,13 @@ msgid ""
 "peer-to-peer networks, while still providing you with circumvention "
 "capability."
 msgstr ""
+"Vous payez des coûts de données plus faibles parce que Ceno Browser achemine "
+"le trafic d'utilisateurs par le biais de réseaux entre pairs, tout en vous "
+"fournissant encore une capacité de contournement."
 
 #: index.html%2Bmain.div.div.section.div.h2:63-11
 msgid "Free and open source"
-msgstr ""
+msgstr "Source libre et ouverte"
 
 #: index.html%2Bmain.div.div.section.div.p:64-11
 msgid ""
@@ -94,30 +109,39 @@ msgid ""
 "ouinet.work\">Ouinet</a> that enables third party developers to incorporate "
 "the Ceno network into their apps for peer-to-peer connectivity."
 msgstr ""
+"Ceno Browser est propulsé par une bibliothèque open source appelée <a href="
+"\"https://ouinet.work\">Ouinet</a> qui permet aux développeurs tiers "
+"d'intégrer le réseau Ceno dans leurs applications pour la connectivité entre "
+"pairs."
 
 #: index.html%2Bmain.section.div.h2:73-7
 msgid "Be prepared with Ceno"
-msgstr ""
+msgstr "Soyez préparé avec Ceno"
 
 #: index.html%2Bmain.section.div.div.div.p:77-11
 msgid ""
 "Don't wait until the next time the internet is blocked to find a solution. "
 "Download Ceno now."
 msgstr ""
+"N'attendez pas la prochaine fois que l'Internet est bloqué pour trouver une "
+"solution. Télécharger Ceno maintenant."
 
 #: index.html%2Bmain.section.div.div.div.p:81-11
 msgid "Help yourself and others. Keep Ceno installed and use it frequently."
 msgstr ""
+"Aidez-vous et les autres. Gardez Ceno installé et utilisez-le fréquemment."
 
 #: index.html%2Bmain.section.div.div.div.p:85-11
 msgid ""
 "Share websites you access to help build resilience against internet "
 "blockages."
 msgstr ""
+"Partagez des sites Web que vous accédez pour renforcer la résilience contre "
+"les blocages Internet."
 
 #: index.html%2Bmain.section.div.div.a.div:89-51
 msgid "Learn how it works"
-msgstr ""
+msgstr "Apprenez comment ça marche"
 
 #: index.html%2Bmain.section.div.div:95-7
 msgid ""
@@ -125,14 +149,18 @@ msgid ""
 "profit creating free & open source tools to protect freedom of speech, "
 "facilitate information exchange, & promote self-expression on the internet."
 msgstr ""
+"Ceno est conçu par Őa href=\"https://equalitie.org\"CollectionsQualitie /a "
+"Epi, un outil à but non lucratif créant des outils libres et ouverts pour "
+"protéger la liberté de parole, faciliter l'échange d'informations, & "
+"promouvoir l'auto-expression sur Internet."
 
 #: index.html%2Bmain.section.div.div.a.div:97-56
 msgid "Get Ceno"
-msgstr "Obtenir Ceno"
+msgstr "Va chercher Ceno"
 
 #: index.html%2Bmain.section.div.h2:107-7
 msgid "What Ceno users say"
-msgstr ""
+msgstr "Ce que les utilisateurs de Ceno disent"
 
 #: index.html%2Bmain.section.div.div.div.p:110-11
 msgid ""
@@ -140,10 +168,14 @@ msgid ""
 "think people of the free world should also use it more often to create a "
 "cache of pages. loads faster than other browsers.\""
 msgstr ""
+"\"Un programme extrêmement important. et non seulement pour les pays "
+"totalitaires, je pense que les gens du monde libre devraient aussi "
+"l'utiliser plus souvent pour créer un cache de pages. charge plus vite que "
+"les autres navigateurs.\""
 
 #: index.html%2Bmain.section.div.div.div.div:111-11
 msgid "Yuriy Karetin"
-msgstr ""
+msgstr "Yuriy Karetin"
 
 #: index.html%2Bmain.section.div.div.div.p:117-11
 msgid ""
@@ -152,10 +184,15 @@ msgid ""
 "is blocked here for more than a year now because of a single picture, so "
 "great to see album covers there again - and without VPN!\""
 msgstr ""
+"\"Une technologie impressionnante, c'est gratuit et fonctionne bien en "
+"Russie où beaucoup de sites sont bloqués. L'ensemble de l'hébergement "
+"d'images d'une énorme plateforme musicale Bandcamp est bloqué ici depuis "
+"plus d'un an maintenant à cause d'une seule image, si génial de voir des "
+"couvertures d'album là encore - et sans VPN!\""
 
 #: index.html%2Bmain.section.div.div.div.div:118-11
 msgid "Tim Six"
-msgstr ""
+msgstr "Tim Six"
 
 #: index.html%2Bmain.section.div.div.a.div:125-56
 msgctxt "./index.html+main.section.div.div.a.div:125-56"
