@@ -14,23 +14,23 @@ msgstr ""
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
 "X-Generator: Weblate 5.12-dev\n"
 
-#: ./case-studies/index.html%2Bmain.h1:2-1
+#: case-studies/index.html%2Bmain.h1:2-1
 msgid "case studies"
 msgstr "études de cas"
 
-#: ./case-studies/index.html%2Bmain.section.article:9-5
+#: case-studies/index.html%2Bmain.section.article:9-5
 msgid "Case Study"
 msgstr "Étude de cas"
 
-#: ./case-studies/index.html%2Bmain.section.article.div:11-5
+#: case-studies/index.html%2Bmain.section.article.div:11-5
 msgid "December, 2022"
 msgstr "Décembre 2022"
 
-#: ./case-studies/index.html%2Bmain.section.article.h1:12-5
+#: case-studies/index.html%2Bmain.section.article.h1:12-5
 msgid "Highlights from the Ground in Iran"
 msgstr "Faits saillants du sol en Iran"
 
-#: ./case-studies/index.html%2Bmain.section.article.div:15-5
+#: case-studies/index.html%2Bmain.section.article.div:15-5
 msgid ""
 "User experiences have varied from region to region as ISPs have applied "
 "Internet censorship and disruption measures inconsistently. Where Iran’s "
@@ -45,6 +45,6 @@ msgstr ""
 "utilisateurs de Ceno peuvent toujours accéder au contenu web bloqué. Les "
 "utilisateurs ont pu accéder.."
 
-#: ./case-studies/index.html%2Bmain.section.article:15-337
+#: case-studies/index.html%2Bmain.section.article:15-337
 msgid "Read more"
 msgstr "Lire la suite"
