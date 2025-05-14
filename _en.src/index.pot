@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-14 17:29-0400\n"
+"POT-Creation-Date: 2025-05-14 17:37-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -32,7 +32,7 @@ msgid "Ceno in Media"
 msgstr ""
 
 #: ./index.html%2Bmain.div.section.div.h1:35-9
-msgid "Browse with a superpower"
+msgid "Browser with a superpower"
 msgstr ""
 
 #: ./index.html%2Bmain.div.section.div.p:36-9
