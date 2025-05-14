@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-12 14:01-0400\n"
-"PO-Revision-Date: 2025-05-06 21:18+0000\n"
-"Last-Translator: Grant Gallo <grant@equalitie.org>\n"
+"PO-Revision-Date: 2025-05-14 19:12+0000\n"
+"Last-Translator: Mehdi Oloomi <mehdi@equalitie.org>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-community/fa/>\n"
 "Language: fa\n"
@@ -31,27 +31,29 @@ msgid ""
 "internet content with others."
 msgstr ""
 "افرادی که در کشورها یا مناطقی با دسترسی آزاد و پایدار به اینترنت ساکن‌اند و "
-"از سِنو استفاده می‌کنند، می‌توانند با تبدیل شدن به یک «پل» به کسانی که در "
-"شبکه‌های به‌شدت محدود قرار دارند کمک کنند تا به اینترنت دسترسی داشته باشند. "
-"اجرای پل اقدامی بسیار ساده و در عین حال قدرتمند است که به شما امکان می‌دهد "
-"محتوای اینترنت را با دیگران به اشتراک بگذارید."
+"از سِنو استفاده می‌کنند، می‌توانند با تبدیل شدن به یک «پل» به کاربران شبکه‌های "
+"محدودشده کمک کنند تا به اینترنت دسترسی داشته باشند. اجرای پل اقدامی بسیار "
+"ساده و در عین حال قدرتمند است که به شما امکان می‌دهد محتوای اینترنت را با "
+"دیگران به اشتراک بگذارید."
 
 #: community.html%2Bmain.section.div.div.p:11-17
 msgid "Learn more about becoming a Bridge."
-msgstr "درباره چگونگی تبدیل شدن به پل بیشتر بدانید"
+msgstr "درباره چگونگی تبدیل شدن به پل بیشتر بدانید."
 
 #: community.html%2Bmain.section.div.div.h4:12-17
 msgid "The simple way:"
-msgstr ""
+msgstr "روش ساده:"
 
 #: community.html%2Bmain.section.div.div.p:13-17
 msgid ""
 "Run Ceno Browser on your Android device, and/or on a spare, always-on device."
 msgstr ""
+"مرورگر سِنو را روی دستگاه اندرویدی خود یا روی یک دستگاه اضافه و همیشه روشن "
+"اجرا کنید."
 
 #: community.html%2Bmain.section.div.div.h4:14-17
 msgid "Run the Ceno Docker Client:"
-msgstr ""
+msgstr "اجرای «کلاینت داکر» سِنو:"
 
 #: community.html%2Bmain.section.div.div.ol.li:16-21
 msgid ""
@@ -59,18 +61,25 @@ msgid ""
 "> <code>sudo docker run --name ceno-client -dv ceno:/var/opt/ouinet --"
 "network host --restart unless-stopped equalitie/ceno-client</code>"
 msgstr ""
+"تنها با یک فرمان می‌توانید یک پل روی رایانه یا VPS خود راه‌اندازی کنید: <br /> "
+"<code>sudo docker run --name ceno-client -dv ceno:/var/opt/ouinet --network "
+"host --restart unless-stopped equalitie/ceno-client</code>"
 
 #: community.html%2Bmain.section.div.div.ol.li:18-21
 msgid ""
 "Open a portal to the internet: Ensure UPnP is enabled on your router, or set "
 "up port forwarding."
 msgstr ""
+"یک پورتال به اینترنت باز کنید: مطمئن شوید که UPnP روی روتر شما فعال است، یا "
+"تنظیمات انتقال پورت را انجام دهید."
 
 #: community.html%2Bmain.section.div.div.ol.li:19-21
 msgid ""
 "To see if it's working, create and open a new Firefox Profile, and set the "
 "proxy to localhost, port 8077."
 msgstr ""
+"برای اطمینان از عملکرد صحیح، یک پروفایل جدید در فایرفاکس ایجاد و باز کنید و "
+"پروکسی را روی localhost با پورت 8077 تنظیم کنید."
 
 #: community.html%2Bmain.section.div.div.ol.li:20-21
 msgid ""
@@ -78,6 +87,8 @@ msgid ""
 "settings\">Ceno Web Extension</a> and the provided certificate to test it "
 "out!"
 msgstr ""
+"<a href=\"https://gitlab.com/censorship-no/ceno-ext-settings\">افزونه وب "
+"سِنو</a> و گواهی ارائه‌شده را نصب کنید و دست به کار شوید!"
 
 #: community.html%2Bmain.section.div.div.h2:30-17
 msgid "Contribute to our code"
@@ -95,23 +106,23 @@ msgstr ""
 
 #: community.html%2Bmain.section.div.div.ul.li:33-21
 msgid "Ceno for Android"
-msgstr ""
+msgstr "سِنو برای اندروید"
 
 #: community.html%2Bmain.section.div.div.ul.li:34-21
 msgid "Ceno for Desktop"
-msgstr ""
+msgstr "سِنو برای دسکتاپ"
 
 #: community.html%2Bmain.section.div.div.ul.li:35-21
 msgid "Ceno for iOS"
-msgstr ""
+msgstr "سِنو برای iOS"
 
 #: community.html%2Bmain.section.div.div.ul.li:36-21
 msgid "Ouinet"
-msgstr "Ouinet"
+msgstr "Ouinet‌"
 
 #: community.html%2Bmain.section.div.div.ul.li:37-21
 msgid "Ceno Docker Client"
-msgstr "Ceno Docker Client"
+msgstr "Ceno Docker Client‌"
 
 #: community.html%2Bmain.section.div.div.p:39-17
 msgid ""
@@ -119,9 +130,9 @@ msgid ""
 "gitlab.com/censorship-no/ceno-archives\">previous incarnation of Ceno</a>, "
 "built on the Freenet anonymous file sharing and content publishing network."
 msgstr ""
-"همچنین ممکن است به نسخه قدیمی‌تر سِنو (که دیگر پشتیبانی نمی‌شود) علاقه‌مند باشید "
-"که بر اساس شبکه ناشناس به اشتراک‌گذاری فایل و انتشار محتوای Freenet ساخته شده "
-"بود."
+"همچنین ممکن است به <a href=\"https://gitlab.com/censorship-no/ceno-archives\""
+">نسخه قدیمی‌تر سِنو</a> (که دیگر پشتیبانی نمی‌شود) علاقه‌مند باشید که بر اساس "
+"شبکه ناشناس به اشتراک‌گذاری فایل و انتشار محتوای Freenet ساخته شده بود."
 
 #: community.html%2Bmain.section.div.div.h2:46-17
 msgid "Share your feedback"
@@ -141,7 +152,7 @@ msgstr ""
 
 #: community.html%2Bmain.section.div.div.ul.li:49-21
 msgid "Write a review on the Play Store"
-msgstr "نظر خود را در پلی استور بنویسید"
+msgstr "نظر خود را در پلی‌استور بنویسید"
 
 #: community.html%2Bmain.section.div.div.ul.li:50-21
 msgid "Get in touch with the team: support [at] censorship [dot] no"
@@ -182,7 +193,7 @@ msgstr ""
 
 #: community.html%2Bmain.section.div.div.p:71-17
 msgid "Join our Weblate"
-msgstr "بپیوندید"
+msgstr "به Weblate ما بپیوندید"
 
 #: community.html%2Bmain.section.div.div.p:72-17
 msgid ""
@@ -197,4 +208,6 @@ msgid ""
 "For more information about how to use Weblate, see <a href=\"https://docs."
 "weblate.org/en/latest/index.html\">the Weblate documentation.</a>"
 msgstr ""
-"برای اطلاعات بیشتر درباره شیوه استفاده از Weblate، مستندات Weblate را ببینید."
+"برای اطلاعات بیشتر درباره شیوه استفاده از Weblate، <a href="
+"\"https://docs.weblate.org/en/latest/index.html\">مستندات Weblate</a> را "
+"ببینید.‌"
