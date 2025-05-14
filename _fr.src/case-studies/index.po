@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-12 14:01-0400\n"
-"PO-Revision-Date: 2025-05-14 20:09+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2025-05-14 21:08+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-case-studies/fr/>\n"
 "Language: fr\n"
@@ -28,7 +28,7 @@ msgstr "Décembre 2022"
 
 #: case-studies/index.html%2Bmain.section.article.h1:12-5
 msgid "Highlights from the Ground in Iran"
-msgstr "Faits saillants du sol en Iran"
+msgstr "Faits marquants sur le terrain en Iran"
 
 #: case-studies/index.html%2Bmain.section.article.div:15-5
 msgid ""
