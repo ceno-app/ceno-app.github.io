@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-14 16:11-0400\n"
-"PO-Revision-Date: 2025-04-21 23:09+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2025-05-14 18:00-0400\n"
+"PO-Revision-Date: 2025-05-15 14:00+0000\n"
+"Last-Translator: Mehdi Oloomi <mehdi@equalitie.org>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-factsheet/fa/>\n"
 "Language: fa\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: factsheet.html%2Btitle:1-1
 msgid "Ceno Browser | Fact Sheet"
@@ -24,7 +24,7 @@ msgstr "برگه اطلاعاتی سنو"
 
 #: factsheet.html%2Bdiv.section.p:7-1
 msgid "Download PDF"
-msgstr "دانلودPDF"
+msgstr "دانلود PDF"
 
 #: factsheet.html%2Bdiv.section.h2:9-1
 msgid "Overview"
@@ -90,10 +90,10 @@ msgstr "دریافت از:"
 msgid ""
 "<a href=\"https://ceno.app/en/download.html\">Ceno website</a>, <a "
 "href=\"https://play.google.com/store/apps/details?id=ie.equalit."
-"ceno\">Google Play</a>, <a href=\"https://github.com/censorship-no/ceno-"
-"browser/releases\">Github</a>, <a href=\"https://paskoocheh.com/tools/124/"
-"android.html?\">Paskoocheh</a>, and <a href=\"https://zanga.tech/tools/166/"
-"android.html\">Zanga.tech</a>"
+"ceno\">Google Play</a>, <a href=\"https://github.com/ceno-app/ceno-android/"
+"releases\">Github</a>, <a href=\"https://paskoocheh.com/tools/124/android."
+"html?\">Paskoocheh</a>, and <a href=\"https://zanga.tech/tools/166/android."
+"html\">Zanga.tech</a>"
 msgstr ""
 "<a href=\"https://censorship.no/download\">Censorship.no</a>, <a "
 "href=\"https://play.google.com/store/apps/details?id=ie.equalit."
@@ -130,7 +130,7 @@ msgstr ""
 
 #: factsheet.html%2Bdiv.section.h3:31-2
 msgid "So what?"
-msgstr "چیستی?"
+msgstr "چیستی:"
 
 #: factsheet.html%2Bdiv.section.ul.li:33-2
 msgid ""
@@ -151,15 +151,11 @@ msgstr ""
 "طبیعی، ناآرامی، درگیری و جنگ نمی‌تواند توسط عامل خارجی به‌اجبار حذف شود"
 
 #: factsheet.html%2Bdiv.section.ul.li:35-2
-#, fuzzy
-#| msgid ""
-#| "Ceno’s p2p routing and distribution of storage can reduce bandwidth and "
-#| "energy use"
 msgid ""
 "Ceno's p2p routing and distribution of storage can reduce bandwidth and "
 "energy use"
 msgstr ""
-"مسیریابی و توزیع فضای ذخیره‌سازی همتا‌به‌همتای سنو می‌تواند مصرف پهنای باند و "
+"مسیریابی و توزیع فضای ذخیره‌سازی‌ همتا‌به‌همتای سنو می‌تواند مصرف پهنای باند و "
 "انرژی را کاهش دهد"
 
 #: factsheet.html%2Bdiv.section.ul.li:36-2
@@ -179,8 +175,9 @@ msgid ""
 "Works like BitTorrent - pulling, reserving and sharing content from many "
 "networked sources rather than from one web server source - but is a browser"
 msgstr ""
-"مانند بیت‌تورنت کار می‌کند – محتوا را به‌جای استفاده از یک منبع وب‌سرور، از طریق "
-"منابع مختلف شبکه دریافت و ذخیره می‌کند و به اشتراک می‌گذارد – اما یک مرورگر است"
+"سنو مانند بیت‌تورنت کار می‌کند – محتوا را به‌جای استفاده از یک منبع وب‌سرور، از "
+"طریق منابع مختلف شبکه دریافت و ذخیره می‌کند و به اشتراک می‌گذارد – اما یک "
+"مرورگر است"
 
 #: factsheet.html%2Bdiv.section.ul.li:41-2
 msgid ""
@@ -192,12 +189,13 @@ msgstr ""
 
 #: factsheet.html%2Bdiv.section.ul.li:42-2
 msgid "Looks and feels like other browsers"
-msgstr "ظاهر و حس استفاده آن مانند سایر مرورگرها است"
+msgstr "ظاهر و تجربه استفاده آن مانند سایر مرورگرها است"
 
 #: factsheet.html%2Bdiv.section.ul.li:43-2
 msgid ""
 "Equipped to share cached content offline and on local area networks (LANs)"
-msgstr "قادر به اشتراک‌گذاری محتوای کش‌شده به‌طور آفلاین و در شبکه‌های محلی (LAN)"
+msgstr ""
+"قادر به اشتراک‌گذاری محتوای کش‌شده به‌طور آفلاین و در شبکه‌های محلی (LAN)"
 
 #: factsheet.html%2Bdiv.section.h3:45-2
 msgid "Who is eQualitie?"
@@ -209,15 +207,15 @@ msgid ""
 "reusable systems and tools since 2010, with a focus on online privacy, "
 "resilience and self-determination"
 msgstr ""
-"شرکت فعال در حوزه امنیت دیجیتال، مستقر در شهر مونترال که از سال ۲۰۱۰ مشغول "
-"توسعه سیستم‌ها و ابزارهای متن‌باز و قابل استفاده مجدد بوده و بر حریم خصوصی "
-"آنلاین، تاب‌آوری و حق تصمیم‌گیری تمرکز داشته است"
+"یک شرکت فعال در حوزه امنیت دیجیتال، مستقر در شهر مونترال که از سال ۲۰۱۰ "
+"مشغول توسعه سیستم‌ها و ابزارهای متن‌باز و قابل استفاده مجدد بوده و بر حریم "
+"خصوصی آنلاین، تاب‌آوری و حق تصمیم‌گیری تمرکز داشته است"
 
 #: factsheet.html%2Bdiv.section.ul.li:48-2
 msgid "Maintains the <a href=\"https://deflect.ca\">Deflect.ca</a> service"
 msgstr ""
-"توسعه و نگهداری سرویس <a href=\"https://deflect.ca\">Deflect.ca</a> را بر "
-"عهده دارد"
+"این شرکت توسعه و نگهداری سرویس <a href=\"https://deflect.ca\">Deflect.ca</a> "
+"را بر عهده دارد"
 
 #: factsheet.html%2Bdiv.section.ul.li:49-2
 msgid ""
@@ -229,7 +227,7 @@ msgstr ""
 
 #: factsheet.html%2Bdiv.section.ul.li:50-2
 msgid "Founded by Dmitri Vitaliev"
-msgstr "توسط دیمیتری ویتالیف تاسیس شده است"
+msgstr "توسط دیمیتری ویتالیِف تاسیس شده است"
 
 #: factsheet.html%2Bdiv.section.h3:52-2
 msgid "In use today:"

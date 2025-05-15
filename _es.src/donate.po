@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-14 16:11-0400\n"
-"PO-Revision-Date: 2025-05-15 13:31+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"POT-Creation-Date: 2025-05-14 18:00-0400\n"
+"PO-Revision-Date: 2025-05-15 13:37+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-donate/es/>\n"
 "Language: es\n"
@@ -35,11 +35,11 @@ msgstr ""
 
 #: donate.html%2Bmain.section.div.div.div.div.h2:12-25
 msgid "Make a Donation"
-msgstr "Hacer una donación"
+msgstr "Realiza una Donación"
 
 #: donate.html%2Bmain.section.div.div.div.div.p:13-25
 msgid "Make a one-time donation using our Paypal payment portal."
-msgstr "Haga una donación única usando nuestro portal de pago Paypal."
+msgstr "Realiza una donación a través de nuestro portal de Paypal."
 
 #: donate.html%2Bmain.section.div.div.div.div.div:14-25
 msgid "Donate via PayPal"
@@ -47,26 +47,26 @@ msgstr "Donar por PayPal"
 
 #: donate.html%2Bmain.section.div.div.div.div.h2:20-25
 msgid "Become a Sponsor"
-msgstr "Convertirse en patrocinador"
+msgstr "Hágase Patrocinador(a)"
 
 #: donate.html%2Bmain.section.div.div.div.div.p:21-25
 msgid "We are currently exploring fundraising platforms and communities:"
 msgstr ""
-"Actualmente estamos explorando plataformas de recaudación de fondos y "
-"comunidades:"
+"Actualmente estamos explorando plataformas y comunidades de recaudación de "
+"fondos:"
 
 #: donate.html%2Bmain.section.div.div.div.div.div:22-25
 msgid "Sponsor on Github"
-msgstr "Sponsor on Github"
+msgstr "Patrocinio en Github"
 
 #: donate.html%2Bmain.section.div.div.div.div.h2:28-25
 msgid "Donate Bitcoin"
-msgstr "Donate Bitcoin"
+msgstr "Donación de Bitcoin"
 
 #: donate.html%2Bmain.section.div.div.div.div.p:29-25
 msgid "Our wallet address is:"
-msgstr "Nuestra dirección de la cartera es:"
+msgstr "La dirección de nuestra cartera es:"
 
 #: donate.html%2Bmain.section.div.div.div.div:29-50
 msgid "bc1q2r70hf0jks43jyykpua6uqv907zegplgfacauc"
-msgstr "bc1q2r70hf0jks43jykpua6uqv907zegplgfacauc"
+msgstr ""

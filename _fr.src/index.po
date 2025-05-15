@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-14 16:11-0400\n"
+"POT-Creation-Date: 2025-05-14 18:00-0400\n"
 "PO-Revision-Date: 2025-05-14 21:09+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/censorship-no/"
@@ -38,7 +38,9 @@ msgid "Ceno in Media"
 msgstr "Ceno in Media"
 
 #: index.html%2Bmain.div.section.div.h1:35-9
-msgid "Browse with a superpower"
+#, fuzzy
+#| msgid "Browse with a superpower"
+msgid "Browser with a superpower"
 msgstr "Parcourir avec une superpuissance"
 
 #: index.html%2Bmain.div.section.div.p:36-9

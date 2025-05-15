@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-14 16:11-0400\n"
-"PO-Revision-Date: 2025-05-14 23:11+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"POT-Creation-Date: 2025-05-14 18:00-0400\n"
+"PO-Revision-Date: 2025-05-15 13:37+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-header/fr/>\n"
 "Language: fr\n"
@@ -54,8 +54,8 @@ msgid ""
 "hreflang=\"uk\" href=\"../uk/@PAGE@.html\">Українська</a> <a class=\"navbar-"
 "item\" lang=\"ur\" hreflang=\"ur\" href=\"../ur/@PAGE@.html\">اردو</a>"
 msgstr ""
-"<a class=\"navbar-item\" lang=\"ar\" hreflang=\"ar\" href="
-"\"../ar/@PAGE@.html\">"
+"<a class=\"navbar-item\" lang=\"ar\" hreflang=\"ar\" href=\"../ar/@PAGE@."
+"html\">"
 
 #: _head.html%2Bbody.nav.div.div:53-17
 msgctxt "./_head.html+body.nav.div.div:53-17"
@@ -74,7 +74,7 @@ msgstr "Sélectionnez la langue"
 #.  TRANSLATORS: Replace with your lowercase language code. 
 #: _head.html%2Bbody.nav.div.div.div:60-17
 msgid "en"
-msgstr "en"
+msgstr "fr"
 
 #.  Sorted alphabetically by language code. 
 #.  TRANSLATORS: Please do not translate any of these. 
@@ -96,8 +96,8 @@ msgid ""
 "hreflang=\"uk\" href=\"../uk/@PAGE@.html\">Українська</a> <a class=\"navbar-"
 "item\" lang=\"ur\" hreflang=\"ur\" href=\"../ur/@PAGE@.html\">اردو</a>"
 msgstr ""
-"<a class=\"navbar-item\" lang=\"ar\" hreflang=\"ar\" href="
-"\"../ar/@PAGE@.html\">"
+"<a class=\"navbar-item\" lang=\"ar\" hreflang=\"ar\" href=\"../ar/@PAGE@."
+"html\">"
 
 #.  These spans are used to create the animated hamburger button 
 #: _head.html%2Bbody.nav.div.div:84-17
@@ -112,14 +112,14 @@ msgid ""
 "@LANG@/latest/index.html\">Latest</a> <a href=\"/@LANG@/donate."
 "html\">Donate</a>"
 msgstr ""
-"<a href=\"/@LANG@/about.html\">About</a> <a href=\"/@LANG@/community.html\""
-">Get Involved</a> <a href=\"/@LANG@/faq.html\">FAQ</a> <a href="
-"\"/@LANG@/latest/index.html\">Latest</a> <a href=\"/@LANG@/donate.html\""
-">Donate</a>"
+"<a href=\"/@LANG@/about.html\">About</a> <a href=\"/@LANG@/community."
+"html\">Get Involved</a> <a href=\"/@LANG@/faq.html\">FAQ</a> <a href=\"/"
+"@LANG@/latest/index.html\">Latest</a> <a href=\"/@LANG@/donate."
+"html\">Donate</a>"
 
 #: _head.html%2Bbody.title:105-1
 msgid "Ceno Browser | Share the Web"
-msgstr "Ceno Browser | Partager le Web"
+msgstr "Navigateur Ceno | Partager le Web"
 
 #~ msgctxt "./_head.html+html.body.nav.div.div.div.label.img[alt]:65-25"
 #~ msgid "Select language"

@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-14 16:11-0400\n"
-"PO-Revision-Date: 2025-05-14 23:11+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"POT-Creation-Date: 2025-05-14 18:00-0400\n"
+"PO-Revision-Date: 2025-05-15 13:37+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-404/fr/>\n"
 "Language: fr\n"
@@ -16,19 +16,19 @@ msgstr ""
 
 #: 404.html%2Bdiv.div.h4:3-9
 msgid "Sorry, we can't find the page you're looking for"
-msgstr "Désolé, on ne trouve pas la page que vous cherchez"
+msgstr "Désolé, nous ne trouvons pas la page que vous recherchez"
 
 #: 404.html%2Bdiv.div.p:4-9
 msgid ""
 "That link didn't work. You can return to the <a href=\"index."
 "html\">homepage</a> or get <a href=\"/en/support.html\">support</a>."
 msgstr ""
-"Ce lien n'a pas marché. Vous pouvez retourner à <a href=\"index.html\""
-">homepage</a> ou obtenir <a href=\"/en/support.html\">support</a>."
+"Ce lien n'a pas marché. Vous pouvez retourner à <a href=\"index."
+"html\">homepage</a> ou obtenir <a href=\"/en/support.html\">support</a>."
 
 #: 404.html%2Bdiv.div.a[title]:6-9
 msgid "Get Ceno"
-msgstr "Va chercher Ceno"
+msgstr "Obtenir Ceno"
 
 #: 404.html%2Bdiv.div:5-53
 msgid "Go to ceno.app"

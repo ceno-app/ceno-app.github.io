@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-14 16:11-0400\n"
-"PO-Revision-Date: 2025-05-14 23:11+0000\n"
+"POT-Creation-Date: 2025-05-14 18:00-0400\n"
+"PO-Revision-Date: 2025-05-15 13:37+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-latest/fa/>\n"
@@ -28,8 +28,7 @@ msgstr "۱۵ دسامبر ۲۰۲۲"
 
 #: latest/index.html%2Bmain.section.article.h1:12-5
 msgid "Ceno proves itself in Iran during Internet shutdowns"
-msgstr ""
-"مرورگر سنو می‌تواند در زمان قطعی‌های اینترنت در ایران کارآیی خود را ثابت کند"
+msgstr "مرورگر سنو در زمان قطعی‌های اینترنت در ایران کارآیی خود را ثابت می‌کند"
 
 #: latest/index.html%2Bmain.section.article.div:15-5
 msgid ""
