@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-14 18:00-0400\n"
-"PO-Revision-Date: 2025-05-15 13:31+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2025-05-15 13:37+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-header/es/>\n"
 "Language: es\n"
@@ -69,7 +69,7 @@ msgstr "Descargar"
 
 #: _head.html%2Bbody.nav.div.a.img[alt]:58-62
 msgid "Ceno logo"
-msgstr "Ceno logo"
+msgstr "Logotipo de Ceno"
 
 #: _head.html%2Bbody.nav.div.div.div.label.img[alt]:63-25
 msgctxt "./_head.html+body.nav.div.div.div.label.img[alt]:63-25"
@@ -79,7 +79,7 @@ msgstr "Seleccionar idioma"
 #.  TRANSLATORS: Replace with your lowercase language code. 
 #: _head.html%2Bbody.nav.div.div.div:60-17
 msgid "en"
-msgstr "en inglés"
+msgstr "es"
 
 #.  Sorted alphabetically by language code. 
 #.  TRANSLATORS: Please do not translate any of these. 
@@ -128,7 +128,7 @@ msgstr ""
 
 #: _head.html%2Bbody.title:105-1
 msgid "Ceno Browser | Share the Web"
-msgstr "Ceno Navegador Silencio Comparte la web"
+msgstr "Navegador Ceno | Comparte la Web"
 
 #~ msgctxt "./_head.html+html.body.nav.div.div.div.label.img[alt]:65-25"
 #~ msgid "Select language"
