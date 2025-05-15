@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-14 18:00-0400\n"
-"PO-Revision-Date: 2025-05-15 13:31+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2025-05-15 13:37+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-404/es/>\n"
 "Language: es\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #: 404.html%2Bdiv.div.h4:3-9
 msgid "Sorry, we can't find the page you're looking for"
-msgstr "Lo siento, no podemos encontrar la página que buscas"
+msgstr "Lo sentimos, no podemos encontrar la página que buscas"
 
 #: 404.html%2Bdiv.div.p:4-9
 msgid ""
@@ -28,7 +28,7 @@ msgstr ""
 
 #: 404.html%2Bdiv.div.a[title]:6-9
 msgid "Get Ceno"
-msgstr "Trae a Ceno"
+msgstr "Obtén Ceno"
 
 #: 404.html%2Bdiv.div:5-53
 msgid "Go to ceno.app"
