@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-14 18:00-0400\n"
-"PO-Revision-Date: 2025-05-12 18:06+0000\n"
+"PO-Revision-Date: 2025-05-15 14:00+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-download/tr/>\n"
@@ -23,16 +23,12 @@ msgid "Join 566,565 other users"
 msgstr ""
 
 #: download.html%2Bmain.section.div.div.p:7-17
-#, fuzzy
-#| msgid ""
-#| "The safest way to install Ceno Browser on your Android phone is through "
-#| "the Google Play Store:"
 msgid ""
 "The safest way to install Ceno Browser on your device is through the Google "
 "Play Store or Microsoft Store:"
 msgstr ""
-"Android telefonunuza Ceno Browser kurmanın en güvenli yolu Google Play Store "
-"kullanmaktır:"
+"Aygıtınıza Ceno Browser kurmanın en güvenli yolu Google Play Store ya da "
+"Microsoft Store kullanmaktır:"
 
 #: download.html%2Bmain.section.div.div.h4:20-17
 msgid "IMPORTANT:"
