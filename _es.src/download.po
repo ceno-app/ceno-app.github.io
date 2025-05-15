@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-14 18:00-0400\n"
-"PO-Revision-Date: 2025-05-15 13:31+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2025-05-15 13:37+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-download/es/>\n"
 "Language: es\n"
@@ -66,7 +66,7 @@ msgstr ""
 
 #: download.html%2Bmain.section.div.h2:36-13
 msgid "Direct Download"
-msgstr "Descarga directa"
+msgstr "Descarga Directa"
 
 #: download.html%2Bmain.section.div.p:37-13
 msgid ""
