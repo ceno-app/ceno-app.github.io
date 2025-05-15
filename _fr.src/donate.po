@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-14 18:00-0400\n"
-"PO-Revision-Date: 2025-05-14 23:11+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2025-05-15 13:37+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-donate/fr/>\n"
 "Language: fr\n"
@@ -51,21 +51,21 @@ msgstr "Devenez commanditaire"
 #: donate.html%2Bmain.section.div.div.div.div.p:21-25
 msgid "We are currently exploring fundraising platforms and communities:"
 msgstr ""
-"Nous explorons actuellement des plateformes de collecte de fonds et des "
-"communautés :"
+"Nous explorons actuellement les plateformes et les communautés de collecte "
+"de fonds :"
 
 #: donate.html%2Bmain.section.div.div.div.div.div:22-25
 msgid "Sponsor on Github"
-msgstr "Sponsor sur Github"
+msgstr "Soutenez-nous sur GitHub"
 
 #: donate.html%2Bmain.section.div.div.div.div.h2:28-25
 msgid "Donate Bitcoin"
-msgstr "Doner Bitcoin"
+msgstr "Faites un don en bitcoins"
 
 #: donate.html%2Bmain.section.div.div.div.div.p:29-25
 msgid "Our wallet address is:"
-msgstr "Notre adresse portefeuille est :"
+msgstr "L’adresse de notre porte-monnaie est :"
 
 #: donate.html%2Bmain.section.div.div.div.div:29-50
 msgid "bc1q2r70hf0jks43jyykpua6uqv907zegplgfacauc"
-msgstr "bc1q2r70hf0jks43jyykpua6uqv907zegplgfacauc"
+msgstr ""
