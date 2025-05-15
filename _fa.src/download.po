@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-14 18:00-0400\n"
 "PO-Revision-Date: 2025-05-15 13:37+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Last-Translator: Mehdi Oloomi <mehdi@equalitie.org>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-download/fa/>\n"
 "Language: fa\n"
@@ -139,11 +139,11 @@ msgstr ""
 
 #: download.html%2Bmain.section.h1:57-9
 msgid "Use Cases"
-msgstr ""
+msgstr "موارد کاربرد"
 
 #: download.html%2Bmain.section.div.div.h2:60-17
 msgid "Open blocked sites and social media"
-msgstr ""
+msgstr "باز کردن سایت‌ها و شبکه‌های اجتماعی مسدودشده"
 
 #: download.html%2Bmain.section.div.div.p:61-17
 msgid ""
@@ -152,10 +152,14 @@ msgid ""
 "browsing static sites, and switch to personal mode for social networks, "
 "YouTube, and other sites that require authentication."
 msgstr ""
+"روز به روز منابع بیشتری در وب مسدود می‌شوند. سِنو ابزاری همگانی برای دسترسی به "
+"هر وب‌سایتی است. از حالت عمومی برای خواندن اخبار و مرور سایت‌های ایستا استفاده "
+"کنید و برای شبکه‌های اجتماعی، یوتیوب و دیگر سایت‌هایی که نیاز به احراز هویت "
+"دارند، حالت شخصی را امتحان کنید."
 
 #: download.html%2Bmain.section.div.div.h2:68-17
 msgid "Shutdowns"
-msgstr ""
+msgstr "قطعی‌ اینترنت"
 
 #: download.html%2Bmain.section.div.div.p:69-17
 msgid ""
@@ -163,10 +167,14 @@ msgid ""
 "still be able to access websites that Ceno caches and delivers to your "
 "country via satellite. Use Ceno as a backup in case of a shutdown!"
 msgstr ""
+"حتی اگر اینترنت کشور به‌طور کامل از شبکه جهانی قطع شود، همچنان می‌توانید به "
+"وب‌سایت‌هایی دسترسی داشته باشید که سِنو آن‌ها را کَش کرده و از طریق ماهواره به "
+"کشور شما منتقل می‌کند. از سِنو به‌عنوان یک راهکار پشتیبان در صورت قطعی اینترنت "
+"استفاده کنید!"
 
 #: download.html%2Bmain.section.div.div.h2:74-17
 msgid "Help others"
-msgstr ""
+msgstr "کمک به دیگران"
 
 #: download.html%2Bmain.section.div.div.p:75-17
 msgid ""
@@ -174,3 +182,6 @@ msgid ""
 "resources. Simply enable Bridge mode in your browser settings and make the "
 "internet more accessible for those who need it most."
 msgstr ""
+"هر کاربر سِنو می‌تواند به یک پل تبدیل شود و به دیگران برای دسترسی به وب‌سایت‌های "
+"مسدودشده کمک کند. کافی است حالت پل را در تنظیمات مرورگر خود فعال کنید و "
+"اینترنت را برای کسانی که بیش از همه به آن نیاز دارند، در دسترس‌تر کنید."
