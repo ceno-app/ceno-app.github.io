@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-14 18:00-0400\n"
-"PO-Revision-Date: 2025-05-16 15:07+0000\n"
+"PO-Revision-Date: 2025-05-16 15:34+0000\n"
 "Last-Translator: Mehdi Oloomi <mehdi@equalitie.org>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-privacy-policy/fa/>\n"
@@ -445,18 +445,22 @@ msgid ""
 "aggregated into broader issues, and are deleted after the above retention "
 "period. Issues are deleted when all associated events are deleted."
 msgstr ""
+"Sentry داده‌های مربوط به اشکالات را تا ۹۰ روز در محیط عملیاتی (production) "
+"نگهداری می‌کند. اشکالات مشابه در یک گروه دسته‌بندی می‌شوند و بعد از این مدت به‌"
+"طور کامل حذف می‌گردند. وقتی همه اشکالات یک گروه پاک شوند، کل آن گروه هم حذف "
+"می‌شود."
 
 #: privacy_policy.html%2Bsection.div.h3:80-1
 msgid "3.5 Cookies"
-msgstr ""
+msgstr "۳.۵ کوکی‌ها"
 
 #: privacy_policy.html%2Bsection.div.p:82-1
 msgid "The Ceno Browser app does not use cookies."
-msgstr ""
+msgstr "برنامه مرورگر سِنو از کوکی استفاده نمی‌کند."
 
 #: privacy_policy.html%2Bsection.div.h3:84-1
 msgid "3.6 Links to Other Sites"
-msgstr ""
+msgstr "۳.۶ لینک به وب‌سایت‌های دیگر"
 
 #: privacy_policy.html%2Bsection.div.p:86-1
 msgid ""
@@ -465,57 +469,73 @@ msgid ""
 "and we do not make any representations or warranties regarding their "
 "content, security, or privacy practices."
 msgstr ""
+"این سرویس ممکن است شامل لینک‌هایی به وب‌سایت‌ها یا خدماتی باشد که توسط اشخاص "
+"ثالث اداره می‌شوند. این وب‌سایت‌های بیرونی تحت کنترل یا نظارت eQualitie نیستند "
+"و ما هیچ‌ گونه تعهد یا تضمینی در مورد محتوای آن‌ها، امنیت‌شان یا شیوه‌های مربوط "
+"به حفظ حریم خصوصی آن‌ها ارائه نمی‌دهیم."
 
 #: privacy_policy.html%2Bsection.div.p:88-1
 msgid "By clicking on a third-party link, you acknowledge and agree that:"
-msgstr ""
+msgstr "با کلیک روی لینک‌های شخص ثالث، شما می‌پذیرید و تایید می‌کنید که:"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:90-1
 msgid ""
 "Your interactions with third-party sites are governed solely by their "
 "respective terms of use and privacy policies."
 msgstr ""
+"تعامل شما با این سایت‌های شخص ثالث صرفا بر اساس شرایط استفاده و سیاست‌های حریم "
+"خصوصی خود آن‌ها صورت می‌گیرد؛"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:91-1
 msgid ""
 "eQualitie is not responsible for any content, data collection, or practices "
 "of third-party websites or services."
 msgstr ""
+"eQualitie مسئولیتی در قبال محتوا، جمع‌آوری داده یا عملکرد این وب‌سایت‌ها یا "
+"خدمات شخص ثالث ندارد؛"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:92-1
 msgid "Visiting external sites linked from Ceno is entirely at your own risk."
 msgstr ""
+"بازدید از سایت‌های خارجی که از طریق سِنو به آن‌ها لینک داده شده است، کاملا با "
+"مسئولیت شخصی شما انجام می‌شود."
 
 #: privacy_policy.html%2Bsection.div.p:94-1
 msgid "We strongly recommend that you:"
-msgstr ""
+msgstr "ما به‌شدت توصیه می‌کنیم که:"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:96-1
 msgid ""
 "Exercise caution when clicking on links to unfamiliar or untrusted sites."
-msgstr ""
+msgstr "هنگام کلیک روی لینک‌های ناشناس یا نامطمئن، جانب احتیاط را رعایت کنید؛"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:97-1
 msgid ""
 "Review the privacy policies and terms of use of any third-party website you "
 "visit."
 msgstr ""
+"پیش از استفاده از هر سایت، سیاست‌های حریم خصوصی و شرایط استفاده آن را مطالعه "
+"کنید؛"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:98-1
 msgid ""
 "Refrain from providing personal or sensitive information to external sites "
 "unless you are confident in their security and intent."
 msgstr ""
+"از ارائه اطلاعات شخصی یا حساس به این سایت‌ها، مگر در صورت اطمینان از امنیت و "
+"هدف آن‌ها، خودداری کنید."
 
 #: privacy_policy.html%2Bsection.div.p:100-1
 msgid ""
 "eQualitie disclaims all liability for any harm, loss, or damage arising from "
 "your use of third-party links or services."
 msgstr ""
+"eQualitie هرگونه مسئولیت در قبال خسارت یا آسیب ناشی از استفاده شما از لینک‌ها "
+"یا خدمات شخص ثالث را سلب می‌کند."
 
 #: privacy_policy.html%2Bsection.div.h3:102-1
 msgid "3.7 Children's Privacy"
-msgstr ""
+msgstr "۳.۷ حریم خصوصی کودکان"
 
 #: privacy_policy.html%2Bsection.div.p:104-1
 msgid ""
@@ -532,30 +552,44 @@ msgid ""
 "information in your country (in some countries we may allow your parent or "
 "guardian to do so on your behalf)."
 msgstr ""
+"ما به‌طور آگاهانه هیچ‌گونه اطلاعات شناسایی‌کننده‌ای از کودکان جمع‌آوری نمی‌کنیم. "
+"از همه کودکان می‌خواهیم که هرگز اطلاعات شناسایی‌کننده شخصی خود را از طریق این "
+"برنامه یا خدمات آن ارسال نکنند. همچنین از والدین و سرپرستان قانونی می‌خواهیم "
+"که بر استفاده کودکان از اینترنت نظارت داشته باشند و با آموزش به آن‌ها، از "
+"ارسال اطلاعات شخصی از طریق این برنامه بدون اجازه، جلوگیری کنند. اگر بنا بر "
+"دلایلی باور دارید که کودکی از طریق این برنامه یا خدمات آن، اطلاعات شناسایی‌"
+"کننده شخصی خود را برای ما ارسال کرده، لطفا با ما تماس بگیرید. برای این که "
+"بتوانید در کشور خود با پردازش اطلاعات شخصی‌تان موافقت کنید، باید حداقل ۱۶ سال "
+"سن داشته باشید. (در برخی کشورها ممکن است این رضایت از سوی والدین یا سرپرست "
+"قانونی داده شود)."
 
 #: privacy_policy.html%2Bsection.div.h3:106-1
 msgid "3.8 Changes to these Terms"
-msgstr ""
+msgstr "۳.۸ تغییر این شرایط"
 
 #: privacy_policy.html%2Bsection.div.p:108-1
 msgid ""
 "We may update these Terms from time to time. Thus, you are advised to review "
 "this page periodically for any changes."
 msgstr ""
+"ما ممکن است گاهی این شرایط را به‌روزرسانی کنیم. بنابراین، توصیه می‌شود هر از "
+"چند گاهی این صفحه را مرور کنید تا از تغییرات احتمالی آگاه شوید."
 
 #: privacy_policy.html%2Bsection.div.p:110-1
 msgid "This policy is effective as of 2024-12-18."
-msgstr ""
+msgstr "این مجموعه شرایط از تاریخ ۱۸ دسامبر ۲۰۲۴ لازم‌الاجرا است."
 
 #: privacy_policy.html%2Bsection.div.h2:112-1
 msgid "4. Glossary"
-msgstr ""
+msgstr "۴. واژه‌نامه"
 
 #: privacy_policy.html%2Bsection.div.p:114-1
 msgid ""
 "<b>Bootstrap Servers:</b> Servers used to help your device get into the "
 "BitTorrent network."
 msgstr ""
+"<b>Bootstrap Servers:</b> سرورهایی که برای کمک به ورود دستگاه شما به شبکه بیت‌"
+"تورنت استفاده می‌شوند."
 
 #: privacy_policy.html%2Bsection.div.p:116-1
 msgid ""
@@ -563,18 +597,27 @@ msgid ""
 "running Ceno Browser that serve to route web content requests if other "
 "connectivity mechanisms are inaccessible or unavailable."
 msgstr ""
+"<b>پل‌ها (Bridges):</b> سرورهایی که مرورگر سِنو را اجرا می‌کنند (از جمله دستگاه‌"
+"های کاربران در صورت فعال بودن حالت پل) و در صورتی که روش‌های دیگر اتصال در "
+"دسترس نباشند، برای انتقال درخواست‌های محتوای وب به کار می‌روند."
 
 #: privacy_policy.html%2Bsection.div.p:118-1
 msgid ""
 "<b>Injectors:</b> Servers run by eQualitie that route web content from "
 "origin servers to Ceno users' devices requesting that content."
 msgstr ""
+"<b>تزریق‌کننده‌ها (Injectors):</b> سرورهایی که توسط eQualitie اجرا می‌شوند و "
+"وظیفه دارند محتوای وب را از سرورهای اصلی دریافت کرده و به دستگاه کاربرانی که "
+"آن را درخواست کرده‌اند منتقل کنند."
 
 #: privacy_policy.html%2Bsection.div.p:120-1
 msgid ""
 "<b>Personal Mode:</b> Browsing activity in Personal Mode is not shared with "
 "anyone else. Web content is securely retrieved from origin or via Injectors."
 msgstr ""
+"<b>حالت شخصی (Personal Mode):</b> در این حالت، فعالیت مرورگر با هیچ‌کس دیگری "
+"به اشتراک گذاشته نمی‌شود. محتوای وب به‌صورت امن از سرور اصلی یا از طریق "
+"تزریق‌کننده‌ها دریافت می‌شود."
 
 #: privacy_policy.html%2Bsection.div.p:122-1
 msgid ""
@@ -583,13 +626,19 @@ msgid ""
 "this content with other Ceno users via the BitTorrent network, and leaves a "
 "public record of your device's IP address and content retrieved."
 msgstr ""
+"<b>حالت عمومی (Public Mode):</b> در این حالت، مرورگر از تمام روش‌های اتصال "
+"موجود برای دریافت محتوای وب از شبکه سِنو استفاده می‌کند، آن محتوا را از طریق "
+"شبکه بیت‌تورنت با دیگر کاربران سِنو به اشتراک می‌گذارد و ردپایی عمومی از آدرس "
+"IP دستگاه شما و محتوای دریافتی بر جای می‌گذارد."
 
 #: privacy_policy.html%2Bsection.div.h2:124-1
 msgid "Contact Us"
-msgstr ""
+msgstr "تماس با ما"
 
 #: privacy_policy.html%2Bsection.div.p:125-1
 msgid ""
 "If you have any questions or suggestions about this Privacy Policy, do not "
 "hesitate to contact us at: support [at] censorship [dot] no."
 msgstr ""
+"اگر درباره این سیاست حریم خصوصی سوال یا پیشنهادی دارید، لطفا با ما از طریق "
+"نشانی زیر تماس بگیرید: support [at] censorship [dot] no."

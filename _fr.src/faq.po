@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-14 18:00-0400\n"
-"PO-Revision-Date: 2025-05-15 13:37+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2025-05-16 15:34+0000\n"
+"Last-Translator: Grant Gallo <grant@equalitie.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-faq/fr/>\n"
 "Language: fr\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #: faq.html%2Bmain.section.div.h1:4-13
 msgid "Frequently<br>Asked<br>Questions"
-msgstr "Fréquemment observés cérébrales"
+msgstr "Foire<br>aux<br>questions"
 
 #: faq.html%2Bmain.section.form.input[value]:9-13
 msgid "(ceno.network OR ceno.website OR ceno.app)"
@@ -28,11 +28,11 @@ msgstr "Recherche"
 
 #: faq.html%2Bmain.section.div.a.div:13-45
 msgid "Read user manual"
-msgstr "Lire le manuel d'utilisation"
+msgstr "Lire le guide de l'utilisateur"
 
 #: faq.html%2Bmain.section.div.a.div:14-104
 msgid "Read technical, in-depth whitepaper"
-msgstr "Lire le livre blanc technique, en profondeur"
+msgstr "Lire le document de présentation technique"
 
 #: faq.html%2Bmain.section.div.a.div:15-35
 msgid "Read quick-start guide"
