@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-14 16:11-0400\n"
-"PO-Revision-Date: 2025-04-21 23:12+0000\n"
+"POT-Creation-Date: 2025-05-16 11:45-0400\n"
+"PO-Revision-Date: 2025-05-15 13:37+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-latest/es/>\n"
@@ -12,15 +12,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: latest/index.html%2Bmain.h1:2-1
 msgid "latest"
-msgstr ""
+msgstr "más recientes"
 
 #: latest/index.html%2Bmain.section.article:9-5
 msgid "Press Release"
-msgstr ""
+msgstr "Comunicado de prensa"
 
 #: latest/index.html%2Bmain.section.article.div:11-5
 msgid "December 15, 2022"
@@ -35,7 +35,9 @@ msgid ""
 "eQualitie is pleased to announce that its Ceno Browser is fulfilling its "
 "mission of assisting thousands in Iran, while also…"
 msgstr ""
+"eQualitie se complace en anunciar que su navegador Ceno está cumpliendo su "
+"misión de ayudar a miles en Irán, mientras que también.."
 
 #: latest/index.html%2Bmain.section.article:15-155
 msgid "Read more"
-msgstr ""
+msgstr "Leer más"

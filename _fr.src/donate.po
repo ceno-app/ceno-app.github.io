@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-14 16:11-0400\n"
-"PO-Revision-Date: 2025-04-21 23:09+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2025-05-16 11:45-0400\n"
+"PO-Revision-Date: 2025-05-16 15:34+0000\n"
+"Last-Translator: Grant Gallo <grant@equalitie.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-donate/fr/>\n"
 "Language: fr\n"
@@ -12,11 +12,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: donate.html%2Bmain.section.div.div.h1:5-17
 msgid "Support Ceno"
-msgstr ""
+msgstr "Soutenez Ceno"
 
 #: donate.html%2Bmain.section.div.div.p:6-17
 msgid ""
@@ -26,6 +26,11 @@ msgid ""
 "getting involved and contributing, please visit <a href=\"community."
 "html\">the Community page!</a>"
 msgstr ""
+"Ceno Browser est un logiciel entièrement gratuit et open source financé "
+"uniquement par des subventions et des dons. Voici quelques-unes des façons "
+"dont vous pouvez soutenir son développement continu par des contributions "
+"financières. Pour d'autres façons de s'impliquer et de contribuer, veuillez "
+"visiter <a href=\"community.html\"> la page communautaire!</a>"
 
 #: donate.html%2Bmain.section.div.div.div.div.h2:12-25
 msgid "Make a Donation"
@@ -37,7 +42,7 @@ msgstr "Faites un don unique en utilisant notre portail de paiement Paypal."
 
 #: donate.html%2Bmain.section.div.div.div.div.div:14-25
 msgid "Donate via PayPal"
-msgstr ""
+msgstr "Faites un don via PayPal"
 
 #: donate.html%2Bmain.section.div.div.div.div.h2:20-25
 msgid "Become a Sponsor"
