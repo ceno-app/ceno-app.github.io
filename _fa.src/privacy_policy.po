@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-14 18:00-0400\n"
-"PO-Revision-Date: 2025-05-15 20:55+0000\n"
+"PO-Revision-Date: 2025-05-16 15:07+0000\n"
 "Last-Translator: Mehdi Oloomi <mehdi@equalitie.org>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-privacy-policy/fa/>\n"
@@ -16,15 +16,15 @@ msgstr ""
 
 #: privacy_policy.html%2Btitle:1-1
 msgid "Ceno Browser | Privacy Policy"
-msgstr "مرورگر سنو | حریم خصوصی"
+msgstr "مرورگر سِنو | حریم خصوصی"
 
 #: privacy_policy.html%2Bsection.div.h1:4-1
 msgid "Ceno Browser Terms of Use & Privacy Notice"
-msgstr ""
+msgstr "شرایط استفاده و اطلاعیه حریم خصوصی مرورگر سِنو"
 
 #: privacy_policy.html%2Bsection.div.h2:6-1
 msgid "1. Overview"
-msgstr ""
+msgstr "۱. مقدمه"
 
 #: privacy_policy.html%2Bsection.div.p:7-1
 msgid ""
@@ -36,10 +36,17 @@ msgid ""
 "\"we\", or \"us\"). Usage of the Ceno Browser application and associated "
 "services are provided by eQualitie at no cost and are provided for use as is."
 msgstr ""
+"این «شرایط استفاده» مرورگر سِنو («سِنو») همراه با «اطلاعیه حریم خصوصی» (که "
+"مجموعا «شرایط» نامیده می‌شوند)، برای تمامی کاربران سِنو – مرورگر موبایل همتا‌به‌"
+"همتا – الزام‌آور است. با نصب و اجرای برنامه مرورگر سِنو («سرویس»)، موافقت می‌"
+"کنید که به این توافق‌نامه بین خودتان و شرکت eQualitie Inc. («eQualitie»، «ما»)"
+" پایبند باشید و از آن پیروی کنید. برنامه مرورگر سِنو و خدمات مرتبط، توسط "
+"eQualitie به‌صورت رایگان ارائه می‌شود و همان‌گونه که هست، در اختیار کاربران "
+"قرار می‌گیرد."
 
 #: privacy_policy.html%2Bsection.div.h2:9-1
 msgid "2. Terms of use"
-msgstr ""
+msgstr "۲. شرایط استفاده"
 
 #: privacy_policy.html%2Bsection.div.p:10-1
 msgid ""
@@ -49,6 +56,11 @@ msgid ""
 "the applicable laws of Quebec or Canada or the International Bill of Human "
 "Rights. This includes, but is not limited to, content that:"
 msgstr ""
+"برنامه مرورگر سِنو در راستای ارزش‌های بنیادین eQualitie طراحی شده است. با "
+"استفاده از این نرم‌افزار، شما می‌پذیرید که از سِنو برای انتشار، اشتراک‌گذاری یا "
+"ذخیره‌سازی محتوایی که با ارزش‌های بنیادین eQualitie، قوانین جاری استان کبک یا "
+"کشور کانادا، یا مفاد اعلامیه جهانی حقوق بشر در تضاد باشد، استفاده نکنید. این "
+"موارد شامل – اما نه محدود به – محتوایی است که:"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:12-1
 msgid ""
@@ -56,6 +68,9 @@ msgid ""
 "underlying values or the letter of Canada's Privacy Act or PIPEDA (the "
 "Personal Information Protection and Electronic Documents Act);"
 msgstr ""
+"حقوق مربوط به حفاظت از اطلاعات شخصی را نقض می‌کند، از جمله اصول بنیادین یا "
+"مفاد قانونی «قانون حریم خصوصی کانادا» یا «قانون حمایت از اطلاعات شخصی و "
+"اسناد الکترونیکی» (PIPEDA)؛"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:13-1
 msgid ""
@@ -64,12 +79,17 @@ msgid ""
 "sexually exploits or promotes the sexual exploitation of minors), unlawful "
 "pornography, or are otherwise indecent;"
 msgstr ""
+"شامل محتوای سوءاستفاده جنسی از کودکان می‌شود (حتی اگر از نظر قانونی جزو "
+"سوءاستفاده جنسی کودک محسوب نشود، اما بهره‌کشی جنسی از کودکان یا ترویج آن را "
+"در بر داشته باشد)، پورنوگرافی غیرقانونی یا هرگونه محتوای خلاف عفت عمومی است؛"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:14-1
 msgid ""
 "Contains or promotes extreme acts of violence or terrorist activity, "
 "including terror or violent extremist propaganda;"
 msgstr ""
+"حاوی اعمال خشونت‌آمیز افراطی یا فعالیت‌های تروریستی است یا آن‌ها را ترویج می‌دهد،"
+" از جمله تبلیغات تروریستی یا افراط‌گرایانه خشونت‌طلب؛"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:15-1
 msgid ""
@@ -79,16 +99,21 @@ msgid ""
 "any other characteristic(s) associated with systemic discrimination or "
 "marginalization;"
 msgstr ""
+"مروج تعصب، نفرت یا تحریک به خشونت علیه فرد یا گروهی از افراد بر اساس نژاد، "
+"مذهب، قومیت، ملیت، جنسیت، هویت جنسیتی، گرایش جنسی، ناتوانی، معلولیت یا هر "
+"ویژگی دیگری مرتبط با تبعیض یا به‌حاشیه‌راندگی سیستماتیک باشد؛"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:16-1
 msgid ""
 "Contains files with viruses, trojans, worms, logic bombs or other material "
 "that is malicious or technologically harmful."
 msgstr ""
+"شامل فایل‌هایی حاوی ویروس، تروجان، کرم، بمب منطقی (logic bombs) یا دیگر "
+"محتوای مخرب یا زیان‌بار از منظر فناورانه باشد."
 
 #: privacy_policy.html%2Bsection.div.p:19-1
 msgid "Content Responsibility"
-msgstr ""
+msgstr "مسئولیت محتوا"
 
 #: privacy_policy.html%2Bsection.div.p:21-1
 msgid ""
@@ -103,10 +128,20 @@ msgid ""
 "of Use, including the promotion of illegal, harmful, or otherwise prohibited "
 "material."
 msgstr ""
+"eQualitie مسئولیتی در قبال محتوایی که کاربران از طریق شبکه بیت‌تورنت یا "
+"سرورهای شخص ثالث به اشتراک می‌گذارند یا توزیع می‌کنند ندارد. در حالی که سِنو "
+"بستر اشتراک‌گذاری غیرمتمرکز محتوا را فراهم می‌کند، مسئولیت قانونی و اخلاقی "
+"محتوای به اشتراک‌گذاشته‌شده کاملا بر عهده کاربران است. به کاربران توصیه می‌شود "
+"هنگام استفاده از این سرویس، قوانین مربوطه و دستورالعمل‌های اجتماعی را رعایت "
+"کنند. سِنو محتوای کاربران را به‌صورت فعال پایش یا مدیریت نمی‌کند، اما در صورت "
+"دریافت گزارش سوءاستفاده‌ای که ناقض این شرایط استفاده باشد – از جمله ترویج "
+"محتوای غیرقانونی، آسیب‌زننده یا ممنوع – این حق را برای خود محفوظ می‌دارد که "
+"بررسی کرده و اقدامات لازم (مانند غیرفعال‌سازی دسترسی به برخی قابلیت‌ها) را "
+"انجام دهد."
 
 #: privacy_policy.html%2Bsection.div.h2:23-1
 msgid "3. Privacy Notice"
-msgstr ""
+msgstr "۳. اطلاعیه حریم خصوصی"
 
 #: privacy_policy.html%2Bsection.div.p:25-1
 msgid ""
@@ -114,10 +149,12 @@ msgid ""
 "the collection, use, and disclosure of Personal Information for all users of "
 "this Service."
 msgstr ""
+"این بخش برای اطلاع‌رسانی به بازدیدکنندگان درباره سیاست‌های eQualitie در خصوص "
+"جمع‌آوری، استفاده و افشای اطلاعات شخصی کاربران این سرویس تهیه شده است."
 
 #: privacy_policy.html%2Bsection.div.h3:27-1
 msgid "3.1 Data Collection"
-msgstr ""
+msgstr "۳.۱ جمع‌آوری داده"
 
 #: privacy_policy.html%2Bsection.div.p:29-1
 msgid ""
@@ -129,6 +166,14 @@ msgid ""
 "information (such as usage statistics) with users' prior consent and with "
 "personally identifying information removed."
 msgstr ""
+"برای استفاده از مرورگر سِنو، نیازی به ارائه هیچ‌گونه اطلاعات شناسایی‌کننده شخصی "
+"نیست. این مرورگر به‌گونه‌ای طراحی شده که بتواند بدون شناسه کاربری، نام‌، نام "
+"مستعار، حساب کاربری یا هر نوع داده کاربری دیگری، امکان دسترسی به محتوای "
+"آنلاین را فراهم کند. eQualitie از هویت کاربران و این که با چه کسانی همگام‌"
+"سازی یا اشتراک‌گذاری انجام می‌دهند، اطلاعی ندارد. eQualitie به حریم خصوصی "
+"کاربران احترام می‌گذارد و تنها در صورت کسب رضایت قبلی کاربر و پس از حذف "
+"اطلاعات شناسایی‌کننده، اطلاعات کاربری (مانند آمارهای استفاده) را جمع‌آوری "
+"خواهد کرد."
 
 #: privacy_policy.html%2Bsection.div.p:31-1
 msgid ""
@@ -143,6 +188,16 @@ msgid ""
 "anonymized information about your usage of the app. Information collected is "
 "deleted every 90 days."
 msgstr ""
+"در فرآیند راه‌اندازی، سِنو از کاربر درخواست رضایت می‌کند تا اطلاعات آماری "
+"ناشناس و تجمیع‌شده را با ما به اشتراک بگذارد. ما از پلتفرم <a href="
+"\"https://cleaninsights.org/\">Clean Insights </a>برای درک بهتر الگوهای "
+"استفاده از برنامه بهره می‌بریم. داده‌ها به‌گونه‌ای جمع‌آوری می‌شوند که <a href="
+"\"https://guardianproject.info/privacy\">حریم خصوصی کاربران حفظ شود</a>: کوکی‌"
+"ها را رهگیری نمی‌کنیم، آدرس IP ذخیره نمی‌شود، اطلاعات شخصی ثبت نمی‌شود و مسیر "
+"حرکت کاربران بین وب‌سایت‌ها را دنبال نمی‌کنیم. ما از نسخه خودمیزبان <a href="
+"\"https://matomo.org/\">Matomo</a>برای گردآوری داده‌های ناشناس درباره نحوه "
+"استفاده شما از برنامه استفاده می‌کنیم. اطلاعات جمع‌آوری‌شده هر ۹۰ روز حذف "
+"می‌شوند."
 
 #: privacy_policy.html%2Bsection.div.p:33-1
 msgid ""
@@ -150,6 +205,9 @@ msgid ""
 "measurements to help us understand the number of users, including the "
 "network origin ASN and country, based on browsing in Public mode."
 msgstr ""
+"ما در بازه‌های زمانی ساعتی، روزانه و ماهانه، داده‌های تجمیع‌شده مختلفی را برای "
+"درک تعداد کاربران، از جمله اطلاعات ASN مبدا شبکه و کشور، در حالت مرورگری "
+"عمومی، جمع‌آوری می‌کنیم."
 
 #: privacy_policy.html%2Bsection.div.p:35-1
 msgid ""
@@ -161,6 +219,11 @@ msgid ""
 "Injectors are run and managed by the Ceno team. eQualitie deletes all access "
 "logs every 24 hours."
 msgstr ""
+"تزریق‌کننده‌ها (Injectors) سرورهایی هستند که می‌توانند درخواست‌های محتوای "
+"کاربران را در شبکه ببینند، از جمله آدرس IP کاربر و نام وب‌سایت مورد نظر. "
+"تزریق‌کننده‌ها برای ۱) وارد کردن محتوای وب به شبکه غیرمتمرکز و ۲) تایید صحت "
+"محتوای واردشده ضروری هستند. در شبکه سِنو، تزریق‌کننده‌ها توسط تیم سِنو اجرا و "
+"مدیریت می‌شوند. eQualitie همه گزارش‌های دسترسی را هر ۲۴ ساعت حذف می‌کند."
 
 #: privacy_policy.html%2Bsection.div.p:37-1
 msgid ""
@@ -171,15 +234,22 @@ msgid ""
 "are checked for liveliness every so often and are removed when they are no "
 "longer responsive to BitTorrent traffic."
 msgstr ""
+"Bootstrap Servers سرورهایی هستند که برای معرفی دستگاه شما به شبکه بیت‌تورنت "
+"استفاده می‌شوند. ما آدرس IP کاربران را به سرورهای bootstrap خودمان و سرورهای "
+"bootstrap شخص ثالث ارسال می‌کنیم. در مورد سرورهای خودمیزبان، آدرس‌های IP تنها "
+"در حافظه موقت نگهداری می‌شوند. این آدرس‌ها هر از گاهی بررسی شده و اگر دیگر به "
+"ترافیک بیت‌تورنت پاسخ ندهند، حذف می‌شوند."
 
 #: privacy_policy.html%2Bsection.div.h3:39-1
 msgid "3.2 Data Sharing"
-msgstr ""
+msgstr "۳.۲ اشتراک‌گذاری داده‌ها"
 
 #: privacy_policy.html%2Bsection.div.p:41-1
 msgid ""
 "Ceno Browser (and eQualitie) does not share any data with any third parties."
 msgstr ""
+"مرورگر سِنو (و شرکت eQualitie) هیچ‌گونه داده‌ای را با اشخاص ثالث به اشتراک "
+"نمی‌گذارد."
 
 #: privacy_policy.html%2Bsection.div.p:43-1
 msgid ""
@@ -190,6 +260,12 @@ msgid ""
 "providing a private browsing experience. Users can switch modes as needed to "
 "balance accessibility and privacy based on their preferences."
 msgstr ""
+"این برنامه دو حالت عملکرد دارد: عمومی و شخصی. در حالت عمومی، هر محتوایی که "
+"دریافت می‌شود بخشی از شبکه بیت‌تورنت می‌شود و سایر کاربرانی که به دنبال همان "
+"محتوا هستند می‌توانند به آن دسترسی پیدا کنند. در مقابل، حالت شخصی تضمین می‌کند "
+"که هیچ فعالیتی با شبکه به اشتراک گذاشته نمی‌شود و تجربه‌ای خصوصی از مرور وب را "
+"فراهم می‌سازد. کاربران می‌توانند بنا به ترجیحات خود، برای ایجاد توازن میان "
+"دسترسی و حریم خصوصی، بین این دو حالت جابه‌جا شوند."
 
 #: privacy_policy.html%2Bsection.div.p:45-1
 msgid ""
@@ -199,6 +275,10 @@ msgid ""
 "anyone can query the BitTorrent network for a list of IP addresses that have "
 "been associated with example.com."
 msgstr ""
+"هر زمان که در حالت عمومی محتوایی را درخواست یا به اشتراک می‌گذارید، رکوردی "
+"ثبت می‌شود که آدرس IP شما را با آن محتوای بازیابی‌شده از یک وب‌سایت خاص مرتبط می‌"
+"کند. برای مثال، هر کسی می‌تواند از شبکه بیت‌تورنت فهرستی از آدرس‌های IP مرتبط "
+"با example.com را درخواست کند."
 
 #: privacy_policy.html%2Bsection.div.p:47-1
 msgid ""
@@ -219,6 +299,11 @@ msgid ""
 "inside a Public tab will be shared with other Ceno users via the BitTorrent "
 "network."
 msgstr ""
+"زبانه‌های عمومی از تمام روش‌های اتصال موجود در شبکه سِنو برای دریافت محتوای "
+"مورد نظر استفاده می‌کنند. هنگام مرور در حالت عمومی، کاربران ردپایی از فعالیت "
+"خود در شبکه عمومی بیت‌تورنت باقی می‌گذارند (از جمله آدرس IP و وب‌سایت "
+"درخواست‌شده). محتوایی که در زبانه عمومی از طریق دستگاه کاربر دریافت می‌شود، از "
+"طریق شبکه بیت‌تونت با دیگر کاربران سِنو به اشتراک گذاشته خواهد شد."
 
 #: privacy_policy.html%2Bsection.div.p:51-1
 msgid ""
@@ -226,6 +311,9 @@ msgid ""
 "fetched and delivered to you. The search will not connect to the BitTorrent "
 "network and will not attempt to locate the content on other users' devices."
 msgstr ""
+"در حالت شخصی، فقط با تزریق‌کننده‌ها تماس گرفته می‌شود تا وب‌سایت مورد نظر برای "
+"شما بازیابی و تحویل داده شود. در این حالت، جست‌وجو به شبکه بیت‌تورنت ربط پیدا "
+"نمی‌کند و تلاشی برای یافتن محتوا روی دستگاه کاربران دیگر صورت نمی‌گیرد."
 
 #: privacy_policy.html%2Bsection.div.p:53-1
 msgid ""
@@ -235,10 +323,15 @@ msgid ""
 "if the user does not want to be associated on BitTorrent with any of their "
 "browsing activity in Ceno."
 msgstr ""
+"اطلاعاتی که در یک زبانه شخصی درخواست و دریافت می‌شود، با هیچ‌ کس دیگری به "
+"اشتراک گذاشته نمی‌شود. هیچ‌گونه رکوردی از فعالیت‌های کاربر در شبکه بیت‌تورنت ثبت "
+"نمی‌شود. زبانه‌های شخصی برای ورود به حساب‌های شبکه اجتماعی یا هر سرویسی که نیاز "
+"به احراز هویت دارد مناسب‌اند، یا برای زمانی که کاربر نمی‌خواهد هیچ‌ یک از فعالیت‌"
+"هایش در سِنو در شبکه بیت‌تورنت ثبت شود."
 
 #: privacy_policy.html%2Bsection.div.p:55-1
 msgid "Bridges"
-msgstr ""
+msgstr "پل‌ها (Bridges)"
 
 #: privacy_policy.html%2Bsection.div.p:57-1
 msgid ""
@@ -253,6 +346,16 @@ msgid ""
 "Bridge operators will have their device's IP address listed in the "
 "BitTorrent network as an accessible Bridge."
 msgstr ""
+"برای اطمینان از این که کلاینت سِنو شما همیشه بتواند به یک تزریق‌کننده دسترسی "
+"پیدا کند، ما قابلیتی به نام پل (Bridge) نیز ایجاد کرده‌ایم. اگر تزریق‌کننده‌ها "
+"در شبکه شما مسدود شده باشند، برنامه سِنو به‌دنبال پل‌های در دسترس می‌گردد که "
+"بتوانند درخواست شما را به تزریق‌کننده‌ها منتقل کنند. کاربران می‌توانند با فعال‌"
+"سازی حالت پل در تنظیمات مرورگر سِنو، به بهبود دسترسی دیگران به محتوای وب کمک "
+"کنند. فعالیت پل برای اپراتور آن قابل مشاهده نیست (مگر این که به‌طور فعال "
+"اتصالات ورودی و خروجی دستگاه خود را پایش کند). وظیفه پل دریافت درخواست‌های "
+"شبکه از دیگر کاربران سِنو برای دسترسی به یک تزریق‌کننده و ارسال آن درخواست "
+"است. آدرس IP دستگاه اپراتور پل در شبکه بیت‌تورنت به‌عنوان یک پل قابل دسترسی "
+"ثبت خواهد شد."
 
 #: privacy_policy.html%2Bsection.div.p:59-1
 msgid ""
@@ -261,10 +364,15 @@ msgid ""
 "on Ceno Browser usage. eQualitie is not responsible for content shared and "
 "distributed on other servers."
 msgstr ""
+"برای اطلاعات بیشتر درباره نحوه استفاده از مرورگر سِنو، به صفحه <a href="
+"\"https://ceno.app/en/support.html\">پرسش‌های رایج</a> یا <a href="
+"\"https://ceno.app/user-manual/en/\">راهنمای کاربر</a> مراجعه کنید. "
+"eQualitie هیچ‌گونه مسئولیتی در قبال محتوایی که روی سرورهای دیگر به اشتراک "
+"گذاشته یا توزیع می‌شود ندارد."
 
 #: privacy_policy.html%2Bsection.div.h3:61-1
 msgid "3.3 Log Data"
-msgstr ""
+msgstr "۳.۳ داده‌های گزارش"
 
 #: privacy_policy.html%2Bsection.div.p:63-1
 msgid ""
@@ -276,16 +384,26 @@ msgid ""
 "device unless the user decides to send it to us for support purposes, and is "
 "automatically deleted when its sizes reaches 15 MB."
 msgstr ""
+"کاربران می‌توانند از طریق منوی تنظیمات مرورگر سِنو، به‌صورت اختیاری قابلیت ثبت "
+"گزارش (لاگ) را فعال کنند. در صورت فعال بودن، مرورگر سِنو فایل‌های گزارش "
+"(logfile) را روی دستگاه کاربر ایجاد می‌کند. هدف از این فایل‌ها، صرفا ثبت "
+"فعالیت دستگاه برای کمک به فرآیند رفع اشکال، در صورت بروز مشکل در اتصال به "
+"دیگر کاربران یا هنگام استفاده از سِنو است. این فایل گزارش روی دستگاه کاربر "
+"باقی می‌ماند، مگر این که کاربر تصمیم بگیرد آن را برای دریافت پشتیبانی برای ما "
+"ارسال کند. این فایل به‌طور خودکار زمانی حذف می‌شود که حجم آن به ۱۵ مگابایت "
+"برسد."
 
 #: privacy_policy.html%2Bsection.div.p:65-1
 msgid ""
 "If the user does decide to contact us, the personally identifiable data we "
 "may collect is:"
 msgstr ""
+"در صورتی که کاربر تصمیم به تماس با ما بگیرد، داده‌های شناسایی‌کننده‌ای که ممکن "
+"است جمع‌آوری شود، شامل موارد زیر خواهد بود:"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:67-1
 msgid "Email address - if the user decided to contact us by email;"
-msgstr ""
+msgstr "نشانی ایمیل – در صورتی که کاربر از طریق ایمیل با ما تماس بگیرد؛"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:68-1
 msgid ""
@@ -293,18 +411,20 @@ msgid ""
 "eQualitie websites, and associated metadata - for the purposes of providing "
 "technical support;"
 msgstr ""
+"اطلاعاتی که کاربر ممکن است از طریق ایمیل، تیکت پشتیبانی یا وب‌سایت‌های "
+"eQualitie ارسال کند، همراه با متادیتای مربوطه – به‌منظور ارائه پشتیبانی فنی؛"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:69-1
 msgid "Web browsing activity and history."
-msgstr ""
+msgstr "سابقه مرور و فعالیت کاربر در وب."
 
 #: privacy_policy.html%2Bsection.div.p:72-1
 msgid "None of this data is shared with any third parties."
-msgstr ""
+msgstr "هیچ‌ یک از این اطلاعات با اشخاص ثالث به اشتراک گذاشته نمی‌شود."
 
 #: privacy_policy.html%2Bsection.div.h3:74-1
 msgid "3.4 Crash Reporting"
-msgstr ""
+msgstr "۳.۴ گزارش اشکال"
 
 #: privacy_policy.html%2Bsection.div.p:76-1
 msgid ""
@@ -313,6 +433,11 @@ msgid ""
 "while running the app. Crash reports are forwarded automatically to a server "
 "run by eQualitie. We use Sentry for crash reporting."
 msgstr ""
+"کاربران می‌توانند از طریق منوی تنظیمات مرورگر سِنو، به‌صورت اختیاری قابلیت "
+"ارسال گزارش اشکال را فعال کنند. در صورت فعال‌سازی، مرورگر سِنو هنگام بروز مشکل "
+"در حین اجرای برنامه، گزارش‌های اشکال را ارسال خواهد کرد. گزارش‌های اشکال به‌"
+"صورت خودکار به سروری ارسال می‌شوند که توسط eQualitie مدیریت می‌شود. ما برای "
+"گزارش‌گیری خرابی‌ها از سرویس Sentry استفاده می‌کنیم."
 
 #: privacy_policy.html%2Bsection.div.p:78-1
 msgid ""
