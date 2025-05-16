@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-16 11:45-0400\n"
-"PO-Revision-Date: 2025-05-16 15:47+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2025-05-16 15:49+0000\n"
+"Last-Translator: Mehdi Oloomi <mehdi@equalitie.org>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-community/fa/>\n"
 "Language: fa\n"
@@ -82,17 +82,12 @@ msgstr ""
 "پروکسی را روی localhost با پورت 8077 تنظیم کنید."
 
 #: community.html%2Bmain.section.div.div.ol.li:20-21
-#, fuzzy
-#| msgid ""
-#| "Install the <a href=\"https://gitlab.com/censorship-no/ceno-ext-"
-#| "settings\">Ceno Web Extension</a> and the provided certificate to test it "
-#| "out!"
 msgid ""
 "Install the <a href=\"https://gitlab.com/ceno-app/ceno-ext-settings\">Ceno "
 "Web Extension</a> and the provided certificate to test it out!"
 msgstr ""
-"<a href=\"https://gitlab.com/censorship-no/ceno-ext-settings\">افزونه وب "
-"سِنو</a> و گواهی ارائه‌شده را نصب کنید و دست به کار شوید!"
+"<a href=\"https://gitlab.com/ceno-app/ceno-ext-settings\">افزونه وب سِنو</a> "
+"و گواهی ارائه‌شده را نصب کنید و دست به کار شوید!"
 
 #: community.html%2Bmain.section.div.div.h2:30-17
 msgid "Contribute to our code"
@@ -129,21 +124,14 @@ msgid "Ceno Docker Client"
 msgstr "Ceno Docker Client‌"
 
 #: community.html%2Bmain.section.div.div.p:39-17
-#, fuzzy
-#| msgid ""
-#| "You may also be interested in the (no longer maintained) <a "
-#| "href=\"https://gitlab.com/censorship-no/ceno-archives\">previous "
-#| "incarnation of Ceno</a>, built on the Freenet anonymous file sharing and "
-#| "content publishing network."
 msgid ""
 "You may also be interested in the (no longer maintained) <a href=\"https://"
 "gitlab.com/ceno-app/ceno-archives\">previous incarnation of Ceno</a>, built "
 "on the Freenet anonymous file sharing and content publishing network."
 msgstr ""
-"همچنین ممکن است به <a href=\"https://gitlab.com/censorship-no/ceno-"
-"archives\">نسخه قدیمی‌تر سِنو</a> (که دیگر پشتیبانی نمی‌شود) علاقه‌مند باشید که "
-"بر اساس شبکه ناشناس به اشتراک‌گذاری فایل و انتشار محتوای Freenet ساخته شده "
-"بود."
+"همچنین ممکن است به <a href=\"https://gitlab.com/ceno-app/ceno-archives\""
+">نسخه قدیمی‌تر سِنو</a> (که دیگر پشتیبانی نمی‌شود) علاقه‌مند باشید که بر اساس "
+"شبکه ناشناس به اشتراک‌گذاری فایل و انتشار محتوای Freenet ساخته شده بود."
 
 #: community.html%2Bmain.section.div.div.h2:46-17
 msgid "Share your feedback"
@@ -166,10 +154,8 @@ msgid "Write a review on the Play Store"
 msgstr "نظر خود را در پلی‌استور بنویسید"
 
 #: community.html%2Bmain.section.div.div.ul.li:50-21
-#, fuzzy
-#| msgid "Get in touch with the team: support [at] censorship [dot] no"
 msgid "Get in touch with the team: support [at] ceno [dot] app"
-msgstr "با تیم ما تماس بگیرید: support [at] censorship [dot] no"
+msgstr "با تیم ما تماس بگیرید: support [at] ceno [dot] app"
 
 #: community.html%2Bmain.section.div.div.ul.li:51-21
 msgid "Take a survey"
