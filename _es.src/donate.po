@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-14 18:00-0400\n"
-"PO-Revision-Date: 2025-05-16 13:14+0000\n"
-"Last-Translator: LordTenebrous <danielmorenoperez836@gmail.com>\n"
+"PO-Revision-Date: 2025-05-16 15:34+0000\n"
+"Last-Translator: Grant Gallo <grant@equalitie.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-donate/es/>\n"
 "Language: es\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #: donate.html%2Bmain.section.div.div.h1:5-17
 msgid "Support Ceno"
-msgstr "Support Ceno"
+msgstr "Ayuda a Ceno"
 
 #: donate.html%2Bmain.section.div.div.p:6-17
 msgid ""
