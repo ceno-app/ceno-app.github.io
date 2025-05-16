@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-15 23:57-0400\n"
-"PO-Revision-Date: 2025-05-15 13:31+0000\n"
-"Last-Translator: LibreTranslate <noreply-mt-libretranslate@weblate.org>\n"
+"PO-Revision-Date: 2025-05-15 20:55+0000\n"
+"Last-Translator: Miguel Trujillo <miguel@equalitie.org>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-ceno-in-iran/es/>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 #: latest/ceno-iran.html%2Btitle:1-1
 msgctxt "./latest/ceno-iran.html+title:1-1"
 msgid "Ceno proves itself in Iran during Internet shutdowns"
-msgstr "Ceno se demuestra en Irán durante Desactivación de Internet"
+msgstr "Ceno se pone a prueba en Irán durante los bloqueos de Internet"
 
 #: latest/ceno-iran.html%2Bmain:2-1
 msgid "main img { max-width: 400px; margin-inline: auto; }"
@@ -26,7 +26,7 @@ msgstr "img { max-width: 400px; margin-inline: auto; }"
 #: latest/ceno-iran.html%2Bmain.h1:8-1
 msgctxt "./latest/ceno-iran.html+main.h1:8-1"
 msgid "Ceno proves itself in Iran during Internet shutdowns"
-msgstr "Ceno se demuestra en Irán durante Desactivación de Internet"
+msgstr "Ceno se pone a prueba en Irán durante los bloqueos a Internet"
 
 #: latest/ceno-iran.html%2Bmain.h2:10-1
 msgid ""

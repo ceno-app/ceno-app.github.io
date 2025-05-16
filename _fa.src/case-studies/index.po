@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-14 18:00-0400\n"
-"PO-Revision-Date: 2025-05-15 13:37+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2025-05-15 20:56+0000\n"
+"Last-Translator: Mehdi Oloomi <mehdi@equalitie.org>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-case-studies/fa/>\n"
 "Language: fa\n"
@@ -16,15 +16,15 @@ msgstr ""
 
 #: case-studies/index.html%2Bmain.h1:2-1
 msgid "case studies"
-msgstr ""
+msgstr "بررسی‌های موردی"
 
 #: case-studies/index.html%2Bmain.section.article:9-5
 msgid "Case Study"
-msgstr ""
+msgstr "بررسی موردی"
 
 #: case-studies/index.html%2Bmain.section.article.div:11-5
 msgid "December, 2022"
-msgstr ""
+msgstr "دسامبر ۲۰۲۲‌"
 
 #: case-studies/index.html%2Bmain.section.article.h1:12-5
 msgid "Highlights from the Ground in Iran"
@@ -38,7 +38,12 @@ msgid ""
 "available, Ceno users can still access blocked web content. Users have been "
 "able to access…"
 msgstr ""
+"تجربه کاربران در مناطق مختلف متفاوت بوده، زیرا شرکت‌های ارائه‌دهنده اینترنت "
+"(ISPها) به‌طور ناهماهنگ اقدام به اعمال سانسور و اختلال در اینترنت کرده‌اند. در "
+"مواردی که تنها اتصال موجود، اینترانت ایران (شبکه ملی اطلاعات یا NIN) باشد، "
+"کاربران سِنو همچنان می‌توانند به محتوای وب مسدودشده دسترسی پیدا کنند. کاربران "
+"توانسته‌اند به…"
 
 #: case-studies/index.html%2Bmain.section.article:15-337
 msgid "Read more"
-msgstr ""
+msgstr "بیشتر بخوانید"

@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-14 18:00-0400\n"
-"PO-Revision-Date: 2025-05-15 13:37+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2025-05-16 13:14+0000\n"
+"Last-Translator: LordTenebrous <danielmorenoperez836@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-index/es/>\n"
 "Language: es\n"
@@ -38,10 +38,8 @@ msgid "Ceno in Media"
 msgstr "Ceno en Medios"
 
 #: index.html%2Bmain.div.section.div.h1:35-9
-#, fuzzy
-#| msgid "Browse with a superpower"
 msgid "Browser with a superpower"
-msgstr "Examine con una superpotencia"
+msgstr "Navegador con superpotencia"
 
 #: index.html%2Bmain.div.section.div.p:36-9
 msgid ""

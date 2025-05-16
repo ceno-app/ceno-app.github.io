@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-14 18:00-0400\n"
-"PO-Revision-Date: 2025-05-15 13:37+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2025-05-16 13:14+0000\n"
+"Last-Translator: LordTenebrous <danielmorenoperez836@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-privacy-policy/es/>\n"
 "Language: es\n"
@@ -20,11 +20,11 @@ msgstr "Ceno Browser | Política de Privacidad"
 
 #: privacy_policy.html%2Bsection.div.h1:4-1
 msgid "Ceno Browser Terms of Use & Privacy Notice"
-msgstr ""
+msgstr "Términos de Uso & Aviso de Privacidad de Ceno Browser"
 
 #: privacy_policy.html%2Bsection.div.h2:6-1
 msgid "1. Overview"
-msgstr ""
+msgstr "1. Resumen"
 
 #: privacy_policy.html%2Bsection.div.p:7-1
 msgid ""
@@ -39,7 +39,7 @@ msgstr ""
 
 #: privacy_policy.html%2Bsection.div.h2:9-1
 msgid "2. Terms of use"
-msgstr ""
+msgstr "2. Términos de uso"
 
 #: privacy_policy.html%2Bsection.div.p:10-1
 msgid ""

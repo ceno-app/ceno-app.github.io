@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-14 18:00-0400\n"
-"PO-Revision-Date: 2025-05-15 13:37+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2025-05-15 20:56+0000\n"
+"Last-Translator: Mehdi Oloomi <mehdi@equalitie.org>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-latest/fa/>\n"
 "Language: fa\n"
@@ -16,11 +16,11 @@ msgstr ""
 
 #: latest/index.html%2Bmain.h1:2-1
 msgid "latest"
-msgstr ""
+msgstr "تازه‌ها"
 
 #: latest/index.html%2Bmain.section.article:9-5
 msgid "Press Release"
-msgstr ""
+msgstr "بیانیه خبری"
 
 #: latest/index.html%2Bmain.section.article.div:11-5
 msgid "December 15, 2022"
@@ -35,7 +35,9 @@ msgid ""
 "eQualitie is pleased to announce that its Ceno Browser is fulfilling its "
 "mission of assisting thousands in Iran, while also…"
 msgstr ""
+"شرکت eQualitie مفتخر است که مرورگر سِنو موفق به تحقق ماموریت خود برای کمک به "
+"هزاران نفر در ایران شده و همچنین…"
 
 #: latest/index.html%2Bmain.section.article:15-155
 msgid "Read more"
-msgstr ""
+msgstr "بیشتر بخوانید"
