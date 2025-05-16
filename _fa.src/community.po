@@ -195,17 +195,12 @@ msgid "Join our Weblate"
 msgstr "به Weblate ما بپیوندید"
 
 #: community.html%2Bmain.section.div.div.p:72-17
-#, fuzzy
-#| msgid ""
-#| "Please contact the Ceno team at support [at] censorship [dot] no if "
-#| "you're interested in becoming a reviewer for translation(s) in your "
-#| "language(s)."
 msgid ""
 "Please contact the Ceno team at support [at] ceno [dot] app if you're "
 "interested in becoming a reviewer for translation(s) in your language(s)."
 msgstr ""
 "اگر به بازبینی ترجمه‌ها در زبان خود علاقه دارید، لطفا با این ایمیل با تیم سنو "
-"تماس بگیرید: support [at] censorship [dot] no ."
+"تماس بگیرید: support [at] ceno [dot] app."
 
 #: community.html%2Bmain.section.div.div.p:73-17
 msgid ""
