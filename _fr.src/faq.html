@@ -1,40 +1,40 @@
 <main>
     <section class="faq-header">
         <div class="faq-head-title">
-            <h1>Questions<br>Fréquemment<br>Posées</h1>
+            <h1>Foire<br>aux<br>questions</h1>
             <img src="/static/img/faq/question.svg" />
         </div>
         <form id="searchForm" action="https://duckduckgo.com/" method="GET">
             <input id="q" type="text" name="q" placeholder="Type something to search using Duckduckgo" />
-            <input type="hidden" name="sites" value="(ceno.network OU ceno.website OU ceno.app)">
-            <button type="submit">Chercher</button>
+            <input type="hidden" name="sites" value="(ceno.network OR ceno.website OR ceno.app)">
+            <button type="submit">Recherche</button>
         </form>
         <div class="link-container">
-            <a href="../user-manual/@LANG@"><div>Lire le manuel de l'utilisateur</div></a>
-            <a href="https://gitlab.com/equalitie/ouinet/-/blob/main/doc/ouinet-network-whitepaper.md"><div>Lire le livre blanc technique et approfondi</div></a>
-            <a href="TODO" hidden><div>Lire le guide de démarrage rapide</div></a>
+            <a href="../user-manual/@LANG@"><div>Lire le guide de l'utilisateur</div></a>
+            <a href="https://gitlab.com/equalitie/ouinet/-/blob/main/doc/ouinet-network-whitepaper.md"><div>Lire le document de présentation technique</div></a>
+            <a href="TODO" hidden><div>Lisez le guide de démarrage rapide</div></a>
         </div>
     </section>
     <section class="fff-bg">
         <div class="faq-container default-width default-vpadding">
             <details>
                 <summary> Qu’est-ce que le Navigateur Ceno ? </summary>
-                <p>Ceno is a mobile web browser based on Mozilla Android Components. It is designed for accessing and distributing web content (websites) using a novel approach that relies on BitTorrent – a decentralized file sharing network. Ceno's advantage comes from side-stepping current Internet censorship methods and allowing people to access and share web information in and across regions where connectivity has been interrupted or compromised.</p>
+                <p>Ceno est un navigateur web mobile basé sur Mozilla Android Components. Il est conçu pour l'accès et la distribution de contenu Web (websites) en utilisant une nouvelle approche qui repose sur BitTorrent – un réseau décentralisé de partage de fichiers. L'avantage de Ceno provient des méthodes de censure Internet en cours et permet aux gens d'accéder et de partager des informations Web dans et à travers les régions où la connectivité a été interrompue ou compromise.</p>
             </details>
             <details>
                 <summary> Comment est ce que Ceno fonctionne ? </summary>
                 <p>Lorsqu'un site web est accessible à partir de votre réseau (par exemple, en accédant à <i>www.canada.ca</i> à partir de votre Internet domestique), Ceno s'y connectera comme un navigateur Web normal.</p>
                 <p>Lorsqu'un site Web n'est pas accessible en raison d'un filtrage/censure du réseau, Ceno tentera d'obtenir le contenu pour vous. La manière dont Ceno tente de trouver du contenu dépend de si vous avez opté pour utiliser Ceno en mode <strong>Public</strong> ou <strong>Personnel</strong>.</p>
-                <p>In <strong>Public</strong> mode, Ceno will look into the BitTorrent network to see if another Ceno user has recently shared the requested page. If the service can identify the requested page, it will retrieve that page from another user's device. If the content is not available, Ceno will contact several Injectors to request that website and have it delivered to you.</p>
-                <p>In <strong>Personal</strong> mode, you will only contact the Injectors to have that website fetched and delivered to you. The search will not connect to the BitTorrent network and will not attempt to locate the content on other users' devices.</p>
+                <p>Dans le mode <strong>Public</strong>, Ceno se penchera sur le réseau BitTorrent pour voir si un autre utilisateur Ceno a récemment partagé la page demandée. Si le service peut identifier la page demandée, il récupérera cette page à partir du périphérique d'un autre utilisateur. Si le contenu n'est pas disponible, Ceno contactera plusieurs Injecteurs pour demander ce site Web et l'avoir livré à vous.</p>
+                <p>Dans le mode <strong>Personnel</strong>, vous ne contacterez les Injecteurs que pour que ce site soit fétiché et livré à vous. La recherche ne se connectera pas au réseau BitTorrent et ne tentera pas de localiser le contenu sur les appareils d'autres utilisateurs.</p>
                 <p>Pour garantir que votre client Ceno puisse toujours contacter un injecteur, nous avons également créé des ponts. Si les injecteurs sont bloqués sur votre réseau, l'application Ceno recherchera les ponts disponibles, qui transmettront votre demande aux injecteurs. Le réseau Ceno compte actuellement environ 6 000 ponts. Leur nombre ne cesse de croître.</p>
-                <p>For a more detailed explanation of how Ceno works, please read <a href="/user-manual/@LANG@/">the user guide</a>.</p>
-                <p>For a simpler explanation of how Ceno works, <a href="/@LANG@/about.html">please read this</a>.</p>
+                <p>Pour une explication plus détaillée de la façon dont Ceno fonctionne, veuillez lire <a href="/user-manual/@LANG@/">le guide utilisateur</a>.</p>
+                <p>Pour une explication plus simple de la façon dont Ceno fonctionne, <a href="/@LANG@/about.html">luase read this</a>.</p>
             </details>
             <details>
                 <summary> Quels sont les avantages d’utiliser Ceno ? </summary>
-                <p>Our motto is ‘Share the Web!' and essentially that is what Ceno users are doing. Most web pages have static content (something you read, watch, listen to, etc.). Static content can be packaged and shared with other users seeking the same content. Ceno uses the BitTorrent file sharing network for this.</p>
-                <p>Ceno's advantage is evident in a network that censors websites, or where the network is weak or unstable. In these circumstances, the Ceno client is able to leverage additional methods to retrieve content and deliver it to your device. By allowing users to enable sharing of content they have recently retrieved, Ceno expands access to the internet more generally. Whether you are living in a part of the world that restricts access to content, or in a remote area with limited access to the internet, Ceno allows you to access information that may otherwise be unavailable.</p>
+                <p>Notre devise est ‘Partager le Web!’ et c’est essentiellement ce que font les utilisateurs de Ceno. La plupart des pages Web ont un contenu statique (quelque chose vous lisez, regardez, écoutez, etc.). Le contenu statique peut être emballé et partagé avec d'autres utilisateurs recherchant le même contenu. Ceno utilise le réseau de partage de fichiers BitTorrent pour cela.</p>
+                <p>L'avantage de Ceno est évident dans un réseau qui censure les sites Web, ou où le réseau est faible ou instable. Dans ces circonstances, le client Ceno peut utiliser des méthodes supplémentaires pour récupérer le contenu et le livrer à votre appareil. En permettant aux utilisateurs de permettre le partage de contenu qu'ils ont récemment récupérés, Ceno élargit l'accès à Internet plus généralement. Que vous vivez dans une partie du monde qui limite l'accès au contenu, ou dans une zone éloignée avec un accès limité à Internet, Ceno vous permet d'accéder à des informations qui peuvent être autrement indisponibles.</p>
                 <p>Les personnes qui dirigent Ceno depuis des pays qui ne censurent pas Internet, ou depuis des régions du monde où l’accès à Internet est fiable, peuvent choisir de servir de ponts pour ceux qui utilisent des réseaux fortement restreints. Le réseau inscrit automatiquement les nouveaux ponts et assure le suivi de leur mise hors ligne. Lancer un pont est une action très simple, mais puissante, vous permettant d'aider les autres à accéder à Internet.</p>
                 <p>Ceno - and all accompanying components of the tool that together create a decentralized network of peers and nodes - is free and open source software. You can <a href="https://gitlab.com/ceno-app/ceno-android">inspect our code</a> or re-create the entire network yourself!</p>
             </details>
@@ -43,13 +43,13 @@
                 <h3>Risques pour les utilisateurs</h3>
                 <p>Chaque technologie traitant de cas d’utilisation sensibles présente ses avantages et ses risques. De par sa conception, Ceno utilise le réseau public BitTorrent pour une grande partie de ses besoins de routage et de stockage de données. Chaque fois que vous demandez ou partagez un élément de contenu sur le réseau BitTorrent (mode public), vous créez un enregistrement qui associe votre adresse IP à un élément de contenu récupéré d'un site Web particulier. Par exemple, n'importe qui peut interroger le réseau BitTorrent pour obtenir une liste d'adresses IP associées à <i>website.com</i>.</p>
                 <p>Les utilisateurs partageant le contenu récupéré avec d'autres peuvent également encourir des frais de données supplémentaires lorsque le contenu est copié de leur appareil vers l'appareil d'autres utilisateurs de Ceno.</p>
-                <p>En réponse à ces risques, nous avons créé un "mode <strong>Personnel</strong>" pour les utilisateurs de Ceno dans lequel le service n'interagit pas avec le réseau BitTorrent. Nous recommandons ce mode aux utilisateurs qui ne souhaitent qu'aucun enregistrement de leur activité apparaisse sur BitTorrent, ainsi que pour les opérations sur des sites web qui nécessitent une authentification (par exemple, lors de la connexion à vos comptes de réseaux sociaux).</p>
+                <p>En réponse à ces risques, nous avons créé un mode "<strong>Personal</strong>" pour les utilisateurs de Ceno où le service n'interagit pas avec le réseau BitTorrent. Nous recommandons ce mode pour les utilisateurs qui ne veulent aucun enregistrement de leur activité à apparaître sur BitTorrent, ainsi que pour les opérations de site Web qui nécessitent une authentification (par exemple lorsque vous vous connectez à vos comptes de médias sociaux).</p>
                 <p>Vous pouvez facilement basculer entre les onglets <strong>Public</strong> et <strong>Personnel</strong> de la même manière que vous basculez entre les onglets Normal et Privé/Incognito sur votre navigateur actuel.</p>
                 <p>Les injecteurs peuvent également voir les demandes de contenu sur le réseau, y compris l'adresse IP de l'utilisateur qui fait la demande et le nom du site web proposant le contenu souhaité. Les injecteurs sont un composant réseau nécessaire pour 1) introduire du contenu Web dans un réseau décentralisé et 2) authentifier l'intégrité du contenu introduit. Sur le réseau Ceno, les injecteurs sont gérés et gérés par l'équipe Ceno. Nous supprimons périodiquement tous les journaux d'accès.</p>
                 <h3 id="bridgemode">Risques pour les opérateurs de ponts</h3>
                 <p>Puisque n’importe quel utilisateur peut devenir un pont, considérez les risques introduits par cette action.</p>
                 <p>L'activité du pont est invisible pour l'opérateur du pont (à moins qu'il surveille activement son appareil pour les connexions entrantes et sortantes). Leur travail consiste à recevoir les demandes réseau des autres utilisateurs de Ceno pour accéder à un injecteur et à transmettre cette demande.</p>
-                <p>Bridge operators will have their device's IP address listed in the BitTorrent network as an accessible Bridge.</p>
+                <p>Les exploitants de ponts auront l'adresse IP de leur appareil indiquée dans le réseau BitTorrent en tant que pont accessible.</p>
                 <p>Le pont ne fonctionne que lorsque le réseau dans lequel vous vous trouvez autorise les connexions entrantes. Ceci est vérifié automatiquement par l'application client Ceno au démarrage. La plupart des opérateurs de téléphonie mobile sans fil n'autorisent pas les connexions entrantes.</p>
             </details>
             <details>
@@ -59,15 +59,15 @@
                 <p>Certains de leurs autres projets incluent <a href="https://ouisync.net">Ouisync</a>, un service de partage de fichiers décentralisé ; <a href="https://deflect.ca">Deflect</a>, un outil de protection DDoS ; Baskerville, un système de détection d'attaques basé sur l'apprentissage automatique ; et la boîte à outils de déploiement dComms pour la mise en place de services réseau décentralisés et fédérés.</p>
             </details>
             <details>
-                <summary> What's the difference between using a VPN and Ceno Browser? </summary>
+                <summary> Quelle est la différence entre l'utilisation d'un VPN et Ceno Browser ? </summary>
                 <p>Les VPN ont été initialement créés pour les communications privées entre votre appareil et un serveur de destination. Alors que la censure d’Internet est devenue fréquente dans le monde entier, les fournisseurs de VPN ont commencé à proposer leurs services afin de contourner également les restrictions des réseaux locaux. Aujourd’hui, il existe de nombreux fournisseurs de VPN proposant une grande variété d’options de connectivité pour aider leurs utilisateurs à contourner la censure des réseaux locaux.
                 </p>
                 <p>Les VPN peuvent voir qui sont leurs clients et quels sites web ils demandent. Ceci est inhérent à la conception et un niveau de confiance dans l'opérateur VPN est requis (un peu comme la confiance requise dans eQualitie, qui exploite les injecteurs Ceno). </p>
-                <p>Ceno's primary distinction from a VPN is that it does attempt to route all of your website requests through the decentralized network. When a website is available without restriction, Ceno will simply connect to it like a normal web browser. Also, Ceno users cache and share content with each other. This reduces the strain on censorship circumvention nodes and improves deliverability. </p>
+                <p>La principale distinction de Ceno d'un VPN est qu'il s'efforce d'aligner toutes les demandes de votre site Web via le réseau décentralisé. Lorsqu'un site Web est disponible sans restriction, Ceno se connecte simplement à lui comme un navigateur Web normal. En outre, les utilisateurs de Ceno cachent et partagent du contenu l'un avec l'autre. Cela réduit la pression sur les noeuds de contournement de la censure et améliore la délivrance. </p>
             </details>
             <details>
-                <summary> What's the difference between using the Tor and Ceno browsers? </summary>
-                <p>Unlike Tor Browser, Ceno Browser is not a tool for anonymity, which is Tor's primary purpose. In the Tor network, network traffic is encrypted and routed through a network of relays run by volunteers, and appears to originate from the IP address of an exit node. Tor is an excellent option for privacy from Internet surveillance and website operators. If it works in your network environment, we recommend it, provided that you've also read <a href="https://support.torproject.org/">their support documentation</a>.</p>
+                <summary> Quelle est la différence entre l'utilisation des navigateurs Tor et Ceno? </summary>
+                <p>Contrairement à Tor Browser, Ceno Browser n'est pas un outil pour l'anonymat, qui est le but principal de Tor. Dans le réseau Tor, le trafic réseau est crypté et acheminé par un réseau de relais gérés par des bénévoles et semble provenir de l'adresse IP d'un nœud de sortie. Tor est une excellente option pour la protection de la vie privée des opérateurs Internet et de site Web. Si elle fonctionne dans votre environnement réseau, nous le recommandons, à condition que vous ayez également lu <a href="https://support.torproject.org/"> leur documentation de support</a>.</p>
             </details>
             <details>
                 <summary> Quelle est la différence entre les onglets Personnel et Public, encore une fois ? </summary>
