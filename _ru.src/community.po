@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-14 18:00-0400\n"
+"POT-Creation-Date: 2025-05-16 11:45-0400\n"
 "PO-Revision-Date: 2025-05-06 16:48+0000\n"
 "Last-Translator: Grant Gallo <grant@equalitie.org>\n"
 "Language-Team: Russian <https://hosted.weblate.org/projects/censorship-no/"
@@ -144,7 +144,9 @@ msgid "Write a review on the Play Store"
 msgstr "Оставь отзыв в Play Store"
 
 #: community.html%2Bmain.section.div.div.ul.li:50-21
-msgid "Get in touch with the team: support [at] censorship [dot] no"
+#, fuzzy
+#| msgid "Get in touch with the team: support [at] censorship [dot] no"
+msgid "Get in touch with the team: support [at] ceno [dot] app"
 msgstr "Пришли свою историю нам на почту: support [at] censorship [dot] no"
 
 #: community.html%2Bmain.section.div.div.ul.li:51-21
@@ -187,8 +189,13 @@ msgid "Join our Weblate"
 msgstr "Присоединяйтесь к Weblate"
 
 #: community.html%2Bmain.section.div.div.p:72-17
+#, fuzzy
+#| msgid ""
+#| "Please contact the Ceno team at support [at] censorship [dot] no if "
+#| "you're interested in becoming a reviewer for translation(s) in your "
+#| "language(s)."
 msgid ""
-"Please contact the Ceno team at support [at] censorship [dot] no if you're "
+"Please contact the Ceno team at support [at] ceno [dot] app if you're "
 "interested in becoming a reviewer for translation(s) in your language(s)."
 msgstr ""
 "Пожалуйста, свяжитесь с командой Ceno по адресу support [собака] censorship "

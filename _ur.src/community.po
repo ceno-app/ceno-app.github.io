@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-14 18:00-0400\n"
+"POT-Creation-Date: 2025-05-16 11:45-0400\n"
 "PO-Revision-Date: 2025-04-21 23:09+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/censorship-no/"
@@ -128,7 +128,7 @@ msgid "Write a review on the Play Store"
 msgstr ""
 
 #: community.html%2Bmain.section.div.div.ul.li:50-21
-msgid "Get in touch with the team: support [at] censorship [dot] no"
+msgid "Get in touch with the team: support [at] ceno [dot] app"
 msgstr ""
 
 #: community.html%2Bmain.section.div.div.ul.li:51-21
@@ -164,8 +164,13 @@ msgid "Join our Weblate"
 msgstr "ہمارے Weblate میں شامل ہوں"
 
 #: community.html%2Bmain.section.div.div.p:72-17
+#, fuzzy
+#| msgid ""
+#| "Please contact the Ceno team at support [at] censorship [dot] no if "
+#| "you're interested in becoming a reviewer for translation(s) in your "
+#| "language(s)."
 msgid ""
-"Please contact the Ceno team at support [at] censorship [dot] no if you're "
+"Please contact the Ceno team at support [at] ceno [dot] app if you're "
 "interested in becoming a reviewer for translation(s) in your language(s)."
 msgstr ""
 "براہ کرم Ceno ٹیم سے رابطہ کریںsupport@censorship.no اگر آپ اپنی زبان "

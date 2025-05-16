@@ -447,5 +447,5 @@ msgstr ""
 #: privacy_policy.html%2Bsection.div.p:125-1
 msgid ""
 "If you have any questions or suggestions about this Privacy Policy, do not "
-"hesitate to contact us at: support [at] censorship [dot] no."
+"hesitate to contact us at: support [at] ceno [dot] app."
 msgstr ""
