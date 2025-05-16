@@ -87,6 +87,12 @@ nav .desktop-i18n-panel {
     flex-direction: column;
     gap: 1em;
     z-index: 3;
+    width: 151px;
+    padding-block: 0.4em;
+}
+
+.navbar-item {
+    padding-inline-start: 0.4em !important;
 }
 
 .desktop-nav-toggle:checked~label .i18n-chevron {
@@ -234,7 +240,6 @@ nav .dropdown-btn {
 
 
 div .mobile-i18n-panel {
-    margin-top: 4px;
     padding-block-start: 0.6rem;
     padding-block-end: 0.8rem;
     padding-inline: 0.6rem;
@@ -244,8 +249,8 @@ div .mobile-i18n-panel {
     color: #373756;
     position: absolute;
     background-color: #fff;
-    right: 4%;
-    z-index: 3;
+    right: 194px;
+    z-index: 4;
 }
 
 [dir=rtl] nav .mobile-i18n-panel {
@@ -296,8 +301,13 @@ label .mobile-i18n-chevron {
         color: white !important;
     }
 
+
     .mobile-nav-menu {
         gap: 16px;
+    }
+
+    div .mobile-i18n-panel {
+        right: 108px;
     }
 
     .download-btn {
