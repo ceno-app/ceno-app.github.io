@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-16 11:45-0400\n"
-"PO-Revision-Date: 2025-05-13 20:01+0000\n"
-"Last-Translator: Mayssemb <mayssem.boulajfene@medtech.tn>\n"
+"PO-Revision-Date: 2025-05-19 11:00+0000\n"
+"Last-Translator: Asyuti <nike49424@gmail.com>\n"
 "Language-Team: Arabic <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-faq/ar/>\n"
 "Language: ar\n"
@@ -41,7 +41,7 @@ msgstr "اقرأ دليل البدء السريع"
 
 #: faq.html%2Bmain.section.div:19-9
 msgid "What is Ceno Browser?"
-msgstr "ما هو متصفح Ceno؟"
+msgstr "هو متصفح ceno"
 
 #: faq.html%2Bmain.section.div.details.p:22-17
 #, fuzzy
