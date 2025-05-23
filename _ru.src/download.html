@@ -40,14 +40,20 @@
             </div>
             <br>
             <div class="link-container">
-                <strong>Ceno for Windows:</strong> <a href="https://ceno-download.s3.amazonaws.com/ceno-desktop/v0.0.1/ceno-alpha-windows-x86_64-system-0.0.1-20250425123522.exe">x86_64 (system-install)</a>
+                <strong>Ceno for Windows:</strong> <a href="https://ceno-download.s3.amazonaws.com/ceno-desktop/v0.0.3/ceno-alpha-windows-x86_64-system-0.0.3-20250522160823.exe">x86_64 (system-install)</a>
             </div>
             <br>
-            <p>Выполните эту команду, чтобы проверить, что APK-файл имеет действительную сигнатуру сертификата с приведенным ниже отпечатком:</p>
+            <p>To verify that the Ceno for Android APK has a valid signature, run this command and confirm its output:</p>
             <div class="code-wrapper">
                 <code>> apksigner verify --print-certs ceno-[…].apk<br> Signer #1 certificate DN: CN=equalit.ie<br> Signer #1 certificate SHA-256 digest: <br>a59d20c076f6170a2c13d9ce96cd4349688f907898dfc3c89b0ae6ebe9f7edca<br> […]</code>
             </div>
-            <p>You can also verify the <a href="https://ceno-download.s3.amazonaws.com/ceno/v2.4.7/sha256sums.txt.asc">signatures</a> of the <a href="https://ceno-download.s3.amazonaws.com/ceno/v2.4.7/sha256sums.txt">file hashes</a> against our PGP key (with fingerprint <code class="pubkey">51BE 600C 2711 926C 865D F93F C7DC C123 F0DD B862</code>)</p>
+            <p>To verify that the Ceno for Windows EXE has a valid signature, run this command and confirm its output:</p>
+            <div class="code-wrapper">
+                <code>> signtool.exe verify /pa /v ceno-alpha-windows-[…].exe<br> […]<br> Signing Certificate Chain:<br> Issued to: E3D17812-E9F1-46C8-B650-4D39786777D9<br> Issued by: E3D17812-E9F1-46C8-B650-4D39786777D9<br> Expires: Sat Apr 25 15:13:25 2026<br> SHA1 hash: D73E913BCAE206834A30823035636FC5A3217436<br> […]</code>
+            </div>
+            <p>You can also verify the signatures of the file hashes against our PGP key (with fingerprint <code class="pubkey">51BE 600C 2711 926C 865D F93F C7DC C123 F0DD B862</code>)</p>
+            <p>Ceno for Android: <a href="https://ceno-download.s3.amazonaws.com/ceno/v2.4.7/sha256sums.txt">file hashes</a>, <a href="https://ceno-download.s3.amazonaws.com/ceno/v2.4.7/sha256sums.txt.asc">signatures</a></p>
+            <p>Ceno for Windows: <a href="https://ceno-download.s3.amazonaws.com/ceno-desktop/v0.0.3/sha256sums.txt">file hashes</a>, <a href="https://ceno-download.s3.amazonaws.com/ceno-desktop/v0.0.3/sha256sums.txt.asc">signatures</a></p>
         </div>
     </section>
     <section class="flexboxes default-width default-vpadding">
