@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-23 15:25-0400\n"
-"PO-Revision-Date: 2025-05-12 18:06+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2025-05-26 09:01+0000\n"
+"Last-Translator: Bora Atıcı <boratici.acc@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-donate/tr/>\n"
 "Language: tr\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #: donate.html%2Bmain.section.div.div.h1:5-17
 msgid "Support Ceno"
-msgstr ""
+msgstr "Ceno'yu destekle"
 
 #: donate.html%2Bmain.section.div.div.p:6-17
 msgid ""
@@ -26,6 +26,10 @@ msgid ""
 "getting involved and contributing, please visit <a href=\"community."
 "html\">the Community page!</a>"
 msgstr ""
+"Ceno tarayıcı tamamen ücretsiz ve açık kaynaklı bir yazılımdır. Aşağıda, "
+"finansal katkılar yoluyla devam eden gelişimini destekleyebilmenin bazı "
+"yolları bulunmaktadır. Katılmanın ve katkıda bulunmanın diğer yolları için "
+"lütfen <a href=\"community.html\">topluluk sayfası</a> adresini ziyaret edin!"
 
 #: donate.html%2Bmain.section.div.div.div.div.h2:12-25
 msgid "Make a Donation"
@@ -37,7 +41,7 @@ msgstr "PayPal ödeme yöntemimiz ile tek seferlik bir bağış yapın."
 
 #: donate.html%2Bmain.section.div.div.div.div.div:14-25
 msgid "Donate via PayPal"
-msgstr ""
+msgstr "PayPal aracılığıyla bağış yap"
 
 #: donate.html%2Bmain.section.div.div.div.div.h2:20-25
 msgid "Become a Sponsor"
@@ -61,4 +65,4 @@ msgstr "Cüzdan adresimiz:"
 
 #: donate.html%2Bmain.section.div.div.div.div:29-50
 msgid "bc1q2r70hf0jks43jyykpua6uqv907zegplgfacauc"
-msgstr ""
+msgstr "bc1q2r70hf0jks43jyykpua6uqv907zegplgfacauc"
