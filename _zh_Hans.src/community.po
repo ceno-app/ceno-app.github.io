@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-05-23 15:25-0400\n"
-"PO-Revision-Date: 2025-05-24 20:01+0000\n"
-"Last-Translator: 黄奕铭 <latitudecrosser@users.noreply.hosted.weblate.org>\n"
+"PO-Revision-Date: 2025-05-29 10:01+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/censorship-no/website-v2/website-v2-community/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -98,7 +98,7 @@ msgstr ""
 
 #: community.html%2Bmain.section.div.div.ul.li:36-21
 msgid "Ouinet"
-msgstr "Ouinet"
+msgstr ""
 
 #: community.html%2Bmain.section.div.div.ul.li:37-21
 msgid "Ceno Docker Client"
