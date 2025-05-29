@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-23 15:25-0400\n"
+"POT-Creation-Date: 2025-05-29 11:16-0400\n"
 "PO-Revision-Date: 2025-05-26 09:01+0000\n"
 "Last-Translator: Bora Atıcı <boratici.acc@gmail.com>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/censorship-no/"
@@ -117,7 +117,8 @@ msgstr ""
 
 #: index.html%2Bmain.section.div.div.div.p:81-11
 msgid "Help yourself and others. Keep Ceno installed and use it frequently."
-msgstr "Kendinize ve başkalarına yardım edin. Ceno'yu kurup sık sık kullanarak."
+msgstr ""
+"Kendinize ve başkalarına yardım edin. Ceno'yu kurup sık sık kullanarak."
 
 #: index.html%2Bmain.section.div.div.div.p:85-11
 msgid ""
