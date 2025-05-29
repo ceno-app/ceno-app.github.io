@@ -2,24 +2,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-22 16:48-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2025-05-23 15:25-0400\n"
+"PO-Revision-Date: 2025-05-26 09:01+0000\n"
+"Last-Translator: Semih <semihbrn10@gmail.com>\n"
+"Language-Team: Turkish <https://hosted.weblate.org/projects/censorship-no/"
+"website-v2/website-v2-about/tr/>\n"
 "Language: tr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.15.1\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: about.html%2Bmain.section.div.div:4-13
 msgid "Ceno is building a borderless internet"
-msgstr ""
+msgstr "Ceno sınırsız bir internet inşa ediyor"
 
 #: about.html%2Bmain.section.div.p:5-13
 msgid "Our motto is ‘Share the Web!' because that is what our users do."
-msgstr ""
+msgstr "Sloganımız 'Web'i Paylaşın!' çünkü kullanıcılarımız bunu yapıyor."
 
 #: about.html%2Bmain.section.div.p:12-13
 msgid ""
@@ -29,6 +30,12 @@ msgid ""
 "People using Ceno Browser are able to access a library of saved internet "
 "content that continues to be available during service interruptions."
 msgstr ""
+"İnternet kısıtlamalarıyla karşı karşıya kalan kişiler için birçok araç "
+"mevcuttur, ancak bu araçlar genellikle internet kesintileri, blokajlar, VPN "
+"kesintileri ve diğer kesintiler sırasında kişilere yardımcı "
+"olmaz.<br><b>Ceno farklıdır.</b> Ceno Tarayıcısı kullanan kişiler, hizmet "
+"kesintileri sırasında erişilmeye devam eden kayıtlı internet içeriği "
+"kütüphanesine erişebilirler."
 
 #: about.html%2Bmain.section.div.div.div.p:16-21
 msgid ""
@@ -41,18 +48,27 @@ msgid ""
 "Bridges can share content with people using Ceno in heavily restricted "
 "networks."
 msgstr ""
+"İşte web paylaşımının devreye girdiği yer burasıdır: İçeriğe erişimi veya "
+"istikrarlı bir ağı olan kullanıcılar, içeriği toplamaya ve erişimi "
+"olmayanlarla paylaşmaya yardımcı olur. Bu, örneğin, <b>Azerbaycan'daki bir "
+"Ceno kullanıcısının, İtalya'daki başka bir Ceno kullanıcısı aynı makaleyi "
+"açtığında engellenen bir makaleyi okuyabileceği</b> anlamına gelir. Bu, "
+"Ceno'yu internete daha güvenilir ve açık erişime sahip ülkelerde çalıştıran "
+"kişiler tarafından mümkün kılınır - bu kullanıcılara \"<b>Köprüler</b>\" "
+"adını veririz. Köprüler, içeriği, sıkı bir şekilde kısıtlanmış ağlarda Ceno "
+"kullanan kişilerle paylaşabilir."
 
 #: about.html%2Bmain.section.div.div.div.div.a.div:19-89
 msgid "Become a bridge"
-msgstr ""
+msgstr "Bir köprü ol"
 
 #: about.html%2Bmain.section.div.div.div.div.a.div:20-67
 msgid "Learn how Ceno works"
-msgstr ""
+msgstr "Ceno'nun nasıl çalıştığını öğren"
 
 #: about.html%2Bmain.section.div.h2:28-13
 msgid "The team behind Ceno"
-msgstr ""
+msgstr "Ceno'nun arkasındaki ekip"
 
 #: about.html%2Bmain.section.div.div.p:30-17
 msgid ""
@@ -62,6 +78,12 @@ msgid ""
 "of experience creating and advancing tools to protect freedom of speech, "
 "facilitate information exchange, and promote self-expression on the internet."
 msgstr ""
+"Ceno, İnsan Hakları Evrensel Beyannamesi'nin 18, 19 ve 20. maddelerini "
+"desteklemek için Kanadalı kar amacı gütmeyen kuruluş <a href="
+"\"https://equalitie.org\">eQualitie</a> tarafından yaratılmış ve "
+"sürdürülmektedir. Konuşma özgürlüğünü korumak, bilgi alışverişini "
+"kolaylaştırmak ve internette kendini ifade etmeyi teşvik etmek için araçlar "
+"oluşturma ve geliştirme konusunda on yılı aşkın deneyime sahibiz."
 
 #: about.html%2Bmain.section.div.div.p:31-17
 msgid ""
@@ -70,16 +92,22 @@ msgid ""
 "You can <a href=\"https://gitlab.com/ceno-app\">inspect our code</a> or re-"
 "create the entire network yourself!"
 msgstr ""
+"Ceno — ve aracın, birlikte akranlar ve düğümlerden oluşan merkezi olmayan "
+"bir ağ oluşturan tüm eşlik eden bileşenleri — ücretsiz ve açık kaynaklı bir "
+"yazılımdır. <a href=\"https://gitlab.com/ceno-app\">Kodumuzu inceleyebilir</"
+"a> veya tüm ağı kendiniz yeniden oluşturabilirsiniz!"
 
 #: about.html%2Bmain.section.div.div.h2:44-17
 msgid "Is Ceno for me?"
-msgstr ""
+msgstr "Ceno bana göre mi?"
 
 #: about.html%2Bmain.section.div.div.div.p:46-21
 msgid ""
 "Ceno is for everyone. It can replace your existing mobile browser as it "
 "shares many of the same functions and features."
 msgstr ""
+"Ceno herkes içindir. Birçok aynı işlevi ve özelliği paylaştığı için mevcut "
+"mobil tarayıcınızın yerini alabilir."
 
 #: about.html%2Bmain.section.div.div.div.p:47-21
 msgid ""
@@ -88,57 +116,62 @@ msgid ""
 "benefit is that you can choose to help other Ceno users while you browse by "
 "becoming a Bridge."
 msgstr ""
+"Ceno'yu internete açık erişime sahip bir bölgeden çalıştırıyorsanız, içeriğe "
+"ana akım bir tarayıcıda eriştiğiniz şekilde erişirsiniz. Avantajı, bir Köprü "
+"olarak gezinirken diğer Ceno kullanıcılarına yardım etmeyi seçebilmenizdir."
 
 #: about.html%2Bmain.section.div.div.div.p:48-21
 msgid ""
 "Ceno is especially useful for people facing internet censorship or "
 "connectivity issues."
 msgstr ""
+"Ceno özellikle internet sansürü veya bağlantı sorunlarıyla karşılaşan "
+"kişiler için oldukça kullanışlıdır."
 
 #: about.html%2Bmain.section.div.div:54-13
 msgctxt "./about.html+main.section.div.div:54-13"
 msgid "Citizen"
-msgstr ""
+msgstr "Vatandaş"
 
 #: about.html%2Bmain.section.div.div:58-13
 msgctxt "./about.html+main.section.div.div:58-13"
 msgid "Student"
-msgstr ""
+msgstr "Öğrenci"
 
 #: about.html%2Bmain.section.div.div:62-13
 msgid "Human rights defender"
-msgstr ""
+msgstr "İnsan hakları savunucusu"
 
 #: about.html%2Bmain.section.div.div:66-13
 msgctxt "./about.html+main.section.div.div:66-13"
 msgid "Journalist"
-msgstr ""
+msgstr "Gazeteci"
 
 #: about.html%2Bmain.section.div.div:70-13
 msgctxt "./about.html+main.section.div.div:70-13"
 msgid "Technologist"
-msgstr ""
+msgstr "Teknoloji uzmanı"
 
 #: about.html%2Bmain.section.div.div:74-13
 msgid "Diaspora user"
-msgstr ""
+msgstr "Diaspora kullanıcısı"
 
 #: about.html%2Bmain.section.div.div.div:79-17
 msgctxt "./about.html+main.section.div.div.div:79-17"
 msgid "Citizen"
-msgstr ""
+msgstr "Vatandaş"
 
 #: about.html%2Bmain.section.div.div.div:83-17
 msgctxt "./about.html+main.section.div.div.div:83-17"
 msgid "Student"
-msgstr ""
+msgstr "Öğrenci"
 
 #: about.html%2Bmain.section.div.div.div:87-17
 msgctxt "./about.html+main.section.div.div.div:87-17"
 msgid "Technologist"
-msgstr ""
+msgstr "Teknoloji uzmanı"
 
 #: about.html%2Bmain.section.div.div.div:91-17
 msgctxt "./about.html+main.section.div.div.div:91-17"
 msgid "Journalist"
-msgstr ""
+msgstr "Gazeteci"

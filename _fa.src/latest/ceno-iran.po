@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-15 23:57-0400\n"
-"PO-Revision-Date: 2025-05-15 20:55+0000\n"
-"Last-Translator: Mehdi Oloomi <mehdi@equalitie.org>\n"
+"PO-Revision-Date: 2025-05-24 20:01+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-ceno-in-iran/fa/>\n"
 "Language: fa\n"
@@ -17,8 +17,7 @@ msgstr ""
 #: latest/ceno-iran.html%2Btitle:1-1
 msgctxt "./latest/ceno-iran.html+title:1-1"
 msgid "Ceno proves itself in Iran during Internet shutdowns"
-msgstr ""
-"مرورگر سنو می‌تواند در زمان قطعی‌های اینترنت در ایران کارآیی خود را ثابت کند"
+msgstr "مرورگر سنو در زمان قطعی‌های اینترنت در ایران کارآیی خود را ثابت می‌کند"
 
 #: latest/ceno-iran.html%2Bmain:2-1
 msgid "main img { max-width: 400px; margin-inline: auto; }"
@@ -27,8 +26,7 @@ msgstr "main img { max-width: 400px; margin-inline: auto; }‌"
 #: latest/ceno-iran.html%2Bmain.h1:8-1
 msgctxt "./latest/ceno-iran.html+main.h1:8-1"
 msgid "Ceno proves itself in Iran during Internet shutdowns"
-msgstr ""
-"مرورگر سنو می‌تواند در زمان قطعی‌های اینترنت در ایران کارآیی خود را ثابت کند"
+msgstr "مرورگر سنو در زمان قطعی‌های اینترنت در ایران کارآیی خود را ثابت می‌کند"
 
 #: latest/ceno-iran.html%2Bmain.h2:10-1
 msgid ""
