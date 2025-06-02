@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-23 15:25-0400\n"
-"PO-Revision-Date: 2025-05-08 17:57+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2025-05-29 11:16-0400\n"
+"PO-Revision-Date: 2025-06-02 16:48+0000\n"
+"Last-Translator: Michael <rostfreierstahl@users.noreply.hosted.weblate.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-community/de/>\n"
 "Language: de\n"
@@ -16,7 +16,7 @@ msgstr ""
 
 #: community.html%2Bmain.section.h1:3-9
 msgid "Let's build a better internet together"
-msgstr ""
+msgstr "Lasst uns gemeinsam ein besseres Internet aufbauen"
 
 #: community.html%2Bmain.section.div.div.h2:9-17
 msgid "Become a Bridge"
@@ -40,9 +40,12 @@ msgid "The simple way:"
 msgstr ""
 
 #: community.html%2Bmain.section.div.div.p:13-17
+#, fuzzy
 msgid ""
 "Run Ceno Browser on your Android device, and/or on a spare, always-on device."
 msgstr ""
+"Führen Sie den Ceno-Browser auf Ihrem Android-Gerät und/oder auf einem "
+"zusätzlichen, aways-on Gerät aus."
 
 #: community.html%2Bmain.section.div.div.h4:14-17
 msgid "Run the Ceno Docker Client:"
@@ -54,6 +57,9 @@ msgid ""
 "> <code>sudo docker run --name ceno-client -dv ceno:/var/opt/ouinet --"
 "network host --restart unless-stopped equalitie/ceno-client</code>"
 msgstr ""
+"Mit nur einem Befehl können Sie eine Bridge auf Ihrem Computer oder VPS "
+"einrichten:<br /><code>sudo docker run --name ceno-client -dv ceno:/var/opt/"
+"ouinet --network host --restart unless-stopped equalitie/ceno-client</code>"
 
 #: community.html%2Bmain.section.div.div.ol.li:18-21
 msgid ""
@@ -83,18 +89,21 @@ msgid ""
 "eQualitie. If you are interested in Ceno's source code please check the "
 "following Git repositories:"
 msgstr ""
+"Ceno ist ein kostenloses Open-Source-Tool, eines von vielen, die von "
+"eQualitie entwickelt und gepflegt werden. Wenn Sie an Cenos Quellcode "
+"interessiert sind, überprüfen Sie bitte die folgenden Git-Repositories:"
 
 #: community.html%2Bmain.section.div.div.ul.li:33-21
 msgid "Ceno for Android"
-msgstr ""
+msgstr "Ceno für Android"
 
 #: community.html%2Bmain.section.div.div.ul.li:34-21
 msgid "Ceno for Desktop"
-msgstr ""
+msgstr "Ceno für Desktop"
 
 #: community.html%2Bmain.section.div.div.ul.li:35-21
 msgid "Ceno for iOS"
-msgstr ""
+msgstr "Ceno für iOS"
 
 #: community.html%2Bmain.section.div.div.ul.li:36-21
 msgid "Ouinet"
