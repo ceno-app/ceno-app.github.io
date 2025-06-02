@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-29 11:16-0400\n"
+"POT-Creation-Date: 2025-06-02 13:07-0400\n"
 "PO-Revision-Date: 2025-04-21 23:09+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Burmese <https://hosted.weblate.org/projects/censorship-no/"
@@ -43,42 +43,30 @@ msgstr "Ceno ဆိုတာ ဘာလဲ။"
 msgid ""
 "The world's first mobile browser that circumvents current Internet "
 "censorship methods and local Internet outages using peer-to-peer (p2p) "
-"technology"
+"technology. Ceno is envisioned as part of an Internet that is free of "
+"intrusive and unjustified surveillance, censorship and oppression. It is "
+"developed by <a href=\"https://equalit.ie\">eQualitie</a>"
 msgstr ""
 "လက်ရှိ အင်တာနက်ဆင်ဆာဖြတ်တောက်မှုနည်းလမ်းများနှင့် အသုံးပြုသူမှအသုံးပြုသူနည်းပညာ (p2p) ကို အသုံးပြု၍ "
 "ဒေသတွင်းအင်တာနက်ပြတ်တောက်မှုများကို ရှောင်ရှားနိုင်သည့် ကမ္ဘာ့ပထမဆုံးမိုဘိုင်းဘရောက်ဇာ"
 
 #: factsheet.html%2Bdiv.section.h3:13-2
-msgid "Ceno stands for:"
-msgstr "Ceno သည် -"
-
-#: factsheet.html%2Bdiv.section.ul.li:15-9
-msgid ""
-"<strong>ce</strong>nsorship.<strong>no</strong>, envisioned as part of an "
-"Internet that is free of intrusive and unjustified surveillance, censorship "
-"and oppression"
-msgstr ""
-"<strong>ce</strong>nsorship.<strong>no</strong> ကို ကိုယ်စားပြုသည်။ Ceno အား "
-"ဝင်ရောက်စွက်ဖက်ပြီး တရားမျှတမှုမရှိသော စောင့်ကြည့်မှု၊ ဆင်ဆာနှင့် ဖိနှိပ်မှုများ ကင်းစင်သော အင်တာနက်၏ "
-"တစ်စိတ်တစ်ပိုင်းအဖြစ် ပုံဖော်ထားသည်။"
-
-#: factsheet.html%2Bdiv.section.ul.li:16-2
-msgid "Developed and launched by <a href=\"https://equalit.ie\">eQualitie</a>"
-msgstr "<a href=\"https://equalit.ie\">eQualitie</a> မှ တီထွင်ဖန်တီးပြီး မိတ်ဆက်ခဲ့သည်။"
-
-#: factsheet.html%2Bdiv.section.h3:18-2
 msgid "Works on:"
 msgstr "Ceno သည် -"
 
-#: factsheet.html%2Bdiv.section.p:19-9
+#: factsheet.html%2Bdiv.section.ul.li:15-9
 msgid "Android mobile devices"
 msgstr "Android နည်းပညာသုံး မိုဘိုင်းစက်ပစ္စည်းများတွင် အလုပ်လုပ်သည်။"
 
-#: factsheet.html%2Bdiv.section.h3:21-2
+#: factsheet.html%2Bdiv.section.ul.li:16-9
+msgid "Windows desktop devices"
+msgstr ""
+
+#: factsheet.html%2Bdiv.section.h3:19-2
 msgid "Get it on:"
 msgstr "Ceno ကို -"
 
-#: factsheet.html%2Bdiv.section.ul.li:23-9
+#: factsheet.html%2Bdiv.section.ul.li:21-9
 #, fuzzy
 #| msgid ""
 #| "<a href=\"https://censorship.no/download\">Ceno website</a>, <a "
@@ -102,15 +90,15 @@ msgstr ""
 "android.html?\">Paskoocheh</a>, and <a href=\"https://zanga.tech/tools/166/"
 "android.html\">Zanga.tech</a> တို့တွင် ရယူနိုင်သည်။"
 
-#: factsheet.html%2Bdiv.section.ul.li:24-2
+#: factsheet.html%2Bdiv.section.ul.li:22-2
 msgid "No special permissions are required"
 msgstr "အထူးခွင့်ပြုချက်များ မလိုအပ်ပါ။"
 
-#: factsheet.html%2Bdiv.section.h3:26-2
+#: factsheet.html%2Bdiv.section.h3:24-2
 msgid "Why:"
 msgstr "အဘယ်ကြောင့် အသုံးပြုသင့်သနည်း။"
 
-#: factsheet.html%2Bdiv.section.ul.li:28-9
+#: factsheet.html%2Bdiv.section.ul.li:26-9
 msgid ""
 "Designed to allow people anywhere in the world to access web content in "
 "censored or Internet-restricted regions, and in countries where connectivity "
@@ -120,7 +108,7 @@ msgstr ""
 "ငွေကုန်ကြေးကျများသော နိုင်ငံများတွင် ကမ္ဘာပေါ်ရှိ မည်သည့်နေရာမှ လူများကိုမဆို ဝင်ရောက်ကြည့်ရှုနိုင်ရန် "
 "ဒီဇိုင်းထုတ်ထားသည်။"
 
-#: factsheet.html%2Bdiv.section.ul.li:29-2
+#: factsheet.html%2Bdiv.section.ul.li:27-2
 msgid ""
 "Can be used to create a bridge for others to access censored or restricted "
 "content"
@@ -128,11 +116,11 @@ msgstr ""
 "ဆင်ဆာဖြတ်ထားသော သို့မဟုတ် ကန့်သတ်ထားသော အကြောင်းအရာများကို ဝင်ရောက်ကြည့်ရှုရန် အခြားသူများအတွက် "
 "ပေါင်းကူးတစ်ခုဖန်တီးရန် အသုံးပြုနိုင်သည်။"
 
-#: factsheet.html%2Bdiv.section.h3:31-2
+#: factsheet.html%2Bdiv.section.h3:29-2
 msgid "So what?"
 msgstr "မည်ကဲ့သို့သောအရာ ဖြစ်သနည်း။"
 
-#: factsheet.html%2Bdiv.section.ul.li:33-2
+#: factsheet.html%2Bdiv.section.ul.li:31-2
 msgid ""
 "Already helping thousands of civilians, NGOs, investigative journalists and "
 "independent media globally to access and share web content"
@@ -141,7 +129,7 @@ msgstr ""
 "သတင်းထောက်များနှင့် အမှီအခိုကင်းသော မီဒီယာများအား ဝဘ်အကြောင်းအရာများကို ဝင်ရောက်ကြည့်ရှုရန်နှင့် "
 "မျှဝေရန် ကူညီပေးနေပြီဖြစ်သည်။"
 
-#: factsheet.html%2Bdiv.section.ul.li:34-2
+#: factsheet.html%2Bdiv.section.ul.li:32-2
 msgid ""
 "Ceno content remains stable and cannot be forcibly removed by external "
 "agents, even during media censorship events, shutdowns, natural disruptions, "
@@ -151,7 +139,7 @@ msgstr ""
 "သဘာဝ အနှောင့်အယှက်များ၊ မငြိမ်သက်မှုများ၊ ပဋိပက္ခများနှင့် စစ်ပွဲများအတွင်း၌ပင် ပြင်ပအေးဂျင့်များက "
 "အတင်းအကျပ် ဖယ်ရှား၍မရနိုင်ပါ။"
 
-#: factsheet.html%2Bdiv.section.ul.li:35-2
+#: factsheet.html%2Bdiv.section.ul.li:33-2
 #, fuzzy
 #| msgid ""
 #| "Ceno’s p2p routing and distribution of storage can reduce bandwidth and "
@@ -163,7 +151,7 @@ msgstr ""
 "Ceno ၏ p2p လမ်းကြောင်းပြောင်းလဲခြင်းနှင့် သိုလှောင်ခန်း၏ ဖြန့်ဖြူးမှုသည် အင်တာနက်အသုံးပြုမှု နှင့် "
 "စွမ်းအင်အသုံးပြုမှုကို လျှော့ချနိုင်သည်"
 
-#: factsheet.html%2Bdiv.section.ul.li:36-2
+#: factsheet.html%2Bdiv.section.ul.li:34-2
 msgid ""
 "Performance improves with scale (unlike the proxy/virtual private network "
 "(VPN) model); more users reduces latency and increases storage"
@@ -172,11 +160,11 @@ msgstr ""
 "အတိုင်းအတာဖြင့် တိုးတက်လာသည်။ ပိုမိုများပြားလာသော အသုံးပြုသူများသည် နှောင့်နှေးမှု (latency) ကို "
 "လျော့ကျစေပြီး သိုလှောင်မှု(storage) ကို တိုးလာစေသည်။"
 
-#: factsheet.html%2Bdiv.section.h3:38-2
+#: factsheet.html%2Bdiv.section.h3:36-2
 msgid "How:"
 msgstr "မည်ကဲ့သို့ အလုပ်လုပ်သနည်း။"
 
-#: factsheet.html%2Bdiv.section.ul.li:40-2
+#: factsheet.html%2Bdiv.section.ul.li:38-2
 msgid ""
 "Works like BitTorrent - pulling, reserving and sharing content from many "
 "networked sources rather than from one web server source - but is a browser"
@@ -184,7 +172,7 @@ msgstr ""
 "BitTorrent ကဲ့သို့အလုပ်လုပ်သည် - ဝဘ်ဆာဗာအရင်းအမြစ်တစ်ခုမှမဟုတ်ဘဲ များစွာသောကွန်ရက်အရင်းအမြစ်များမှ "
 "အကြောင်းအရာများကို ဆွဲယူခြင်း၊ သိုလှောင်ခြင်းနှင့်မျှဝေခြင်း - သို့သော် ဘရောက်ဇာတစ်ခုဖြစ်သည်။"
 
-#: factsheet.html%2Bdiv.section.ul.li:41-2
+#: factsheet.html%2Bdiv.section.ul.li:39-2
 msgid ""
 "Underlying decentralized p2p network uses established open-source Ouinet "
 "library and BitTorrent protocols, making it resilient and reliable"
@@ -192,22 +180,22 @@ msgstr ""
 "တည်ထောင်ထားသော ပွင့်လင်းရင်းမြစ် Ouinet စာကြည့်တိုက်နှင့် BitTorrent ပရိုတို‌ကောများကို အရင်းခံ "
 "ဗဟိုချုပ်ကိုင်မှုမရှိသော p2p ကွန်ရက်မှ အသုံးပြုသည်ခြင်းသည် ၎င်းကို ခံနိုင်ရည်ရှိပြီး ယုံကြည်စိတ်ချရစေသည်။"
 
-#: factsheet.html%2Bdiv.section.ul.li:42-2
+#: factsheet.html%2Bdiv.section.ul.li:40-2
 msgid "Looks and feels like other browsers"
 msgstr "အခြားသော ဘရောက်ဇာများကို အသုံးပြုသည့်အတိုင်း ခံစားရစေသည်။"
 
-#: factsheet.html%2Bdiv.section.ul.li:43-2
+#: factsheet.html%2Bdiv.section.ul.li:41-2
 msgid ""
 "Equipped to share cached content offline and on local area networks (LANs)"
 msgstr ""
 "ယာယီသိမ်းဆည်းထားသော အကြောင်းအရာများကို အင်တာနက်မရှိသောအချိန်နှင့် ဒေသတွင်းသုံးကွန်ရက် (local area "
 "networks - LANs) တို့တွင် မျှဝေနိုင်ရန် တပ်ဆင်ထားသည်။"
 
-#: factsheet.html%2Bdiv.section.h3:45-2
+#: factsheet.html%2Bdiv.section.h3:43-2
 msgid "Who is eQualitie?"
 msgstr "eQualitie သည် မည်သူတို့နည်း။"
 
-#: factsheet.html%2Bdiv.section.ul.li:47-9
+#: factsheet.html%2Bdiv.section.ul.li:45-9
 msgid ""
 "Montreal-based digital security firm that has developed open-source and "
 "reusable systems and tools since 2010, with a focus on online privacy, "
@@ -217,11 +205,11 @@ msgstr ""
 "ခံနိုင်ရည်ရှိမှုနှင့် ကိုယ်ပိုင်ဆုံးဖြတ်ချက်ချနိုင်မှုတို့ကို ဦးစားပေးသည့် ပွင့်လင်းရင်းမြစ်နှင့် "
 "ပြန်လည်အသုံးပြုနိုင်သောစနစ်များ၊ ကိရိယာများကို တီထွင်ဖန်တီးထားသည်။"
 
-#: factsheet.html%2Bdiv.section.ul.li:48-2
+#: factsheet.html%2Bdiv.section.ul.li:46-2
 msgid "Maintains the <a href=\"https://deflect.ca\">Deflect.ca</a> service"
 msgstr "<a href=\"https://deflect.ca\">Deflect.ca</a> ဝန်‌ဆောင်မှုအား ထိန်းသိမ်းထားသည်။"
 
-#: factsheet.html%2Bdiv.section.ul.li:49-2
+#: factsheet.html%2Bdiv.section.ul.li:47-2
 msgid ""
 "Leads several initiatives focused on free and secure communications in "
 "authoritarian states"
@@ -229,23 +217,23 @@ msgstr ""
 "အာဏာရှင်နိုင်ငံများတွင် လွတ်လပ်သော အခမဲ့ ဆက်သွယ်ရေးတို့ကို အလေးထားသည့် များစွာသော ပဏာမခြေလှမ်းတို့အတွက် "
 "ရည်ရွယ်သည်။"
 
-#: factsheet.html%2Bdiv.section.ul.li:50-2
+#: factsheet.html%2Bdiv.section.ul.li:48-2
 msgid "Founded by Dmitri Vitaliev"
 msgstr "Dmitri Vitaliev မှ တည်ထောင်ခဲ့သည်။"
 
-#: factsheet.html%2Bdiv.section.h3:52-2
+#: factsheet.html%2Bdiv.section.h3:50-2
 msgid "In use today:"
 msgstr "လက်ရှိ အသုံးပြုလျက်ရှိသူများ"
 
-#: factsheet.html%2Bdiv.section.ul.li:54-9
+#: factsheet.html%2Bdiv.section.ul.li:52-9
 msgid "<strong>Average monthly users:</strong> 10,000+"
 msgstr "<strong> ပျမ်းမျှလစဉ်အသုံးပြုသူများ -</strong> ၁၀,၀၀၀ နှင့် အထက်"
 
-#: factsheet.html%2Bdiv.section.ul.li:55-2
+#: factsheet.html%2Bdiv.section.ul.li:53-2
 msgid "<strong>New monthly users:</strong> 10,000"
 msgstr "<strong>လစဉ်အသုံးပြုသူအသစ်များ -</strong> ၁၀,၀၀၀"
 
-#: factsheet.html%2Bdiv.section.ul.li:56-2
+#: factsheet.html%2Bdiv.section.ul.li:54-2
 msgid ""
 "<strong>Majority users by country:</strong> Ukraine 48%; Russia 17%; Iran "
 "15%; Myanmar 5%; Poland, US and Germany 3%"
@@ -253,22 +241,22 @@ msgstr ""
 "<strong>နိုင်ငံအလိုက် အသုံးပြုသူ အများစု-</strong> ယူကရိန်း ၄၈ ရာခိုင်နှုန်း၊ ရုရှား ၁၇ ရာခိုင်နှုန်း၊ "
 "အီရန် ၁၅ ရာခိုင်နှုန်း၊ မြန်မာ ၅ ရာခိုင်နှုန်း၊ ပိုလန်၊ အမေရိကန်နှင့် ဂျာမနီ ၃ ရာခိုင်နှုန်း"
 
-#: factsheet.html%2Bdiv.section.h2:60-1
+#: factsheet.html%2Bdiv.section.h2:58-1
 msgid "How Ceno Works"
 msgstr "Ceno အလုပ်လုပ်ပုံ"
 
-#: factsheet.html%2Bdiv.section.div.div.div.div.div.p:67-17
+#: factsheet.html%2Bdiv.section.div.div.div.div.div.p:65-17
 msgid "A mobile user in NYC reads a BBC.com news article on her Ceno Browser."
 msgstr ""
 "နယူးယောက်မြို့ရှိ မိုဘိုင်းဖုန်းအသုံးပြုသူတစ်ဦးသည် သူမ၏ Ceno ဘရောက်ဇာတွင် BBC.com ရှိ သတင်း‌ဆောင်းပါးတစ်ခုကို "
 "ဖတ်ရှုသည်။"
 
-#: factsheet.html%2Bdiv.section.div.div.div.div.div.p:76-17
+#: factsheet.html%2Bdiv.section.div.div.div.div.div.p:74-17
 msgid "Ceno signs, caches and decentralizes the article content."
 msgstr ""
 "Ceno သည် ဆောင်းပါးအကြောင်းအရာကို လက်မှတ်ထိုး၍ ယာယီမှတ်ဉာဏ်တွင်သိမ်းဆည်းပြီး ဗဟိုချုပ်ကိုင်မှု ကင်းမဲ့စေသည်။"
 
-#: factsheet.html%2Bdiv.section.div.div.div.div.div.p:85-17
+#: factsheet.html%2Bdiv.section.div.div.div.div.div.p:83-17
 msgid ""
 "Ceno users everywhere access and read the same article on their mobiles, "
 "despite censorship or outages, and thereby share it with other Ceno users."
@@ -277,39 +265,39 @@ msgstr ""
 "မည်သည့်နေရာတွင်မဆို ၎င်းတို့၏ မိုဘိုင်းဖုန်းတွင် တူညီသော ဆောင်းပါးကို ဝင်ရောက်ကြည့်ရှုနိုင်ပြီး ဖတ်ရှုနိုင်သည်။ သို့ဖြစ်၍ "
 "အခြားသော Ceno အသုံးပြုသူများကို မျှဝေနိုင်သည်။"
 
-#: factsheet.html%2Bdiv.section.div:89-2
+#: factsheet.html%2Bdiv.section.div:87-2
 msgid "Learn more in the User Manual!"
 msgstr "အသုံးပြုသူလက်စွဲတွင် ပိုမိုလေ့လာပါ။"
 
-#: factsheet.html%2Bdiv.section.h2:95-1
+#: factsheet.html%2Bdiv.section.h2:93-1
 msgid "Numbers"
 msgstr "ကိန်းဂဏန်း အရေအတွက်များ"
 
-#: factsheet.html%2Bdiv.section.h3:97-1
+#: factsheet.html%2Bdiv.section.h3:95-1
 msgid "Ceno to April 2022"
 msgstr "ဧပြီ ၂၀၂၂ အထိ Ceno သည် -"
 
-#: factsheet.html%2Bdiv.section.ul.li:99-2
+#: factsheet.html%2Bdiv.section.ul.li:97-2
 msgid "Downloads from Google Play Store: 33,297"
 msgstr "Google Play Store မှ ဒေါင်းလုဒ်များ - ၃၃,၂၉၇"
 
-#: factsheet.html%2Bdiv.section.ul.li:100-2
+#: factsheet.html%2Bdiv.section.ul.li:98-2
 msgid "Installs from alternative marketplaces: 6,514"
 msgstr "အစားထိုး marketplaces များမှ တပ်ဆင်ခြင်းများ - ၆,၅၁၄"
 
-#: factsheet.html%2Bdiv.section.ul.li:101-2
+#: factsheet.html%2Bdiv.section.ul.li:99-2
 msgid "Pulls from Docker Hub: 597"
 msgstr "Docker Hub မှ ရယူခြင်းများ - ၅၉၇"
 
-#: factsheet.html%2Bdiv.section.ul.li:102-2
+#: factsheet.html%2Bdiv.section.ul.li:100-2
 msgid "Cloned from GitHub repositories: 1,768"
 msgstr "GitHub repositories မှ ရယူခြင်းများ - ၁,၇၆၈"
 
-#: factsheet.html%2Bdiv.section.ul.li:103-2
+#: factsheet.html%2Bdiv.section.ul.li:101-2
 msgid "Unique participants in March 2022: 28,914"
 msgstr "မတ် ၂၀၂၂ တွင် သီးသန့်ပါဝင်သူများ - ၂၈,၉၁၄"
 
-#: factsheet.html%2Bdiv.section.ul.li:104-2
+#: factsheet.html%2Bdiv.section.ul.li:102-2
 msgid ""
 "Ceno bridges worldwide: 25 (6 in Ukraine, 9 in Russia and others in the "
 "Middle East, Eastern Europe and Asia)"
@@ -317,7 +305,7 @@ msgstr ""
 "ကမ္ဘာတစ်ဝှမ်းရှိ Ceno ပေါင်းကူးများ - ၂၅ ခု (ယူကရိန်းတွင် ၆ခု၊ ရုရှားတွင် ၉ခု နှင့် "
 "ကျန်ပေါင်းကူးများမှာ အရှေ့အလယ်ပိုင်း၊ အရှေ့ ဥရောပ နှင့် အာရှတို့တွင် ရှိသည်)"
 
-#: factsheet.html%2Bdiv.section.ul.li:105-2
+#: factsheet.html%2Bdiv.section.ul.li:103-2
 msgid ""
 "Bootstrap servers to ensure that in-country nodes can use BitTorrent during "
 "complete network shutdowns: 8 (in Eastern Europe, Myanmar, Iran and Russia)"
@@ -326,11 +314,11 @@ msgstr ""
 "အသုံးပြုနိုင်ကြောင်း သေချာစေသော Bootstrap ဆာဗာများ - ၈ ခု (ဥရောပအရှေ့ပိုင်း၊ မြန်မာ၊ အီရန် "
 "နှင့် ရုရှား တို့တွင် ရှိသည်)"
 
-#: factsheet.html%2Bdiv.section.h3:107-1
+#: factsheet.html%2Bdiv.section.h3:105-1
 msgid "Ceno Analytics"
 msgstr "Ceno ခွဲခြမ်းစိတ်ဖြာချက်များ"
 
-#: factsheet.html%2Bdiv.section.p:108-2
+#: factsheet.html%2Bdiv.section.p:106-2
 #, fuzzy
 #| msgid ""
 #| "The Ceno browser displays the resources provided directly from the origin "
@@ -345,7 +333,7 @@ msgstr ""
 "(ထိုးသွင်းစက်များမှ တစ်ဆင့် အလုပ်လုပ်ပြီး p2p ကွန်ရက်မှတစ်ဆင့် လက်ခံရရှိသည်)။ Ceno ဘရောက်ဇာသည် "
 "အသုံးပြုသူတစ်ဦး၏ စက်ပစ္စည်းမှ အခြားသော အသုံးပြုသူများအား မည်မျှ မျှဝေထားသည်ကိုလည်း ပြသပေးသည်။"
 
-#: factsheet.html%2Bdiv.section.p:109-2
+#: factsheet.html%2Bdiv.section.p:107-2
 msgid ""
 "Key performance metrics for a Ceno white-label release include (i) the "
 "number of reachable bridge nodes and origin sources in the DHT, and (ii) the "
@@ -355,7 +343,7 @@ msgstr ""
 "ပေါင်းကူး node များနှင့် မူလရင်းမြစ် အရေအတွက် (ခ) ထိုးသွင်းစက် ဆာဗာများမှ ဝန်ဆောင်မှုပေးသော "
 "ကွဲပြားသော ဝဘ်အရင်းအမြစ်များ အရေအတွက် နှင့် bandwidth တို့ ပါဝင်သည်။"
 
-#: factsheet.html%2Bdiv.section.p:110-2
+#: factsheet.html%2Bdiv.section.p:108-2
 #, fuzzy
 #| msgid ""
 #| "Other metrics can be designed and developed for greater visibility and "
@@ -378,7 +366,7 @@ msgstr ""
 "၎င်းတို့၏ကွန်ရက်ထိုးသွင်းစက်များအား အသုံးပြုမှု၊ (ခ) မူရင်းနိုင်ငံ နှင့် (ဂ) သီးခြား စက်ပစ္စည်းသတ်မှတ်မှုများ "
 "အတွက် ခွဲဖြန့်ထားသော ဒေတာတည်ဆောက်ပုံ ဇယား တို့မှ တစ်ဆင့် ပါဝင်မှုကို တိကျစွာ ခန့်မှန်းနိုင်မည် ဖြစ်သည်။"
 
-#: factsheet.html%2Bdiv.section.p:111-2
+#: factsheet.html%2Bdiv.section.p:109-2
 #, fuzzy
 #| msgid ""
 #| "Integration of the Clean Insights SDK is being explored as a way to give "
@@ -393,11 +381,11 @@ msgstr ""
 "ယာယီမှတ်ဉာဏ် အသုံးပြုမှု အပါအဝင် မက်ထရစ်များကို တိုင်းတာသည့် ခိုင်မာသော ကိုယ်ရေးကိုယ်တာ-လေးစားမှုဆိုင်ရာ "
 "ခွဲခြမ်းစိတ်ဖြာမှုကို ပေးသည့်နည်းလမ်းအဖြစ် စူးစမ်းရှာဖွေလျက်ရှိသည်။"
 
-#: factsheet.html%2Bdiv.section.h3:113-1
+#: factsheet.html%2Bdiv.section.h3:111-1
 msgid "Ouinet in April 2022"
 msgstr "၂၀၂၂ ခု၊ ဧပြီလ ၌ Ouinet"
 
-#: factsheet.html%2Bdiv.section.p:114-2
+#: factsheet.html%2Bdiv.section.p:112-2
 #, fuzzy
 #| msgid ""
 #| "Ouinet’s injectors introduced approximately 2 million pages (602 GB of "
@@ -411,11 +399,11 @@ msgstr ""
 "Ouinet ၏ ထိုးသွင်းစက်များသည် ဗဟိုချုပ်ကိုင်မှုကင်းသည့် အကြောင်းအရာမျှဝေခြင်း ကွန်ရက်တွင် ထူးခြားသည့် ဝဘ်ဆိုဒ် "
 "၃၀,၀၀၀ ကျော်မှ စာမျက်နှာပေါင်း ၂သန်းခန့် (ဒေတာ ၆၀၂ GB) ကို မိတ်ဆက်ပေးခဲ့သည်။"
 
-#: factsheet.html%2Bdiv.section.h2:118-1
+#: factsheet.html%2Bdiv.section.h2:116-1
 msgid "Internet shutdowns"
 msgstr "အင်တာနက် ပိတ်ဆို့ဖြတ်တောက်မှုများ"
 
-#: factsheet.html%2Bdiv.section.p:119-9
+#: factsheet.html%2Bdiv.section.p:117-9
 msgid ""
 "Internet shutdowns is a broad term covering various Internet access "
 "restriction scenarios. Precise technical information on shutdowns is often "
@@ -426,7 +414,7 @@ msgstr ""
 "နည်းပညာဆိုင်ရာအချက်အလက်များသည် မီဒီယာဖော်ပြမှုများတွင် ပျောက်ဆုံးနေတတ်သည်။ ပိတ်ဆို့ဖြတ်တောက်မှုကို "
 "အောက်ပါအတိုင်း ရည်ညွှန်းနိုင်သည်။"
 
-#: factsheet.html%2Bdiv.section.p.ul.li:121-9
+#: factsheet.html%2Bdiv.section.p.ul.li:119-9
 msgid ""
 "<strong>Level 1:</strong> A complete or partial failure of Internet "
 "services, occurring due to censorship, cyberattacks, natural disasters, "
@@ -443,7 +431,7 @@ msgstr ""
 "သို့မဟုတ် နိုင်ငံတကာ ဆက်သွယ်မှုများ ဖြတ်တောက်ခံရသောအချိန်(ဥပမာ- ၂၀၁၉-၂၀၂၀ ခုနှစ်တွင် အိန္ဒိယ ကာရှီမာ နှင့် "
 "ကျူဘား) စသည့် ပြင်းထန်သည့် ကွန်ရက် ပိတ်ဆို့ဖြတ်တောက်မှုများ၏ အဖြစ်အပျက်များကို Ceno မှ ဖြေရှင်းပေးနိုင်သည်။"
 
-#: factsheet.html%2Bdiv.section.p.ul.li:122-9
+#: factsheet.html%2Bdiv.section.p.ul.li:120-9
 msgid ""
 "<strong>Level 2:</strong> A ban on international transit connections (e.g., "
 "Kazakhstan in 2021), such that no servers or services located outside the "
@@ -454,7 +442,7 @@ msgstr ""
 "ဆာဗာများနှင့် ဝန်ဆောင်မှုများကဲ့သို့သော နိုင်ငံတကာ ဆက်သွယ်မှုများကို ဖြတ်တောက်ခြင်းများ (ဥပမာ- ၂၀၂၁ "
 "ခုနှစ်တွင် ကာဇက်စတန်) ရှိသည်။ Ceno သည် ယခုကဲ့သို့ နိုင်ငံတွင်း အဖြစ်အပျက်များတွင် ဆက်လက် အလုပ်လုပ်နိုင်သည်။"
 
-#: factsheet.html%2Bdiv.section.p.ul.li:123-9
+#: factsheet.html%2Bdiv.section.p.ul.li:121-9
 msgid ""
 "<strong>Level 3:</strong> When electricity no longer functions, such as "
 "during national disasters and in wartime (e.g., Mariupol in 2022). Ceno "
@@ -466,7 +454,7 @@ msgstr ""
 "စက်ပစ္စည်းများအလုပ်လုပ်နိုင်သလောက် ပါဝါ(ဘက်ထရီ)ရှိနေသည့်အချိန်နှင့် နီးနီးကပ်ကပ်ရှိနေသည့် အချိန်များတွင် "
 "စက်ပစ္စည်းများအချင်းချင်း ချိတ်ဆက် ဆက်သွယ် အလုပ်လုပ်နိုင်သေးသည်။"
 
-#: factsheet.html%2Bdiv.section.p:125-9
+#: factsheet.html%2Bdiv.section.p:123-9
 msgid ""
 "A growing number of countries have introduced sophisticated surveillance and "
 "network filtering technologies to undermine existing censorship "
@@ -481,7 +469,7 @@ msgstr ""
 "နိုင်ငံတကာဆက်သွယ်မှုများမှ ဖြတ်တောက်ခြင်းကဲ့သို့သော အနီးအနား၊ ဒေသအလိုက်နှင့် နိုင်ငံအလိုက် ဖြတ်တောက်ခြင်းများကို "
 "ပြုလုပ်ထားကြသည်။"
 
-#: factsheet.html%2Bdiv.section.p:126-9
+#: factsheet.html%2Bdiv.section.p:124-9
 #, fuzzy
 #| msgid ""
 #| "Most circumvention techniques in use today require the user to first "
@@ -506,11 +494,11 @@ msgstr ""
 "အဖြေသည် ချိတ်ဆက်ခြင်းနှင့် ဒစ်ဂျစ်တယ် အကြောင်းအရာများကို ဖြန့်ချိရေးအတွက် လုံလောက်သေချာခြင်း "
 "မရှိတော့ပါ။"
 
-#: factsheet.html%2Bdiv.section.h3:129-1
+#: factsheet.html%2Bdiv.section.h3:127-1
 msgid "How Ceno side-steps censorship"
 msgstr "Ceno မှ ဆင်ဆာဖြတ်တောက်မှုကို ရှောင်ရှားပုံ"
 
-#: factsheet.html%2Bdiv.section.p:130-9
+#: factsheet.html%2Bdiv.section.p:128-9
 msgid ""
 "Ultimately, existing censorship methods have a single point of failure: "
 "users need to penetrate a firewall where the censor is watching. As "
@@ -531,15 +519,15 @@ msgstr ""
 "ဗဟိုချုပ်ကိုင်မှုမရှိသည့် အသုံးပြုသူမှ အသုံးပြုသူ ဆက်သွယ်ခြင်းများနှင့် ဖြန့်ဖြူးထားသော "
 "ယာယီမှတ်ဉာဏ်သိုလှောင်ခြင်းများကို သေချာစေနိုင်သည်။"
 
-#: factsheet.html%2Bdiv.section.h2:134-1
+#: factsheet.html%2Bdiv.section.h2:132-1
 msgid "User comments"
 msgstr "အသုံးပြုသူ မှတ်ချက်များ"
 
-#: factsheet.html%2Bdiv.section.h3:135-1
+#: factsheet.html%2Bdiv.section.h3:133-1
 msgid "Russia"
 msgstr "ရုရှား"
 
-#: factsheet.html%2Bdiv.section.p:136-9
+#: factsheet.html%2Bdiv.section.p:134-9
 #, fuzzy
 #| msgid ""
 #| "“Nice browser. Without VPN I was able to open blocked resources. But it's "
@@ -551,7 +539,7 @@ msgstr ""
 "\"တော်တော်ကောင်းတဲ့ ဘရောက်ဇာပါ။ VPN မလိုပဲ ပိတ်ထားတဲ့ ရင်းမြစ်တွေကို ကြည့်နိုင်ခဲ့ပါတယ်။ ဒါပေမယ့် အင်တာနက် "
 "ကွန်ရက်တွေမရှိရင်တောင် အသုံးဝင်ပါသေးတယ်။\""
 
-#: factsheet.html%2Bdiv.section.p:137-2
+#: factsheet.html%2Bdiv.section.p:135-2
 #, fuzzy
 #| msgid ""
 #| "“Because Russia threatens to block VPNs, Ceno is promising. Also because "
@@ -586,7 +574,7 @@ msgstr ""
 "မရှိခဲ့ပါဘူး။ ကျွန်ုပ်က ရှာဖွေမှုမှတ်တမ်းတွေကို ထွက်တဲ့အချိန် ပုံမှန်ဖျက်ပစ်ခြင်းကို ရွေးထားပါတယ်။ ဒီတော့ ဒါဟာ "
 "ဝဘ်ဆိုက်တွေကို ရယူကြည့်ရှုနိုင်ခြင်းသာမကပဲ ကြည့်ရတာ ရိုးသားပုံပေါက်နေတဲ့အတွက် တော်တော်လေး အဆင်ပြေပါတယ်။\""
 
-#: factsheet.html%2Bdiv.section.p:138-2
+#: factsheet.html%2Bdiv.section.p:136-2
 #, fuzzy
 #| msgid ""
 #| "“Thanks for a great product. Your browser opens the site http://meduza.io "
@@ -598,11 +586,11 @@ msgstr ""
 "\"အခုလိုမျိုး ကောင်းမွန်တဲ့ ထုတ်ကုန်တစ်ခုအတွက် ကျေးဇူးတင်ပါတယ်။ သင်တို့ရဲ့ ဘရောက်ဇာက @meduzaproject က "
 "အပ်ပ် ထက် http://meduza.io ကို ဝင်ကြည့်တာ ပို မြန်မြန် ပွင့်လာပါတယ်။\""
 
-#: factsheet.html%2Bdiv.section.h3:140-1
+#: factsheet.html%2Bdiv.section.h3:138-1
 msgid "Myanmar"
 msgstr "မြန်မာ"
 
-#: factsheet.html%2Bdiv.section.p:141-2
+#: factsheet.html%2Bdiv.section.p:139-2
 #, fuzzy
 #| msgid ""
 #| "“There was a lot of inconvenience due to the blocked websites. It's good "
@@ -617,7 +605,7 @@ msgstr ""
 "အလုပ်လုပ်ကြောင်းတွေ့မြင်ရသည်တာ အတော်လေးကောင်းပါတယ်။ ဒါက ကျွန်ုပ်တို့၏ ဒစ်ဂျစ်တယ်အခွင့်အရေးဖြစ်ပါတယ်။ "
 "ဒါကြောင့် တစ်ခါတလေတော့ ကျွန်ုပ် ဆက်သုံးဖြစ်ပါမယ်။”"
 
-#: factsheet.html%2Bdiv.section.p:142-2
+#: factsheet.html%2Bdiv.section.p:140-2
 #, fuzzy
 #| msgid ""
 #| "“There are more features I'd like to see in the app, but it is totally a "
@@ -629,11 +617,11 @@ msgstr ""
 "\"အက်ပ်ထဲမှာ ကျွန်တော်မြင်လိုတဲ့ လုပ်ဆောင်ချက်တွေ အများကြီးရှိပါသေးတယ်။ ဒါပေမယ့် ဒါက လုံးဝကို အဆင်ပြေပြီး "
 "အသုံးဝင်တဲ့ အက်ပ်တစ်ခုပါ။\""
 
-#: factsheet.html%2Bdiv.section.h3:144-1
+#: factsheet.html%2Bdiv.section.h3:142-1
 msgid "Iran"
 msgstr "အီရန်"
 
-#: factsheet.html%2Bdiv.section.p:145-2
+#: factsheet.html%2Bdiv.section.p:143-2
 #, fuzzy
 #| msgid ""
 #| "“This app is one of our few hopes in times of serious Internet "
@@ -647,7 +635,7 @@ msgstr ""
 "မျှော်လင့်ချက်တွေထဲကတစ်ခုပါ။ ကျေးဇူးပြုပြီး ဆက်လက်ပြီးတော့ ပိုကောင်းအောင် ဆောင်ရွက်ပေးပါ။ "
 "ကျေးဇူးတင်ပါတယ်။\""
 
-#: factsheet.html%2Bdiv.section.p:146-2
+#: factsheet.html%2Bdiv.section.p:144-2
 #, fuzzy
 #| msgid ""
 #| "“It is a good browser, especially for us Iranians, who do not have the "
@@ -661,3 +649,19 @@ msgstr ""
 "\"ဒါက ကောင်းမွန်တဲ့ ဘရောက်ဇာတစ်ခုပါ၊ အထူးသဖြင့် အင်တာနက်ကို လွတ်လွတ်လပ်လပ်သုံးခွင့်မရှိဘူး၊ ပြီးတော့ "
 "အစိုးရဘက်ကနေ အရာအားလုံး၊ breakers တွေကိုပါ ကို ပိတ်ပင်ထားပြီးတော့ သုံးနေရတဲ့ ကျွန်ုပ်တို့ အီရန်နိုင်ငံသားတွေ "
 "အတွက်ပါ။\""
+
+#~ msgid "Ceno stands for:"
+#~ msgstr "Ceno သည် -"
+
+#~ msgid ""
+#~ "<strong>ce</strong>nsorship.<strong>no</strong>, envisioned as part of an "
+#~ "Internet that is free of intrusive and unjustified surveillance, "
+#~ "censorship and oppression"
+#~ msgstr ""
+#~ "<strong>ce</strong>nsorship.<strong>no</strong> ကို ကိုယ်စားပြုသည်။ Ceno အား "
+#~ "ဝင်ရောက်စွက်ဖက်ပြီး တရားမျှတမှုမရှိသော စောင့်ကြည့်မှု၊ ဆင်ဆာနှင့် ဖိနှိပ်မှုများ ကင်းစင်သော အင်တာနက်၏ "
+#~ "တစ်စိတ်တစ်ပိုင်းအဖြစ် ပုံဖော်ထားသည်။"
+
+#~ msgid ""
+#~ "Developed and launched by <a href=\"https://equalit.ie\">eQualitie</a>"
+#~ msgstr "<a href=\"https://equalit.ie\">eQualitie</a> မှ တီထွင်ဖန်တီးပြီး မိတ်ဆက်ခဲ့သည်။"
