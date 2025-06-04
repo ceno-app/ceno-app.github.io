@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-02 13:07-0400\n"
-"PO-Revision-Date: 2025-05-16 15:34+0000\n"
-"Last-Translator: Grant Gallo <grant@equalitie.org>\n"
+"PO-Revision-Date: 2025-06-05 14:01+0000\n"
+"Last-Translator: \"J. Lavoie\" <j.lavoie@net-c.ca>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-donate/fr/>\n"
 "Language: fr\n"
@@ -64,7 +64,7 @@ msgstr "Faites un don en bitcoins"
 
 #: donate.html%2Bmain.section.div.div.div.div.p:29-25
 msgid "Our wallet address is:"
-msgstr "L’adresse de notre porte-monnaie est :"
+msgstr "L’adresse de notre portemonnaie est :"
 
 #: donate.html%2Bmain.section.div.div.div.div:29-50
 msgid "bc1q2r70hf0jks43jyykpua6uqv907zegplgfacauc"
