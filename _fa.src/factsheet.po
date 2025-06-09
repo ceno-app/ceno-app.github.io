@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-02 13:07-0400\n"
-"PO-Revision-Date: 2025-05-16 15:47+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2025-06-10 02:01+0000\n"
+"Last-Translator: Mehdi Oloomi <mehdi@equalitie.org>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-factsheet/fa/>\n"
 "Language: fa\n"
@@ -35,11 +35,6 @@ msgid "What is Ceno?"
 msgstr "سنو چیست؟"
 
 #: factsheet.html%2Bdiv.section.p:11-2
-#, fuzzy
-#| msgid ""
-#| "The world's first mobile browser that circumvents current Internet "
-#| "censorship methods and local Internet outages using peer-to-peer (p2p) "
-#| "technology"
 msgid ""
 "The world's first mobile browser that circumvents current Internet "
 "censorship methods and local Internet outages using peer-to-peer (p2p) "
@@ -47,8 +42,11 @@ msgid ""
 "intrusive and unjustified surveillance, censorship and oppression. It is "
 "developed by <a href=\"https://equalit.ie\">eQualitie</a>"
 msgstr ""
-"اولین مرورگر جهان برای موبایل که با استفاده از فناوری همتا‌به‌همتا (p2p)، "
-"روش‌های فعلی سانسور اینترنت و قطعی منطقه‌ای اینترنت را دور می‌زند‌"
+"اولین مرورگر جهان برای موبایل که با استفاده از فناوری همتا‌به‌همتا (p2p)، روش‌"
+"های فعلی سانسور اینترنت و قطعی منطقه‌ای اینترنت را دور می‌زند‌. سِنو با این چشم‌"
+"انداز طراحی شده که بخشی از اینترنتی باشد آزاد از نظارت مزاحم و بی‌دلیل، "
+"سانسور و سرکوب. این مرورگر توسط <a href=\"https://equalit.ie\">eQualitie</a> "
+"توسعه یافته است"
 
 #: factsheet.html%2Bdiv.section.h3:13-2
 msgid "Works on:"
@@ -60,7 +58,7 @@ msgstr "موبایل‌های اندرویدی"
 
 #: factsheet.html%2Bdiv.section.ul.li:16-9
 msgid "Windows desktop devices"
-msgstr ""
+msgstr "دستگاه‌های دسکتاپ ویندوز"
 
 #: factsheet.html%2Bdiv.section.h3:19-2
 msgid "Get it on:"
