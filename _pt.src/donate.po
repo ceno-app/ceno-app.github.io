@@ -3,19 +3,20 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-06-02 13:07-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-06-10 02:01+0000\n"
+"Last-Translator: Manuela Silva <mmsrs@sky.com>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/censorship-no/"
+"website-v2/website-v2-donate/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.15.1\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: donate.html%2Bmain.section.div.div.h1:5-17
 msgid "Support Ceno"
-msgstr ""
+msgstr "Apoiar Ceno"
 
 #: donate.html%2Bmain.section.div.div.p:6-17
 msgid ""
@@ -25,39 +26,46 @@ msgid ""
 "getting involved and contributing, please visit <a href=\"community."
 "html\">the Community page!</a>"
 msgstr ""
+"Ceno Browser é um programa totalmente livre e de código aberto fundado "
+"apenas através de subsídios e doações. Em baixo estão algumas das maneiras "
+"pelas quais pode apoiar o seu desenvolvimento contínuo por meio de "
+"contribuições financeiras. Para outras maneiras de se envolver e contribuir, "
+"por favor, visite <a href=\"community.html\">a página da Comunidade!</a>"
 
 #: donate.html%2Bmain.section.div.div.div.div.h2:12-25
 msgid "Make a Donation"
-msgstr ""
+msgstr "Efetuar uma Doação"
 
 #: donate.html%2Bmain.section.div.div.div.div.p:13-25
 msgid "Make a one-time donation using our Paypal payment portal."
-msgstr ""
+msgstr "Efetue uma doação única utilizando o nosso portal de pagamento PayPal."
 
 #: donate.html%2Bmain.section.div.div.div.div.div:14-25
 msgid "Donate via PayPal"
-msgstr ""
+msgstr "Doar via PayPal"
 
 #: donate.html%2Bmain.section.div.div.div.div.h2:20-25
 msgid "Become a Sponsor"
-msgstr ""
+msgstr "Tornar-se um Patrocinador"
 
 #: donate.html%2Bmain.section.div.div.div.div.p:21-25
 msgid "We are currently exploring fundraising platforms and communities:"
 msgstr ""
+"Nós estamos atualmente a explorar plataformas e comunidades de angariação de "
+"fundos:"
 
 #: donate.html%2Bmain.section.div.div.div.div.div:22-25
 msgid "Sponsor on Github"
-msgstr ""
+msgstr "Patrocinar no Github"
 
 #: donate.html%2Bmain.section.div.div.div.div.h2:28-25
 msgid "Donate Bitcoin"
-msgstr ""
+msgstr "Doar Bitcoin"
 
 #: donate.html%2Bmain.section.div.div.div.div.p:29-25
 msgid "Our wallet address is:"
-msgstr ""
+msgstr "O endereço da nossa carteira é:"
 
 #: donate.html%2Bmain.section.div.div.div.div:29-50
 msgid "bc1q2r70hf0jks43jyykpua6uqv907zegplgfacauc"
-msgstr ""
+msgstr "bc1q2r70hf0jks43jyykpua6uqv907zegplgfacauc"
