@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-29 11:16-0400\n"
+"POT-Creation-Date: 2025-06-02 13:07-0400\n"
 "PO-Revision-Date: 2025-05-14 21:11+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Turkish <https://hosted.weblate.org/projects/censorship-no/"
@@ -35,48 +35,39 @@ msgid "What is Ceno?"
 msgstr "Ceno nedir?"
 
 #: factsheet.html%2Bdiv.section.p:11-2
+#, fuzzy
+#| msgid ""
+#| "The world's first mobile browser that circumvents current Internet "
+#| "censorship methods and local Internet outages using peer-to-peer (p2p) "
+#| "technology"
 msgid ""
 "The world's first mobile browser that circumvents current Internet "
 "censorship methods and local Internet outages using peer-to-peer (p2p) "
-"technology"
+"technology. Ceno is envisioned as part of an Internet that is free of "
+"intrusive and unjustified surveillance, censorship and oppression. It is "
+"developed by <a href=\"https://equalit.ie\">eQualitie</a>"
 msgstr ""
 "Dünyanin ilk uçtan uca bağlantı (P2P) teknolojisini kullanarak güncel "
 "internet sansür yöntemlerini ve yerel internet kesintilerini aşan mobil "
 "internet tarayıcısı"
 
 #: factsheet.html%2Bdiv.section.h3:13-2
-msgid "Ceno stands for:"
-msgstr "Ceno ne demek:"
-
-#: factsheet.html%2Bdiv.section.ul.li:15-9
-msgid ""
-"<strong>ce</strong>nsorship.<strong>no</strong>, envisioned as part of an "
-"Internet that is free of intrusive and unjustified surveillance, censorship "
-"and oppression"
-msgstr ""
-"<strong>ce</strong>nsorship.<strong>no</strong> (sansüre hayır), müdahale, "
-"haksız gözetleme, sansür ve baskıdan arınmış bir internet parçası olarak "
-"düşünüldü"
-
-#: factsheet.html%2Bdiv.section.ul.li:16-2
-msgid "Developed and launched by <a href=\"https://equalit.ie\">eQualitie</a>"
-msgstr ""
-"<a href=\"https://equalit.ie\">eQualitie</a> tarafından geliştirildi ve "
-"sunuluyor"
-
-#: factsheet.html%2Bdiv.section.h3:18-2
 msgid "Works on:"
 msgstr "Çalıştığı aygıtlar:"
 
-#: factsheet.html%2Bdiv.section.p:19-9
+#: factsheet.html%2Bdiv.section.ul.li:15-9
 msgid "Android mobile devices"
 msgstr "Android mobil aygıtlar"
 
-#: factsheet.html%2Bdiv.section.h3:21-2
+#: factsheet.html%2Bdiv.section.ul.li:16-9
+msgid "Windows desktop devices"
+msgstr ""
+
+#: factsheet.html%2Bdiv.section.h3:19-2
 msgid "Get it on:"
 msgstr "Nereden edinilebilir:"
 
-#: factsheet.html%2Bdiv.section.ul.li:23-9
+#: factsheet.html%2Bdiv.section.ul.li:21-9
 #, fuzzy
 #| msgid ""
 #| "<a href=\"https://censorship.no/download\">Ceno website</a>, <a "
@@ -100,15 +91,15 @@ msgstr ""
 "android.html?\">Paskoocheh</a> ve <a href=\"https://zanga.tech/tools/166/"
 "android.html\">Zanga.tech</a>"
 
-#: factsheet.html%2Bdiv.section.ul.li:24-2
+#: factsheet.html%2Bdiv.section.ul.li:22-2
 msgid "No special permissions are required"
 msgstr "Herhangi bir özel izin verilmesi gerekmez"
 
-#: factsheet.html%2Bdiv.section.h3:26-2
+#: factsheet.html%2Bdiv.section.h3:24-2
 msgid "Why:"
 msgstr "Neden:"
 
-#: factsheet.html%2Bdiv.section.ul.li:28-9
+#: factsheet.html%2Bdiv.section.ul.li:26-9
 msgid ""
 "Designed to allow people anywhere in the world to access web content in "
 "censored or Internet-restricted regions, and in countries where connectivity "
@@ -119,7 +110,7 @@ msgstr ""
 "maliyetli olduğu ülkelerden internet içeriklerine erişmelerini sağlamak "
 "üzere tasarlanmıştır"
 
-#: factsheet.html%2Bdiv.section.ul.li:29-2
+#: factsheet.html%2Bdiv.section.ul.li:27-2
 msgid ""
 "Can be used to create a bridge for others to access censored or restricted "
 "content"
@@ -127,11 +118,11 @@ msgstr ""
 "Başkalarının sansürlenmiş veya kısıtlanmış içeriklere erişmesini sağlayan "
 "bir köprü oluşturmak için kullanılabilir"
 
-#: factsheet.html%2Bdiv.section.h3:31-2
+#: factsheet.html%2Bdiv.section.h3:29-2
 msgid "So what?"
 msgstr "Yani?"
 
-#: factsheet.html%2Bdiv.section.ul.li:33-2
+#: factsheet.html%2Bdiv.section.ul.li:31-2
 msgid ""
 "Already helping thousands of civilians, NGOs, investigative journalists and "
 "independent media globally to access and share web content"
@@ -140,7 +131,7 @@ msgstr ""
 "araştırmacı gazetecinin ve bağımsız basının internet içeriklerine erişmesine "
 "ve paylaşmasına yardımcı oluyor"
 
-#: factsheet.html%2Bdiv.section.ul.li:34-2
+#: factsheet.html%2Bdiv.section.ul.li:32-2
 msgid ""
 "Ceno content remains stable and cannot be forcibly removed by external "
 "agents, even during media censorship events, shutdowns, natural disruptions, "
@@ -150,7 +141,7 @@ msgstr ""
 "afetler olduğunda, kargaşalarda, çatışmalarda ve savaşlarda bile dışarıdan "
 "engellenemez ve erişilebilir kalır"
 
-#: factsheet.html%2Bdiv.section.ul.li:35-2
+#: factsheet.html%2Bdiv.section.ul.li:33-2
 #, fuzzy
 #| msgid ""
 #| "Ceno’s p2p routing and distribution of storage can reduce bandwidth and "
@@ -162,7 +153,7 @@ msgstr ""
 "Uçtan uca Ceno yönlendirmesi ve dağıtık depolama bant genişliği kullanımını "
 "ve güç tüketimini azaltabilir"
 
-#: factsheet.html%2Bdiv.section.ul.li:36-2
+#: factsheet.html%2Bdiv.section.ul.li:34-2
 msgid ""
 "Performance improves with scale (unlike the proxy/virtual private network "
 "(VPN) model); more users reduces latency and increases storage"
@@ -171,11 +162,11 @@ msgstr ""
 "aksine). Daha fazla kullanıcı olması gecikmeyi azaltır ve depolama alanını "
 "artırır"
 
-#: factsheet.html%2Bdiv.section.h3:38-2
+#: factsheet.html%2Bdiv.section.h3:36-2
 msgid "How:"
 msgstr "Nasıl:"
 
-#: factsheet.html%2Bdiv.section.ul.li:40-2
+#: factsheet.html%2Bdiv.section.ul.li:38-2
 msgid ""
 "Works like BitTorrent - pulling, reserving and sharing content from many "
 "networked sources rather than from one web server source - but is a browser"
@@ -183,7 +174,7 @@ msgstr ""
 "BitTorrent gibi, içeriği tek bir sunucudan almak yerine bir çok bağlantılı "
 "kaynaktan alır, kaydeder ve paylaşır. Ama bir tarayıcıdır"
 
-#: factsheet.html%2Bdiv.section.ul.li:41-2
+#: factsheet.html%2Bdiv.section.ul.li:39-2
 msgid ""
 "Underlying decentralized p2p network uses established open-source Ouinet "
 "library and BitTorrent protocols, making it resilient and reliable"
@@ -191,22 +182,22 @@ msgstr ""
 "Temeldeki merkezi olmayan uçtan uca ağ, açık kaynaklı Ouinet kitaplığını ve "
 "BitTorrent iletişim kurallarını kullanarak daha esnek ve güvenilir olur"
 
-#: factsheet.html%2Bdiv.section.ul.li:42-2
+#: factsheet.html%2Bdiv.section.ul.li:40-2
 msgid "Looks and feels like other browsers"
 msgstr "Görünüşü ve kullanılışı diğer tarayıcılar gibidir"
 
-#: factsheet.html%2Bdiv.section.ul.li:43-2
+#: factsheet.html%2Bdiv.section.ul.li:41-2
 msgid ""
 "Equipped to share cached content offline and on local area networks (LANs)"
 msgstr ""
 "Ön bellekteki içeriği çevrim dışı ve yerel ağlarda paylaşacak şekilde "
 "geliştirilmiştir"
 
-#: factsheet.html%2Bdiv.section.h3:45-2
+#: factsheet.html%2Bdiv.section.h3:43-2
 msgid "Who is eQualitie?"
 msgstr "eQualitie kimdir?"
 
-#: factsheet.html%2Bdiv.section.ul.li:47-9
+#: factsheet.html%2Bdiv.section.ul.li:45-9
 msgid ""
 "Montreal-based digital security firm that has developed open-source and "
 "reusable systems and tools since 2010, with a focus on online privacy, "
@@ -216,11 +207,11 @@ msgstr ""
 "açık kaynaklı ve yeniden kullanılabilir sistem ve araçlar geliştiren, "
 "Montreal merkezli bir dijital güvenlik firmasıdır"
 
-#: factsheet.html%2Bdiv.section.ul.li:48-2
+#: factsheet.html%2Bdiv.section.ul.li:46-2
 msgid "Maintains the <a href=\"https://deflect.ca\">Deflect.ca</a> service"
 msgstr "<a href=\"https://deflect.ca\">Deflect.ca</a> hizmetini sunmaktadır"
 
-#: factsheet.html%2Bdiv.section.ul.li:49-2
+#: factsheet.html%2Bdiv.section.ul.li:47-2
 msgid ""
 "Leads several initiatives focused on free and secure communications in "
 "authoritarian states"
@@ -228,23 +219,23 @@ msgstr ""
 "Baskı altındaki bölgelerde özgür ve güvenli iletişime odaklanan çeşitli "
 "girişimlere önderlik etmektedir"
 
-#: factsheet.html%2Bdiv.section.ul.li:50-2
+#: factsheet.html%2Bdiv.section.ul.li:48-2
 msgid "Founded by Dmitri Vitaliev"
 msgstr "Dmitri Vitaliev tarafından kurulmuştur"
 
-#: factsheet.html%2Bdiv.section.h3:52-2
+#: factsheet.html%2Bdiv.section.h3:50-2
 msgid "In use today:"
 msgstr "Günümüzdeki kullanımı:"
 
-#: factsheet.html%2Bdiv.section.ul.li:54-9
+#: factsheet.html%2Bdiv.section.ul.li:52-9
 msgid "<strong>Average monthly users:</strong> 10,000+"
 msgstr "<strong>Ortalama aylık kullanıcı:</strong> 10.000+"
 
-#: factsheet.html%2Bdiv.section.ul.li:55-2
+#: factsheet.html%2Bdiv.section.ul.li:53-2
 msgid "<strong>New monthly users:</strong> 10,000"
 msgstr "<strong>Aylık yeni kullanıcı:</strong> 10.000"
 
-#: factsheet.html%2Bdiv.section.ul.li:56-2
+#: factsheet.html%2Bdiv.section.ul.li:54-2
 msgid ""
 "<strong>Majority users by country:</strong> Ukraine 48%; Russia 17%; Iran "
 "15%; Myanmar 5%; Poland, US and Germany 3%"
@@ -252,21 +243,21 @@ msgstr ""
 "<strong>Kullanıcıların ülkelere göre dağılımı:</strong> Ukrayna %48; Rusya "
 "%17; İran %15; Myanmar %5; Polonya, Amerika ve Almanya %3"
 
-#: factsheet.html%2Bdiv.section.h2:60-1
+#: factsheet.html%2Bdiv.section.h2:58-1
 msgid "How Ceno Works"
 msgstr "Ceno nasıl çalışır"
 
-#: factsheet.html%2Bdiv.section.div.div.div.div.div.p:67-17
+#: factsheet.html%2Bdiv.section.div.div.div.div.div.p:65-17
 msgid "A mobile user in NYC reads a BBC.com news article on her Ceno Browser."
 msgstr ""
 "New York içinde bir kullanıcı Ceno Browser kullanarak bir BBC.com haberi "
 "okur."
 
-#: factsheet.html%2Bdiv.section.div.div.div.div.div.p:76-17
+#: factsheet.html%2Bdiv.section.div.div.div.div.div.p:74-17
 msgid "Ceno signs, caches and decentralizes the article content."
 msgstr "Ceno haber içeriğini imzalar, ön belleğe alır ve dağıtır."
 
-#: factsheet.html%2Bdiv.section.div.div.div.div.div.p:85-17
+#: factsheet.html%2Bdiv.section.div.div.div.div.div.p:83-17
 msgid ""
 "Ceno users everywhere access and read the same article on their mobiles, "
 "despite censorship or outages, and thereby share it with other Ceno users."
@@ -275,39 +266,39 @@ msgstr ""
 "kısıtlamaya rağmen aynı haberi telefonlarında okur ve diğer Ceno "
 "kullanıcılarıyla paylaşır."
 
-#: factsheet.html%2Bdiv.section.div:89-2
+#: factsheet.html%2Bdiv.section.div:87-2
 msgid "Learn more in the User Manual!"
 msgstr "Ayrıntılı bilgi almak için kullanıcı rehberine bakın!"
 
-#: factsheet.html%2Bdiv.section.h2:95-1
+#: factsheet.html%2Bdiv.section.h2:93-1
 msgid "Numbers"
 msgstr "Sayılar"
 
-#: factsheet.html%2Bdiv.section.h3:97-1
+#: factsheet.html%2Bdiv.section.h3:95-1
 msgid "Ceno to April 2022"
 msgstr "2022 Nisan ayında Ceno"
 
-#: factsheet.html%2Bdiv.section.ul.li:99-2
+#: factsheet.html%2Bdiv.section.ul.li:97-2
 msgid "Downloads from Google Play Store: 33,297"
 msgstr "Google Play üzerinden indirilme: 33.297"
 
-#: factsheet.html%2Bdiv.section.ul.li:100-2
+#: factsheet.html%2Bdiv.section.ul.li:98-2
 msgid "Installs from alternative marketplaces: 6,514"
 msgstr "Diğer uygulama mağazalarından indirilme: 6.514"
 
-#: factsheet.html%2Bdiv.section.ul.li:101-2
+#: factsheet.html%2Bdiv.section.ul.li:99-2
 msgid "Pulls from Docker Hub: 597"
 msgstr "Docker Hub üzerinden alınma: 597"
 
-#: factsheet.html%2Bdiv.section.ul.li:102-2
+#: factsheet.html%2Bdiv.section.ul.li:100-2
 msgid "Cloned from GitHub repositories: 1,768"
 msgstr "GitHub depolarından kopyalanma: 1.768"
 
-#: factsheet.html%2Bdiv.section.ul.li:103-2
+#: factsheet.html%2Bdiv.section.ul.li:101-2
 msgid "Unique participants in March 2022: 28,914"
 msgstr "2022 Mart ayında tekil katılımcı sayısı: 28.914"
 
-#: factsheet.html%2Bdiv.section.ul.li:104-2
+#: factsheet.html%2Bdiv.section.ul.li:102-2
 msgid ""
 "Ceno bridges worldwide: 25 (6 in Ukraine, 9 in Russia and others in the "
 "Middle East, Eastern Europe and Asia)"
@@ -315,7 +306,7 @@ msgstr ""
 "Dünya çapındaki Ceno köprüleri: 25 (Ukrayna 6, Rusya 9 ve kalanı Orta Doğu, "
 "Doğu Avrupa ve Asya'da)"
 
-#: factsheet.html%2Bdiv.section.ul.li:105-2
+#: factsheet.html%2Bdiv.section.ul.li:103-2
 msgid ""
 "Bootstrap servers to ensure that in-country nodes can use BitTorrent during "
 "complete network shutdowns: 8 (in Eastern Europe, Myanmar, Iran and Russia)"
@@ -323,11 +314,11 @@ msgstr ""
 "İnternet erişiminin tümüyle kesildiği zamanlarda BitTorrent kullanılmasını "
 "sağlayacak ön yükleme sunucuları: 8 (Doğu Avrupa, Myanmar, İran ve Rusya)"
 
-#: factsheet.html%2Bdiv.section.h3:107-1
+#: factsheet.html%2Bdiv.section.h3:105-1
 msgid "Ceno Analytics"
 msgstr "Ceno istatistikleri"
 
-#: factsheet.html%2Bdiv.section.p:108-2
+#: factsheet.html%2Bdiv.section.p:106-2
 #, fuzzy
 #| msgid ""
 #| "The Ceno browser displays the resources provided directly from the origin "
@@ -342,7 +333,7 @@ msgstr ""
 "(içerik ekleyicileriyle sunulan ve P2P ağından alınan) ve her kullanıcı "
 "aygıtının diğer kullanıcılarla ne kadar paylaşım yaptığını gösterir."
 
-#: factsheet.html%2Bdiv.section.p:109-2
+#: factsheet.html%2Bdiv.section.p:107-2
 msgid ""
 "Key performance metrics for a Ceno white-label release include (i) the "
 "number of reachable bridge nodes and origin sources in the DHT, and (ii) the "
@@ -353,7 +344,7 @@ msgstr ""
 "sayısı ile (ii) içerik ekleyici sunucuları tarafından sunulan farklı "
 "internet kaynaklarının bant genişliği ve sayısı."
 
-#: factsheet.html%2Bdiv.section.p:110-2
+#: factsheet.html%2Bdiv.section.p:108-2
 #, fuzzy
 #| msgid ""
 #| "Other metrics can be designed and developed for greater visibility and "
@@ -377,7 +368,7 @@ msgstr ""
 "kullanımı, (ii) kaynak ülke ve (iii) benzersiz aygıt tanımlayıcıları için "
 "dağıtılmış karma tablosu sorgulanarak öngörülebilir."
 
-#: factsheet.html%2Bdiv.section.p:111-2
+#: factsheet.html%2Bdiv.section.p:109-2
 #, fuzzy
 #| msgid ""
 #| "Integration of the Clean Insights SDK is being explored as a way to give "
@@ -392,11 +383,11 @@ msgstr ""
 "kullanımı ile birlikte istatistikleri kullanıcının bakış açısından ölçen "
 "gizliliğe saygılı sağlam analizler sunmanın bir yoludur."
 
-#: factsheet.html%2Bdiv.section.h3:113-1
+#: factsheet.html%2Bdiv.section.h3:111-1
 msgid "Ouinet in April 2022"
 msgstr "2002 Nisan ayında Ouinet"
 
-#: factsheet.html%2Bdiv.section.p:114-2
+#: factsheet.html%2Bdiv.section.p:112-2
 #, fuzzy
 #| msgid ""
 #| "Ouinet’s injectors introduced approximately 2 million pages (602 GB of "
@@ -411,11 +402,11 @@ msgstr ""
 "milyon sayfayı (602 GB boyutunda veri) merkezi olmayan içerik paylaşım ağına "
 "ekledi."
 
-#: factsheet.html%2Bdiv.section.h2:118-1
+#: factsheet.html%2Bdiv.section.h2:116-1
 msgid "Internet shutdowns"
 msgstr "İnternet kapatmaları"
 
-#: factsheet.html%2Bdiv.section.p:119-9
+#: factsheet.html%2Bdiv.section.p:117-9
 msgid ""
 "Internet shutdowns is a broad term covering various Internet access "
 "restriction scenarios. Precise technical information on shutdowns is often "
@@ -425,7 +416,7 @@ msgstr ""
 "bir terimdir. İnternet kapatmasının teknik bilgilerinin ayrıntıları "
 "genellikle basına yansımaz. Kapatma şekilleri şunlardır:"
 
-#: factsheet.html%2Bdiv.section.p.ul.li:121-9
+#: factsheet.html%2Bdiv.section.p.ul.li:119-9
 msgid ""
 "<strong>Level 1:</strong> A complete or partial failure of Internet "
 "services, occurring due to censorship, cyberattacks, natural disasters, "
@@ -442,7 +433,7 @@ msgstr ""
 "internet bağlantılarının yapay şekilde kısıtlanması (2019-2020 Hindistan "
 "Keşmir ve Küba) gibi sıra dışı ağ engelleme senaryolarının üstesinden gelir."
 
-#: factsheet.html%2Bdiv.section.p.ul.li:122-9
+#: factsheet.html%2Bdiv.section.p.ul.li:120-9
 msgid ""
 "<strong>Level 2:</strong> A ban on international transit connections (e.g., "
 "Kazakhstan in 2021), such that no servers or services located outside the "
@@ -453,7 +444,7 @@ msgstr ""
 "sunucuyu erişilemez kılan uluslararası internet bağlantılarının engellenmesi "
 "(2021 Kazakistan). Ceno bu tarz yerel senaryolarda çalışmayı sürdürür."
 
-#: factsheet.html%2Bdiv.section.p.ul.li:123-9
+#: factsheet.html%2Bdiv.section.p.ul.li:121-9
 msgid ""
 "<strong>Level 3:</strong> When electricity no longer functions, such as "
 "during national disasters and in wartime (e.g., Mariupol in 2022). Ceno "
@@ -464,7 +455,7 @@ msgstr ""
 "olmadığı zamanlar (2022 Mariupol). Aygıtlar çalışıp birbirlerine yakın "
 "olduğu sürece Ceno çalışmayı sürdürür."
 
-#: factsheet.html%2Bdiv.section.p:125-9
+#: factsheet.html%2Bdiv.section.p:123-9
 msgid ""
 "A growing number of countries have introduced sophisticated surveillance and "
 "network filtering technologies to undermine existing censorship "
@@ -478,7 +469,7 @@ msgstr ""
 "ve ağ süzme teknolojileri uyguluyor. Bazıları, mahalleler, bölgeler ve "
 "uluslar arasındaki tüm ağları uluslararası bağlantıdan ayırdı."
 
-#: factsheet.html%2Bdiv.section.p:126-9
+#: factsheet.html%2Bdiv.section.p:124-9
 msgid ""
 "Most circumvention techniques in use today require the user to first connect "
 "to a relay located in an uncensored zone. The resulting \"cat and mouse\" "
@@ -495,11 +486,11 @@ msgstr ""
 "duyar) artık bağlantı kurmak ve dijital içeriğin yayılmasını sağlamak için "
 "yeterli değildir."
 
-#: factsheet.html%2Bdiv.section.h3:129-1
+#: factsheet.html%2Bdiv.section.h3:127-1
 msgid "How Ceno side-steps censorship"
 msgstr "Ceno sansürü nasıl aşar"
 
-#: factsheet.html%2Bdiv.section.p:130-9
+#: factsheet.html%2Bdiv.section.p:128-9
 msgid ""
 "Ultimately, existing censorship methods have a single point of failure: "
 "users need to penetrate a firewall where the censor is watching. As "
@@ -519,15 +510,15 @@ msgstr ""
 "kanıtlamıştır. Daha yaygın kullanım, daha verimli, düşük gecikmeli ve "
 "merkezi olmayan uçtan uca iletişim ile dağıtılmış ön belleğe almayı sağlar."
 
-#: factsheet.html%2Bdiv.section.h2:134-1
+#: factsheet.html%2Bdiv.section.h2:132-1
 msgid "User comments"
 msgstr "Kullanıcı yorumları"
 
-#: factsheet.html%2Bdiv.section.h3:135-1
+#: factsheet.html%2Bdiv.section.h3:133-1
 msgid "Russia"
 msgstr "Rusya"
 
-#: factsheet.html%2Bdiv.section.p:136-9
+#: factsheet.html%2Bdiv.section.p:134-9
 #, fuzzy
 #| msgid ""
 #| "“Nice browser. Without VPN I was able to open blocked resources. But it's "
@@ -539,7 +530,7 @@ msgstr ""
 "“Güzel tarayıcı, VPN olmadan engellenen kaynakları açabildim. Bağlantınız "
 "olmadığında da kullanılabiliyor.”"
 
-#: factsheet.html%2Bdiv.section.p:137-2
+#: factsheet.html%2Bdiv.section.p:135-2
 #, fuzzy
 #| msgid ""
 #| "“Because Russia threatens to block VPNs, Ceno is promising. Also because "
@@ -576,7 +567,7 @@ msgstr ""
 "İnternet sitelerine erişmeye yardımcı olmanın yanında, oldukça masum "
 "görünüyor ve bu harika.”"
 
-#: factsheet.html%2Bdiv.section.p:138-2
+#: factsheet.html%2Bdiv.section.p:136-2
 #, fuzzy
 #| msgid ""
 #| "“Thanks for a great product. Your browser opens the site http://meduza.io "
@@ -588,11 +579,11 @@ msgstr ""
 "“İyi bir uygulama. Tarayıcınız http://meduza.io sitesini @meduzaproject "
 "uygulamasından daha hızlı açıyor.”"
 
-#: factsheet.html%2Bdiv.section.h3:140-1
+#: factsheet.html%2Bdiv.section.h3:138-1
 msgid "Myanmar"
 msgstr "Myanmar"
 
-#: factsheet.html%2Bdiv.section.p:141-2
+#: factsheet.html%2Bdiv.section.p:139-2
 #, fuzzy
 #| msgid ""
 #| "“There was a lot of inconvenience due to the blocked websites. It's good "
@@ -607,7 +598,7 @@ msgstr ""
 "iyi işlediğini görmek güzel. Bu bizim dijital hakkımız. Ara sıra kullanmayı "
 "sürdüreceğim.”"
 
-#: factsheet.html%2Bdiv.section.p:142-2
+#: factsheet.html%2Bdiv.section.p:140-2
 #, fuzzy
 #| msgid ""
 #| "“There are more features I'd like to see in the app, but it is totally a "
@@ -619,11 +610,11 @@ msgstr ""
 "“Uygulamada görmek istediğim başka özellikler var, yine de kolay ve "
 "kullanışlı bir uygulama.”"
 
-#: factsheet.html%2Bdiv.section.h3:144-1
+#: factsheet.html%2Bdiv.section.h3:142-1
 msgid "Iran"
 msgstr "İran"
 
-#: factsheet.html%2Bdiv.section.p:145-2
+#: factsheet.html%2Bdiv.section.p:143-2
 msgid ""
 "\"This app is one of our few hopes in times of serious Internet disruptions "
 "in Iran. Please keep it going and make it better and better. Thank you.\""
@@ -631,7 +622,7 @@ msgstr ""
 "“Bu uygulama İran'daki ciddi internet kısıtlamalarında umutlarımızdan biri. "
 "Lütfen geliştirmeyi sürdürün. Teşekkürler.”"
 
-#: factsheet.html%2Bdiv.section.p:146-2
+#: factsheet.html%2Bdiv.section.p:144-2
 msgid ""
 "\"It is a good browser, especially for us Iranians, who do not have the "
 "possibility of free use of the Internet and everything is filtered by the "
@@ -639,3 +630,21 @@ msgid ""
 msgstr ""
 "“Özellikle her şeyin hükümet tarafından süzüldüğü İran'da yaşayan ve özgürce "
 "internet kullanamayan biz İranlılar için iyi bir tarayıcı.”"
+
+#~ msgid "Ceno stands for:"
+#~ msgstr "Ceno ne demek:"
+
+#~ msgid ""
+#~ "<strong>ce</strong>nsorship.<strong>no</strong>, envisioned as part of an "
+#~ "Internet that is free of intrusive and unjustified surveillance, "
+#~ "censorship and oppression"
+#~ msgstr ""
+#~ "<strong>ce</strong>nsorship.<strong>no</strong> (sansüre hayır), "
+#~ "müdahale, haksız gözetleme, sansür ve baskıdan arınmış bir internet "
+#~ "parçası olarak düşünüldü"
+
+#~ msgid ""
+#~ "Developed and launched by <a href=\"https://equalit.ie\">eQualitie</a>"
+#~ msgstr ""
+#~ "<a href=\"https://equalit.ie\">eQualitie</a> tarafından geliştirildi ve "
+#~ "sunuluyor"

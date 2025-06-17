@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-29 11:16-0400\n"
-"PO-Revision-Date: 2025-05-16 15:46+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2025-06-02 13:07-0400\n"
+"PO-Revision-Date: 2025-06-10 02:01+0000\n"
+"Last-Translator: Mehdi Oloomi <mehdi@equalitie.org>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-index/fa/>\n"
 "Language: fa\n"
@@ -143,9 +143,10 @@ msgstr "با نحوه عملکرد سنو آشنا شوید"
 
 #: index.html%2Bmain.section.div.div:95-7
 msgid ""
-"Ceno is designed by <a href=\"https://equalitie.org\">eQualitie</a>, a non-"
-"profit creating free & open source tools to protect freedom of speech, "
-"facilitate information exchange, & promote self-expression on the internet."
+"Ceno is designed by <a href=\"https://equalitie.org\">eQualitie</a>, a not-"
+"for-profit organization creating free & open source tools to protect freedom "
+"of speech, facilitate information exchange, & promote self-expression on the "
+"internet."
 msgstr ""
 "سِنو توسط شرکت <a href=\"https://equalitie.org\">eQualitie</a> طراحی شده است؛ "
 "یک سازمان غیرانتفاعی که ابزارهای رایگان و متن‌باز برای محافظت از آزادی بیان، "
@@ -171,7 +172,7 @@ msgstr ""
 
 #: index.html%2Bmain.section.div.div.div.div:111-11
 msgid "Yuriy Karetin"
-msgstr "Yuriy Karetin"
+msgstr "Yuriy Karetin‌"
 
 #: index.html%2Bmain.section.div.div.div.p:117-11
 msgid ""
@@ -187,7 +188,7 @@ msgstr ""
 
 #: index.html%2Bmain.section.div.div.div.div:118-11
 msgid "Tim Six"
-msgstr "Tim Six"
+msgstr "Tim Six‌"
 
 #: index.html%2Bmain.section.div.div.a.div:125-56
 msgctxt "./index.html+main.section.div.div.a.div:125-56"
