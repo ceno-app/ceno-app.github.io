@@ -2,24 +2,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-05-29 11:16-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2025-06-02 13:07-0400\n"
+"PO-Revision-Date: 2025-06-10 02:01+0000\n"
+"Last-Translator: Manuela Silva <mmsrs@sky.com>\n"
+"Language-Team: Portuguese <https://hosted.weblate.org/projects/censorship-no/"
+"website-v2/website-v2-about/pt/>\n"
 "Language: pt\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.15.1\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 5.12-dev\n"
 
 #: about.html%2Bmain.section.div.div:4-13
 msgid "Ceno is building a borderless internet"
-msgstr ""
+msgstr "Ceno está a criar uma Internet sem fronteiras"
 
 #: about.html%2Bmain.section.div.p:5-13
 msgid "Our motto is ‘Share the Web!' because that is what our users do."
 msgstr ""
+"O nosso lema é \"Partilhar a Web!\" porque isso é o que os utilizadores "
+"fazem."
 
 #: about.html%2Bmain.section.div.p:12-13
 msgid ""
@@ -48,19 +51,20 @@ msgstr ""
 
 #: about.html%2Bmain.section.div.div.div.div.a.div:20-67
 msgid "Learn how Ceno works"
-msgstr ""
+msgstr "Saiba como é que Ceno funciona"
 
 #: about.html%2Bmain.section.div.h2:28-13
 msgid "The team behind Ceno"
-msgstr ""
+msgstr "A equipa do Ceno"
 
 #: about.html%2Bmain.section.div.div.p:30-17
 msgid ""
-"Ceno is created and maintained by the Canadian non-profit organization <a "
-"href=\"https://equalitie.org\">eQualitie</a> in support of Articles 18, 19 "
-"and 20 of the Universal Declaration of Human Rights. We have over ten years "
-"of experience creating and advancing tools to protect freedom of speech, "
-"facilitate information exchange, and promote self-expression on the internet."
+"Ceno is created and maintained by the Canadian not-for-profit organization "
+"<a href=\"https://equalitie.org\">eQualitie</a> in support of Articles 18, "
+"19 and 20 of the Universal Declaration of Human Rights. We have over ten "
+"years of experience creating and advancing tools to protect freedom of "
+"speech, facilitate information exchange, and promote self-expression on the "
+"internet."
 msgstr ""
 
 #: about.html%2Bmain.section.div.div.p:31-17
@@ -73,13 +77,15 @@ msgstr ""
 
 #: about.html%2Bmain.section.div.div.h2:44-17
 msgid "Is Ceno for me?"
-msgstr ""
+msgstr "Ceno é para mim?"
 
 #: about.html%2Bmain.section.div.div.div.p:46-21
 msgid ""
 "Ceno is for everyone. It can replace your existing mobile browser as it "
 "shares many of the same functions and features."
 msgstr ""
+"Ceno é para toda a gente. Este pode substituir o seu navegador móvel atual "
+"porque este partilha muitas das mesmas funções e funcionalidades."
 
 #: about.html%2Bmain.section.div.div.div.p:47-21
 msgid ""
@@ -94,51 +100,53 @@ msgid ""
 "Ceno is especially useful for people facing internet censorship or "
 "connectivity issues."
 msgstr ""
+"Ceno é especialmente útil para as pessoas que enfrentam censura na Internet "
+"ou problemas de conetividade."
 
 #: about.html%2Bmain.section.div.div:54-13
 msgctxt "./about.html+main.section.div.div:54-13"
 msgid "Citizen"
-msgstr ""
+msgstr "Cidadão"
 
 #: about.html%2Bmain.section.div.div:58-13
 msgctxt "./about.html+main.section.div.div:58-13"
 msgid "Student"
-msgstr ""
+msgstr "Estudante"
 
 #: about.html%2Bmain.section.div.div:62-13
 msgid "Human rights defender"
-msgstr ""
+msgstr "Defensor dos direitos humanos"
 
 #: about.html%2Bmain.section.div.div:66-13
 msgctxt "./about.html+main.section.div.div:66-13"
 msgid "Journalist"
-msgstr ""
+msgstr "Jornalista"
 
 #: about.html%2Bmain.section.div.div:70-13
 msgctxt "./about.html+main.section.div.div:70-13"
 msgid "Technologist"
-msgstr ""
+msgstr "Tecnologista"
 
 #: about.html%2Bmain.section.div.div:74-13
 msgid "Diaspora user"
-msgstr ""
+msgstr "Utilizador do Diaspora"
 
 #: about.html%2Bmain.section.div.div.div:79-17
 msgctxt "./about.html+main.section.div.div.div:79-17"
 msgid "Citizen"
-msgstr ""
+msgstr "Cidadão"
 
 #: about.html%2Bmain.section.div.div.div:83-17
 msgctxt "./about.html+main.section.div.div.div:83-17"
 msgid "Student"
-msgstr ""
+msgstr "Estudante"
 
 #: about.html%2Bmain.section.div.div.div:87-17
 msgctxt "./about.html+main.section.div.div.div:87-17"
 msgid "Technologist"
-msgstr ""
+msgstr "Tecnologista"
 
 #: about.html%2Bmain.section.div.div.div:91-17
 msgctxt "./about.html+main.section.div.div.div:91-17"
 msgid "Journalist"
-msgstr ""
+msgstr "Jornalista"
