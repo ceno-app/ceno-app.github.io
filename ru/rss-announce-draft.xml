@@ -6,14 +6,18 @@
 <description>RSS feed of announcements from the team behind Ceno Browser</description>
 
 <item>
-<title> Как пользоваться Ceno в условиях шатдауна </title>
+<title>Как пользоваться Ceno в условиях шатдауна</title>
 <link>announcements/20-06-2025.html</link>
 <guid>announcements/20-06-2025.html</guid>
 <pubDate>2025-06-20</pubDate>
 <description>
-Ceno продолжает работать в условиях шатдауна. Используйте публичный режим — так вы сможете и открывать сайты, и делиться ими с другими в режиме p2p, усиливая сетевой эффект.
+Ceno продолжает работать в условиях шатдауна. Используйте публичный режим — так вы сможете и открывать сайты, и делиться ими с другими в режиме p2p, усиливая сетевой эффект. Мы кешируем сайты независимых СМИ, чтобы они были доступны даже если связь с «большим интернетом» будет нарушена:
 
-<a href="https://schedule.ceno.app/ru">pусский</a> | <a href="https://schedule.ceno.app/ua">украинский</a>  | <a href="https://schedule.ceno.app/fa">персидский</a>
+• <a href="https://schedule.ceno.app/ru">российские СМИ</a>
+
+• <a href="https://schedule.ceno.app/fa">иранские СМИ</a>
+
+• <a href="https://schedule.ceno.app/ua">украинские СМИ</a>
 
 Обратите внимание: публичный режим не обеспечивает полную конфиденциальность. В сети Ceno останется запись о том, какими сайтами вы делились, хотя сам контент, который вы просматривали, виден только вам.
 </description>
