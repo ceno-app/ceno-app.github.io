@@ -13,7 +13,9 @@
 <description>
 During an internet shutdown, Ceno will continue to work using Public mode. This allows anyone using the app to request and share web pages with others. We inject independent media pages to facilitate news propagation during a shutdown:
 
-   <a href="https://schedule.ceno.app/fa">Persian</a>   |   <a href="https://schedule.ceno.app/ru">Russian</a>   |   <a href="https://schedule.ceno.app/ua">Ukrainian</a>
+• <a href="https://schedule.ceno.app/fa">Persian Media</a>
+• <a href="https://schedule.ceno.app/ru">Russian Media</a>
+• <a href="https://schedule.ceno.app/ua">Ukrainian Media</a>
 
 Remember: Public mode is built for access, not privacy. While people can't watch you browse, your activity is logged in the network.
 </description>
