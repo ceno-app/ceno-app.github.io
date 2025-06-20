@@ -6,6 +6,18 @@
 <description>RSS feed of announcements from the team behind Ceno Browser</description>
 
 <item>
+<title>اطلاعیه مهم برای کاربران سنو در ایران</title>
+<link>announcements/19-06-2025.html</link>
+<guid>announcements/19-06-2025.html</guid>
+<pubDate>2025-06-19</pubDate>
+<description>
+در زمان خاموشی اینترنت، مرورگر سنو همچنان با استفاده از «حالت عمومی» (Public Mode) به کار خودش ادامه می‌ده. این حالت به همه کاربران اجازه می‌ده صفحات وب رو درخواست کنن و با دیگران به اشتراک بذارن.
+
+توجه کنید: حالت عمومی برای دسترسی ساخته شده، نه برای حفظ حریم خصوصی. هرچند دیگران نمی‌تونن ببینن شما در حال مرور چه صفحاتی هستین، اما فعالیت شما در شبکه ثبت می‌شه.
+</description>
+</item>
+
+<item>
 <title>نسخه ۲.۴ سِنو منتشر شد</title>
 <link>announcements/23-12-2024.html</link>
 <guid>announcements/23-12-2024.html</guid>

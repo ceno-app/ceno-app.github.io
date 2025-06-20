@@ -6,6 +6,18 @@
 <description>RSS feed of announcements from the team behind Ceno Browser</description>
 
 <item>
+<title> Как пользоваться Ceno в условиях шатдауна </title>
+<link>announcements/19-06-2025.html</link>
+<guid>announcements/19-06-2025.html</guid>
+<pubDate>2025-06-19</pubDate>
+<description>
+Ceno продолжает работать в условиях шатдауна. Используйте публичный режим — так вы сможете и открывать сайты, и делиться ими с другими в режиме p2p, усиливая сетевой эффект.
+
+Обратите внимание: публичный режим не обеспечивает полную конфиденциальность. В сети Ceno останется запись о том, какими сайтами вы делились, хотя сам контент, который вы просматривали, виден только вам.
+</description>
+</item>
+
+<item>
 <title>Ceno 2.4: три новые функции</title>
 <link>announcements/23-12-2024.html</link>
 <guid>announcements/23-12-2024.html</guid>
