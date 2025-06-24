@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+<channel>
+<title>Ceno Browser Announcements</title>
+<link>https://ceno.app/</link>
+<description>RSS feed of announcements from the team behind Ceno Browser</description>
+
+<item>
+<title>Important Update for Ceno Users in Iran</title>
+<link>announcements/19-06-2025.html</link>
+<guid>announcements/19-06-2025.html</guid>
+<pubDate>2025-06-19</pubDate>
+<description>
+During an internet shutdown, Ceno will continue to work using Public mode. This allows anyone using the app to request and share web pages with others.
+
+Remember: Public mode is built for access, not privacy. While people can't watch you browse, your activity is logged in the network.
+</description>
+</item>
+
+<item>
+<title>Ceno 2.4 Released</title>
+<link>announcements/23-12-2024.html</link>
+<guid>announcements/23-12-2024.html</guid>
+<pubDate>2024-12-23</pubDate>
+<description>This month, we are introducing some exciting new features in Ceno Browser!
+
+In an effort to learn more about your experiences with Ceno and how we can improve, you can now opt-in to sharing privacy-preserving metrics with the development team. Please opt in to help us improve Ceno! 
+
+A new Network Status Indicator has been added to the homepage to show at a glance whether you are connected to the Ceno network. Click on the icon to learn more, export logs, and contact support in the event of issues.
+
+As always, we welcome your valuable feedback as we work hard to improve Ceno. Thank you for helping to make the web more open and accessible to all!
+
+Please update to the latest version of Ceno Browser by visiting our <a href="https://ceno.app/en/download">download page</a>!</description>
+
+</item>
+
+</channel>
+</rss>
