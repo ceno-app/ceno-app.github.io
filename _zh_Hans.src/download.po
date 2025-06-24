@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-02 13:07-0400\n"
-"PO-Revision-Date: 2025-04-21 23:09+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2025-06-17 16:59-0400\n"
+"PO-Revision-Date: 2025-06-19 09:04+0000\n"
+"Last-Translator: demigod <op02@bfdx.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/censorship-no/website-v2/website-v2-download/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -12,11 +12,11 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.12.1\n"
 
 #: download.html%2Bmain.section.div.div.div:5-17
 msgid "Download Ceno Browser"
-msgstr ""
+msgstr "下载Ceno浏览器"
 
 #: download.html%2Bmain.section.div.div:5-63
 msgid "Join 566,565 other users"
@@ -69,11 +69,11 @@ msgstr ""
 #: download.html%2Bmain.section.div.div:38-13
 msgid ""
 "<strong>Ceno for Android:</strong> <a href=\"https://ceno-download.s3."
-"amazonaws.com/ceno/v2.4.7/ceno-arm64-v8a-release-2.4.7-2025-05-22_1140."
+"amazonaws.com/ceno/v2.5.0/ceno-arm64-v8a-release-2.5.0-2025-06-13_1147."
 "apk\">arm64 (most common)</a> / <a href=\"https://ceno-download.s3.amazonaws."
-"com/ceno/v2.4.7/ceno-armeabi-v7a-release-2.4.7-2025-05-22_1140.apk\">arm</"
-"a> / <a href=\"https://ceno-download.s3.amazonaws.com/ceno/v2.4.7/ceno-"
-"x86_64-release-2.4.7-2025-05-22_1140.apk\">x86_64</a>"
+"com/ceno/v2.5.0/ceno-armeabi-v7a-release-2.5.0-2025-06-13_1147.apk\">arm</"
+"a> / <a href=\"https://ceno-download.s3.amazonaws.com/ceno/v2.5.0/ceno-"
+"x86_64-release-2.5.0-2025-06-13_1147.apk\">x86_64</a>"
 msgstr ""
 
 #: download.html%2Bmain.section.div.div:42-13
@@ -120,8 +120,8 @@ msgstr ""
 #: download.html%2Bmain.section.div.p:65-13
 msgid ""
 "Ceno for Android: <a href=\"https://ceno-download.s3.amazonaws.com/ceno/"
-"v2.4.7/sha256sums.txt\">file hashes</a>, <a href=\"https://ceno-download.s3."
-"amazonaws.com/ceno/v2.4.7/sha256sums.txt.asc\">signatures</a>"
+"v2.5.0/sha256sums.txt\">file hashes</a>, <a href=\"https://ceno-download.s3."
+"amazonaws.com/ceno/v2.5.0/sha256sums.txt.asc\">signatures</a>"
 msgstr ""
 
 #: download.html%2Bmain.section.div.p:66-13
