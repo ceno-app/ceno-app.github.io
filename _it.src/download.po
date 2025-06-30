@@ -28,7 +28,7 @@ msgid ""
 "Play Store or Microsoft Store:"
 msgstr ""
 "Il modo più sicuro di installare Ceno Browser sul tuo dispositivo è "
-"attraverso Google Play Store o il Microsoft Store:"
+"attraverso Google Play Store o Microsoft Store:"
 
 #: download.html%2Bmain.section.div.div.h4:20-17
 msgid "IMPORTANT:"
@@ -63,7 +63,7 @@ msgid ""
 "links, you can download the latest APK directly:"
 msgstr ""
 "Per gli utenti avanzati o per quelli che non possono installare Ceno Browser "
-"tramite i link precedenti, potete direttamente scaricare l'APK più recente:"
+"tramite i link precedenti, puoi direttamente scaricare l'APK più recente:"
 
 #: download.html%2Bmain.section.div.div:38-13
 msgid ""
@@ -94,6 +94,8 @@ msgid ""
 "To verify that the Ceno for Android APK has a valid signature, run this "
 "command and confirm its output:"
 msgstr ""
+"Per verificare che l'APK di Ceno per Android abbia una firma valida, esegui "
+"questo comando e conferma l'output:"
 
 #: download.html%2Bmain.section.div.div:47-13
 msgid ""
@@ -107,6 +109,8 @@ msgid ""
 "To verify that the Ceno for Windows EXE has a valid signature, run this "
 "command and confirm its output:"
 msgstr ""
+"Per verificare che l'EXE di Ceno per Windows abbia una firma valida, esegui "
+"questo comando e conferma l'output:"
 
 #: download.html%2Bmain.section.div.div:54-13
 msgid ""
@@ -129,6 +133,11 @@ msgid ""
 "v2.5.0/sha256sums.txt\">file hashes</a>, <a href=\"https://ceno-download.s3."
 "amazonaws.com/ceno/v2.5.0/sha256sums.txt.asc\">signatures</a>"
 msgstr ""
+"Ceno per Android: <a href="
+"\"https://ceno-download.s3.amazonaws.com/ceno/v2.5.0/sha256sums.txt\">hash "
+"del file</a>, <a href="
+"\"https://ceno-download.s3.amazonaws.com/ceno/v2.5.0/sha256sums.txt.asc\""
+">firme</a>"
 
 #: download.html%2Bmain.section.div.p:66-13
 msgid ""
@@ -137,6 +146,10 @@ msgid ""
 "download.s3.amazonaws.com/ceno-desktop/v0.0.3/sha256sums.txt."
 "asc\">signatures</a>"
 msgstr ""
+"Ceno per Windows: <a href="
+"\"https://ceno-download.s3.amazonaws.com/ceno-desktop/v0.0.3/sha256sums.txt\""
+">hash dei file</a>, <a href=\"https://ceno-download.s3.amazonaws.com/"
+"ceno-desktop/v0.0.3/sha256sums.txt.asc\">firme</a>"
 
 #: download.html%2Bmain.section.h1:70-9
 msgid "Use Cases"
