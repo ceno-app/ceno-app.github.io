@@ -68,19 +68,19 @@ msgstr "下载 Ceno"
 
 #: index.html%2Bmain.div.div.section.div.h2:53-11
 msgid "Resilient"
-msgstr ""
+msgstr "韧性强"
 
 #: index.html%2Bmain.div.div.section.div.p:54-11
 msgid ""
 "Websites are shared by a global network of peers, and stored in a "
 "distributed cache for availability when traditional networks are blocked or "
 "go down."
-msgstr "网站由全球对等节点网络共享，并存储在分布式缓存中，以便在传统网络被封锁或中断"
-"时仍能访问。"
+msgstr "网站由全球对等节点网络共享，并存于分布式缓存中，即便传统网络遭封锁或中断，也"
+"能确保内容可访问。"
 
 #: index.html%2Bmain.div.div.section.div.h2:58-11
 msgid "Lower data cost"
-msgstr ""
+msgstr "降低数据成本"
 
 #: index.html%2Bmain.div.div.section.div.p:59-11
 msgid ""
