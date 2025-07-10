@@ -21,16 +21,16 @@ msgid ""
 "enable freedom of association for millions of people online."
 msgstr ""
 "Ceno 浏览器是<a href=\"https://equalitie.org\""
-">eQualit.ie</a>的一个项目——该机构是一家加拿大的非营利组织。每一天，eQualit.ie"
-"的解决方案都让数百万网络用户能够享有结社自由。"
+">eQualit.ie</a>的一个项目——该机构是一家加拿大的非营利组织。eQualit.ie "
+"的解决方案都让数百万网络用户每天都能够享有结社自由。"
 
 #: _tail.html%2Bfooter.div.div.p:8-9
 msgid "Terms of Use and Privacy Policy"
-msgstr ""
+msgstr "使用条款和隐私政策"
 
 #: _tail.html%2Bfooter.div.div.p:9-9
 msgid "© eQualitie 2018-2025"
-msgstr ""
+msgstr "© eQualitie 2018-2025"
 
 #: _tail.html%2Bfooter.div.div.div.div:13-13
 msgid ""
@@ -51,4 +51,4 @@ msgstr ""
 
 #: _tail.html%2Bdiv.img[alt]:40-5
 msgid "Hi, I’m Cenoid. Im here to help you understand and use Ceno better."
-msgstr ""
+msgstr "嗨，我是Cenoid。我在这里帮助你更好地理解和使用 Ceno。"
