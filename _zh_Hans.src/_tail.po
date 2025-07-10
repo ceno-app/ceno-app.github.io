@@ -51,4 +51,4 @@ msgstr ""
 
 #: _tail.html%2Bdiv.img[alt]:40-5
 msgid "Hi, I’m Cenoid. Im here to help you understand and use Ceno better."
-msgstr "嗨，我是Cenoid。我在这里帮助你更好地理解和使用 Ceno。"
+msgstr "嗨，我是 Cenoid。我在这里帮助你更好地理解和使用 Ceno。"
