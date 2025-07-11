@@ -40,7 +40,7 @@ msgstr ""
 
 #: faq.html%2Bmain.section.div:19-9
 msgid "What is Ceno Browser?"
-msgstr "Ceno 浏览器是什么？"
+msgstr "什么是 Ceno 浏览器？"
 
 #: faq.html%2Bmain.section.div.details.p:22-17
 msgid ""
