@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-17 16:59-0400\n"
-"PO-Revision-Date: 2025-06-10 02:01+0000\n"
+"POT-Creation-Date: 2025-06-24 15:33-0400\n"
+"PO-Revision-Date: 2025-07-24 17:14+0000\n"
 "Last-Translator: Mehdi Oloomi <mehdi@equalitie.org>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/censorship-no/"
 "website-v2/website-v2-download/fa/>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.12-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: download.html%2Bmain.section.div.div.div:5-17
 msgid "Download Ceno Browser"
@@ -76,27 +76,27 @@ msgstr ""
 #, fuzzy
 #| msgid ""
 #| "<strong>Ceno for Android:</strong> <a href=\"https://ceno-download.s3."
-#| "amazonaws.com/ceno/v2.4.7/ceno-arm64-v8a-release-2.4.7-2025-05-22_1140."
+#| "amazonaws.com/ceno/v2.5.0/ceno-arm64-v8a-release-2.5.0-2025-06-13_1147."
 #| "apk\">arm64 (most common)</a> / <a href=\"https://ceno-download.s3."
-#| "amazonaws.com/ceno/v2.4.7/ceno-armeabi-v7a-release-2.4.7-2025-05-22_1140."
+#| "amazonaws.com/ceno/v2.5.0/ceno-armeabi-v7a-release-2.5.0-2025-06-13_1147."
 #| "apk\">arm</a> / <a href=\"https://ceno-download.s3.amazonaws.com/ceno/"
-#| "v2.4.7/ceno-x86_64-release-2.4.7-2025-05-22_1140.apk\">x86_64</a>"
+#| "v2.5.0/ceno-x86_64-release-2.5.0-2025-06-13_1147.apk\">x86_64</a>"
 msgid ""
 "<strong>Ceno for Android:</strong> <a href=\"https://ceno-download.s3."
-"amazonaws.com/ceno/v2.5.0/ceno-arm64-v8a-release-2.5.0-2025-06-13_1147."
+"amazonaws.com/ceno/v2.5.1/ceno-arm64-v8a-release-2.5.1-2025-06-20_1838."
 "apk\">arm64 (most common)</a> / <a href=\"https://ceno-download.s3.amazonaws."
+"com/ceno/v2.5.1/ceno-armeabi-v7a-release-2.5.1-2025-06-20_1838.apk\">arm</"
+"a> / <a href=\"https://ceno-download.s3.amazonaws.com/ceno/v2.5.1/ceno-"
+"x86_64-release-2.5.1-2025-06-20_1838.apk\">x86_64</a>"
+msgstr ""
+"<strong>سنو برای اندروید:</strong> <a href=\"https://ceno-download.s3."
+"amazonaws.com/ceno/v2.5.0/ceno-arm64-v8a-release-2.5.0-2025-06-13_1147."
+"apk\">arm64 (رایج‌ترین)</a> / <a href=\"https://ceno-download.s3.amazonaws."
 "com/ceno/v2.5.0/ceno-armeabi-v7a-release-2.5.0-2025-06-13_1147.apk\">arm</"
 "a> / <a href=\"https://ceno-download.s3.amazonaws.com/ceno/v2.5.0/ceno-"
 "x86_64-release-2.5.0-2025-06-13_1147.apk\">x86_64</a>"
-msgstr ""
-"<strong>سنو برای اندروید:</strong> <a href=\"https://ceno-download.s3."
-"amazonaws.com/ceno/v2.4.7/ceno-arm64-v8a-release-2.4.7-2025-05-22_1140."
-"apk\">arm64 (رایج‌ترین)</a> / <a href=\"https://ceno-download.s3.amazonaws."
-"com/ceno/v2.4.7/ceno-armeabi-v7a-release-2.4.7-2025-05-22_1140.apk\">arm</"
-"a> / <a href=\"https://ceno-download.s3.amazonaws.com/ceno/v2.4.7/ceno-"
-"x86_64-release-2.4.7-2025-05-22_1140.apk\">x86_64</a>"
 
-#: download.html%2Bmain.section.div.div:42-13
+#: download.html%2Bmain.section.div.div:45-13
 msgid ""
 "<strong>Ceno for Windows:</strong> <a href=\"https://ceno-download.s3."
 "amazonaws.com/ceno-desktop/v0.0.3/ceno-alpha-windows-x86_64-"
@@ -106,7 +106,7 @@ msgstr ""
 "amazonaws.com/ceno-desktop/v0.0.3/ceno-alpha-windows-x86_64-"
 "system-0.0.3-20250522160823.exe\">x86_64 (system-install)</a>"
 
-#: download.html%2Bmain.section.div.p:46-13
+#: download.html%2Bmain.section.div.p:49-13
 msgid ""
 "To verify that the Ceno for Android APK has a valid signature, run this "
 "command and confirm its output:"
@@ -114,7 +114,7 @@ msgstr ""
 "برای اطمینان از معتبر بودن امضای فایل APK نسخه اندروید سِنو، این دستور را "
 "اجرا کرده و خروجی آن را بررسی کنید:"
 
-#: download.html%2Bmain.section.div.div:47-13
+#: download.html%2Bmain.section.div.div:50-13
 msgid ""
 "> apksigner verify --print-certs ceno-[…].apk<br> Signer #1 certificate DN: "
 "CN=equalit.ie<br> Signer #1 certificate SHA-256 digest: "
@@ -122,9 +122,9 @@ msgid ""
 msgstr ""
 "> apksigner verify --print-certs ceno-[…].apk<br> Signer #1 certificate DN: "
 "CN=equalit.ie<br> Signer #1 certificate SHA-256 digest: "
-"<br>a59d20c076f6170a2c13d9ce96cd4349688f907898dfc3c89b0ae6ebe9f7edca<br> […]"
+"<br>a59d20c076f6170a2c13d9ce96cd4349688f907898dfc3c89b0ae6ebe9f7edca<br> […]‌"
 
-#: download.html%2Bmain.section.div.p:53-13
+#: download.html%2Bmain.section.div.p:56-13
 msgid ""
 "To verify that the Ceno for Windows EXE has a valid signature, run this "
 "command and confirm its output:"
@@ -132,7 +132,7 @@ msgstr ""
 "برای اطمینان از معتبر بودن امضای فایل اجرایی (EXE) نسخه ویندوز سِنو، این "
 "دستور را اجرا کرده و خروجی آن را بررسی کنید:"
 
-#: download.html%2Bmain.section.div.div:54-13
+#: download.html%2Bmain.section.div.div:57-13
 msgid ""
 "> signtool.exe verify /pa /v ceno-alpha-windows-[…].exe<br> […]<br> Signing "
 "Certificate Chain:<br> Issued to: E3D17812-E9F1-46C8-B650-4D39786777D9<br> "
@@ -144,7 +144,7 @@ msgstr ""
 "Issued by: E3D17812-E9F1-46C8-B650-4D39786777D9<br> Expires: Sat Apr 25 "
 "15:13:25 2026<br> SHA1 hash: D73E913BCAE206834A30823035636FC5A3217436<br> […]‌"
 
-#: download.html%2Bmain.section.div.p:64-13
+#: download.html%2Bmain.section.div.p:67-13
 msgid ""
 "You can also verify the signatures of the file hashes against our PGP key "
 "(with fingerprint <code class=\"pubkey\">51BE 600C 2711 926C 865D F93F C7DC "
@@ -154,22 +154,22 @@ msgstr ""
 "class=\"pubkey\">51BE 600C 2711 926C 865D F93F C7DC C123 F0DD B862</code>) "
 "مطابقت دهید و بررسی کنید"
 
-#: download.html%2Bmain.section.div.p:65-13
+#: download.html%2Bmain.section.div.p:68-13
 #, fuzzy
 #| msgid ""
 #| "Ceno for Android: <a href=\"https://ceno-download.s3.amazonaws.com/ceno/"
-#| "v2.4.7/sha256sums.txt\">file hashes</a>, <a href=\"https://ceno-download."
-#| "s3.amazonaws.com/ceno/v2.4.7/sha256sums.txt.asc\">signatures</a>"
+#| "v2.5.0/sha256sums.txt\">file hashes</a>, <a href=\"https://ceno-download."
+#| "s3.amazonaws.com/ceno/v2.5.0/sha256sums.txt.asc\">signatures</a>"
 msgid ""
 "Ceno for Android: <a href=\"https://ceno-download.s3.amazonaws.com/ceno/"
-"v2.5.0/sha256sums.txt\">file hashes</a>, <a href=\"https://ceno-download.s3."
-"amazonaws.com/ceno/v2.5.0/sha256sums.txt.asc\">signatures</a>"
+"v2.5.1/sha256sums.txt\">file hashes</a>, <a href=\"https://ceno-download.s3."
+"amazonaws.com/ceno/v2.5.1/sha256sums.txt.asc\">signatures</a>"
 msgstr ""
 "سنو برای اندروید: <a href=\"https://ceno-download.s3.amazonaws.com/ceno/"
-"v2.4.7/sha256sums.txt\">هش فایل‌ها</a>, <a href=\"https://ceno-download.s3."
-"amazonaws.com/ceno/v2.4.7/sha256sums.txt.asc\">امضاها</a>"
+"v2.5.0/sha256sums.txt\">هش فایل‌ها</a>, <a href=\"https://ceno-download.s3."
+"amazonaws.com/ceno/v2.5.0/sha256sums.txt.asc\">امضاها</a>"
 
-#: download.html%2Bmain.section.div.p:66-13
+#: download.html%2Bmain.section.div.p:70-13
 msgid ""
 "Ceno for Windows: <a href=\"https://ceno-download.s3.amazonaws.com/ceno-"
 "desktop/v0.0.3/sha256sums.txt\">file hashes</a>, <a href=\"https://ceno-"
@@ -180,15 +180,15 @@ msgstr ""
 "desktop/v0.0.3/sha256sums.txt\">هش فایل‌ها</a>, <a href=\"https://ceno-"
 "download.s3.amazonaws.com/ceno-desktop/v0.0.3/sha256sums.txt.asc\">امضاها</a>"
 
-#: download.html%2Bmain.section.h1:70-9
+#: download.html%2Bmain.section.h1:74-9
 msgid "Use Cases"
 msgstr "موارد کاربرد"
 
-#: download.html%2Bmain.section.div.div.h2:73-17
+#: download.html%2Bmain.section.div.div.h2:77-17
 msgid "Open blocked sites and social media"
 msgstr "باز کردن سایت‌ها و شبکه‌های اجتماعی مسدودشده"
 
-#: download.html%2Bmain.section.div.div.p:74-17
+#: download.html%2Bmain.section.div.div.p:78-17
 msgid ""
 "More and more resources are getting blocked every day. Ceno is a universal "
 "tool for accessing any website. Use public mode for reading news and "
@@ -200,11 +200,11 @@ msgstr ""
 "کنید و برای شبکه‌های اجتماعی، یوتیوب و دیگر سایت‌هایی که نیاز به احراز هویت "
 "دارند، حالت شخصی را امتحان کنید."
 
-#: download.html%2Bmain.section.div.div.h2:81-17
+#: download.html%2Bmain.section.div.div.h2:85-17
 msgid "Shutdowns"
 msgstr "قطعی‌ اینترنت"
 
-#: download.html%2Bmain.section.div.div.p:82-17
+#: download.html%2Bmain.section.div.div.p:86-17
 msgid ""
 "Even if a country is completely cut off from the global internet, you will "
 "still be able to access websites that Ceno caches and delivers to your "
@@ -215,11 +215,11 @@ msgstr ""
 "کشور شما منتقل می‌کند. از سِنو به‌عنوان یک راهکار پشتیبان در صورت قطعی اینترنت "
 "استفاده کنید!"
 
-#: download.html%2Bmain.section.div.div.h2:87-17
+#: download.html%2Bmain.section.div.div.h2:91-17
 msgid "Help others"
 msgstr "کمک به دیگران"
 
-#: download.html%2Bmain.section.div.div.p:88-17
+#: download.html%2Bmain.section.div.div.p:92-17
 msgid ""
 "Every Ceno user can become a bridge and help others access blocked "
 "resources. Simply enable Bridge mode in your browser settings and make the "
