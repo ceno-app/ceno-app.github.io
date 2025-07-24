@@ -12,6 +12,9 @@ set -e
 for lang in $(cat supported_locales); do
     if [ "$lang" != "en" ]; then
         ./gen-locale.sh $lang
+
+        # Exclude Privacy Policy from translation, overwrite any translation with en version
+        cp -f "_en.src/privacy_policy.html" "_$lang.src/privacy_policy.html"
     fi
 
     dir="ltr"
@@ -51,6 +54,9 @@ for lang in $(cat supported_locales); do
         sed -i "s#@LANG@#$lang#g" "$tmp" 
         mv "$tmp" "$html"
     done
+
+    # Copy faq.html to support.html
+    cp -f "../$lang/faq.html" "../$lang/support.html"
 
     popd
 done
