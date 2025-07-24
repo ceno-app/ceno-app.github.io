@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-17 16:59-0400\n"
-"PO-Revision-Date: 2025-04-21 23:06+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2025-06-24 15:33-0400\n"
+"PO-Revision-Date: 2025-07-11 21:01+0000\n"
+"Last-Translator: \"Alioc.\" <hit.177411245@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/censorship-no/website-v2/website-v2-faq/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: faq.html%2Bmain.section.div.h1:4-13
 msgid "Frequently<br>Asked<br>Questions"
@@ -40,7 +40,7 @@ msgstr ""
 
 #: faq.html%2Bmain.section.div:19-9
 msgid "What is Ceno Browser?"
-msgstr "Ceno浏览器是什么？"
+msgstr "什么是 Ceno 浏览器？"
 
 #: faq.html%2Bmain.section.div.details.p:22-17
 msgid ""
