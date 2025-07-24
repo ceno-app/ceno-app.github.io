@@ -46,6 +46,8 @@ for lang in $(cat supported_locales); do
         sed -e "s#@PAGE@#$page#g" -e "s#@TITLE@#$title#g" ../_$lang.src/_head.html >> "$tmp"
         cat "$html_src" >> "$tmp"
         sed -e "s#@PAGE@#$page#g" -e "s#@TITLE@#$title#g" ../_$lang.src/_tail.html >> "$tmp"
+        echo '</body>' >> "$tmp"
+        echo '</html>' >> "$tmp"
         sed -i "s#@LANG@#$lang#g" "$tmp" 
         mv "$tmp" "$html"
     done
