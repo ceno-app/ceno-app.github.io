@@ -14,13 +14,13 @@ msgstr ""
 "X-Generator: Translate Toolkit 3.6.0\n"
 
 #: README.md:block 1 (header)
-msgid "Censorship.no! User Manual"
+msgid "Ceno User Manual"
 msgstr ""
 
 #: README.md:block 2 (paragraph)
 msgid ""
 "This manual is aimed at users of [Ceno Browser][Ceno Browser] and related "
-"technologies, as created for the [Censorship.no!][Censorship.no!] project by "
+"technologies, as created for the [Ceno][Ceno] project by "
 "[eQualitie][eQualitie]."
 msgstr ""
 
@@ -37,7 +37,7 @@ msgid "[Ceno Browser]: https://gitlab.com/censorship-no/ceno-browser"
 msgstr ""
 
 #: README.md:block 3 (paragraph)
-msgid "[Censorship.no!]: https://censorship.no/"
+msgid "[Ceno]: https://ceno.app/"
 msgstr ""
 
 #: README.md:block 3 (paragraph)
