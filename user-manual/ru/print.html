@@ -130,7 +130,7 @@
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
                         </a>
-                        <a href="https://github.com/censorship-no/ceno-docs" title="Git repository" aria-label="Git repository">
+                        <a href="https://github.com/ceno-app/ceno-docs" title="Git repository" aria-label="Git repository">
                             <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
 
@@ -160,9 +160,9 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="Руководство-пользователя-censorshipno"><a class="header" href="#Руководство-пользователя-censorshipno">Руководство пользователя Ceno</a></h1>
-<p>This manual is aimed at users of <a href="https://gitlab.com/censorship-no/ceno-browser">Ceno Browser</a> and related technologies, as
+<p>This manual is aimed at users of <a href="https://gitlab.com/ceno-app/ceno-android">Ceno Browser</a> and related technologies, as
 created for the <a href="https://ceno.app/">Ceno</a> project by <a href="https://equalit.ie/">eQualitie</a>.</p>
-<p>If you are looking for technical documentation, please refer to the <a href="https://gitlab.com/censorship-no/ceno-docs/">Ceno
+<p>If you are looking for technical documentation, please refer to the <a href="https://gitlab.com/ceno-app/ceno-docs/">Ceno
 documentation repository</a>, where you will find pointers for further reading
 and details on implementation, as well as the <a href="https://gitlab.com/equalitie/ouinet/blob/master/doc/ouinet-network-whitepaper.md">protocol specifications</a>.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="Введение"><a class="header" href="#Введение">Введение</a></h1>
@@ -199,7 +199,7 @@ Cloudflare или ориентированная на гражданское о�
 от друга.</p>
 <p>Именно здесь в игру вступают Браузер CENO и Ouinet. В этой главе мы познакомим
 вас с ними.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="Что-такое-ceno-browser"><a class="header" href="#Что-такое-ceno-browser">Что такое Ceno Browser?</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="Что-такое-ceno-android"><a class="header" href="#Что-такое-ceno-android">Что такое Ceno Browser?</a></h1>
 <p>Ceno (short for <a href="https://ceno.app/">Ceno</a>) is a Web browser for mobile Android devices
 (such as smartphones and tablets) that uses a novel approach to circumvent
 Internet censorship and share retrieved content among all users in a
@@ -218,7 +218,7 @@ content between devices (described in later sections).</p>
 <h2 id="Кем-разрабатывается-ceno"><a class="header" href="#Кем-разрабатывается-ceno">Кем разрабатывается Ceno?</a></h2>
 <p>The <em>Ceno</em> project is run by <a href="https://equalit.ie/">eQualitie</a> in support of Articles 18,
 19 and 20 of the <a href="https://www.un.org/en/universal-declaration-human-rights/">Universal Declaration of Human Rights</a>. Ceno and related
-technologies are developed as Free/Libre/Open Source software (<a href="https://gitlab.com/censorship-no/" title="Ceno source code repositories">project
+technologies are developed as Free/Libre/Open Source software (<a href="https://gitlab.com/ceno-app/" title="Ceno source code repositories">project
 source</a>), allowing anyone to use, study, share and enhance it.
 Please contact <a href="mailto:intro/cenoers@equalitie.org">cenoers@equalitie.org</a> in case of doubt or for further
 information.</p>
@@ -290,7 +290,7 @@ more about Ceno</a>.</p>
 <h2 id="Как-начать"><a class="header" href="#Как-начать">Как начать</a></h2>
 <p>Вам потребуется устройство Android:</p>
 <ol>
-<li>Install Ceno Browser from <a href="https://play.google.com/store/apps/details?id=ie.equalit.ceno">Google Play</a>, <a href="https://gitlab.com/censorship-no/ceno-browser/releases">GitHub</a> or
+<li>Install Ceno Browser from <a href="https://play.google.com/store/apps/details?id=ie.equalit.ceno">Google Play</a>, <a href="https://gitlab.com/ceno-app/ceno-android/releases">GitHub</a> or
 <a href="https://paskoocheh.com/tools/124/android.html">Paskoocheh</a>. <em>No special permissions are needed</em>.</li>
 <li>Запустите его.</li>
 <li>Browse pages normally to help other users access them; if concerned about
@@ -706,7 +706,7 @@ report the issue.</p>
 <ul>
 <li><a href="https://play.google.com/store/apps/details?id=ie.equalit.ceno">Google Play</a> (<em>Ceno Browser</em> from <em>eQualitie</em>): the recommended
 source for most Android users.</li>
-<li><a href="https://gitlab.com/censorship-no/ceno-browser/-/releases">Gitlab</a>: for Android devices without Google Play.</li>
+<li><a href="https://gitlab.com/ceno-app/ceno-android/-/releases">Gitlab</a>: for Android devices without Google Play.</li>
 <li><a href="https://paskoocheh.com/tools/124/android.html">Paskoocheh</a>: for users in countries blocking access to the
 previous channels.</li>
 </ul>
@@ -1080,7 +1080,7 @@ Linux Mint, you can just run: <code>sudo apt install docker.io</code></p>
   --restart unless-stopped equalitie/ceno-client
 </code></pre>
 <p>The command will start a container named <code>ceno-client</code> that will run on every
-boot unless you explicitly tell it to stop. Please check the <a href="https://gitlab.com/censorship-no/ceno-docker-client#running-the-client">Ceno Docker client
+boot unless you explicitly tell it to stop. Please check the <a href="https://gitlab.com/ceno-app/ceno-docker-client#running-the-client">Ceno Docker client
 documentation</a> for more information on how to manipulate the
 container.</p>
 <blockquote>
@@ -1392,7 +1392,7 @@ If you open it, you will see something like the figure below.</p>
 браузере, поскольку клиенту необходимо перехватывать HTTPS-трафик.</p>
 <p>You only need this to use a plain browser for testing the Ouinet client, in
 which case you will also have to configure its HTTP/HTTPS proxies to
-<code>127.0.0.1:8077</code>, and manually enable the <a href="https://gitlab.com/censorship-no/ceno-ext-settings/">Ceno Extension</a> for injection to
+<code>127.0.0.1:8077</code>, and manually enable the <a href="https://gitlab.com/ceno-app/ceno-ext-settings/">Ceno Extension</a> for injection to
 work. We very strongly recommend using a <em>separate, specific browser profile</em>
 for this purpose.</p>
 <p>Обратите внимание, что ничего из этого не нужно делать для Браузера Ceno,
