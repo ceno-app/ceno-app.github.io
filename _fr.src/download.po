@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-07-24 14:24-0400\n"
+"POT-Creation-Date: 2025-08-21 15:08-0400\n"
 "PO-Revision-Date: 2025-07-31 16:02+0000\n"
 "Last-Translator: Johanie Martin Lafond <omgwtfgtfoomw@gmail.com>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/censorship-no/"
@@ -49,8 +49,8 @@ msgstr ""
 "le moins de confidentialité - les sites que vous visitez ou partagez sont "
 "enregistrés dans un registre accessible au public (BitTorrent). Le mode "
 "personnel élimine ce registre, mais peut être plus lent et moins efficace "
-"pour récupérer le contenu. Voir <a href=\"faq.html\"> la FAQ</a> ou <a href"
-"=\"../user-manual\">Manuel d'Utilisateur</a> pour plus de détails sur "
+"pour récupérer le contenu. Voir <a href=\"faq.html\"> la FAQ</a> ou <a "
+"href=\"../user-manual\">Manuel d'Utilisateur</a> pour plus de détails sur "
 "l'utilisation de Ceno."
 
 #: download.html%2Bmain.section.div.p:27-13
@@ -85,11 +85,11 @@ msgstr ""
 #| "v2.4.3/ceno-x86_64-release-2.4.3-2025-03-24_1503.apk\">x86_64</a>"
 msgid ""
 "<strong>Ceno for Android:</strong> <a href=\"https://ceno-download.s3."
-"amazonaws.com/ceno/v2.5.1/ceno-arm64-v8a-release-2.5.1-2025-06-20_1838."
+"amazonaws.com/ceno/v2.6.1/ceno-arm64-v8a-release-2.6.1-2025-08-04_1555."
 "apk\">arm64 (most common)</a> / <a href=\"https://ceno-download.s3.amazonaws."
-"com/ceno/v2.5.1/ceno-armeabi-v7a-release-2.5.1-2025-06-20_1838.apk\">arm</"
-"a> / <a href=\"https://ceno-download.s3.amazonaws.com/ceno/v2.5.1/ceno-"
-"x86_64-release-2.5.1-2025-06-20_1838.apk\">x86_64</a>"
+"com/ceno/v2.6.1/ceno-armeabi-v7a-release-2.6.1-2025-08-04_1555.apk\">arm</"
+"a> / <a href=\"https://ceno-download.s3.amazonaws.com/ceno/v2.6.1/ceno-"
+"x86_64-release-2.6.1-2025-08-04_1555.apk\">x86_64</a>"
 msgstr ""
 "<strong> Ceno for Android:</strong> <a href=\"https://ceno-download.s3."
 "amazonaws.com/ceno/v2.4.3/ceno-arm64-v8a-release-2.4.3-2025-03-24_1503."
@@ -101,19 +101,22 @@ msgstr ""
 #: download.html%2Bmain.section.div.div:45-13
 #, fuzzy
 #| msgid ""
-#| "<strong>Ceno for Windows:</strong> <a href=\"https://ceno-download.s3."
-#| "amazonaws.com/ceno-desktop/v0.0.1/ceno-alpha-windows-x86_64-"
-#| "system-0.0.1-20250425123522.exe\">x86_64 (system-install)</a>"
+#| "Ceno for Windows: <a href=\"https://ceno-download.s3.amazonaws.com/ceno-"
+#| "desktop/v0.0.3/sha256sums.txt\">file hashes</a>, <a href=\"https://ceno-"
+#| "download.s3.amazonaws.com/ceno-desktop/v0.0.3/sha256sums.txt."
+#| "asc\">signatures</a>"
 msgid ""
 "<strong>Ceno for Windows:</strong> <a href=\"https://ceno-download.s3."
-"amazonaws.com/ceno-desktop/v0.0.3/ceno-alpha-windows-x86_64-"
-"system-0.0.3-20250522160823.exe\">x86_64 (system-install)</a>"
+"amazonaws.com/ceno-desktop/v0.0.4/ceno-alpha-win64-portable-0.0.4-cdb28a9b."
+"exe\">portable installer (recommended)</a> / <a href=\"https://ceno-download."
+"s3.amazonaws.com/ceno-desktop/v0.0.4/ceno-alpha-win64-system-0.0.4-cdb28a9b."
+"exe\">system installer</a>"
 msgstr ""
-"<strong>Ceno for Windows:</strong> <a href=\"https://ceno-download.s3."
-"amazonaws.com/ceno-desktop/v0.0.1/ceno-alpha-windows-x86_64-"
-"system-0.0.1-20250425123522.exe\">x86_64 (system-install)</a>"
+"Ceno pour Android : <a href=\"https://ceno-download.s3.amazonaws.com/ceno/"
+"v2.5.1/sha256sums.txt\">hachages de fichiers</a>, <a href=\"https://ceno-"
+"download.s3.amazonaws.com/ceno/v2.5.1/sha256sums.txt.asc\">signatures</a>"
 
-#: download.html%2Bmain.section.div.p:49-13
+#: download.html%2Bmain.section.div.p:51-13
 msgid ""
 "To verify that the Ceno for Android APK has a valid signature, run this "
 "command and confirm its output:"
@@ -121,7 +124,7 @@ msgstr ""
 "Pour vérifier que l’APK de Ceno pour Android a une signature valide, "
 "exécuter cette commande et confirmer sa sortie:"
 
-#: download.html%2Bmain.section.div.div:50-13
+#: download.html%2Bmain.section.div.div:52-13
 msgid ""
 "> apksigner verify --print-certs ceno-[…].apk<br> Signer #1 certificate DN: "
 "CN=equalit.ie<br> Signer #1 certificate SHA-256 digest: "
@@ -132,7 +135,7 @@ msgstr ""
 "a59d20c076f6170a2c13d9ce96cd4349688f907898dfc3c89b0ae6ebe9f7edca absorber "
 "[...]"
 
-#: download.html%2Bmain.section.div.p:56-13
+#: download.html%2Bmain.section.div.p:58-13
 msgid ""
 "To verify that the Ceno for Windows EXE has a valid signature, run this "
 "command and confirm its output:"
@@ -140,7 +143,7 @@ msgstr ""
 "Pour vérifier que le Ceno pour Windows EXE a une signature valide, exécutez "
 "cette commande et confirmez sa sortie :"
 
-#: download.html%2Bmain.section.div.div:57-13
+#: download.html%2Bmain.section.div.div:59-13
 msgid ""
 "> signtool.exe verify /pa /v ceno-alpha-windows-[…].exe<br> […]<br> Signing "
 "Certificate Chain:<br> Issued to: E3D17812-E9F1-46C8-B650-4D39786777D9<br> "
@@ -148,7 +151,7 @@ msgid ""
 "15:13:25 2026<br> SHA1 hash: D73E913BCAE206834A30823035636FC5A3217436<br> […]"
 msgstr ""
 
-#: download.html%2Bmain.section.div.p:67-13
+#: download.html%2Bmain.section.div.p:69-13
 #, fuzzy
 #| msgid ""
 #| "You can also verify the <a href=\"https://ceno-download.s3.amazonaws.com/"
@@ -167,7 +170,7 @@ msgstr ""
 "contre notre clé PGP (avec empreinte digitale <code class=\"pubkey\">51BE "
 "600C 2711 926C 865D F93F C7DC C123 F0DD B862</code>)"
 
-#: download.html%2Bmain.section.div.p:68-13
+#: download.html%2Bmain.section.div.p:70-13
 #, fuzzy
 #| msgid ""
 #| "You can also verify the <a href=\"https://ceno-download.s3.amazonaws.com/"
@@ -177,8 +180,8 @@ msgstr ""
 #| "2711 926C 865D F93F C7DC C123 F0DD B862</code>)"
 msgid ""
 "Ceno for Android: <a href=\"https://ceno-download.s3.amazonaws.com/ceno/"
-"v2.5.1/sha256sums.txt\">file hashes</a>, <a href=\"https://ceno-download.s3."
-"amazonaws.com/ceno/v2.5.1/sha256sums.txt.asc\">signatures</a>"
+"v2.6.1/sha256sums.txt\">file hashes</a>, <a href=\"https://ceno-download.s3."
+"amazonaws.com/ceno/v2.6.1/sha256sums.txt.asc\">signatures</a>"
 msgstr ""
 "Vous pouvez également vérifier les hashes <a href=\"https://ceno-download.s3."
 "amazonaws.com/ceno/v2.4.3/sha256sums.txt\"></a> de <a href=\"https://ceno-"
@@ -186,28 +189,32 @@ msgstr ""
 "contre notre clé PGP (avec empreinte digitale <code class=\"pubkey\">51BE "
 "600C 2711 926C 865D F93F C7DC C123 F0DD B862</code>)"
 
-#: download.html%2Bmain.section.div.p:70-13
+#: download.html%2Bmain.section.div.p:72-13
+#, fuzzy
+#| msgid ""
+#| "Ceno for Windows: <a href=\"https://ceno-download.s3.amazonaws.com/ceno-"
+#| "desktop/v0.0.3/sha256sums.txt\">file hashes</a>, <a href=\"https://ceno-"
+#| "download.s3.amazonaws.com/ceno-desktop/v0.0.3/sha256sums.txt."
+#| "asc\">signatures</a>"
 msgid ""
 "Ceno for Windows: <a href=\"https://ceno-download.s3.amazonaws.com/ceno-"
-"desktop/v0.0.3/sha256sums.txt\">file hashes</a>, <a href=\"https://ceno-"
-"download.s3.amazonaws.com/ceno-desktop/v0.0.3/sha256sums.txt."
+"desktop/v0.0.4/sha256sums.txt\">file hashes</a>, <a href=\"https://ceno-"
+"download.s3.amazonaws.com/ceno-desktop/v0.0.4/sha256sums.txt."
 "asc\">signatures</a>"
 msgstr ""
-"Ceno pour Android : <a href="
-"\"https://ceno-download.s3.amazonaws.com/ceno/v2.5.1/sha256sums.txt\""
-">hachages de fichiers</a>, <a href="
-"\"https://ceno-download.s3.amazonaws.com/ceno/v2.5.1/sha256sums.txt.asc\""
-">signatures</a>"
+"Ceno pour Android : <a href=\"https://ceno-download.s3.amazonaws.com/ceno/"
+"v2.5.1/sha256sums.txt\">hachages de fichiers</a>, <a href=\"https://ceno-"
+"download.s3.amazonaws.com/ceno/v2.5.1/sha256sums.txt.asc\">signatures</a>"
 
-#: download.html%2Bmain.section.h1:74-9
+#: download.html%2Bmain.section.h1:77-9
 msgid "Use Cases"
 msgstr "Cas d'utilisation"
 
-#: download.html%2Bmain.section.div.div.h2:77-17
+#: download.html%2Bmain.section.div.div.h2:80-17
 msgid "Open blocked sites and social media"
 msgstr "Ouvrir les sites bloqués and les résaux sociaux"
 
-#: download.html%2Bmain.section.div.div.p:78-17
+#: download.html%2Bmain.section.div.div.p:81-17
 msgid ""
 "More and more resources are getting blocked every day. Ceno is a universal "
 "tool for accessing any website. Use public mode for reading news and "
@@ -220,11 +227,11 @@ msgstr ""
 "personnel pour les réseaux sociaux, YouTube et tout autres sites qui "
 "nécessitent l'authentification."
 
-#: download.html%2Bmain.section.div.div.h2:85-17
+#: download.html%2Bmain.section.div.div.h2:88-17
 msgid "Shutdowns"
 msgstr "Tais-toi"
 
-#: download.html%2Bmain.section.div.div.p:86-17
+#: download.html%2Bmain.section.div.div.p:89-17
 msgid ""
 "Even if a country is completely cut off from the global internet, you will "
 "still be able to access websites that Ceno caches and delivers to your "
@@ -234,11 +241,11 @@ msgstr ""
 "toujours en mesure d'accéder aux sites Web que Ceno cache et livre à votre "
 "pays par satellite. Utilisez Ceno comme une sauvegarde en cas d'arrêt!"
 
-#: download.html%2Bmain.section.div.div.h2:91-17
+#: download.html%2Bmain.section.div.div.h2:94-17
 msgid "Help others"
 msgstr "Aide les autres"
 
-#: download.html%2Bmain.section.div.div.p:92-17
+#: download.html%2Bmain.section.div.div.p:95-17
 msgid ""
 "Every Ceno user can become a bridge and help others access blocked "
 "resources. Simply enable Bridge mode in your browser settings and make the "
@@ -248,6 +255,20 @@ msgstr ""
 "aux ressources bloquées. Il suffit de activer le mode Bridge dans les "
 "paramètres de votre navigateur et de rendre l'Internet plus accessible pour "
 "ceux qui en ont le plus besoin."
+
+#, fuzzy
+#~| msgid ""
+#~| "<strong>Ceno for Windows:</strong> <a href=\"https://ceno-download.s3."
+#~| "amazonaws.com/ceno-desktop/v0.0.1/ceno-alpha-windows-x86_64-"
+#~| "system-0.0.1-20250425123522.exe\">x86_64 (system-install)</a>"
+#~ msgid ""
+#~ "<strong>Ceno for Windows:</strong> <a href=\"https://ceno-download.s3."
+#~ "amazonaws.com/ceno-desktop/v0.0.3/ceno-alpha-windows-x86_64-"
+#~ "system-0.0.3-20250522160823.exe\">x86_64 (system-install)</a>"
+#~ msgstr ""
+#~ "<strong>Ceno for Windows:</strong> <a href=\"https://ceno-download.s3."
+#~ "amazonaws.com/ceno-desktop/v0.0.1/ceno-alpha-windows-x86_64-"
+#~ "system-0.0.1-20250425123522.exe\">x86_64 (system-install)</a>"
 
 #~ msgid ""
 #~ "Run this to verify that the APK has a valid signature from the "
