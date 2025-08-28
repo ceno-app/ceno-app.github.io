@@ -2,9 +2,9 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-06-24 15:33-0400\n"
-"PO-Revision-Date: 2025-04-21 23:09+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"POT-Creation-Date: 2025-08-21 15:08-0400\n"
+"PO-Revision-Date: 2025-08-01 20:08+0000\n"
+"Last-Translator: Bernardo Gomes <bernardo.gomes@bebitterbebetter.com.br>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
 "censorship-no/website-v2/website-v2-download/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -12,15 +12,15 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.13-dev\n"
 
 #: download.html%2Bmain.section.div.div.div:5-17
 msgid "Download Ceno Browser"
-msgstr ""
+msgstr "Baixar Navegador Ceno"
 
 #: download.html%2Bmain.section.div.div:5-63
 msgid "Join 566,565 other users"
-msgstr ""
+msgstr "Junte-se aos 566.565 outros usuários"
 
 #: download.html%2Bmain.section.div.div.p:7-17
 #, fuzzy
@@ -36,7 +36,7 @@ msgstr ""
 
 #: download.html%2Bmain.section.div.div.h4:20-17
 msgid "IMPORTANT:"
-msgstr ""
+msgstr "IMPORTANTE:"
 
 #: download.html%2Bmain.section.div.div.p:21-17
 msgid ""
@@ -70,40 +70,42 @@ msgstr ""
 #: download.html%2Bmain.section.div.div:38-13
 msgid ""
 "<strong>Ceno for Android:</strong> <a href=\"https://ceno-download.s3."
-"amazonaws.com/ceno/v2.5.1/ceno-arm64-v8a-release-2.5.1-2025-06-20_1838."
+"amazonaws.com/ceno/v2.6.1/ceno-arm64-v8a-release-2.6.1-2025-08-04_1555."
 "apk\">arm64 (most common)</a> / <a href=\"https://ceno-download.s3.amazonaws."
-"com/ceno/v2.5.1/ceno-armeabi-v7a-release-2.5.1-2025-06-20_1838.apk\">arm</"
-"a> / <a href=\"https://ceno-download.s3.amazonaws.com/ceno/v2.5.1/ceno-"
-"x86_64-release-2.5.1-2025-06-20_1838.apk\">x86_64</a>"
+"com/ceno/v2.6.1/ceno-armeabi-v7a-release-2.6.1-2025-08-04_1555.apk\">arm</"
+"a> / <a href=\"https://ceno-download.s3.amazonaws.com/ceno/v2.6.1/ceno-"
+"x86_64-release-2.6.1-2025-08-04_1555.apk\">x86_64</a>"
 msgstr ""
 
 #: download.html%2Bmain.section.div.div:45-13
 msgid ""
 "<strong>Ceno for Windows:</strong> <a href=\"https://ceno-download.s3."
-"amazonaws.com/ceno-desktop/v0.0.3/ceno-alpha-windows-x86_64-"
-"system-0.0.3-20250522160823.exe\">x86_64 (system-install)</a>"
+"amazonaws.com/ceno-desktop/v0.0.4/ceno-alpha-win64-portable-0.0.4-cdb28a9b."
+"exe\">portable installer (recommended)</a> / <a href=\"https://ceno-download."
+"s3.amazonaws.com/ceno-desktop/v0.0.4/ceno-alpha-win64-system-0.0.4-cdb28a9b."
+"exe\">system installer</a>"
 msgstr ""
 
-#: download.html%2Bmain.section.div.p:49-13
+#: download.html%2Bmain.section.div.p:51-13
 msgid ""
 "To verify that the Ceno for Android APK has a valid signature, run this "
 "command and confirm its output:"
 msgstr ""
 
-#: download.html%2Bmain.section.div.div:50-13
+#: download.html%2Bmain.section.div.div:52-13
 msgid ""
 "> apksigner verify --print-certs ceno-[…].apk<br> Signer #1 certificate DN: "
 "CN=equalit.ie<br> Signer #1 certificate SHA-256 digest: "
 "<br>a59d20c076f6170a2c13d9ce96cd4349688f907898dfc3c89b0ae6ebe9f7edca<br> […]"
 msgstr ""
 
-#: download.html%2Bmain.section.div.p:56-13
+#: download.html%2Bmain.section.div.p:58-13
 msgid ""
 "To verify that the Ceno for Windows EXE has a valid signature, run this "
 "command and confirm its output:"
 msgstr ""
 
-#: download.html%2Bmain.section.div.div:57-13
+#: download.html%2Bmain.section.div.div:59-13
 msgid ""
 "> signtool.exe verify /pa /v ceno-alpha-windows-[…].exe<br> […]<br> Signing "
 "Certificate Chain:<br> Issued to: E3D17812-E9F1-46C8-B650-4D39786777D9<br> "
@@ -111,37 +113,37 @@ msgid ""
 "15:13:25 2026<br> SHA1 hash: D73E913BCAE206834A30823035636FC5A3217436<br> […]"
 msgstr ""
 
-#: download.html%2Bmain.section.div.p:67-13
+#: download.html%2Bmain.section.div.p:69-13
 msgid ""
 "You can also verify the signatures of the file hashes against our PGP key "
 "(with fingerprint <code class=\"pubkey\">51BE 600C 2711 926C 865D F93F C7DC "
 "C123 F0DD B862</code>)"
 msgstr ""
 
-#: download.html%2Bmain.section.div.p:68-13
-msgid ""
-"Ceno for Android: <a href=\"https://ceno-download.s3.amazonaws.com/ceno/"
-"v2.5.1/sha256sums.txt\">file hashes</a>, <a href=\"https://ceno-download.s3."
-"amazonaws.com/ceno/v2.5.1/sha256sums.txt.asc\">signatures</a>"
-msgstr ""
-
 #: download.html%2Bmain.section.div.p:70-13
 msgid ""
+"Ceno for Android: <a href=\"https://ceno-download.s3.amazonaws.com/ceno/"
+"v2.6.1/sha256sums.txt\">file hashes</a>, <a href=\"https://ceno-download.s3."
+"amazonaws.com/ceno/v2.6.1/sha256sums.txt.asc\">signatures</a>"
+msgstr ""
+
+#: download.html%2Bmain.section.div.p:72-13
+msgid ""
 "Ceno for Windows: <a href=\"https://ceno-download.s3.amazonaws.com/ceno-"
-"desktop/v0.0.3/sha256sums.txt\">file hashes</a>, <a href=\"https://ceno-"
-"download.s3.amazonaws.com/ceno-desktop/v0.0.3/sha256sums.txt."
+"desktop/v0.0.4/sha256sums.txt\">file hashes</a>, <a href=\"https://ceno-"
+"download.s3.amazonaws.com/ceno-desktop/v0.0.4/sha256sums.txt."
 "asc\">signatures</a>"
 msgstr ""
 
-#: download.html%2Bmain.section.h1:74-9
+#: download.html%2Bmain.section.h1:77-9
 msgid "Use Cases"
 msgstr ""
 
-#: download.html%2Bmain.section.div.div.h2:77-17
+#: download.html%2Bmain.section.div.div.h2:80-17
 msgid "Open blocked sites and social media"
 msgstr ""
 
-#: download.html%2Bmain.section.div.div.p:78-17
+#: download.html%2Bmain.section.div.div.p:81-17
 msgid ""
 "More and more resources are getting blocked every day. Ceno is a universal "
 "tool for accessing any website. Use public mode for reading news and "
@@ -149,22 +151,22 @@ msgid ""
 "YouTube, and other sites that require authentication."
 msgstr ""
 
-#: download.html%2Bmain.section.div.div.h2:85-17
+#: download.html%2Bmain.section.div.div.h2:88-17
 msgid "Shutdowns"
 msgstr ""
 
-#: download.html%2Bmain.section.div.div.p:86-17
+#: download.html%2Bmain.section.div.div.p:89-17
 msgid ""
 "Even if a country is completely cut off from the global internet, you will "
 "still be able to access websites that Ceno caches and delivers to your "
 "country via satellite. Use Ceno as a backup in case of a shutdown!"
 msgstr ""
 
-#: download.html%2Bmain.section.div.div.h2:91-17
+#: download.html%2Bmain.section.div.div.h2:94-17
 msgid "Help others"
 msgstr ""
 
-#: download.html%2Bmain.section.div.div.p:92-17
+#: download.html%2Bmain.section.div.div.p:95-17
 msgid ""
 "Every Ceno user can become a bridge and help others access blocked "
 "resources. Simply enable Bridge mode in your browser settings and make the "
