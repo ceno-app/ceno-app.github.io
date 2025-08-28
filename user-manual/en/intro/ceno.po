@@ -19,7 +19,7 @@ msgstr ""
 
 #: intro/ceno.md:block 2 (paragraph)
 msgid ""
-"Ceno (short for [Censorship.no!][Censorship.no!]) is a Web browser for "
+"Ceno (short for [Ceno][Ceno]) is a Web browser for "
 "mobile Android devices (such as smartphones and tablets) that uses a novel "
 "approach to circumvent Internet censorship and share retrieved content among "
 "all users in a [peer-to-peer][P2P] (P2P) fashion. This reduces overall "
@@ -52,11 +52,11 @@ msgstr ""
 
 #: intro/ceno.md:block 6 (paragraph)
 msgid ""
-"The *Censorship.no!* project is run by [eQualitie][eQualitie] in support of "
+"The *Ceno* project is run by [eQualitie][eQualitie] in support of "
 "Articles 18, 19 and 20 of the [Universal Declaration of Human Rights]"
 "[Universal Declaration of Human Rights]. Ceno and related technologies are "
 "developed as Free/Libre/Open Source software ([project source](https://"
-"gitlab.com/censorship-no/ \"Ceno source code repositories\")), allowing "
+"gitlab.com/ceno-app/ \"Ceno source code repositories\")), allowing "
 "anyone to use, study, share and enhance it. Please contact "
 "[cenoers@equalitie.org](mailto:cenoers@equalitie.org) in case of doubt or "
 "for further information."
@@ -106,7 +106,7 @@ msgid ""
 msgstr ""
 
 #: intro/ceno.md:block 11 (quote)
-msgid "[Censorship.no!]: https://censorship.no/"
+msgid "[Ceno]: https://ceno.app/"
 msgstr ""
 
 #: intro/ceno.md:block 11 (quote)
@@ -132,5 +132,5 @@ msgid ""
 msgstr ""
 
 #: intro/ceno.md:block 11 (quote)
-msgid "[ceno-repos]: https://gitlab.com/censorship-no/"
+msgid "[ceno-repos]: https://gitlab.com/ceno-app/"
 msgstr ""

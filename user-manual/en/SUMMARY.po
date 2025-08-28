@@ -18,7 +18,7 @@ msgid "Summary"
 msgstr ""
 
 #: SUMMARY.md:block 2 (paragraph)
-msgid "[Censorship.no!](README.md)"
+msgid "[Ceno](README.md)"
 msgstr ""
 
 #: SUMMARY.md:block 3 (unordered list)
