@@ -60,7 +60,7 @@ Go into any of the plain {lang} directories, the common case is to view the Engl
 ## Additional Resources
 
 - [Ceno Browser Branding & Style Guide](https://ceno.app/en/branding.html)
-- [Ceno Browser project on Weblate](https://hosted.weblate.org/projects/censorship-no/)
+- [Ceno Browser project on Weblate](https://hosted.weblate.org/projects/ceno-app/)
 
 ## License
 
