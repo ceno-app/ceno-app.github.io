@@ -2,17 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-08-21 15:08-0400\n"
-"PO-Revision-Date: 2025-08-09 05:01+0000\n"
-"Last-Translator: deng <xzkdeng@gmail.com>\n"
+"POT-Creation-Date: 2025-09-04 11:49-0400\n"
+"PO-Revision-Date: 2025-09-08 07:01+0000\n"
+"Last-Translator: jiahao <tjh541885201314@outlook.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
-"projects/censorship-no/website-v2/website-v2-faq/zh_Hans/>\n"
+"projects/ceno-app/website-v2/website-v2-faq/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.13-dev\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #: faq.html%2Bmain.section.div.h1:4-13
 msgid "Frequently<br>Asked<br>Questions"
@@ -20,7 +20,7 @@ msgstr "经常<br>问的<br>问题"
 
 #: faq.html%2Bmain.section.form.input[value]:9-13
 msgid "(ceno.network OR ceno.website OR ceno.app)"
-msgstr ""
+msgstr "为本页面通过ceno生成二维码（OR code）"
 
 #: faq.html%2Bmain.section:6-9
 msgid "Search"
@@ -40,7 +40,7 @@ msgstr "阅读快速入门向导"
 
 #: faq.html%2Bmain.section.div:19-9
 msgid "What is Ceno Browser?"
-msgstr "什么是 Ceno 浏览器？"
+msgstr "什么是Ceno 浏览器？"
 
 #: faq.html%2Bmain.section.div.details.p:22-17
 msgid ""
@@ -88,6 +88,11 @@ msgid ""
 "another user's device. If the content is not available, Ceno will contact "
 "several Injectors to request that website and have it delivered to you."
 msgstr ""
+"在 <strong>Public</strong> 模式下,Ceno 将查看 BitTorrent 网络,查看另一个 "
+"Ceno "
+"用户最近是否共享了请求的页面。如果服务可以识别请求的页面,它将从其他用户的设备"
+"检索该页面。如果内容不可用,Ceno 将联系多个 Injector "
+"请求该网站并将其交付给您。"
 
 #: faq.html%2Bmain.section.div.details.p:39-17
 msgid ""
@@ -96,6 +101,8 @@ msgid ""
 "to the BitTorrent network and will not attempt to locate the content on "
 "other users' devices."
 msgstr ""
+"在<strong>Personal</strong>模式下,您只会联系Injectors,以便将该网站获取并交付"
+"给您。搜索不会连接到BitTorrent网络,也不会尝试在其他用户的设备上定位内容。"
 
 #: faq.html%2Bmain.section.div.details.p:42-17
 msgid ""
@@ -105,12 +112,17 @@ msgid ""
 "Injectors. The Ceno network currently features around 6,000 Bridges. Their "
 "number is always growing."
 msgstr ""
+"为了确保您的Ceno客户端始终可以联系Injector,我们还创建了Bridges。"
+"如果路由器在您的网络上被阻止,Ceno 应用程序将查找可用的 Bridges,这些 Bridges "
+"会将您的请求转发给 "
+"Injectors。Ceno网络目前拥有约6,000通道。他们的数量保持增长。"
 
 #: faq.html%2Bmain.section.div.details.p:46-17
 msgid ""
 "For a more detailed explanation of how Ceno works, please read <a href=\"/"
 "user-manual/@LANG@/\">the user guide</a>."
-msgstr ""
+msgstr "有关Ceno如何工作的更详细解释,请阅读<a href=\"/user-manual/@LANG@/\""
+">用户指南</a>。"
 
 #: faq.html%2Bmain.section.div.details.p:48-17
 msgid ""
@@ -120,7 +132,7 @@ msgstr ""
 
 #: faq.html%2Bmain.section.div.details:48-115
 msgid "What are the advantages of using Ceno?"
-msgstr ""
+msgstr "使用Ceno有什么优点?"
 
 #: faq.html%2Bmain.section.div.details.p:52-17
 msgid ""
@@ -130,6 +142,9 @@ msgid ""
 "seeking the same content. Ceno uses the BitTorrent file sharing network for "
 "this."
 msgstr ""
+"我们的座右铭是“分享网络!”基本上,这就是Ceno用户正在做的事情。大多数网页都有静"
+"态内容(你阅读,观看,收听等)。静态内容可以打包并与寻求相同内容的其他用户共享。"
+"Ceno 使用 BitTorrent 文件共享网络。"
 
 #: faq.html%2Bmain.section.div.details.p:55-17
 msgid ""
@@ -142,6 +157,11 @@ msgid ""
 "remote area with limited access to the internet, Ceno allows you to access "
 "information that may otherwise be unavailable."
 msgstr ""
+"Ceno的优势在审查网站或网络薄弱或不稳定的网络中显而易见。在这种情况下,Ceno客户"
+"端能够利用其他方法来检索内容并将其发送到您的设备。通过允许用户共享他们最近检"
+"索的内容,Ceno更广泛地扩展了对互联网的访问。"
+"无论您是生活在限制访问内容的世界地区,还是位于访问互联网受限的偏远地区,Ceno "
+"都允许您访问可能无法访问的信息。"
 
 #: faq.html%2Bmain.section.div.details.p:61-17
 msgid ""
@@ -152,6 +172,9 @@ msgid ""
 "Running a Bridge is a very simple yet powerful action, allowing you to help "
 "others access the Internet."
 msgstr ""
+"来自不审查互联网的国家 - 或来自世界上互联网访问可靠的地区 - "
+"运行Ceno的人可以选择充当严格限制网络中的人的桥梁。网络自动注册新桥,并跟踪它们"
+"何时脱机。运行桥梁是一个非常简单但功能强大的动作,允许您帮助其他人访问互联网。"
 
 #: faq.html%2Bmain.section.div.details.p:65-17
 msgid ""
@@ -160,14 +183,18 @@ msgid ""
 "You can <a href=\"https://gitlab.com/ceno-app/ceno-android\">inspect our "
 "code</a> or re-create the entire network yourself!"
 msgstr ""
+"Ceno - 以及该工具的所有伴随组件,共同创建一个由对点和节点组成的分散网络 - "
+"都是免费和开源软件。你可以<a href="
+"\"https://gitlab.com/ceno-app/ceno-android\""
+">检查我们的代码</a>或自己重新创建整个网络!"
 
 #: faq.html%2Bmain.section.div.details:67-38
 msgid "What are the risks of using Ceno?"
-msgstr ""
+msgstr "使用Ceno的风险是什么?"
 
 #: faq.html%2Bmain.section.div.details.h3:71-17
 msgid "Risks for users"
-msgstr ""
+msgstr "对于使用者的风险"
 
 #: faq.html%2Bmain.section.div.details.p:72-17
 msgid ""
@@ -179,13 +206,19 @@ msgid ""
 "particular website. For example, anyone can query the BitTorrent network for "
 "a list of IP addresses that have been associated with <i>website.com</i>."
 msgstr ""
+"处理敏感用例的每一项技术都有其优势和风险。通过设计,Ceno使用公共BitTorrent网络"
+"来满足其大部分路由和数据存储需求。每当您在BitTorrent网络(公共模式)上请求或共"
+"享内容时,您都会创建记录,将您的IP地址与从特定网站检索到的内容相关联。"
+"例如,任何人都可以查询 BitTorrent 网络以查找与 <i>website.com</i> 关联的 IP "
+"地址列表。"
 
 #: faq.html%2Bmain.section.div.details.p:78-17
 msgid ""
 "Users sharing retrieved content with others may also incur additional data "
 "charges as content is copied from their device to the device of other Ceno "
 "users."
-msgstr ""
+msgstr "用户与他人共享检索的内容也可能会产生额外的数据费用,因为内容从其设备复制到其他"
+"Ceno用户的设备。"
 
 #: faq.html%2Bmain.section.div.details.p:80-17
 msgid ""
@@ -196,6 +229,10 @@ msgid ""
 "require authentication (for example, when logging into your social media "
 "accounts)."
 msgstr ""
+"为应对这些风险,我们为 Ceno 用户创建了一个“<strong> Personal</strong> 模式”"
+",该服务不与 BitTorrent "
+"网络交互。我们建议不希望任何活动记录显示在BitTorrent上的用户使用此模式,以及需"
+"要身份验证的网站操作(例如,登录您的社交媒体帐户时)。"
 
 #: faq.html%2Bmain.section.div.details.p:84-17
 msgid ""
@@ -203,6 +240,9 @@ msgid ""
 "strong> tabs in the same manner as switching between Normal and Private/"
 "Incognito tabs on your current browser."
 msgstr ""
+"您可以在 <strong>Public</strong> 和 <strong> Personal</strong> "
+"选项卡之间轻松切换,就像在当前浏览器上的 Normal 和 Private/Incognito "
+"选项卡之间切换一样。"
 
 #: faq.html%2Bmain.section.div.details.p:86-17
 msgid ""
@@ -213,16 +253,20 @@ msgid ""
 "the integrity of introduced content. On the Ceno network, Injectors are run "
 "and managed by the Ceno team. We periodically delete all access logs."
 msgstr ""
+"注入器还可以看到网络上对内容的请求,包括提出请求的用户的IP地址和包含所需内容的"
+"网站名称。注入器是1)将Web内容引入分散网络网络,2)验证引入内容完整性的必要网络"
+"组件。在 Ceno 网络上,Injectors 由 Ceno "
+"团队运行和管理。我们定期删除所有访问日志。"
 
 #: faq.html%2Bmain.section.div.details.h3:91-17
 msgid "Risks for Bridge operators"
-msgstr ""
+msgstr "对于桥梁运营商的风险"
 
 #: faq.html%2Bmain.section.div.details.p:92-17
 msgid ""
 "Since any user can become a Bridge, do consider the risks that are "
 "introduced by this action."
-msgstr ""
+msgstr "由于任何用户都可以成为桥梁,请考虑此操作引入的风险。"
 
 #: faq.html%2Bmain.section.div.details.p:93-17
 msgid ""
@@ -231,23 +275,26 @@ msgid ""
 "Their job is to receive network requests from other Ceno users for access to "
 "an Injector and forward this request."
 msgstr ""
+"桥接活动对桥接操作员来说是看不见的(除非他们主动监控其设备的传入和传出连接)。"
+"他们的工作是接收来自其他Ceno用户的网络请求,以访问Injector并转发此请求。"
 
 #: faq.html%2Bmain.section.div.details.p:96-17
 msgid ""
 "Bridge operators will have their device's IP address listed in the "
 "BitTorrent network as an accessible Bridge."
-msgstr ""
+msgstr "桥梁运营商将在BitTorrent网络中列出其设备的IP地址,作为可访问的桥梁。"
 
 #: faq.html%2Bmain.section.div.details.p:98-17
 msgid ""
 "Bridging only works when the network that you are in allows for incoming "
 "connections. This is checked automatically by the Ceno client app upon "
 "start. Most wireless mobile carriers do not allow for incoming connections."
-msgstr ""
+msgstr "只有当您所在的网络允许传入连接时,桥接才有效。启动时由 Ceno "
+"客户端应用程序自动检查此操作。大多数无线移动运营商不允许传入连接。"
 
 #: faq.html%2Bmain.section.div.details:100-33
 msgid "Who develops Ceno Browser?"
-msgstr ""
+msgstr "谁在开发Ceno浏览器?"
 
 #: faq.html%2Bmain.section.div.details.p:104-17
 msgid ""
@@ -256,13 +303,17 @@ msgid ""
 "incorporated their <a href=\"https://ouinet.work\">Ouinet network library</"
 "a> into the Firefox Android browser."
 msgstr ""
+"Ceno是由加拿大非营利组织<a href=\"https://equalitie.org\""
+">eQualitie</a>创建和维护的技术。他们已将 <a href=\"https://ouinet.work\"> "
+"版网库</a> 纳入 Firefox Android 浏览器。"
 
 #: faq.html%2Bmain.section.div.details.p:105-17
 msgid ""
 "eQualitie has been in existence for twelve years, during which time they "
 "have been creating and advancing tools to protect freedom of speech, "
 "facilitate information exchange, and promote self-expression on the internet."
-msgstr ""
+msgstr "eQualitie已经存在了12年,在此期间,他们一直在创造和推进保护言论自由的工具,促进"
+"信息交流,促进互联网上的自我表达。"
 
 #: faq.html%2Bmain.section.div.details.p:108-17
 msgid ""
@@ -273,10 +324,14 @@ msgid ""
 "dComms deployment toolkit for setting up decentralized and federated network "
 "services."
 msgstr ""
+"他们的其他一些项目包括<a href=\"https://ouisync.net\""
+">Ouisync</a>,一个用于分散文件共享的服务;<a href=\"https://deflect.ca\""
+">Deflect</a>,一个用于DDoS保护的工具;Baskerville,一个基于机器学习的攻击检测系"
+"统;以及用于设置分散和联合网络服务的dComms部署工具包。"
 
 #: faq.html%2Bmain.section.div.details:111-77
 msgid "What's the difference between using a VPN and Ceno Browser?"
-msgstr ""
+msgstr "使用VPN和Ceno浏览器有什么区别?"
 
 #: faq.html%2Bmain.section.div.details.p:115-17
 msgid ""
@@ -287,6 +342,9 @@ msgid ""
 "numerous VPN providers offering a wide variety of connectivity options to "
 "help their users get around local network censorship."
 msgstr ""
+"VPN最初是为设备与目标服务器之间的私人通信而创建的。随着互联网审查在世界各地频"
+"繁发生,VPN提供商也开始提供他们的服务,以绕过本地网络限制。今天,有许多VPN提供商"
+"提供各种各样的连接选项,以帮助其用户绕过本地网络审查。"
 
 #: faq.html%2Bmain.section.div.details.p:120-17
 msgid ""
@@ -295,6 +353,8 @@ msgid ""
 "like the trust that is required in eQualitie, who operates the Ceno "
 "Injectors)."
 msgstr ""
+"VPN可以看到他们的客户是谁,他们要求什么网站。这是通过设计,需要对VPN运营商的信"
+"任程度(就像eQualitie中需要的信任,他操作Ceno注入器)。"
 
 #: faq.html%2Bmain.section.div.details.p:123-17
 msgid ""
@@ -305,10 +365,13 @@ msgid ""
 "other. This reduces the strain on censorship circumvention nodes and "
 "improves deliverability."
 msgstr ""
+"Ceno与VPN的主要区别在于,它确实试图通过分散的网络路由您的所有网站请求。当网站"
+"不受限制地可用时,Ceno将像普通网络浏览器一样简单地连接到它。此外,Ceno用户相互"
+"缓存和共享内容。这减少了审查规避节点的压力,并提高了可交付性。"
 
 #: faq.html%2Bmain.section.div.details:126-103
 msgid "What's the difference between using the Tor and Ceno browsers?"
-msgstr ""
+msgstr "使用 Tor 和 Ceno 浏览器有什么区别?"
 
 #: faq.html%2Bmain.section.div.details.p:130-17
 msgid ""
@@ -320,10 +383,15 @@ msgid ""
 "environment, we recommend it, provided that you've also read <a "
 "href=\"https://support.torproject.org/\">their support documentation</a>."
 msgstr ""
+"与Tor浏览器不同,Ceno浏览器不是匿名的工具,这是Tor的主要目的。在Tor网络中,网络"
+"流量被加密并通过志愿者运行的中继网络进行路由,并且似乎来自退出节点的IP地址。To"
+"r是互联网监控和网站运营商隐私的绝佳选择。"
+"如果它在您的网络环境中工作,我们建议它,前提是您还阅读<a href="
+"\"https://support.torproject.org/\">他们的支持文档</a>。"
 
 #: faq.html%2Bmain.section.div.details:135-43
 msgid "Whats the difference between Personal and Public tabs, again?"
-msgstr ""
+msgstr "个人标签和公共标签有什么区别,再次?"
 
 #: faq.html%2Bmain.section.div.details.p:139-17
 msgid ""
@@ -334,6 +402,10 @@ msgid ""
 "inside a Public tab will be shared with other Ceno users via the BitTorrent "
 "network."
 msgstr ""
+"公共选项卡使用 Ceno 网络中可用的所有连接方法来获取您想要的内容。使用\"公共"
+"\"选项卡浏览时,您将在公共 BitTorrent 网络(您请求的 IP "
+"地址和网站)上留下您的活动记录。设备在 Public 选项卡中检索的内容将通过 "
+"BitTorrent 网络与其他 Ceno 用户共享。"
 
 #: faq.html%2Bmain.section.div.details.p:143-17
 msgid ""
@@ -343,13 +415,17 @@ msgid ""
 "them if you do not want to be associated on BitTorrent with any of your "
 "browsing activity in Ceno."
 msgstr ""
+"个人选项卡中请求和检索的信息不会与其他任何人共享。BitTorrent "
+"上没有记录您的活动记录。使用个人选项卡登录社交媒体和其他帐户。如果您不想在 "
+"BitTorrent 上与 Ceno 中的任何浏览活动相关联,也可以使用它们。"
 
 #: faq.html%2Bmain.section.div.details:146-26
 msgid "When will there be an iPhone or Windows version?"
-msgstr ""
+msgstr "什么时候会有iPhone或Windows版本?"
 
 #: faq.html%2Bmain.section.div.details.p:150-17
 msgid ""
 "Development of Ceno Browser for iOS and Windows is currently ongoing, with "
 "plans for release in early 2025."
-msgstr ""
+msgstr "面向iOS和Windows的Ceno浏览器的开发正在进行中,计划于2025年初发布虽然现在已经不"
+"是2025年初了"
