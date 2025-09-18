@@ -55,5 +55,10 @@ for lang in $(cat supported_locales); do
     # Copy faq.html to support.html
     cp -f "../$lang/faq.html" "../$lang/support.html"
 
+    # Copy user-manual into place
+    if [ -d "../docs/$lang/user-manual" ]; then
+        cp -rf "../docs/$lang/user-manual" "../$lang/user-manual"
+    fi
+
     popd
 done
