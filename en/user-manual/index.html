@@ -174,7 +174,7 @@
 <p>📖👐 Ceno Browser is built on Ouinet, an open-source library. You can check the app’s code <a href="https://gitlab.com/censorship-no">on GitLab</a>.</p>
 <p>🛠🦹🏻  Our product may experience instability due to the constant evolution of censorship technologies. We are continuously improving it to ensure you maintain access. If websites load slowly or don’t open, please don’t delete the app — try using it again in a few days or contact our support team: support [at] ceno [dot] app</p>
 <p>Ceno is developed by <a href="https://equalitie.org">eQualitie</a>. It is a completely free and open source browser that doesn’t require registration and is completely ad-free.</p>
-<p>We collect some anonymized app and network metrics. No personal information is collected and the data is never shared with third-parties. Metrics collection is enabled by default, users can opt-out of it any time via the <a href="/settings.html#background-metrics">Settings &gt; Background metrics &gt; Ceno Metrics</a> toggle. Please refer to our <a href="https://ceno.app/en/privacy_policy.html">Privacy Policy</a> for more information about what we collect.</p>
+<p>We collect some anonymized app and network metrics. No personal information is collected and the data is never shared with third-parties. Metrics collection is enabled by default, users can opt-out of it any time via the <a href="./settings.html#background-metrics">Settings &gt; Background metrics &gt; Ceno Metrics</a> toggle. Please refer to our <a href="https://ceno.app/en/privacy_policy.html">Privacy Policy</a> for more information about what we collect.</p>
 
                     </main>
 
@@ -199,22 +199,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
