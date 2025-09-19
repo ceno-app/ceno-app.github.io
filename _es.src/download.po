@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-04 11:49-0400\n"
+"POT-Creation-Date: 2025-09-10 14:53-0400\n"
 "PO-Revision-Date: 2025-06-01 23:01+0000\n"
 "Last-Translator: JKzeta <kevincalpa00@gmail.com>\n"
 "Language-Team: Spanish <https://hosted.weblate.org/projects/censorship-no/"
@@ -30,11 +30,23 @@ msgstr ""
 "La manera más segura de instalar el Navegador Ceno en tu dispositivo es a "
 "través de Google Play Store:"
 
-#: download.html%2Bmain.section.div.div.h4:20-17
+#: download.html%2Bmain.section.div.div.div.a.img[alt]:9-93
+msgid "Get it on Google Play"
+msgstr ""
+
+#: download.html%2Bmain.section.div.div.div.a.img[alt]:10-93
+msgid "Get it from Microsoft"
+msgstr ""
+
+#: download.html%2Bmain.section.div.div.div.a.img[alt]:11-74
+msgid "Join our TestFlight"
+msgstr ""
+
+#: download.html%2Bmain.section.div.div.h4:21-17
 msgid "IMPORTANT:"
 msgstr "IMPORTANTE:"
 
-#: download.html%2Bmain.section.div.div.p:21-17
+#: download.html%2Bmain.section.div.div.p:22-17
 msgid ""
 "Ceno has two modes of operation - Public and Personal. You can easily toggle "
 "between them. Public mode offers the best connectivity but the least privacy "
@@ -52,7 +64,7 @@ msgstr ""
 "Véase <a href=\"faq.html\">the FAQ</a> o <a href=\"../user-manual\">User "
 "Manual</a> para más detalles sobre el uso de Ceno."
 
-#: download.html%2Bmain.section.div.p:27-13
+#: download.html%2Bmain.section.div.p:28-13
 msgid ""
 "Alternatively, you can install Ceno via the Paskoocheh Marketplace, Github, "
 "dComms, or download the APK directly via GitLab:"
@@ -60,11 +72,11 @@ msgstr ""
 "Alternativamente, puedes instalar Ceno a través de Paskoocheh Marketplace, "
 "Github, dComms o descargar el APK directamente a través de GitLab:"
 
-#: download.html%2Bmain.section.div.h2:36-13
+#: download.html%2Bmain.section.div.h2:37-13
 msgid "Direct Download"
 msgstr "Descarga Directa"
 
-#: download.html%2Bmain.section.div.p:37-13
+#: download.html%2Bmain.section.div.p:38-13
 msgid ""
 "For advanced users or those unable to install Ceno Browser via the above "
 "links, you can download the latest APK directly:"
@@ -72,7 +84,7 @@ msgstr ""
 "Para usuarios avanzados o aquellos que no pueden instalar Ceno Browser a "
 "través de los enlaces anteriores, puede descargar el último APK directamente:"
 
-#: download.html%2Bmain.section.div.div:38-13
+#: download.html%2Bmain.section.div.div:39-13
 #, fuzzy
 #| msgid ""
 #| "<strong>Ceno for Android:</strong> <a href=\"https://ceno-download.s3."
@@ -96,7 +108,7 @@ msgstr ""
 "a> / <a href=\"https://ceno-download.s3.amazonaws.com/ceno/v2.4.7/ceno-"
 "x86_64-release-2.4.7-2025-05-22_1140.apk\">x86_64</a>"
 
-#: download.html%2Bmain.section.div.div:45-13
+#: download.html%2Bmain.section.div.div:46-13
 #, fuzzy
 #| msgid ""
 #| "You can also verify the <a href=\"https://ceno-download.s3.amazonaws.com/"
@@ -117,7 +129,7 @@ msgstr ""
 "a> contra nuestra clave PGP (con huella <code class=\"pubkey\">51BE 600C "
 "2711 926C 865D F93F C7DC C123 F0DD B862</code>)"
 
-#: download.html%2Bmain.section.div.p:51-13
+#: download.html%2Bmain.section.div.p:52-13
 msgid ""
 "To verify that the Ceno for Android APK has a valid signature, run this "
 "command and confirm its output:"
@@ -125,7 +137,7 @@ msgstr ""
 "Para verificar que el APK de Ceno para Android tiene una firma válida, "
 "ejecute este comando y confirme su salida:"
 
-#: download.html%2Bmain.section.div.div:52-13
+#: download.html%2Bmain.section.div.div:53-13
 msgid ""
 "> apksigner verify --print-certs ceno-[…].apk<br> Signer #1 certificate DN: "
 "CN=equalit.ie<br> Signer #1 certificate SHA-256 digest: "
@@ -136,13 +148,13 @@ msgstr ""
 "confianzaa59d20c076f6170a2c13d9ce96cd4349688f907898dfc3c89b0ae6ebe9f7edca "
 "correspondbr título [...]"
 
-#: download.html%2Bmain.section.div.p:58-13
+#: download.html%2Bmain.section.div.p:59-13
 msgid ""
 "To verify that the Ceno for Windows EXE has a valid signature, run this "
 "command and confirm its output:"
 msgstr ""
 
-#: download.html%2Bmain.section.div.div:59-13
+#: download.html%2Bmain.section.div.div:60-13
 msgid ""
 "> signtool.exe verify /pa /v ceno-alpha-windows-[…].exe<br> […]<br> Signing "
 "Certificate Chain:<br> Issued to: E3D17812-E9F1-46C8-B650-4D39786777D9<br> "
@@ -150,7 +162,7 @@ msgid ""
 "15:13:25 2026<br> SHA1 hash: D73E913BCAE206834A30823035636FC5A3217436<br> […]"
 msgstr ""
 
-#: download.html%2Bmain.section.div.p:69-13
+#: download.html%2Bmain.section.div.p:70-13
 #, fuzzy
 #| msgid ""
 #| "You can also verify the <a href=\"https://ceno-download.s3.amazonaws.com/"
@@ -169,7 +181,7 @@ msgstr ""
 "a> contra nuestra clave PGP (con huella <code class=\"pubkey\">51BE 600C "
 "2711 926C 865D F93F C7DC C123 F0DD B862</code>)"
 
-#: download.html%2Bmain.section.div.p:70-13
+#: download.html%2Bmain.section.div.p:71-13
 #, fuzzy
 #| msgid ""
 #| "You can also verify the <a href=\"https://ceno-download.s3.amazonaws.com/"
@@ -188,7 +200,7 @@ msgstr ""
 "a> contra nuestra clave PGP (con huella <code class=\"pubkey\">51BE 600C "
 "2711 926C 865D F93F C7DC C123 F0DD B862</code>)"
 
-#: download.html%2Bmain.section.div.p:72-13
+#: download.html%2Bmain.section.div.p:73-13
 #, fuzzy
 #| msgid ""
 #| "You can also verify the <a href=\"https://ceno-download.s3.amazonaws.com/"
@@ -208,15 +220,15 @@ msgstr ""
 "a> contra nuestra clave PGP (con huella <code class=\"pubkey\">51BE 600C "
 "2711 926C 865D F93F C7DC C123 F0DD B862</code>)"
 
-#: download.html%2Bmain.section.h1:77-9
+#: download.html%2Bmain.section.h1:78-9
 msgid "Use Cases"
 msgstr "Casos de uso"
 
-#: download.html%2Bmain.section.div.div.h2:80-17
+#: download.html%2Bmain.section.div.div.h2:81-17
 msgid "Open blocked sites and social media"
 msgstr "Sitios bloqueados abiertos y redes sociales"
 
-#: download.html%2Bmain.section.div.div.p:81-17
+#: download.html%2Bmain.section.div.div.p:82-17
 msgid ""
 "More and more resources are getting blocked every day. Ceno is a universal "
 "tool for accessing any website. Use public mode for reading news and "
@@ -228,11 +240,11 @@ msgstr ""
 "noticias y navegar por sitios estáticos, y cambiar a modo personal para "
 "redes sociales, YouTube y otros sitios que requieren autenticación."
 
-#: download.html%2Bmain.section.div.div.h2:88-17
+#: download.html%2Bmain.section.div.div.h2:89-17
 msgid "Shutdowns"
 msgstr "Desplazamientos"
 
-#: download.html%2Bmain.section.div.div.p:89-17
+#: download.html%2Bmain.section.div.div.p:90-17
 msgid ""
 "Even if a country is completely cut off from the global internet, you will "
 "still be able to access websites that Ceno caches and delivers to your "
@@ -242,11 +254,11 @@ msgstr ""
 "todavía será capaz de acceder a sitios web que Ceno cache y entrega a su "
 "país vía satélite. ¡Usa a Ceno como respaldo en caso de cierre!"
 
-#: download.html%2Bmain.section.div.div.h2:94-17
+#: download.html%2Bmain.section.div.div.h2:95-17
 msgid "Help others"
 msgstr "Ayuda a otros"
 
-#: download.html%2Bmain.section.div.div.p:95-17
+#: download.html%2Bmain.section.div.div.p:96-17
 msgid ""
 "Every Ceno user can become a bridge and help others access blocked "
 "resources. Simply enable Bridge mode in your browser settings and make the "
