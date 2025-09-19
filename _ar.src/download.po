@@ -3,9 +3,9 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-10 14:53-0400\n"
-"PO-Revision-Date: 2025-07-01 11:01+0000\n"
-"Last-Translator: Elias Dammach <eliasdammach208@gmail.com>\n"
-"Language-Team: Arabic <https://hosted.weblate.org/projects/censorship-no/"
+"PO-Revision-Date: 2025-09-20 16:02+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Arabic <https://hosted.weblate.org/projects/ceno-app/"
 "website-v2/website-v2-download/ar/>\n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 ? 4 : 5;\n"
-"X-Generator: Weblate 5.13-dev\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #: download.html%2Bmain.section.div.div.div:5-17
 msgid "Download Ceno Browser"
@@ -37,7 +37,7 @@ msgstr ""
 
 #: download.html%2Bmain.section.div.div.div.a.img[alt]:9-93
 msgid "Get it on Google Play"
-msgstr ""
+msgstr "احصل عليه من متجر جوجل بلاي (Google Play)"
 
 #: download.html%2Bmain.section.div.div.div.a.img[alt]:10-93
 msgid "Get it from Microsoft"
