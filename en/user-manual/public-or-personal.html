@@ -168,9 +168,9 @@
                     <main>
                         <h1 id="public-or-personal"><a class="header" href="#public-or-personal">Public or Personal?</a></h1>
 <p>After the onboarding and permissions screens, the app displays its  main screen. As soon as the screen appears, you will notice two prominent buttons called Public and Personal. They allow you to choose between the Public and Personal browsing mode.</p>
-<p><img src="./images/main_en.png" alt="Main screen" /></p>
+<img src="./images/main_en.png" alt="Main screen" width="50%"/>
 <h2 id="public-browsing"><a class="header" href="#public-browsing">Public Browsing</a></h2>
-<img src="./images/public_button_en.png" alt="Public button" width="300"/>
+<img src="./images/public_button_en.png" alt="Public button" width="60%"/>
 <p>Below image illustrates the way Ceno retrieves website content in Public browsing mode.</p>
 <img src="./images/public_browsing_en.png" alt="Public browsing" width="700"/>
 <p>Dotted lines on this image represent the website content requests and responses, and the asterisks represent encrypted content.</p>
@@ -184,7 +184,7 @@ However,  if Ceno is not able to reach the desired website, then it will try to 
 <p>Bridges are not able to read the requests and responses they forward.</p>
 <p>Every Ceno user can configure their device to become a bridge.</p>
 <p>The <strong>Enable bridge mode</strong> toggle can be reached either from the link on the home page, or from the vertical three dot menu, to the right of the address bar.</p>
-<img src="./images/bridge_mode_en.png" alt="Bridge mode" width="400"/>
+<img src="./images/bridge_mode_en.png" alt="Bridge mode" width="70%"/>
 <p>In the Settings page, moving the <strong>Enable bridge mode</strong> toggle to ON position</p>
 <img src="./images/bridge_toggle_off_en.png" alt="Bridge mode toggle is off" width="400"/>
 <img src="./images/bridge_toggle_on_en.png" alt="Bridge mode toggle is on" width="400"/>
@@ -211,7 +211,7 @@ In P<strong>ublic browsing mode</strong>, Ceno may try to access the requested c
 <p>If you tap on that button, you will see how many components of the requested website were retrieved from the website, Ceno network or Ceno cache.</p>
 <img src="./images/green_dot_tap_en.png" alt="Tap on green dot" width="400"/>
 <p>If you go to Settings &gt; Data you can verfiy verify  that no data is stored in your cache after you have accessed a website directly from its server.</p>
-<img src="./images/no_data_en.png" alt="No data in cache" width="400"/>
+<img src="./images/no_data_en.png" alt="No data in cache" width="60%"/>
 <p>In this case, the risks for you as a user are similar to the risks associated with using any other browser.  Learn more.</p>
 <h3 id="content-retrieved-via-ceno-public-network"><a class="header" href="#content-retrieved-via-ceno-public-network">Content retrieved via Ceno public network</a></h3>
 <p>When Ceno is not able to reach the origin server it will try to access them via Ceno public network.</p>
@@ -241,12 +241,12 @@ Below image illustrates the requests and responses exhcanged exchanged between m
 <p>It can also happen that ceno browser opens a website that was stored in your own cache when you accessed it before.  When that happens, Ceno will inform you by displaying the wbesite sources in grey colour.</p>
 <img src="./images/grey_dot_tap_en.png" alt="Grey dot tap" width="400"/>
 <p>In Ceno Settings &gt; Developer tools &gt; Website sources you can check or uncheck these four settings.</p>
-<img src="./images/website_sources_en.png" alt="Website sources" width="400"/>
+<img src="./images/website_sources_en.png" alt="Website sources" width="60%"/>
 <p>If they are all checked, depending on the browsing mode, Ceno tries to fetch the website via all applicable  mechanisms, at the same time. We call  it a "mixed fetch". Whichever mechanism responds first is the one that  is used and the rest of the requests are cancelled.</p>
 <p>For best results, we recomment that all 4 of these boxes remain checked at all times.</p>
 <h2 id="personal-browsing---when-to-use-it"><a class="header" href="#personal-browsing---when-to-use-it">Personal Browsing - when to use it</a></h2>
 <p>You can select personal browsing by tapping on the Personal button on the main screen.</p>
-<img src="./images/personal_button_en.png" alt="Personal button" width="400"/>
+<img src="./images/personal_button_en.png" alt="Personal button" width="60%"/>
 <p>When you select this option, even if all four <strong>Website sources</strong> settings are checked, your Ceno app will attempt to access the desired websites only directly or via <strong>Ceno private network</strong>.</p>
 <p>This browsing mode  can be used for websites where you need to log in and enter other personal data.  Examples are: shopping websites, email, social media sites or other websites that you do not wish to share with the rest of the Ceno network.</p>
 <h3 id="accessing-websites-via-private-ceno-network"><a class="header" href="#accessing-websites-via-private-ceno-network">Accessing websites via Private ceno network</a></h3>
@@ -285,6 +285,22 @@ Below image illustrates the requests and responses exhcanged exchanged between m
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

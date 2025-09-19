@@ -171,10 +171,11 @@
 <p>When you run your Ceno app for the first time, you will be invited to a small guided tour around the main Ceno features, which you can accept (by tapping on the ‘Get Started’ button) or skip (by tapping ‘Skip the tour’)</p>
 <img src="./images/start_tour_en.png" alt="Start the tour" width="400"/>
 <p>The tour will take you through the most important features, as shown by the following screens.</p>
-<p><img src="./images/tour1_en.png" alt="Tour part 1" /> <img src="./images/tour2_en.png" alt="Tour part 2" /> <img src="./images/tour3_en.png" alt="Tour part 3" /></p>
+<p><img src="./images/tour1_en.png" alt="Tour part 1" width="300"/> <img src="./images/tour2_en.png" alt="Tour part 1" width="300"/>
+<img src="./images/tour3_en.png" alt="Tour part 1" width="300"/> <img src="./images/tour4_en.png" alt="Tour part 1" width="300"/></p>
 <h2 id="permissions"><a class="header" href="#permissions">Permissions</a></h2>
 <p>At the end of the Tour, you will be asked to give Ceno the permissions it needs for optimal functioning:</p>
-<p><img src="./images/permissions_needed_en.png" alt="Permissions needed" /></p>
+<img src="./images/permissions_needed_en.png" alt="Permissions needed" width="400"/>
 <p>When you tap on Continue, depending on the version of Android that you have on your phone, you will be required to give Ceno permissions to send you notifications and to disable battery optimisation.  Some Android versions require both, and some just the permission to disable the battery optimisation.</p>
 <h3 id="notifications"><a class="header" href="#notifications">Notifications</a></h3>
 <p><img src="./images/notifications_en.png" alt="Notifications" /></p>
@@ -222,6 +223,22 @@ Tapping on the Stop button will stop both Ceno and its service at once (until yo
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

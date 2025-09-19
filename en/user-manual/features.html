@@ -189,9 +189,9 @@ If the padlock or shield is crossed with a line, it means that connection to tha
 <p>Tapping on it gives the user a choice to clear all Ceno data, as if Ceno was never used, or to clear only what Ceno stored in Cache. The first option clears all the preferences, bookmarks, setttings and customisations, whereas the second one will only clear the websites that the Ceno app stored in the cache on your device.</p>
 <img src="./images/clear_button_en.png" alt="Clear button" width="400"/>
 <p>If you go to <strong>Settings &gt; Customisations &gt; Clear button</strong> you can choose whether you want the clear button to show in the toolbar or in the menu.</p>
-<img src="./images/clear_button_settings_en.png" alt="Clear button in settings" width="400"/>
+<img src="./images/clear_button_settings_en.png" alt="Clear button in settings" width="60%"/>
 <p>Tapping on the option <strong>Default behavior</strong> will open a dialog box that offers you to choose what you want your Clear button to do when you tap it.  It can offer you a prompt, like on the above screenshot, or it can immediately delete all cached content or even all Ceno data.</p>
-<img src="./images/clear_button_default_en.png" alt="Clear button behavior" width="400"/>
+<img src="./images/clear_button_default_en.png" alt="Clear button behavior" width="60%"/>
 <h3 id="tabs-button"><a class="header" href="#tabs-button">Tabs button</a></h3>
 <p>Next is a small rectangle with a number in it. This number indicates how many tabs the user has opened.</p>
 <p>Tapping on it  opens a screen where you can see all the tabs that you have open.</p>
@@ -209,7 +209,7 @@ If the padlock or shield is crossed with a line, it means that connection to tha
 <ul>
 <li>when you have a website page open, this menu will display options relevant to that page.</li>
 </ul>
-<img src="./images/menu_webpage_en.png" alt="Webpage menu" width="400"/>
+<img src="./images/menu_webpage_en.png" alt="Webpage menu" width="40%"/>
 <p>Most of the elements in this menu are self explanatory.  But if you’re not familiar with the uBlock Origin, it is an ad and tracker blocker.</p>
 <p>The reason we bundle it up with our Ceno browser is  mostly to prevent unnecessarily  caching advertisements and to avoid possibly caching unique identifiers  associated with trackers.</p>
 <p>To learn more about this ad and tracker blocker, please visit <a href="https://ublockorigin.com/">their webpage</a>.</p>
@@ -251,6 +251,22 @@ If the padlock or shield is crossed with a line, it means that connection to tha
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
