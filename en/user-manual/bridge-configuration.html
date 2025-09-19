@@ -170,11 +170,11 @@
 <p>A peer-to-peer network is built from every node connected to it (yes, that means you as well!). The more nodes, the stronger and more versatile the network becomes.</p>
 <p>If you are running Ceno Browser from a country that does not censor the Internet (or not as heavily as some), consider helping other Ceno users by becoming a bridge node. You will then begin to route traffic between clients living in heavily censored countries and Ceno injectors.</p>
 <p>You will not be able to see their traffic (it will be sent through an encrypted tunnel), nor will any of this traffic remain on your device.</p>
-<p><em>Note: The configuration described in this section may also help your device to effectively seed content to others on the distributed cache, so please consider applying it as well when using Ceno in a censoring country (but keep in mind the <a href="url">risks</a> of serving such content to others)</em></p>
+<p><em>Note: The configuration described in this section may also help your device to effectively seed content to others on the distributed cache, so please consider applying it as well when using Ceno in a censoring country (but keep in mind the <a href="https://ceno.app/en/faq.html#bridgemode">risks</a> of serving such content to others)</em></p>
 <h2 id="how-to-become-a-ceno-bridge"><a class="header" href="#how-to-become-a-ceno-bridge">How to become a Ceno bridge?</a></h2>
-<p>As stated in <a href="https://gitlab.com/ceno-app/ceno-docs-v2/-/blob/Public-or-personal/src/public-or-personal.md?ref_type=heads#bridges">this section</a>, Ceno app provides some functionlaity that allows you to easily become a Ceno bridge, if your network configuration allows it.</p>
+<p>As stated in <a href="./public-or-personal.html?#bridges">this section</a>, Ceno app provides some functionlaity that allows you to easily become a Ceno bridge, if your network configuration allows it.</p>
 <p>If you have checked your <strong>Reachability</strong> and your <strong>UPnP status</strong> and it looks like this</p>
-<p><img src="/src/images/reachability_en.png" alt="Reachability status" /></p>
+<p><img src="./images/reachability_en.png" alt="Reachability status" /></p>
 <p>You will need to configure your router by either enabling the UPnP or setting up the port forwarding.  In the following sections we describe the steps to perform.</p>
 <h3 id="enabling-upnp-on-your-wi-fi-router"><a class="header" href="#enabling-upnp-on-your-wi-fi-router">Enabling UPnP on your Wi-Fi router</a></h3>
 <p>UPnP is the easiest way of making your Ceno browser (or computer client) reachable to the Ceno network.</p>
@@ -188,7 +188,7 @@
 <p>The first step is the same as before: log in to the router's web interface.</p>
 <p>Then, please locate **port forwarding **option.</p>
 <p>To see which IP address you need to forward the connections to and the relevant port, open the <strong>Ceno Settings</strong> page and look under the <strong>Local UDP endpoints</strong>.</p>
-<p><img src="/src/images/UDP_endpoint_en.png" alt="Local UDP endpoint" /></p>
+<p><img src="./images/UDP_endpoint_en.png" alt="Local UDP endpoint" /></p>
 <p>The port forwarding must be for the UDP protocol (not TCP).</p>
 <p>Ceno chooses a random port on first run and keeps it for subsequent runs, but your device's local network IP address may change from time to time. Thus you should periodically review the <strong>Ceno Settings</strong> page to see that your device is reachable to the Ceno network.</p>
 <p>Your device is reachable if its</p>
