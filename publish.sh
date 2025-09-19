@@ -57,6 +57,7 @@ for lang in $(cat supported_locales); do
 
     # Copy user-manual into place
     if [ -d "../_user-manual.src/$lang" ]; then
+        rm -rf "../$lang/user-manual"
         cp -rf "../_user-manual.src/$lang" "../$lang/user-manual"
     fi
 
