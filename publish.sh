@@ -56,8 +56,8 @@ for lang in $(cat supported_locales); do
     cp -f "../$lang/faq.html" "../$lang/support.html"
 
     # Copy user-manual into place
-    if [ -d "../docs/$lang/user-manual" ]; then
-        cp -rf "../docs/$lang/user-manual" "../$lang/user-manual"
+    if [ -d "../_user-manual.src/$lang" ]; then
+        cp -rf "../_user-manual.src/$lang" "../$lang/user-manual"
     fi
 
     popd

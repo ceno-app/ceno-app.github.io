@@ -1,3 +1,3 @@
-[submodule "docs"]
-	path = docs
+[submodule "_user-manual.src"]
+	path = _user-manual.src
 	url = https://gitlab.com/ceno-app/ceno-docs
