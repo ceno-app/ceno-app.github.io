@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-10 14:53-0400\n"
-"PO-Revision-Date: 2025-09-11 19:01+0000\n"
+"PO-Revision-Date: 2025-09-20 16:02+0000\n"
 "Last-Translator: Максим Горпиніч <gorpinicmaksim0@gmail.com>\n"
 "Language-Team: Ukrainian <https://hosted.weblate.org/projects/ceno-app/"
 "website-v2/website-v2-privacy-policy/uk/>\n"
@@ -693,13 +693,15 @@ msgstr ""
 
 #: privacy_policy.html%2Bsection.div.h2:140-1
 msgid "Notes"
-msgstr ""
+msgstr "Нотатки"
 
 #: privacy_policy.html%2Bsection.div.p:141-1
 msgid ""
 "Translations in other languages are provided for convenience. The English "
 "version shall prevail in case of conflict."
 msgstr ""
+"Переклади іншими мовами надаються для зручності. У разі розбіжностей "
+"перевагу має англійська версія."
 
 #~ msgid ""
 #~ "Ceno Browser does not require any personally identifying information to "
