@@ -171,21 +171,21 @@
 <p>When you run your Ceno app for the first time, you will be invited to a small
 guided tour around the main Ceno features, which you can accept (by tapping on
 the ‘Get Started’ button) or skip (by tapping ‘Skip the tour’)</p>
-<img src="./images/start_tour_en.png" alt="Start the tour" width="400"/>
+<img src="./images/start_tour.png" alt="Start the tour" width="400"/>
 <p>The tour will take you through the most important features, as shown by the
 following screens.</p>
-<p><img src="./images/tour1_en.png" alt="Tour part 1" /> <img src="./images/tour2_en.png" alt="Tour part 2" />
-<img src="./images/tour3_en.png" alt="Tour part 3" /></p>
+<p><img src="./images/tour1.png" alt="Tour part 1" /> <img src="./images/tour2.png" alt="Tour part 2" />
+<img src="./images/tour3.png" alt="Tour part 3" /></p>
 <h2 id="مجوزها"><a class="header" href="#مجوزها">مجوزها</a></h2>
 <p>At the end of the Tour, you will be asked to give Ceno the permissions it needs
 for optimal functioning:</p>
-<p><img src="./images/permissions_needed_en.png" alt="Permissions needed" /></p>
+<p><img src="./images/permissions_needed.png" alt="Permissions needed" /></p>
 <p>When you tap on Continue, depending on the version of Android that you have on
 your phone, you will be required to give Ceno permissions to send you
 notifications and to disable battery optimisation. Some Android versions require
 both, and some just the permission to disable the battery optimisation.</p>
 <h3 id="اعلانها"><a class="header" href="#اعلانها">اعلان‌ها</a></h3>
-<p><img src="./images/notifications_en.png" alt="Notifications" /></p>
+<p><img src="./images/notifications.png" alt="Notifications" /></p>
 <p>When you allow Ceno to send you notifications, the app will display the Ceno
 icon in your notification bar.</p>
 <img src="./images/notification_bar.png" alt="Notifications bar" width="400"/>
@@ -197,9 +197,9 @@ and processor resources, you may want to stop it whenever you are on the move
 (i.e. not connected to Wi-Fi or far from a charger).<br />
 Tapping on the Stop button will stop both Ceno and its service at once (until
 you open Ceno again).</p>
-<img src="./images/ceno_notification1_en.png" alt="Ceno notification 1" width="400"/>
+<img src="./images/ceno_notification1.png" alt="Ceno notification 1" width="400"/>
 <p>Tapping on the Clear button will open another small notification</p>
-<img src="./images/ceno_notification2_en.png" alt="Ceno notification 2" width="400"/>
+<img src="./images/ceno_notification2.png" alt="Ceno notification 2" width="400"/>
 <p>Tapping on Yes will delete not only the cached data in the Ceno app on your
 device, but also any customization settings, such as default address bar
 position, or light theme, or your favorites and other settings you may have
@@ -209,7 +209,7 @@ had never been used.</p>
 <p><em>Warning: Android may still keep other traces of having used an app besides its
 data, for instance in its system log</em></p>
 <h3 id="stop-battery-optimising-usage"><a class="header" href="#stop-battery-optimising-usage">Stop battery optimising usage</a></h3>
-<p><img src="./images/optimise_battery_en.png" alt="Do not optimise battery" /></p>
+<p><img src="./images/optimise_battery.png" alt="Do not optimise battery" /></p>
 <p>This option is usually present in apps that need to run in the background even
 when not actively used, which is the case with the Ceno app. Under normal
 conditions, your android phone will try to optimise the battery usage of various
@@ -252,6 +252,22 @@ users within the Ceno network.</p>
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

@@ -187,7 +187,7 @@ provides some functionlaity that allows you to easily become a Ceno bridge, if
 your network configuration allows it.</p>
 <p>If you have checked your <strong>Reachability</strong> and your <strong>UPnP status</strong> and it looks
 like this</p>
-<p><img src="./images/reachability_en.png" alt="Reachability status" /></p>
+<p><img src="./images/reachability.png" alt="Reachability status" /></p>
 <p>You will need to configure your router by either enabling the UPnP or setting up
 the port forwarding. In the following sections we describe the steps to perform.</p>
 <h3 id="فعال-کردن-upnp-روی-مودم-وایفای"><a class="header" href="#فعال-کردن-upnp-روی-مودم-وایفای">فعال کردن UPnP روی مودم وای‌فای</a></h3>
@@ -214,7 +214,7 @@ the UPnP.</p>
 <p>To see which IP address you need to forward the connections to and the relevant
 port, open the <strong>Ceno Settings</strong> page and look under the <strong>Local UDP
 endpoints</strong>.</p>
-<p><img src="./images/UDP_endpoint_en.png" alt="Local UDP endpoint" /></p>
+<p><img src="./images/UDP_endpoint.png" alt="Local UDP endpoint" /></p>
 <p>The port forwarding must be for the UDP protocol (not TCP).</p>
 <p>Ceno chooses a random port on first run and keeps it for subsequent runs, but
 your device's local network IP address may change from time to time. Thus you
@@ -282,6 +282,22 @@ for more information on how to manipulate the container.</p>
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script>
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
