@@ -174,12 +174,14 @@ the ‘Get Started’ button) or skip (by tapping ‘Skip the tour’)</p>
 <img src="./images/start_tour.png" alt="Start the tour" width="400"/>
 <p>The tour will take you through the most important features, as shown by the
 following screens.</p>
-<p><img src="./images/tour1.png" alt="Tour part 1" /> <img src="./images/tour2.png" alt="Tour part 2" />
-<img src="./images/tour3.png" alt="Tour part 3" /></p>
+<img src="./images/tour1.png" alt="Tour part 1" width="300"/>
+<img src="./images/tour2.png" alt="Tour part 1" width="300"/>
+<img src="./images/tour3.png" alt="Tour part 1" width="300"/>
+<img src="./images/tour4.png" alt="Tour part 1" width="300"/>
 <h2 id="Разрешения"><a class="header" href="#Разрешения">Разрешения</a></h2>
 <p>At the end of the Tour, you will be asked to give Ceno the permissions it needs
 for optimal functioning:</p>
-<p><img src="./images/permissions_needed.png" alt="Permissions needed" /></p>
+<img src="./images/permissions_needed.png" alt="Permissions needed" width="400"/>
 <p>When you tap on Continue, depending on the version of Android that you have on
 your phone, you will be required to give Ceno permissions to send you
 notifications and to disable battery optimisation. Some Android versions require
@@ -252,22 +254,6 @@ users within the Ceno network.</p>
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

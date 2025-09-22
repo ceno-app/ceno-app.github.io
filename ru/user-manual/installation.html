@@ -174,11 +174,11 @@ Play</a>,
 <a href="https://dcomm.net.ua/en/">dComms</a>.</p>
 <p>Please download the app and install it. Once installed, tap on Open. The first
 Ceno screen you will see is this one</p>
-<p><img src="./images/first_screen.png" alt="Ceno first screen" /></p>
+<img src="./images/first_screen.png" alt="Ceno first screen" width="50%"/>
 <p>It will be displayed for a few seconds while the Ceno app is making connections
 with the rest of the Ceno network. After that short period of time, the app
 welcomes you to its Onboarding screens.</p>
-<p><img src="./images/welcome.png" alt="Ceno welcome" /></p>
+<img src="./images/welcome.png" alt="Ceno first screen" width="50%"/>
 
                     </main>
 
@@ -209,22 +209,6 @@ welcomes you to its Onboarding screens.</p>
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 

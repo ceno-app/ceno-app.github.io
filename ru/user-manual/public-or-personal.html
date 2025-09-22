@@ -171,9 +171,9 @@
 As soon as the screen appears, you will notice two prominent buttons called
 Public and Personal. They allow you to choose between the Public and Personal
 browsing mode.</p>
-<p><img src="./images/main.png" alt="Main screen" /></p>
+<img src="./images/main.png" alt="Main screen" width="50%"/>
 <h2 id="public-browsing"><a class="header" href="#public-browsing">Public Browsing</a></h2>
-<img src="./images/public_button.png" alt="Public button" width="300"/>
+<img src="./images/public_button.png" alt="Public button" width="60%"/>
 <p>Below image illustrates the way Ceno retrieves website content in Public
 browsing mode.</p>
 <img src="./images/public_browsing.png" alt="Public browsing" width="700"/>
@@ -208,7 +208,7 @@ and the encrypted responses back to the users.</p>
 <p>Every Ceno user can configure their device to become a bridge.</p>
 <p>The <strong>Enable bridge mode</strong> toggle can be reached either from the link on the
 home page, or from the vertical three dot menu, to the right of the address bar.</p>
-<img src="./images/bridge_mode.png" alt="Bridge mode" width="400"/>
+<img src="./images/bridge_mode.png" alt="Bridge mode" width="70%"/>
 <p>In the Settings page, moving the <strong>Enable bridge mode</strong> toggle to ON position</p>
 <img src="./images/bridge_toggle_off.png" alt="Bridge mode toggle is off" width="400"/>
 <img src="./images/bridge_toggle_on.png" alt="Bridge mode toggle is on" width="400"/>
@@ -262,7 +262,7 @@ website were retrieved from the website, Ceno network or Ceno cache.</p>
 <img src="./images/green_dot_tap.png" alt="Tap on green dot" width="400"/>
 <p>If you go to Settings &gt; Data you can verfiy verify that no data is stored in
 your cache after you have accessed a website directly from its server.</p>
-<img src="./images/no_data.png" alt="No data in cache" width="400"/>
+<img src="./images/no_data.png" alt="No data in cache" width="60%"/>
 <p>In this case, the risks for you as a user are similar to the risks associated
 with using any other browser. Learn more.</p>
 <h3 id="content-retrieved-via-ceno-public-network"><a class="header" href="#content-retrieved-via-ceno-public-network">Content retrieved via Ceno public network</a></h3>
@@ -316,7 +316,7 @@ displaying the wbesite sources in grey colour.</p>
 <img src="./images/grey_dot_tap.png" alt="Grey dot tap" width="400"/>
 <p>In Ceno Settings &gt; Developer tools &gt; Website sources you can check or uncheck
 these four settings.</p>
-<img src="./images/website_sources.png" alt="Website sources" width="400"/>
+<img src="./images/website_sources.png" alt="Website sources" width="60%"/>
 <p>If they are all checked, depending on the browsing mode, Ceno tries to fetch the
 website via all applicable mechanisms, at the same time. We call it a "mixed
 fetch". Whichever mechanism responds first is the one that is used and the rest
@@ -326,7 +326,7 @@ times.</p>
 <h2 id="personal-browsing---when-to-use-it"><a class="header" href="#personal-browsing---when-to-use-it">Personal Browsing - when to use it</a></h2>
 <p>You can select personal browsing by tapping on the Personal button on the main
 screen.</p>
-<img src="./images/personal_button.png" alt="Personal button" width="400"/>
+<img src="./images/personal_button.png" alt="Personal button" width="60%"/>
 <p>When you select this option, even if all four <strong>Website sources</strong> settings are
 checked, your Ceno app will attempt to access the desired websites only directly
 or via <strong>Ceno private network</strong>.</p>
@@ -379,22 +379,6 @@ via Personal browsing mode instead.</p>
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script>
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
