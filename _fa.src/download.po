@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-10 14:53-0400\n"
-"PO-Revision-Date: 2025-09-20 16:02+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2025-09-23 20:08+0000\n"
+"Last-Translator: Mehdi Oloomi <mehdi@equalitie.org>\n"
 "Language-Team: Persian <https://hosted.weblate.org/projects/ceno-app/"
 "website-v2/website-v2-download/fa/>\n"
 "Language: fa\n"
@@ -36,11 +36,11 @@ msgstr "دریافت از گوگل پلی"
 
 #: download.html%2Bmain.section.div.div.div.a.img[alt]:10-93
 msgid "Get it from Microsoft"
-msgstr ""
+msgstr "از مایکروسافت بگیرید"
 
 #: download.html%2Bmain.section.div.div.div.a.img[alt]:11-74
 msgid "Join our TestFlight"
-msgstr ""
+msgstr "به TestFlight ما بپیوندید"
 
 #: download.html%2Bmain.section.div.div.h4:21-17
 msgid "IMPORTANT:"
