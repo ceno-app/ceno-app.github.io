@@ -2,17 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-04 11:49-0400\n"
-"PO-Revision-Date: 2025-08-28 17:15+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
-"Language-Team: Persian <https://hosted.weblate.org/projects/ceno-app/website-"
-"v2/website-v2-privacy-policy/fa/>\n"
+"POT-Creation-Date: 2025-09-10 14:53-0400\n"
+"PO-Revision-Date: 2025-09-23 20:08+0000\n"
+"Last-Translator: Mehdi Oloomi <mehdi@equalitie.org>\n"
+"Language-Team: Persian <https://hosted.weblate.org/projects/ceno-app/"
+"website-v2/website-v2-privacy-policy/fa/>\n"
 "Language: fa\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.13.1-dev\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #: privacy_policy.html%2Btitle:1-1
 msgid "Ceno Browser | Privacy Policy"
@@ -27,16 +27,6 @@ msgid "1. Overview"
 msgstr "۱. مقدمه"
 
 #: privacy_policy.html%2Bsection.div.p:7-1
-#, fuzzy
-#| msgid ""
-#| "This Ceno Browser (\"Ceno\") Terms of Use (the \"Agreement\"), along with "
-#| "this Privacy Notice (collectively, the \"Terms\"), bind all users of Ceno "
-#| "- a peer-to-peer mobile web browser. By installing and running the Ceno "
-#| "Browser application (the \"Service\"), you consent to be bound by and to "
-#| "comply with this Agreement between you and eQualitie Inc. (\"eQualitie\", "
-#| "\"we\", or \"us\"). Usage of the Ceno Browser application and associated "
-#| "services are provided by eQualitie at no cost and are provided for use as "
-#| "is."
 msgid ""
 "This Ceno Browser (\"Ceno\") Terms of Use (the \"Agreement\"), along with "
 "this Privacy Notice (collectively, the \"Terms\"), bind all users of Ceno - "
@@ -83,12 +73,6 @@ msgstr ""
 "اسناد الکترونیکی» (PIPEDA)؛"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:13-1
-#, fuzzy
-#| msgid ""
-#| "Constitutes child sexually exploitative material (including material "
-#| "which may not be illegal child sexual abuse material but which "
-#| "nonetheless sexually exploits or promotes the sexual exploitation of "
-#| "minors), unlawful pornography, or are otherwise indecent;"
 msgid ""
 "Constitutes child sexually exploitative material (including material which "
 "may not be illegal child sexual abuse material but which nonetheless "
@@ -180,6 +164,11 @@ msgid ""
 "eQualitie does not know who uses Ceno, nor with whom users synchronize or "
 "share content."
 msgstr ""
+"مرورگر سِنو با محوریت حریم خصوصی طراحی شده است و برای عملکرد خود نیاز به "
+"هیچ‌گونه اطلاعات شخصی شناسایی‌کننده ندارد. برای استفاده از برنامه لازم نیست "
+"نام، شناسه کاربری، نام مستعار، حساب یا هر داده شخصی دیگری ارائه کنید. شرکت "
+"eQualitie نه می‌داند چه کسی از سِنو استفاده می‌کند و نه این‌ که کاربران، محتوا "
+"را با چه کسانی همگام‌سازی می‌کنند یا به اشتراک می‌گذارند."
 
 #: privacy_policy.html%2Bsection.div.p:31-1
 msgid ""
@@ -187,89 +176,111 @@ msgid ""
 "the application. This information is stripped of any personally identifiable "
 "elements before collection and is never shared with third parties."
 msgstr ""
+"ما به حریم خصوصی شما اهمیت می‌دهیم و فقط اطلاعات غیر قابل‌ شناسایی درباره‌ نحوه "
+"استفاده از برنامه را برای بهبود آن جمع‌آوری می‌کنیم. این اطلاعات پیش از "
+"جمع‌آوری از هر گونه جزئیات شناسایی‌کننده‌ شخصی پاک‌سازی می‌شوند و هرگز با اشخاص "
+"ثالث به اشتراک گذاشته نمی‌شوند."
 
 #: privacy_policy.html%2Bsection.div.p:33-1
 msgid ""
 "By default, Ceno collects anonymized usage metrics using our own, self-"
 "hosted, analytics server. This process is designed to be privacy-preserving:"
 msgstr ""
+"سنو به‌طور پیش‌فرض، شاخص‌های استفاده غیر قابل‌ شناسایی را از طریق سرور تحلیلی "
+"اختصاصی و خود‌-میزبان ما جمع‌آوری می‌کند. این فرایند به‌گونه‌ای طراحی شده است که "
+"حریم خصوصی شما حفظ شود:"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:35-1
 msgid "IP addresses are not stored"
-msgstr ""
+msgstr "نشانی‌های IP ذخیره نمی‌شوند"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:36-1
 msgid "No personal information is collected"
-msgstr ""
+msgstr "هیچ‌گونه اطلاعات شخصی جمع‌آوری نمی‌شود"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:37-1
 msgid "Data is associated with a per-device randomly generated ID"
-msgstr ""
+msgstr "داده‌ها با یک شناسه تصادفی که برای هر دستگاه تولید می‌شود مرتبط هستند"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:38-1
 msgid ""
 "The randomly generated ID is not associated with any user or device "
 "identifiers (e.g. IP, MAC, IMEI, MEID)"
 msgstr ""
+"شناسه تصادفی تولیدشده با هیچ عاملی که کاربران یا دستگاه‌ها را شناسایی کند "
+"(مانند IP، MAC، IMEI یا MEID) مرتبط نیست"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:39-1
 msgid "The ID is replaced with a new random ID every 30 days or less"
 msgstr ""
+"این شناسه هر ۳۰ روز یک‌ بار یا زودتر با یک شناسه تصادفی جدید جایگزین می‌شود"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:40-1
 msgid "Past, current and future random device IDs are not associated"
-msgstr ""
+msgstr "شناسه‌های تصادفی دستگاه در گذشته، حال و آینده به هم مرتبط نمی‌شوند"
 
 #: privacy_policy.html%2Bsection.div.p:43-1
 msgid "The following anonymized data may be collected:"
-msgstr ""
+msgstr "ممکن است اطلاعات غیر قابل‌ شناسایی زیر جمع‌آوری شوند:"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:45-1
 msgid ""
 "Peer to peer network statistics, e.g. data volume transferred, count of peer "
 "connections made"
 msgstr ""
+"آمار شبکه‌ همتا‌به‌همتا، مانند حجم داده منتقل‌شده و تعداد اتصال‌های برقرارشده با "
+"همتاها"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:46-1
 msgid "Application performance data, e.g. connection success and latency"
-msgstr ""
+msgstr "داده‌های مربوط به عملکرد برنامه، مانند موفقیت اتصال و میزان تاخیر"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:47-1
 msgid ""
 "Application usage statistics, e.g. time spent in public vs. personal "
 "browsing modes"
 msgstr ""
+"آمار مربوط به نحوه استفاده از برنامه، مانند مدت زمان صرف‌شده در حالت مرور "
+"عمومی در مقایسه با حالت مرور شخصی"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:48-1
 msgid ""
 "Country where device is located (Inferred. No GPS or specific location is "
 "sent)"
 msgstr ""
+"کشوری که دستگاه در آن قرار دارد (بر اساس تشخیص تقریبی؛ هیچ GPS یا موقعیت "
+"مکانی دقیقی ارسال نمی‌شود)"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:49-1
 msgid "Device settings relating to country, language, and locale"
-msgstr ""
+msgstr "تنظیمات دستگاه مربوط به کشور، زبان و موقعیت مکانی (locale)"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:50-1
 msgid ""
 "Whether the device is using a VPN (but no further information about the VPN)"
 msgstr ""
+"این‌که آیا دستگاه از VPN استفاده می‌کند یا نه (بدون هیچ اطلاعات اضافی دیگری "
+"درباره خود VPN)‌"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:51-1
 msgid "The cellular service provider name (if applicable)"
-msgstr ""
+msgstr "نام ارائه‌دهنده خدمات تلفن همراه (در صورت وجود)"
 
 #: privacy_policy.html%2Bsection.div.p:53-1
 msgid ""
 "Note: country inference is based on device locale, VPN presence, and "
 "cellular provider data."
 msgstr ""
+"توجه: تشخیص کشور بر اساس تنظیمات محلی دستگاه، داشتن VPN و داده‌های مربوط به "
+"ارائه‌دهنده خدمات تلفن همراه انجام می‌شود."
 
 #: privacy_policy.html%2Bsection.div.p:55-1
 msgid ""
 "All collected data is automatically deleted after 90 days. Users may opt out "
 "of metrics collection at any time via the app settings."
 msgstr ""
+"تمام داده‌های جمع‌آوری‌شده پس از ۹۰ روز به‌طور خودکار حذف می‌شوند. کاربران "
+"می‌توانند هر زمان از طریق تنظیمات برنامه، جمع‌آوری این داده‌ها را غیرفعال کنند."
 
 #: privacy_policy.html%2Bsection.div.p:57-1
 msgid ""
@@ -282,15 +293,6 @@ msgstr ""
 "عمومی، جمع‌آوری می‌کنیم."
 
 #: privacy_policy.html%2Bsection.div.p:59-1
-#, fuzzy
-#| msgid ""
-#| "Injectors are servers that can see requests for content on the network, "
-#| "including the IP address of the user making the request and the name of "
-#| "the website with the desired content. The injectors are a necessary "
-#| "network component for 1) introducing web content into a decentralized "
-#| "network, and 2) authenticating the integrity of introduced content. On "
-#| "the Ceno network, Injectors are run and managed by the Ceno team. "
-#| "eQualitie deletes all access logs every 24 hours."
 msgid ""
 "Injectors are servers that can see requests for content on the network, "
 "including the IP address of the user making the request and the name of the "
@@ -337,16 +339,10 @@ msgid ""
 "The application offers two modes of operation - <strong>Public</strong> and "
 "<strong>Personal</strong>."
 msgstr ""
+"این برنامه دو حالت عملکرد ارائه می‌دهد – <strong>عمومی</strong> و "
+"<strong>شخصی</strong>."
 
 #: privacy_policy.html%2Bsection.div.p:68-1
-#, fuzzy
-#| msgid ""
-#| "Public tabs use all connectivity methods available in the Ceno network to "
-#| "get the desired content. When browsing using a Public tab, users will "
-#| "leave a record of their activity on the public BitTorrent network (IP "
-#| "address and website requested). Content that has been retrieved by a "
-#| "user's device inside a Public tab will be shared with other Ceno users "
-#| "via the BitTorrent network."
 msgid ""
 "<strong>Public</strong> tabs use all connectivity methods available in the "
 "Ceno network to get the desired content. When browsing using a Public tab, "
@@ -355,11 +351,11 @@ msgid ""
 "user's device inside a Public tab will be shared with other Ceno users via "
 "the BitTorrent network."
 msgstr ""
-"زبانه‌های عمومی از تمام روش‌های اتصال موجود در شبکه سِنو برای دریافت محتوای "
-"مورد نظر استفاده می‌کنند. هنگام مرور در حالت عمومی، کاربران ردپایی از فعالیت "
-"خود در شبکه عمومی بیت‌تورنت باقی می‌گذارند (از جمله آدرس IP و وب‌سایت "
-"درخواست‌شده). محتوایی که در زبانه عمومی از طریق دستگاه کاربر دریافت می‌شود، از "
-"طریق شبکه بیت‌تونت با دیگر کاربران سِنو به اشتراک گذاشته خواهد شد."
+"زبانه‌های <strong>عمومی</strong> از تمام روش‌های اتصال موجود در شبکه سِنو برای "
+"دریافت محتوای مورد نظر استفاده می‌کنند. هنگام مرور در حالت عمومی، کاربران "
+"ردپایی از فعالیت خود در شبکه عمومی بیت‌تورنت باقی می‌گذارند (از جمله آدرس IP و "
+"وب‌سایت درخواست‌شده). محتوایی که در زبانه عمومی از طریق دستگاه کاربر دریافت "
+"می‌شود، از طریق شبکه بیت‌تونت با دیگر کاربران سِنو به اشتراک گذاشته خواهد شد."
 
 #: privacy_policy.html%2Bsection.div.p:70-1
 msgid ""
@@ -373,19 +369,6 @@ msgstr ""
 "بیت‌تورنت نخواهد داشت و سعی نمی‌کند محتوا را روی دستگاه کاربران دیگر پیدا کند."
 
 #: privacy_policy.html%2Bsection.div.p:72-1
-#, fuzzy
-#| msgid ""
-#| "To ensure that your Ceno client can always contact an Injector, we have "
-#| "also created Bridges. If the Injectors are blocked on your network, the "
-#| "Ceno app will look for available Bridges, who will forward a user's "
-#| "request to the Injectors. Users may opt in to enabling Bridge Mode in "
-#| "Ceno Browser to improve web content accessibility for others. Bridge "
-#| "activity is invisible to the Bridge operator (unless they are actively "
-#| "monitoring their device for incoming and outgoing connections). Their job "
-#| "is to receive network requests from other Ceno users for access to an "
-#| "Injector and forward this request. Bridge operators will have their "
-#| "device's IP address listed in the BitTorrent network as an accessible "
-#| "Bridge."
 msgid ""
 "To ensure that your Ceno client can always contact an Injector, we have also "
 "created <strong>Bridges</strong>. If the Injectors are blocked on your "
@@ -399,15 +382,15 @@ msgid ""
 "IP address listed in the BitTorrent network as an accessible Bridge.</strong>"
 msgstr ""
 "برای اطمینان از این که کلاینت سِنو شما همیشه بتواند به یک تزریق‌کننده دسترسی "
-"پیدا کند، ما قابلیتی به نام پل (Bridge) نیز ایجاد کرده‌ایم. اگر تزریق‌کننده‌ها "
-"در شبکه شما مسدود شده باشند، برنامه سِنو به‌دنبال پل‌های در دسترس می‌گردد که "
-"بتوانند درخواست شما را به تزریق‌کننده‌ها منتقل کنند. کاربران می‌توانند با "
-"فعال‌سازی حالت پل در تنظیمات مرورگر سِنو، به بهبود دسترسی دیگران به محتوای وب "
-"کمک کنند. فعالیت پل برای اپراتور آن قابل مشاهده نیست (مگر این که به‌طور فعال "
-"اتصالات ورودی و خروجی دستگاه خود را پایش کند). وظیفه پل دریافت درخواست‌های "
-"شبکه از دیگر کاربران سِنو برای دسترسی به یک تزریق‌کننده و ارسال آن درخواست "
-"است. آدرس IP دستگاه اپراتور پل در شبکه بیت‌تورنت به‌عنوان یک پل قابل دسترسی "
-"ثبت خواهد شد."
+"پیدا کند، ما قابلیتی به نام <strong>پل (Bridge)</strong> نیز ایجاد کرده‌ایم. "
+"اگر تزریق‌کننده‌ها در شبکه شما مسدود شده باشند، برنامه سِنو به‌دنبال پل‌های در "
+"دسترس می‌گردد که بتوانند درخواست شما را به تزریق‌کننده‌ها منتقل کنند. کاربران "
+"می‌توانند با فعال‌سازی حالت پل در تنظیمات مرورگر سِنو، به بهبود دسترسی دیگران "
+"به محتوای وب کمک کنند. فعالیت پل برای اپراتور آن قابل مشاهده نیست (مگر این "
+"که به‌طور فعال اتصالات ورودی و خروجی دستگاه خود را پایش کند). وظیفه پل دریافت "
+"درخواست‌های شبکه از دیگر کاربران سِنو برای دسترسی به یک تزریق‌کننده و ارسال آن "
+"درخواست است. <strong>آدرس IP دستگاه اپراتور پل در شبکه بیت‌تورنت به‌عنوان یک "
+"پل قابل دسترسی ثبت خواهد شد.</strong>"
 
 #: privacy_policy.html%2Bsection.div.h3:74-1
 msgid "3.3 Log Data"
@@ -466,13 +449,6 @@ msgid "3.4 Crash Reporting"
 msgstr "۳.۴ گزارش اشکال"
 
 #: privacy_policy.html%2Bsection.div.p:89-1
-#, fuzzy
-#| msgid ""
-#| "Users can opt-in to crash reporting via the Settings menu in Ceno "
-#| "Browser. When enabled, Ceno Browser will send crash reports in the event "
-#| "of an issue while running the app. Crash reports are forwarded "
-#| "automatically to a server run by eQualitie. We use Sentry for crash "
-#| "reporting."
 msgid ""
 "Users can opt-in to crash reporting via the Settings menu in Ceno Browser. "
 "When enabled, Ceno Browser will send crash reports in the event of an issue "
@@ -484,7 +460,8 @@ msgstr ""
 "ارسال گزارش اشکال را فعال کنند. در صورت فعال‌سازی، مرورگر سِنو هنگام بروز مشکل "
 "در حین اجرای برنامه، گزارش‌های اشکال را ارسال خواهد کرد. گزارش‌های اشکال "
 "به‌صورت خودکار به سروری ارسال می‌شوند که توسط eQualitie مدیریت می‌شود. ما برای "
-"گزارش‌گیری خرابی‌ها از سرویس Sentry استفاده می‌کنیم."
+"گزارش‌گیری خرابی‌ها از سرویس <a href=\"https://sentry.io/\">Sentry</a> استفاده "
+"می‌کنیم."
 
 #: privacy_policy.html%2Bsection.div.p:91-1
 msgid ""
@@ -531,7 +508,7 @@ msgid ""
 "respective terms of use and privacy policies."
 msgstr ""
 "تعامل شما با این سایت‌های شخص ثالث صرفا بر اساس شرایط استفاده و سیاست‌های حریم "
-"خصوصی خود آن‌ها صورت می‌گیرد؛"
+"خصوصی خود آن‌ها صورت می‌گیرد."
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:104-1
 msgid ""
@@ -539,7 +516,7 @@ msgid ""
 "of third-party websites or services."
 msgstr ""
 "eQualitie مسئولیتی در قبال محتوا، جمع‌آوری داده یا عملکرد این وب‌سایت‌ها یا "
-"خدمات شخص ثالث ندارد؛"
+"خدمات شخص ثالث ندارد."
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:105-1
 msgid "Visiting external sites linked from Ceno is entirely at your own risk."
@@ -554,7 +531,7 @@ msgstr "ما به‌شدت توصیه می‌کنیم که:"
 #: privacy_policy.html%2Bsection.div.p.ul.li:109-1
 msgid ""
 "Exercise caution when clicking on links to unfamiliar or untrusted sites."
-msgstr "هنگام کلیک روی لینک‌های ناشناس یا نامطمئن، جانب احتیاط را رعایت کنید؛"
+msgstr "هنگام کلیک روی لینک‌های ناشناس یا نامطمئن، جانب احتیاط را رعایت کنید."
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:110-1
 msgid ""
@@ -562,7 +539,7 @@ msgid ""
 "visit."
 msgstr ""
 "پیش از استفاده از هر سایت، سیاست‌های حریم خصوصی و شرایط استفاده آن را مطالعه "
-"کنید؛‌"
+"کنید؛."
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:111-1
 msgid ""
@@ -623,10 +600,8 @@ msgstr ""
 "چند گاهی این صفحه را مرور کنید تا از تغییرات احتمالی آگاه شوید."
 
 #: privacy_policy.html%2Bsection.div.p:123-1
-#, fuzzy
-#| msgid "This policy is effective as of 2024-12-18."
 msgid "This policy is effective as of 2025-07-24."
-msgstr "این مجموعه شرایط از تاریخ ۱۸ دسامبر ۲۰۲۴ لازم‌الاجرا است."
+msgstr "این مجموعه شرایط از تاریخ ۲۴ جولای ۲۰۲۵ لازم‌الاجرا است."
 
 #: privacy_policy.html%2Bsection.div.h2:125-1
 msgid "4. Glossary"
@@ -691,6 +666,18 @@ msgid ""
 msgstr ""
 "اگر درباره این سیاست حریم خصوصی سوال یا پیشنهادی دارید، لطفا با ما از طریق "
 "نشانی زیر تماس بگیرید: support [at] ceno [dot] app."
+
+#: privacy_policy.html%2Bsection.div.h2:140-1
+msgid "Notes"
+msgstr "توضیح"
+
+#: privacy_policy.html%2Bsection.div.p:141-1
+msgid ""
+"Translations in other languages are provided for convenience. The English "
+"version shall prevail in case of conflict."
+msgstr ""
+"ترجمه به زبان‌های دیگر صرفا برای سهولت ارائه شده است. در صورت هر گونه مغایرت، "
+"نسخه انگلیسی معتبر خواهد بود."
 
 #~ msgid ""
 #~ "Ceno Browser does not require any personally identifying information to "

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-04 11:49-0400\n"
+"POT-Creation-Date: 2025-09-10 14:53-0400\n"
 "PO-Revision-Date: 2025-08-28 17:15+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/ceno-app/website-"
@@ -567,6 +567,16 @@ msgstr ""
 "Si vous avez des questions ou des suggestions à propos de cette Politique de "
 "confidentialité, n'hésitez pas à nous contacter à : support [at] censure "
 "[dot] no."
+
+#: privacy_policy.html%2Bsection.div.h2:140-1
+msgid "Notes"
+msgstr ""
+
+#: privacy_policy.html%2Bsection.div.p:141-1
+msgid ""
+"Translations in other languages are provided for convenience. The English "
+"version shall prevail in case of conflict."
+msgstr ""
 
 #~ msgid ""
 #~ "Users sharing retrieved content with others may also incur additional "
