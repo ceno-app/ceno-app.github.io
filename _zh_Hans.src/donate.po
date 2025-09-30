@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-10 14:53-0400\n"
-"PO-Revision-Date: 2025-09-08 07:01+0000\n"
-"Last-Translator: jiahao <tjh541885201314@outlook.com>\n"
+"PO-Revision-Date: 2025-10-01 18:02+0000\n"
+"Last-Translator: Jane Kong <myonjane@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/ceno-app/website-v2/website-v2-donate/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -26,6 +26,9 @@ msgid ""
 "getting involved and contributing, please visit <a href=\"community."
 "html\">the Community page!</a>"
 msgstr ""
+"Ceno浏览器是一款完全免费且开源的软件，其运营资金完全依赖于资助和捐赠。以下是"
+"您可通过财务支持助力其持续发展的方式。若想了解其他参与和贡献途径，请访问<a "
+"href=\"community.html\">社区页面！</a>"
 
 #: donate.html%2Bmain.section.div.div.div.div.h2:12-25
 msgid "Make a Donation"
@@ -37,7 +40,7 @@ msgstr "您可以通过 PayPal 支付平台给我们捐赠。"
 
 #: donate.html%2Bmain.section.div.div.div.div.div:14-25
 msgid "Donate via PayPal"
-msgstr ""
+msgstr "通过PayPal捐款"
 
 #: donate.html%2Bmain.section.div.div.div.div.h2:20-25
 msgid "Become a Sponsor"
