@@ -1,31 +1,30 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-20 18:02+0200\n"
-"PO-Revision-Date: 2025-09-20 16:02+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2025-10-01 18:02+0000\n"
+"Last-Translator: Jane Kong <myonjane@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/ceno-app/website-v2/website-v2-privacy-policy/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: ENCODING\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "X-Generator: Weblate 5.14-dev\n"
 
 #: privacy_policy.html%2Btitle:1-1
 msgid "Ceno Browser | Privacy Policy"
-msgstr ""
+msgstr "CENO Browser | 隐私政策"
 
 #: privacy_policy.html%2Bsection.div.h1:4-1
 msgid "Ceno Browser Terms of Use & Privacy Notice"
-msgstr ""
+msgstr "CENO Browser使用条款与隐私声明"
 
 #: privacy_policy.html%2Bsection.div.h2:6-1
 msgid "1. Overview"
-msgstr ""
+msgstr "1. 概要"
 
 #: privacy_policy.html%2Bsection.div.p:7-1
 msgid ""
@@ -40,7 +39,7 @@ msgstr ""
 
 #: privacy_policy.html%2Bsection.div.h2:9-1
 msgid "2. Terms of use"
-msgstr ""
+msgstr "2. 使用条款"
 
 #: privacy_policy.html%2Bsection.div.p:10-1
 msgid ""
@@ -50,13 +49,17 @@ msgid ""
 "the applicable laws of Quebec or Canada or the International Bill of Human "
 "Rights. This includes, but is not limited to, content that:"
 msgstr ""
+"Ceno浏览器应用程序的开发完全遵循eQualitie的核心价值观。使用本软件即表示您承诺"
+"不会利用Ceno发布、分享或存储任何违背eQualitie基本价值观、魁北克省或加拿大适用"
+"法律、以及《世界人权宣言》的内容。此类内容包括但不限于："
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:12-1
 msgid ""
 "Infringes on personal information protection rights, including the "
 "underlying values or the letter of Canada's Privacy Act or PIPEDA (the "
 "Personal Information Protection and Electronic Documents Act);"
-msgstr ""
+msgstr "侵犯个人信息保护权利，包括违反加拿大《隐私法》或《个人信息保护与电子文件法》("
+"PIPEDA)的基本价值或字面规定；"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:13-1
 msgid ""
@@ -144,7 +147,7 @@ msgstr ""
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:35-1
 msgid "IP addresses are not stored"
-msgstr ""
+msgstr "IP地址不会被存储"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:36-1
 msgid "No personal information is collected"
@@ -249,12 +252,12 @@ msgstr ""
 
 #: privacy_policy.html%2Bsection.div.h3:63-1
 msgid "3.2 Data Sharing"
-msgstr ""
+msgstr "3.2 数据共享"
 
 #: privacy_policy.html%2Bsection.div.p:65-1
 msgid ""
 "Ceno Browser (and eQualitie) does not share any data with any third parties."
-msgstr ""
+msgstr "Ceno浏览器（及eQualitie）不会与任何第三方共享任何数据。"
 
 #: privacy_policy.html%2Bsection.div.p:67-1
 msgid ""
@@ -315,22 +318,23 @@ msgstr ""
 msgid ""
 "If the user does decide to contact us, the personally identifiable data we "
 "may collect is:"
-msgstr ""
+msgstr "若用户决定联系我们，我们可能收集的个人身份信息包括："
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:80-1
 msgid "Email address - if the user decided to contact us by email;"
-msgstr ""
+msgstr "电子邮件地址 - 若用户选择通过电子邮件联系我们；"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:81-1
 msgid ""
 "Information the user may provide by email, through help tickets, or through "
 "eQualitie websites, and associated metadata - for the purposes of providing "
 "technical support;"
-msgstr ""
+msgstr "用户可能通过电子邮件、帮助工单或eQualitie网站提供的信息及相关元数据——用于提供"
+"技术支持；"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:82-1
 msgid "Web browsing activity and history."
-msgstr ""
+msgstr "网页浏览活动和历史记录。"
 
 #: privacy_policy.html%2Bsection.div.p:85-1
 msgid "None of this data is shared with any third parties."
