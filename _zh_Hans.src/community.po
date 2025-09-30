@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-10 14:53-0400\n"
-"PO-Revision-Date: 2025-09-08 07:01+0000\n"
-"Last-Translator: jiahao <tjh541885201314@outlook.com>\n"
+"PO-Revision-Date: 2025-10-01 18:02+0000\n"
+"Last-Translator: Jane Kong <myonjane@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/ceno-app/website-v2/website-v2-community/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -42,11 +42,11 @@ msgstr ""
 #: community.html%2Bmain.section.div.div.p:13-17
 msgid ""
 "Run Ceno Browser on your Android device, and/or on a spare, always-on device."
-msgstr ""
+msgstr "在您的安卓设备上运行Ceno浏览器，和/或将其安装在备用且常开的设备上。"
 
 #: community.html%2Bmain.section.div.div.h4:14-17
 msgid "Run the Ceno Docker Client:"
-msgstr ""
+msgstr "运行 Ceno Docker 客户端："
 
 #: community.html%2Bmain.section.div.div.ol.li:16-21
 msgid ""
@@ -59,13 +59,14 @@ msgstr ""
 msgid ""
 "Open a portal to the internet: Ensure UPnP is enabled on your router, or set "
 "up port forwarding."
-msgstr ""
+msgstr "开启一条通往互联网的通道：确保路由器已启用UPnP功能，或设置端口转发。"
 
 #: community.html%2Bmain.section.div.div.ol.li:19-21
 msgid ""
 "To see if it's working, create and open a new Firefox Profile, and set the "
 "proxy to localhost, port 8077."
-msgstr ""
+msgstr "要验证是否生效，请创建并打开一个新的Firefox配置文件，并将代理服务器设置为loca"
+"lhost，端口8077。"
 
 #: community.html%2Bmain.section.div.div.ol.li:20-21
 msgid ""
@@ -75,14 +76,15 @@ msgstr ""
 
 #: community.html%2Bmain.section.div.div.h2:30-17
 msgid "Contribute to our code"
-msgstr ""
+msgstr "为我们的代码做出贡献"
 
 #: community.html%2Bmain.section.div.div.p:31-17
 msgid ""
 "Ceno is a free and open source tool, one of many developed and maintained by "
 "eQualitie. If you are interested in Ceno's source code please check the "
 "following Git repositories:"
-msgstr ""
+msgstr "Ceno是一款自由且开源的工具，是由eQualitie开发并维护的众多工具之一。若您对Ceno"
+"的源代码感兴趣，请查阅以下Git代码库："
 
 #: community.html%2Bmain.section.div.div.ul.li:33-21
 msgid "Ceno for Android"
@@ -113,7 +115,7 @@ msgstr ""
 
 #: community.html%2Bmain.section.div.div.h2:46-17
 msgid "Share your feedback"
-msgstr ""
+msgstr "分享您的反馈"
 
 #: community.html%2Bmain.section.div.div.p:47-17
 msgid ""
@@ -122,10 +124,13 @@ msgid ""
 "helps spread the word about Ceno, which grows the network. With your "
 "consent, we may also highlight your story on our website!"
 msgstr ""
+"Ceno依赖用户反馈来了解用户需求、提出改进建议并发掘新功能。分享您的故事也有助"
+"于传播Ceno的理念，从而扩大用户网络。在征得您同意后，我们还可能在官网上展示您"
+"的故事！"
 
 #: community.html%2Bmain.section.div.div.ul.li:49-21
 msgid "Write a review on the Play Store"
-msgstr ""
+msgstr "在Play 商店撰写评价"
 
 #: community.html%2Bmain.section.div.div.ul.li:50-21
 msgid "Get in touch with the team: support [at] ceno [dot] app"
@@ -146,10 +151,13 @@ msgid ""
 "by helping them download and use Ceno. Promote Ceno at community events by "
 "sharing materials or hosting a panel or meetup."
 msgstr ""
+"Ceno的使用者越多，其性能就越稳定可靠。告诉亲友如何成为桥梁节点或获取受限内容"
+"，帮助他们下载并使用Ceno。在社区活动中推广Ceno，可通过分享宣传资料、组织专题"
+"讨论会或线下聚会等方式进行。"
 
 #: community.html%2Bmain.section.div.div.h2:69-17
 msgid "Help translate"
-msgstr ""
+msgstr "协助翻译"
 
 #: community.html%2Bmain.section.div.div.p:70-17
 msgid ""
