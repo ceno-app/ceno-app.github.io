@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-10 14:53-0400\n"
-"PO-Revision-Date: 2025-09-08 07:01+0000\n"
-"Last-Translator: jiahao <tjh541885201314@outlook.com>\n"
+"PO-Revision-Date: 2025-10-01 18:02+0000\n"
+"Last-Translator: Jane Kong <myonjane@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
 "projects/ceno-app/website-v2/website-v2-about/zh_Hans/>\n"
 "Language: zh_Hans\n"
@@ -30,6 +30,10 @@ msgid ""
 "People using Ceno Browser are able to access a library of saved internet "
 "content that continues to be available during service interruptions."
 msgstr ""
+"面对网络限制的人们可以使用许多工具，但这些工具往往无法在互联网中断、封锁、VPN"
+"故障及其他干扰发生时提供帮助。<br><b>Ceno 则不同。</b>使用 Ceno "
+"浏览器的用户能够访问一个事先保存的互联网内容库，即使在服务中断期间，这些内容"
+"依然可用。"
 
 #: about.html%2Bmain.section.div.div.div.p:16-21
 msgid ""
@@ -49,11 +53,11 @@ msgstr ""
 
 #: about.html%2Bmain.section.div.div.div.div.a.div:20-67
 msgid "Learn how Ceno works"
-msgstr ""
+msgstr "了解Ceno如何运作"
 
 #: about.html%2Bmain.section.div.h2:28-13
 msgid "The team behind Ceno"
-msgstr ""
+msgstr "Ceno背后的团队"
 
 #: about.html%2Bmain.section.div.div.p:30-17
 msgid ""
@@ -72,16 +76,19 @@ msgid ""
 "You can <a href=\"https://gitlab.com/ceno-app\">inspect our code</a> or re-"
 "create the entire network yourself!"
 msgstr ""
+"Ceno——以及构成该工具的所有配套组件，共同构建了一个去中心化的对等节点网络——是"
+"完全免费自由的开源软件。您可以<a href=\"https://gitlab.com/ceno-app\""
+">查阅我们的代码</a>，甚至亲手重建整个网络！"
 
 #: about.html%2Bmain.section.div.div.h2:44-17
 msgid "Is Ceno for me?"
-msgstr ""
+msgstr "Ceno适合我吗？"
 
 #: about.html%2Bmain.section.div.div.div.p:46-21
 msgid ""
 "Ceno is for everyone. It can replace your existing mobile browser as it "
 "shares many of the same functions and features."
-msgstr ""
+msgstr "Ceno适合所有人。它能替代您现有的手机浏览器，因为它具备许多相同的功能和特性。"
 
 #: about.html%2Bmain.section.div.div.div.p:47-21
 msgid ""
@@ -95,7 +102,7 @@ msgstr ""
 msgid ""
 "Ceno is especially useful for people facing internet censorship or "
 "connectivity issues."
-msgstr ""
+msgstr "Ceno对面临互联网审查或网络连接问题的人群尤为实用。"
 
 #: about.html%2Bmain.section.div.div:54-13
 msgctxt "./about.html+main.section.div.div:54-13"
@@ -105,7 +112,7 @@ msgstr ""
 #: about.html%2Bmain.section.div.div:58-13
 msgctxt "./about.html+main.section.div.div:58-13"
 msgid "Student"
-msgstr ""
+msgstr "学生"
 
 #: about.html%2Bmain.section.div.div:62-13
 msgid "Human rights defender"
