@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-23 16:05-0400\n"
+"POT-Creation-Date: 2025-10-01 14:29-0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.11.1\n"
+"X-Generator: Translate Toolkit 3.12.2\n"
 
 #: ./latest/index.html%2Bmain.h1:2-1
 msgid "latest"
@@ -24,16 +24,16 @@ msgstr ""
 msgid "December 15, 2022"
 msgstr ""
 
-#: ./latest/index.html%2Bmain.section.article.h1:12-5
+#: ./latest/index.html%2Bmain.section.article.h1:13-5
 msgid "Ceno proves itself in Iran during Internet shutdowns"
 msgstr ""
 
-#: ./latest/index.html%2Bmain.section.article.div:15-5
+#: ./latest/index.html%2Bmain.section.article.div:17-5
 msgid ""
 "eQualitie is pleased to announce that its Ceno Browser is fulfilling its "
 "mission of assisting thousands in Iran, while also…"
 msgstr ""
 
-#: ./latest/index.html%2Bmain.section.article:15-155
+#: ./latest/index.html%2Bmain.section.article:19-13
 msgid "Read more"
 msgstr ""

@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>First time run - Ceno User Manual</title>
+        <title>اولین اجرا - Ceno User Manual</title>
 
 
         <!-- Custom HTML head -->
@@ -36,6 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "light";
+            window.path_to_searchindex_js = "searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc.js"></script>
@@ -92,10 +93,13 @@
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -146,7 +150,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -166,64 +175,62 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="first-time-run"><a class="header" href="#first-time-run">First time run</a></h1>
-<h2 id="guided-tour"><a class="header" href="#guided-tour">Guided tour</a></h2>
-<p>When you run your Ceno app for the first time, you will be invited to a small
-guided tour around the main Ceno features, which you can accept (by tapping on
-the ‘Get Started’ button) or skip (by tapping ‘Skip the tour’)</p>
+                        <h1 id="اولین-اجرا"><a class="header" href="#اولین-اجرا">اولین اجرا</a></h1>
+<h2 id="راهنمای-گامبهگام"><a class="header" href="#راهنمای-گامبهگام">راهنمای گام‌به‌گام</a></h2>
+<p>هنگامی که برای نخستین بار برنامه‌ی سنو را اجرا می‌کنید، به یک تور راهنمای
+گام‌به‌گام و کوتاه از ویژگی‌های اصلی سنو دعوت می‌شوید. می‌توانید آن را بپذیرید
+(با زدن رو «شروع کنید») یا رد کنید (با لمس «صرف‌نظر از تور»)</p>
 <img src="./images/start_tour.png" alt="Start the tour" width="400"/>
-<p>The tour will take you through the most important features, as shown by the
-following screens.</p>
+<p>این تور شما را همان طور که در تصاویر زیر نشان داده شده، یر با مهم‌ترین ویژگی‌های
+برنامه آشنا می‌کند.</p>
 <img src="./images/tour1.png" alt="Tour part 1" width="300"/>
 <img src="./images/tour2.png" alt="Tour part 1" width="300"/>
 <img src="./images/tour3.png" alt="Tour part 1" width="300"/>
 <img src="./images/tour4.png" alt="Tour part 1" width="300"/>
 <h2 id="مجوزها"><a class="header" href="#مجوزها">مجوزها</a></h2>
-<p>At the end of the Tour, you will be asked to give Ceno the permissions it needs
-for optimal functioning:</p>
+<p>در پایان تور از شما درخواست می‌شود تا برای عملکرد بهینه‌، مجوزهای لازم را به سنو
+بدهید:</p>
 <img src="./images/permissions_needed.png" alt="Permissions needed" width="400"/>
-<p>When you tap on Continue, depending on the version of Android that you have on
-your phone, you will be required to give Ceno permissions to send you
-notifications and to disable battery optimisation. Some Android versions require
-both, and some just the permission to disable the battery optimisation.</p>
+<p>وقتی روی «ادامه» بزنید، بسته به نسخه اندروید گوشی‌تان، لازم است مجوز ارسال
+اعلان‌ها و غیرفعال کردن بهینه‌سازی باتری را به سنو بدهید. بعضی نسخه‌های اندروید
+هر دو را نیاز دارند و بعضی فقط مجوز غیرفعال کردن بهینه‌سازی باتری را می‌خواهند.</p>
 <h3 id="اعلانها"><a class="header" href="#اعلانها">اعلان‌ها</a></h3>
-<p><img src="./images/notifications.png" alt="Notifications" /></p>
-<p>When you allow Ceno to send you notifications, the app will display the Ceno
-icon in your notification bar.</p>
+<p><img src="./images/notifications.png" alt="اعلان‌ها" /></p>
+<p>وقتی به سنو اجازه ارسال اعلان بدهید، برنامه آیکون سنو را در نوار اعلان‌ها نمایش
+خواهد داد.</p>
 <img src="./images/notification_bar.png" alt="Notifications bar" width="400"/>
-<p>The icon will appear when you access the first website.</p>
-<p>This icon represents the Ceno Browser service, which is the part of Ceno that
-runs permanently (even when you are not browsing) and allows other ceno users to
-retrieve content from it at any time. Since running such service uses network
-and processor resources, you may want to stop it whenever you are on the move
-(i.e. not connected to Wi-Fi or far from a charger).<br />
-Tapping on the Stop button will stop both Ceno and its service at once (until
-you open Ceno again).</p>
+<p>این آیکون هنگام دسترسی به نخستین وب‌سایت ظاهر خواهد شد.</p>
+<p>این آیکون نشان‌دهنده سرویس مرورگر سنو است، یعنی آن بخشی از سنو که به‌طور دائمی
+اجرا می‌شود (حتی زمانی که مشغول مرور نیستید) و به دیگر کاربران سنو امکان می‌دهد
+در هر زمانی محتوایی را از آن دریافت کنند. از آن‌جا که اجرای چنین سرویسی منابع
+شبکه و پردازنده را مصرف می‌کند، ممکن است بخواهید هر زمان که در حال جابه‌جایی
+هستید (مثلا وقتی به وای‌فای متصل نیستید یا از شارژر دورید) آن را متوقف کنید.<br />
+با زدن روی دکمه «توقف»، هم سنو و هم سرویس آن به‌طور هم‌زمان متوقف می‌شوند (تا
+زمانی که دوباره سنو را باز کنید).</p>
 <img src="./images/ceno_notification1.png" alt="Ceno notification 1" width="400"/>
-<p>Tapping on the Clear button will open another small notification</p>
+<p>زدن روی دکمه‌ی «پاک کردن» یک اعلان کوچک دیگر باز می‌کند</p>
 <img src="./images/ceno_notification2.png" alt="Ceno notification 2" width="400"/>
-<p>Tapping on Yes will delete not only the cached data in the Ceno app on your
-device, but also any customization settings, such as default address bar
-position, or light theme, or your favorites and other settings you may have
-chosen. If you tap on the Yes action, Ceno will be stopped and all its data
-removed without further questions, effectively leaving your device as if Ceno
-had never been used.</p>
-<p><em>Warning: Android may still keep other traces of having used an app besides its
-data, for instance in its system log</em></p>
-<h3 id="stop-battery-optimising-usage"><a class="header" href="#stop-battery-optimising-usage">Stop battery optimising usage</a></h3>
-<p><img src="./images/optimise_battery.png" alt="Do not optimise battery" /></p>
-<p>This option is usually present in apps that need to run in the background even
-when not actively used, which is the case with the Ceno app. Under normal
-conditions, your android phone will try to optimise the battery usage of various
-apps that may be running on your device. Your phone's operating system does this
-to prolong the battery life between the two charging sessions. In order to do
-this, it sometimes stops the apps that are running and using the battery, but
-are not actively used by you. When you allow Ceno to stop optimising the battery
-usage, your phone's operating system will be less likely to stop your Ceno app
-when you are not actively using it. Allowing your Ceno app to run even when not
-actively used helps the whole Ceno peer-to-peer network to run better and to
-respond to more user requests. When you allow this option you are helping all
-users within the Ceno network.</p>
+<p>زدن روی «بله» نه‌تنها داده‌های ذخیره‌شده در برنامه سنو روی دستگاه شما را حذف
+می‌کند، بلکه تمام تنظیمات سفارشی مانند موقعیت پیش‌فرض نوار آدرس، یا تم روشن، یا
+موارد دلخواه و سایر تنظیماتی را که انتخاب کرده‌اید نیز پاک خواهد کرد. اگر روی
+گزینه «بله» بزنید، سنو متوقف شده و همه داده‌های آن بدون پرسش بیش‌تر حذف می‌شود و
+دستگاه شما عملا در وضعیتی قرار می‌گیرد که انگار هرگز از سنو استفاده نشده است.</p>
+<p><em>هشدار: اندروید ممکن است جدا از داده‌های یک برنامه، ردهای دیگری از استفاده از آن
+را هم مثلا در گزارش سیستمی نگه دارد</em></p>
+<h3 id="توقف-بهینهسازی-مصرف-باتری"><a class="header" href="#توقف-بهینهسازی-مصرف-باتری">توقف بهینه‌سازی مصرف باتری</a></h3>
+<p><img src="./images/optimise_battery.png" alt="باتری را بهینه‌سازی نکن" /></p>
+<p>این گزینه معمولا در برنامه‌هایی وجود دارد که نیاز دارند حتی زمانی که به‌طور فعال
+استفاده نمی‌شوند در پس‌زمینه اجرا شوند، مانند برنامه‌ی سنو. در شرایط عادی، گوشی
+اندرویدی شما تلاش می‌کند مصرف باتری برنامه‌های مختلفی را که ممکن است روی
+دستگاه‌‌تان اجرا شوند بهینه کند. سیستم‌عامل گوشی این کار را برای طولانی‌تر کردن
+عمر باتری بین دو بار شارژ انجام می‌دهد. برای این منظور، گاهی برنامه‌هایی را که
+در حال اجرا و مصرف باتری هستند اما به‌طور فعال از آن‌ها استفاده نمی‌کنید، متوقف
+می‌کند. وقتی به سنو اجازه می‌دهید که بهینه‌سازی مصرف باتری متوقف شود، احتمال
+کمتری هست که سیستم‌عامل گوشی شما برنامه سنو را موقعی که به‌طور فعال از آن
+استفاده نمی‌کنید متوقف کند. اجازه دادن به اجرای برنامه سنو حتی در زمانی که
+فعالانه استفاده نمی‌شود، به کل شبکه همتابه‌همتای سنو کمک می‌کند بهتر کار کند و
+به درخواست‌های کاربران بیش‌تری پاسخ دهد. با فعال کردن این گزینه، شما به همه
+کاربران در شبکه سنو کمک می‌کنید.</p>
 
                     </main>
 
@@ -271,6 +278,7 @@ users within the Ceno network.</p>
         <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>

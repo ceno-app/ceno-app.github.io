@@ -37,6 +37,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "light";
+            window.path_to_searchindex_js = "searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc.js"></script>
@@ -93,10 +94,13 @@
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -147,7 +151,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -170,11 +179,11 @@
                         <h1 id="مرورگر-سنو"><a class="header" href="#مرورگر-سنو">مرورگر سنو</a></h1>
 <p>وب را دست به دست کن! سِنو اولین مرورگر وب در جهان است که عملکردش با هر نصبِ
 تازه، بهتر می‌شود. این مرورگر در عین فراهم آوردن تجربه‌ای عادی از وب‌گردی، بر
-پایه‌ی فناوری همتا‌به‌همتا (P2P) عمل می‌کند تا وب‌سایت‌ها را بین تمام کاربران
-دست به دست کند. سِنو همچنین می‌تواند برای دور زدن محدودیت‌های شبکه و دسترسی به
-محتوا در زمان قطعی اینترنت استفاده شود.</p>
-<p>🔓👀 با سِنو به رسانه‌های فیلترشده و دیگر وب‌سایت‌ها دسترسی پیدا کنید. در حالت
-شخصی، این دسترسی رایگان و ناشناس است.</p>
+پایه فناوری همتا‌به‌همتا (P2P) عمل می‌کند تا وب‌سایت‌ها را بین تمام کاربران دست
+به دست کند. سِنو همچنین می‌تواند برای دور زدن محدودیت‌های شبکه و دسترسی به محتوا
+در زمان قطعی اینترنت استفاده شود.</p>
+<p>🔓👀 با سِنو به رسانه‌های فیلترشده و دیگر وب‌سایت‌ها دسترسی پیدا کنید. این دسترسی
+رایگان و در حالت شخصی، ناشناس است.</p>
 <p>🚫🌴 در صورت قطع اینترنت در کشور، همچنان می‌توانید به‌کمک سِنو اخبار را بخوانید و
 در ارتباط بمانید.</p>
 <p>📱🤝📱 اگر در کشوری با دسترسی آزاد به اینترنت زندگی می‌کنید، با سِنو می‌توانید
@@ -192,363 +201,354 @@
 اطلاعات شخصی‌ای جمع‌آوری نمی‌شود و این داده‌ها هرگز با اشخاص ثالث به اشتراک
 گذاشته نمی‌شوند. جمع‌آوری این داده‌ها به‌صورت پیش‌فرض فعال است، اما کاربران
 می‌توانند در هر زمان با مراجعه به تنظیمات ← آمار پس‌زمینه ← آمار سنو آن را
-غیرفعال کنند. برای اطلاعات بیش‌تر درباره‌ی داده‌هایی که جمع‌آوری می‌کنیم، لطفا
+غیرفعال کنند. برای اطلاعات بیش‌تر درباره داده‌هایی که جمع‌آوری می‌کنیم، لطفا
 سیاست حفظ حریم خصوصی را ببینید.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="مقدمه"><a class="header" href="#مقدمه">مقدمه</a></h1>
-<p>Ceno is a mobile web browser based on Mozilla Android Components. It is designed
-for accessing and distributing web content (websites) using a novel approach
-that relies on <a href="https://en.wikipedia.org/wiki/BitTorrent">BitTorrent – a decentralized file sharing
-network</a>. Ceno's advantage comes from
-side-stepping current Internet censorship methods and allowing people to access
-and share web information in and across regions where connectivity has been
-interrupted or compromised.</p>
-<p>Ceno Browser allows you to access any website on the Internet, even if it is not
-normally accessible in your country or region.</p>
-<p>If a website you want to visit is accessible, Ceno will access it directly and
-behave like any other browser. But if you are not able to access the desired
-website directly, Ceno will attempt to access it through its own peer-to-peer
-network. Ceno will cache the accessed website contents and make them available
-to other Ceno users utilising the peer-to-peer technology.</p>
-<p>When other members of the Ceno network request the same contents and they are
-not able to access them directly, Ceno will identify that the requested website
-content is stored in the cache of your Ceno app. From there, it will be uploaded
-from your device to the internet and redirected to the person who requested it.
-In the <a href="./settings.html">Settings</a> of your Ceno app, you will be able to see how
-much data has been stored on your device and all the websites you have shared.</p>
-<p>Of course this only applies to the websites you visit in the <a href="./public-or-personal.html#public-browsing---when-to-use-it"><strong>Public
-mode</strong></a>.</p>
-<p>For all your personal needs, such as emails, messages, subscriptions or
-purchases, we have provided a <a href="./public-or-personal.html#personal-browsing---when-to-use-it"><strong>Personal
-mode</strong></a>. When you
-access the internet in this mode, Ceno app doesn’t store the pages you access,
-and therefore it does not share them with anybody else.</p>
-<p>This user guide contains detailed information about Ceno's features and their
-purpose.</p>
-<p>We hope you enjoy using our app.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="installation"><a class="header" href="#installation">Installation</a></h1>
-<p>Ceno for Android can be downloaded from following platforms: <a href="https://play.google.com/store/apps/details?id=ie.equalit.ceno">Google
-Play</a>,
-<a href="https://gitlab.com/ceno-app/ceno-android/-/releases">Gitlab</a>,
-<a href="https://paskoocheh.com/tools/124/android.html?">Paskoocheh</a> or
+<p>سنو یک مرورگر وب موبایل بر پایه‌ی اجزای اندروید موزیلا است. این مرورگر برای
+دسترسی و توزیع محتوای وب (وب‌سایت‌ها) با رویکردی نو طراحی شده است که بر
+<a href="https://en.wikipedia.org/wiki/BitTorrent">بیت‌تورنت – یک شبکه اشتراک‌گذاری فایل
+غیرمتمرکز</a> متکی است. مزیت سنو در دور
+زدن روش‌های کنونی سانسور اینترنت و فراهم کردن امکان دسترسی و اشتراک‌گذاری
+اطلاعات وب در مناطق و میان کاربرانی است که اتصال اینترنت آن‌ها قطع یا مختل شده
+است.</p>
+<p>مرورگر سنو این امکان را می‌دهد که به هر وب‌سایتی در اینترنت دسترسی داشته باشید،
+حتی اگر به طور معمول در کشور یا منطقه شما قابل دسترسی نباشد.</p>
+<p>اگر وب‌سایتی که می‌خواهید بازدید کنید قابل دسترسی باشد، سنو به‌طور مستقیم به آن
+دسترسی پیدا کرده و مانند هر مرورگر دیگری عمل می‌کند. اما اگر نتوانید مستقیما به
+وب‌سایت مورد نظر دسترسی داشته باشید، سنو تلاش می‌کند از طریق شبکه همتابه‌همتای
+خود به آن دسترسی پیدا کند. سنو محتوای وب‌سایت بازیابی‌شده را در حافظه ذخیره
+می‌کند و با استفاده از فناوری همتابه‌همتا در دسترس سایر کاربران سنو قرار می‌دهد.</p>
+<p>وقتی سایر اعضای شبکه سنو همان محتوا را درخواست کنند و نتوانند مستقیما به آن
+دسترسی پیدا کنند، سنو تشخیص می‌دهد که محتوای وب‌سایت در حافظه پنهان برنامه‌ی سنو
+روی دستگاه شما ذخیره شده است. سپس آن محتوا از دستگاه شما به اینترنت بارگذاری شده
+و به کاربری که آن را درخواست کرده منتقل می‌شود. در بخش
+<a href="./settings.html">تنظیمات</a> برنامه‌ی سنو، می‌توانید ببینید چه مقدار داده روی
+دستگاه شما ذخیره شده و کدام وب‌سایت‌ها را به اشتراک گذاشته‌اید.</p>
+<p>البته این مورد فقط درباره‌ی وب‌سایت‌هایی صدق می‌کند که در [<strong>حالت
+عمومی</strong>](./public-or-personal.html#public-browsing---when-to-use-it) بازدید
+می‌کنید.</p>
+<p>برای همه نیازهای شخصی شما مانند ایمیل‌ها، پیام‌ها، عضویت‌ها یا خریدها، ما
+<a href="./public-or-personal.html#personal-browsing---when-to-use-it"><strong>حالت شخصی</strong></a> را
+ارائه کرده‌ایم. وقتی در این حالت به اینترنت دسترسی پیدا می‌کنید، برنامه سنو
+صفحه‌هایی را که باز می‌کنید ذخیره نمی‌کند و بنابراین آن‌ها را با هیچ‌ کس دیگری
+به اشتراک نمی‌گذارد.</p>
+<p>این راهنمای کاربر شامل اطلاعات دقیقی درباره ویژگی‌های سنو و کاربرد آن‌ها است.</p>
+<p>امیدواریم از کار با برنامه ما رضایت داشته باشید.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="نصب"><a class="header" href="#نصب">نصب</a></h1>
+<p>سنو برای اندروید را می‌توان از طریق پلتفرم‌های زیر دانلود کرد: <a href="https://play.google.com/store/apps/details?id=ie.equalit.ceno">گوگل
+پلی</a>،
+<a href="https://gitlab.com/ceno-app/ceno-android/-/releases">گیت‌لب</a>،
+<a href="https://paskoocheh.com/tools/124/android.html?">پس‌کوچه</a> یا
 <a href="https://dcomm.net.ua/en/">dComms</a>.</p>
-<p>Please download the app and install it. Once installed, tap on Open. The first
-Ceno screen you will see is this one</p>
+<p>لطفا برنامه را دانلود و نصب کنید. پس از نصب، روی «باز کردن» بزنید. نخستین
+صفحه‌ای که در سنو خواهید دید این است</p>
 <img src="./images/first_screen.png" alt="Ceno first screen" width="50%"/>
-<p>It will be displayed for a few seconds while the Ceno app is making connections
-with the rest of the Ceno network. After that short period of time, the app
-welcomes you to its Onboarding screens.</p>
+<p>این صفحه هنگامی که برنامه سنو در حال برقراری اتصال با بقیه شبکه سنو است برای چند
+ثانیه نمایش داده می‌شود. پس از این مدت کوتاه، برنامه شما را به صفحه‌های آشناسازی
+می‌برد.</p>
 <img src="./images/welcome.png" alt="Ceno first screen" width="50%"/>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="first-time-run"><a class="header" href="#first-time-run">First time run</a></h1>
-<h2 id="guided-tour"><a class="header" href="#guided-tour">Guided tour</a></h2>
-<p>When you run your Ceno app for the first time, you will be invited to a small
-guided tour around the main Ceno features, which you can accept (by tapping on
-the ‘Get Started’ button) or skip (by tapping ‘Skip the tour’)</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="اولین-اجرا"><a class="header" href="#اولین-اجرا">اولین اجرا</a></h1>
+<h2 id="راهنمای-گامبهگام"><a class="header" href="#راهنمای-گامبهگام">راهنمای گام‌به‌گام</a></h2>
+<p>هنگامی که برای نخستین بار برنامه‌ی سنو را اجرا می‌کنید، به یک تور راهنمای
+گام‌به‌گام و کوتاه از ویژگی‌های اصلی سنو دعوت می‌شوید. می‌توانید آن را بپذیرید
+(با زدن رو «شروع کنید») یا رد کنید (با لمس «صرف‌نظر از تور»)</p>
 <img src="./images/start_tour.png" alt="Start the tour" width="400"/>
-<p>The tour will take you through the most important features, as shown by the
-following screens.</p>
+<p>این تور شما را همان طور که در تصاویر زیر نشان داده شده، یر با مهم‌ترین ویژگی‌های
+برنامه آشنا می‌کند.</p>
 <img src="./images/tour1.png" alt="Tour part 1" width="300"/>
 <img src="./images/tour2.png" alt="Tour part 1" width="300"/>
 <img src="./images/tour3.png" alt="Tour part 1" width="300"/>
 <img src="./images/tour4.png" alt="Tour part 1" width="300"/>
 <h2 id="مجوزها"><a class="header" href="#مجوزها">مجوزها</a></h2>
-<p>At the end of the Tour, you will be asked to give Ceno the permissions it needs
-for optimal functioning:</p>
+<p>در پایان تور از شما درخواست می‌شود تا برای عملکرد بهینه‌، مجوزهای لازم را به سنو
+بدهید:</p>
 <img src="./images/permissions_needed.png" alt="Permissions needed" width="400"/>
-<p>When you tap on Continue, depending on the version of Android that you have on
-your phone, you will be required to give Ceno permissions to send you
-notifications and to disable battery optimisation. Some Android versions require
-both, and some just the permission to disable the battery optimisation.</p>
+<p>وقتی روی «ادامه» بزنید، بسته به نسخه اندروید گوشی‌تان، لازم است مجوز ارسال
+اعلان‌ها و غیرفعال کردن بهینه‌سازی باتری را به سنو بدهید. بعضی نسخه‌های اندروید
+هر دو را نیاز دارند و بعضی فقط مجوز غیرفعال کردن بهینه‌سازی باتری را می‌خواهند.</p>
 <h3 id="اعلانها"><a class="header" href="#اعلانها">اعلان‌ها</a></h3>
-<p><img src="./images/notifications.png" alt="Notifications" /></p>
-<p>When you allow Ceno to send you notifications, the app will display the Ceno
-icon in your notification bar.</p>
+<p><img src="./images/notifications.png" alt="اعلان‌ها" /></p>
+<p>وقتی به سنو اجازه ارسال اعلان بدهید، برنامه آیکون سنو را در نوار اعلان‌ها نمایش
+خواهد داد.</p>
 <img src="./images/notification_bar.png" alt="Notifications bar" width="400"/>
-<p>The icon will appear when you access the first website.</p>
-<p>This icon represents the Ceno Browser service, which is the part of Ceno that
-runs permanently (even when you are not browsing) and allows other ceno users to
-retrieve content from it at any time. Since running such service uses network
-and processor resources, you may want to stop it whenever you are on the move
-(i.e. not connected to Wi-Fi or far from a charger).<br />
-Tapping on the Stop button will stop both Ceno and its service at once (until
-you open Ceno again).</p>
+<p>این آیکون هنگام دسترسی به نخستین وب‌سایت ظاهر خواهد شد.</p>
+<p>این آیکون نشان‌دهنده سرویس مرورگر سنو است، یعنی آن بخشی از سنو که به‌طور دائمی
+اجرا می‌شود (حتی زمانی که مشغول مرور نیستید) و به دیگر کاربران سنو امکان می‌دهد
+در هر زمانی محتوایی را از آن دریافت کنند. از آن‌جا که اجرای چنین سرویسی منابع
+شبکه و پردازنده را مصرف می‌کند، ممکن است بخواهید هر زمان که در حال جابه‌جایی
+هستید (مثلا وقتی به وای‌فای متصل نیستید یا از شارژر دورید) آن را متوقف کنید.<br />
+با زدن روی دکمه «توقف»، هم سنو و هم سرویس آن به‌طور هم‌زمان متوقف می‌شوند (تا
+زمانی که دوباره سنو را باز کنید).</p>
 <img src="./images/ceno_notification1.png" alt="Ceno notification 1" width="400"/>
-<p>Tapping on the Clear button will open another small notification</p>
+<p>زدن روی دکمه‌ی «پاک کردن» یک اعلان کوچک دیگر باز می‌کند</p>
 <img src="./images/ceno_notification2.png" alt="Ceno notification 2" width="400"/>
-<p>Tapping on Yes will delete not only the cached data in the Ceno app on your
-device, but also any customization settings, such as default address bar
-position, or light theme, or your favorites and other settings you may have
-chosen. If you tap on the Yes action, Ceno will be stopped and all its data
-removed without further questions, effectively leaving your device as if Ceno
-had never been used.</p>
-<p><em>Warning: Android may still keep other traces of having used an app besides its
-data, for instance in its system log</em></p>
-<h3 id="stop-battery-optimising-usage"><a class="header" href="#stop-battery-optimising-usage">Stop battery optimising usage</a></h3>
-<p><img src="./images/optimise_battery.png" alt="Do not optimise battery" /></p>
-<p>This option is usually present in apps that need to run in the background even
-when not actively used, which is the case with the Ceno app. Under normal
-conditions, your android phone will try to optimise the battery usage of various
-apps that may be running on your device. Your phone's operating system does this
-to prolong the battery life between the two charging sessions. In order to do
-this, it sometimes stops the apps that are running and using the battery, but
-are not actively used by you. When you allow Ceno to stop optimising the battery
-usage, your phone's operating system will be less likely to stop your Ceno app
-when you are not actively using it. Allowing your Ceno app to run even when not
-actively used helps the whole Ceno peer-to-peer network to run better and to
-respond to more user requests. When you allow this option you are helping all
-users within the Ceno network.</p>
+<p>زدن روی «بله» نه‌تنها داده‌های ذخیره‌شده در برنامه سنو روی دستگاه شما را حذف
+می‌کند، بلکه تمام تنظیمات سفارشی مانند موقعیت پیش‌فرض نوار آدرس، یا تم روشن، یا
+موارد دلخواه و سایر تنظیماتی را که انتخاب کرده‌اید نیز پاک خواهد کرد. اگر روی
+گزینه «بله» بزنید، سنو متوقف شده و همه داده‌های آن بدون پرسش بیش‌تر حذف می‌شود و
+دستگاه شما عملا در وضعیتی قرار می‌گیرد که انگار هرگز از سنو استفاده نشده است.</p>
+<p><em>هشدار: اندروید ممکن است جدا از داده‌های یک برنامه، ردهای دیگری از استفاده از آن
+را هم مثلا در گزارش سیستمی نگه دارد</em></p>
+<h3 id="توقف-بهینهسازی-مصرف-باتری"><a class="header" href="#توقف-بهینهسازی-مصرف-باتری">توقف بهینه‌سازی مصرف باتری</a></h3>
+<p><img src="./images/optimise_battery.png" alt="باتری را بهینه‌سازی نکن" /></p>
+<p>این گزینه معمولا در برنامه‌هایی وجود دارد که نیاز دارند حتی زمانی که به‌طور فعال
+استفاده نمی‌شوند در پس‌زمینه اجرا شوند، مانند برنامه‌ی سنو. در شرایط عادی، گوشی
+اندرویدی شما تلاش می‌کند مصرف باتری برنامه‌های مختلفی را که ممکن است روی
+دستگاه‌‌تان اجرا شوند بهینه کند. سیستم‌عامل گوشی این کار را برای طولانی‌تر کردن
+عمر باتری بین دو بار شارژ انجام می‌دهد. برای این منظور، گاهی برنامه‌هایی را که
+در حال اجرا و مصرف باتری هستند اما به‌طور فعال از آن‌ها استفاده نمی‌کنید، متوقف
+می‌کند. وقتی به سنو اجازه می‌دهید که بهینه‌سازی مصرف باتری متوقف شود، احتمال
+کمتری هست که سیستم‌عامل گوشی شما برنامه سنو را موقعی که به‌طور فعال از آن
+استفاده نمی‌کنید متوقف کند. اجازه دادن به اجرای برنامه سنو حتی در زمانی که
+فعالانه استفاده نمی‌شود، به کل شبکه همتابه‌همتای سنو کمک می‌کند بهتر کار کند و
+به درخواست‌های کاربران بیش‌تری پاسخ دهد. با فعال کردن این گزینه، شما به همه
+کاربران در شبکه سنو کمک می‌کنید.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="عمومی-یا-شخصی"><a class="header" href="#عمومی-یا-شخصی">عمومی یا شخصی؟</a></h1>
-<p>After the onboarding and permissions screens, the app displays its main screen.
-As soon as the screen appears, you will notice two prominent buttons called
-Public and Personal. They allow you to choose between the Public and Personal
-browsing mode.</p>
+<p>پس از صفحات آشناسازی و مجوزها، برنامه صفحه‌ اصلی خود را نمایش می‌دهد. به محض
+ظاهر شدن این صفحه، دو دکمه‌ شاخص با عنوان‌های «عمومی» و «شخصی» را خواهید دید.
+این دکمه‌ها به شما امکان می‌دهند که بین حالت مرور عمومی و حالت مرور شخصی انتخاب
+کنید.</p>
 <img src="./images/main.png" alt="Main screen" width="50%"/>
-<h2 id="public-browsing"><a class="header" href="#public-browsing">Public Browsing</a></h2>
+<h2 id="مرورگری-عمومی"><a class="header" href="#مرورگری-عمومی">مرورگری عمومی</a></h2>
 <img src="./images/public_button.png" alt="Public button" width="60%"/>
-<p>Below image illustrates the way Ceno retrieves website content in Public
-browsing mode.</p>
+<p>تصویر زیر نحوه بازیابی محتوای وب‌سایت در حالت مرور عمومی سنو را نشان می‌دهد.</p>
 <img src="./images/public_browsing.png" alt="Public browsing" width="700"/>
-<p>Dotted lines on this image represent the website content requests and responses,
-and the asterisks represent encrypted content.</p>
-<p>In <strong>Public browsing mode</strong>, the users’ requests are handled by the <strong>Ceno
-public network</strong>. In this mode, the users request some website content the same
-way they do that when using any other browser. If Ceno is able to access the
-origin website directly, it will retrieve its content and deliver it to the user</p>
-<ul>
-<li>this is the same as most other browsers.<br />
-However, if Ceno is not able to reach the desired website, then it will try to
-reach it via injectors.</li>
-</ul>
-<h3 id="injectors"><a class="header" href="#injectors">Injectors</a></h3>
-<p><strong>Injectors</strong> are secure servers responsible for injecting the commonly accessed
-content into the Ceno network, and for verifying its authenticity and signing
-it. The injectors are placed in strategic locations, so that they remain
-reachable by the users in restricted areas and can also reach the origin
-websites . They help retrieve the desired content either from the origin website
-or from the Ceno network and return it to the user who requested it. They are
-run by eQualitie.</p>
-<p>As a user, you don't need to do anything to connect to an <strong>Injector</strong> - the app
-does it automatically when you request a website that it cannot access directly.</p>
-<h3 id="bridges"><a class="header" href="#bridges">Bridges</a></h3>
-<p><strong>Bridges</strong> are devices belonging to individual Ceno users based in locations
-that enjoy relatively unrestrictied connectivity and internet access. They are
-reachable by Ceno users who are unable to reach the websites directly. These
-devices are responsible for forwarding encrypted user requests to <strong>Injectors</strong>
-and the encrypted responses back to the users.</p>
-<p>Bridges are not able to read the requests and responses they forward.</p>
-<p>Every Ceno user can configure their device to become a bridge.</p>
-<p>The <strong>Enable bridge mode</strong> toggle can be reached either from the link on the
-home page, or from the vertical three dot menu, to the right of the address bar.</p>
+<p>خطوط نقطه‌چین در این تصویر نشان‌دهنده درخواست‌ها و پاسخ‌های محتوای وب‌سایت هستند
+و علامت‌های ستاره محتوای رمزگذاری‌شده را نشان می‌دهند.</p>
+<p>در <strong>حالت مرور عمومی</strong>، درخواست‌های کاربران توسط <strong>شبکه عمومی سنو</strong> پردازش
+می‌شوند. در این حالت، کاربران محتوای یک وب‌سایت را همان‌ طور درخواست می‌کنند که
+هنگام استفاده از هر مرورگر دیگری انجام می‌دهند. اگر سنو بتواند مستقیما به
+وب‌سایت مبدا دسترسی پیدا کند، محتوای آن را بازیابی می‌کند و به کاربر ارائه
+می‌دهد – درست مانند اغلب مرورگرهای دیگر.<br />
+اما اگر سنو نتواند به وب‌سایت مورد نظر دسترسی پیدا کند، تلاش خواهد کرد از طریق
+تزریق‌کننده‌ها (injectors) به آن دست یابد.</p>
+<h3 id="تزریقکنندهها"><a class="header" href="#تزریقکنندهها">تزریق‌کننده‌ها</a></h3>
+<p><strong>تزریق‌کننده‌ها</strong> یا injectors سرورهای امنی هستند که مسئولیت تزریق محتوای
+پرکاربرد به شبکه سنو و همچنین تایید اصالت و امضای آن را بر عهده دارند.
+تزریق‌کننده‌ها در مکان‌های راهبردی قرار داده شده‌اند تا هم برای کاربران در مناطق
+محدودشده قابل دسترس باشند و هم بتوانند به وب‌سایت‌های مبدا دسترسی پیدا کنند. به
+کمک آن‌ها محتوای مورد نظر یا از وب‌سایت مبدا یا از شبکه سنو بازیابی شده و به
+کاربری که آن را درخواست کرده تحویل داده می‌شود. این سرورها توسط eQualitie اداره
+می‌شوند.</p>
+<p>به‌عنوان کاربر، لازم نیست برای اتصال به یک <strong>تزریق‌کننده</strong> کاری انجام دهید –
+وقتی وب‌سایتی را درخواست کنید که دسترسی مستقیم به آن وجود ندارد، برنامه به‌طور
+خودکار این کار را انجام می‌دهد.</p>
+<h3 id="پلها"><a class="header" href="#پلها">پل‌ها</a></h3>
+<p><strong>پل‌ها</strong> دستگاه‌هایی هستند که به کاربران سنو تعلق دارند و در مکان‌هایی قرار
+گرفته‌اند که از اتصال و دسترسی اینترنت نسبتا بدون محدودیت برخوردارند. این
+دستگاه‌ها برای آن دسته از کاربران سنو که نمی‌توانند مستقیما به وب‌سایت‌ها دسترسی
+پیدا کنند قابل دسترس‌اند. وظیفه آن‌ها ارسال درخواست‌های رمزگذاری‌شده‌ی کاربران
+به <strong>تزریق‌کننده‌ها</strong> و بازگرداندن پاسخ‌های رمزگذاری‌شده به کاربران است.</p>
+<p>پل‌ها نمی‌توانند درخواست‌ها و پاسخ‌هایی را که منتقل می‌کنند بخوانند.</p>
+<p>هر کاربر سنو می‌تواند دستگاه خود را طوری پیکربندی کند که به یک پل تبدیل شود.</p>
+<p>کلید تغییر وضعیت <strong>فعال‌سازی حالت پل</strong> را می‌توان هم از طریق پیوند موجود در صفحه
+اصلی و هم از منوی سه‌نقطه‌ای عمودی در سمت راست نوار آدرس پیدا کرد.</p>
 <img src="./images/bridge_mode.png" alt="Bridge mode" width="70%"/>
-<p>In the Settings page, moving the <strong>Enable bridge mode</strong> toggle to ON position</p>
+<p>در صفحه‌ی تنظیمات، با تغییر کلید <strong>فعال‌سازی حالت پل</strong> به وضعیت روشن</p>
 <img src="./images/bridge_toggle_off.png" alt="Bridge mode toggle is off" width="400"/>
 <img src="./images/bridge_toggle_on.png" alt="Bridge mode toggle is on" width="400"/>
-<p>will make your device a bridge for other Ceno users whose access to internet is
-more restricted. This requires Ceno services to restart</p>
+<p>دستگاه شما را به پلی برای سایر کاربران سنو که دسترسی محدودتری به اینترنت دارند
+تبدیل می‌کند. این کار نیازمند راه‌اندازی مجدد سرویس‌های سنو است</p>
 <img src="./images/bridge_starting.png" alt="Bridge mode is starting" width="400"/>
-<p>Once the bridge mode is successfully established, you will receive a
-confirmation message.</p>
+<p>پس از آن‌ که حالت پل با موفقیت برقرار شد، یک پیام تایید دریافت خواهید کرد.</p>
 <img src="./images/bridge_success.png" alt="Bridge success" width="400"/>
-<p>From this point on, the Ceno app on your device can act as a bridge to help Ceno
-users in restricted areas reach desired content.</p>
-<p>However, bridging also requires specific settings of your router or network,
-which are described in the <a href="./bridge-configuration.html">Bridge Configuration</a>
-section.</p>
-<h3 id="ceno-cache"><a class="header" href="#ceno-cache">Ceno cache</a></h3>
-<p>And last but not least, the <strong>Ceno cache</strong>. All Ceno users are members of this
-peer-to-peer network, and they store the website content retrieved via Ceno
-public network and share it between each other.</p>
-<p>In <strong>Public browsing mode</strong>, Ceno retrieves the requested content using any of
-these communication channels. It strips down all private data (like passwords
-and cookies) from Web traffic to ensure that it does not leak it to other users.</p>
-<h2 id="public-browsing---when-to-use-it"><a class="header" href="#public-browsing---when-to-use-it">Public browsing - when to use it</a></h2>
-<p>This option is conceived for you, the user, to access most things that don’t
-require you to log in or input any personal data. You can use it to browse,
-listen to podcasts, watch the news, read blogs or articles, follow sports,
-science, music, events or other content. In P<strong>ublic browsing mode</strong>, Ceno may
-try to access the requested content <strong>directly from the websites</strong>, from <strong>Ceno
-public network</strong> (<strong>injectors</strong> and <strong>bridges</strong>) or from other Ceno users
-(<strong>distributed cache</strong>).</p>
-<p><em>Please note that some content which is not considered safe for sharing will
-never be injected, no matter how many people retrieve it using public browsing.
-This includes content marked as private by the origin server, content that
-requires authentication, and some traffic exchanged by certain dynamic web
-applications.</em></p>
-<h2 id="website-sources-in-public-browsing-mode"><a class="header" href="#website-sources-in-public-browsing-mode">Website sources in Public browsing mode</a></h2>
-<p>When you want to access a website using Ceno Public browsing mode, the app may
-try to retrieve the content either from the website directly or via Ceno public
-network. In the following chapter we describe this process in more detail.</p>
-<h3 id="content-retrieved-directly-from-the-website"><a class="header" href="#content-retrieved-directly-from-the-website">Content retrieved directly from the website</a></h3>
-<p>Ceno will retrieve the desired content directly from the origin server when that
-server is reachable. This is the same way you access any website through most
-other popular browsers.</p>
+<p>از این نقطه به بعد، برنامه سنو می‌تواند روی دستگاه شما به‌عنوان یک پل عمل کند تا
+به کاربران سنو در مناطق محدودشده کمک کند به محتوای مورد نظر دسترسی پیدا کنند.</p>
+<p>با این حال، پل شدن همچنین نیازمند تنظیمات مشخصی در روتر یا شبکه شماست که در بخش
+<a href="./bridge-configuration.html">پیکربندی پل</a> توضیح داده شده.</p>
+<h3 id="کَش-سنو"><a class="header" href="#کَش-سنو">کَش سنو</a></h3>
+<p>و در نهایت، <strong>حافظه‌ پنهان (کَش) سنو</strong>. همه کاربران سنو عضو این شبکه همتابه‌همتا
+هستند و محتوای وب‌سایتی را که از طریق شبکه عمومی سنو بازیابی شده ذخیره می‌کنند و
+با یکدیگر به اشتراک می‌گذارند.</p>
+<p>در <strong>حالت مرور عمومی</strong>، سنو محتوای درخواست‌شده را از طریق هر یک از این کانال‌های
+ارتباطی بازیابی می‌کند. این برنامه همه داده‌های خصوصی (مانند گذرواژه‌ها و
+کوکی‌ها) را از ترافیک وب حذف می‌کند تا مطمئن شود هیچ‌ یک از آن‌ها به سایر
+کاربران درز پیدا نمی‌کند.</p>
+<h2 id="مرور-عمومی--چه-زمانی-از-آن-استفاده-کنیم"><a class="header" href="#مرور-عمومی--چه-زمانی-از-آن-استفاده-کنیم">مرور عمومی – چه زمانی از آن استفاده کنیم</a></h2>
+<p>این گزینه برای شما یعنی کاربر در نظر گرفته شده تا به بیشتر چیزهایی که نیاز به
+لاگین کردن یا وارد کردن داده شخصی ندارند دسترسی داشته باشید. می‌توانید از این
+حالت برای مرور وب، گوش دادن به پادکست، دیدن اخبار، خواندن وبلاگ‌ها یا مقاله‌ها،
+دنبال کردن ورزش، علم، موسیقی، رویدادها یا سایر محتواها استفاده کنید. در <strong>حالت
+مرور عمومی</strong>، سنو ممکن است تلاش کند محتوای درخواستی را <strong>مستقیما از
+وب‌سایت‌ها</strong>، از <strong>شبکه عمومی سنو</strong> (<strong>تزریق‌کننده‌ها</strong> و <strong>پل‌ها</strong>) یا از سایر
+کاربران سنو (<strong>حافظه پنهان توزیع‌شده</strong>) بازیابی کند.</p>
+<p><em>لطفا توجه داشته باشید که برخی محتواها که برای اشتراک‌گذاری ایمن محسوب نمی‌شوند
+هرگز تزریق نخواهند شد، فرقی نمی‌کند چند نفر آن‌ها را با استفاده از مرور عمومی
+بازیابی کنند. این موارد شامل محتوایی است که توسط سرور مبدا، به‌عنوان خصوصی
+علامت‌گذاری شده، محتوایی که نیاز به احراز هویت دارد، و بخشی از ترافیکی که توسط
+برخی برنامه‌های وب پویا مبادله می‌شود.</em></p>
+<h2 id="منابع-وبسایت-در-حالت-عمومی"><a class="header" href="#منابع-وبسایت-در-حالت-عمومی">منابع وب‌سایت در حالت عمومی</a></h2>
+<p>وقتی می‌خواهید با استفاده از حالت عمومی سنو به یک وب‌سایت دسترسی پیدا کنید،
+اپلیکیشن ممکن است محتوا را مستقیما از خود وب‌سایت یا از طریق شبکه عمومی سنو
+بازیابی کند. در فصل بعدی این فرایند را با جزئیات بیش‌تر توضیح می‌دهیم.</p>
+<h3 id="محتوا-مستقیما-از-وبسایت-بازیابی-شده-است"><a class="header" href="#محتوا-مستقیما-از-وبسایت-بازیابی-شده-است">محتوا مستقیما از وب‌سایت بازیابی شده است</a></h3>
+<p>سنو زمانی که سرور مبدا در دسترس باشد، محتوای مورد نظر را مستقیما از آن بازیابی
+می‌کند. این همان روشی است که در بیشتر مرورگرهای رایج برای دسترسی به وب‌سایت‌ها
+استفاده می‌کنید.</p>
 <img src="./images/ceno_direct_access.png" alt="Direct access" width="700"/>
-<p>When you access websites this way, they are not stored in your cache and you
-cannot share them with other members of the Ceno network. When Ceno retrieves
-the content from the origin server, the small Ceno button on your the address
-bar will have a green dot.</p>
+<p>وقتی به این شکل به وب‌سایت‌ها دسترسی پیدا می‌کنید، آن‌ها در حافظه کش شما ذخیره
+نمی‌شوند و نمی‌توانید آن‌ها را با دیگر اعضای شبکه سنو به اشتراک بگذارید. هنگامی
+که سنو محتوا را از سرور مبدا بازیابی می‌کند، دکمه کوچک سنو در نوار آدرس یک نقطه
+سبز خواهد داشت.</p>
 <img src="./images/green_dot.png" alt="Green dot" width="300"/>
-<p>If you tap on that button, you will see how many components of the requested
-website were retrieved from the website, Ceno network or Ceno cache.</p>
+<p>اگر روی آن دکمه بزنید، خواهید دید چه تعداد از اجزای وب‌سایت درخواستی از خود
+وب‌سایت، از شبکه سنو یا از کش سنو بازیابی شده‌اند.</p>
 <img src="./images/green_dot_tap.png" alt="Tap on green dot" width="400"/>
-<p>If you go to Settings &gt; Data you can verfiy verify that no data is stored in
-your cache after you have accessed a website directly from its server.</p>
+<p>اگر به مسیر تنظیمات &gt; داده‌ها بروید، می‌توانید تایید کنید که پس از دسترسی مستقیم
+به یک وب‌سایت از سرور خودش، هیچ داده‌ای در کش شما ذخیره نشده است.</p>
 <img src="./images/no_data.png" alt="No data in cache" width="60%"/>
-<p>In this case, the risks for you as a user are similar to the risks associated
-with using any other browser. Learn more.</p>
-<h3 id="content-retrieved-via-ceno-public-network"><a class="header" href="#content-retrieved-via-ceno-public-network">Content retrieved via Ceno public network</a></h3>
-<p>When Ceno is not able to reach the origin server it will try to access them via
-Ceno public network.</p>
+<p>در این حالت، خطراتی که شما به‌عنوان کاربر با آن روبه‌رو هستید مشابه خطرات
+استفاده از هر مرورگر دیگری است. بیشتر بدانید.</p>
+<h3 id="محتوا-از-طریق-شبکهی-عمومی-سنو-بازیابی-شده-است"><a class="header" href="#محتوا-از-طریق-شبکهی-عمومی-سنو-بازیابی-شده-است">محتوا از طریق شبکه‌ی عمومی سنو بازیابی شده است</a></h3>
+<p>وقتی سنو نتواند به سرور مبدا دسترسی پیدا کند، تلاش می‌کند از طریق شبکه عمومی سنو
+به آن دسترسی یابد.</p>
 <img src="./images/ceno_public_network.png" alt="Ceno public network" width="700"/>
-<p>This network contains secure servers called <strong>Injectors</strong>, which have direct
-access to the origin websites, and which inject the content of those websites
-into the Ceno network. When website content is retrieved via Ceno public
-network, this will be indicated by an orange dot on the small Ceno button on
-your address bar.</p>
+<p>این شبکه شامل سرورهای امنی به نام <strong>تزریق‌کننده‌ها (injectors)</strong> است که دسترسی
+مستقیم به وب‌سایت‌های مبدا (اصلی) دارند و محتوای آن وب‌سایت‌ها را به شبکه سنو
+وارد می‌کنند. هنگامی که محتوای وب‌سایتی از طریق شبکه عمومی سنو بازیابی شود، این
+موضوع با یک نقطه نارنجی روی دکمه کوچک سنو در نوار آدرس مشخص می‌شود.</p>
 <img src="./images/orange_dot.png" alt="Orange dot" width="300"/>
-<p>Tapping on this button will open a small window which will inform you how many
-website components were retrieved from public Ceno network.</p>
+<p>زدن این دکمه یک پنجره کوچک باز می‌کند که به شما اطلاع می‌دهد چه تعداد از اجزای
+وب‌سایت از شبکه عمومی سنو بازیابی شده‌اند.</p>
 <img src="./images/orange_dot_tap.png" alt="Tap on orange dot" width="400"/>
-<p>Any website that you access this way will be stored in the local cache of your
-Ceno browser, and will be made available to other members of the Ceno network.</p>
-<p>You can see which websites are stored in your cache by going to Settings &gt; Data
-section.</p>
-<p>There are three entries within that section: <strong>Local cache</strong>, <strong>Content shred by
-you</strong>, and <strong>Clear cached content</strong>.<br />
-The <strong>Local cache</strong> section shows you how much data has been stored in the Ceno
-cache on your device.</p>
+<p>هر وب‌سایتی که به این روش به آن دسترسی پیدا کنید، در کش محلی مرورگر سنو شما
+ذخیره خواهد شد و در دسترس دیگر اعضای شبکه سنو قرار می‌گیرد.</p>
+<p>می‌توانید با رفتن به مسیر تنظیمات &gt; داده‌ها ببینید کدام وب‌سایت‌ها در کش شما
+ذخیره شده‌اند.</p>
+<p>در آن بخش سه گزینه وجود دارد: <strong>حافظه کش محلی</strong>، <strong>محتوای به‌اشتراک‌گذاشته‌شده
+توسط شما</strong> و <strong>پاک کردن محتوای حافظه کش</strong>.<br />
+بخش <strong>حافظه کش محلی</strong> به شما نشان می‌دهد چه مقدار داده در کش سنو روی دستگاه شما
+ذخیره شده است.</p>
 <img src="./images/data_in_cache.png" alt="Data in cache" width="400"/>
-<p>If you tap on <strong>Content shared by you</strong>, you will be able to see the websites
-that your device can make available to Ceno network.</p>
+<p>اگر روی <strong>محتوای به‌اشتراک‌گذاشته‌شده توسط شما</strong> بزنید، می‌توانید وب‌سایت‌هایی
+را ببینید که دستگاه شما می‌تواند در شبکه سنو در دسترس قرار دهد.</p>
 <img src="./images/content_shared_by_you.png" alt="Content shared by you" width="400"/>
-<p>Tapping <strong>Clear cached content</strong> option will allow you to delete all cached
-data.</p>
+<p>زدن گزینه <strong>پاک کردن محتوای حافظه کش</strong> به شما امکان می‌دهد همه داده‌های کش‌شده
+را حذف کنید.</p>
 <img src="./images/clear_cached_content.png" alt="Clear cached content" width="400"/>
-<h3 id="cached-content"><a class="header" href="#cached-content">Cached Content</a></h3>
-<p>This way of accessing websites is useful when other components of Ceno public
-network are not reachable, or when you decide to access a website from your
-peers’ devices for other reasons.<br />
-Below image illustrates the requests and responses exhcanged exchanged between
-members of Ceno network who have previsously accessed and cached the desired
-websites.</p>
+<h3 id="محتوای-کششده"><a class="header" href="#محتوای-کششده">محتوای کش‌شده</a></h3>
+<p>این روش دسترسی به وب‌سایت‌ها زمانی مفید است که سایر اجزای شبکه عمومی سنو در
+دسترس نباشند، یا هنگامی که شما به هر دلیل تصمیم بگیرید از دستگاه همتایان خود به
+یک وب‌سایت دسترسی پیدا کنید.<br />
+تصویر زیر درخواست‌ها و پاسخ‌هایی را نشان می‌دهد که میان اعضای شبکه سنو، که
+پیش‌تر به وب‌سایت‌های موردنظر دسترسی داشته و آن‌ها را کش کرده‌اند، رد و بدل
+می‌شود.</p>
 <img src="./images/ceno_cache.png" alt="Ceno cache" width="700"/>
-<p>If a website content is retrieved via <strong>Ceno cache</strong>, the Ceno button will have
-a small blue dot to indicate that.</p>
+<p>اگر محتوای یک وب‌سایت از طریق <strong>حافظه کش سنو</strong> بازیابی شود، دکمه سنو یک نقطه آبی
+کوچک خواهد داشت که این موضوع را نشان می‌دهد.</p>
 <img src="./images/blue_dot.png" alt="Blue dot" width="400"/>
-<p>Clicking on the Ceno button will open the information screen that indicates the
-same.</p>
+<p>کلیک روی دکمه سنو صفحه اطلاعاتی را باز می‌کند که همین موضوع را نشان می‌دهد.</p>
 <img src="./images/blue_dot_tap.png" alt="Blue dot tap" width="400"/>
-<p>In this case, the website content will be cached on your device and will be
-shared with other Ceno users when requested. You can verify that by going to
-Settings &gt; Data &gt; Content shared by you.</p>
-<p>It can also happen that ceno browser opens a website that was stored in your own
-cache when you accessed it before. When that happens, Ceno will inform you by
-displaying the wbesite sources in grey colour.</p>
+<p>در این حالت، محتوای وب‌سایت روی دستگاه شما کش می‌شود و هنگام درخواست، با دیگر
+کاربران سنو به اشتراک گذاشته خواهد شد. می‌توانید این موضوع را با رفتن به مسیر
+تنظیمات &gt; داده‌ها &gt; محتوای به‌اشتراک‌گذاشته‌شده توسط شما تایید کنید.</p>
+<p>همچنین ممکن است مرورگر سنو وب‌سایتی را باز کند که پیش‌تر هنگام دسترسی شما در کش
+دستگاه‌تان ذخیره شده است. در این حالت، سنو با نمایش منابع وب‌سایت به رنگ خاکستری
+شما را آگاه می‌سازد.</p>
 <img src="./images/grey_dot_tap.png" alt="Grey dot tap" width="400"/>
-<p>In Ceno Settings &gt; Developer tools &gt; Website sources you can check or uncheck
-these four settings.</p>
+<p>در تنظیمات سنو &gt; ابزارهای توسعه‌دهنده &gt; منابع وب‌سایت می‌توانید این چهار گزینه
+را علامت بزنید یا از حالت انتخاب خارج کنید.</p>
 <img src="./images/website_sources.png" alt="Website sources" width="60%"/>
-<p>If they are all checked, depending on the browsing mode, Ceno tries to fetch the
-website via all applicable mechanisms, at the same time. We call it a "mixed
-fetch". Whichever mechanism responds first is the one that is used and the rest
-of the requests are cancelled.</p>
-<p>For best results, we recomment that all 4 of these boxes remain checked at all
-times.</p>
-<h2 id="personal-browsing---when-to-use-it"><a class="header" href="#personal-browsing---when-to-use-it">Personal Browsing - when to use it</a></h2>
-<p>You can select personal browsing by tapping on the Personal button on the main
-screen.</p>
+<p>اگر همه‌ی آن‌ها علامت خورده باشند، سنو بسته به حالت مرور، تلاش می‌کند وب‌سایت را
+هم‌زمان از طریق همه سازوکارهای ممکن دریافت کند. ما این را «بازیابی ترکیبی»
+می‌نامیم. هر سازوکاری که زودتر پاسخ دهد، استفاده خواهد شد و بقیه درخواست‌ها لغو
+می‌شوند.</p>
+<p>برای بهترین نتیجه، توصیه می‌کنیم که هر چهار گزینه همیشه فعال باقی بمانند.</p>
+<h2 id="مرور-شخصی--چه-زمانی-از-آن-استفاده-کنیم"><a class="header" href="#مرور-شخصی--چه-زمانی-از-آن-استفاده-کنیم">مرور شخصی – چه زمانی از آن استفاده کنیم</a></h2>
+<p>می‌توانید با زدن دکمه «شخصی» در صفحه اصلی، مرور شخصی را انتخاب کنید.</p>
 <img src="./images/personal_button.png" alt="Personal button" width="60%"/>
-<p>When you select this option, even if all four <strong>Website sources</strong> settings are
-checked, your Ceno app will attempt to access the desired websites only directly
-or via <strong>Ceno private network</strong>.</p>
-<p>This browsing mode can be used for websites where you need to log in and enter
-other personal data. Examples are: shopping websites, email, social media sites
-or other websites that you do not wish to share with the rest of the Ceno
-network.</p>
-<h3 id="accessing-websites-via-private-ceno-network"><a class="header" href="#accessing-websites-via-private-ceno-network">Accessing websites via Private ceno network</a></h3>
-<p>The following image shows the flow of website requests and responses between
-<strong>Ceno private network</strong> elements.</p>
+<p>وقتی این گزینه را انتخاب کنید، حتی اگر هر چهار تنظیم <strong>منابع وب‌سایت</strong> فعال
+باشند، اپلیکیشن سنو تنها تلاش خواهد کرد به وب‌سایت‌های موردنظر مستقیما یا از
+طریق <strong>شبکه شخصی سنو</strong> دسترسی پیدا کند.</p>
+<p>از این حالت مرور می‌توان برای وب‌سایت‌هایی استفاده کرد که نیاز دارید در آن‌ها
+وارد حساب کاربری شوید و داده‌های شخصی وارد کنید. نمونه‌ها شامل: وب‌سایت‌های
+خرید، ایمیل، شبکه‌های اجتماعی یا هر وب‌سایت دیگری است که نمی‌خواهید با بقیه شبکه
+سنو به اشتراک گذاشته شود.</p>
+<h3 id="دسترسی-به-وبسایتها-از-طریق-شبکه-شخصی-سنو"><a class="header" href="#دسترسی-به-وبسایتها-از-طریق-شبکه-شخصی-سنو">دسترسی به وب‌سایت‌ها از طریق شبکه شخصی سنو</a></h3>
+<p>تصویر زیر جریان درخواست‌ها و پاسخ‌های وب‌سایت میان اجزای <strong>شبکه شخصی سنو</strong> را
+نشان می‌دهد.</p>
 <img src="./images/personal_browsing.png" alt="Personal browsing" width="700"/>
-<p>In <strong>Personal browsing mode</strong>, when a website is requested, Ceno will retrieve
-it directly from the origin servers, or via Ceno Injectors. However, in Personal
-mode, the Injectors do not cache the content like they do in Public browsing
-mode. They simply forward the request to the origin server and forward the
-response to the user, but cannot see the encrypted content. Learn more about
-Personal browsing mode.</p>
-<p>Sometimes, if a website is unreachable in Public browsing mode, because of
-differences in how these two modes operate, we suggest attempting to reach it
-via Personal browsing mode instead.</p>
-<p>For this mechanism to work, it is necessary that the Website sources
-<strong>Privately</strong> and <strong>Website</strong> remain checked.</p>
-<div style="break-before: page; page-break-before: always;"></div><h2 id="why-become-a-ceno-bridge"><a class="header" href="#why-become-a-ceno-bridge">Why become a Ceno bridge?</a></h2>
-<p>A peer-to-peer network is built from every node connected to it (yes, that means
-you as well!). The more nodes, the stronger and more versatile the network
-becomes.</p>
-<p>If you are running Ceno Browser from a country that does not censor the Internet
-(or not as heavily as some), consider helping other Ceno users by becoming a
-bridge node. You will then begin to route traffic between clients living in
-heavily censored countries and Ceno injectors.</p>
-<p>You will not be able to see their traffic (it will be sent through an encrypted
-tunnel), nor will any of this traffic remain on your device.</p>
-<p><em>Note: The configuration described in this section may also help your device to
-effectively seed content to others on the distributed cache, so please consider
-applying it as well when using Ceno in a censoring country (but keep in mind the
-<a href="https://ceno.app/en/faq.html#bridgemode">risks</a> of serving such content to
-others)</em></p>
-<h2 id="how-to-become-a-ceno-bridge"><a class="header" href="#how-to-become-a-ceno-bridge">How to become a Ceno bridge?</a></h2>
-<p>As stated in <a href="./public-or-personal.html?#bridges">this section</a>, Ceno app
-provides some functionlaity that allows you to easily become a Ceno bridge, if
-your network configuration allows it.</p>
-<p>If you have checked your <strong>Reachability</strong> and your <strong>UPnP status</strong> and it looks
-like this</p>
-<p><img src="./images/reachability.png" alt="Reachability status" /></p>
-<p>You will need to configure your router by either enabling the UPnP or setting up
-the port forwarding. In the following sections we describe the steps to perform.</p>
+<p>در <strong>حالت مرور شخصی</strong>، وقتی وب‌سایتی درخواست می‌شود، سنو آن را یا مستقیما از
+سرورهای مبدا، یا از طریق تزریق‌کننده‌های سنو (injectors) بازیابی می‌کند. با این
+حال در حالت شخصی، تزریق‌کننده‌ها مانند حالت مرور عمومی محتوا را کش نمی‌کنند.
+آن‌ها تنها درخواست را به سرور مبدا منتقل کرده و پاسخ را به کاربر بازمی‌گردانند،
+اما نمی‌توانند محتوای رمزگذاری‌شده را ببینند. درباره حالت مرور شخصی بیشتر
+بدانید.</p>
+<p>اگر وب‌سایتی در حالت مرور عمومی در دسترس نباشد، به دلیل تفاوت در نحوه کار این دو
+حالت، توصیه می‌کنیم تلاش کنید از طریق حالت مرور شخصی به آن دسترسی پیدا کنید.</p>
+<p>برای کارکرد درست این سازوکار، لازم است گزینه‌های <strong>خصوصی</strong> و <strong>وب‌سایت</strong> در بخش
+منابع وب‌سایت علامت‌خورده باقی بمانند.</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="فایده-تبدیل-شدن-به-پل-در-سنو-چیست"><a class="header" href="#فایده-تبدیل-شدن-به-پل-در-سنو-چیست">فایده تبدیل شدن به پل در سنو چیست؟</a></h2>
+<p>یک شبکه همتابه‌همتا از تمام گره‌هایی که به آن متصل‌اند ساخته می‌شود (بله، از
+جمله خود شما!). هر چه گره‌ها بیش‌تر باشند، شبکه قدرتمندتر و انعطاف‌پذیرتر خواهد
+شد.</p>
+<p>اگر مرورگر سنو را در کشوری استفاده می‌کنید که اینترنت را سانسور نمی‌کند (یا دست
+کم نه به شدت برخی کشورها)، می‌توانید با تبدیل شدن به یک گره پل به سایر کاربران
+سنو کمک کنید. در این صورت شما شروع به مسیردهی ترافیک میان کاربرانی در کشورهای با
+سانسور شدید و تزریق‌کننده‌های سنو (injectors) خواهید کرد.</p>
+<p>شما نمی‌توانید ترافیک آن‌ها را ببینید (این ترافیک از طریق یک تونل رمزگذاری‌شده
+ارسال می‌شود) و هیچ بخشی از این ترافیک نیز روی دستگاه شما باقی نخواهد ماند.</p>
+<p><em>توجه: پیکربندی توضیح‌داده‌شده در این بخش ممکن است به دستگاه شما کمک کند تا
+محتوا را به‌طور مؤثر برای دیگران در کَش توزیع‌شده بذرگذاری کند. بنابراین هنگام
+استفاده از سنو در یک کشور سانسورکننده، لطفا در نظر داشته باشید که آن را نیز
+اعمال کنید (اما <a href="https://ceno.app/en/faq.html#bridgemode">خطرات</a> ارائه‌ی چنین
+محتوایی به دیگران را هم در نظر داشته باشید).</em></p>
+<h2 id="چطور-تبدیل-به-یک-پل-سنو-بشویم"><a class="header" href="#چطور-تبدیل-به-یک-پل-سنو-بشویم">چطور تبدیل به یک پل سنو بشویم؟</a></h2>
+<p>همان‌ طور که در <a href="./public-or-personal.html?#bridges">این بخش</a> آمده است، برنامه
+سنو قابلیتی فراهم می‌کند که اگر پیکربندی شبکه شما اجازه دهد، بتوانید به‌سادگی
+تبدیل به پل سنو شوید.</p>
+<p>اگر <strong>دسترس‌پذیری</strong> و <strong>وضعیت UPnP</strong> خود را بررسی کرده‌اید و نتیجه به این شکل
+است</p>
+<p><img src="./images/reachability.png" alt="وضعیت دسترس‌پذیری" /></p>
+<p>لازم است روتر خود را یا با فعال‌سازی UPnP یا با تنظیم انتقال درگاه پیکربندی
+کنید. در بخش‌های بعدی گام‌های انجام این کار را توضیح می‌دهیم.</p>
 <h3 id="فعال-کردن-upnp-روی-مودم-وایفای"><a class="header" href="#فعال-کردن-upnp-روی-مودم-وایفای">فعال کردن UPnP روی مودم وای‌فای</a></h3>
-<p>UPnP is the easiest way of making your Ceno browser (or computer client)
-reachable to the Ceno network.</p>
-<p><em>Note: Enabling UPnP on the Wi-Fi router may expose devices on your network to
-external interference. Please be <a href="https://www.howtogeek.com/122487/htg-explains-is-upnp-a-security-risk/">aware of the
-risks</a>
-and also consider using alternative methods as explained below.</em></p>
-<p>The first thing you will need to do is log in to your router's web interface. To
-find out how to do that, please refer to your router's manual which will tell
-you which user and password to use to log in.</p>
-<p>After that, the steps to perform are similar, but might not be identical for all
-router models.</p>
-<p>Here is a nice article with <a href="https://www.lifewire.com/enable-upnp-on-a-router-5206124">step by step
-instructions</a> for
-enabling the UPnP on different routers.</p>
-<p>Please find instructions for your router type and perform the necessary steps.</p>
-<p>If you prefer, though, you can choose to set up the port forwarding instead of
-the UPnP.</p>
-<h3 id="use-port-forwarding-as-an-alternative-to-upnp"><a class="header" href="#use-port-forwarding-as-an-alternative-to-upnp">Use port forwarding as an alternative to UPnP</a></h3>
-<p>The first step is the same as before: log in to the router's web interface.</p>
-<p>Then, please locate **port forwarding **option.</p>
-<p>To see which IP address you need to forward the connections to and the relevant
-port, open the <strong>Ceno Settings</strong> page and look under the <strong>Local UDP
-endpoints</strong>.</p>
-<p><img src="./images/UDP_endpoint.png" alt="Local UDP endpoint" /></p>
-<p>The port forwarding must be for the UDP protocol (not TCP).</p>
-<p>Ceno chooses a random port on first run and keeps it for subsequent runs, but
-your device's local network IP address may change from time to time. Thus you
-should periodically review the <strong>Ceno Settings</strong> page to see that your device is
-reachable to the Ceno network.</p>
-<p>Your device is reachable if its</p>
-<p><strong>Reachability status</strong> is <strong>likely reachable</strong> or <strong>reachable</strong></p>
-<p><strong>UPnP status</strong> is <strong>enabled</strong></p>
-<p><em><strong>Technical note</strong>: Alternatively, you can make sure that the router always
-assigns the same IP address to your device (e.g. via a static DHCP lease for the
-device's MAC address)</em></p>
-<p>If you have a computer with good connectivity that stays on most of the time,
-and you'd like to set it up as a <strong>Ceno bridge</strong>, please continue reading.</p>
+<p>UPnP ساده‌ترین روش برای دسترس‌پذیر کردن مرورگر سنو (یا کلاینت رایانه‌ای) شما
+برای شبکه سنو است.</p>
+<p><em>توجه: فعال‌سازی UPnP روی روتر وای‌فای ممکن است دستگاه‌های شبکه شما را در معرض
+دخالت‌های خارجی قرار دهد. لطفا <a href="https://www.howtogeek.com/122487/htg-explains-is-upnp-a-security-risk/">از خطرات آگاه
+باشید</a> و
+همچنین روش‌های جایگزین توضیح‌ داده‌شده در ادامه را هم در نظر بگیرید.</em></p>
+<p>اولین کاری که باید انجام دهید ورود به رابط وب روترتان است. برای دانستن نحوه
+انجام این کار، لطفا به دفترچه راهنمای روتر مراجعه کنید که در آن نام کاربری و
+گذرواژه لازم برای ورود ذکر شده است.</p>
+<p>پس از آن، گام‌های اجرایی مشابه‌اند، اما ممکن است در همه‌ مدل‌های روتر کاملا
+یکسان نباشند.</p>
+<p>در اینجا می‌توانید مقاله خوبی درباره <a href="https://www.lifewire.com/enable-upnp-on-a-router-5206124">دستورالعمل‌های
+گام‌به‌گام</a> برای
+فعال‌سازی UPnP روی روترهای مختلف بخوانید.</p>
+<p>لطفا دستورالعمل‌های مربوط به نوع روتر خود را پیدا کنید و گام‌های لازم را انجام
+دهید.</p>
+<p>با این حال، اگر ترجیح می‌دهید می‌توانید به‌جای UPnP، انتقال درگاه را تنظیم کنید.</p>
+<h3 id="از-انتقال-درگاه-بهعنوان-جایگزینی-برای-upnp-استفاده-کنید"><a class="header" href="#از-انتقال-درگاه-بهعنوان-جایگزینی-برای-upnp-استفاده-کنید">از انتقال درگاه به‌عنوان جایگزینی برای UPnP استفاده کنید</a></h3>
+<p>اولین گام همانند قبل است: وارد رابط وب روتر شوید.</p>
+<p>سپس لطفا گزینه <strong>انتقال درگاه</strong> را پیدا کنید.</p>
+<p>برای دیدن این‌ که باید اتصال‌ها را به کدام آدرس IP و درگاه مربوطه هدایت کنید،
+صفحه <strong>تنظیمات سنو</strong> را باز کرده و از قسمت جزئیات شبکه، بخش <strong>نقطه‌های انتهایی
+UDP محلی</strong> را بررسی کنید.</p>
+<p><img src="./images/UDP_endpoint.png" alt="نقطه پایانی UDP محلی" /></p>
+<p>انتقال درگاه باید برای پروتکل UDP باشد (نه TCP).</p>
+<p>سنو در اولین اجرا یک درگاه تصادفی انتخاب می‌کند و در اجراهای بعدی همان را نگه
+می‌دارد، اما آدرس IP محلی دستگاه شما در شبکه ممکن است هر از گاهی تغییر کند.
+بنابراین باید هر چند وقت یک‌بار صفحه <strong>تنظیمات سنو</strong> را بررسی کنید تا مطمئن شوید
+دستگاه شما برای شبکه سنو قابل دسترس است.</p>
+<p>دستگاه شما قابل دسترس است اگر</p>
+<p><strong>وضعیت دسترسی</strong>: <strong>احتمالا در دسترس</strong> یا <strong>در دسترس</strong></p>
+<p><strong>وضعیت UPnP</strong>: <strong>فعال</strong></p>
+<p><em><strong>نکته فنی</strong>: همچنین می‌توانید مطمئن شوید که روتر همیشه همان آدرس IP را به
+دستگاه شما اختصاص دهد (برای نمونه از طریق یک اجاره DHCP ثابت برای آدرس MAC
+دستگاه).</em></p>
+<p>اگر رایانه‌ای با اتصال خوب دارید که بیشتر اوقات روشن می‌ماند و مایلید آن را
+به‌عنوان یک <strong>پل سنو</strong> راه‌اندازی کنید، لطفا به خواندن ادامه دهید.</p>
 <h2 id="اجرای-یک-پل-روی-یک-کامپیوتر"><a class="header" href="#اجرای-یک-پل-روی-یک-کامپیوتر">اجرای یک پل روی یک کامپیوتر</a></h2>
-<p>If your computer supports Docker containers, you can run a pre-configured Ceno
-client on it to act as a bridge. If Docker is not yet installed, please follow
-the instructions to install the Docker Engine in your platform. For Debian
-derivatives like Ubuntu or Linux Mint, you can just run: <code>sudo apt install docker.io</code></p>
-<p>برای به‌کارگیری و استقرار یک نگه‌دارنده‌ مخاطب در Ceno فقط لازم است این فرمان را
-روی یک پایانه اجرا کنید (به نظر ترسناک می‌آید اما می‌توانید به‌سادگی آن را روی
-نوار فرمان کپی کنید):</p>
+<p>اگر رایانه شما از کانتینرهای داکر پشتیبانی می‌کند، می‌توانید یک کلاینت از پیش
+پیکربندی‌شده سنو را روی آن اجرا کنید تا به‌عنوان یک پل عمل کند. اگر داکر هنوز
+نصب نشده است، لطفا دستورالعمل‌های نصب Docker Engine را برای پلتفرم خود دنبال
+کنید. برای توزیع‌های مبتنی بر دبیان مانند اوبونتو یا لینوکس مینت، کافی است این
+دستور را اجرا کنید: <code>sudo apt install docker.io</code></p>
+<p>برای راه‌اندازی یک محیط کلاینت سنو فقط کافی است دستور زیر را روی یک ترمینال اجرا
+کنید (شاید پیچیده و ترسناک به نظر برسد ولی می‌توانید آن را همان طور که هست کپی
+کرده و در خط فرمان قرار دهید):</p>
 <pre><code>sudo docker run --name ceno-client \
   -dv Ceno:/var/opt/ouinet --network host \
   --restart unless-stopped equalitie/Ceno-client
@@ -560,212 +560,209 @@ derivatives like Ubuntu or Linux Mint, you can just run: <code>sudo apt install 
   -p 127.0.0.1:8077-8078:8077-8078 -p 28729:28729/udp \
   --restart unless-stopped equalitie/ceno-client
 </code></pre>
-<p>The command will start a container named ceno-client that will run on every boot
-unless you explicitly tell it to stop.</p>
-<p>Please check the <a href="https://gitlab.com/ceno-app/ceno-docker-client#running-the-client">Ceno Docker client
-documentation</a>
-for more information on how to manipulate the container.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="features"><a class="header" href="#features">Features</a></h1>
-<h2 id="toolbar"><a class="header" href="#toolbar">Toolbar</a></h2>
-<p>At the bottom of the screen, you will see the bar containing various buttons.
-Some of them are probably self-explanatory, but others less so. Let’s take a
-quick look at each of them:</p>
-<h3 id="home-button"><a class="header" href="#home-button">Home button</a></h3>
-<p>The first is the familiar Home button.</p>
+<p>این دستور یک کانتینر با نام ceno-client را راه‌اندازی می‌کند که در هر بار بوت
+اجرا خواهد شد، مگر این که صراحتا به آن فرمان توقف بدهید.</p>
+<p>لطفا برای اطلاعات بیشتر درباره نحوه کار با کانتینر، به <a href="https://gitlab.com/ceno-app/ceno-docker-client#running-the-client">مستندات کلاینت داکر
+سنو</a> مراجعه
+کنید.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ویژگیها"><a class="header" href="#ویژگیها">ویژگی‌ها</a></h1>
+<h2 id="نوار-ابزار"><a class="header" href="#نوار-ابزار">نوار ابزار</a></h2>
+<p>در پایین صفحه، نواری شامل دکمه‌های گوناگون می‌بینید. بعضی از این دکمه‌ها به‌
+خودی خود گویا هستند، اما برخی دیگر کمتر. بیایید نگاهی سریع به هر یک از آن‌ها
+بیندازیم:</p>
+<h3 id="دکمه-خانه"><a class="header" href="#دکمه-خانه">دکمه خانه</a></h3>
+<p>اولین دکمه، دکمه‌ آشنای «خانه» است.</p>
 <img src="./images/home_button.png" alt="Home button" width="400"/>
-<p>You can configure this button to be either shown or hidden, but going to
-<strong>Settings &gt; Customisations &gt; Show home button</strong></p>
+<p>می‌توانید این دکمه را طوری تغییر دهید که نمایش داده شود یا پنهان بماند؛ کافی است
+به <strong>تنظیمات &gt; سفارشی‌سازی &gt; نمایش دکمه خانه</strong> بروید</p>
 <img src="./images/show_home_button.png" alt="Show home button" width="400"/>
-<h3 id="ceno-button"><a class="header" href="#ceno-button">Ceno button</a></h3>
-<p>Next is the Ceno button. Tapping on it will open an information screen that
-shows where the website components were retrieved from. We describe this screen
-in more detail in Personal and Public browsing sections.</p>
-<h3 id="secure-connection-button"><a class="header" href="#secure-connection-button">Secure connection button</a></h3>
-<p>When you enter the website address you want to access, you will see the <strong>Secure
-connection button</strong>, represented by a small padlock or a small shield, which
-indicate that your connection to a particular website is secure.<br />
-If the padlock or shield is crossed with a line, it means that connection to
-that particular website is not secure. This is the same as in other browsers.</p>
+<h3 id="دکمه-سنو"><a class="header" href="#دکمه-سنو">دکمه سنو</a></h3>
+<p>بعد از آن، دکمه سنو قرار دارد. با زدن روی این دکمه صفحه‌ای برای اطلاع‌رسانی باز
+می‌شود که نشان می‌دهد اجزای وب‌سایت از کجا بازیابی شده‌اند. این صفحه را در
+بخش‌های مربوط به مرور شخصی و عمومی با جزئیات بیش‌تری توضیح می‌دهیم.</p>
+<h3 id="دکمه-اتصال-امن"><a class="header" href="#دکمه-اتصال-امن">دکمه اتصال امن</a></h3>
+<p>وقتی نشانی وب‌سایت مورد نظرتان را وارد کنید، <strong>دکمه اتصال امن</strong> را خواهید دید که
+با یک قفل کوچک یا یک سپر کوچک نشان داده می‌شود و بیانگر این است که اتصال شما به
+آن وب‌سایت امن است.<br />
+اگر روی قفل یا سپر یک خط کشیده شده باشد، یعنی اتصال به آن وب‌سایت امن نیست.
+مشابه این در مرورگرهای دیگر هم وجود دارد.</p>
 <img src="./images/connection_not_secure.png" alt="Connection not secure" width="400"/>
-<p><em>Note: even though connection to this particular website is not secure, the Ceno
-icon has a small green dot. This dot does not indicate that the connection is
-secure, but that the data was retrieved directly from the origin website.</em></p>
-<p>If you tap on it, you will see the details of this connection. As an
-illustration, we include example screenshots of secure versus not secure
-connection.</p>
+<p><em>توجه: حتا با این که اتصال به این وب‌سایت امن نیست، آیکون سنو یک نقطه سبز کوچک
+دارد. این نقطه نشان‌دهنده امن بودن اتصال نیست، بلکه بیانگر این است که داده
+مستقیما از وب‌سایت مبدا بازیابی شده است.</em></p>
+<p>اگر روی آن بزنید، جزئیات این اتصال را خواهید دید. برای درک بهتر، اسکرین‌شات‌هایی
+از اتصال امن در مقایسه با اتصال ناامن قرار داده‌ایم.</p>
 <p><img src="./images/compare_not_secure.png" alt="Compare not secure page" width="50%"/><img src="./images/compare_secure.png" alt="Compare secure page" width="50%"/></p>
-<h3 id="clear-button"><a class="header" href="#clear-button">Clear button</a></h3>
-<p>The first button on the right hand side of the address bar is the Clear button,
-in the shape of a small broom.</p>
+<h3 id="دکمه-پاک-کردن"><a class="header" href="#دکمه-پاک-کردن">دکمه پاک کردن</a></h3>
+<p>اولین دکمه در سمت راست نوار آدرس، دکمه «پاک کردن» است که به شکل یک جاروی کوچک
+نمایش داده شده.</p>
 <img src="./images/home_button.png" alt="Clear button" width="400"/>
-<p>Tapping on it gives the user a choice to clear all Ceno data, as if Ceno was
-never used, or to clear only what Ceno stored in Cache. The first option clears
-all the preferences, bookmarks, setttings and customisations, whereas the second
-one will only clear the websites that the Ceno app stored in the cache on your
-device.</p>
+<p>با زدن روی آن، کاربر می‌تواند انتخاب کند که همه داده‌های سنو را پاک کند طوری که
+انگار هرگز از سنو استفاده نشده، یا فقط آنچه را که سنو در حافظه پنهان ذخیره کرده
+حذف کند. گزینه نخست همه ترجیحات، سایت‌های برتر (بوکمارک‌ها)، تنظیمات و
+سفارشی‌سازی‌ها را پاک می‌کند، در حالی که گزینه دوم فقط وب‌سایت‌هایی را پاک خواهد
+کرد که برنامه سنو در حافظه پنهان دستگاه شما ذخیره کرده است.</p>
 <img src="./images/clear_button.png" alt="Clear button" width="400"/>
-<p>If you go to <strong>Settings &gt; Customisations &gt; Clear button</strong> you can choose whether
-you want the clear button to show in the toolbar or in the menu.</p>
+<p>اگر به <strong>تنظیمات &gt; سفارشی‌سازی &gt; دکمه پاک کردن</strong> بروید، می‌توانید انتخاب کنید که
+دکمه پاک کردن در نوار ابزار نمایش داده شود یا در منو.</p>
 <img src="./images/clear_button_settings.png" alt="Clear button in settings" width="60%"/>
-<p>Tapping on the option <strong>Default behavior</strong> will open a dialog box that offers
-you to choose what you want your Clear button to do when you tap it. It can
-offer you a prompt, like on the above screenshot, or it can immediately delete
-all cached content or even all Ceno data.</p>
+<p>با زدن روی گزینه <strong>رفتار پیش‌فرض</strong>، یک جعبه گفت‌وگو باز می‌شود تا انتخاب کنید که
+هنگام فشردن دکمه «پاک کردن» چه کاری انجام شود. این کار می‌تواند یادآوری گزینه‌ها
+باشد (مانند تصویر بالا)، یا بلافاصله تمام محتوای ذخیره‌شده در حافظه پنهان، یا
+حتی همه داده‌های سنو را حذف کند.</p>
 <img src="./images/clear_button_default.png" alt="Clear button behavior" width="60%"/>
-<h3 id="tabs-button"><a class="header" href="#tabs-button">Tabs button</a></h3>
-<p>Next is a small rectangle with a number in it. This number indicates how many
-tabs the user has opened.</p>
-<p>Tapping on it opens a screen where you can see all the tabs that you have open.</p>
+<h3 id="دکمه-زبانهها"><a class="header" href="#دکمه-زبانهها">دکمه زبانه‌ها</a></h3>
+<p>بعدی یک مستطیل کوچک با یک عدد داخل آن است. این عدد نشان می‌دهد کاربر، چند زبانه
+باز کرده است.</p>
+<p>با زدن روی آن، صفحه‌ای باز می‌شود که در آن می‌توانید همه زبانه‌های باز خود را
+ببینید.</p>
 <img src="./images/tab_view.png" alt="Tab view" width="400"/>
-<p>You can close them one by one, if you tap on the vertical menu in the bottom
-right corner, you will get the option to close them all together.</p>
+<p>می‌توانید آن‌ها را یکی‌یکی ببندید، و اگر روی منوی عمودی در پایینِ سمت راست بزنید
+گزینه‌ای برای بستن همه آن‌ها به‌طور هم‌زمان خواهید داشت.</p>
 <img src="./images/close_tabs.png" alt="Close all tabs" width="400"/>
-<p>When viewing the tab screen, at the top of that screen you will see the icons
-for Public or Personal browsing, and you can easily switch between them.</p>
-<p>View when Public browsing icon is selected</p>
+<p>وقتی صفحه زبانه‌ها را مشاهده می‌کنید، در بالای آن صفحه آیکون‌های مرور عمومی و
+شخصی را خواهید دید و می‌توانید به‌راحتی بین آن‌ها جابه‌جا شوید.</p>
+<p>نمای زمانی که آیکون مرور عمومی انتخاب شده است</p>
 <img src="./images/view_public.png" alt="Public browsing selected" width="400"/>
-<p>View when Personal browsing is selected.</p>
+<p>نمای زمانی که مرور شخصی انتخاب شده است.</p>
 <img src="./images/view_personal.png" alt="Personal browsing selected" width="400"/>
-<h3 id="vertical-menu"><a class="header" href="#vertical-menu">Vertical menu</a></h3>
-<p>What the three dot vertical menu on the far right hand side of the toolbar
-displays depends on the context.</p>
+<h3 id="منوی-عمودی"><a class="header" href="#منوی-عمودی">منوی عمودی</a></h3>
+<p>آنچه منوی سه‌نقطه‌ای عمودی در انتهای سمت راست نوار ابزار نمایش می‌دهد، به زمینه
+بستگی دارد.</p>
 <img src="./images/home_button.png" alt="Clear button" width="400"/>
 <ul>
-<li>when you have a website page open, this menu will display options relevant to
-that page.</li>
+<li>وقتی صفحه‌ای از وب‌سایت باز باشد، این منو گزینه‌های مربوط به همان صفحه را
+نمایش می‌دهد.</li>
 </ul>
 <img src="./images/menu_webpage.png" alt="Webpage menu" width="40%"/>
-<p>Most of the elements in this menu are self explanatory. But if you’re not
-familiar with the uBlock Origin, it is an ad and tracker blocker.</p>
-<p>The reason we bundle it up with our Ceno browser is mostly to prevent
-unnecessarily caching advertisements and to avoid possibly caching unique
-identifiers associated with trackers.</p>
-<p>To learn more about this ad and tracker blocker, please visit <a href="https://ublockorigin.com/">their
-webpage</a>.</p>
+<p>بیش‌تر گزینه‌های این منو خودشان گویا هستند. اما اگر با uBlock Origin آشنایی
+ندارید، این ابزار یک مسدودکننده تبلیغات و ردیاب‌ها است.</p>
+<p>دلیل این که ما آن را همراه با مرورگر سنو ارائه می‌کنیم، بیش‌تر برای جلوگیری از
+ذخیره‌سازی غیرضروری تبلیغات و همچنین جلوگیری از ذخیره شدن احتمالی شناسه‌های
+منحصربه‌فردی است که به ردیاب‌ها مربوط می‌شوند.</p>
+<p>برای آشنایی بیش‌تر با این مسدودکننده تبلیغات و ردیاب‌ها لطفا به <a href="https://ublockorigin.com/">صفحه وب
+آن‌ها</a> مراجعه کنید.</p>
 <ul>
-<li>If you tap on this menu when on the Ceno homepage, you will be able to see the
-item that allows you to clear Ceno (its action is the same as the small broom
-on the home screen).</li>
+<li>اگر هنگام حضور در صفحه اصلی سنو روی این منو بزنید، می‌توانید گزینه‌ای را
+ببینید که امکان پاک‌سازی سنو را فراهم می‌کند (عملکرد آن همانند آیکون جارو در
+صفحه اصلی است).</li>
 </ul>
 <img src="./images/menu_homepage.png" alt="Homepage menu" width="400"/>
 <ul>
-<li>When you are on the tabs screen, tapping this menu will only give you the
-option to Close all tabs</li>
+<li>وقتی در صفحه زبانه‌ها هستید، زدن این منو تنها گزینه «بستن همه زبانه‌ها» را در
+اختیارتان قرار می‌دهد</li>
 </ul>
 <img src="./images/close_tabs.png" alt="Close all tabs" width="400"/>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="تنظیمات"><a class="header" href="#تنظیمات">تنظیمات</a></h1>
-<p>Settings are accessed via the vertical three dot menu and then selecting
-Settings option.</p>
+<p>برای دسترسی به تنظیمات، از منوی سه‌نقطه‌ای عمودی استفاده کرده و گزینه «تنظیمات»
+را انتخاب کنید.</p>
 <img src="./images/settings.png" alt="Settings" width="40%"/>
-<p>They are divided in 5 groups:</p>
-<p><a href="./settings.html#settings-general">General</a><br />
-<a href="./settings.html#settings-permissions">Permissions</a><br />
-<a href="./settings.html#settings-data">Data</a><br />
-<a href="./settings.html#settings-developer-tools">Developer tools</a><br />
-<a href="./settings.html#settings-about">About</a></p>
-<p>Let’s look at each of those.</p>
-<h2 id="settings-general"><a class="header" href="#settings-general">Settings: General</a></h2>
+<p>این‌ها به ۵ گروه تقسیم می‌شوند:</p>
+<p><a href="./settings.html#settings-general">عمومی</a><br />
+<a href="./settings.html#settings-permissions">مجوزها</a><br />
+<a href="./settings.html#settings-data">داده‌ها</a><br />
+<a href="./settings.html#settings-developer-tools">ابزارهای توسعه‌دهنده</a><br />
+<a href="./settings.html#settings-about">درباره</a></p>
+<p>بیایید هر یک از آن‌ها را بررسی کنیم.</p>
+<h2 id="تنظیمات-عمومی"><a class="header" href="#تنظیمات-عمومی">تنظیمات: عمومی</a></h2>
 <img src="./images/settings_general.png" alt="Settings general" width="60%"/>
-<p>You are probably familiar with most of these settings as they are similar to the
-options available in other browsers. In the following sections we will briefly
-describe the main ones.</p>
+<p>احتمالا با بیشتر این تنظیمات آشنا هستید، چرا که مشابه گزینه‌های موجود در سایر
+مرورگرها هستند. در بخش‌های بعدی، مهم‌ترین آن‌ها را به‌طور خلاصه توضیح خواهیم
+داد.</p>
 <h3 id="انتخاب-موتور-جستوجوی-پیشفرض"><a class="header" href="#انتخاب-موتور-جستوجوی-پیشفرض">انتخاب موتور جست‌وجوی پیش‌فرض</a></h3>
 <img src="./images/default_search_engine.png" alt="Default search engine" width="60%"/>
-<p>This setting allows you to set the default search engine for Ceno browser, by
-checking or unchecking the options provided.</p>
+<p>به‌کمک این قسمت از تنظیمات می‌توانید موتور جست‌وجوی پیش‌فرض مرورگر سنو را با تیک
+زدن یا نزدنِ گزینه‌های ارائه‌شده تعیین کنید.</p>
 <h3 id="سفارشیسازی"><a class="header" href="#سفارشیسازی">سفارشی‌سازی</a></h3>
 <img src="./images/customisations.png" alt="Customizations" width="60%"/>
-<p>Again, these options are mostly self-explanatory.</p>
-<p>We would just draw your attention to an option that may not exist in other apps.
-Ceno allows you to change its launch icon which can be useful in some
-circumstances. We provide several options for you to choose from.</p>
+<p>باز هم اشاره می‌کنیم که این گزینه‌ها عمدتا گویا و واضح هستند.</p>
+<p>فقط می‌خواهیم توجه شما را به گزینه‌ای جلب کنیم که ممکن است در برنامه‌های دیگر
+وجود نداشته باشد. سنو این امکان را می‌دهد که آیکون اجرای آن را تغییر دهید که در
+برخی شرایط می‌تواند مفید باشد. چند گزینه برای انتخاب در اختیار شما قرار
+داده‌ایم.</p>
 <img src="./images/app_icon.png" alt="Choose app icon" width="60%"/>
 <h3 id="فعالسازی-حالت-پل"><a class="header" href="#فعالسازی-حالت-پل">فعال‌سازی حالت پل</a></h3>
 <img src="./images/bridge_toggle_on.png" alt="Bridge toggle on" width="400"/>
-<p>The purpose and high level functionality of the Bridge Mode is described in the
-<a href="./public-or-personal.html#bridges">Bridge Mode section</a>. Here you are able to
-enable or disable this setting.</p>
+<p>هدف و کارکرد کلی حالت پل در <a href="./public-or-personal.html#bridges">بخش حالت پل</a>
+توضیح داده شده است. در این‌جا می‌توانید این تنظیم را فعال یا غیرفعال کنید.</p>
 <h3 id="آمارهای-پسزمینه"><a class="header" href="#آمارهای-پسزمینه">آمارهای پس‌زمینه</a></h3>
 <img src="./images/metrics_setting.png" alt="Background metrics" width="60%"/>
-<p>These are metrics that help us understand any issues that might happen from time
-to time while you are using the Ceno browser. Tapping on the Background metrics
-will open the screen giving you an options to turn the metrics off.</p>
+<p>این‌ها داده‌های آماری‌ای هستند که به ما کمک می‌کنند مشکلات احتمالی هنگام استفاده
+از مرورگر سنو را بهتر درک کنیم. با زدن روی «آمارهای پس‌زمینه» صفحه‌ای باز می‌شود
+که گزینه غیرفعال کردن این داده‌ها را در اختیار شما قرار می‌دهد.</p>
 <img src="./images/metrics_toggle.png" alt="Metrics toggle" width="400"/>
-<p>We recommend these settings to be kept in On position, as they help us
-understand problems that some users may encounter while using Ceno. The more we
-are able to understand the problems, the more we are able to solve them.</p>
-<p>We do no collect any personal data and we do not sell any data to any third
-parties. To read our Privacy policy, please tap on Privacy policy button.</p>
+<p>توصیه می‌کنیم این تنظیمات در حالت روشن باقی بمانند، زیرا به ما کمک می‌کنند
+مشکلاتی را که برخی کاربران هنگام استفاده از سنو با آن روبه‌رو می‌شوند بهتر درک
+کنیم. هرچه این مشکلات را بیشتر درک کنیم، توانایی ما در حل‌شان نیز بیشتر می‌شود.</p>
+<p>ما هیچ داده شخصی‌ای جمع‌آوری نمی‌کنیم و هیچ داده‌ای را به اشخاص ثالث نمی‌فروشیم.
+برای خواندن سیاست حریم خصوصی ما لطفا روی دکمه «سیاست حریم خصوصی» بزنید.</p>
 <h3 id="گزارش-اشکال"><a class="header" href="#گزارش-اشکال">گزارش اشکال</a></h3>
-<p>The circumstances, network conditions and devices in which Ceno is used are
-different for different users, which sometimes can cause the Ceno app to crash.
-To understand what caused a crash in a particular situation, Ceno has been
-designed to generate crash reports and send them to the development team. You,
-as a user, can enable or disable the crash rerport report sending.</p>
-<p>These reports do not contain any personally identifiable data. If you experience
-Ceno crashes, we recommend this setting to be enabled</p>
-<h3 id="delete-browsing-data"><a class="header" href="#delete-browsing-data">Delete Browsing Data</a></h3>
+<p>شرایط، وضعیت شبکه و دستگاه‌هایی که سنو روی آن‌ها استفاده می‌شود برای کاربران
+مختلف متفاوت است و همین می‌تواند گاهی باعث از کار افتادن برنامه سنو شود. برای
+درک علت این اتفاق در یک وضعیت خاص، سنو طوری طراحی شده که گزارش خطا تولید کند و
+آن را برای تیم توسعه بفرستد. شما به‌عنوان کاربر می‌توانید ارسال گزارش خطا را
+فعال یا غیرفعال کنید.</p>
+<p>این گزارش‌ها شامل هیچ داده شناسایی‌کننده شخصی نیستند. اگر سنو دچار خرابی شد و از
+کار افتاد، توصیه می‌کنیم این تنظیم را فعال کنید</p>
+<h3 id="حذف-دادههای-مرورگری"><a class="header" href="#حذف-دادههای-مرورگری">حذف داده‌های مرورگری</a></h3>
 <img src="./images/delete_browsing_data_setting.png" alt="Delete browsing data setting" width="60%"/>
-<p>Tapping on this option provides you with the possibility to select what Ceno
-data you want to delete.</p>
+<p>با زدن روی این گزینه می‌توانید انتخاب کنید که کدام داده‌های سنو حذف شود.</p>
 <img src="./images/delete_browsing_data.png" alt="Delete browsing data" width="400"/>
-<p>The Clear button on the home screen deletes all Ceno data, but here you can pick
-and choose what to delete and what to keep.</p>
+<p>دکمه «پاک کردن» در صفحه اصلی همه داده‌های سنو را حذف می‌کند، اما در این‌جا
+می‌توانید انتخاب کنید چه چیزی پاک شود و چه چیزی باقی بماند.</p>
 <h3 id="تغییر-زبان"><a class="header" href="#تغییر-زبان">تغییر زبان‌</a></h3>
 <img src="./images/languages.png" alt="Languages" width="400"/>
-<p>Ceno app has been translated into many languages. If there is a language you’d
-like to see added to this already extensive list, please let us know. You can
-contact us by email support [at] ceno [dot] app or via our <a href="https://gitlab.com/ceno-app">gitlab
-repository</a> .</p>
-<h2 id="settings-permissions"><a class="header" href="#settings-permissions">Settings: Permissions</a></h2>
+<p>اپلیکیشن سنو به بسیاری از زبان‌ها ترجمه شده است. اگر زبانی هست که دوست دارید به
+این فهرست گسترده اضافه شود، لطفا به ما اطلاع دهید. می‌توانید از طریق ایمیل
+support [at] ceno [dot] app یا از طریق <a href="https://gitlab.com/ceno-app">مخزن گیت‌لب
+ما</a> با ما در تماس باشید.</p>
+<h2 id="تنظیمات-مجوزها"><a class="header" href="#تنظیمات-مجوزها">تنظیمات: مجوزها</a></h2>
 <img src="./images/settings_permissions.png" alt="Permissions section" width="400"/>
-<p>Ceno needs only two permissions: sending the user notifications and stopping the
-battery optimisation. You have probably been asked to give Ceno those
-permissions when you first started the Ceno app, or after a restart following
-clearing of all Ceno data.</p>
-<p>You can read more about them in the <a href="url">section Permissions</a>.</p>
-<h2 id="settings-data"><a class="header" href="#settings-data">Settings: Data</a></h2>
+<p>سنو تنها به دو مجوز نیاز دارد: ارسال اعلان به کاربر و متوقف کردن بهینه‌سازی
+باتری. احتمالا هنگام اولین اجرای اپلیکیشن سنو، یا پس از راه‌اندازی دوباره آن بعد
+از پاک کردن همه داده‌های سنو، از شما خواسته شده این مجوزها را بدهید.</p>
+<p>می‌توانید توضیحات بیش‌تر را در <a href="url">بخش مجوزها</a> بخوانید.</p>
+<h2 id="تنظیمات-دادهها"><a class="header" href="#تنظیمات-دادهها">تنظیمات: داده‌ها</a></h2>
 <img src="./images/settings_data.png" alt="Data section" width="60%"/>
-<p>In this section, you can view which content your Ceno app can share with other
-Ceno users when they request it .</p>
-<p><strong>Content shared by you</strong> lists the websites that you your Ceno app is able to
-share with other Ceno users.</p>
-<p><strong>Local cache</strong> informs you how much data may be uploaded from your device onto
-the Ceno network when other users request it.</p>
-<p>Tapping on the <strong>Clear cached content</strong> option will delete the data from your
-cache and there will be nothing left to share with your peers. To cache websites
-and be able to share them with your peers again, you will need to access them
-via Ceno Public network once more.</p>
-<p>More information about the purpose of these settings is available in the section
-<a href="./public-or-personal.html">Public or Personal</a>.</p>
-<h2 id="settings-developer-tools"><a class="header" href="#settings-developer-tools">Settings: Developer Tools</a></h2>
+<p>در این بخش می‌توانید ببینید کدام محتوا در اپلیکیشن سنو شما می‌تواند هنگام
+درخواست دیگر کاربران سنو با آن‌ها به اشتراک گذاشته شود.</p>
+<p>بخش <strong>محتوای به‌اشتراک‌گذاشته‌شده توسط شما</strong> فهرستی از وب‌سایت‌ها را نشان می‌دهد
+که اپلیکیشن سنو شما قادر است با دیگر کاربران سنو به اشتراک بگذارد.</p>
+<p><strong>کَش محلی</strong> به شما نشان می‌دهد چه میزان داده ممکن است هنگام درخواست دیگر
+کاربران، از دستگاه شما در شبکه سنو بارگذاری شود.</p>
+<p>زدن گزینه‌ی <strong>پاک کردن محتوای کَش‌شده</strong> داده‌ها را از کش شما حذف می‌کند و دیگر
+چیزی برای اشتراک‌گذاری با همتایان‌تان باقی نخواهد ماند. برای کش کردن دوباره
+وب‌سایت‌ها و توانایی اشتراک‌گذاری آن‌ها با دیگران، لازم است دوباره از طریق شبکه
+عمومی سنو به آن‌ها دسترسی پیدا کنید.</p>
+<p>اطلاعات بیش‌تر درباره هدف این تنظیمات در بخش <a href="./public-or-personal.html">عمومی یا
+شخصی</a> در دسترس است.</p>
+<h2 id="تنظیمات-ابزارهای-توسعهدهنده"><a class="header" href="#تنظیمات-ابزارهای-توسعهدهنده">تنظیمات: ابزارهای توسعه‌دهنده</a></h2>
 <img src="./images/settings_developers.png" alt="Developer tools section" width="60%"/>
 <h3 id="منابع-وبسایت"><a class="header" href="#منابع-وبسایت">منابع وب‌سایت</a></h3>
-<p>Ceno is able to retrieve website content that you request from different
-sources: directly from the origin website, Ceno public network, Ceno private
-network and Ceno cache. More details about these options are available in the
-sections detailing the Public and Personal browsing modes.<br />
-By default all these options are checked and for best results you can just leave
-them as they are.</p>
-<p>You can read more detailed information regarding these options in the section
-<a href="./public-or-personal.html">Public or Personal</a>.</p>
-<h3 id="tracking-protection"><a class="header" href="#tracking-protection">Tracking protection</a></h3>
-<p>These two settings prevent your online activities being tracked by third party
-trackers.</p>
-<h3 id="network-details"><a class="header" href="#network-details">Network details</a></h3>
-<p>This section contains details of your network settings, which may be helpful to
-our development team if we need to investigate any issues that you report to us.</p>
+<p>سنو می‌تواند محتوای وب‌سایتی را که درخواست می‌کنید از منابع مختلفی بازیابی کند:
+مستقیما از وب‌سایت اصلی، از شبکه عمومی سنو، از شبکه شخصی سنو و از کش سنو. جزئیات
+بیش‌تر درباره‌ی این گزینه‌ها در بخش‌های مربوط به حالت‌های مرور عمومی و شخصی آمده
+است.<br />
+به‌طور پیش‌فرض همه این گزینه‌ها فعال هستند و برای بهترین نتیجه می‌توانید آن‌ها
+را همان‌ طور که هستند باقی بگذارید.</p>
+<p>می‌توانید اطلاعات دقیق‌تری درباره این گزینه‌ها در بخش <a href="./public-or-personal.html">عمومی یا
+شخصی</a> بخوانید.</p>
+<h3 id="محافظت-در-برابر-ردیابی"><a class="header" href="#محافظت-در-برابر-ردیابی">محافظت در برابر ردیابی</a></h3>
+<p>این دو تنظیم مانع از آن می‌شوند که فعالیت‌های آنلاین شما توسط ردیاب‌های شخص‌
+ثالث دنبال شود.</p>
+<h3 id="جزییات-شبکه"><a class="header" href="#جزییات-شبکه">جزییات شبکه</a></h3>
+<p>این بخش شامل جزئیات تنظیمات شبکه شماست که در صورت نیاز می‌تواند برای تیم توسعه
+ما هنگام بررسی مشکلاتی که گزارش می‌کنید مفید باشد.</p>
 <h3 id="فعالسازی-فایل-گزارش"><a class="header" href="#فعالسازی-فایل-گزارش">فعال‌سازی فایل گزارش</a></h3>
-<p>Enabling and exporting the Ceno log file can be helpful when investigating
-issues. These files do not contain any personally identifiable data. If you
-export them to the file system on your device, you can view their contents. You
-can also share them with our development team when you experience issues that
-may require investigation by our technical experts.</p>
-<h2 id="settings-about"><a class="header" href="#settings-about">Settings: About</a></h2>
+<p>فعال‌سازی و خروجی گرفتن فایل گزارش سنو می‌تواند هنگام بررسی مشکلات مفید باشد.
+این فایل‌ها هیچ داده شخصیِ قابل‌شناسایی‌ای را شامل نمی‌شوند. اگر آن‌ها را در
+سیستم فایل دستگاه خود خروجی بگیرید، می‌توانید محتوایشان را مشاهده کنید. همچنین
+می‌توانید هنگام بروز مشکلاتی که نیازمند بررسی کارشناسان فنی ما باشد، این فایل‌ها
+را با تیم توسعه ما به اشتراک بگذارید.</p>
+<h2 id="تنظیمات-درباره"><a class="header" href="#تنظیمات-درباره">تنظیمات: درباره</a></h2>
 <img src="./images/settings_about.png" alt="About section" width="60%"/>
-<p>Contains additional information about your installation of Ceno, including its
-version number, the status of the backround Ceno service, and the version number
-of the Ouinet library that is built into Ceno.</p>
+<p>شامل اطلاعات بیشتری درباره نصب سنو است، از جمله شماره نسخه، وضعیت سرویس پس‌زمینه
+سنو، و شماره نسخه کتابخانه Ouinet که در سنو تعبیه شده است.</p>
 
                     </main>
 
@@ -807,6 +804,7 @@ of the Ouinet library that is built into Ceno.</p>
             window.setTimeout(window.print, 100);
         });
         </script>
+
 
     </div>
     </body>

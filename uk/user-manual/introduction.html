@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Introduction - Ceno User Manual</title>
+        <title>Вступ - Ceno User Manual</title>
 
 
         <!-- Custom HTML head -->
@@ -36,6 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "light";
+            window.path_to_searchindex_js = "searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc.js"></script>
@@ -92,10 +93,13 @@
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -146,7 +150,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -166,15 +175,38 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
-<p>Ceno is a mobile web browser based on Mozilla Android Components. It is designed for accessing and distributing web content (websites) using a novel approach that relies on <a href="https://en.wikipedia.org/wiki/BitTorrent">BitTorrent – a decentralized file sharing network</a>. Ceno's advantage comes from side-stepping current Internet censorship methods and allowing people to access and share web information in and across regions where connectivity has been interrupted or compromised.</p>
-<p>Ceno Browser allows you to access any website on the Internet, even if it is not normally accessible in your country or region.</p>
-<p>If a website you want to visit is accessible, Ceno will access it directly and behave like any other browser. But if you are not able to access the desired website directly, Ceno will attempt to access it through its own peer-to-peer network. Ceno will cache the accessed  website contents and make them available to other Ceno users utilising the peer-to-peer technology.</p>
-<p>When other members of the Ceno network request the same contents and they are not able to access them directly, Ceno will identify that the requested website content is stored in the cache of your Ceno app. From there, it will be uploaded from your device to the internet and redirected to the person who requested it. In the <a href="./settings.html">Settings</a> of your Ceno app, you will be able to see how much data has been stored on your device  and all the websites you have shared.</p>
-<p>Of course this only applies to the websites you visit in the <a href="./public-or-personal.html#public-browsing---when-to-use-it"><strong>Public mode</strong></a>.</p>
-<p>For all your personal needs, such as emails, messages, subscriptions or purchases, we have provided a <a href="./public-or-personal.html#personal-browsing---when-to-use-it"><strong>Personal mode</strong></a>. When you access the internet in this mode, Ceno app doesn’t store the pages you access, and therefore it does not share them with anybody else.</p>
-<p>This user guide contains detailed information about Ceno's features and their purpose.</p>
-<p>We hope you enjoy using our app.</p>
+                        <h1 id="Ознайомлення"><a class="header" href="#Ознайомлення">Ознайомлення</a></h1>
+<p>Ceno — це мобільний веб-браузер на базі Mozilla Android Components. Він
+призначений для доступу та розповсюдження веб-контенту (веб-сайтів) за допомогою
+нового підходу, що базується на <a href="https://en.wikipedia.org/wiki/BitTorrent">BitTorrent — децентралізованій мережі обміну
+файлами</a>. Перевага Ceno полягає в
+тому, що він дозволяє обійти сучасні методи інтернет-цензури та надає людям
+можливість отримувати доступ до веб-інформації та обмінюватися нею в регіонах,
+де зв'язок перерваний або порушений.</p>
+<p>Браузер Ceno дозволяє вам отримати доступ до будь-якого веб-сайту в Інтернеті,
+навіть якщо він зазвичай недоступний у вашій країні чи регіоні.</p>
+<p>Якщо веб-сайт, який ви хочете відвідати, є доступним, Ceno отримає до нього
+прямий доступ і буде працювати як будь-який інший браузер. Але якщо ви не можете
+отримати прямий доступ до потрібного веб-сайту, Ceno спробує отримати доступ до
+нього через власну мережу peer-to-peer. Ceno збереже в кеші вміст веб-сайту, до
+якого було отримано доступ, і зробить його доступним для інших користувачів
+Ceno, використовуючи технологію peer-to-peer.</p>
+<p>Коли інші члени мережі Ceno запитують той самий контент і не можуть отримати до
+нього прямий доступ, Ceno визначає, що запитуваний веб-сайт зберігається в кеші
+вашого додатка Ceno. Звідти він буде завантажений з вашого пристрою в Інтернет і
+перенаправлений особі, яка його запитувала. У <a href="./settings.html">Налаштуваннях</a>
+вашого додатка Ceno ви зможете побачити, скільки даних було збережено на вашому
+пристрої, а також усі веб-сайти, якими ви поділилися.</p>
+<p>Звісно, це стосується лише вебсайтів, які ви відвідуєте в <a href="./public-or-personal.html#public-browsing---when-to-use-it"><strong>Загальнодоступному
+режимі</strong></a>.</p>
+<p>Для всіх ваших особистих потреб, таких як електронна пошта, повідомлення,
+підписки або покупки, ми передбачили <a href="./public-or-personal.html#personal-browsing---when-to-use-it"><strong>особистий
+режим</strong></a>. Коли ви
+виходите в Інтернет у цьому режимі, додаток Ceno не зберігає сторінки, які ви
+відвідуєте, і, отже, не передає їх нікому іншому.</p>
+<p>Цей посібник користувача містить детальну інформацію про функції Ceno та їхнє
+призначення.</p>
+<p>Сподіваємося, вам сподобається користуватися нашим додатком.</p>
 
                     </main>
 
@@ -222,6 +254,7 @@
         <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>

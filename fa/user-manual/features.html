@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Features - Ceno User Manual</title>
+        <title>ویژگی‌ها - Ceno User Manual</title>
 
 
         <!-- Custom HTML head -->
@@ -36,6 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "light";
+            window.path_to_searchindex_js = "searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc.js"></script>
@@ -92,10 +93,13 @@
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -146,7 +150,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -166,92 +175,92 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="features"><a class="header" href="#features">Features</a></h1>
-<h2 id="toolbar"><a class="header" href="#toolbar">Toolbar</a></h2>
-<p>At the bottom of the screen, you will see the bar containing various buttons.
-Some of them are probably self-explanatory, but others less so. Let’s take a
-quick look at each of them:</p>
-<h3 id="home-button"><a class="header" href="#home-button">Home button</a></h3>
-<p>The first is the familiar Home button.</p>
+                        <h1 id="ویژگیها"><a class="header" href="#ویژگیها">ویژگی‌ها</a></h1>
+<h2 id="نوار-ابزار"><a class="header" href="#نوار-ابزار">نوار ابزار</a></h2>
+<p>در پایین صفحه، نواری شامل دکمه‌های گوناگون می‌بینید. بعضی از این دکمه‌ها به‌
+خودی خود گویا هستند، اما برخی دیگر کمتر. بیایید نگاهی سریع به هر یک از آن‌ها
+بیندازیم:</p>
+<h3 id="دکمه-خانه"><a class="header" href="#دکمه-خانه">دکمه خانه</a></h3>
+<p>اولین دکمه، دکمه‌ آشنای «خانه» است.</p>
 <img src="./images/home_button.png" alt="Home button" width="400"/>
-<p>You can configure this button to be either shown or hidden, but going to
-<strong>Settings &gt; Customisations &gt; Show home button</strong></p>
+<p>می‌توانید این دکمه را طوری تغییر دهید که نمایش داده شود یا پنهان بماند؛ کافی است
+به <strong>تنظیمات &gt; سفارشی‌سازی &gt; نمایش دکمه خانه</strong> بروید</p>
 <img src="./images/show_home_button.png" alt="Show home button" width="400"/>
-<h3 id="ceno-button"><a class="header" href="#ceno-button">Ceno button</a></h3>
-<p>Next is the Ceno button. Tapping on it will open an information screen that
-shows where the website components were retrieved from. We describe this screen
-in more detail in Personal and Public browsing sections.</p>
-<h3 id="secure-connection-button"><a class="header" href="#secure-connection-button">Secure connection button</a></h3>
-<p>When you enter the website address you want to access, you will see the <strong>Secure
-connection button</strong>, represented by a small padlock or a small shield, which
-indicate that your connection to a particular website is secure.<br />
-If the padlock or shield is crossed with a line, it means that connection to
-that particular website is not secure. This is the same as in other browsers.</p>
+<h3 id="دکمه-سنو"><a class="header" href="#دکمه-سنو">دکمه سنو</a></h3>
+<p>بعد از آن، دکمه سنو قرار دارد. با زدن روی این دکمه صفحه‌ای برای اطلاع‌رسانی باز
+می‌شود که نشان می‌دهد اجزای وب‌سایت از کجا بازیابی شده‌اند. این صفحه را در
+بخش‌های مربوط به مرور شخصی و عمومی با جزئیات بیش‌تری توضیح می‌دهیم.</p>
+<h3 id="دکمه-اتصال-امن"><a class="header" href="#دکمه-اتصال-امن">دکمه اتصال امن</a></h3>
+<p>وقتی نشانی وب‌سایت مورد نظرتان را وارد کنید، <strong>دکمه اتصال امن</strong> را خواهید دید که
+با یک قفل کوچک یا یک سپر کوچک نشان داده می‌شود و بیانگر این است که اتصال شما به
+آن وب‌سایت امن است.<br />
+اگر روی قفل یا سپر یک خط کشیده شده باشد، یعنی اتصال به آن وب‌سایت امن نیست.
+مشابه این در مرورگرهای دیگر هم وجود دارد.</p>
 <img src="./images/connection_not_secure.png" alt="Connection not secure" width="400"/>
-<p><em>Note: even though connection to this particular website is not secure, the Ceno
-icon has a small green dot. This dot does not indicate that the connection is
-secure, but that the data was retrieved directly from the origin website.</em></p>
-<p>If you tap on it, you will see the details of this connection. As an
-illustration, we include example screenshots of secure versus not secure
-connection.</p>
+<p><em>توجه: حتا با این که اتصال به این وب‌سایت امن نیست، آیکون سنو یک نقطه سبز کوچک
+دارد. این نقطه نشان‌دهنده امن بودن اتصال نیست، بلکه بیانگر این است که داده
+مستقیما از وب‌سایت مبدا بازیابی شده است.</em></p>
+<p>اگر روی آن بزنید، جزئیات این اتصال را خواهید دید. برای درک بهتر، اسکرین‌شات‌هایی
+از اتصال امن در مقایسه با اتصال ناامن قرار داده‌ایم.</p>
 <p><img src="./images/compare_not_secure.png" alt="Compare not secure page" width="50%"/><img src="./images/compare_secure.png" alt="Compare secure page" width="50%"/></p>
-<h3 id="clear-button"><a class="header" href="#clear-button">Clear button</a></h3>
-<p>The first button on the right hand side of the address bar is the Clear button,
-in the shape of a small broom.</p>
+<h3 id="دکمه-پاک-کردن"><a class="header" href="#دکمه-پاک-کردن">دکمه پاک کردن</a></h3>
+<p>اولین دکمه در سمت راست نوار آدرس، دکمه «پاک کردن» است که به شکل یک جاروی کوچک
+نمایش داده شده.</p>
 <img src="./images/home_button.png" alt="Clear button" width="400"/>
-<p>Tapping on it gives the user a choice to clear all Ceno data, as if Ceno was
-never used, or to clear only what Ceno stored in Cache. The first option clears
-all the preferences, bookmarks, setttings and customisations, whereas the second
-one will only clear the websites that the Ceno app stored in the cache on your
-device.</p>
+<p>با زدن روی آن، کاربر می‌تواند انتخاب کند که همه داده‌های سنو را پاک کند طوری که
+انگار هرگز از سنو استفاده نشده، یا فقط آنچه را که سنو در حافظه پنهان ذخیره کرده
+حذف کند. گزینه نخست همه ترجیحات، سایت‌های برتر (بوکمارک‌ها)، تنظیمات و
+سفارشی‌سازی‌ها را پاک می‌کند، در حالی که گزینه دوم فقط وب‌سایت‌هایی را پاک خواهد
+کرد که برنامه سنو در حافظه پنهان دستگاه شما ذخیره کرده است.</p>
 <img src="./images/clear_button.png" alt="Clear button" width="400"/>
-<p>If you go to <strong>Settings &gt; Customisations &gt; Clear button</strong> you can choose whether
-you want the clear button to show in the toolbar or in the menu.</p>
+<p>اگر به <strong>تنظیمات &gt; سفارشی‌سازی &gt; دکمه پاک کردن</strong> بروید، می‌توانید انتخاب کنید که
+دکمه پاک کردن در نوار ابزار نمایش داده شود یا در منو.</p>
 <img src="./images/clear_button_settings.png" alt="Clear button in settings" width="60%"/>
-<p>Tapping on the option <strong>Default behavior</strong> will open a dialog box that offers
-you to choose what you want your Clear button to do when you tap it. It can
-offer you a prompt, like on the above screenshot, or it can immediately delete
-all cached content or even all Ceno data.</p>
+<p>با زدن روی گزینه <strong>رفتار پیش‌فرض</strong>، یک جعبه گفت‌وگو باز می‌شود تا انتخاب کنید که
+هنگام فشردن دکمه «پاک کردن» چه کاری انجام شود. این کار می‌تواند یادآوری گزینه‌ها
+باشد (مانند تصویر بالا)، یا بلافاصله تمام محتوای ذخیره‌شده در حافظه پنهان، یا
+حتی همه داده‌های سنو را حذف کند.</p>
 <img src="./images/clear_button_default.png" alt="Clear button behavior" width="60%"/>
-<h3 id="tabs-button"><a class="header" href="#tabs-button">Tabs button</a></h3>
-<p>Next is a small rectangle with a number in it. This number indicates how many
-tabs the user has opened.</p>
-<p>Tapping on it opens a screen where you can see all the tabs that you have open.</p>
+<h3 id="دکمه-زبانهها"><a class="header" href="#دکمه-زبانهها">دکمه زبانه‌ها</a></h3>
+<p>بعدی یک مستطیل کوچک با یک عدد داخل آن است. این عدد نشان می‌دهد کاربر، چند زبانه
+باز کرده است.</p>
+<p>با زدن روی آن، صفحه‌ای باز می‌شود که در آن می‌توانید همه زبانه‌های باز خود را
+ببینید.</p>
 <img src="./images/tab_view.png" alt="Tab view" width="400"/>
-<p>You can close them one by one, if you tap on the vertical menu in the bottom
-right corner, you will get the option to close them all together.</p>
+<p>می‌توانید آن‌ها را یکی‌یکی ببندید، و اگر روی منوی عمودی در پایینِ سمت راست بزنید
+گزینه‌ای برای بستن همه آن‌ها به‌طور هم‌زمان خواهید داشت.</p>
 <img src="./images/close_tabs.png" alt="Close all tabs" width="400"/>
-<p>When viewing the tab screen, at the top of that screen you will see the icons
-for Public or Personal browsing, and you can easily switch between them.</p>
-<p>View when Public browsing icon is selected</p>
+<p>وقتی صفحه زبانه‌ها را مشاهده می‌کنید، در بالای آن صفحه آیکون‌های مرور عمومی و
+شخصی را خواهید دید و می‌توانید به‌راحتی بین آن‌ها جابه‌جا شوید.</p>
+<p>نمای زمانی که آیکون مرور عمومی انتخاب شده است</p>
 <img src="./images/view_public.png" alt="Public browsing selected" width="400"/>
-<p>View when Personal browsing is selected.</p>
+<p>نمای زمانی که مرور شخصی انتخاب شده است.</p>
 <img src="./images/view_personal.png" alt="Personal browsing selected" width="400"/>
-<h3 id="vertical-menu"><a class="header" href="#vertical-menu">Vertical menu</a></h3>
-<p>What the three dot vertical menu on the far right hand side of the toolbar
-displays depends on the context.</p>
+<h3 id="منوی-عمودی"><a class="header" href="#منوی-عمودی">منوی عمودی</a></h3>
+<p>آنچه منوی سه‌نقطه‌ای عمودی در انتهای سمت راست نوار ابزار نمایش می‌دهد، به زمینه
+بستگی دارد.</p>
 <img src="./images/home_button.png" alt="Clear button" width="400"/>
 <ul>
-<li>when you have a website page open, this menu will display options relevant to
-that page.</li>
+<li>وقتی صفحه‌ای از وب‌سایت باز باشد، این منو گزینه‌های مربوط به همان صفحه را
+نمایش می‌دهد.</li>
 </ul>
 <img src="./images/menu_webpage.png" alt="Webpage menu" width="40%"/>
-<p>Most of the elements in this menu are self explanatory. But if you’re not
-familiar with the uBlock Origin, it is an ad and tracker blocker.</p>
-<p>The reason we bundle it up with our Ceno browser is mostly to prevent
-unnecessarily caching advertisements and to avoid possibly caching unique
-identifiers associated with trackers.</p>
-<p>To learn more about this ad and tracker blocker, please visit <a href="https://ublockorigin.com/">their
-webpage</a>.</p>
+<p>بیش‌تر گزینه‌های این منو خودشان گویا هستند. اما اگر با uBlock Origin آشنایی
+ندارید، این ابزار یک مسدودکننده تبلیغات و ردیاب‌ها است.</p>
+<p>دلیل این که ما آن را همراه با مرورگر سنو ارائه می‌کنیم، بیش‌تر برای جلوگیری از
+ذخیره‌سازی غیرضروری تبلیغات و همچنین جلوگیری از ذخیره شدن احتمالی شناسه‌های
+منحصربه‌فردی است که به ردیاب‌ها مربوط می‌شوند.</p>
+<p>برای آشنایی بیش‌تر با این مسدودکننده تبلیغات و ردیاب‌ها لطفا به <a href="https://ublockorigin.com/">صفحه وب
+آن‌ها</a> مراجعه کنید.</p>
 <ul>
-<li>If you tap on this menu when on the Ceno homepage, you will be able to see the
-item that allows you to clear Ceno (its action is the same as the small broom
-on the home screen).</li>
+<li>اگر هنگام حضور در صفحه اصلی سنو روی این منو بزنید، می‌توانید گزینه‌ای را
+ببینید که امکان پاک‌سازی سنو را فراهم می‌کند (عملکرد آن همانند آیکون جارو در
+صفحه اصلی است).</li>
 </ul>
 <img src="./images/menu_homepage.png" alt="Homepage menu" width="400"/>
 <ul>
-<li>When you are on the tabs screen, tapping this menu will only give you the
-option to Close all tabs</li>
+<li>وقتی در صفحه زبانه‌ها هستید، زدن این منو تنها گزینه «بستن همه زبانه‌ها» را در
+اختیارتان قرار می‌دهد</li>
 </ul>
 <img src="./images/close_tabs.png" alt="Close all tabs" width="400"/>
 
@@ -301,6 +310,7 @@ option to Close all tabs</li>
         <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>

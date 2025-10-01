@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Bridge Configuration - Ceno User Manual</title>
+        <title>Конфігурація мосту - Ceno User Manual</title>
 
 
         <!-- Custom HTML head -->
@@ -36,6 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "light";
+            window.path_to_searchindex_js = "searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc.js"></script>
@@ -92,10 +93,13 @@
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -146,7 +150,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -166,51 +175,99 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h2 id="why-become-a-ceno-bridge"><a class="header" href="#why-become-a-ceno-bridge">Why become a Ceno bridge?</a></h2>
-<p>A peer-to-peer network is built from every node connected to it (yes, that means you as well!). The more nodes, the stronger and more versatile the network becomes.</p>
-<p>If you are running Ceno Browser from a country that does not censor the Internet (or not as heavily as some), consider helping other Ceno users by becoming a bridge node. You will then begin to route traffic between clients living in heavily censored countries and Ceno injectors.</p>
-<p>You will not be able to see their traffic (it will be sent through an encrypted tunnel), nor will any of this traffic remain on your device.</p>
-<p><em>Note: The configuration described in this section may also help your device to effectively seed content to others on the distributed cache, so please consider applying it as well when using Ceno in a censoring country (but keep in mind the <a href="https://ceno.app/en/faq.html#bridgemode">risks</a> of serving such content to others)</em></p>
-<h2 id="how-to-become-a-ceno-bridge"><a class="header" href="#how-to-become-a-ceno-bridge">How to become a Ceno bridge?</a></h2>
-<p>As stated in <a href="./public-or-personal.html?#bridges">this section</a>, Ceno app provides some functionlaity that allows you to easily become a Ceno bridge, if your network configuration allows it.</p>
-<p>If you have checked your <strong>Reachability</strong> and your <strong>UPnP status</strong> and it looks like this</p>
-<p><img src="./images/reachability.png" alt="Reachability status" /></p>
-<p>You will need to configure your router by either enabling the UPnP or setting up the port forwarding.  In the following sections we describe the steps to perform.</p>
-<h3 id="enabling-upnp-on-your-wi-fi-router"><a class="header" href="#enabling-upnp-on-your-wi-fi-router">Enabling UPnP on your Wi-Fi router</a></h3>
-<p>UPnP is the easiest way of making your Ceno browser (or computer client) reachable to the Ceno network.</p>
-<p><em>Note: Enabling UPnP on the Wi-Fi router may expose devices on your network to external interference. Please be <a href="https://www.howtogeek.com/122487/htg-explains-is-upnp-a-security-risk/">aware of the risks</a> and also consider using alternative methods as explained below.</em></p>
-<p>The first thing you will need to do is log in to your router's web interface.  To find out how to do that, please refer to your router's manual which will tell you which user and password to use to log in.</p>
-<p>After that, the steps to perform are similar, but might not be identical for all router models.</p>
-<p>Here is a nice article with <a href="https://www.lifewire.com/enable-upnp-on-a-router-5206124">step by step instructions</a> for enabling the UPnP on different routers.</p>
-<p>Please find instructions for your router type and perform the necessary steps.</p>
-<p>If you prefer, though, you can choose to set up the port forwarding instead of the UPnP.</p>
-<h3 id="use-port-forwarding-as-an-alternative-to-upnp"><a class="header" href="#use-port-forwarding-as-an-alternative-to-upnp">Use port forwarding as an alternative to UPnP</a></h3>
-<p>The first step is the same as before: log in to the router's web interface.</p>
-<p>Then, please locate **port forwarding **option.</p>
-<p>To see which IP address you need to forward the connections to and the relevant port, open the <strong>Ceno Settings</strong> page and look under the <strong>Local UDP endpoints</strong>.</p>
-<p><img src="./images/UDP_endpoint.png" alt="Local UDP endpoint" /></p>
-<p>The port forwarding must be for the UDP protocol (not TCP).</p>
-<p>Ceno chooses a random port on first run and keeps it for subsequent runs, but your device's local network IP address may change from time to time. Thus you should periodically review the <strong>Ceno Settings</strong> page to see that your device is reachable to the Ceno network.</p>
-<p>Your device is reachable if its</p>
-<p><strong>Reachability status</strong> is <strong>likely reachable</strong> or <strong>reachable</strong></p>
-<p><strong>UPnP status</strong> is <strong>enabled</strong></p>
-<p><em><strong>Technical note</strong>: Alternatively, you can make sure that the router always assigns the same IP address to your device (e.g. via a static DHCP lease for the device's MAC address)</em></p>
-<p>If you have a computer with good connectivity that stays on most of the time, and you'd like to set it up as a <strong>Ceno bridge</strong>, please continue reading.</p>
-<h2 id="running-a-bridge-on-a-computer"><a class="header" href="#running-a-bridge-on-a-computer">Running a bridge on a computer</a></h2>
-<p>If your computer supports Docker containers, you can run a pre-configured Ceno client on it to act as a bridge. If Docker is not yet installed, please follow the instructions to install the Docker Engine in your platform. For Debian derivatives like Ubuntu or Linux Mint, you can just run: <code>sudo apt install docker.io</code></p>
-<p>To deploy a Ceno client container you only need to run the following command on a terminal (it looks scary but you can just copy and paste it as is on the command line):</p>
+                        <h2 id="Чому-варто-стати-мостом-Сено"><a class="header" href="#Чому-варто-стати-мостом-Сено">Чому варто стати мостом Сено?</a></h2>
+<p>Однорангова мережа будується з кожного підключеного до неї вузла (так, це
+стосується і вас!). Чим більше вузлів, тим сильнішою та універсальнішою стає
+мережа.</p>
+<p>Якщо ви використовуєте браузер Ceno в країні, де не застосовується цензура в
+Інтернеті (або вона не така сувора, як в інших країнах), розгляньте можливість
+допомогти іншим користувачам Ceno, ставши проміжним вузлом. Ви почнете
+маршрутизувати трафік між клієнтами, які проживають у країнах з суворою
+цензурою, та інжекторами Ceno.</p>
+<p>Ви не зможете бачити їхній трафік (він надсилатиметься через зашифрований
+тунель), а також жодна частина цього трафіку не залишатиметься на вашому
+пристрої.</p>
+<p><em>Примітка: Конфігурація, описана в цьому розділі, також може допомогти вашому
+пристрою ефективно поширювати контент іншим користувачам у розподіленому кеші,
+тому, будь ласка, розгляньте можливість її застосування, якщо ви використовуєте
+Ceno в країні, де діє цензура (але майте на увазі
+<a href="https://ceno.app/en/faq.html#bridgemode">ризики</a> поширення такого контенту
+іншим користувачам)</em></p>
+<h2 id="Як-стати-мостом-Сено"><a class="header" href="#Як-стати-мостом-Сено">Як стати мостом Сено?</a></h2>
+<p>Як зазначено в <a href="./public-or-personal.html?#bridges">цьому розділі</a>, додаток Ceno
+надає деякі функції, які дозволяють вам легко стати мостом Ceno, якщо це
+дозволяє конфігурація вашої мережі.</p>
+<p>Якщо ви перевірили свою <strong>досяжність</strong> та <strong>статус UPnP</strong>, і вони виглядають так</p>
+<p><img src="./images/reachability.png" alt="Стан досяжності" /></p>
+<p>Вам потрібно буде налаштувати маршрутизатор, або ввімкнувши UPnP, або
+налаштувавши переадресацію портів. У наступних розділах ми опишемо кроки, які
+необхідно виконати.</p>
+<h3 id="Увімкнення-upnp-на-маршрутизаторі-wi-fi"><a class="header" href="#Увімкнення-upnp-на-маршрутизаторі-wi-fi">Увімкнення UPnP на маршрутизаторі Wi-Fi</a></h3>
+<p>UPnP — це найпростіший спосіб зробити ваш браузер Ceno (або комп’ютерний клієнт)
+доступним для мережі Ceno.</p>
+<p><em>Примітка. Увімкнення UPnP на маршрутизаторі Wi-Fi може наражати пристрої у
+вашій мережі на зовнішні перешкоди. Будь ласка, <a href="https://www.howtogeek.com/122487/htg-explains-is-upnp-a-security-risk/">усвідомте
+ризики</a>,
+а також розгляньте можливість використання альтернативних методів, як описано
+нижче.</em></p>
+<p>Перше, що вам потрібно зробити, це увійти в веб-інтерфейс вашого маршрутизатора.
+Щоб дізнатися, як це зробити, зверніться до посібника користувача
+маршрутизатора, в якому вказано, який логін і пароль потрібно використовувати
+для входу.</p>
+<p>Після цього кроки, які потрібно виконати, схожі, але можуть відрізнятися для
+всіх моделей маршрутизаторів.</p>
+<p>Ось гарна стаття з <a href="https://www.lifewire.com/enable-upnp-on-a-router-5206124">покроковими
+інструкціями</a> щодо
+ввімкнення UPnP на різних маршрутизаторах.</p>
+<p>Будь ласка, знайдіть інструкції для вашого типу маршрутизатора та виконайте
+необхідні кроки.</p>
+<p>Однак, якщо хочете, можете налаштувати переадресацію портів замість UPnP.</p>
+<h3 id="Використання-переадресація-портів-як-альтернативи-upnp"><a class="header" href="#Використання-переадресація-портів-як-альтернативи-upnp">Використання переадресація портів як альтернативи UPnP</a></h3>
+<p>Перший крок такий самий, як і раніше: увійдіть у веб-інтерфейс маршрутизатора.</p>
+<p>Потім, будь ласка, знайдіть опцію <strong>переадресація портів</strong>.</p>
+<p>Щоб побачити, на яку IP-адресу потрібно переадресовувати з’єднання та
+відповідний порт, відкрийте сторінку <strong>Налаштування Ceno</strong> та знайдіть розділ
+<strong>Локальні кінцеві точки UDP</strong>.</p>
+<p><img src="./images/UDP_endpoint.png" alt="Локальна кінцева точка UDP" /></p>
+<p>Переадресація портів має бути для протоколу UDP (не TCP).</p>
+<p>Ceno вибирає випадковий порт при першому запуску і зберігає його для наступних
+запусків, але локальна мережева IP-адреса вашого пристрою може час від часу
+змінюватися. Тому вам слід періодично перевіряти сторінку <strong>Налаштування Ceno</strong>,
+щоб переконатися, що ваш пристрій доступний для мережі Ceno.</p>
+<p>Ваш пристрій доступний, якщо його</p>
+<p><strong>Статус досяжності</strong> – <strong>ймовірно досяжний</strong> або <strong>досяжний</strong></p>
+<p><strong>Статус UPnP</strong>: <strong>увімкнено</strong></p>
+<p><em><strong>Технічне зауваження</strong>: Або ж ви можете переконатися, що маршрутизатор завжди
+призначає вашому пристрою однакову IP-адресу (наприклад, через статичну оренду
+DHCP для MAC-адреси пристрою)</em></p>
+<p>Якщо у вас є комп’ютер із хорошим підключенням, який залишається ввімкненим
+більшу частину часу, і ви хочете налаштувати його як <strong>міст Ceno</strong>, будь ласка,
+продовжуйте читати.</p>
+<h2 id="Запуск-моста-на-компʼютері"><a class="header" href="#Запуск-моста-на-компʼютері">Запуск моста на компʼютері</a></h2>
+<p>Якщо ваш комп'ютер підтримує контейнери Docker, ви можете запустити на ньому
+попередньо налаштований клієнт Ceno, який буде виконувати функцію моста. Якщо
+Docker ще не встановлено, дотримуйтесь інструкцій, щоб встановити Docker Engine
+на вашій платформі. Для похідних Debian, таких як Ubuntu або Linux Mint, просто
+запустіть: <code>sudo apt install docker.io</code></p>
+<p>Щоб розпакувати контейнер клієнта Ceno, достатньо виконати наступну команду в
+терміналі (вона виглядає лячно, але Ви можете просто скопіювати та вставити її в
+командний рядок):</p>
 <pre><code>sudo docker run --name ceno-client \
   -dv Ceno:/var/opt/ouinet --network host \
   --restart unless-stopped equalitie/Ceno-client
 </code></pre>
-<p>If your computer is not based on GNU/Linux, the command needs to be slightly different:</p>
+<p>Якщо операційна система Вашого компʼютера не GNU/Linux, команда повинна бути
+трохи іншою:</p>
 <pre><code>sudo docker run --name ceno-client \
   -dv ceno:/var/opt/ouinet \
   -p 127.0.0.1:8077-8078:8077-8078 -p 28729:28729/udp \
   --restart unless-stopped equalitie/ceno-client
 </code></pre>
-<p>The command will start a container named ceno-client that will run on every boot unless you explicitly tell it to stop.</p>
-<p>Please check the <a href="https://gitlab.com/ceno-app/ceno-docker-client#running-the-client">Ceno Docker client documentation</a> for more information on how to manipulate the container.</p>
+<p>Команда запустить контейнер з назвою ceno-client, який працюватиме під час
+кожного завантаження, якщо ви явно не накажете йому зупинитися.</p>
+<p>Будь ласка, перегляньте <a href="https://gitlab.com/ceno-app/ceno-docker-client#running-the-client">документацію клієнта Ceno
+Docker</a> для
+отримання додаткової інформації про те, як маніпулювати контейнером.</p>
 
                     </main>
 
@@ -258,6 +315,7 @@
         <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>

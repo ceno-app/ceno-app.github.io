@@ -37,6 +37,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "light";
+            window.path_to_searchindex_js = "searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc.js"></script>
@@ -93,10 +94,13 @@
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -147,7 +151,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -167,315 +176,630 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="ceno-browser"><a class="header" href="#ceno-browser">Ceno Browser</a></h1>
-<p>Share the Web! Ceno is the world's first web browser that gets better with every installation. Offering a common Internet browsing experience, it relies on a peer-to-peer technology to deliver and share websites among all participants. Ceno can also be used to bypass network restrictions and browse content during a shutdown.</p>
-<p>🔓 👀 Access blocked media and other websites. Free and anonymous in Personal Mode.</p>
-<p>🚫🌴 In case of a internet shutdown in your region, you will still be able to read news and stay connected.</p>
-<p>📱🤝📱  Live in a country with free internet access? Help people in other countries bypass censorship and access independent information with just one tap. Learn more <a href="https://ceno.app">on our website</a>.</p>
-<p>📖👐 Ceno Browser is built on Ouinet, an open-source library. You can check the app’s code <a href="https://gitlab.com/censorship-no">on GitLab</a>.</p>
-<p>🛠🦹🏻  Our product may experience instability due to the constant evolution of censorship technologies. We are continuously improving it to ensure you maintain access. If websites load slowly or don’t open, please don’t delete the app — try using it again in a few days or contact our support team: support [at] ceno [dot] app</p>
-<p>Ceno is developed by <a href="https://equalitie.org">eQualitie</a>. It is a completely free and open source browser that doesn’t require registration and is completely ad-free.</p>
-<p>We collect some anonymized app and network metrics. No personal information is collected and the data is never shared with third-parties. Metrics collection is enabled by default, users can opt-out of it any time via the <a href="./settings.html#background-metrics">Settings &gt; Background metrics &gt; Ceno Metrics</a> toggle. Please refer to our <a href="https://ceno.app/en/privacy_policy.html">Privacy Policy</a> for more information about what we collect.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
-<p>Ceno is a mobile web browser based on Mozilla Android Components. It is designed for accessing and distributing web content (websites) using a novel approach that relies on <a href="https://en.wikipedia.org/wiki/BitTorrent">BitTorrent – a decentralized file sharing network</a>. Ceno's advantage comes from side-stepping current Internet censorship methods and allowing people to access and share web information in and across regions where connectivity has been interrupted or compromised.</p>
-<p>Ceno Browser allows you to access any website on the Internet, even if it is not normally accessible in your country or region.</p>
-<p>If a website you want to visit is accessible, Ceno will access it directly and behave like any other browser. But if you are not able to access the desired website directly, Ceno will attempt to access it through its own peer-to-peer network. Ceno will cache the accessed  website contents and make them available to other Ceno users utilising the peer-to-peer technology.</p>
-<p>When other members of the Ceno network request the same contents and they are not able to access them directly, Ceno will identify that the requested website content is stored in the cache of your Ceno app. From there, it will be uploaded from your device to the internet and redirected to the person who requested it. In the <a href="./settings.html">Settings</a> of your Ceno app, you will be able to see how much data has been stored on your device  and all the websites you have shared.</p>
-<p>Of course this only applies to the websites you visit in the <a href="./public-or-personal.html#public-browsing---when-to-use-it"><strong>Public mode</strong></a>.</p>
-<p>For all your personal needs, such as emails, messages, subscriptions or purchases, we have provided a <a href="./public-or-personal.html#personal-browsing---when-to-use-it"><strong>Personal mode</strong></a>. When you access the internet in this mode, Ceno app doesn’t store the pages you access, and therefore it does not share them with anybody else.</p>
-<p>This user guide contains detailed information about Ceno's features and their purpose.</p>
-<p>We hope you enjoy using our app.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="installation"><a class="header" href="#installation">Installation</a></h1>
-<p>Ceno for Android can be downloaded from following platforms: <a href="https://play.google.com/store/apps/details?id=ie.equalit.ceno">Google Play</a>, <a href="https://gitlab.com/ceno-app/ceno-android/-/releases">Gitlab</a>, <a href="https://paskoocheh.com/tools/124/android.html?">Paskoocheh</a> or <a href="https://dcomm.net.ua/en/">dComms</a>.</p>
-<p>Please download the app and install it. Once installed, tap on Open.
-The first Ceno screen you will see is this one</p>
+                        <h1 id="ceno-браузером"><a class="header" href="#ceno-браузером">Ceno браузером</a></h1>
+<p>Поділіться Інтернетом! Ceno — це перший у світі веб-браузер, який покращується з
+кожною інсталяцією. Він пропонує звичайний досвід перегляду Інтернету, але
+використовує технологію peer-to-peer для доставки та обміну веб-сайтами між
+усіма учасниками. Ceno також можна використовувати для обходу мережевих обмежень
+і перегляду вмісту під час відключення.</p>
+<p>🔓 👀 Доступ до заблокованих медіа та інших вебсайтів. Безкоштовно та анонімно в
+особистому режимі.</p>
+<p>🚫🌴 У разі відключення інтернету у вашому регіоні ви все ще зможете читати новини
+та залишатися на зв'язку.</p>
+<p>📱🤝📱 Живете в країні з безкоштовним доступом до Інтернету? Допоможіть людям в
+інших країнах обійти цензуру та отримати доступ до незалежної інформації лише
+одним дотиком. Дізнайтеся більше <a href="https://ceno.app">на нашому
+вебсайті</a>.</p>
+<p>📖👐 Браузер Ceno побудовано на Ouinet, бібліотеці з відкритим кодом. Ви можете
+перевірити код програми <a href="https://gitlab.com/censorship-no">на
+GitLab</a>.</p>
+<p>🛠🦹🏻 Наш продукт може працювати нестабільно через постійний розвиток технологій
+цензури. Ми постійно вдосконалюємо його, щоб забезпечити вам постійний доступ.
+Якщо веб-сайти завантажуються повільно або не відкриваються, не видаляйте
+додаток — спробуйте скористатися ним знову через кілька днів або зверніться до
+нашої служби підтримки: support [at] ceno [dot] app</p>
+<p>Ceno розроблено компанією <a href="https://equalitie.org">eQualitie</a>. Це
+повністю безкоштовний браузер з відкритим кодом, який не потребує реєстрації та
+повністю вільний від реклами.</p>
+<p>Ми збираємо деякі анонімні показники щодо додатків та мережі. Особиста
+інформація не збирається, а дані ніколи не передаються третім особам. Збір
+показників увімкнено за замовчуванням, але користувачі можуть будь-коли
+відмовитися від нього, перейшовши до [Налаштування &gt; Показники у фоновому режимі</p>
+<blockquote>
+<p>Показники Ceno](./settings.html#background-metrics). Більше інформації про те,
+що ми збираємо, див. у нашій
+<a href="https://ceno.app/en/privacy_policy.html">Політиці конфіденційності</a>.</p>
+</blockquote>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="Ознайомлення"><a class="header" href="#Ознайомлення">Ознайомлення</a></h1>
+<p>Ceno — це мобільний веб-браузер на базі Mozilla Android Components. Він
+призначений для доступу та розповсюдження веб-контенту (веб-сайтів) за допомогою
+нового підходу, що базується на <a href="https://en.wikipedia.org/wiki/BitTorrent">BitTorrent — децентралізованій мережі обміну
+файлами</a>. Перевага Ceno полягає в
+тому, що він дозволяє обійти сучасні методи інтернет-цензури та надає людям
+можливість отримувати доступ до веб-інформації та обмінюватися нею в регіонах,
+де зв'язок перерваний або порушений.</p>
+<p>Браузер Ceno дозволяє вам отримати доступ до будь-якого веб-сайту в Інтернеті,
+навіть якщо він зазвичай недоступний у вашій країні чи регіоні.</p>
+<p>Якщо веб-сайт, який ви хочете відвідати, є доступним, Ceno отримає до нього
+прямий доступ і буде працювати як будь-який інший браузер. Але якщо ви не можете
+отримати прямий доступ до потрібного веб-сайту, Ceno спробує отримати доступ до
+нього через власну мережу peer-to-peer. Ceno збереже в кеші вміст веб-сайту, до
+якого було отримано доступ, і зробить його доступним для інших користувачів
+Ceno, використовуючи технологію peer-to-peer.</p>
+<p>Коли інші члени мережі Ceno запитують той самий контент і не можуть отримати до
+нього прямий доступ, Ceno визначає, що запитуваний веб-сайт зберігається в кеші
+вашого додатка Ceno. Звідти він буде завантажений з вашого пристрою в Інтернет і
+перенаправлений особі, яка його запитувала. У <a href="./settings.html">Налаштуваннях</a>
+вашого додатка Ceno ви зможете побачити, скільки даних було збережено на вашому
+пристрої, а також усі веб-сайти, якими ви поділилися.</p>
+<p>Звісно, це стосується лише вебсайтів, які ви відвідуєте в <a href="./public-or-personal.html#public-browsing---when-to-use-it"><strong>Загальнодоступному
+режимі</strong></a>.</p>
+<p>Для всіх ваших особистих потреб, таких як електронна пошта, повідомлення,
+підписки або покупки, ми передбачили <a href="./public-or-personal.html#personal-browsing---when-to-use-it"><strong>особистий
+режим</strong></a>. Коли ви
+виходите в Інтернет у цьому режимі, додаток Ceno не зберігає сторінки, які ви
+відвідуєте, і, отже, не передає їх нікому іншому.</p>
+<p>Цей посібник користувача містить детальну інформацію про функції Ceno та їхнє
+призначення.</p>
+<p>Сподіваємося, вам сподобається користуватися нашим додатком.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="Встановлення"><a class="header" href="#Встановлення">Встановлення</a></h1>
+<p>Ceno для Android можна завантажити з таких платформ: <a href="https://play.google.com/store/apps/details?id=ie.equalit.ceno">Google
+Play</a>,
+<a href="https://gitlab.com/ceno-app/ceno-android/-/releases">Gitlab</a>,
+<a href="https://paskoocheh.com/tools/124/android.html?">Paskoocheh</a> або
+<a href="https://dcomm.net.ua/en/">dComms</a>.</p>
+<p>Будь ласка, завантажте та встановіть програму. Після встановлення натисніть
+«Відкрити». Перший екран Ceno, який ви побачите, ось цей</p>
 <img src="./images/first_screen.png" alt="Ceno first screen" width="50%"/>
-<p>It will be displayed for a few seconds while the Ceno app is making connections with the rest of the Ceno network.  After that short period of time, the app welcomes you to its  Onboarding screens.</p>
-<img src="./images/welcome.png" alt="Ceno first screen" width="50%"/><div style="break-before: page; page-break-before: always;"></div><h1 id="first-time-run"><a class="header" href="#first-time-run">First time run</a></h1>
-<h2 id="guided-tour"><a class="header" href="#guided-tour">Guided tour</a></h2>
-<p>When you run your Ceno app for the first time, you will be invited to a small guided tour around the main Ceno features, which you can accept (by tapping on the ‘Get Started’ button) or skip (by tapping ‘Skip the tour’)</p>
+<p>Він відображатиметься кілька секунд, поки додаток Ceno встановлюватиме з’єднання
+з рештою мережі Ceno. Після цього короткого періоду часу додаток запрошує вас на
+екрани реєстрації.</p>
+<img src="./images/welcome.png" alt="Ceno first screen" width="50%"/>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="Перший-запуск"><a class="header" href="#Перший-запуск">Перший запуск</a></h1>
+<h2 id="Екскурсія-з-гідом"><a class="header" href="#Екскурсія-з-гідом">Екскурсія з гідом</a></h2>
+<p>Коли ви вперше запустите додаток Ceno, вам буде запропоновано невелику екскурсію
+по основних функціях Ceno, яку ви можете прийняти (натиснувши кнопку «Почати»)
+або пропустити (натиснувши «Пропустити екскурсію»)</p>
 <img src="./images/start_tour.png" alt="Start the tour" width="400"/>
-<p>The tour will take you through the most important features, as shown by the following screens.</p>
-<p><img src="./images/tour1.png" alt="Tour part 1" width="300"/> <img src="./images/tour2.png" alt="Tour part 1" width="300"/>
-<img src="./images/tour3.png" alt="Tour part 1" width="300"/> <img src="./images/tour4.png" alt="Tour part 1" width="300"/></p>
-<h2 id="permissions"><a class="header" href="#permissions">Permissions</a></h2>
-<p>At the end of the Tour, you will be asked to give Ceno the permissions it needs for optimal functioning:</p>
+<p>Цей огляд проведе вас через найважливіші функції, як показано на наступних
+екранах.</p>
+<img src="./images/tour1.png" alt="Tour part 1" width="300"/>
+<img src="./images/tour2.png" alt="Tour part 1" width="300"/>
+<img src="./images/tour3.png" alt="Tour part 1" width="300"/>
+<img src="./images/tour4.png" alt="Tour part 1" width="300"/>
+<h2 id="Дозволи"><a class="header" href="#Дозволи">Дозволи</a></h2>
+<p>В кінці огляду вам буде запропоновано надати Ceno дозволи, необхідні для
+оптимального функціонування:</p>
 <img src="./images/permissions_needed.png" alt="Permissions needed" width="400"/>
-<p>When you tap on Continue, depending on the version of Android that you have on your phone, you will be required to give Ceno permissions to send you notifications and to disable battery optimisation.  Some Android versions require both, and some just the permission to disable the battery optimisation.</p>
-<h3 id="notifications"><a class="header" href="#notifications">Notifications</a></h3>
-<p><img src="./images/notifications.png" alt="Notifications" /></p>
-<p>When you allow Ceno to send you notifications, the app will display the Ceno icon in your notification bar.</p>
+<p>Коли ви натиснете «Продовжити», залежно від версії Android, яка встановлена на
+вашому телефоні, вам буде потрібно надати Ceno дозвіл на надсилання повідомлень
+та вимкнення оптимізації батареї. Деякі версії Android вимагають обох дозволів,
+а деякі — лише дозволу на вимкнення оптимізації батареї.</p>
+<h3 id="Сповіщення"><a class="header" href="#Сповіщення">Сповіщення</a></h3>
+<p><img src="./images/notifications.png" alt="Сповіщення" /></p>
+<p>Коли ви дозволите Ceno надсилати вам сповіщення, програма відображатиме значок
+Ceno на панелі сповіщень.</p>
 <img src="./images/notification_bar.png" alt="Notifications bar" width="400"/>
-<p>The icon will appear when you access the first website.</p>
-<p>This icon represents the Ceno Browser service, which is the part of Ceno that runs permanently (even when you are not browsing) and allows other ceno users to retrieve content from it at any time.
-Since running such service uses network and processor resources, you may want to stop it whenever you are on the move (i.e. not connected to Wi-Fi or far from a charger).<br />
-Tapping on the Stop button will stop both Ceno and its service at once (until you open Ceno again).</p>
+<p>Піктограма з’явиться, коли ви перейдете на перший вебсайт.</p>
+<p>Ця піктограма позначає службу Ceno Browser, яка є частиною Ceno, що працює
+постійно (навіть коли ви не переглядаєте веб-сторінки) і дозволяє іншим
+користувачам Ceno отримувати з неї вміст у будь-який час. Оскільки робота такої
+служби використовує ресурси мережі та процесора, ви можете зупинити її, коли ви
+в дорозі (тобто не підключені до Wi-Fi або далеко від зарядного пристрою).<br />
+Натискання кнопки «Зупинити» одночасно зупинить роботу Ceno і його служби (доки
+ви знову не відкриєте Ceno).</p>
 <img src="./images/ceno_notification1.png" alt="Ceno notification 1" width="400"/>
-<p>Tapping on the Clear button will open another small notification</p>
+<p>Натискання кнопки «Очистити» відкриє ще одне невелике сповіщення</p>
 <img src="./images/ceno_notification2.png" alt="Ceno notification 2" width="400"/>
-<p>Tapping on Yes will delete not only the cached data in the Ceno app on your device, but also any customization settings, such as default address bar position, or light theme, or your favorites and other settings you may have chosen. If you tap on the Yes action, Ceno will be stopped and all its data removed without further questions, effectively leaving your device as if Ceno had never been used.</p>
-<p><em>Warning: Android may still keep other traces of having used an app besides its data, for instance in its system log</em></p>
-<h3 id="stop-battery-optimising-usage"><a class="header" href="#stop-battery-optimising-usage">Stop battery optimising usage</a></h3>
-<p><img src="./images/optimise_battery.png" alt="Do not optimise battery" /></p>
-<p>This option is usually present in apps that need to run in the background even when not actively used, which is the case with the Ceno app.  Under normal conditions, your android phone will try to optimise the battery usage of various apps that may be running on your device.  Your phone's operating system does this to prolong the battery life between the two charging sessions.  In order to do this, it sometimes stops the apps that are running and using the battery, but are not actively used by you.  When you allow Ceno to stop optimising the battery usage, your phone's operating system will be less likely to stop your Ceno app when you are not actively using it.  Allowing your Ceno app to run even when not actively used helps the whole Ceno peer-to-peer network to run better and to respond to more user requests. When you allow this option you are helping all users within the Ceno network.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="public-or-personal"><a class="header" href="#public-or-personal">Public or Personal?</a></h1>
-<p>After the onboarding and permissions screens, the app displays its  main screen. As soon as the screen appears, you will notice two prominent buttons called Public and Personal. They allow you to choose between the Public and Personal browsing mode.</p>
+<p>Натискання кнопки «Так» призведе до видалення не тільки кешованих даних у
+додатку Ceno на вашому пристрої, але й усіх налаштувань, таких як положення
+адресного рядка за замовчуванням, світла тема, ваші улюблені та інші
+налаштування, які ви могли вибрати. Якщо ви натиснете кнопку «Так», Ceno буде
+зупинено, а всі його дані будуть видалені без додаткових запитань, фактично
+залишаючи ваш пристрій таким, ніби Ceno ніколи не використовувався.</p>
+<p><em>Попередження: Android може зберігати інші сліди використання програми, окрім її
+даних, наприклад, у системному журналі</em></p>
+<h3 id="Зупинити-оптимізацію-використання-акумулятора"><a class="header" href="#Зупинити-оптимізацію-використання-акумулятора">Зупинити оптимізацію використання акумулятора</a></h3>
+<p><img src="./images/optimise_battery.png" alt="Не оптимізувати заряд батареї" /></p>
+<p>Ця опція зазвичай присутня в додатках, які повинні працювати у фоновому режимі,
+навіть коли вони не використовуються активно, як у випадку з додатком Ceno. За
+звичайних умов ваш телефон Android намагатиметься оптимізувати використання
+батареї різними додатками, які можуть працювати на вашому пристрої. Операційна
+система вашого телефону робить це, щоб продовжити час роботи акумулятора між
+двома зарядками. Для цього вона іноді зупиняє програми, які працюють і
+використовують акумулятор, але не використовуються вами активно. Коли ви
+дозволяєте Ceno припинити оптимізацію використання батареї, операційна система
+вашого телефону буде рідше зупиняти додаток Ceno, коли ви його активно не
+використовуєте. Дозвіл на роботу додатка Ceno навіть тоді, коли він активно не
+використовується, допомагає всій мережі Ceno peer-to-peer працювати краще і
+відповідати на більше запитів користувачів. Дозволяючи цю опцію, ви допомагаєте
+всім користувачам мережі Ceno.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="Публічний-чи-персональний"><a class="header" href="#Публічний-чи-персональний">Публічний чи персональний?</a></h1>
+<p>Після екранів реєстрації та дозволів додаток відображає головний екран. Як
+тільки екран з'явиться, ви помітите дві помітні кнопки під назвою «Публічний» та
+«Особистий». Вони дозволяють вибрати між публічним та особистим режимом
+перегляду.</p>
 <img src="./images/main.png" alt="Main screen" width="50%"/>
-<h2 id="public-browsing"><a class="header" href="#public-browsing">Public Browsing</a></h2>
+<h2 id="Публічний-Перегляд"><a class="header" href="#Публічний-Перегляд">Публічний Перегляд</a></h2>
 <img src="./images/public_button.png" alt="Public button" width="60%"/>
-<p>Below image illustrates the way Ceno retrieves website content in Public browsing mode.</p>
+<p>На зображенні нижче показано, як Ceno отримує вміст веб-сайту в режимі
+публічного перегляду.</p>
 <img src="./images/public_browsing.png" alt="Public browsing" width="700"/>
-<p>Dotted lines on this image represent the website content requests and responses, and the asterisks represent encrypted content.</p>
-<p>In <strong>Public browsing mode</strong>, the users’ requests are handled by the <strong>Ceno public network</strong>. In this mode, the users request some website content the same way they do that when using any other browser.  If Ceno is able to access the origin website directly, it will retrieve its content and deliver it to the user - this is the same as most other browsers.<br />
-However,  if Ceno is not able to reach the desired website, then it will try to reach it via injectors.</p>
-<h3 id="injectors"><a class="header" href="#injectors">Injectors</a></h3>
-<p><strong>Injectors</strong> are secure servers responsible for injecting the commonly accessed content into the Ceno network, and for verifying its authenticity and signing it.  The injectors are placed in strategic locations, so that they remain reachable by the users in restricted areas and can also reach the origin websites  .  They help retrieve the desired content either from the origin website or from the Ceno network and return it to the user who requested it.  They are run by eQualitie.</p>
-<p>As a user, you don't need to do anything to connect to an <strong>Injector</strong> - the app does it automatically when you request a website that it cannot access directly.</p>
-<h3 id="bridges"><a class="header" href="#bridges">Bridges</a></h3>
-<p><strong>Bridges</strong> are devices belonging to individual Ceno users based in locations that enjoy relatively unrestrictied connectivity and internet access. They are reachable by Ceno users who are unable to reach the websites directly.  These devices are responsible for forwarding encrypted user requests to <strong>Injectors</strong> and the encrypted responses back to the users.</p>
-<p>Bridges are not able to read the requests and responses they forward.</p>
-<p>Every Ceno user can configure their device to become a bridge.</p>
-<p>The <strong>Enable bridge mode</strong> toggle can be reached either from the link on the home page, or from the vertical three dot menu, to the right of the address bar.</p>
+<p>Пунктирні лінії на цьому зображенні позначають запити та відповіді на вміст
+веб-сайту, а зірочки – зашифрований вміст.</p>
+<p>У <strong>режимі публічного перегляду</strong> запити користувачів обробляються <strong>публічною
+мережею Ceno</strong>. У цьому режимі користувачі запитують вміст веб-сайтів так само,
+як і при використанні будь-якого іншого браузера. Якщо Ceno може отримати прямий
+доступ до вихідного веб-сайту, він завантажить його вміст і доставить його
+користувачеві — так само, як і більшість інших браузерів.<br />
+Однак, якщо Ceno не може підключитися до потрібного веб-сайту, він спробує
+підключитися до нього через інжектори.</p>
+<h3 id="Форсунки"><a class="header" href="#Форсунки">Форсунки</a></h3>
+<p><strong>Інжектори</strong> — це захищені сервери, які відповідають за введення часто
+використовуваного контенту в мережу Ceno, а також за перевірку його
+автентичності та підписання. Інжектори розміщуються в стратегічних місцях, щоб
+вони залишалися доступними для користувачів в обмежених зонах і могли також
+досягати вихідних веб-сайтів. Вони допомагають отримувати бажаний контент або з
+вихідного веб-сайту, або з мережі Ceno і повертати його користувачеві, який його
+запросив. Вони управляються eQualitie.</p>
+<p>Як користувач, вам не потрібно нічого робити, щоб підключитися до <strong>Інжектора</strong>
+— додаток робить це автоматично, коли ви запитуєте веб-сайт, до якого він не має
+безпосереднього доступу.</p>
+<h3 id="Мости"><a class="header" href="#Мости">Мости</a></h3>
+<p><strong>Мости</strong> — це пристрої, що належать окремим користувачам Ceno, які знаходяться
+в місцях з відносно необмеженим підключенням та доступом до Інтернету. До них
+можуть підключитися користувачі Ceno, які не можуть безпосередньо зайти на
+веб-сайти. Ці пристрої відповідають за пересилання зашифрованих запитів
+користувачів до <strong>інжекторів</strong> та зашифрованих відповідей назад до користувачів.</p>
+<p>Мости не можуть читати запити та відповіді, які вони пересилають.</p>
+<p>Кожен користувач Ceno може налаштувати свій пристрій як міст.</p>
+<p>Перемикач <strong>Увімкнути режим мосту</strong> можна активувати або за посиланням на
+головній сторінці, або з вертикального меню з трьома крапками праворуч від
+адресного рядка.</p>
 <img src="./images/bridge_mode.png" alt="Bridge mode" width="70%"/>
-<p>In the Settings page, moving the <strong>Enable bridge mode</strong> toggle to ON position</p>
+<p>На сторінці налаштувань переміщення перемикача <strong>Увімкнути режим мосту</strong> у
+положення УВІМК</p>
 <img src="./images/bridge_toggle_off.png" alt="Bridge mode toggle is off" width="400"/>
 <img src="./images/bridge_toggle_on.png" alt="Bridge mode toggle is on" width="400"/>
-<p>will make your device a bridge for other Ceno users whose access to internet is more restricted.  This requires Ceno services to restart</p>
+<p>зробить ваш пристрій мостом для інших користувачів Ceno, чий доступ до Інтернету
+обмеженіший. Це вимагає перезапуску служб Ceno</p>
 <img src="./images/bridge_starting.png" alt="Bridge mode is starting" width="400"/>
-<p>Once the bridge mode is successfully established, you will receive a confirmation message.</p>
+<p>Після успішного встановлення режиму мосту ви отримаєте підтвердження.</p>
 <img src="./images/bridge_success.png" alt="Bridge success" width="400"/>
-<p>From this point on, the Ceno app on your device can act as a bridge to help Ceno users in restricted areas reach desired content.</p>
-<p>However, bridging also requires specific settings of your router or network, which are described in the <a href="./bridge-configuration.html">Bridge Configuration</a> section.</p>
-<h3 id="ceno-cache"><a class="header" href="#ceno-cache">Ceno cache</a></h3>
-<p>And last but not least, the <strong>Ceno cache</strong>.  All Ceno users are members of this peer-to-peer network, and they store the website content retrieved via Ceno public network and share it between each other.</p>
-<p>In <strong>Public browsing mode</strong>, Ceno retrieves the requested content using any of these communication channels.   It strips down all private data (like passwords and cookies) from Web traffic to ensure that it does not leak it to other users.</p>
-<h2 id="public-browsing---when-to-use-it"><a class="header" href="#public-browsing---when-to-use-it">Public browsing - when to use it</a></h2>
-<p>This option is conceived for you, the user, to access most things that don’t require you to log in or input any personal data. You can use it to browse, listen to podcasts, watch the news, read blogs or articles, follow sports, science, music, events or other content.
-In P<strong>ublic browsing mode</strong>, Ceno may try to access the requested content <strong>directly from the websites</strong>, from <strong>Ceno public network</strong> (<strong>injectors</strong> and <strong>bridges</strong>) or from other Ceno users (<strong>distributed cache</strong>).</p>
-<p><em>Please note that some content which is not considered safe for sharing will never be injected, no matter how many people retrieve it using public browsing. This includes content marked as private by the origin server, content that requires authentication, and some traffic exchanged by certain dynamic web applications.</em></p>
-<h2 id="website-sources-in-public-browsing-mode"><a class="header" href="#website-sources-in-public-browsing-mode">Website sources in Public browsing mode</a></h2>
-<p>When you want to access a website using Ceno Public browsing mode, the app may try to retrieve the  content either from the website directly or via Ceno public network.  In the following chapter we describe this process in more detail.</p>
-<h3 id="content-retrieved-directly-from-the-website"><a class="header" href="#content-retrieved-directly-from-the-website">Content retrieved directly from the website</a></h3>
-<p>Ceno will retrieve the desired content directly from the origin server when that server is reachable. This is the same way you access any website through most other popular browsers.</p>
+<p>З цього моменту додаток Ceno на вашому пристрої може виступати як місток, який
+допомагає користувачам Ceno в обмежених зонах отримувати доступ до бажаного
+контенту.</p>
+<p>Однак, для мостового підключення також потрібні певні налаштування вашого
+маршрутизатора або мережі, які описані в розділі <a href="./bridge-configuration.html">Конфігурація
+моста</a>.</p>
+<h3 id="Кеш-ceno"><a class="header" href="#Кеш-ceno">Кеш Ceno</a></h3>
+<p>І останнє, але не менш важливе, <strong>кеш Ceno</strong>. Всі користувачі Ceno є членами
+цієї однорангової мережі, вони зберігають вміст веб-сайтів, отриманий через
+публічну мережу Ceno, і обмінюються ним між собою.</p>
+<p>У <strong>режимі публічного перегляду</strong> Ceno отримує запитуваний контент,
+використовуючи будь-який із цих каналів зв'язку. Він видаляє всі приватні дані
+(такі як паролі та файли cookie) з веб-трафіку, щоб уникнути їх витоку іншим
+користувачам.</p>
+<h2 id="Публічний-перегляд--коли-його-використовувати"><a class="header" href="#Публічний-перегляд--коли-його-використовувати">Публічний перегляд – коли його використовувати</a></h2>
+<p>Ця опція призначена для вас, користувача, щоб отримати доступ до більшості
+речей, які не вимагають входу в систему або введення будь-яких особистих даних.
+Ви можете використовувати її для перегляду, прослуховування подкастів, перегляду
+новин, читання блогів або статей, стеження за спортом, наукою, музикою, подіями
+або іншим контентом. У <strong>режимі публічного перегляду</strong> Ceno може спробувати
+отримати доступ до запитуваного контенту <strong>безпосередньо з веб-сайтів</strong>, з
+<strong>публічної мережі Ceno</strong> (<strong>інжектори</strong> та <strong>мости</strong>) або від інших
+користувачів Ceno (<strong>розподілений кеш</strong>).</p>
+<p><em>Зверніть увагу, що деякий контент, який не вважається безпечним для спільного
+використання, ніколи не буде вставлений, незалежно від того, скільки людей
+отримують його за допомогою публічного перегляду. Сюди входить контент,
+позначений як приватний сервером-джерелом, контент, що вимагає автентифікації,
+та деякий трафік, що обмінюється певними динамічними веб-додатками.</em></p>
+<h2 id="Джерела-веб-сайтів-у-режимі-публічного-перегляду"><a class="header" href="#Джерела-веб-сайтів-у-режимі-публічного-перегляду">Джерела веб-сайтів у режимі публічного перегляду</a></h2>
+<p>Коли ви хочете отримати доступ до веб-сайту, використовуючи режим публічного
+перегляду Ceno, програма може спробувати отримати вміст безпосередньо з
+веб-сайту або через публічну мережу Ceno. У наступному розділі ми опишемо цей
+процес більш детально.</p>
+<h3 id="Контент-отримано-безпосередньо-з-веб-сайту"><a class="header" href="#Контент-отримано-безпосередньо-з-веб-сайту">Контент отримано безпосередньо з веб-сайту</a></h3>
+<p>Ceno отримуватиме потрібний контент безпосередньо з вихідного сервера, коли цей
+сервер буде доступний. Це той самий спосіб доступу до будь-якого веб-сайту через
+більшість інших популярних браузерів.</p>
 <img src="./images/ceno_direct_access.png" alt="Direct access" width="700"/>
-<p>When you access websites this way, they are not stored in your cache and you cannot share them with other members of the Ceno network. When Ceno retrieves the content from the origin server, the small Ceno button on your the address bar will have a green dot.</p>
+<p>Коли ви відвідуєте веб-сайти таким чином, вони не зберігаються у вашому кеші, і
+ви не можете ділитися ними з іншими членами мережі Ceno. Коли Ceno отримує вміст
+з вихідного сервера, маленька кнопка Ceno в адресному рядку буде позначена
+зеленою крапкою.</p>
 <img src="./images/green_dot.png" alt="Green dot" width="300"/>
-<p>If you tap on that button, you will see how many components of the requested website were retrieved from the website, Ceno network or Ceno cache.</p>
+<p>Якщо ви натиснете цю кнопку, ви побачите, скільки компонентів запитуваного
+веб-сайту було отримано з веб-сайту, мережі Ceno або кешу Ceno.</p>
 <img src="./images/green_dot_tap.png" alt="Tap on green dot" width="400"/>
-<p>If you go to Settings &gt; Data you can verfiy verify  that no data is stored in your cache after you have accessed a website directly from its server.</p>
+<p>Якщо ви перейдете до Налаштування &gt; Дані, ви можете перевірити, чи не
+зберігаються дані у вашому кеші після того, як ви отримали доступ до веб-сайту
+безпосередньо з його сервера.</p>
 <img src="./images/no_data.png" alt="No data in cache" width="60%"/>
-<p>In this case, the risks for you as a user are similar to the risks associated with using any other browser.  Learn more.</p>
-<h3 id="content-retrieved-via-ceno-public-network"><a class="header" href="#content-retrieved-via-ceno-public-network">Content retrieved via Ceno public network</a></h3>
-<p>When Ceno is not able to reach the origin server it will try to access them via Ceno public network.</p>
+<p>У цьому випадку ризики для вас як користувача аналогічні ризикам, пов’язаним із
+використанням будь-якого іншого браузера. Дізнайтеся більше.</p>
+<h3 id="Контент-отримано-через-публічну-мережу-ceno"><a class="header" href="#Контент-отримано-через-публічну-мережу-ceno">Контент отримано через публічну мережу Ceno</a></h3>
+<p>Коли Ceno не може зв'язатися з вихідним сервером, він намагається отримати до
+нього доступ через загальнодоступну мережу Ceno.</p>
 <img src="./images/ceno_public_network.png" alt="Ceno public network" width="700"/>
-<p>This network contains secure servers called <strong>Injectors</strong>, which have direct access to the origin websites, and which inject the content of those websites into the Ceno network.   When website content is retrieved via Ceno public network, this will be indicated by an orange dot on the small Ceno button on your address bar.</p>
+<p>Ця мережа містить захищені сервери, які називаються <strong>інжекторами</strong>, які мають
+прямий доступ до вихідних веб-сайтів і вводять вміст цих веб-сайтів у мережу
+Ceno. Коли вміст веб-сайту отримується через публічну мережу Ceno, це буде
+позначено помаранчевою крапкою на маленькій кнопці Ceno у вашій адресній
+стрічці.</p>
 <img src="./images/orange_dot.png" alt="Orange dot" width="300"/>
-<p>Tapping on this button will open a small window which will inform you how many website components were retrieved from public Ceno network.</p>
+<p>Натискання на цю кнопку відкриє невелике вікно, яке повідомить вам, скільки
+компонентів веб-сайту було отримано з публічної мережі Ceno.</p>
 <img src="./images/orange_dot_tap.png" alt="Tap on orange dot" width="400"/>
-<p>Any website that you access this way will be stored in the local cache of your Ceno browser, and will be made available to other members of the Ceno network.</p>
-<p>You can see which websites are stored in your cache by going to Settings &gt; Data section.</p>
-<p>There are three entries within that section: <strong>Local cache</strong>, <strong>Content shred by you</strong>, and <strong>Clear cached content</strong>.<br />
-The <strong>Local cache</strong> section shows you how much data has been stored in the Ceno cache on your device.</p>
+<p>Будь-який веб-сайт, до якого ви отримаєте доступ таким чином, буде збережено в
+локальному кеші вашого браузера Ceno та буде доступний іншим учасникам мережі
+Ceno.</p>
+<p>Ви можете переглянути, які веб-сайти зберігаються у вашому кеші, перейшовши до
+розділу Налаштування &gt; Дані.</p>
+<p>У цьому розділі є три пункти: <strong>Локальний кеш</strong>, <strong>Видалене вами вміст</strong> та
+<strong>Очистити кешований вміст</strong>.<br />
+У розділі <strong>Локальний кеш</strong> показано, скільки даних було збережено в кеші Ceno
+на вашому пристрої.</p>
 <img src="./images/data_in_cache.png" alt="Data in cache" width="400"/>
-<p>If you tap on <strong>Content shared by you</strong>, you will be able to see the websites that your device can make available to Ceno network.</p>
+<p>Якщо ви натиснете <strong>Контент, яким ви поділилися</strong>, ви зможете побачити вебсайти,
+які ваш пристрій може зробити доступними для мережі Ceno.</p>
 <img src="./images/content_shared_by_you.png" alt="Content shared by you" width="400"/>
-<p>Tapping <strong>Clear cached content</strong> option will allow you to delete all cached data.</p>
+<p>Натискання опції <strong>Очистити кешований вміст</strong> дозволить вам видалити всі
+кешовані дані.</p>
 <img src="./images/clear_cached_content.png" alt="Clear cached content" width="400"/>
-<h3 id="cached-content"><a class="header" href="#cached-content">Cached Content</a></h3>
-<p>This way of accessing websites is useful when other components of Ceno public network are not reachable, or when you decide to access a website from your peers’ devices for other reasons.<br />
-Below image illustrates the requests and responses exhcanged exchanged between members of Ceno network who have previsously accessed and cached the desired websites.</p>
+<h3 id="Кешований-вміст"><a class="header" href="#Кешований-вміст">Кешований вміст</a></h3>
+<p>Цей спосіб доступу до веб-сайтів корисний, коли інші компоненти публічної мережі
+Ceno недоступні або коли ви вирішили отримати доступ до веб-сайту з пристроїв
+своїх колег з інших причин.<br />
+На малюнку нижче показано запити та відповіді, обмінені між членами мережі Ceno,
+які раніше отримували доступ до потрібних веб-сайтів і зберегли їх у кеші.</p>
 <img src="./images/ceno_cache.png" alt="Ceno cache" width="700"/>
-<p>If a website content is retrieved via <strong>Ceno cache</strong>, the Ceno button will have a small blue dot to indicate that.</p>
+<p>Якщо вміст веб-сайту отримується через <strong>кеш Ceno</strong>, кнопка Ceno матиме маленьку
+синю крапку, яка це вказує.</p>
 <img src="./images/blue_dot.png" alt="Blue dot" width="400"/>
-<p>Clicking on the Ceno button will open the information screen that indicates the same.</p>
+<p>Натискання кнопки Ceno відкриє інформаційний екран із відповідним повідомленням.</p>
 <img src="./images/blue_dot_tap.png" alt="Blue dot tap" width="400"/>
-<p>In this case, the website content will be cached on your device and will be shared with other Ceno users when requested. You can verify that by going to Settings &gt; Data &gt; Content shared by you.</p>
-<p>It can also happen that ceno browser opens a website that was stored in your own cache when you accessed it before.  When that happens, Ceno will inform you by displaying the wbesite sources in grey colour.</p>
+<p>У цьому випадку вміст веб-сайту буде кешовано на вашому пристрої та надано іншим
+користувачам Ceno за запитом. Ви можете перевірити це, перейшовши в Налаштування</p>
+<blockquote>
+<p>Дані &gt; Вміст, до якого ви поділилися.</p>
+</blockquote>
+<p>Також може статися так, що браузер Ceno відкриє веб-сайт, який був збережений у
+вашому кеші під час попереднього відвідування. У цьому випадку Ceno повідомить
+вас про це, відобразивши джерела веб-сайту сірим кольором.</p>
 <img src="./images/grey_dot_tap.png" alt="Grey dot tap" width="400"/>
-<p>In Ceno Settings &gt; Developer tools &gt; Website sources you can check or uncheck these four settings.</p>
+<p>У налаштуваннях Ceno &gt; Інструменти розробника &gt; Джерела веб-сайтів ви можете
+встановити або зняти прапорці з цих чотирьох параметрів.</p>
 <img src="./images/website_sources.png" alt="Website sources" width="60%"/>
-<p>If they are all checked, depending on the browsing mode, Ceno tries to fetch the website via all applicable  mechanisms, at the same time. We call  it a "mixed fetch". Whichever mechanism responds first is the one that  is used and the rest of the requests are cancelled.</p>
-<p>For best results, we recomment that all 4 of these boxes remain checked at all times.</p>
-<h2 id="personal-browsing---when-to-use-it"><a class="header" href="#personal-browsing---when-to-use-it">Personal Browsing - when to use it</a></h2>
-<p>You can select personal browsing by tapping on the Personal button on the main screen.</p>
+<p>Якщо всі вони відмічені, залежно від режиму перегляду, Ceno намагається
+завантажити веб-сайт за допомогою всіх відповідних механізмів одночасно. Ми
+називаємо це «змішаним завантаженням». Використовується той механізм, який
+відповість першим, а решта запитів скасовуються.</p>
+<p>Для найкращих результатів радимо завжди залишати позначеними всі 4 ці пункти.</p>
+<h2 id="Персональний-перегляд--коли-його-використовувати"><a class="header" href="#Персональний-перегляд--коли-його-використовувати">Персональний перегляд – коли його використовувати</a></h2>
+<p>Ви можете вибрати особистий перегляд, натиснувши кнопку «Особистий» на головному
+екрані.</p>
 <img src="./images/personal_button.png" alt="Personal button" width="60%"/>
-<p>When you select this option, even if all four <strong>Website sources</strong> settings are checked, your Ceno app will attempt to access the desired websites only directly or via <strong>Ceno private network</strong>.</p>
-<p>This browsing mode  can be used for websites where you need to log in and enter other personal data.  Examples are: shopping websites, email, social media sites or other websites that you do not wish to share with the rest of the Ceno network.</p>
-<h3 id="accessing-websites-via-private-ceno-network"><a class="header" href="#accessing-websites-via-private-ceno-network">Accessing websites via Private ceno network</a></h3>
-<p>The following image shows the flow of website requests and responses between <strong>Ceno private network</strong> elements.</p>
+<p>Якщо ви оберете цю опцію, навіть якщо всі чотири налаштування <strong>Джерела
+веб-сайтів</strong> позначено, ваш додаток Ceno намагатиметься отримати доступ до
+потрібних веб-сайтів лише безпосередньо або через <strong>приватну мережу Ceno</strong>.</p>
+<p>Цей режим перегляду можна використовувати для веб-сайтів, на яких потрібно
+входити в систему та вводити інші особисті дані. Приклади: веб-сайти для
+покупок, електронна пошта, соціальні мережі або інші веб-сайти, якими ви не
+бажаєте ділитися з рештою мережі Ceno.</p>
+<h3 id="Доступ-до-веб-сайтів-через-приватну-мережу-ceno"><a class="header" href="#Доступ-до-веб-сайтів-через-приватну-мережу-ceno">Доступ до веб-сайтів через приватну мережу ceno</a></h3>
+<p>На наступному зображенні показано потік запитів та відповідей веб-сайту між
+елементами <strong>приватної мережі Ceno</strong>.</p>
 <img src="./images/personal_browsing.png" alt="Personal browsing" width="700"/>
-<p>In <strong>Personal browsing mode</strong>, when a website is requested, Ceno will retrieve it directly from the origin servers, or via Ceno Injectors.  However, in Personal mode, the Injectors do not cache the content like they do in Public browsing mode.  They simply forward the request to the origin server and forward the response to the user, but cannot see the encrypted content.   Learn more about Personal browsing mode.</p>
-<p>Sometimes, if a website is unreachable in Public browsing mode, because of differences in how these two modes operate, we suggest attempting to reach it via Personal browsing mode instead.</p>
-<p>For this mechanism to work, it is necessary that the Website sources <strong>Privately</strong> and <strong>Website</strong> remain checked.</p>
-<div style="break-before: page; page-break-before: always;"></div><h2 id="why-become-a-ceno-bridge"><a class="header" href="#why-become-a-ceno-bridge">Why become a Ceno bridge?</a></h2>
-<p>A peer-to-peer network is built from every node connected to it (yes, that means you as well!). The more nodes, the stronger and more versatile the network becomes.</p>
-<p>If you are running Ceno Browser from a country that does not censor the Internet (or not as heavily as some), consider helping other Ceno users by becoming a bridge node. You will then begin to route traffic between clients living in heavily censored countries and Ceno injectors.</p>
-<p>You will not be able to see their traffic (it will be sent through an encrypted tunnel), nor will any of this traffic remain on your device.</p>
-<p><em>Note: The configuration described in this section may also help your device to effectively seed content to others on the distributed cache, so please consider applying it as well when using Ceno in a censoring country (but keep in mind the <a href="https://ceno.app/en/faq.html#bridgemode">risks</a> of serving such content to others)</em></p>
-<h2 id="how-to-become-a-ceno-bridge"><a class="header" href="#how-to-become-a-ceno-bridge">How to become a Ceno bridge?</a></h2>
-<p>As stated in <a href="./public-or-personal.html?#bridges">this section</a>, Ceno app provides some functionlaity that allows you to easily become a Ceno bridge, if your network configuration allows it.</p>
-<p>If you have checked your <strong>Reachability</strong> and your <strong>UPnP status</strong> and it looks like this</p>
-<p><img src="./images/reachability.png" alt="Reachability status" /></p>
-<p>You will need to configure your router by either enabling the UPnP or setting up the port forwarding.  In the following sections we describe the steps to perform.</p>
-<h3 id="enabling-upnp-on-your-wi-fi-router"><a class="header" href="#enabling-upnp-on-your-wi-fi-router">Enabling UPnP on your Wi-Fi router</a></h3>
-<p>UPnP is the easiest way of making your Ceno browser (or computer client) reachable to the Ceno network.</p>
-<p><em>Note: Enabling UPnP on the Wi-Fi router may expose devices on your network to external interference. Please be <a href="https://www.howtogeek.com/122487/htg-explains-is-upnp-a-security-risk/">aware of the risks</a> and also consider using alternative methods as explained below.</em></p>
-<p>The first thing you will need to do is log in to your router's web interface.  To find out how to do that, please refer to your router's manual which will tell you which user and password to use to log in.</p>
-<p>After that, the steps to perform are similar, but might not be identical for all router models.</p>
-<p>Here is a nice article with <a href="https://www.lifewire.com/enable-upnp-on-a-router-5206124">step by step instructions</a> for enabling the UPnP on different routers.</p>
-<p>Please find instructions for your router type and perform the necessary steps.</p>
-<p>If you prefer, though, you can choose to set up the port forwarding instead of the UPnP.</p>
-<h3 id="use-port-forwarding-as-an-alternative-to-upnp"><a class="header" href="#use-port-forwarding-as-an-alternative-to-upnp">Use port forwarding as an alternative to UPnP</a></h3>
-<p>The first step is the same as before: log in to the router's web interface.</p>
-<p>Then, please locate **port forwarding **option.</p>
-<p>To see which IP address you need to forward the connections to and the relevant port, open the <strong>Ceno Settings</strong> page and look under the <strong>Local UDP endpoints</strong>.</p>
-<p><img src="./images/UDP_endpoint.png" alt="Local UDP endpoint" /></p>
-<p>The port forwarding must be for the UDP protocol (not TCP).</p>
-<p>Ceno chooses a random port on first run and keeps it for subsequent runs, but your device's local network IP address may change from time to time. Thus you should periodically review the <strong>Ceno Settings</strong> page to see that your device is reachable to the Ceno network.</p>
-<p>Your device is reachable if its</p>
-<p><strong>Reachability status</strong> is <strong>likely reachable</strong> or <strong>reachable</strong></p>
-<p><strong>UPnP status</strong> is <strong>enabled</strong></p>
-<p><em><strong>Technical note</strong>: Alternatively, you can make sure that the router always assigns the same IP address to your device (e.g. via a static DHCP lease for the device's MAC address)</em></p>
-<p>If you have a computer with good connectivity that stays on most of the time, and you'd like to set it up as a <strong>Ceno bridge</strong>, please continue reading.</p>
-<h2 id="running-a-bridge-on-a-computer"><a class="header" href="#running-a-bridge-on-a-computer">Running a bridge on a computer</a></h2>
-<p>If your computer supports Docker containers, you can run a pre-configured Ceno client on it to act as a bridge. If Docker is not yet installed, please follow the instructions to install the Docker Engine in your platform. For Debian derivatives like Ubuntu or Linux Mint, you can just run: <code>sudo apt install docker.io</code></p>
-<p>To deploy a Ceno client container you only need to run the following command on a terminal (it looks scary but you can just copy and paste it as is on the command line):</p>
+<p>У <strong>режимі особистого перегляду</strong>, коли запитується веб-сайт, Ceno отримує його
+безпосередньо з вихідних серверів або через Ceno Injectors. Однак у особистому
+режимі Injectors не кешують вміст, як це роблять у режимі публічного перегляду.
+Вони просто пересилають запит на вихідний сервер і пересилають відповідь
+користувачеві, але не можуть бачити зашифрований вміст. Дізнайтеся більше про
+режим особистого перегляду.</p>
+<p>Іноді, якщо вебсайт недоступний у режимі публічного перегляду через різницю в
+роботі цих двох режимів, ми рекомендуємо спробувати отримати до нього доступ
+через режим особистого перегляду.</p>
+<p>Щоб цей механізм працював, необхідно, щоб джерела веб-сайту <strong>Приватно</strong> та
+<strong>Веб-сайт</strong> залишалися перевіреними.</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="Чому-варто-стати-мостом-Сено"><a class="header" href="#Чому-варто-стати-мостом-Сено">Чому варто стати мостом Сено?</a></h2>
+<p>Однорангова мережа будується з кожного підключеного до неї вузла (так, це
+стосується і вас!). Чим більше вузлів, тим сильнішою та універсальнішою стає
+мережа.</p>
+<p>Якщо ви використовуєте браузер Ceno в країні, де не застосовується цензура в
+Інтернеті (або вона не така сувора, як в інших країнах), розгляньте можливість
+допомогти іншим користувачам Ceno, ставши проміжним вузлом. Ви почнете
+маршрутизувати трафік між клієнтами, які проживають у країнах з суворою
+цензурою, та інжекторами Ceno.</p>
+<p>Ви не зможете бачити їхній трафік (він надсилатиметься через зашифрований
+тунель), а також жодна частина цього трафіку не залишатиметься на вашому
+пристрої.</p>
+<p><em>Примітка: Конфігурація, описана в цьому розділі, також може допомогти вашому
+пристрою ефективно поширювати контент іншим користувачам у розподіленому кеші,
+тому, будь ласка, розгляньте можливість її застосування, якщо ви використовуєте
+Ceno в країні, де діє цензура (але майте на увазі
+<a href="https://ceno.app/en/faq.html#bridgemode">ризики</a> поширення такого контенту
+іншим користувачам)</em></p>
+<h2 id="Як-стати-мостом-Сено"><a class="header" href="#Як-стати-мостом-Сено">Як стати мостом Сено?</a></h2>
+<p>Як зазначено в <a href="./public-or-personal.html?#bridges">цьому розділі</a>, додаток Ceno
+надає деякі функції, які дозволяють вам легко стати мостом Ceno, якщо це
+дозволяє конфігурація вашої мережі.</p>
+<p>Якщо ви перевірили свою <strong>досяжність</strong> та <strong>статус UPnP</strong>, і вони виглядають так</p>
+<p><img src="./images/reachability.png" alt="Стан досяжності" /></p>
+<p>Вам потрібно буде налаштувати маршрутизатор, або ввімкнувши UPnP, або
+налаштувавши переадресацію портів. У наступних розділах ми опишемо кроки, які
+необхідно виконати.</p>
+<h3 id="Увімкнення-upnp-на-маршрутизаторі-wi-fi"><a class="header" href="#Увімкнення-upnp-на-маршрутизаторі-wi-fi">Увімкнення UPnP на маршрутизаторі Wi-Fi</a></h3>
+<p>UPnP — це найпростіший спосіб зробити ваш браузер Ceno (або комп’ютерний клієнт)
+доступним для мережі Ceno.</p>
+<p><em>Примітка. Увімкнення UPnP на маршрутизаторі Wi-Fi може наражати пристрої у
+вашій мережі на зовнішні перешкоди. Будь ласка, <a href="https://www.howtogeek.com/122487/htg-explains-is-upnp-a-security-risk/">усвідомте
+ризики</a>,
+а також розгляньте можливість використання альтернативних методів, як описано
+нижче.</em></p>
+<p>Перше, що вам потрібно зробити, це увійти в веб-інтерфейс вашого маршрутизатора.
+Щоб дізнатися, як це зробити, зверніться до посібника користувача
+маршрутизатора, в якому вказано, який логін і пароль потрібно використовувати
+для входу.</p>
+<p>Після цього кроки, які потрібно виконати, схожі, але можуть відрізнятися для
+всіх моделей маршрутизаторів.</p>
+<p>Ось гарна стаття з <a href="https://www.lifewire.com/enable-upnp-on-a-router-5206124">покроковими
+інструкціями</a> щодо
+ввімкнення UPnP на різних маршрутизаторах.</p>
+<p>Будь ласка, знайдіть інструкції для вашого типу маршрутизатора та виконайте
+необхідні кроки.</p>
+<p>Однак, якщо хочете, можете налаштувати переадресацію портів замість UPnP.</p>
+<h3 id="Використання-переадресація-портів-як-альтернативи-upnp"><a class="header" href="#Використання-переадресація-портів-як-альтернативи-upnp">Використання переадресація портів як альтернативи UPnP</a></h3>
+<p>Перший крок такий самий, як і раніше: увійдіть у веб-інтерфейс маршрутизатора.</p>
+<p>Потім, будь ласка, знайдіть опцію <strong>переадресація портів</strong>.</p>
+<p>Щоб побачити, на яку IP-адресу потрібно переадресовувати з’єднання та
+відповідний порт, відкрийте сторінку <strong>Налаштування Ceno</strong> та знайдіть розділ
+<strong>Локальні кінцеві точки UDP</strong>.</p>
+<p><img src="./images/UDP_endpoint.png" alt="Локальна кінцева точка UDP" /></p>
+<p>Переадресація портів має бути для протоколу UDP (не TCP).</p>
+<p>Ceno вибирає випадковий порт при першому запуску і зберігає його для наступних
+запусків, але локальна мережева IP-адреса вашого пристрою може час від часу
+змінюватися. Тому вам слід періодично перевіряти сторінку <strong>Налаштування Ceno</strong>,
+щоб переконатися, що ваш пристрій доступний для мережі Ceno.</p>
+<p>Ваш пристрій доступний, якщо його</p>
+<p><strong>Статус досяжності</strong> – <strong>ймовірно досяжний</strong> або <strong>досяжний</strong></p>
+<p><strong>Статус UPnP</strong>: <strong>увімкнено</strong></p>
+<p><em><strong>Технічне зауваження</strong>: Або ж ви можете переконатися, що маршрутизатор завжди
+призначає вашому пристрою однакову IP-адресу (наприклад, через статичну оренду
+DHCP для MAC-адреси пристрою)</em></p>
+<p>Якщо у вас є комп’ютер із хорошим підключенням, який залишається ввімкненим
+більшу частину часу, і ви хочете налаштувати його як <strong>міст Ceno</strong>, будь ласка,
+продовжуйте читати.</p>
+<h2 id="Запуск-моста-на-компʼютері"><a class="header" href="#Запуск-моста-на-компʼютері">Запуск моста на компʼютері</a></h2>
+<p>Якщо ваш комп'ютер підтримує контейнери Docker, ви можете запустити на ньому
+попередньо налаштований клієнт Ceno, який буде виконувати функцію моста. Якщо
+Docker ще не встановлено, дотримуйтесь інструкцій, щоб встановити Docker Engine
+на вашій платформі. Для похідних Debian, таких як Ubuntu або Linux Mint, просто
+запустіть: <code>sudo apt install docker.io</code></p>
+<p>Щоб розпакувати контейнер клієнта Ceno, достатньо виконати наступну команду в
+терміналі (вона виглядає лячно, але Ви можете просто скопіювати та вставити її в
+командний рядок):</p>
 <pre><code>sudo docker run --name ceno-client \
   -dv Ceno:/var/opt/ouinet --network host \
   --restart unless-stopped equalitie/Ceno-client
 </code></pre>
-<p>If your computer is not based on GNU/Linux, the command needs to be slightly different:</p>
+<p>Якщо операційна система Вашого компʼютера не GNU/Linux, команда повинна бути
+трохи іншою:</p>
 <pre><code>sudo docker run --name ceno-client \
   -dv ceno:/var/opt/ouinet \
   -p 127.0.0.1:8077-8078:8077-8078 -p 28729:28729/udp \
   --restart unless-stopped equalitie/ceno-client
 </code></pre>
-<p>The command will start a container named ceno-client that will run on every boot unless you explicitly tell it to stop.</p>
-<p>Please check the <a href="https://gitlab.com/ceno-app/ceno-docker-client#running-the-client">Ceno Docker client documentation</a> for more information on how to manipulate the container.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="features"><a class="header" href="#features">Features</a></h1>
-<h2 id="toolbar"><a class="header" href="#toolbar">Toolbar</a></h2>
-<p>At the bottom of the screen, you will see the bar containing various buttons. Some of them are probably self-explanatory, but others less so.  Let’s take a quick look at each of them:</p>
-<h3 id="home-button"><a class="header" href="#home-button">Home button</a></h3>
-<p>The first is the familiar Home button.</p>
+<p>Команда запустить контейнер з назвою ceno-client, який працюватиме під час
+кожного завантаження, якщо ви явно не накажете йому зупинитися.</p>
+<p>Будь ласка, перегляньте <a href="https://gitlab.com/ceno-app/ceno-docker-client#running-the-client">документацію клієнта Ceno
+Docker</a> для
+отримання додаткової інформації про те, як маніпулювати контейнером.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="Особливості"><a class="header" href="#Особливості">Особливості</a></h1>
+<h2 id="Панель-інструментів"><a class="header" href="#Панель-інструментів">Панель інструментів</a></h2>
+<p>Внизу екрана ви побачите панель з різними кнопками. Деякі з них, ймовірно,
+зрозумілі самі по собі, інші — менш. Давайте коротко розглянемо кожну з них:</p>
+<h3 id="Кнопка-Головна"><a class="header" href="#Кнопка-Головна">Кнопка «Головна»</a></h3>
+<p>Перша – це знайома кнопка «Головна».</p>
 <img src="./images/home_button.png" alt="Home button" width="400"/>
-<p>You can configure this button to be either shown or hidden, but going to <strong>Settings &gt; Customisations &gt; Show home button</strong></p>
+<p>Ви можете налаштувати цю кнопку так, щоб вона була відображена або прихована,
+але перейдіть у <strong>Налаштування &gt; Налаштування &gt; Показати кнопку «Головна»</strong></p>
 <img src="./images/show_home_button.png" alt="Show home button" width="400"/>
-<h3 id="ceno-button"><a class="header" href="#ceno-button">Ceno button</a></h3>
-<p>Next is the Ceno button.  Tapping on it will open an information screen that shows where the website components were retrieved from. We describe this screen in more detail in Personal and Public browsing sections.</p>
-<h3 id="secure-connection-button"><a class="header" href="#secure-connection-button">Secure connection button</a></h3>
-<p>When you enter the website address you want to access, you will see the <strong>Secure connection button</strong>, represented by a small padlock or a small shield, which indicate that your connection to a particular website is secure.<br />
-If the padlock or shield is crossed with a line, it means that connection to that particular website is not secure.  This is the same as in other browsers.</p>
+<h3 id="Кнопка-ceno"><a class="header" href="#Кнопка-ceno">Кнопка Ceno</a></h3>
+<p>Далі йде кнопка Ceno. Натиснувши на неї, ви відкриєте інформаційний екран, який
+показує, звідки були отримані компоненти веб-сайту. Ми описуємо цей екран більш
+детально в розділах «Особистий та публічний перегляд».</p>
+<h3 id="Кнопка-безпечного-зєднання"><a class="header" href="#Кнопка-безпечного-зєднання">Кнопка безпечного з'єднання</a></h3>
+<p>Коли ви вводите адресу веб-сайту, до якого хочете отримати доступ, ви побачите
+<strong>кнопку «Безпечне з'єднання»</strong>, позначену маленьким замком або маленьким щитом,
+що вказує на те, що ваше з'єднання з певним веб-сайтом є безпечним.<br />
+Якщо замок або щит перекреслені лінією, це означає, що з'єднання з цим
+веб-сайтом не є безпечним. Це так само, як і в інших браузерах.</p>
 <img src="./images/connection_not_secure.png" alt="Connection not secure" width="400"/>
-<p><em>Note: even though connection to this particular website is not secure, the Ceno icon has a small green dot.  This dot does not indicate that the connection is secure, but that the data was retrieved directly from the origin website.</em></p>
-<p>If you tap on it, you will see the details of this connection.  As an illustration, we include example screenshots of secure versus not secure connection.</p>
+<p><em>Примітка: незважаючи на те, що з'єднання з цим конкретним веб-сайтом не є
+безпечним, на піктограмі Ceno є маленька зелена крапка. Ця крапка не означає, що
+з'єднання є безпечним, а лише те, що дані були отримані безпосередньо з
+оригінального веб-сайту.</em></p>
+<p>Якщо ви натиснете на нього, ви побачите деталі цього з’єднання. Як ілюстрацію,
+ми наводимо приклади скріншотів безпечного та незахищеного з’єднання.</p>
 <p><img src="./images/compare_not_secure.png" alt="Compare not secure page" width="50%"/><img src="./images/compare_secure.png" alt="Compare secure page" width="50%"/></p>
-<h3 id="clear-button"><a class="header" href="#clear-button">Clear button</a></h3>
-<p>The first button on the right hand side of the address bar is the Clear button, in the shape of a small broom.</p>
+<h3 id="Кнопка-Очистити"><a class="header" href="#Кнопка-Очистити">Кнопка «Очистити»</a></h3>
+<p>Перша кнопка праворуч від адресного рядка — це кнопка «Очистити» у формі
+маленької мітли.</p>
 <img src="./images/home_button.png" alt="Clear button" width="400"/>
-<p>Tapping on it gives the user a choice to clear all Ceno data, as if Ceno was never used, or to clear only what Ceno stored in Cache. The first option clears all the preferences, bookmarks, setttings and customisations, whereas the second one will only clear the websites that the Ceno app stored in the cache on your device.</p>
+<p>Натиснувши на нього, користувач може вибрати, чи очистити всі дані Ceno, ніби
+Ceno ніколи не використовувався, чи очистити лише те, що Ceno зберігав у кеші.
+Перший варіант очищає всі налаштування, закладки, параметри та індивідуальні
+налаштування, а другий — лише веб-сайти, які додаток Ceno зберігав у кеші на
+вашому пристрої.</p>
 <img src="./images/clear_button.png" alt="Clear button" width="400"/>
-<p>If you go to <strong>Settings &gt; Customisations &gt; Clear button</strong> you can choose whether you want the clear button to show in the toolbar or in the menu.</p>
+<p>Якщо ви перейдете до <strong>Налаштування &gt; Налаштування &gt; Кнопка очищення</strong>, ви
+можете вибрати, де ви хочете, щоб кнопка очищення відображалася на панелі
+інструментів чи в меню.</p>
 <img src="./images/clear_button_settings.png" alt="Clear button in settings" width="60%"/>
-<p>Tapping on the option <strong>Default behavior</strong> will open a dialog box that offers you to choose what you want your Clear button to do when you tap it.  It can offer you a prompt, like on the above screenshot, or it can immediately delete all cached content or even all Ceno data.</p>
+<p>Натиснувши на опцію <strong>Default behavior</strong> (Стандартна поведінка), ви відкриєте
+діалогове вікно, в якому зможете вибрати, що має робити кнопка Clear (Очистити)
+при натисканні. Вона може запропонувати вам підказку, як на знімку екрана вище,
+або одразу видалити весь кешований вміст чи навіть усі дані Ceno.</p>
 <img src="./images/clear_button_default.png" alt="Clear button behavior" width="60%"/>
-<h3 id="tabs-button"><a class="header" href="#tabs-button">Tabs button</a></h3>
-<p>Next is a small rectangle with a number in it. This number indicates how many tabs the user has opened.</p>
-<p>Tapping on it  opens a screen where you can see all the tabs that you have open.</p>
+<h3 id="Кнопка-вкладок"><a class="header" href="#Кнопка-вкладок">Кнопка вкладок</a></h3>
+<p>Далі знаходиться маленький прямокутник із числом усередині. Це число показує,
+скільки вкладок відкрив користувач.</p>
+<p>Натискання на нього відкриває екран, де ви можете побачити всі відкриті вкладки.</p>
 <img src="./images/tab_view.png" alt="Tab view" width="400"/>
-<p>You can close them one by one, if you tap on the vertical menu in the bottom right corner, you will get the option to close them all together.</p>
+<p>Ви можете закривати їх по одному, якщо натиснути на вертикальне меню в правому
+нижньому куті, ви отримаєте опцію закрити їх усі разом.</p>
 <img src="./images/close_tabs.png" alt="Close all tabs" width="400"/>
-<p>When viewing the tab screen, at the top of that screen you will see the icons for Public or Personal browsing, and you can easily switch between them.</p>
-<p>View when Public browsing icon is selected</p>
+<p>Під час перегляду екрана вкладок у верхній частині екрана ви побачите значки для
+публічного або особистого перегляду, і ви можете легко перемикатися між ними.</p>
+<p>Перегляд, коли вибрано значок публічного перегляду</p>
 <img src="./images/view_public.png" alt="Public browsing selected" width="400"/>
-<p>View when Personal browsing is selected.</p>
+<p>Перегляд, коли вибрано особистий перегляд.</p>
 <img src="./images/view_personal.png" alt="Personal browsing selected" width="400"/>
-<h3 id="vertical-menu"><a class="header" href="#vertical-menu">Vertical menu</a></h3>
-<p>What the three dot vertical menu on the far right hand side of the toolbar displays depends on the context.</p>
+<h3 id="Вертикальне-меню"><a class="header" href="#Вертикальне-меню">Вертикальне меню</a></h3>
+<p>Те, що відображається у вертикальному меню з трьох крапок у крайній правій
+частині панелі інструментів, залежить від контексту.</p>
 <img src="./images/home_button.png" alt="Clear button" width="400"/>
 <ul>
-<li>when you have a website page open, this menu will display options relevant to that page.</li>
+<li>Коли у вас відкрита сторінка веб-сайту, це меню відображатиме параметри, що
+стосуються цієї сторінки.</li>
 </ul>
 <img src="./images/menu_webpage.png" alt="Webpage menu" width="40%"/>
-<p>Most of the elements in this menu are self explanatory.  But if you’re not familiar with the uBlock Origin, it is an ad and tracker blocker.</p>
-<p>The reason we bundle it up with our Ceno browser is  mostly to prevent unnecessarily  caching advertisements and to avoid possibly caching unique identifiers  associated with trackers.</p>
-<p>To learn more about this ad and tracker blocker, please visit <a href="https://ublockorigin.com/">their webpage</a>.</p>
+<p>Більшість елементів у цьому меню зрозумілі самі по собі. Але якщо ви не знайомі
+з uBlock Origin, то це блокувальник реклами та трекерів.</p>
+<p>Причина, чому ми об'єднуємо його з нашим браузером Ceno, полягає головним чином
+у запобіганні непотрібному кешуванню реклами та можливому кешуванню унікальних
+ідентифікаторів, пов'язаних з трекерами.</p>
+<p>Щоб дізнатися більше про цей блокувальник реклами та відстеження, відвідайте
+<a href="https://ublockorigin.com/">їхню веб-сторінку</a>.</p>
 <ul>
-<li>If you tap on this menu when on the Ceno homepage, you will be able to see the item that allows you to clear Ceno (its action is the same as the small broom on the home screen).</li>
+<li>Якщо ви натиснете на це меню на головній сторінці Ceno, ви зможете побачити
+елемент, який дозволяє вам очистити Ceno (його дія така ж, як і маленька мітла
+на головному екрані).</li>
 </ul>
 <img src="./images/menu_homepage.png" alt="Homepage menu" width="400"/>
 <ul>
-<li>When you are on the tabs screen, tapping this menu will only give you the option to Close all tabs</li>
+<li>Коли ви перебуваєте на екрані вкладок, натискання цього меню надасть вам лише
+опцію «Закрити всі вкладки»</li>
 </ul>
 <img src="./images/close_tabs.png" alt="Close all tabs" width="400"/>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="settings"><a class="header" href="#settings">Settings</a></h1>
-<p>Settings are accessed via the vertical three dot menu and then selecting Settings option.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="Налаштуваннях"><a class="header" href="#Налаштуваннях">Налаштуваннях</a></h1>
+<p>Доступ до налаштувань здійснюється через вертикальне меню з трьома крапками, а
+потім вибирається опція «Налаштування».</p>
 <img src="./images/settings.png" alt="Settings" width="40%"/>
-<p>They are divided in 5 groups:</p>
-<p><a href="./settings.html#settings-general">General</a><br />
-<a href="./settings.html#settings-permissions">Permissions</a><br />
-<a href="./settings.html#settings-data">Data</a><br />
-<a href="./settings.html#settings-developer-tools">Developer tools</a><br />
-<a href="./settings.html#settings-about">About</a></p>
-<p>Let’s look at each of those.</p>
-<h2 id="settings-general"><a class="header" href="#settings-general">Settings: General</a></h2>
+<p>Вони поділяються на 5 груп:</p>
+<p><a href="./settings.html#settings-general">Загальне</a><br />
+<a href="./settings.html#settings-permissions">Дозволи</a><br />
+<a href="./settings.html#settings-data">Дані</a><br />
+<a href="./settings.html#settings-developer-tools">Інструменти розробника</a><br />
+<a href="./settings.html#settings-about">Про нас</a></p>
+<p>Давайте розглянемо кожен з них.</p>
+<h2 id="Налаштування-Загальні"><a class="header" href="#Налаштування-Загальні">Налаштування: Загальні</a></h2>
 <img src="./images/settings_general.png" alt="Settings general" width="60%"/>
-<p>You are probably familiar with most of these settings as they are similar to the options available in other browsers.  In the following sections we will briefly describe the main ones.</p>
-<h3 id="set-default-search-engine"><a class="header" href="#set-default-search-engine">Set default search engine</a></h3>
+<p>Ви, ймовірно, знайомі з більшістю цих налаштувань, оскільки вони схожі на опції,
+доступні в інших браузерах. У наступних розділах ми коротко опишемо основні з
+них.</p>
+<h3 id="Встановіть-пошукову-систему-за-замовчуванням"><a class="header" href="#Встановіть-пошукову-систему-за-замовчуванням">Встановіть пошукову систему за замовчуванням</a></h3>
 <img src="./images/default_search_engine.png" alt="Default search engine" width="60%"/>
-<p>This setting allows you to set the default search engine for Ceno browser, by checking or unchecking the options provided.</p>
-<h3 id="customization"><a class="header" href="#customization">Customization</a></h3>
+<p>Цей параметр дозволяє встановити пошукову систему за замовчуванням для браузера
+Ceno, встановивши або знявши прапорці з наданих опцій.</p>
+<h3 id="Персоналізація"><a class="header" href="#Персоналізація">Персоналізація</a></h3>
 <img src="./images/customisations.png" alt="Customizations" width="60%"/>
-<p>Again, these options are mostly self-explanatory.</p>
-<p>We would just draw your attention to an option that may not exist in other apps.  Ceno allows you to change its launch icon which can be useful in some circumstances. We provide several options for you to choose from.</p>
+<p>Знову ж таки, ці варіанти здебільшого зрозумілі самі по собі.</p>
+<p>Хочемо звернути вашу увагу на опцію, якої може не бути в інших додатках. Ceno
+дозволяє змінювати іконку запуску, що може бути корисно в деяких випадках. Ми
+пропонуємо кілька варіантів на вибір.</p>
 <img src="./images/app_icon.png" alt="Choose app icon" width="60%"/>
-<h3 id="enable-bridge-mode"><a class="header" href="#enable-bridge-mode">Enable bridge mode</a></h3>
+<h3 id="Увімкнути-режим-мости"><a class="header" href="#Увімкнути-режим-мости">Увімкнути режим мости</a></h3>
 <img src="./images/bridge_toggle_on.png" alt="Bridge toggle on" width="400"/>
-<p>The purpose and high level functionality of the Bridge Mode is described in the <a href="./public-or-personal.html#bridges">Bridge Mode section</a>.  Here you are able to enable or disable this setting.</p>
-<h3 id="background-metrics"><a class="header" href="#background-metrics">Background metrics</a></h3>
+<p>Призначення та функціональність режиму мосту високого рівня описано в розділі
+<a href="./public-or-personal.html#bridges">Режим мосту</a>. Тут ви можете ввімкнути або
+вимкнути цей параметр.</p>
+<h3 id="Фонові-показники"><a class="header" href="#Фонові-показники">Фонові показники</a></h3>
 <img src="./images/metrics_setting.png" alt="Background metrics" width="60%"/>
-<p>These are metrics that help us understand any issues that might happen from time to time while you are using the Ceno browser.
-Tapping on the Background metrics will open the screen giving you an options to turn the metrics off.</p>
+<p>Це показники, які допомагають нам зрозуміти будь-які проблеми, що можуть час від
+часу виникати під час використання браузера Ceno. Натиснувши на «Показники
+фону», ви відкриєте екран, на якому можна вимкнути показники.</p>
 <img src="./images/metrics_toggle.png" alt="Metrics toggle" width="400"/>
-<p>We recommend these settings to be kept in On position, as they help us understand problems that some users may encounter while using Ceno. The more we are able to understand the problems, the more we are able to solve them.</p>
-<p>We do no collect any personal data and we do not sell any data to any third parties. To read our Privacy policy, please tap on Privacy policy button.</p>
-<h3 id="crash-reporting"><a class="header" href="#crash-reporting">Crash reporting</a></h3>
-<p>The circumstances, network conditions and devices in which Ceno is used are different for different users, which sometimes can cause the Ceno app to crash.  To understand what caused a crash in a particular situation, Ceno has been designed to generate crash reports and send them to the development team. You, as a user, can enable or disable the crash rerport report sending.</p>
-<p>These reports do not contain any personally identifiable data.  If you experience Ceno crashes, we recommend this setting to be enabled</p>
-<h3 id="delete-browsing-data"><a class="header" href="#delete-browsing-data">Delete Browsing Data</a></h3>
+<p>Ми рекомендуємо залишити ці налаштування у положенні «Увімкнено», оскільки вони
+допомагають нам зрозуміти проблеми, з якими можуть зіткнутися деякі користувачі
+під час використання Ceno. Чим краще ми розуміємо проблеми, тим ефективніше
+можемо їх вирішувати.</p>
+<p>Ми не збираємо жодних персональних даних і не продаємо жодних даних третім
+особам. Щоб ознайомитися з нашою політикою конфіденційності, натисніть кнопку
+«Політика конфіденційності».</p>
+<h3 id="Звіт-про-збої"><a class="header" href="#Звіт-про-збої">Звіт про збої</a></h3>
+<p>Обставини, умови мережі та пристрої, на яких використовується Ceno,
+відрізняються для різних користувачів, що іноді може призвести до збою програми
+Ceno. Щоб зрозуміти, що спричинило збій у конкретній ситуації, Ceno було
+розроблено таким чином, щоб генерувати звіти про збій та надсилати їх команді
+розробників. Ви, як користувач, можете увімкнути або вимкнути надсилання звітів
+про збій.</p>
+<p>Ці звіти не містять жодних персональних даних. Якщо у вас виникають збої Ceno,
+радимо ввімкнути цей параметр</p>
+<h3 id="Видалити-Дані-Перегляду"><a class="header" href="#Видалити-Дані-Перегляду">Видалити Дані Перегляду</a></h3>
 <img src="./images/delete_browsing_data_setting.png" alt="Delete browsing data setting" width="60%"/>
-<p>Tapping on this option provides you with the possibility to select what Ceno data you want to delete.</p>
+<p>Натискання на цю опцію надає вам можливість вибрати, які дані Ceno ви хочете
+видалити.</p>
 <img src="./images/delete_browsing_data.png" alt="Delete browsing data" width="400"/>
-<p>The Clear button on the home screen deletes all Ceno data, but here you can pick and choose what to delete and what to keep.</p>
-<h3 id="change-language"><a class="header" href="#change-language">Change language</a></h3>
+<p>Кнопка «Очистити» на головному екрані видаляє всі дані Ceno, але тут ви можете
+вибрати, що видалити, а що зберегти.</p>
+<h3 id="Змінити-мову"><a class="header" href="#Змінити-мову">Змінити мову</a></h3>
 <img src="./images/languages.png" alt="Languages" width="400"/>
-<p>Ceno app has been translated into many languages.  If there is a language you’d like to see added to this already extensive list, please let us know.
-You can contact us by email support [at] ceno [dot] app or via our <a href="https://gitlab.com/ceno-app">gitlab repository</a> .</p>
-<h2 id="settings-permissions"><a class="header" href="#settings-permissions">Settings: Permissions</a></h2>
+<p>Додаток Ceno перекладено багатьма мовами. Якщо ви хочете, щоб до цього вже
+досить великого списку додали ще одну мову, повідомте нас про це. Ви можете
+зв’язатися з нами електронною поштою support [at] ceno [dot] app або через наш
+<a href="https://gitlab.com/ceno-app">репозиторій gitlab</a> .</p>
+<h2 id="Налаштування-Дозволи"><a class="header" href="#Налаштування-Дозволи">Налаштування: Дозволи</a></h2>
 <img src="./images/settings_permissions.png" alt="Permissions section" width="400"/>
-<p>Ceno needs only two permissions: sending the user notifications and stopping the battery optimisation. You have probably been asked to give Ceno those permissions when you first started the Ceno app, or after a restart following clearing of all Ceno data.</p>
-<p>You can read more about them in the <a href="url">section Permissions</a>.</p>
-<h2 id="settings-data"><a class="header" href="#settings-data">Settings: Data</a></h2>
+<p>Ceno потребує лише двох дозволів: надсилання повідомлень користувачеві та
+зупинення оптимізації батареї. Ймовірно, вас попросили надати Ceno ці дозволи,
+коли ви вперше запустили додаток Ceno або після перезапуску після очищення всіх
+даних Ceno.</p>
+<p>Ви можете дізнатися більше про них у <a href="url">розділі Дозволи</a>.</p>
+<h2 id="Налаштування-Дані"><a class="header" href="#Налаштування-Дані">Налаштування: Дані</a></h2>
 <img src="./images/settings_data.png" alt="Data section" width="60%"/>
-<p>In this section, you can view which content your Ceno app can share with other Ceno users when they request it .</p>
-<p><strong>Content shared by you</strong> lists the websites that you your Ceno app is able to share with other Ceno users.</p>
-<p><strong>Local cache</strong> informs you how much data may be uploaded from your device onto the Ceno network when other users request it.</p>
-<p>Tapping on the <strong>Clear cached content</strong> option will delete the data from your cache and there will be nothing left to share with your peers.  To cache websites and be able to share them with your peers again, you will need to access them via Ceno Public network once more.</p>
-<p>More information about the purpose of these settings is available in the section <a href="./public-or-personal.html">Public or Personal</a>.</p>
-<h2 id="settings-developer-tools"><a class="header" href="#settings-developer-tools">Settings: Developer Tools</a></h2>
+<p>У цьому розділі ви можете переглянути, яким контентом ваш додаток Ceno може
+ділитися з іншими користувачами Ceno, коли вони цього запитують.</p>
+<p><strong>Контент, яким ви поділилися</strong> містить список вебсайтів, якими ви можете
+ділитися з іншими користувачами Ceno через ваш додаток Ceno.</p>
+<p><strong>Локальний кеш</strong> повідомляє вам, скільки даних може бути завантажено з вашого
+пристрою в мережу Ceno, коли інші користувачі цього запитують.</p>
+<p>Натиснувши на опцію <strong>Очистити кешований вміст</strong>, ви видалите дані з кешу, і вам
+не залишиться нічого, що можна було б поділитися з друзями. Щоб зберегти
+веб-сайти в кеші і мати можливість знову поділитися ними з друзями, вам потрібно
+буде ще раз зайти на них через мережу Ceno Public.</p>
+<p>Більше інформації про призначення цих налаштувань доступно в розділі <a href="./public-or-personal.html">Публічний
+або особистий доступ</a>.</p>
+<h2 id="Налаштування-Інструменти-розробника"><a class="header" href="#Налаштування-Інструменти-розробника">Налаштування: Інструменти розробника</a></h2>
 <img src="./images/settings_developers.png" alt="Developer tools section" width="60%"/>
-<h3 id="website-sources"><a class="header" href="#website-sources">Website sources</a></h3>
-<p>Ceno is able to retrieve website content that you request from different sources: directly from the origin website, Ceno public network, Ceno private network and Ceno cache. More details about these options are available in the sections detailing the Public and Personal browsing modes.<br />
-By default all these options are checked and for best results you can just leave them as they are.</p>
-<p>You can read more detailed information regarding these options in the section <a href="./public-or-personal.html">Public or Personal</a>.</p>
-<h3 id="tracking-protection"><a class="header" href="#tracking-protection">Tracking protection</a></h3>
-<p>These two settings prevent your online activities being tracked by third party trackers.</p>
-<h3 id="network-details"><a class="header" href="#network-details">Network details</a></h3>
-<p>This section contains details of your network settings, which may be helpful to our development team if we need to investigate any issues that you report to us.</p>
-<h3 id="enable-log-file"><a class="header" href="#enable-log-file">Enable log file</a></h3>
-<p>Enabling and exporting the Ceno log file can be helpful when investigating issues.  These files do not contain any personally identifiable data.  If you export them to the file system on your device, you can view their contents. You can also share them with our development team when you experience issues that may require investigation by our technical experts.</p>
-<h2 id="settings-about"><a class="header" href="#settings-about">Settings: About</a></h2>
+<h3 id="Джерела-веб-сайтів"><a class="header" href="#Джерела-веб-сайтів">Джерела веб-сайтів</a></h3>
+<p>Ceno може отримувати вміст веб-сайтів, який ви запитуєте, з різних джерел:
+безпосередньо з веб-сайту-джерела, публічної мережі Ceno, приватної мережі Ceno
+та кешу Ceno. Більш детальна інформація про ці опції наведена в розділах, що
+описують режими публічного та особистого перегляду.<br />
+За замовчуванням усі ці опції відмічені, і для досягнення найкращих результатів
+ви можете просто залишити їх без змін.</p>
+<p>Більш детальну інформацію щодо цих опцій можна знайти в розділі <a href="./public-or-personal.html">Публічний або
+особистий</a>.</p>
+<h3 id="Захист-від-відстеження"><a class="header" href="#Захист-від-відстеження">Захист від відстеження</a></h3>
+<p>Ці два налаштування запобігають відстеженню вашої онлайн-активності сторонніми
+трекерами.</p>
+<h3 id="Деталі-Мережі"><a class="header" href="#Деталі-Мережі">Деталі Мережі</a></h3>
+<p>У цьому розділі містяться відомості про налаштування вашої мережі, які можуть
+бути корисними для нашої команди розробників, якщо нам потрібно буде дослідити
+будь-які проблеми, про які ви нам повідомляєте.</p>
+<h3 id="Увімкнути-файл-журналу-логи"><a class="header" href="#Увімкнути-файл-журналу-логи">Увімкнути файл журналу (логи)</a></h3>
+<p>Увімкнення та експорт файлу журналу Ceno може бути корисним під час
+розслідування проблем. Ці файли не містять жодних даних, що дозволяють
+ідентифікувати особу. Якщо ви експортуєте їх до файлової системи на своєму
+пристрої, ви зможете переглянути їхній вміст. Ви також можете поділитися ними з
+нашою командою розробників, якщо у вас виникли проблеми, які можуть потребувати
+розслідування нашими технічними експертами.</p>
+<h2 id="Налаштування-Про-нас"><a class="header" href="#Налаштування-Про-нас">Налаштування: Про нас</a></h2>
 <img src="./images/settings_about.png" alt="About section" width="60%"/>
-<p>Contains additional information about your installation of Ceno, including its version number, the status of the backround Ceno service, and the version number of the Ouinet library that is built into Ceno.</p>
+<p>Містить додаткову інформацію про вашу інсталяцію Ceno, включаючи номер версії,
+стан фонової служби Ceno та номер версії бібліотеки Ouinet, вбудованої в Ceno.</p>
 
                     </main>
 
@@ -517,6 +841,7 @@ By default all these options are checked and for best results you can just leave
             window.setTimeout(window.print, 100);
         });
         </script>
+
 
     </div>
     </body>

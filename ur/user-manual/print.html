@@ -37,6 +37,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "light";
+            window.path_to_searchindex_js = "searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc.js"></script>
@@ -93,10 +94,13 @@
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -147,7 +151,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -167,23 +176,65 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="ceno-browser"><a class="header" href="#ceno-browser">Ceno Browser</a></h1>
-<p>Share the Web! Ceno is the world's first web browser that gets better with every installation. Offering a common Internet browsing experience, it relies on a peer-to-peer technology to deliver and share websites among all participants. Ceno can also be used to bypass network restrictions and browse content during a shutdown.</p>
-<p>🔓 👀 Access blocked media and other websites. Free and anonymous in Personal Mode.</p>
-<p>🚫🌴 In case of a internet shutdown in your region, you will still be able to read news and stay connected.</p>
-<p>📱🤝📱  Live in a country with free internet access? Help people in other countries bypass censorship and access independent information with just one tap. Learn more <a href="https://ceno.app">on our website</a>.</p>
-<p>📖👐 Ceno Browser is built on Ouinet, an open-source library. You can check the app’s code <a href="https://gitlab.com/censorship-no">on GitLab</a>.</p>
-<p>🛠🦹🏻  Our product may experience instability due to the constant evolution of censorship technologies. We are continuously improving it to ensure you maintain access. If websites load slowly or don’t open, please don’t delete the app — try using it again in a few days or contact our support team: support [at] ceno [dot] app</p>
-<p>Ceno is developed by <a href="https://equalitie.org">eQualitie</a>. It is a completely free and open source browser that doesn’t require registration and is completely ad-free.</p>
-<p>We collect some anonymized app and network metrics. No personal information is collected and the data is never shared with third-parties. Metrics collection is enabled by default, users can opt-out of it any time via the <a href="./settings.html#background-metrics">Settings &gt; Background metrics &gt; Ceno Metrics</a> toggle. Please refer to our <a href="https://ceno.app/en/privacy_policy.html">Privacy Policy</a> for more information about what we collect.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="introduction"><a class="header" href="#introduction">Introduction</a></h1>
-<p>Ceno is a mobile web browser based on Mozilla Android Components. It is designed for accessing and distributing web content (websites) using a novel approach that relies on <a href="https://en.wikipedia.org/wiki/BitTorrent">BitTorrent – a decentralized file sharing network</a>. Ceno's advantage comes from side-stepping current Internet censorship methods and allowing people to access and share web information in and across regions where connectivity has been interrupted or compromised.</p>
-<p>Ceno Browser allows you to access any website on the Internet, even if it is not normally accessible in your country or region.</p>
-<p>If a website you want to visit is accessible, Ceno will access it directly and behave like any other browser. But if you are not able to access the desired website directly, Ceno will attempt to access it through its own peer-to-peer network. Ceno will cache the accessed  website contents and make them available to other Ceno users utilising the peer-to-peer technology.</p>
-<p>When other members of the Ceno network request the same contents and they are not able to access them directly, Ceno will identify that the requested website content is stored in the cache of your Ceno app. From there, it will be uploaded from your device to the internet and redirected to the person who requested it. In the <a href="./settings.html">Settings</a> of your Ceno app, you will be able to see how much data has been stored on your device  and all the websites you have shared.</p>
-<p>Of course this only applies to the websites you visit in the <a href="./public-or-personal.html#public-browsing---when-to-use-it"><strong>Public mode</strong></a>.</p>
-<p>For all your personal needs, such as emails, messages, subscriptions or purchases, we have provided a <a href="./public-or-personal.html#personal-browsing---when-to-use-it"><strong>Personal mode</strong></a>. When you access the internet in this mode, Ceno app doesn’t store the pages you access, and therefore it does not share them with anybody else.</p>
-<p>This user guide contains detailed information about Ceno's features and their purpose.</p>
+                        <h1 id="ceno-براؤزر"><a class="header" href="#ceno-براؤزر">Ceno براؤزر</a></h1>
+<p>Share the Web! Ceno is the world's first web browser that gets better with every
+installation. Offering a common Internet browsing experience, it relies on a
+peer-to-peer technology to deliver and share websites among all participants.
+Ceno can also be used to bypass network restrictions and browse content during a
+shutdown.</p>
+<p>🔓 👀 Access blocked media and other websites. Free and anonymous in Personal
+Mode.</p>
+<p>🚫🌴 In case of a internet shutdown in your region, you will still be able to read
+news and stay connected.</p>
+<p>📱🤝📱 Live in a country with free internet access? Help people in other countries
+bypass censorship and access independent information with just one tap. Learn
+more <a href="https://ceno.app">on our website</a>.</p>
+<p>📖👐 Ceno Browser is built on Ouinet, an open-source library. You can check the
+app’s code <a href="https://gitlab.com/censorship-no">on GitLab</a>.</p>
+<p>🛠🦹🏻 Our product may experience instability due to the constant evolution of
+censorship technologies. We are continuously improving it to ensure you maintain
+access. If websites load slowly or don’t open, please don’t delete the app — try
+using it again in a few days or contact our support team: support [at] ceno
+[dot] app</p>
+<p>Ceno is developed by <a href="https://equalitie.org">eQualitie</a>. It is a
+completely free and open source browser that doesn’t require registration and is
+completely ad-free.</p>
+<p>We collect some anonymized app and network metrics. No personal information is
+collected and the data is never shared with third-parties. Metrics collection is
+enabled by default, users can opt-out of it any time via the <a href="./settings.html#background-metrics">Settings &gt;
+Background metrics &gt; Ceno Metrics</a> toggle.
+Please refer to our <a href="https://ceno.app/en/privacy_policy.html">Privacy
+Policy</a> for more information about what we collect.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="تعارف"><a class="header" href="#تعارف">تعارف</a></h1>
+<p>Ceno is a mobile web browser based on Mozilla Android Components. It is designed
+for accessing and distributing web content (websites) using a novel approach
+that relies on <a href="https://en.wikipedia.org/wiki/BitTorrent">BitTorrent – a decentralized file sharing
+network</a>. Ceno's advantage comes from
+side-stepping current Internet censorship methods and allowing people to access
+and share web information in and across regions where connectivity has been
+interrupted or compromised.</p>
+<p>Ceno Browser allows you to access any website on the Internet, even if it is not
+normally accessible in your country or region.</p>
+<p>If a website you want to visit is accessible, Ceno will access it directly and
+behave like any other browser. But if you are not able to access the desired
+website directly, Ceno will attempt to access it through its own peer-to-peer
+network. Ceno will cache the accessed website contents and make them available
+to other Ceno users utilising the peer-to-peer technology.</p>
+<p>When other members of the Ceno network request the same contents and they are
+not able to access them directly, Ceno will identify that the requested website
+content is stored in the cache of your Ceno app. From there, it will be uploaded
+from your device to the internet and redirected to the person who requested it.
+In the <a href="./settings.html">Settings</a> of your Ceno app, you will be able to see how
+much data has been stored on your device and all the websites you have shared.</p>
+<p>Of course this only applies to the websites you visit in the <a href="./public-or-personal.html#public-browsing---when-to-use-it"><strong>Public
+mode</strong></a>.</p>
+<p>For all your personal needs, such as emails, messages, subscriptions or
+purchases, we have provided a <a href="./public-or-personal.html#personal-browsing---when-to-use-it"><strong>Personal
+mode</strong></a>. When you
+access the internet in this mode, Ceno app doesn’t store the pages you access,
+and therefore it does not share them with anybody else.</p>
+<p>This user guide contains detailed information about Ceno's features and their
+purpose.</p>
 <p>We hope you enjoy using our app.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="installation"><a class="header" href="#installation">Installation</a></h1>
 <p>Ceno for Android can be downloaded from following platforms: <a href="https://play.google.com/store/apps/details?id=ie.equalit.ceno">Google Play</a>, <a href="https://gitlab.com/ceno-app/ceno-android/-/releases">Gitlab</a>, <a href="https://paskoocheh.com/tools/124/android.html?">Paskoocheh</a> or <a href="https://dcomm.net.ua/en/">dComms</a>.</p>
@@ -308,50 +359,90 @@ Below image illustrates the requests and responses exhcanged exchanged between m
 <p>Sometimes, if a website is unreachable in Public browsing mode, because of differences in how these two modes operate, we suggest attempting to reach it via Personal browsing mode instead.</p>
 <p>For this mechanism to work, it is necessary that the Website sources <strong>Privately</strong> and <strong>Website</strong> remain checked.</p>
 <div style="break-before: page; page-break-before: always;"></div><h2 id="why-become-a-ceno-bridge"><a class="header" href="#why-become-a-ceno-bridge">Why become a Ceno bridge?</a></h2>
-<p>A peer-to-peer network is built from every node connected to it (yes, that means you as well!). The more nodes, the stronger and more versatile the network becomes.</p>
-<p>If you are running Ceno Browser from a country that does not censor the Internet (or not as heavily as some), consider helping other Ceno users by becoming a bridge node. You will then begin to route traffic between clients living in heavily censored countries and Ceno injectors.</p>
-<p>You will not be able to see their traffic (it will be sent through an encrypted tunnel), nor will any of this traffic remain on your device.</p>
-<p><em>Note: The configuration described in this section may also help your device to effectively seed content to others on the distributed cache, so please consider applying it as well when using Ceno in a censoring country (but keep in mind the <a href="https://ceno.app/en/faq.html#bridgemode">risks</a> of serving such content to others)</em></p>
+<p>A peer-to-peer network is built from every node connected to it (yes, that means
+you as well!). The more nodes, the stronger and more versatile the network
+becomes.</p>
+<p>If you are running Ceno Browser from a country that does not censor the Internet
+(or not as heavily as some), consider helping other Ceno users by becoming a
+bridge node. You will then begin to route traffic between clients living in
+heavily censored countries and Ceno injectors.</p>
+<p>You will not be able to see their traffic (it will be sent through an encrypted
+tunnel), nor will any of this traffic remain on your device.</p>
+<p><em>Note: The configuration described in this section may also help your device to
+effectively seed content to others on the distributed cache, so please consider
+applying it as well when using Ceno in a censoring country (but keep in mind the
+<a href="https://ceno.app/en/faq.html#bridgemode">risks</a> of serving such content to
+others)</em></p>
 <h2 id="how-to-become-a-ceno-bridge"><a class="header" href="#how-to-become-a-ceno-bridge">How to become a Ceno bridge?</a></h2>
-<p>As stated in <a href="./public-or-personal.html?#bridges">this section</a>, Ceno app provides some functionlaity that allows you to easily become a Ceno bridge, if your network configuration allows it.</p>
-<p>If you have checked your <strong>Reachability</strong> and your <strong>UPnP status</strong> and it looks like this</p>
+<p>As stated in <a href="./public-or-personal.html?#bridges">this section</a>, Ceno app
+provides some functionlaity that allows you to easily become a Ceno bridge, if
+your network configuration allows it.</p>
+<p>If you have checked your <strong>Reachability</strong> and your <strong>UPnP status</strong> and it looks
+like this</p>
 <p><img src="./images/reachability.png" alt="Reachability status" /></p>
-<p>You will need to configure your router by either enabling the UPnP or setting up the port forwarding.  In the following sections we describe the steps to perform.</p>
-<h3 id="enabling-upnp-on-your-wi-fi-router"><a class="header" href="#enabling-upnp-on-your-wi-fi-router">Enabling UPnP on your Wi-Fi router</a></h3>
-<p>UPnP is the easiest way of making your Ceno browser (or computer client) reachable to the Ceno network.</p>
-<p><em>Note: Enabling UPnP on the Wi-Fi router may expose devices on your network to external interference. Please be <a href="https://www.howtogeek.com/122487/htg-explains-is-upnp-a-security-risk/">aware of the risks</a> and also consider using alternative methods as explained below.</em></p>
-<p>The first thing you will need to do is log in to your router's web interface.  To find out how to do that, please refer to your router's manual which will tell you which user and password to use to log in.</p>
-<p>After that, the steps to perform are similar, but might not be identical for all router models.</p>
-<p>Here is a nice article with <a href="https://www.lifewire.com/enable-upnp-on-a-router-5206124">step by step instructions</a> for enabling the UPnP on different routers.</p>
+<p>You will need to configure your router by either enabling the UPnP or setting up
+the port forwarding. In the following sections we describe the steps to perform.</p>
+<h3 id="آپ-کے-wi-fi-روٹر-پر-upnp-کو-فعال-کرنا"><a class="header" href="#آپ-کے-wi-fi-روٹر-پر-upnp-کو-فعال-کرنا">آپ کے Wi-Fi روٹر پر UPnP کو فعال کرنا</a></h3>
+<p>UPnP is the easiest way of making your Ceno browser (or computer client)
+reachable to the Ceno network.</p>
+<p><em>Note: Enabling UPnP on the Wi-Fi router may expose devices on your network to
+external interference. Please be <a href="https://www.howtogeek.com/122487/htg-explains-is-upnp-a-security-risk/">aware of the
+risks</a>
+and also consider using alternative methods as explained below.</em></p>
+<p>The first thing you will need to do is log in to your router's web interface. To
+find out how to do that, please refer to your router's manual which will tell
+you which user and password to use to log in.</p>
+<p>After that, the steps to perform are similar, but might not be identical for all
+router models.</p>
+<p>Here is a nice article with <a href="https://www.lifewire.com/enable-upnp-on-a-router-5206124">step by step
+instructions</a> for
+enabling the UPnP on different routers.</p>
 <p>Please find instructions for your router type and perform the necessary steps.</p>
-<p>If you prefer, though, you can choose to set up the port forwarding instead of the UPnP.</p>
+<p>If you prefer, though, you can choose to set up the port forwarding instead of
+the UPnP.</p>
 <h3 id="use-port-forwarding-as-an-alternative-to-upnp"><a class="header" href="#use-port-forwarding-as-an-alternative-to-upnp">Use port forwarding as an alternative to UPnP</a></h3>
 <p>The first step is the same as before: log in to the router's web interface.</p>
 <p>Then, please locate **port forwarding **option.</p>
-<p>To see which IP address you need to forward the connections to and the relevant port, open the <strong>Ceno Settings</strong> page and look under the <strong>Local UDP endpoints</strong>.</p>
+<p>To see which IP address you need to forward the connections to and the relevant
+port, open the <strong>Ceno Settings</strong> page and look under the <strong>Local UDP
+endpoints</strong>.</p>
 <p><img src="./images/UDP_endpoint.png" alt="Local UDP endpoint" /></p>
 <p>The port forwarding must be for the UDP protocol (not TCP).</p>
-<p>Ceno chooses a random port on first run and keeps it for subsequent runs, but your device's local network IP address may change from time to time. Thus you should periodically review the <strong>Ceno Settings</strong> page to see that your device is reachable to the Ceno network.</p>
+<p>Ceno chooses a random port on first run and keeps it for subsequent runs, but
+your device's local network IP address may change from time to time. Thus you
+should periodically review the <strong>Ceno Settings</strong> page to see that your device is
+reachable to the Ceno network.</p>
 <p>Your device is reachable if its</p>
 <p><strong>Reachability status</strong> is <strong>likely reachable</strong> or <strong>reachable</strong></p>
 <p><strong>UPnP status</strong> is <strong>enabled</strong></p>
-<p><em><strong>Technical note</strong>: Alternatively, you can make sure that the router always assigns the same IP address to your device (e.g. via a static DHCP lease for the device's MAC address)</em></p>
-<p>If you have a computer with good connectivity that stays on most of the time, and you'd like to set it up as a <strong>Ceno bridge</strong>, please continue reading.</p>
-<h2 id="running-a-bridge-on-a-computer"><a class="header" href="#running-a-bridge-on-a-computer">Running a bridge on a computer</a></h2>
-<p>If your computer supports Docker containers, you can run a pre-configured Ceno client on it to act as a bridge. If Docker is not yet installed, please follow the instructions to install the Docker Engine in your platform. For Debian derivatives like Ubuntu or Linux Mint, you can just run: <code>sudo apt install docker.io</code></p>
-<p>To deploy a Ceno client container you only need to run the following command on a terminal (it looks scary but you can just copy and paste it as is on the command line):</p>
+<p><em><strong>Technical note</strong>: Alternatively, you can make sure that the router always
+assigns the same IP address to your device (e.g. via a static DHCP lease for the
+device's MAC address)</em></p>
+<p>If you have a computer with good connectivity that stays on most of the time,
+and you'd like to set it up as a <strong>Ceno bridge</strong>, please continue reading.</p>
+<h2 id="کمپیوٹر-پر-پل-چلانا"><a class="header" href="#کمپیوٹر-پر-پل-چلانا">کمپیوٹر پر پل چلانا</a></h2>
+<p>If your computer supports Docker containers, you can run a pre-configured Ceno
+client on it to act as a bridge. If Docker is not yet installed, please follow
+the instructions to install the Docker Engine in your platform. For Debian
+derivatives like Ubuntu or Linux Mint, you can just run: <code>sudo apt install docker.io</code></p>
+<p>Ceno کلائنٹ کنٹینر کو تعینات کرنے کے لیے آپ کو صرف مندرجہ ذیل کمانڈ کو ٹرمینل پر
+چلانے کی ضرورت ہے (یہ خوفناک لگتا ہے لیکن آپ اسے صرف کاپی اور پیسٹ کر سکتے ہیں
+جیسا کہ کمانڈ لائن پر ہے):</p>
 <pre><code>sudo docker run --name ceno-client \
   -dv Ceno:/var/opt/ouinet --network host \
   --restart unless-stopped equalitie/Ceno-client
 </code></pre>
-<p>If your computer is not based on GNU/Linux, the command needs to be slightly different:</p>
+<p>اگر آپ کا کمپیوٹر GNU/Linux پر مبنی نہیں ہے، تو کمانڈ کو قدرے مختلف ہونا چاہیے:</p>
 <pre><code>sudo docker run --name ceno-client \
   -dv ceno:/var/opt/ouinet \
   -p 127.0.0.1:8077-8078:8077-8078 -p 28729:28729/udp \
   --restart unless-stopped equalitie/ceno-client
 </code></pre>
-<p>The command will start a container named ceno-client that will run on every boot unless you explicitly tell it to stop.</p>
-<p>Please check the <a href="https://gitlab.com/ceno-app/ceno-docker-client#running-the-client">Ceno Docker client documentation</a> for more information on how to manipulate the container.</p>
+<p>The command will start a container named ceno-client that will run on every boot
+unless you explicitly tell it to stop.</p>
+<p>Please check the <a href="https://gitlab.com/ceno-app/ceno-docker-client#running-the-client">Ceno Docker client
+documentation</a>
+for more information on how to manipulate the container.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="features"><a class="header" href="#features">Features</a></h1>
 <h2 id="toolbar"><a class="header" href="#toolbar">Toolbar</a></h2>
 <p>At the bottom of the screen, you will see the bar containing various buttons. Some of them are probably self-explanatory, but others less so.  Let’s take a quick look at each of them:</p>
@@ -407,8 +498,9 @@ If the padlock or shield is crossed with a line, it means that connection to tha
 <li>When you are on the tabs screen, tapping this menu will only give you the option to Close all tabs</li>
 </ul>
 <img src="./images/close_tabs.png" alt="Close all tabs" width="400"/>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="settings"><a class="header" href="#settings">Settings</a></h1>
-<p>Settings are accessed via the vertical three dot menu and then selecting Settings option.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="ترتیبات"><a class="header" href="#ترتیبات">ترتیبات</a></h1>
+<p>Settings are accessed via the vertical three dot menu and then selecting
+Settings option.</p>
 <img src="./images/settings.png" alt="Settings" width="40%"/>
 <p>They are divided in 5 groups:</p>
 <p><a href="./settings.html#settings-general">General</a><br />
@@ -419,63 +511,106 @@ If the padlock or shield is crossed with a line, it means that connection to tha
 <p>Let’s look at each of those.</p>
 <h2 id="settings-general"><a class="header" href="#settings-general">Settings: General</a></h2>
 <img src="./images/settings_general.png" alt="Settings general" width="60%"/>
-<p>You are probably familiar with most of these settings as they are similar to the options available in other browsers.  In the following sections we will briefly describe the main ones.</p>
+<p>You are probably familiar with most of these settings as they are similar to the
+options available in other browsers. In the following sections we will briefly
+describe the main ones.</p>
 <h3 id="set-default-search-engine"><a class="header" href="#set-default-search-engine">Set default search engine</a></h3>
 <img src="./images/default_search_engine.png" alt="Default search engine" width="60%"/>
-<p>This setting allows you to set the default search engine for Ceno browser, by checking or unchecking the options provided.</p>
-<h3 id="customization"><a class="header" href="#customization">Customization</a></h3>
+<p>This setting allows you to set the default search engine for Ceno browser, by
+checking or unchecking the options provided.</p>
+<h3 id="حسب-ضرورت"><a class="header" href="#حسب-ضرورت">حسب ضرورت</a></h3>
 <img src="./images/customisations.png" alt="Customizations" width="60%"/>
 <p>Again, these options are mostly self-explanatory.</p>
-<p>We would just draw your attention to an option that may not exist in other apps.  Ceno allows you to change its launch icon which can be useful in some circumstances. We provide several options for you to choose from.</p>
+<p>We would just draw your attention to an option that may not exist in other apps.
+Ceno allows you to change its launch icon which can be useful in some
+circumstances. We provide several options for you to choose from.</p>
 <img src="./images/app_icon.png" alt="Choose app icon" width="60%"/>
 <h3 id="enable-bridge-mode"><a class="header" href="#enable-bridge-mode">Enable bridge mode</a></h3>
 <img src="./images/bridge_toggle_on.png" alt="Bridge toggle on" width="400"/>
-<p>The purpose and high level functionality of the Bridge Mode is described in the <a href="./public-or-personal.html#bridges">Bridge Mode section</a>.  Here you are able to enable or disable this setting.</p>
+<p>The purpose and high level functionality of the Bridge Mode is described in the
+<a href="./public-or-personal.html#bridges">Bridge Mode section</a>. Here you are able to
+enable or disable this setting.</p>
 <h3 id="background-metrics"><a class="header" href="#background-metrics">Background metrics</a></h3>
 <img src="./images/metrics_setting.png" alt="Background metrics" width="60%"/>
-<p>These are metrics that help us understand any issues that might happen from time to time while you are using the Ceno browser.
-Tapping on the Background metrics will open the screen giving you an options to turn the metrics off.</p>
+<p>These are metrics that help us understand any issues that might happen from time
+to time while you are using the Ceno browser. Tapping on the Background metrics
+will open the screen giving you an options to turn the metrics off.</p>
 <img src="./images/metrics_toggle.png" alt="Metrics toggle" width="400"/>
-<p>We recommend these settings to be kept in On position, as they help us understand problems that some users may encounter while using Ceno. The more we are able to understand the problems, the more we are able to solve them.</p>
-<p>We do no collect any personal data and we do not sell any data to any third parties. To read our Privacy policy, please tap on Privacy policy button.</p>
+<p>We recommend these settings to be kept in On position, as they help us
+understand problems that some users may encounter while using Ceno. The more we
+are able to understand the problems, the more we are able to solve them.</p>
+<p>We do no collect any personal data and we do not sell any data to any third
+parties. To read our Privacy policy, please tap on Privacy policy button.</p>
 <h3 id="crash-reporting"><a class="header" href="#crash-reporting">Crash reporting</a></h3>
-<p>The circumstances, network conditions and devices in which Ceno is used are different for different users, which sometimes can cause the Ceno app to crash.  To understand what caused a crash in a particular situation, Ceno has been designed to generate crash reports and send them to the development team. You, as a user, can enable or disable the crash rerport report sending.</p>
-<p>These reports do not contain any personally identifiable data.  If you experience Ceno crashes, we recommend this setting to be enabled</p>
+<p>The circumstances, network conditions and devices in which Ceno is used are
+different for different users, which sometimes can cause the Ceno app to crash.
+To understand what caused a crash in a particular situation, Ceno has been
+designed to generate crash reports and send them to the development team. You,
+as a user, can enable or disable the crash rerport report sending.</p>
+<p>These reports do not contain any personally identifiable data. If you experience
+Ceno crashes, we recommend this setting to be enabled</p>
 <h3 id="delete-browsing-data"><a class="header" href="#delete-browsing-data">Delete Browsing Data</a></h3>
 <img src="./images/delete_browsing_data_setting.png" alt="Delete browsing data setting" width="60%"/>
-<p>Tapping on this option provides you with the possibility to select what Ceno data you want to delete.</p>
+<p>Tapping on this option provides you with the possibility to select what Ceno
+data you want to delete.</p>
 <img src="./images/delete_browsing_data.png" alt="Delete browsing data" width="400"/>
-<p>The Clear button on the home screen deletes all Ceno data, but here you can pick and choose what to delete and what to keep.</p>
+<p>The Clear button on the home screen deletes all Ceno data, but here you can pick
+and choose what to delete and what to keep.</p>
 <h3 id="change-language"><a class="header" href="#change-language">Change language</a></h3>
 <img src="./images/languages.png" alt="Languages" width="400"/>
-<p>Ceno app has been translated into many languages.  If there is a language you’d like to see added to this already extensive list, please let us know.
-You can contact us by email support [at] ceno [dot] app or via our <a href="https://gitlab.com/ceno-app">gitlab repository</a> .</p>
+<p>Ceno app has been translated into many languages. If there is a language you’d
+like to see added to this already extensive list, please let us know. You can
+contact us by email support [at] ceno [dot] app or via our <a href="https://gitlab.com/ceno-app">gitlab
+repository</a> .</p>
 <h2 id="settings-permissions"><a class="header" href="#settings-permissions">Settings: Permissions</a></h2>
 <img src="./images/settings_permissions.png" alt="Permissions section" width="400"/>
-<p>Ceno needs only two permissions: sending the user notifications and stopping the battery optimisation. You have probably been asked to give Ceno those permissions when you first started the Ceno app, or after a restart following clearing of all Ceno data.</p>
+<p>Ceno needs only two permissions: sending the user notifications and stopping the
+battery optimisation. You have probably been asked to give Ceno those
+permissions when you first started the Ceno app, or after a restart following
+clearing of all Ceno data.</p>
 <p>You can read more about them in the <a href="url">section Permissions</a>.</p>
 <h2 id="settings-data"><a class="header" href="#settings-data">Settings: Data</a></h2>
 <img src="./images/settings_data.png" alt="Data section" width="60%"/>
-<p>In this section, you can view which content your Ceno app can share with other Ceno users when they request it .</p>
-<p><strong>Content shared by you</strong> lists the websites that you your Ceno app is able to share with other Ceno users.</p>
-<p><strong>Local cache</strong> informs you how much data may be uploaded from your device onto the Ceno network when other users request it.</p>
-<p>Tapping on the <strong>Clear cached content</strong> option will delete the data from your cache and there will be nothing left to share with your peers.  To cache websites and be able to share them with your peers again, you will need to access them via Ceno Public network once more.</p>
-<p>More information about the purpose of these settings is available in the section <a href="./public-or-personal.html">Public or Personal</a>.</p>
+<p>In this section, you can view which content your Ceno app can share with other
+Ceno users when they request it .</p>
+<p><strong>Content shared by you</strong> lists the websites that you your Ceno app is able to
+share with other Ceno users.</p>
+<p><strong>Local cache</strong> informs you how much data may be uploaded from your device onto
+the Ceno network when other users request it.</p>
+<p>Tapping on the <strong>Clear cached content</strong> option will delete the data from your
+cache and there will be nothing left to share with your peers. To cache websites
+and be able to share them with your peers again, you will need to access them
+via Ceno Public network once more.</p>
+<p>More information about the purpose of these settings is available in the section
+<a href="./public-or-personal.html">Public or Personal</a>.</p>
 <h2 id="settings-developer-tools"><a class="header" href="#settings-developer-tools">Settings: Developer Tools</a></h2>
 <img src="./images/settings_developers.png" alt="Developer tools section" width="60%"/>
 <h3 id="website-sources"><a class="header" href="#website-sources">Website sources</a></h3>
-<p>Ceno is able to retrieve website content that you request from different sources: directly from the origin website, Ceno public network, Ceno private network and Ceno cache. More details about these options are available in the sections detailing the Public and Personal browsing modes.<br />
-By default all these options are checked and for best results you can just leave them as they are.</p>
-<p>You can read more detailed information regarding these options in the section <a href="./public-or-personal.html">Public or Personal</a>.</p>
+<p>Ceno is able to retrieve website content that you request from different
+sources: directly from the origin website, Ceno public network, Ceno private
+network and Ceno cache. More details about these options are available in the
+sections detailing the Public and Personal browsing modes.<br />
+By default all these options are checked and for best results you can just leave
+them as they are.</p>
+<p>You can read more detailed information regarding these options in the section
+<a href="./public-or-personal.html">Public or Personal</a>.</p>
 <h3 id="tracking-protection"><a class="header" href="#tracking-protection">Tracking protection</a></h3>
-<p>These two settings prevent your online activities being tracked by third party trackers.</p>
+<p>These two settings prevent your online activities being tracked by third party
+trackers.</p>
 <h3 id="network-details"><a class="header" href="#network-details">Network details</a></h3>
-<p>This section contains details of your network settings, which may be helpful to our development team if we need to investigate any issues that you report to us.</p>
-<h3 id="enable-log-file"><a class="header" href="#enable-log-file">Enable log file</a></h3>
-<p>Enabling and exporting the Ceno log file can be helpful when investigating issues.  These files do not contain any personally identifiable data.  If you export them to the file system on your device, you can view their contents. You can also share them with our development team when you experience issues that may require investigation by our technical experts.</p>
+<p>This section contains details of your network settings, which may be helpful to
+our development team if we need to investigate any issues that you report to us.</p>
+<h3 id="لاگ-فائل-کو-فعال-کریں"><a class="header" href="#لاگ-فائل-کو-فعال-کریں">لاگ فائل کو فعال کریں</a></h3>
+<p>Enabling and exporting the Ceno log file can be helpful when investigating
+issues. These files do not contain any personally identifiable data. If you
+export them to the file system on your device, you can view their contents. You
+can also share them with our development team when you experience issues that
+may require investigation by our technical experts.</p>
 <h2 id="settings-about"><a class="header" href="#settings-about">Settings: About</a></h2>
 <img src="./images/settings_about.png" alt="About section" width="60%"/>
-<p>Contains additional information about your installation of Ceno, including its version number, the status of the backround Ceno service, and the version number of the Ouinet library that is built into Ceno.</p>
+<p>Contains additional information about your installation of Ceno, including its
+version number, the status of the backround Ceno service, and the version number
+of the Ouinet library that is built into Ceno.</p>
 
                     </main>
 
@@ -517,6 +652,7 @@ By default all these options are checked and for best results you can just leave
             window.setTimeout(window.print, 100);
         });
         </script>
+
 
     </div>
     </body>

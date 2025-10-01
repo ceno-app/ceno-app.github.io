@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Settings - Ceno User Manual</title>
+        <title>تنظیمات - Ceno User Manual</title>
 
 
         <!-- Custom HTML head -->
@@ -36,6 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "light";
+            window.path_to_searchindex_js = "searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc.js"></script>
@@ -92,10 +93,13 @@
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -146,7 +150,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -167,118 +176,115 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="تنظیمات"><a class="header" href="#تنظیمات">تنظیمات</a></h1>
-<p>Settings are accessed via the vertical three dot menu and then selecting
-Settings option.</p>
+<p>برای دسترسی به تنظیمات، از منوی سه‌نقطه‌ای عمودی استفاده کرده و گزینه «تنظیمات»
+را انتخاب کنید.</p>
 <img src="./images/settings.png" alt="Settings" width="40%"/>
-<p>They are divided in 5 groups:</p>
-<p><a href="./settings.html#settings-general">General</a><br />
-<a href="./settings.html#settings-permissions">Permissions</a><br />
-<a href="./settings.html#settings-data">Data</a><br />
-<a href="./settings.html#settings-developer-tools">Developer tools</a><br />
-<a href="./settings.html#settings-about">About</a></p>
-<p>Let’s look at each of those.</p>
-<h2 id="settings-general"><a class="header" href="#settings-general">Settings: General</a></h2>
+<p>این‌ها به ۵ گروه تقسیم می‌شوند:</p>
+<p><a href="./settings.html#settings-general">عمومی</a><br />
+<a href="./settings.html#settings-permissions">مجوزها</a><br />
+<a href="./settings.html#settings-data">داده‌ها</a><br />
+<a href="./settings.html#settings-developer-tools">ابزارهای توسعه‌دهنده</a><br />
+<a href="./settings.html#settings-about">درباره</a></p>
+<p>بیایید هر یک از آن‌ها را بررسی کنیم.</p>
+<h2 id="تنظیمات-عمومی"><a class="header" href="#تنظیمات-عمومی">تنظیمات: عمومی</a></h2>
 <img src="./images/settings_general.png" alt="Settings general" width="60%"/>
-<p>You are probably familiar with most of these settings as they are similar to the
-options available in other browsers. In the following sections we will briefly
-describe the main ones.</p>
+<p>احتمالا با بیشتر این تنظیمات آشنا هستید، چرا که مشابه گزینه‌های موجود در سایر
+مرورگرها هستند. در بخش‌های بعدی، مهم‌ترین آن‌ها را به‌طور خلاصه توضیح خواهیم
+داد.</p>
 <h3 id="انتخاب-موتور-جستوجوی-پیشفرض"><a class="header" href="#انتخاب-موتور-جستوجوی-پیشفرض">انتخاب موتور جست‌وجوی پیش‌فرض</a></h3>
 <img src="./images/default_search_engine.png" alt="Default search engine" width="60%"/>
-<p>This setting allows you to set the default search engine for Ceno browser, by
-checking or unchecking the options provided.</p>
+<p>به‌کمک این قسمت از تنظیمات می‌توانید موتور جست‌وجوی پیش‌فرض مرورگر سنو را با تیک
+زدن یا نزدنِ گزینه‌های ارائه‌شده تعیین کنید.</p>
 <h3 id="سفارشیسازی"><a class="header" href="#سفارشیسازی">سفارشی‌سازی</a></h3>
 <img src="./images/customisations.png" alt="Customizations" width="60%"/>
-<p>Again, these options are mostly self-explanatory.</p>
-<p>We would just draw your attention to an option that may not exist in other apps.
-Ceno allows you to change its launch icon which can be useful in some
-circumstances. We provide several options for you to choose from.</p>
+<p>باز هم اشاره می‌کنیم که این گزینه‌ها عمدتا گویا و واضح هستند.</p>
+<p>فقط می‌خواهیم توجه شما را به گزینه‌ای جلب کنیم که ممکن است در برنامه‌های دیگر
+وجود نداشته باشد. سنو این امکان را می‌دهد که آیکون اجرای آن را تغییر دهید که در
+برخی شرایط می‌تواند مفید باشد. چند گزینه برای انتخاب در اختیار شما قرار
+داده‌ایم.</p>
 <img src="./images/app_icon.png" alt="Choose app icon" width="60%"/>
 <h3 id="فعالسازی-حالت-پل"><a class="header" href="#فعالسازی-حالت-پل">فعال‌سازی حالت پل</a></h3>
 <img src="./images/bridge_toggle_on.png" alt="Bridge toggle on" width="400"/>
-<p>The purpose and high level functionality of the Bridge Mode is described in the
-<a href="./public-or-personal.html#bridges">Bridge Mode section</a>. Here you are able to
-enable or disable this setting.</p>
+<p>هدف و کارکرد کلی حالت پل در <a href="./public-or-personal.html#bridges">بخش حالت پل</a>
+توضیح داده شده است. در این‌جا می‌توانید این تنظیم را فعال یا غیرفعال کنید.</p>
 <h3 id="آمارهای-پسزمینه"><a class="header" href="#آمارهای-پسزمینه">آمارهای پس‌زمینه</a></h3>
 <img src="./images/metrics_setting.png" alt="Background metrics" width="60%"/>
-<p>These are metrics that help us understand any issues that might happen from time
-to time while you are using the Ceno browser. Tapping on the Background metrics
-will open the screen giving you an options to turn the metrics off.</p>
+<p>این‌ها داده‌های آماری‌ای هستند که به ما کمک می‌کنند مشکلات احتمالی هنگام استفاده
+از مرورگر سنو را بهتر درک کنیم. با زدن روی «آمارهای پس‌زمینه» صفحه‌ای باز می‌شود
+که گزینه غیرفعال کردن این داده‌ها را در اختیار شما قرار می‌دهد.</p>
 <img src="./images/metrics_toggle.png" alt="Metrics toggle" width="400"/>
-<p>We recommend these settings to be kept in On position, as they help us
-understand problems that some users may encounter while using Ceno. The more we
-are able to understand the problems, the more we are able to solve them.</p>
-<p>We do no collect any personal data and we do not sell any data to any third
-parties. To read our Privacy policy, please tap on Privacy policy button.</p>
+<p>توصیه می‌کنیم این تنظیمات در حالت روشن باقی بمانند، زیرا به ما کمک می‌کنند
+مشکلاتی را که برخی کاربران هنگام استفاده از سنو با آن روبه‌رو می‌شوند بهتر درک
+کنیم. هرچه این مشکلات را بیشتر درک کنیم، توانایی ما در حل‌شان نیز بیشتر می‌شود.</p>
+<p>ما هیچ داده شخصی‌ای جمع‌آوری نمی‌کنیم و هیچ داده‌ای را به اشخاص ثالث نمی‌فروشیم.
+برای خواندن سیاست حریم خصوصی ما لطفا روی دکمه «سیاست حریم خصوصی» بزنید.</p>
 <h3 id="گزارش-اشکال"><a class="header" href="#گزارش-اشکال">گزارش اشکال</a></h3>
-<p>The circumstances, network conditions and devices in which Ceno is used are
-different for different users, which sometimes can cause the Ceno app to crash.
-To understand what caused a crash in a particular situation, Ceno has been
-designed to generate crash reports and send them to the development team. You,
-as a user, can enable or disable the crash rerport report sending.</p>
-<p>These reports do not contain any personally identifiable data. If you experience
-Ceno crashes, we recommend this setting to be enabled</p>
-<h3 id="delete-browsing-data"><a class="header" href="#delete-browsing-data">Delete Browsing Data</a></h3>
+<p>شرایط، وضعیت شبکه و دستگاه‌هایی که سنو روی آن‌ها استفاده می‌شود برای کاربران
+مختلف متفاوت است و همین می‌تواند گاهی باعث از کار افتادن برنامه سنو شود. برای
+درک علت این اتفاق در یک وضعیت خاص، سنو طوری طراحی شده که گزارش خطا تولید کند و
+آن را برای تیم توسعه بفرستد. شما به‌عنوان کاربر می‌توانید ارسال گزارش خطا را
+فعال یا غیرفعال کنید.</p>
+<p>این گزارش‌ها شامل هیچ داده شناسایی‌کننده شخصی نیستند. اگر سنو دچار خرابی شد و از
+کار افتاد، توصیه می‌کنیم این تنظیم را فعال کنید</p>
+<h3 id="حذف-دادههای-مرورگری"><a class="header" href="#حذف-دادههای-مرورگری">حذف داده‌های مرورگری</a></h3>
 <img src="./images/delete_browsing_data_setting.png" alt="Delete browsing data setting" width="60%"/>
-<p>Tapping on this option provides you with the possibility to select what Ceno
-data you want to delete.</p>
+<p>با زدن روی این گزینه می‌توانید انتخاب کنید که کدام داده‌های سنو حذف شود.</p>
 <img src="./images/delete_browsing_data.png" alt="Delete browsing data" width="400"/>
-<p>The Clear button on the home screen deletes all Ceno data, but here you can pick
-and choose what to delete and what to keep.</p>
+<p>دکمه «پاک کردن» در صفحه اصلی همه داده‌های سنو را حذف می‌کند، اما در این‌جا
+می‌توانید انتخاب کنید چه چیزی پاک شود و چه چیزی باقی بماند.</p>
 <h3 id="تغییر-زبان"><a class="header" href="#تغییر-زبان">تغییر زبان‌</a></h3>
 <img src="./images/languages.png" alt="Languages" width="400"/>
-<p>Ceno app has been translated into many languages. If there is a language you’d
-like to see added to this already extensive list, please let us know. You can
-contact us by email support [at] ceno [dot] app or via our <a href="https://gitlab.com/ceno-app">gitlab
-repository</a> .</p>
-<h2 id="settings-permissions"><a class="header" href="#settings-permissions">Settings: Permissions</a></h2>
+<p>اپلیکیشن سنو به بسیاری از زبان‌ها ترجمه شده است. اگر زبانی هست که دوست دارید به
+این فهرست گسترده اضافه شود، لطفا به ما اطلاع دهید. می‌توانید از طریق ایمیل
+support [at] ceno [dot] app یا از طریق <a href="https://gitlab.com/ceno-app">مخزن گیت‌لب
+ما</a> با ما در تماس باشید.</p>
+<h2 id="تنظیمات-مجوزها"><a class="header" href="#تنظیمات-مجوزها">تنظیمات: مجوزها</a></h2>
 <img src="./images/settings_permissions.png" alt="Permissions section" width="400"/>
-<p>Ceno needs only two permissions: sending the user notifications and stopping the
-battery optimisation. You have probably been asked to give Ceno those
-permissions when you first started the Ceno app, or after a restart following
-clearing of all Ceno data.</p>
-<p>You can read more about them in the <a href="url">section Permissions</a>.</p>
-<h2 id="settings-data"><a class="header" href="#settings-data">Settings: Data</a></h2>
+<p>سنو تنها به دو مجوز نیاز دارد: ارسال اعلان به کاربر و متوقف کردن بهینه‌سازی
+باتری. احتمالا هنگام اولین اجرای اپلیکیشن سنو، یا پس از راه‌اندازی دوباره آن بعد
+از پاک کردن همه داده‌های سنو، از شما خواسته شده این مجوزها را بدهید.</p>
+<p>می‌توانید توضیحات بیش‌تر را در <a href="url">بخش مجوزها</a> بخوانید.</p>
+<h2 id="تنظیمات-دادهها"><a class="header" href="#تنظیمات-دادهها">تنظیمات: داده‌ها</a></h2>
 <img src="./images/settings_data.png" alt="Data section" width="60%"/>
-<p>In this section, you can view which content your Ceno app can share with other
-Ceno users when they request it .</p>
-<p><strong>Content shared by you</strong> lists the websites that you your Ceno app is able to
-share with other Ceno users.</p>
-<p><strong>Local cache</strong> informs you how much data may be uploaded from your device onto
-the Ceno network when other users request it.</p>
-<p>Tapping on the <strong>Clear cached content</strong> option will delete the data from your
-cache and there will be nothing left to share with your peers. To cache websites
-and be able to share them with your peers again, you will need to access them
-via Ceno Public network once more.</p>
-<p>More information about the purpose of these settings is available in the section
-<a href="./public-or-personal.html">Public or Personal</a>.</p>
-<h2 id="settings-developer-tools"><a class="header" href="#settings-developer-tools">Settings: Developer Tools</a></h2>
+<p>در این بخش می‌توانید ببینید کدام محتوا در اپلیکیشن سنو شما می‌تواند هنگام
+درخواست دیگر کاربران سنو با آن‌ها به اشتراک گذاشته شود.</p>
+<p>بخش <strong>محتوای به‌اشتراک‌گذاشته‌شده توسط شما</strong> فهرستی از وب‌سایت‌ها را نشان می‌دهد
+که اپلیکیشن سنو شما قادر است با دیگر کاربران سنو به اشتراک بگذارد.</p>
+<p><strong>کَش محلی</strong> به شما نشان می‌دهد چه میزان داده ممکن است هنگام درخواست دیگر
+کاربران، از دستگاه شما در شبکه سنو بارگذاری شود.</p>
+<p>زدن گزینه‌ی <strong>پاک کردن محتوای کَش‌شده</strong> داده‌ها را از کش شما حذف می‌کند و دیگر
+چیزی برای اشتراک‌گذاری با همتایان‌تان باقی نخواهد ماند. برای کش کردن دوباره
+وب‌سایت‌ها و توانایی اشتراک‌گذاری آن‌ها با دیگران، لازم است دوباره از طریق شبکه
+عمومی سنو به آن‌ها دسترسی پیدا کنید.</p>
+<p>اطلاعات بیش‌تر درباره هدف این تنظیمات در بخش <a href="./public-or-personal.html">عمومی یا
+شخصی</a> در دسترس است.</p>
+<h2 id="تنظیمات-ابزارهای-توسعهدهنده"><a class="header" href="#تنظیمات-ابزارهای-توسعهدهنده">تنظیمات: ابزارهای توسعه‌دهنده</a></h2>
 <img src="./images/settings_developers.png" alt="Developer tools section" width="60%"/>
 <h3 id="منابع-وبسایت"><a class="header" href="#منابع-وبسایت">منابع وب‌سایت</a></h3>
-<p>Ceno is able to retrieve website content that you request from different
-sources: directly from the origin website, Ceno public network, Ceno private
-network and Ceno cache. More details about these options are available in the
-sections detailing the Public and Personal browsing modes.<br />
-By default all these options are checked and for best results you can just leave
-them as they are.</p>
-<p>You can read more detailed information regarding these options in the section
-<a href="./public-or-personal.html">Public or Personal</a>.</p>
-<h3 id="tracking-protection"><a class="header" href="#tracking-protection">Tracking protection</a></h3>
-<p>These two settings prevent your online activities being tracked by third party
-trackers.</p>
-<h3 id="network-details"><a class="header" href="#network-details">Network details</a></h3>
-<p>This section contains details of your network settings, which may be helpful to
-our development team if we need to investigate any issues that you report to us.</p>
+<p>سنو می‌تواند محتوای وب‌سایتی را که درخواست می‌کنید از منابع مختلفی بازیابی کند:
+مستقیما از وب‌سایت اصلی، از شبکه عمومی سنو، از شبکه شخصی سنو و از کش سنو. جزئیات
+بیش‌تر درباره‌ی این گزینه‌ها در بخش‌های مربوط به حالت‌های مرور عمومی و شخصی آمده
+است.<br />
+به‌طور پیش‌فرض همه این گزینه‌ها فعال هستند و برای بهترین نتیجه می‌توانید آن‌ها
+را همان‌ طور که هستند باقی بگذارید.</p>
+<p>می‌توانید اطلاعات دقیق‌تری درباره این گزینه‌ها در بخش <a href="./public-or-personal.html">عمومی یا
+شخصی</a> بخوانید.</p>
+<h3 id="محافظت-در-برابر-ردیابی"><a class="header" href="#محافظت-در-برابر-ردیابی">محافظت در برابر ردیابی</a></h3>
+<p>این دو تنظیم مانع از آن می‌شوند که فعالیت‌های آنلاین شما توسط ردیاب‌های شخص‌
+ثالث دنبال شود.</p>
+<h3 id="جزییات-شبکه"><a class="header" href="#جزییات-شبکه">جزییات شبکه</a></h3>
+<p>این بخش شامل جزئیات تنظیمات شبکه شماست که در صورت نیاز می‌تواند برای تیم توسعه
+ما هنگام بررسی مشکلاتی که گزارش می‌کنید مفید باشد.</p>
 <h3 id="فعالسازی-فایل-گزارش"><a class="header" href="#فعالسازی-فایل-گزارش">فعال‌سازی فایل گزارش</a></h3>
-<p>Enabling and exporting the Ceno log file can be helpful when investigating
-issues. These files do not contain any personally identifiable data. If you
-export them to the file system on your device, you can view their contents. You
-can also share them with our development team when you experience issues that
-may require investigation by our technical experts.</p>
-<h2 id="settings-about"><a class="header" href="#settings-about">Settings: About</a></h2>
+<p>فعال‌سازی و خروجی گرفتن فایل گزارش سنو می‌تواند هنگام بررسی مشکلات مفید باشد.
+این فایل‌ها هیچ داده شخصیِ قابل‌شناسایی‌ای را شامل نمی‌شوند. اگر آن‌ها را در
+سیستم فایل دستگاه خود خروجی بگیرید، می‌توانید محتوایشان را مشاهده کنید. همچنین
+می‌توانید هنگام بروز مشکلاتی که نیازمند بررسی کارشناسان فنی ما باشد، این فایل‌ها
+را با تیم توسعه ما به اشتراک بگذارید.</p>
+<h2 id="تنظیمات-درباره"><a class="header" href="#تنظیمات-درباره">تنظیمات: درباره</a></h2>
 <img src="./images/settings_about.png" alt="About section" width="60%"/>
-<p>Contains additional information about your installation of Ceno, including its
-version number, the status of the backround Ceno service, and the version number
-of the Ouinet library that is built into Ceno.</p>
+<p>شامل اطلاعات بیشتری درباره نصب سنو است، از جمله شماره نسخه، وضعیت سرویس پس‌زمینه
+سنو، و شماره نسخه کتابخانه Ouinet که در سنو تعبیه شده است.</p>
 
                     </main>
 
@@ -320,6 +326,7 @@ of the Ouinet library that is built into Ceno.</p>
         <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>

@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Bridge Configuration - Ceno User Manual</title>
+        <title>پیکربندی پل - Ceno User Manual</title>
 
 
         <!-- Custom HTML head -->
@@ -36,6 +36,7 @@
             const path_to_root = "";
             const default_light_theme = "light";
             const default_dark_theme = "light";
+            window.path_to_searchindex_js = "searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc.js"></script>
@@ -92,10 +93,13 @@
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -146,7 +150,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -166,76 +175,77 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h2 id="why-become-a-ceno-bridge"><a class="header" href="#why-become-a-ceno-bridge">Why become a Ceno bridge?</a></h2>
-<p>A peer-to-peer network is built from every node connected to it (yes, that means
-you as well!). The more nodes, the stronger and more versatile the network
-becomes.</p>
-<p>If you are running Ceno Browser from a country that does not censor the Internet
-(or not as heavily as some), consider helping other Ceno users by becoming a
-bridge node. You will then begin to route traffic between clients living in
-heavily censored countries and Ceno injectors.</p>
-<p>You will not be able to see their traffic (it will be sent through an encrypted
-tunnel), nor will any of this traffic remain on your device.</p>
-<p><em>Note: The configuration described in this section may also help your device to
-effectively seed content to others on the distributed cache, so please consider
-applying it as well when using Ceno in a censoring country (but keep in mind the
-<a href="https://ceno.app/en/faq.html#bridgemode">risks</a> of serving such content to
-others)</em></p>
-<h2 id="how-to-become-a-ceno-bridge"><a class="header" href="#how-to-become-a-ceno-bridge">How to become a Ceno bridge?</a></h2>
-<p>As stated in <a href="./public-or-personal.html?#bridges">this section</a>, Ceno app
-provides some functionlaity that allows you to easily become a Ceno bridge, if
-your network configuration allows it.</p>
-<p>If you have checked your <strong>Reachability</strong> and your <strong>UPnP status</strong> and it looks
-like this</p>
-<p><img src="./images/reachability.png" alt="Reachability status" /></p>
-<p>You will need to configure your router by either enabling the UPnP or setting up
-the port forwarding. In the following sections we describe the steps to perform.</p>
+                        <h2 id="فایده-تبدیل-شدن-به-پل-در-سنو-چیست"><a class="header" href="#فایده-تبدیل-شدن-به-پل-در-سنو-چیست">فایده تبدیل شدن به پل در سنو چیست؟</a></h2>
+<p>یک شبکه همتابه‌همتا از تمام گره‌هایی که به آن متصل‌اند ساخته می‌شود (بله، از
+جمله خود شما!). هر چه گره‌ها بیش‌تر باشند، شبکه قدرتمندتر و انعطاف‌پذیرتر خواهد
+شد.</p>
+<p>اگر مرورگر سنو را در کشوری استفاده می‌کنید که اینترنت را سانسور نمی‌کند (یا دست
+کم نه به شدت برخی کشورها)، می‌توانید با تبدیل شدن به یک گره پل به سایر کاربران
+سنو کمک کنید. در این صورت شما شروع به مسیردهی ترافیک میان کاربرانی در کشورهای با
+سانسور شدید و تزریق‌کننده‌های سنو (injectors) خواهید کرد.</p>
+<p>شما نمی‌توانید ترافیک آن‌ها را ببینید (این ترافیک از طریق یک تونل رمزگذاری‌شده
+ارسال می‌شود) و هیچ بخشی از این ترافیک نیز روی دستگاه شما باقی نخواهد ماند.</p>
+<p><em>توجه: پیکربندی توضیح‌داده‌شده در این بخش ممکن است به دستگاه شما کمک کند تا
+محتوا را به‌طور مؤثر برای دیگران در کَش توزیع‌شده بذرگذاری کند. بنابراین هنگام
+استفاده از سنو در یک کشور سانسورکننده، لطفا در نظر داشته باشید که آن را نیز
+اعمال کنید (اما <a href="https://ceno.app/en/faq.html#bridgemode">خطرات</a> ارائه‌ی چنین
+محتوایی به دیگران را هم در نظر داشته باشید).</em></p>
+<h2 id="چطور-تبدیل-به-یک-پل-سنو-بشویم"><a class="header" href="#چطور-تبدیل-به-یک-پل-سنو-بشویم">چطور تبدیل به یک پل سنو بشویم؟</a></h2>
+<p>همان‌ طور که در <a href="./public-or-personal.html?#bridges">این بخش</a> آمده است، برنامه
+سنو قابلیتی فراهم می‌کند که اگر پیکربندی شبکه شما اجازه دهد، بتوانید به‌سادگی
+تبدیل به پل سنو شوید.</p>
+<p>اگر <strong>دسترس‌پذیری</strong> و <strong>وضعیت UPnP</strong> خود را بررسی کرده‌اید و نتیجه به این شکل
+است</p>
+<p><img src="./images/reachability.png" alt="وضعیت دسترس‌پذیری" /></p>
+<p>لازم است روتر خود را یا با فعال‌سازی UPnP یا با تنظیم انتقال درگاه پیکربندی
+کنید. در بخش‌های بعدی گام‌های انجام این کار را توضیح می‌دهیم.</p>
 <h3 id="فعال-کردن-upnp-روی-مودم-وایفای"><a class="header" href="#فعال-کردن-upnp-روی-مودم-وایفای">فعال کردن UPnP روی مودم وای‌فای</a></h3>
-<p>UPnP is the easiest way of making your Ceno browser (or computer client)
-reachable to the Ceno network.</p>
-<p><em>Note: Enabling UPnP on the Wi-Fi router may expose devices on your network to
-external interference. Please be <a href="https://www.howtogeek.com/122487/htg-explains-is-upnp-a-security-risk/">aware of the
-risks</a>
-and also consider using alternative methods as explained below.</em></p>
-<p>The first thing you will need to do is log in to your router's web interface. To
-find out how to do that, please refer to your router's manual which will tell
-you which user and password to use to log in.</p>
-<p>After that, the steps to perform are similar, but might not be identical for all
-router models.</p>
-<p>Here is a nice article with <a href="https://www.lifewire.com/enable-upnp-on-a-router-5206124">step by step
-instructions</a> for
-enabling the UPnP on different routers.</p>
-<p>Please find instructions for your router type and perform the necessary steps.</p>
-<p>If you prefer, though, you can choose to set up the port forwarding instead of
-the UPnP.</p>
-<h3 id="use-port-forwarding-as-an-alternative-to-upnp"><a class="header" href="#use-port-forwarding-as-an-alternative-to-upnp">Use port forwarding as an alternative to UPnP</a></h3>
-<p>The first step is the same as before: log in to the router's web interface.</p>
-<p>Then, please locate **port forwarding **option.</p>
-<p>To see which IP address you need to forward the connections to and the relevant
-port, open the <strong>Ceno Settings</strong> page and look under the <strong>Local UDP
-endpoints</strong>.</p>
-<p><img src="./images/UDP_endpoint.png" alt="Local UDP endpoint" /></p>
-<p>The port forwarding must be for the UDP protocol (not TCP).</p>
-<p>Ceno chooses a random port on first run and keeps it for subsequent runs, but
-your device's local network IP address may change from time to time. Thus you
-should periodically review the <strong>Ceno Settings</strong> page to see that your device is
-reachable to the Ceno network.</p>
-<p>Your device is reachable if its</p>
-<p><strong>Reachability status</strong> is <strong>likely reachable</strong> or <strong>reachable</strong></p>
-<p><strong>UPnP status</strong> is <strong>enabled</strong></p>
-<p><em><strong>Technical note</strong>: Alternatively, you can make sure that the router always
-assigns the same IP address to your device (e.g. via a static DHCP lease for the
-device's MAC address)</em></p>
-<p>If you have a computer with good connectivity that stays on most of the time,
-and you'd like to set it up as a <strong>Ceno bridge</strong>, please continue reading.</p>
+<p>UPnP ساده‌ترین روش برای دسترس‌پذیر کردن مرورگر سنو (یا کلاینت رایانه‌ای) شما
+برای شبکه سنو است.</p>
+<p><em>توجه: فعال‌سازی UPnP روی روتر وای‌فای ممکن است دستگاه‌های شبکه شما را در معرض
+دخالت‌های خارجی قرار دهد. لطفا <a href="https://www.howtogeek.com/122487/htg-explains-is-upnp-a-security-risk/">از خطرات آگاه
+باشید</a> و
+همچنین روش‌های جایگزین توضیح‌ داده‌شده در ادامه را هم در نظر بگیرید.</em></p>
+<p>اولین کاری که باید انجام دهید ورود به رابط وب روترتان است. برای دانستن نحوه
+انجام این کار، لطفا به دفترچه راهنمای روتر مراجعه کنید که در آن نام کاربری و
+گذرواژه لازم برای ورود ذکر شده است.</p>
+<p>پس از آن، گام‌های اجرایی مشابه‌اند، اما ممکن است در همه‌ مدل‌های روتر کاملا
+یکسان نباشند.</p>
+<p>در اینجا می‌توانید مقاله خوبی درباره <a href="https://www.lifewire.com/enable-upnp-on-a-router-5206124">دستورالعمل‌های
+گام‌به‌گام</a> برای
+فعال‌سازی UPnP روی روترهای مختلف بخوانید.</p>
+<p>لطفا دستورالعمل‌های مربوط به نوع روتر خود را پیدا کنید و گام‌های لازم را انجام
+دهید.</p>
+<p>با این حال، اگر ترجیح می‌دهید می‌توانید به‌جای UPnP، انتقال درگاه را تنظیم کنید.</p>
+<h3 id="از-انتقال-درگاه-بهعنوان-جایگزینی-برای-upnp-استفاده-کنید"><a class="header" href="#از-انتقال-درگاه-بهعنوان-جایگزینی-برای-upnp-استفاده-کنید">از انتقال درگاه به‌عنوان جایگزینی برای UPnP استفاده کنید</a></h3>
+<p>اولین گام همانند قبل است: وارد رابط وب روتر شوید.</p>
+<p>سپس لطفا گزینه <strong>انتقال درگاه</strong> را پیدا کنید.</p>
+<p>برای دیدن این‌ که باید اتصال‌ها را به کدام آدرس IP و درگاه مربوطه هدایت کنید،
+صفحه <strong>تنظیمات سنو</strong> را باز کرده و از قسمت جزئیات شبکه، بخش <strong>نقطه‌های انتهایی
+UDP محلی</strong> را بررسی کنید.</p>
+<p><img src="./images/UDP_endpoint.png" alt="نقطه پایانی UDP محلی" /></p>
+<p>انتقال درگاه باید برای پروتکل UDP باشد (نه TCP).</p>
+<p>سنو در اولین اجرا یک درگاه تصادفی انتخاب می‌کند و در اجراهای بعدی همان را نگه
+می‌دارد، اما آدرس IP محلی دستگاه شما در شبکه ممکن است هر از گاهی تغییر کند.
+بنابراین باید هر چند وقت یک‌بار صفحه <strong>تنظیمات سنو</strong> را بررسی کنید تا مطمئن شوید
+دستگاه شما برای شبکه سنو قابل دسترس است.</p>
+<p>دستگاه شما قابل دسترس است اگر</p>
+<p><strong>وضعیت دسترسی</strong>: <strong>احتمالا در دسترس</strong> یا <strong>در دسترس</strong></p>
+<p><strong>وضعیت UPnP</strong>: <strong>فعال</strong></p>
+<p><em><strong>نکته فنی</strong>: همچنین می‌توانید مطمئن شوید که روتر همیشه همان آدرس IP را به
+دستگاه شما اختصاص دهد (برای نمونه از طریق یک اجاره DHCP ثابت برای آدرس MAC
+دستگاه).</em></p>
+<p>اگر رایانه‌ای با اتصال خوب دارید که بیشتر اوقات روشن می‌ماند و مایلید آن را
+به‌عنوان یک <strong>پل سنو</strong> راه‌اندازی کنید، لطفا به خواندن ادامه دهید.</p>
 <h2 id="اجرای-یک-پل-روی-یک-کامپیوتر"><a class="header" href="#اجرای-یک-پل-روی-یک-کامپیوتر">اجرای یک پل روی یک کامپیوتر</a></h2>
-<p>If your computer supports Docker containers, you can run a pre-configured Ceno
-client on it to act as a bridge. If Docker is not yet installed, please follow
-the instructions to install the Docker Engine in your platform. For Debian
-derivatives like Ubuntu or Linux Mint, you can just run: <code>sudo apt install docker.io</code></p>
-<p>برای به‌کارگیری و استقرار یک نگه‌دارنده‌ مخاطب در Ceno فقط لازم است این فرمان را
-روی یک پایانه اجرا کنید (به نظر ترسناک می‌آید اما می‌توانید به‌سادگی آن را روی
-نوار فرمان کپی کنید):</p>
+<p>اگر رایانه شما از کانتینرهای داکر پشتیبانی می‌کند، می‌توانید یک کلاینت از پیش
+پیکربندی‌شده سنو را روی آن اجرا کنید تا به‌عنوان یک پل عمل کند. اگر داکر هنوز
+نصب نشده است، لطفا دستورالعمل‌های نصب Docker Engine را برای پلتفرم خود دنبال
+کنید. برای توزیع‌های مبتنی بر دبیان مانند اوبونتو یا لینوکس مینت، کافی است این
+دستور را اجرا کنید: <code>sudo apt install docker.io</code></p>
+<p>برای راه‌اندازی یک محیط کلاینت سنو فقط کافی است دستور زیر را روی یک ترمینال اجرا
+کنید (شاید پیچیده و ترسناک به نظر برسد ولی می‌توانید آن را همان طور که هست کپی
+کرده و در خط فرمان قرار دهید):</p>
 <pre><code>sudo docker run --name ceno-client \
   -dv Ceno:/var/opt/ouinet --network host \
   --restart unless-stopped equalitie/Ceno-client
@@ -247,11 +257,11 @@ derivatives like Ubuntu or Linux Mint, you can just run: <code>sudo apt install 
   -p 127.0.0.1:8077-8078:8077-8078 -p 28729:28729/udp \
   --restart unless-stopped equalitie/ceno-client
 </code></pre>
-<p>The command will start a container named ceno-client that will run on every boot
-unless you explicitly tell it to stop.</p>
-<p>Please check the <a href="https://gitlab.com/ceno-app/ceno-docker-client#running-the-client">Ceno Docker client
-documentation</a>
-for more information on how to manipulate the container.</p>
+<p>این دستور یک کانتینر با نام ceno-client را راه‌اندازی می‌کند که در هر بار بوت
+اجرا خواهد شد، مگر این که صراحتا به آن فرمان توقف بدهید.</p>
+<p>لطفا برای اطلاعات بیشتر درباره نحوه کار با کانتینر، به <a href="https://gitlab.com/ceno-app/ceno-docker-client#running-the-client">مستندات کلاینت داکر
+سنو</a> مراجعه
+کنید.</p>
 
                     </main>
 
@@ -299,6 +309,7 @@ for more information on how to manipulate the container.</p>
         <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>
