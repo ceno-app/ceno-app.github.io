@@ -377,17 +377,55 @@
                 <p>If you need to save battery, you can go to Ceno > Settings > Permissions and enable the 
                     setting Battery Optimisations if it was disabled.  Alternatively, you can temporarily stop the Ceno app.</p>
             </details>
-            <details>
-                <summary>  </summary>
-                <p> </p>
-            </details>
-            <details>
-                <summary>  </summary>
-                <p> </p>
-            </details>
-
-
         </div>
 
+    </section>
+    <section class="fff-bg">
+        <div class="faq-container default-width default-vpadding">
+        <h1>Troubleshooting</h1>
+        <details>
+                <summary>F-Droid: Non-Free Code Alert  </summary>
+                <p>In the Ceno source code, we use libraries from Mozilla, not all of which are entirely free. 
+                    For the F-Droid app, we rework these libraries from scratch. However, because they are made from 
+                    non-free components, F-Droid may flag this as an error. In general, you can safely install the application; 
+                    it is essentially fine.</p>
+            </details>
+            <details>
+                <summary>I cannot open any web pages, what can I  check?  </summary>
+                <p>The first thing to check is the state of your internet connection. Are you able to open any webpages 
+                    using other browsers (Firefox, Chromium)?  If yes, then... </p>
+                <p>Please check the status of Ceno Browser Service in the Settings > About section.  It should read: Started.  
+                    If it does not display that status, please try restarting your Ceno app.  If after the restart, the state of 
+                    the Ceno Browser Service is Started, you should be able to access some webpages.  But if it is still not Started, 
+                    then there may be other problems in your network. </p>
+                <p>If your internet connection is working correctly, but the Ceno Browser Service still does not show Started, 
+                    or if it does show Started but you are still not able to retrieve any pages, please contact us by email  
+                    support [at] ceno [dot] app. </p>
+                <p>As we have seen before, to retrieve webapges, Ceno browser needs to access the BitTorrent P2P network.  
+                    One possible reason for not being able to get into BitTorrent (more so when you run Ceno for the first time), 
+                    is that the default bootstrap servers used by the Ceno network are blocked or unreachable. In that case you 
+                    may want to try providing Ceno with extra BitTorrent bootstrap servers in the 
+                    Settings > Developer tools > Network details > BitTorrent bootstraps. </p> 
+                <p>You can ask us if you do not know of any such server. After setting the extra  bootstraps, please restart the 
+                    application. If the problem persists, contact us. Our email is support [at] ceno [dot] app . </p>    
+            </details>
+            <details>
+                <summary>Accessing some content shows "Failed to retrieve the resource"- what to check </summary>
+                <p>When you see this message, it  means that Ceno tried all available mechanisms to access the content, 
+                    but none of them succeeded. </p>
+                <p>Please make sure that the following requirements are fulfilled for Ceno to work:</p>    
+                <ul>
+                    <li>You are running a recent version of Ceno browser. Obsolete versions may not be able to communicate 
+                        with newer injectors or other clients. You can get the up to date versions 
+                        <a href="https://ceno.app/en/download.html">here</a>. </li>
+                    <li>All access mechanisms in the Settings > Developer Tools > Website sources screen are checked. 
+                        Otherwise Ceno will not be able to circumvent some connectivity issues when accessing content.</li>
+                    <li>Ceno Broser Service status is Started, in Settings > About </li>
+                    <li>Your device has a working connection to the network, i.e. your normal Web browser is able to open some 
+                        Web sites. Ceno cannot work when all network connectivity is shut down (although users may still find a 
+                        common Wi-Fi access point to do device-to-device sharing).</li>
+                </ul>
+            </details>
+        </div>
     </section>
 </main>
