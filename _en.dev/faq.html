@@ -426,6 +426,52 @@
                         common Wi-Fi access point to do device-to-device sharing).</li>
                 </ul>
             </details>
+            <details>
+                <summary>A page shows bogus content (like a block message)</summary>
+                <p>This may happen when you used an old version of Ceno to visit a blocked site in the past.   Ceno then 
+                    remembered that, and now automatically tried to open the blocked site again.  </p>
+                <p>One way to fix this issue is to clear Ceno's normal browsing cache by choosing Settings > Data > Clear cached content.</p>
+            </details>
+            <details>
+                <summary>Others cannot retrieve content seeded by my device</summary>
+                <ol>
+                    <li><p>First, make sure that your device is still seeding the content by going to the 
+                        Ceno Settings > Developer tools > Website sources  page,  and uncheck all website sources other than 
+                        Shared by other Ceno users. Then try to access the content that should seed from your device to your 
+                        peers: on your device this content should load (at least partially).  </p>
+                        <p>Ceno button at the address bar should have either a blue or a grey dot.  Tapping on the Ceno button 
+                         opens the information screen that shows that the contents you just viewed was 
+                        From Ceno cache - which is in blue (or grey) colour.  From Ceno cache should have a value greater than 
+                        zero next to it, and all other options should have value 0 (because all other website sources options were 
+                        unchecked).<p></li>
+                    <li>If the content loads correctly on your device, it means that the content is in your cache and your peers 
+                        should be able to source it from your device.</li>
+                    <li>If the content does not load, it could be that Ceno has already removed it, since it automatically cleans up 
+                        stale content (older than a week by default) from your local cache.</li>
+                    <li>To load it again into your cache, please go to Settings > Developer tools > Website sources and check the 
+                        Ceno network (public), then access the desired website.  If you’re able to access it, it will be cached on your device.</li>
+                    <li>Please allow a couple of minutes to pass for the device to announce the content in the distributed cache index so 
+                        that your peers devices are able to discover it.</li>
+                    <li>Make Shared by other Ceno users the only checked box again and access the content once more; if it still does 
+                        not load, it may be that the particular content is not deemed safe for sharing by the Ceno app.</li>
+                    <li>If the previous step works, but another device with only the Shared by other Ceno users source enabled still 
+                        shows "Failed to retrieve the resource…", there are two possible scenarios. </li>
+                    <li>
+                        <ul>
+                        <li>a.	If both devices are in the same network (e.g. on the same Wi-Fi access point), it could be that the 
+                            network does not allow direct communication between devices connected to it. This happens in some public 
+                         Wi-Fi networks, so try using a private one.</li>   
+                         <li>b.	If the devices are in different networks, it could be due to a variety of reasons. One of them is that 
+                             the network of the first device does not allow incoming connections: if you open its 
+                             Ceno Settings  > Developer tools > Network details page, under Reachability status it should say reachable 
+                             or likely reachable. Otherwise seeding may not be possible from that network as it is</li> 
+                        </ul>
+                    </li>
+                </ol>
+                <p>Technical note: If your device reports undecided reachability and you can change the configuration of the access 
+                    point, you may create a permanent port forwarding rule towards your client. See <a href="">here</a> for further instructions.</p>
+
+                </details>
         </div>
     </section>
 </main>
