@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Ceno - دفترچه‌ی راهنمای کاربر Ceno (سنو)</title>
+        <title>مرورگر سنو - Ceno User Manual</title>
 
 
         <!-- Custom HTML head -->
@@ -35,12 +35,24 @@
         <script>
             const path_to_root = "";
             const default_light_theme = "light";
-            const default_dark_theme = "navy";
+            const default_dark_theme = "light";
+            window.path_to_searchindex_js = "searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc.js"></script>
     </head>
     <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
     <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
@@ -81,10 +93,13 @@
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -118,19 +133,16 @@
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
 
-                    <h1 class="menu-title">دفترچه‌ی راهنمای کاربر Ceno (سنو)</h1>
+                    <h1 class="menu-title">Ceno User Manual</h1>
 
                     <div class="right-buttons">
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
-                        </a>
-                        <a href="https://github.com/ceno-app/ceno-docs" title="Git repository" aria-label="Git repository">
-                            <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
 
                     </div>
@@ -138,7 +150,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -158,19 +175,40 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="دفترچهی-راهنمای-کاربر-censorshipno-سنو"><a class="header" href="#دفترچهی-راهنمای-کاربر-censorshipno-سنو">دفترچه‌ی راهنمای کاربر Ceno (سنو)</a></h1>
-<p>This manual is aimed at users of <a href="https://gitlab.com/ceno-app/ceno-android">Ceno Browser</a> and related technologies, as
-created for the <a href="https://ceno.app/">Ceno</a> project by <a href="https://equalit.ie/">eQualitie</a>.</p>
-<p>If you are looking for technical documentation, please refer to the <a href="https://gitlab.com/ceno-app/ceno-docs/">Ceno
-documentation repository</a>, where you will find pointers for further reading
-and details on implementation, as well as the <a href="https://gitlab.com/equalitie/ouinet/blob/master/doc/ouinet-network-whitepaper.md">protocol specifications</a>.</p>
+                        <h1 id="مرورگر-سنو"><a class="header" href="#مرورگر-سنو">مرورگر سنو</a></h1>
+<p>وب را دست به دست کن! سِنو اولین مرورگر وب در جهان است که عملکردش با هر نصبِ
+تازه، بهتر می‌شود. این مرورگر در عین فراهم آوردن تجربه‌ای عادی از وب‌گردی، بر
+پایه فناوری همتا‌به‌همتا (P2P) عمل می‌کند تا وب‌سایت‌ها را بین تمام کاربران دست
+به دست کند. سِنو همچنین می‌تواند برای دور زدن محدودیت‌های شبکه و دسترسی به محتوا
+در زمان قطعی اینترنت استفاده شود.</p>
+<p>🔓👀 با سِنو به رسانه‌های فیلترشده و دیگر وب‌سایت‌ها دسترسی پیدا کنید. این دسترسی
+رایگان و در حالت شخصی، ناشناس است.</p>
+<p>🚫🌴 در صورت قطع اینترنت در کشور، همچنان می‌توانید به‌کمک سِنو اخبار را بخوانید و
+در ارتباط بمانید.</p>
+<p>📱🤝📱 اگر در کشوری با دسترسی آزاد به اینترنت زندگی می‌کنید، با سِنو می‌توانید
+به‌سادگی به افراد کشورهای دیگر کمک کنید تا سانسور را دور بزنند و دسترسی آزاد به
+اطلاعات داشته باشند.</p>
+<p>📖👐 مرورگر سِنو بر اساس یک کتابخانه متن‌باز یعنی Ouinet ساخته شده است.</p>
+<p>🛠🦹🏻 محصول ما ممکن است به دلیل پیشرفت مداوم فناوری‌های سانسور، ناپایداری‌هایی
+داشته باشد. ما همواره سِنو را بهبود می‌بخشیم تا مطمئن شویم دسترسی شما حفظ
+می‌شود. اگر وب‌سایت‌ها به‌کندی بارگذاری می‌شوند یا باز نمی‌شوند، لطفا برنامه را
+حذف نکنید — چند روز دیگر دوباره به سراغ آن بروید یا با تیم پشتیبانی ما تماس
+بگیرید: support [at] ceno [dot] app</p>
+<p>سنو توسط eQualit.ie توسعه داده شده است. سِنو یک مرورگر کاملا رایگان و متن‌باز
+است که نیازی به ثبت‌نام ندارد. این مرورگر کاملا بدون تبلیغات است.</p>
+<p>ما برخی داده‌های آماری ناشناس مربوط به برنامه و شبکه را جمع‌آوری می‌کنیم. هیچ
+اطلاعات شخصی‌ای جمع‌آوری نمی‌شود و این داده‌ها هرگز با اشخاص ثالث به اشتراک
+گذاشته نمی‌شوند. جمع‌آوری این داده‌ها به‌صورت پیش‌فرض فعال است، اما کاربران
+می‌توانند در هر زمان با مراجعه به تنظیمات ← آمار پس‌زمینه ← آمار سنو آن را
+غیرفعال کنند. برای اطلاعات بیش‌تر درباره داده‌هایی که جمع‌آوری می‌کنیم، لطفا
+سیاست حفظ حریم خصوصی را ببینید.</p>
 
                     </main>
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
 
-                            <a rel="next prefetch" href="intro/index.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next prefetch" href="introduction.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -181,7 +219,7 @@ and details on implementation, as well as the <a href="https://gitlab.com/equali
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
 
-                    <a rel="next prefetch" href="intro/index.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next prefetch" href="introduction.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
@@ -205,6 +243,7 @@ and details on implementation, as well as the <a href="https://gitlab.com/equali
         <script src="book.js"></script>
 
         <!-- Custom JS scripts -->
+
 
 
     </div>

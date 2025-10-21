@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Ceno သုံးစွဲသူ လက်စွဲ</title>
+        <title>Ceno User Manual</title>
         <meta name="robots" content="noindex">
 
 
@@ -36,12 +36,24 @@
         <script>
             const path_to_root = "";
             const default_light_theme = "light";
-            const default_dark_theme = "navy";
+            const default_dark_theme = "light";
+            window.path_to_searchindex_js = "searchindex.js";
         </script>
         <!-- Start loading toc.js asap -->
         <script src="toc.js"></script>
     </head>
     <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
     <div id="body-container">
         <!-- Work around some values being stored in localStorage wrapped in quotes -->
         <script>
@@ -82,10 +94,13 @@
                 sidebar = sidebar || 'visible';
             } else {
                 sidebar = 'hidden';
+                sidebar_toggle.checked = false;
             }
-            sidebar_toggle.checked = sidebar === 'visible';
-            html.classList.remove('sidebar-visible');
-            html.classList.add("sidebar-" + sidebar);
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
         </script>
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
@@ -119,19 +134,16 @@
                             <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
                         </ul>
-                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
 
-                    <h1 class="menu-title">Ceno သုံးစွဲသူ လက်စွဲ</h1>
+                    <h1 class="menu-title">Ceno User Manual</h1>
 
                     <div class="right-buttons">
                         <a href="print.html" title="Print this book" aria-label="Print this book">
                             <i id="print-button" class="fa fa-print"></i>
-                        </a>
-                        <a href="https://github.com/ceno-app/ceno-docs" title="Git repository" aria-label="Git repository">
-                            <i id="git-repository-button" class="fa fa-github"></i>
                         </a>
 
                     </div>
@@ -139,7 +151,12 @@
 
                 <div id="search-wrapper" class="hidden">
                     <form id="searchbar-outer" class="searchbar-outer">
-                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
                     </form>
                     <div id="searchresults-outer" class="searchresults-outer hidden">
                         <div id="searchresults-header" class="searchresults-header"></div>
@@ -159,1461 +176,568 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h1 id="censorshipno-သုံးစွဲသူ-လကစွဲ"><a class="header" href="#censorshipno-သုံးစွဲသူ-လကစွဲ">Ceno သုံးစွဲသူ လက်စွဲ</a></h1>
-<p>This manual is aimed at users of <a href="https://gitlab.com/ceno-app/ceno-android">Ceno Browser</a> and related technologies, as
-created for the <a href="https://ceno.app/">Ceno</a> project by <a href="https://equalit.ie/">eQualitie</a>.</p>
-<p>If you are looking for technical documentation, please refer to the <a href="https://gitlab.com/ceno-app/ceno-docs/">Ceno
-documentation repository</a>, where you will find pointers for further reading
-and details on implementation, as well as the <a href="https://gitlab.com/equalitie/ouinet/blob/master/doc/ouinet-network-whitepaper.md">protocol specifications</a>.</p>
+                        <h1 id="ceno-ဘရောကဇာ"><a class="header" href="#ceno-ဘရောကဇာ">Ceno ဘရောက်ဇာ</a></h1>
+<p>Share the Web! Ceno is the world's first web browser that gets better with every
+installation. Offering a common Internet browsing experience, it relies on a
+peer-to-peer technology to deliver and share websites among all participants.
+Ceno can also be used to bypass network restrictions and browse content during a
+shutdown.</p>
+<p>🔓 👀 Access blocked media and other websites. Free and anonymous in Personal
+Mode.</p>
+<p>🚫🌴 In case of a internet shutdown in your region, you will still be able to read
+news and stay connected.</p>
+<p>📱🤝📱 Live in a country with free internet access? Help people in other countries
+bypass censorship and access independent information with just one tap. Learn
+more <a href="https://ceno.app">on our website</a>.</p>
+<p>📖👐 Ceno Browser is built on Ouinet, an open-source library. You can check the
+app’s code <a href="https://gitlab.com/censorship-no">on GitLab</a>.</p>
+<p>🛠🦹🏻 Our product may experience instability due to the constant evolution of
+censorship technologies. We are continuously improving it to ensure you maintain
+access. If websites load slowly or don’t open, please don’t delete the app — try
+using it again in a few days or contact our support team: support [at] ceno
+[dot] app</p>
+<p>Ceno is developed by <a href="https://equalitie.org">eQualitie</a>. It is a
+completely free and open source browser that doesn’t require registration and is
+completely ad-free.</p>
+<p>We collect some anonymized app and network metrics. No personal information is
+collected and the data is never shared with third-parties. Metrics collection is
+enabled by default, users can opt-out of it any time via the <a href="./settings.html#background-metrics">Settings &gt;
+Background metrics &gt; Ceno Metrics</a> toggle.
+Please refer to our <a href="https://ceno.app/en/privacy_policy.html">Privacy
+Policy</a> for more information about what we collect.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="မိတဆက"><a class="header" href="#မိတဆက">မိတ်ဆက်</a></h1>
-<p>The Internet and the World Wide Web have become more and more important for
-people around the world as a source of all kinds of information, and a way to
-exercise fundamental rights. At the same time, recent years have seen an
-increase in all kinds of network censorship and other types of network
-interference (see the reports from <a href="https://ooni.org/reports/" title="Open Observatory of Network
-Interference – Research reports">OONI</a>, <a href="https://magma.lavafeld.org/publications/" title="Magma publications">Magma</a>,
-<a href="https://censoredplanet.org/reports" title="Censored Planet – Reports">Censored Planet</a>), both from private and state actors.</p>
-<p>၀က်ဘ်သည် သင် ပြန်ထုတ်လိုသော အကြောင်းအရာကို ထိန်းသိမ်းထားပြီး ပေးစာများ
-ဖလှယ်ခြင်းထက် တယ်လီဖုန်းဖြင့် တိုက်ရိုက် စကားပြောသကဲ့သို့ ချိန်ကိုက်ထားသော
-နည်းလမ်းဖြင့် ပြန်ထုတ်နိုင်ရန် (အကြောင်းအရာ ဖန်တီးသူများ၊ ထုတ်ဝေသူများနှင့်
-အင်တာနက် ဝန်ဆောင်မှုများ ပေးသူများက လည်ပတ်သည့်) <em>ဝက်ဘ် ဆာဗာများ</em> ဟု ခေါ်သည့်
-အထူးကွန်ပျူတာများသို့ သင့်စက်များက ရောက်ရှိနိုင်မှုပေါ် အားထားရသည်။
-ကံမကောင်းစွာဖြင့် ဤသို့ပြုလုပ်ရန် သင်လိုအပ်သော ဝက်ဘ်ဆာဗာသည် ကွန်ရက်သို့
-ချိတ်ဆက်ထားပြီး ထိုအခိုက်အတန့်တွင် သင့်စက်နှင့် ပြောဆိုရန် လုံလောက်သော
-ရင်းမြစ်များ ရရှိနိုင်ရန် လိုအပ်သည်။</p>
-<p><em>အကြောင်းအရာ ပို့ဆောင်မှု ကွန်ရက်များ</em> (သို့မဟုတ် စီးပွားဖြစ် Akamai နှင့်
-Cloudflare ကဲ့သို့ CDNs (သို့) အရပ်သား အသိုင်းအဝိုင်းအတွက် ရည်ရွယ်သော Deflect)
-ပေါ်ထွန်းလာမှုနှင့်အတူ အကြောင်းအရာ၏ မိတ္တူများကို ကမ္ဘာတစ်ဝှမ်းရှိ
-ဒေတာစင်တာများသို့ ဖြန့်ဝေပေးခြင်းဖြင့် ၎င်းသည် သင့်စက်များနှင့် ပိုနီးလာပြီး
-ရောက်ရှိရန် ပိုမြန်လာနိုင်သည့်အပြင် မူလ ဆာဗာများကို တိုက်ရိုက်
-ဝင်ရောက်သုံးစွဲမှုမှ ကာကွယ်ပေးသဖြင့် ဤဝက်ဘ်ဆာဗာများမှ ဝန်အချို့ကို
-ဖယ်ရှားနိုင်ခဲ့သည်။ သို့သော် လက်ရှိ CDN ဆာဗာများ (နှင့် ၎င်းတို့ကို လည်ပတ်သည့်
-အဖွဲ့အစည်းများ) ကို မူလ ဆာဗာရော သင့်စက်များကပါ ယုံကြည်ရန် လိုအပ်ပြီး ၎င်းတို့ကို
-အချိန်တိုင်းတွင် ရောက်ရှိနိုင်ရန်လည်း လိုအပ်သည်။</p>
-<p>နောက်ထပ် ကံမကောင်းစွာဖြင့် ယေဘုယျ ချိတ်ဆက်နိုင်မှု ရှားပါးသော (ဖွံ့ဖြိုးဆဲ
-နိုင်ငံများ သို့မဟုတ် ချို့တဲ့သော၊ ဆင်းရဲသော သို့မဟုတ် ကျေးလက်ဒေသများ)၊
-ဈေးကြီးသော (အချို့နိုင်ငံများသည် နိုင်ငံတကာ အသွားအလာအတွက် ငွေပိုတောင်းသည်)
-သို့မဟုတ် အစိုးရ တာဝန်ရှိသူက တက်ကြွစွာ ပိတ်ဆို့ထားသော (အတိအလင်း သို့မဟုတ် ယေဘုယျ
-ပိတ်ပင်မှုကြောင့်) အခြေအနေများ ရှိသည်။ ဤကိစ္စရပ်များတွင် မူလ ဝက်ဘ်ဆာဗာများ
-သို့မဟုတ် CDN ဆာဗာများကိုပင် ရောက်ရှိရန် ခက်ခဲသည် သို့မဟုတ် မဖြစ်နိုင်ပါ။
-ထို့ပြင် လွန်ခဲ့သော နာရီ အနည်းငယ်က ကျွန်ုပ်သည် တစ်နည်းနည်းဖြင့်
-ဝင်ရောက်သုံးစွဲနိုင်ခဲ့ပြီး ကျွန်ုပ်တို့သည် လမ်းအနည်းငယ် ခြား၍ နေထိုင်လျှင်ပင်
-သင့်စက်သည် ထိုအကြောင်းအရာကို ရရှိနိုင်မည် မဟုတ်ပါ။</p>
-<p>ဤနေရာတွင် CENO ဘရောက်ဇာနှင့် Ouinet သည် အရေးပါလာပါပြီ။ ဤအခန်းတွင် သင့်အား
-၎င်းတို့နှင့် မိတ်ဆက်ပေးပါမည်။</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="ceno-ဘရောကဇာ-ဆိုတာဘာလဲ"><a class="header" href="#ceno-ဘရောကဇာ-ဆိုတာဘာလဲ">Ceno ဘရောက်ဇာ ဆိုတာဘာလဲ။</a></h1>
-<p>Ceno (short for <a href="https://ceno.app/">Ceno</a>) is a Web browser for mobile Android devices
-(such as smartphones and tablets) that uses a novel approach to circumvent
-Internet censorship and share retrieved content among all users in a
-<a href="https://en.wikipedia.org/wiki/Peer-to-peer">peer-to-peer</a> (P2P) fashion. This reduces overall reliance on
-international network exchanges, and allows frequently requested Web content to
-persist in the network even during heavy filtering and throttling events.</p>
-<p>What sets Ceno apart from most other circumvention initiatives is that users can
-continue to share Web content even when no (or extremely limited) connectivity
-exists across national borders. Ceno is thus built in anticipation of aggressive
-Internet filtering and the establishment of <a href="https://en.wikipedia.org/wiki/National_intranet">national intranets</a> to fence off
-nations from the Web.</p>
-<p>Ceno Browser is built on an adapted version of <a href="https://www.mozilla.org/firefox/android/">Firefox for Android</a>, a
-popular, modern, feature-rich and secure Free/Libre/Open Source browser. Ceno
-extends Firefox with <strong>Ouinet</strong>, the underlying technology allowing it to share
-content between devices (described in later sections).</p>
-<h2 id="ceno-ကို-ဘယသူတွေ-ရေးသားတညဆောက-ထားသလဲ"><a class="header" href="#ceno-ကို-ဘယသူတွေ-ရေးသားတညဆောက-ထားသလဲ">Ceno ကို ဘယ်သူတွေ ရေးသားတည်ဆောက် ထားသလဲ။</a></h2>
-<p>The <em>Ceno</em> project is run by <a href="https://equalit.ie/">eQualitie</a> in support of Articles 18,
-19 and 20 of the <a href="https://www.un.org/en/universal-declaration-human-rights/">Universal Declaration of Human Rights</a>. Ceno and related
-technologies are developed as Free/Libre/Open Source software (<a href="https://gitlab.com/ceno-app/" title="Ceno source code repositories">project
-source</a>), allowing anyone to use, study, share and enhance it.
-Please contact <a href="mailto:intro/cenoers@equalitie.org">cenoers@equalitie.org</a> in case of doubt or for further
-information.</p>
-<h2 id="ဘယသူအတွကလဲ"><a class="header" href="#ဘယသူအတွကလဲ">ဘယ်သူ့အတွက်လဲ။</a></h2>
-<p>Ceno သည် လူတိုင်းအတွက် ဖြစ်သည်။ အထူးသဖြင့် အင်တာနက်ဆင်ဆာ ပိတ်ပင်ခြင်းခံရသည့်
-အကြောင်းအရာများကို ကြည့်ရှု အသုံးပြုလိုသူများ၊ ကမ္ဘာ့အင်တာနက်နှင့် ချိတ်ဆက်ရန်
-ဈေးကြီးပေးရသည့် (သို့) ကွန်နက်ရှင် မကောင်းသည့် နိုင်ငံများတွင်
-နေထိုင်သူများအတွက် ရည်ရွယ်ပါသည်။ Ceno က အသုံးပြုသူများအကြား အကြောင်းအရာများ
-မျှဝေခြင်းကို အားပေးပြီး အချင်းချင်းအကြား ချိတ်ဆက်ပံ့ပိုးသည့် ပုံစံဖြင့်
-ဗဟိုထိန်းချုပ်မှု မရှိသော နက်ဝေါ့ခ်ကို ဖန်တီးနိုင်ပါသည်။</p>
-<p>Ceno ကို အသုံးပြုရန်အတွက် ကွန်ပျူတာ ကျွမ်းကျင်သူ ဖြစ်ရန်မလိုသကဲ့သို့
-အသုံးပြုသူမှအသုံးပြုသူ အချင်းချင်းကြား ချိတ်ဆက်ပေး သည့် ကွန်ရက်များက Ceno ကို
-မည်သို့အသုံးပြုသည်ကို နားလည်ရန်လည်း မလိုအပ်ပါ။ Ceno ကို သာမန်ဝက်ဘ်ဘရောက်ဇာများ
-အသုံးပြုသကဲ့သို့ပင် သုံးနိုင်ပါသည် (Ceno တွင်သာရရှိနိုင်သည့်
-လုပ်ဆောင်ချက်များကို မသိမသာ ထည့်သွင်းထားပြီး ဖြစ်သည်)။</p>
-<p>သို့ရာတွင် Ceno သည် နက်ဝေါ့ခ် တွင် မျှဝေထားသည့် ဝက်ဘ်အကြောင်းအရာများကို
-အခြားအသုံးပြုသူများအား အသိပေးခြင်း နှင့် အသုံးပြုသူထံသို့ အကြောင်းအရာများ
-ပေးပို့ရသည့် အတွက် အခြား သာမန် ဝက်ဘ်ဘရောက်ဇာများထက် အင်တာနက် လမ်းကြောင်း
-ပိတ်ဆို့မှုကို ပိုမိုဖြစ်စေတတ်ပါသည်။ ထို့ကြောင့် အင်တာနက် ချိတ်ဆက်မှု အနေအထား
-အတော်အသင့် ကောင်းရန် လိုအပ်သည်။ မိုဘိုင်း ဒေတာဖြင့် သုံးခြင်းထက်
-ဝိုင်ဖိုင်ချိတ်၍ သုံးရန် အကြံပြုပါသည်။ သို့မှသာ အင်တာနက် ဒေတာ အကုန်သက်သာပြီး
-မိမိ ချိတ်ဆက်ထားသော ဝက်ဘ် အကြောင်းအရာများကို အခြားသူများကို မျှဝေနိုင်မည်
-ဖြစ်သည်။</p>
-<blockquote>
-<p><strong>Warning:</strong> <em>Ceno is not an anonymity tool.</em> In fact, using Ceno may allow
-others to know whether you have accessed or are sharing certain Web content.
-Please take careful consideration of which risks you can assume by using this
-tool. See the sections on <a href="intro/../concepts/public-personal.html">Public vs. Personal
-browsing</a> and <a href="intro/../concepts/risks.html">risks</a>
-for further information.</p>
-</blockquote>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="ouinet-ဆိုတာ-ဘာလဲ"><a class="header" href="#ouinet-ဆိုတာ-ဘာလဲ">Ouinet ဆိုတာ ဘာလဲ။</a></h1>
-<p><a href="https://gitlab.com/equalitie/ouinet/">Ouinet</a> is a core technology that allows Ceno Browser to share Web content
-with other devices. Ouinet comes in the form of reusable computer code (a
-library) that an application like Ceno can use to become a participant in a
-network of cooperating nodes that communicate directly (<a href="https://en.wikipedia.org/wiki/Peer-to-peer">peer-to-peer</a> or
-P2P) to help access and store new Web content, and to request and deliver
-previously accessed content to others.</p>
-<p>Ouinet သည် ၎င်း၏ အသုံးဝင်မှုတစ်ခုစီကို ရရှိရန် တည်ရှိပြီးသား နည်းပညာများကို
-ကောင်းစွာ ပေါင်းစပ်၍ အသုံးပြုမှုအပေါ် အခြေခံသည် - အခြား ပါဝင်ဆောင်ရွက်သူများကို
-တည်နေရာရှာခြင်းကို ဖိုင်မျှဝေသည့် ကမ္ဘာမှလာသည့် နည်းပညာများဖြင့် ပြုလုပ်သည်
-(BitTorrent ၏ ဖြန့်ဝေထားသော ဟက်ရှ်ဇယား)၊ ၎င်းတို့နှင့် ဆက်သွယ်ရာတွင် ဘုံ
-ဝက်ဘ်နှင့် ဖိုင်မျှဝေခြင်းဆိုင်ရာ ပရိုတိုကောများကို အသုံးပြုသည် (HTTP ပရောက်စီ
-တောင်းဆိုမှုများနှင့် BitTorrent ၏ µTP)၊ ထို့ပြင် ခေတ်မီ လုပ်ငန်း စံနှုန်းများက
-ဆက်သွယ်မှုများ၏ လုံခြုံရေးနှင့် ဖလှယ်ထားသော အကြောင်းအရာ၏ စစ်မှန်မှုကို
-သေချာစေသည် (TLS ကုဒ်ဖြင့် ပြောင်းလဲမှုနှင့် Ed25519 ကိုယ်ပိုင်လက္ခဏာများ)။
-Ouinet သည် လိုအပ်ပါက အချို့သော နည်းပညာများကို အခြားနည်းပညာများဖြင့်
-အစားထိုးခွင့်ပြုသည် (ဥပမာ - µTP ၏ အချို့ အသုံးပြုမှုများကို Tor ၏ Pluggable
-Transports ဖြင့် အစားထိုးနိုင်သည်)။</p>
-<p>မိုဘိုင်းစက်များတွင် Ouinet ကို အသုံးပြုသူ အက်ပလီကေးရှင်းများထဲသို့ (Android
-စာကြည့်တိုက်အဖြစ်) ထည့်သွင်းနိုင်သည်။ ကွန်ပျူတာများတွင် ၎င်းကို
-ဘရောက်ဇာများကဲ့သို့ ပုံမှန် ဝက်ဘ်လက်ခံစက်များက (စက်တွင်း HTTP ပရောက်စီ) အဖြစ်
-အသုံးပြုနိုင်သည်။</p>
-<p>Same as Ceno Browser, Ouinet is developed by <a href="https://equalit.ie/">eQualitie</a> as
-Free/Libre/Open-Source software.</p>
-<h2 id="ဘယသူအတွကလဲ-1"><a class="header" href="#ဘယသူအတွကလဲ-1">ဘယ်သူ့အတွက်လဲ။</a></h2>
-<p>Ouinet သည် ၎င်းတို့၏ အက်ပလီကေးရှင်းကို သုံးစွဲသူများအား ပြန်ထုတ်ထားသည့်
-အကြောင်းအရာကို အခြားသုံးစွဲသူများနှင့် မျှဝေခွင့်ပြုလိုသည့် ဆော့ဖ်ဝဲ
-ရေးသားသူများ၊ အကြောင်းအရာ ဖန်တီးသူများနှင့် ထုတ်ဝေသူများအတွက် အဓိက အသုံးဝင်သည်။
-ယင်းသည် အက်ပလီကေးရှင်း ဆာဗာအား ယေဘုယျ တောင်းဆိုမှုကို လျှော့ချပေးပြီး ထိုဆာဗာကို
-ဝင်ရောက်သုံးစွဲခွင့် ပိတ်ဆို့ထားသော နိုင်ငံများတွင် နေထိုင်သည့်
-သုံးစွဲသူများအတွက် အကြောင်းအရာ ဝင်ရောက်သုံးစွဲနိုင်မှုကို တိုးတက်စေသည်။</p>
-<p>Please note that Ouinet is an evolving experimental project: some features may
-not work reliably enough in certain scenarios, bugs may exist and crashes may
-occur. We encourage you to reach out to us at <a href="mailto:intro/cenoers@equalitie.org">cenoers@equalitie.org</a>, test it
-and report back - your feedback is very welcome!</p>
-<blockquote>
-<p><strong>သတိပေးချက်-</strong> <em>Ouinet သည် အမည်လျှို့ဝှက်ပေးသော ကိရိယာ မဟုတ်ပါ</em>။ တိကျသော
-အလုပ်တစ်ခုအတွက် ၎င်း၏ သင့်လျော်မှုနှင့် ပတ်သက်ပြီး မသေချာပါက ကျွန်ုပ်တို့ကို
-ဆက်သွယ်ရန် မတွန့်ဆုတ်ပါနှင့်။</p>
-</blockquote>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="အသုံးပြုပုံလမးညွှန-အကျဉးချုပ"><a class="header" href="#အသုံးပြုပုံလမးညွှန-အကျဉးချုပ">အသုံးပြုပုံလမ်းညွှန် (အကျဉ်းချုပ်)</a></h1>
-<p>Ceno Browser allows you to access any website on the Internet, even if it is
-censored in your country. Ceno uses a peer-to-peer infrastructure to route your
-requests, as well as to store and share retrieved content with others. <a href="intro/ceno.html">Read
-more about Ceno</a>.</p>
-<h2 id="ဘယလို-စတင-အသုံးပြုရမလဲ"><a class="header" href="#ဘယလို-စတင-အသုံးပြုရမလဲ">ဘယ်လို စတင် အသုံးပြုရမလဲ</a></h2>
-<p>Android စနစ် အသုံးပြုသော စက်ကိရိယာတစ်ခု လိုအပ်ပါသည် -</p>
-<ol>
-<li>Install Ceno Browser from <a href="https://play.google.com/store/apps/details?id=ie.equalit.ceno">Google Play</a>, <a href="https://gitlab.com/ceno-app/ceno-android/releases">GitHub</a> or
-<a href="https://paskoocheh.com/tools/124/android.html">Paskoocheh</a>. <em>No special permissions are needed</em>.</li>
-<li>စတင်လည်ပတ်ပါ။</li>
-<li>Browse pages normally to help other users access them; if concerned about
-privacy for some page or if it is not loading as expected, use a Personal tab
-(see <a href="intro/../concepts/public-personal.html">Public vs. Personal browsing</a>).</li>
-<li>CENO အသိပေးချက်ကိုနှိပ်ပြီး လုပ်ဆောင်မှုများကို လုံးဝ ရပ်လိုက်ပါ။</li>
-</ol>
-<p>Detailed installation instructions are <a href="intro/../browser/install.html">here</a>.</p>
-<h2 id="ဖွဲစညးပုံစနစ"><a class="header" href="#ဖွဲစညးပုံစနစ">ဖွဲ့စည်းပုံစနစ်</a></h2>
-<p>Ceno Browser should work out-of-the-box. You can find some <a href="intro/../browser/settings.html">diagnostics and
-settings</a> under the <em>Ceno</em> menu entry.</p>
-<p>If you want to make sure that your app is also helping others access blocked
-content, please <a href="intro/../browser/bridging.html">read this section</a>.</p>
-<h2 id="နောကထပ-မေးစရာများ-ရှိပါသလား"><a class="header" href="#နောကထပ-မေးစရာများ-ရှိပါသလား">နောက်ထပ် မေးစရာများ ရှိပါသလား။</a></h2>
+<p>Ceno is a mobile web browser based on Mozilla Android Components. It is designed
+for accessing and distributing web content (websites) using a novel approach
+that relies on <a href="https://en.wikipedia.org/wiki/BitTorrent">BitTorrent – a decentralized file sharing
+network</a>. Ceno's advantage comes from
+side-stepping current Internet censorship methods and allowing people to access
+and share web information in and across regions where connectivity has been
+interrupted or compromised.</p>
+<p>Ceno Browser allows you to access any website on the Internet, even if it is not
+normally accessible in your country or region.</p>
+<p>If a website you want to visit is accessible, Ceno will access it directly and
+behave like any other browser. But if you are not able to access the desired
+website directly, Ceno will attempt to access it through its own peer-to-peer
+network. Ceno will cache the accessed website contents and make them available
+to other Ceno users utilising the peer-to-peer technology.</p>
+<p>When other members of the Ceno network request the same contents and they are
+not able to access them directly, Ceno will identify that the requested website
+content is stored in the cache of your Ceno app. From there, it will be uploaded
+from your device to the internet and redirected to the person who requested it.
+In the <a href="./settings.html">Settings</a> of your Ceno app, you will be able to see how
+much data has been stored on your device and all the websites you have shared.</p>
+<p>Of course this only applies to the websites you visit in the <a href="./public-or-personal.html#public-browsing---when-to-use-it"><strong>Public
+mode</strong></a>.</p>
+<p>For all your personal needs, such as emails, messages, subscriptions or
+purchases, we have provided a <a href="./public-or-personal.html#personal-browsing---when-to-use-it"><strong>Personal
+mode</strong></a>. When you
+access the internet in this mode, Ceno app doesn’t store the pages you access,
+and therefore it does not share them with anybody else.</p>
+<p>This user guide contains detailed information about Ceno's features and their
+purpose.</p>
+<p>We hope you enjoy using our app.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="installation"><a class="header" href="#installation">Installation</a></h1>
+<p>Ceno for Android can be downloaded from following platforms: <a href="https://play.google.com/store/apps/details?id=ie.equalit.ceno">Google Play</a>, <a href="https://gitlab.com/ceno-app/ceno-android/-/releases">Gitlab</a>, <a href="https://paskoocheh.com/tools/124/android.html?">Paskoocheh</a> or <a href="https://dcomm.net.ua/en/">dComms</a>.</p>
+<p>Please download the app and install it. Once installed, tap on Open.
+The first Ceno screen you will see is this one</p>
+<img src="./images/first_screen.png" alt="Ceno first screen" width="50%"/>
+<p>It will be displayed for a few seconds while the Ceno app is making connections with the rest of the Ceno network.  After that short period of time, the app welcomes you to its  Onboarding screens.</p>
+<img src="./images/welcome.png" alt="Ceno first screen" width="50%"/><div style="break-before: page; page-break-before: always;"></div><h1 id="first-time-run"><a class="header" href="#first-time-run">First time run</a></h1>
+<h2 id="guided-tour"><a class="header" href="#guided-tour">Guided tour</a></h2>
+<p>When you run your Ceno app for the first time, you will be invited to a small
+guided tour around the main Ceno features, which you can accept (by tapping on
+the ‘Get Started’ button) or skip (by tapping ‘Skip the tour’)</p>
+<img src="./images/start_tour.png" alt="Start the tour" width="400"/>
+<p>The tour will take you through the most important features, as shown by the
+following screens.</p>
+<img src="./images/tour1.png" alt="Tour part 1" width="300"/>
+<img src="./images/tour2.png" alt="Tour part 1" width="300"/>
+<img src="./images/tour3.png" alt="Tour part 1" width="300"/>
+<img src="./images/tour4.png" alt="Tour part 1" width="300"/>
+<h2 id="ခွငပြုချကများ"><a class="header" href="#ခွငပြုချကများ">ခွင့်ပြုချက်များ</a></h2>
+<p>At the end of the Tour, you will be asked to give Ceno the permissions it needs
+for optimal functioning:</p>
+<img src="./images/permissions_needed.png" alt="Permissions needed" width="400"/>
+<p>When you tap on Continue, depending on the version of Android that you have on
+your phone, you will be required to give Ceno permissions to send you
+notifications and to disable battery optimisation. Some Android versions require
+both, and some just the permission to disable the battery optimisation.</p>
+<h3 id="notifications"><a class="header" href="#notifications">Notifications</a></h3>
+<p><img src="./images/notifications.png" alt="Notifications" /></p>
+<p>When you allow Ceno to send you notifications, the app will display the Ceno
+icon in your notification bar.</p>
+<img src="./images/notification_bar.png" alt="Notifications bar" width="400"/>
+<p>The icon will appear when you access the first website.</p>
+<p>This icon represents the Ceno Browser service, which is the part of Ceno that
+runs permanently (even when you are not browsing) and allows other ceno users to
+retrieve content from it at any time. Since running such service uses network
+and processor resources, you may want to stop it whenever you are on the move
+(i.e. not connected to Wi-Fi or far from a charger).<br />
+Tapping on the Stop button will stop both Ceno and its service at once (until
+you open Ceno again).</p>
+<img src="./images/ceno_notification1.png" alt="Ceno notification 1" width="400"/>
+<p>Tapping on the Clear button will open another small notification</p>
+<img src="./images/ceno_notification2.png" alt="Ceno notification 2" width="400"/>
+<p>Tapping on Yes will delete not only the cached data in the Ceno app on your
+device, but also any customization settings, such as default address bar
+position, or light theme, or your favorites and other settings you may have
+chosen. If you tap on the Yes action, Ceno will be stopped and all its data
+removed without further questions, effectively leaving your device as if Ceno
+had never been used.</p>
+<p><em>Warning: Android may still keep other traces of having used an app besides its
+data, for instance in its system log</em></p>
+<h3 id="stop-battery-optimising-usage"><a class="header" href="#stop-battery-optimising-usage">Stop battery optimising usage</a></h3>
+<p><img src="./images/optimise_battery.png" alt="Do not optimise battery" /></p>
+<p>This option is usually present in apps that need to run in the background even
+when not actively used, which is the case with the Ceno app. Under normal
+conditions, your android phone will try to optimise the battery usage of various
+apps that may be running on your device. Your phone's operating system does this
+to prolong the battery life between the two charging sessions. In order to do
+this, it sometimes stops the apps that are running and using the battery, but
+are not actively used by you. When you allow Ceno to stop optimising the battery
+usage, your phone's operating system will be less likely to stop your Ceno app
+when you are not actively using it. Allowing your Ceno app to run even when not
+actively used helps the whole Ceno peer-to-peer network to run better and to
+respond to more user requests. When you allow this option you are helping all
+users within the Ceno network.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="အများသုံး-သိုမဟုတ-တကိုယရညသုံး"><a class="header" href="#အများသုံး-သိုမဟုတ-တကိုယရညသုံး">အများသုံး သို့မဟုတ် တကိုယ်ရည်သုံး</a></h1>
+<p>After the onboarding and permissions screens, the app displays its main screen.
+As soon as the screen appears, you will notice two prominent buttons called
+Public and Personal. They allow you to choose between the Public and Personal
+browsing mode.</p>
+<img src="./images/main.png" alt="Main screen" width="50%"/>
+<h2 id="public-browsing"><a class="header" href="#public-browsing">Public Browsing</a></h2>
+<img src="./images/public_button.png" alt="Public button" width="60%"/>
+<p>Below image illustrates the way Ceno retrieves website content in Public
+browsing mode.</p>
+<img src="./images/public_browsing.png" alt="Public browsing" width="700"/>
+<p>Dotted lines on this image represent the website content requests and responses,
+and the asterisks represent encrypted content.</p>
+<p>In <strong>Public browsing mode</strong>, the users’ requests are handled by the <strong>Ceno
+public network</strong>. In this mode, the users request some website content the same
+way they do that when using any other browser. If Ceno is able to access the
+origin website directly, it will retrieve its content and deliver it to the user</p>
 <ul>
-<li>Please see the <a href="intro/faq.html">FAQ</a>.</li>
-<li>Refer to the <a href="intro/../browser/troubleshooting.html">troubleshooting guide</a>.</li>
-<li>Contact us by writing to <a href="mailto:intro/cenoers@equalitie.org">cenoers@equalitie.org</a>.</li>
+<li>this is the same as most other browsers.<br />
+However, if Ceno is not able to reach the desired website, then it will try to
+reach it via injectors.</li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="အဓိက-အယူအဆများ"><a class="header" href="#အဓိက-အယူအဆများ">အဓိက အယူအဆများ</a></h1>
-<p>ကွန်ရက်ချိတ်ဆက်မှု အတားအဆီးများနှင့် ပြတ်တောက်မှုများ အစရှိတဲ့ ပြဿနာများကို
-ရှောင်တိမ်းနိုင်ရန်အတွက် Ceno သည် နယ်ပယ်စုံမှ အမျိုးအစားမတူသော
-နည်းပညာများဖြစ်သည့် ကမ္ဘာ့အင်တာနက်စာမျက်နှာများ၊ ဖိုင်မျှဝေခြင်းစနစ်များနှင့်
-အဆင့်မြင့်စကားဝှက်နည်းပညာတို့ကို အသုံးပြုထားပါသည်။ အဆိုပါ နည်းပညာများကို Ouinet
-မှ ကျွမ်းကျင်စွာပေါင်းစပ်ပေးထားပြီး ပုံမှန် အင်တာနက်စာမျက်နှာရှာဖွေခြင်းနှင့်
-အတတ်နိုင်ဆုံး ပုံစံတူအောင် Ceno မှ ပြုလုပ်ပေးထားပါသည်။</p>
-<p>မည်သို့ပင်ဆိုစေကာမူ Ceno ကို အကောင်းဆုံး အသုံးချနိုင်ရန် Ouinet ၏ အလုပ်လုပ်ပုံ၊
-ကျွန်ုပ်တို့ ရယူလိုသော အကြောင်းအရာအမျိုးမျိုးအပေါ်မူတည်ပြီး နည်းလမ်းမျိုးစုံ
-အသုံးပြုနိုင်ပုံ၊ အကျိုးကျေးဇူးများနှင့် အန္တရာယ်များ ဖြစ်ပေါ်စေပုံတို့ကို
-နားလည်ရန် လိုအပ်သည်။ ဤအခန်းတွင် ထိုအကြောင်းအရာများကို ဖော်ပြပေးပါမည်။</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="ဘယလို-အလုပလုပသလဲ"><a class="header" href="#ဘယလို-အလုပလုပသလဲ">ဘယ်လို အလုပ်လုပ်သလဲ။</a></h1>
-<p>ဤအပိုင်းတွင် အခြေအနေများကို စီးရီးလိုက် ကြည့်ခြင်းဖြင့် CENO နှင့် Ouinet ၏
-လုပ်ဆောင်ချက်ကို ရှင်းပြပါမည်။ Ouinet အတွက် အရေးကြီးသော ဝေါဟာရများနှင့်
-အယူအဆများကို မိတ်ဆက်မည် (<strong>စာလုံးအမဲများဖြင့်</strong> အသားပေး ဖော်ပြထားသည်) ဖြစ်ပြီး
-ထိရောက်မှုရှိရန်နှင့် ရောထွေးမှုကို ရှောင်ရှားရန် နောက်ပိုင်းတွင် အသုံးပြုပါမည်။</p>
-<h2 id="အကြောငးအရာကို-တိုကရိုက-ဝငရောကသုံးစွဲခြငး"><a class="header" href="#အကြောငးအရာကို-တိုကရိုက-ဝငရောကသုံးစွဲခြငး">အကြောင်းအရာကို တိုက်ရိုက် ဝင်ရောက်သုံးစွဲခြင်း</a></h2>
-<p>CENO ဘရောက်ဇာသည် ဝက်ဘ်အကြောင်းအရာကို ပြန်ထုတ်ရန်နှင့် မျှဝေရန် Ouinet နည်းပညာ
-အသုံးပြုသည့် အက်ပလီကေးရှင်း ဥပမာတစ်ခု ဖြစ်သည်။ ကျွန်ုပ်တို့သည် ထိုကဲ့သို့သော
-အက်ပလီကေးရှင်းကို Ouinet <strong>လက်ခံစက်</strong> ဟု ခေါ်သည်။ သင်သည် ဝက်ဘ်ဆာဗာတစ်ခု
-(ကျွန်ုပ်တို့က <em>X</em> ၏ <strong>မူလ</strong> ဆာဗာဟု ခေါ်ပါမည်) တွင် လက်ခံထားသည့် အကြောင်းအရာ <em>X</em>
-ကို ဝင်ရောက်သုံးစွဲဖို့ ကြိုးစားရန် သင့်လက်ခံစက် (ဆိုလိုသည်မှာ CENO) ကို
-အသုံးပြုသောအခါ သင့်လက်ခံစက်သည် အင်တာနက် သုံး၍ မူလ ဆာဗာကို တိုက်ရိုက်ဖြစ်စေ၊
-အခြားစက်များကိုယ်စား ဝက်ဘ်ဆာဗာများကို ဆက်သွယ်ရန် စီစဉ်သတ်မှတ်ထားသော
-အခြားစက်တစ်ခုခု (<strong>ပရောက်စီ</strong> ဆာဗာဟု ခေါ်သည်) မှတစ်ဆင့်ဖြစ်စေ ဆက်သွယ်ရန်
-ကြိုးစားပြီး အလိုရှိသော အကြောင်းအရာကို တောင်းဆိုသည်။ ယင်းသည် ပုံမှန်
-ဝက်ဘ်ဘရောက်ဇာတစ်ခု အလုပ်လုပ်ပုံနှင့် ကွဲပြားမှု မရှိပါ။</p>
-<blockquote>
-<p><strong>နည်းပညာဆိုင်ရာ မှတ်ချက် -</strong> တကယ်တမ်းတွင် အနည်းငယ် အံ့အားသင့်စရာတစ်ခု
-ရှိပါသည်။ လက်ခံစက်သည် သင့်စက်တွင် လုပ်ဆောင်နေသည့် HTTP ပရောက်စီတစ်ခုအဖြစ်
-ဆောင်ရွက်သောကြောင့် လက်ခံစက်အနေဖြင့် ကုဒ်ဖြေရန်နှင့် HTTPS အကြောင်းအရာ
-တောင်းဆိုမှုများကို တုံ့ပြန်ဆောင်ရွက်ရန် လက်ခံစက် (ဆိုလိုသည်မှာ CENO ရှိ
-Firefox ကဲ့သို့ ဝက်ဘ်ဘရောက်ဇာ အစိတ်အပိုင်း) ကို အသုံးပြုနေသော
-အက်ပလီကေးရှင်းသည် လက်ခံစက်ကိုယ်တိုင်က ထုတ်ပေးသည့် (သင့်စက်ပေါ်တွင်သာ
-အသုံးပြုသော) အထူး အသိအမှတ်ပြုလက်မှတ်ကို လက်ခံရန် လိုအပ်သည်။ CENO ဘရောက်ဇာသည်
-ဤအသိအမှတ်ပြုလက်မှတ်ကို သီးသန့်အသုံးပြုရန်အတွက် ပြင်ဆင်သတ်မှတ်ခြင်းကို
-တာဝန်ယူပြီး ဖြစ်သောကြောင့် သင် စိတ်ပူရန် မလိုအပ်ပါ။</p>
-</blockquote>
-<p>သို့သော် ဤတိုက်ရိုက်လမ်းကြောင်းများကို မရကောင်းမရနိုင်ပါ။ ဥပမာ- သင့် အင်တာနက်
-ဝန်ဆောင်မှု ပံ့ပိုးသူ (ISP) သည် အစိုးရ အမိန့်ကြောင့် (အခြားအသွားအလာကို
-ခွင့်ပြုသေးသည့်တိုင်အောင်) <em>X</em> ၏ မူလ ဆာဗာ သို့မဟုတ် ပရောက်စီကို
-ဝင်ရောက်သုံးစွဲခွင့် ပိတ်ဆို့ထားနိုင်သည်။ အောက်တွင်ဖော်ပြထားသော ဘယ်ဘက်ထိပ်ရှိ
-လက်ခံစက်ကို သုံးစွဲသူအဖြစ် အကြောင်းအရာ <em>X</em> (၎င်း၏ မူလ ဆာဗာအနီးရှိ
-စာရွက်စာတမ်းငယ်) သို့ ရောက်ရှိရန် ကြိုးပမ်းမှု နှစ်ခုလုံးသည် သင့်အတွက်
-အောင်မြင်မည် မဟုတ်ပါ။ သင်သည် ပုံပေါ်ရှိ "ထိုးသွင်းဖိုင်"
-ဆက်သွယ်ရေးပွိုင့်ကိုလည်း သတိပြုမိနိုင်သည်။ ကျွန်ုပ်တို့သည် ခဏအကြာတွင်
-ထိုအကြောင်းကို ရှင်းပြပါမည်။</p>
-<p><img src="concepts/images/user-flow-0.svg" alt="Figure: Client cannot reach content directly" /></p>
-<p>ပုံမှန်ဘရောက်ဇာကို သုံးလျှင် သင် ကံကောင်းမည် မဟုတ်ပါ။ သို့သော် Ouinet ကို
-သုံးလျှင် အခြားလက်ခံစက်များထံတွင် မိတ္တူရှိပြီးဖြစ်ပါက အကြောင်းအရာ <em>X</em> အတွက်
-၎င်းတို့၏ မိတ္တူများကို တောင်းခံနိုင်သည်။ ဤတောင်းဆိုမှုကို Ouinet က မည်သို့
-စွမ်းဆောင်ကြောင်း ကြည့်ကြရအောင်။</p>
-<h2 id="မျှဝေထားသော-အကြောငးအရာကို-ရှာခြငး"><a class="header" href="#မျှဝေထားသော-အကြောငးအရာကို-ရှာခြငး">မျှဝေထားသော အကြောင်းအရာကို ရှာခြင်း</a></h2>
-<p>Ouinet လက်ခံစက်များက သိုလှောင်ထားသည့် အကြောင်းအရာအားလုံး၏ အစုံလိုက်ကို
-<strong>ဖြန့်ချိထားသော ယာယီသိမ်းဆည်းထားသည့် မှတ်ဉာဏ်</strong> ဟု ခေါ်သည်။ ဆိုလိုသည်မှာ
-၎င်းသည် နေရာတစ်ခုတည်းတွင် ရှိမနေသည့် သိုလှောင်ရာနေရာ ဖြစ်သည်။ သို့သော်
-ယာယီသိမ်းဆည်းထားသော မှတ်ဉာဏ်ကို ဖြစ်ပေါ်စေသည့် အခြားလက်ခံစက်များမှ
-မည်သည့်စက်တွင် သင်အလိုရှိသော အကြောင်းအရာ ရှိကြောင်း သင့်လက်ခံစက်က မည်သို့
-ရှာတွေ့မည်နည်း။</p>
-<p>In any Web browser, to access content <em>X</em> it needs to know its <a href="https://en.wikipedia.org/wiki/Uniform_Resource_Locator">Uniform Resource
-Locator</a> (URL), that is the address in the browser's location bar, e.g.
-<code>https://example.com/foo/x</code>. From that URL, a normal browser would infer that it
-has to contact the Web server called <code>example.com</code> using the HTTP protocol (the
-language used to exchange Web resources) over SSL/TLS (a security layer over
-TCP, the Internet's rules for programs to talk to each other) and request the
-resource <code>/foo/x</code>.</p>
-<p>Ouinet သည် အကြောင်းအရာကို မတူညီသော နည်းလမ်းဖြင့် ရှာဖွေသည်။ ၎င်းသည်
-စာအုပ်အညွှန်းနှင့် ဆင်တူသော အညွှန်းကို အသုံးပြုသည်- Ouinet ၏ <strong>ဖြန့်ချိထားသော
-ယာယီသိမ်းဆည်းထားသည့် မှတ်ဉာဏ်အညွှန်း</strong> တွင် သင်သည် အကြောင်းအရာ၏ URL တစ်ခုလုံးကို
-ရှာကြည့်သောအခါ ၎င်း၏ မိတ္တူ ရှိသော လက်ခံစက် စာရင်းကို ရရှိသည်။ အညွှန်းကို
-အခြားသူများအတွက် ၎င်းတို့တွင် မည်သည့်အကြောင်းအရာ ရှိကြောင်း ကြေညာထားသည့်
-လက်ခံစက်များထံ ဖြန့်ချိထားသည်။ တကယ်တမ်းတွင် URL တစ်ခုစီအတွက် <em>သဲလွန်စ</em>
-တစ်ခုကိုသာ ကြေညာထားသည်။ ဤသို့ဖြင့် သင့်စက်၏ အသွားအလာကို လျှို့ဝှက်စွာ
-စောင့်ကြည့်နေသူသည် သင့်တွင် မည်သည့်အကြောင်းအရာရှိသည်ကို မပြောနိုင်သော်လည်း
-တိကျသော အကြောင်းအရာ ရှာနေသူသည် သဲလွန်စများကို လိုက်၍ သင့်လက်ခံစက်ထံ
-ရောက်နိုင်သည်။</p>
-<blockquote>
-<p><strong>Technical note:</strong> One way the index is implemented is using <a href="https://en.wikipedia.org/wiki/BitTorrent">BitTorrent</a>'s
-<a href="https://en.wikipedia.org/wiki/Distributed_hash_table">Distributed Hash Table</a> (DHT) to get the addresses (IP and port) of the
-clients with the content. The DHT uses a <a href="https://en.wikipedia.org/wiki/Cryptographic_hash_function">Cryptographic hash function</a> to
-compute the table key from the content's URL and some other parameters as the
-injector key (see below), so that several indexes can coexist.</p>
-<p>ထို့အပြင် CENO ဘရောက်ဇာသည် ၎င်းကိုအသုံးပြု၍ ဝင်ရောက်ထားသော ရင်းမြစ်တိုင်း၏ URL
-ကို မကြေငြာပါ။ အဘယ်ကြောင့် ဆိုသော် ထိုရင်းမြစ်များတွင် (ပုံရိပ်များ၊
-စတိုင်စာမျက်နှာများနှင့် စာညွှန်းများ..) စသည့် အစိတ်အပိုင်း ဆယ်ချီ၊ ရာချီ
-ဖွဲ့စည်းထားသော ဝက်ဘ်စာ မျက်နှာများပါဝင်နေရာ ၎င်းတို့သည် အင်တာနက် လမ်းကြောင်း
-ပိတ်ဆို့မှုများကို ဖြစ်ပေါ်စေသောကြောင့်ပင်။ ထို့အစား ရင်းမြစ်များကို
-ဆွဲထုတ်ရန် သုံးထားသည့် သက်ဆိုင်ရာ URL အောက်တွင် အဖွဲ့လိုက်စုစည်းထားပြီး ထို
-URL ကိုသာ ကြေငြာပေးသည်။ ယင်း လုပ်ဆောင်ချက်ကို <em>ယာယီ</em> ဘရောက်ဇာ အဆက်
-(နောက်တွင်ရှင်းလင်းထား) ၏ အကူအညီဖြင့် လုပ်ဆောင်သည်။</p>
-</blockquote>
-<p>ဖြန့်ချိထားသော ယာယီမှတ်ဉာဏ် မှတဆင့် ဝက်ဘ် အကြောင်းအရာတစ်ခုကို ထိန်းသိမ်းပေးသည့်
-လက်ခံစက်များကို <strong>seeding လုပ်ခြင်း</strong> (သို့မဟုတ်) <em>seeders</em> ဟုခေါ်သည်။
-(ထိုအခေါ်အဝေါ်များသည် P2P ဖိုင်မျှဝေခြင်းမှ ဆင်းသက်လာသည်။) အထက်တွင်
-ဖော်ပြခဲ့သည့် ဥပမာကို ပြန်ကြည့်လျှင် အကြောင်းအရာအချို့ကို ထိန်းသိမ်းပေးသည့်
-လက်ခံစက်နှစ်ခု ရှိနေသည်။ ကံမကောင်းစွာဖြင့် ထိန်သိမ်းထားသည့် အကြောင်း အရာတစ်ခုမှာ
-"Y" ဖြစ်နေပြီး အခြားတစ်ခုမှာ "Z" ဖြစ်နေသည်။ ထို့ကြောင့် သင့်လက်ခံစက်မှ
-ရှာဖွေနေသော အကြောင်းအရာ "X" ကို ဖြန့်ချိထားသော ယာယီမှတ်ဉာဏ်တွင်
-ရှာဖွေမရနိုင်သည်ကို ဤသို့တွေ့ရမည် -</p>
-<p><img src="concepts/images/user-flow-1.svg" alt="Figure: Content not found in the distributed cache" /></p>
-<p>Ouinet တွင်ထိုသို့ရှာဖွေမရသည့် အကြောင်းအရာများကို ရှာဖွေနိုင်ရန် နှင့်
-အခြားလက်ခံစက်များမှ ယင်းအကြောင်းအရာများကို ဖြန့်ချိထားသော ယာယီမှတ်ဉာဏ်တွင်
-ရှာဖွေနိုင်သည့် နည်းလမ်းကို ထည့်သွင်းထားသည်။</p>
-<h2 id="အကြောငးအရာသစများကို-မျှဝေခြငး"><a class="header" href="#အကြောငးအရာသစများကို-မျှဝေခြငး">အကြောင်းအရာသစ်များကို မျှဝေခြင်း</a></h2>
-<h3 id="ထူးကဲစွမးရညရှိသည-ပရောကစီများ"><a class="header" href="#ထူးကဲစွမးရညရှိသည-ပရောကစီများ">ထူးကဲစွမ်းရည်ရှိသည့် ပရောက်စီများ</a></h3>
-<p>Ouinet တွင် အထူးပရောက်စီ အမျိုးအစားများ ဖြစ်သည့် <strong>ထိုးသွင်းစက်များ</strong> ပါဝင်သည်။
-၎င်းတို့ကို အင်တာနက်၏ လွတ်လပ်သော အခြမ်းတွင် အထိုင်ချထားသည့် အတွက်
-ပိတ်ဆို့မှုနည်းလမ်းများသုံးသည့်တိုင် အသုံးပြုသူများမှ ၎င်းတို့ကို
-လက်လှမ်းမီစေမည် ဖြစ်သည်။</p>
-<ul>
-<li>
-<p>ဝက်ဘ်လမ်းကြောင်း အတွင်း ထိုးသွင်းစက်များကို ရှာဖွေတိုက်ခိုက်မှုများကို
-ရှောင်လွှဲနိုင်ရန် လက်ခံစက်နှင့် ထိုးသွင်းစက်များ အကြားရှိ
-ချိတ်ဆက်မှုများအားလုံးကို (HTTPS ရှိ စံသတ်မှတ်ထားသော SSL/TLS များကိုသုံးပြီး)
-ကုဒ်ဖြင့် ပြောင်းလဲထားသည်။</p>
-<p>ထိုးသွင်းစက်များ၏ အသိအမှတ်ပြု လက်မှတ်များကို CENO ဘရောက်ဇာ အတွင်း
-ထည့်ထားသည့်အတွက် ထိုးသွင်းစက် ပုံစံဟန်ဆောင်၍ တိုက်ခိုက်မှုများကို ဖော်ထုတ်
-ရှောင်လွှဲနိုင်ပါသည်။</p>
-</li>
-<li>
-<p>ကုဒ်ဖြင့် ပြောင်းလဲခြင်း တစ်ခုတည်းနှင့် မလုံလောက်ပါက (I2P နှင့် Tor's
-Pluggable Transports ကဲ့သို့) ချိတ်ဆက်မှုများကို ရှုပ်ထွေးအောင်လုပ်ပြီး
-ထိုးသွင်းစက်များကို ရှာရခက်စေသည့် နည်းလမ်းများကို အသုံးပြုနိုင်ပါသည်။</p>
-</li>
-<li>
-<p>သင့် ISP (အင်တာနက် ဝန်ဆောင်မှု ပေးသူ) မှ ထိုးသွင်းစက်တစ်ခုကို ရှာဖွေတွေ့ပြီး
-ထိုထိုးသွင်းစက်နှင့်ချိတ်ဆက်မှုကို ပိတ်ဆို့ခံရသည့်တိုင် စိတ်ပူစရာမလိုပါ။
-အခြားသင်ချိတ်ဆက်နိုင်သည့် ထိုးသွင်းစက်များစွာရှိနေပြီး လက်ခံစက်နှင့် မည်သည့်
-ထိုးသွင်းစက် ချိတ်ဆက်မည်ဆိုသည်ကို ဂရုပြုစရာမလိုပါ။</p>
-</li>
-<li>
-<p>ထိုးသွင်းစက် အချို့ (သို့) အားလုံးသည် ပိတ်ဆို့ခြင်း ခံရနိုင်သော်လည်း အားလုံး
-တစ်ချိန်တည်း ပိတ်ဆို့ခံရခြင်းထက် အလှည့်ကျ ပိတ်ခံရခြင်းသာ ဖြစ်နိုင်ပါသည်
-(ထိုးသွင်းစက် အသစ်တွေလည်း ထပ်ရှိလာပါမည်)။</p>
-<p>သင့်လက်ခံစက်အနေဖြင့် ထိုးသွင်းစက်များ၏ အင်တာနက် လိပ်စာများကို ကြိုသိထားရန်
-မလိုပါ။ ထိုအစား သင့်လက်ခံစက်က ချိတ်ဆက်လိုသည့် အချိန်တွင် <strong>ထိုးသွင်းစက်
-စာရင်း</strong> (P2P ဖိုင်မျှဝေခြင်းမှ အခေါ်အဝေါ်) မှ ချိတ်ဆက်နိုင်မည့် ထိုးသွင်းစက်
-လိပ်စာများကို သွားရောက် ရှာဖွေလိမ့်မည်။ ထိုးသွင်းစက် စာရင်းဆိုသည်မှာ
-ဖြန့်ချိထားသော ယာယီမှတ်ဉာဏ် အညွှန်းကဲ့သို့ပင် တစ်ကြိမ်လျှင်စာရင်းတစ်ခုအဖြစ်
-ဖြန့်ချိထားသည့် အညွှန်းပင်ဖြစ်သည်။</p>
-</li>
-<li>
-<p>နောက်ဆုံးအချက်မှာ သင့်လက်ခံစက်အနေဖြင့် မည်သည့် ထိုးသွင်းစက်ကိုမျှ
-ချိတ်ဆက်ခြင်း မပြုနိုင်သည့်တိုင် အခြားလက်ခံစက်များမှ ချိတ်ဆက်နိုင်လိမ့်မည်။
-လက်ခံစက်တစ်ခုမှ ထိုးသွင်းစက်တစ်ခုကို ချိတ်ဆက်နိုင်သည်နှင့်
-အခြားလက်ခံစက်များသည် ထိုလက်ခံစက်ကို လက်လှမ်းမီသည်ဟု ကောက်ချက်ဆွဲနိုင်သည်။
-ထိုသို့သော လက်ခံစက်ကို <strong>ပေါင်းကူး</strong> လက်ခံစက်ဟု ခေါ်ပြီး ၎င်း၏
-အင်တာနက်လိပ်စာသည် <strong>ပေါင်းကူးလက်ခံစက်စာရင်း</strong> ထဲသို့ ရောက်သွားသည်။
-ထိုစာရင်းသည်လည်း တစ်ကြိမ်လျှင် စာရင်းတစ်ခုအဖြစ် ဖြန့်ချိထားသော
-အညွှန်းပင်ဖြစ်သည်။</p>
-<p>သင့်လက်ခံစက်အနေဖြင့် ပေါင်းကူးလက်ခံစက်၏ လိပ်စာကို ရှာဖွေချိတ်ဆက်ကာ
-ထိုးသွင်းစက်ကို ချိတ်ဆက်ပေးရန် ညွှန်ကြားနိုင်သည်။ ထိုအခါ သင့်လက်ခံစက်နှင့်
-ထိုးသွင်းစက်အကြား <strong>ချိတ်ဆက်လိုဏ်ခေါင်း</strong> ပေါ်လာကာ ချိတ်ဆက်နိုင်မည် ဖြစ်သည်။</p>
-<p>လက်ခံစက်နှင့် ထိုးသွင်းစက်အကြား ချိတ်ဆက်မှုမှာ ကုဒ်ဖြင့် ပြောင်းလဲထားသည့်အတွက်
-ပေါင်းကူးလက်ခံစက်များအနေဖြင့် ၎င်းတို့အကြား သတင်းအချက်အလက်စီးဆင်းမှုကို
-မြင်တွေ့ရမည်မဟုတ်ပါ။</p>
-</li>
-</ul>
-<p>ထို့ပြင် ထိုးသွင်းစက် တစ်ခုကို (ပိုမိုရောက်ရှိနိုင်သော) ပုံမှန် ပရောက်စီဆာဗာ
-အဖြစ်လည်း အသုံးပြုနိုင်သည်။ အမှန်တွင်လည်း (CENO ဘရောက်ဇာ အပါအဝင်) Ouinet
-လက်ခံစက်များက အကြောင်းအရာတစ်ခုကို ပရောက်စီမှတစ်ဆင့် ဝင်ရောက်ရန် ကြိုးပမ်းသည့်အခါ
-ထိုးသွင်းစက်ကို ပုံမှန် ပရောက်စီဆာဗာ အဖြစ် သုံးသည်။ ထိုကဲ့သို့ အခြေအနေတွင်
-ထိုးသွင်းစက်သည် သင့်လက်ခံစက်နှင့် မူလဆာဗာအကြား (ကုဒ်ဖြင့် ပြောင်းလဲထားခြင်း
-မရှိသည့် HTTP ချိတ်ဆက်မှု မဟုတ်ပါက) သတင်းအချက်အလက် စီးဆင်းမှုကို
-သိရှိနိုင်မည်မဟုတ်ပါ။</p>
-<p>သို့သော် ကွန်ရက်များ ပိတ်ဆို့ခံရသည့် အခြေအနေများတွင် ပရောက်စီများသို့
-ချိတ်ဆက်နိုင်သည့် အခြားနည်းလမ်းများလည်း ရှိသည်ဖြစ်ရာ Ouinet ထိုးသွင်းစက်များက
-၎င်းတို့ထက် မည်သည့်နေရာများတွင် ပိုမိုသာလွန်သနည်း။</p>
-<h3 id="မျှဝေထားသည-အကြောငးအရာများ-ယုံကြညစိတချရမှု"><a class="header" href="#မျှဝေထားသည-အကြောငးအရာများ-ယုံကြညစိတချရမှု">မျှဝေထားသည့် အကြောင်းအရာများ၏ ယုံကြည်စိတ်ချရမှု</a></h3>
-<p>ထိုးသွင်းစက်၏ အဓိကအားသာချက်မှာ သင့်လက်ခံစက်အစား အကြောင်းအရာကို
-ရှာဖွေချိတ်ဆက်ပေးရုံသာမက ထိုအကြောင်းအရာများကို ထိုးသွင်းစက် (သို့)
-အင်တာနက်ကွန်ရက် အများစုနှင့် ချိတ်ဆက်မထားချိန်တွင်ပင် အခြားသူများလိုအပ်လာလျှင်
-မျှဝေပေးရန် ခွင့်ပြုခြင်းပင်ဖြစ်သည်။</p>
-<p>သင့်အနေဖြင့် သင့်ဘရောက်ဇာမှ စာမျက်နှာတစ်ခုကို ဒေါင်းလုတ်ဆွဲပြီး ကော်ပီကူးကာ
-အခြားသူတစ်ဦးထံသို့ စိတ်ချလက်ချ မျှဝေပေးနိုင်သော်လည်း ထိုသူနှင့်သင်
-အချင်းချင်းသိရန် လိုအပ်သည်။ သင်မသိသောသူထံမှ ဖိုင်တစ်ခုကိုလက်ခံရသည့်အခါတွင်
-ထိုဖိုင်ပါ အကြောင်းအရာများသည် ဝက်ဘ်ဆိုက်အစစ်အမှန်မှလာကြောင်း
-မည်သို့သိရှိနိုင်မည်နည်း (သို့မဟုတ်) သင်ကြည့်လိုသည့်နေ့တွင် ရယူထားသော
-အကြောင်းအရာ ဖြစ်ကြောင်း (သို့မဟုတ်) ကြားဖြတ်၍ ပြုပြင် ပြောင်းလဲထားခြင်း ရှိ/မရှိ
-မည်သို့သိနိုင်မည်နည်း။</p>
-<p>ကျွန်ုပ်တို့၏ အဓိက ရည်ရွယ်ချက်မှာ CENO နှင့် Ouinet အသုံးပြုသူများများထံ
-အကြောင်းအရာများများကို တတ်နိုင်သမျှ ပံ့ပိုးပေးရန် ဖြစ်ရာ သူစိမ်းများမှ မျှဝေသည့်
-အကြောင်းအရာများကို သင့်အနေဖြင့် လက်ခံသုံးစွဲနိုင်ရန် လိုအပ်သည်။ ထိုသို့
-လက်ခံသုံးစွဲနိုင်ရန် Ouinet အနေဖြင့် <strong>အကြောင်းအရာများတွင်လက်မှတ်ထိုးခြင်း</strong>
-နည်းလမ်းကို အသုံးပြုပါသည်။ မျှဝေထားသည့် အကြောင်းအရာများတွင် ထိုးသွင်းစက်များက
-၎င်းတို့၏ ကိုယ်ပိုင်သော့များဖြင့် ထိုးထားသည့် လက်မှတ်များကို သင်၏ လက်ခံစက်မှ
-စစ်ဆေးခြင်းဖြင့် ယုံကြည်ရသည့် အကြောင်းအရာ ဟုတ်/မဟုတ်ကို သိရှိနိုင်သည်။
-ထိုးသွင်းစက်ရှိ ဝက်ဘ်အကြောင်းအရာများကို မျှဝေရန်အတွက် လက်ခံစက်မှ ရှာဖွေသည့်
-အကြိမ်တိုင်းတွင် ထိုးသွင်းစက်သည် မူလဆာဗာမှ အကြောင်းအရာကို ရယူသည်။ ထို့နောက်
-သော့ကိုသုံးကာ လက်မှတ်ထိုးပြီး လက်ခံစက်ထံသို့ လက်မှတ်ထိုးထားသည့် အကြောင်းအရာကို
-ပေးပို့သည်။</p>
-<blockquote>
-<p><strong>နည်းပညာဆိုင်ရာ မှတ်ချက်</strong> အမှန်တကယ်အားဖြင့် ထိုးသွင်းစက်သည်
-သီးသန့်အချက်အလက်တစ်ခုချင်းစီကို လက်မှတ်ထိုးသည်။ ထို့ကြောင့်
-ကြီးမားသောဖိုင်အချက်အလက်များကို ရယူနေစဉ်ကြားထဲတွင် ချိတ်ဆက်မှုများ
-ပြတ်တောက်သွားစေကာမူ ဒေါင်းလုတ်ဆွဲယူထားသောအချက်အလက်များကို ရရှိသော လက်ခံစက်မှ
-မျှဝေနိုင်ပါသေးတယ်။</p>
-</blockquote>
-<p>မတူညီသော ထိုးသွင်းစက်များသည် မတူညီသောသော့များ ရှိနိုင်သောကြောင့်
-မည်သည့်ထိုးသွင်းစက်ကို ယုံကြည်သင့်သည်ကို သင်ရွေးချယ်နိုင်ပါသည်။
-ယခုအကြောင်းအရာကို ဤကဲ့သို့ ပုံဖော်စဉ်းစားကြည့်ပါ။ သင်သည် သင့်နိုင်ငံမှ
-<em>စာချုပ်စာတမ်း သက်သေခံ ရှေ့နေ</em> က လက်မှတ်ထိုးထားသော စာရွက်စာတမ်းကို
-သင်ယုံကြည်တယ်။ နိုင်ငံသား(ဒါမှမဟုတ်) နိုင်ငံခြားသား၊ မည်သူ့ထံမှမဆို ရစေကာမူ
-သင်ယုံကြည်ပါတယ်။ အခြားတစ်ဖက်တွင်မူ တခြားနိုင်ငံလက်မှတ်ပါသော နိုတြီကို
-သင်လက်မခံပါ။ CENO ဘရောက်ဇာသည် eQualitie မှ ပြုလုပ်ထားသော ယုံကြည်စိတ်ချရသည့်
-ထိုးသွင်းစက်များကို စီစဉ်ထားပြီးဖြစ်ပါသည်။</p>
-<blockquote>
-<p><strong>နည်းပညာဆိုင်ရာ မှတ်ချက်</strong> ထိုးသွသင်းစက်များသည် အများသုံး သို့မဟုတ်
-တစ်ကိုယ်ရည်သုံးသော့အစုံလိုက်ကို အသုံးပြုပြီး Ed25519 လက်မှတ်များကို
-ပြုလုပ်ပေးပါသည်။ အများသုံးသော့များသည် လက်မှတ်နှင့်အတူ
-ပို့ခွင့်ပြုနိုင်လောက်သည့်အထိ တိုပါသည်။ အများသုံးသော့များကို ၆၄ လုံး ရှိသော
-hexadecimal စာလုံးများ သို့မဟုတ် ၅၂ လုံးရှိသော Base32 စာလုံးများအနေဖြင့်
-ဝှက်စာပြုလုပ်ထားပါသည်။ သော့များကို ဖုန်းမှတစ်ဆင့် ဖလှယ်နိုင်သည် သို့မဟုတ်
-စာရွက်ပေါ်တွင် ချရေးထားနိုင်ပါသည်။</p>
-</blockquote>
-<h3 id="အကြောငးအရာကို-ထိုးသွငးခြငး"><a class="header" href="#အကြောငးအရာကို-ထိုးသွငးခြငး">အကြောင်းအရာကို ထိုးသွင်းခြင်း</a></h3>
-<p>ကျွန်ုပ်တို့ ဥပမာပေးထားသော ဖြစ်စဉ်တွင် သင့်လက်ခံစက်သည် အကြောင်းအရာ <em>X</em> ကို
-မူရင်းဆာဗာနှင့် အခြားလက်ခံစက်များထံမှ ရယူရန် ကြိုးစားခဲ့ပြီး မအောင်မြင်သည်ကို
-သတိပြုရပါမည်။ လက်ခံစက်သည် နောက်ဆုံး Ouinet ကတ်ကို အသုံးပြုပြီး
-ယုံကြည်စိတ်ချရသောထိုးသွင်းစက်ကို ဆက်သွယ်ပြီး လက်မှတ်ပါသော
-အကြောင်းအရာမိတ္တူတစ်စုံကို ရယူနိုင်အောင် ကြိုးစားပါသည်။ သို့မှသာ
-ထိုအကြောင်းအရာမိတ္တူကို အခြားလက်ခံစက်များနှင့် မျှဝေနိုင်မည် ဖြစ်ပါသည်။</p>
-<p>အောက်ပါပုံတွင် ထိုလုပ်ဆောင်ချက်၏ ဖြစ်နိုင်ခြေရလဒ်ကို သင်မြင်တွေ့နိုင်ပါသည် -
-သုံးစွဲသူသည် ထိုးသွင်းစက်ကို တိုက်ရိုက်ဆက်သွယ်ရန် ပထမဆုံး ကြိုးစားပါသည် (ဥပမာ-
-ထိုးသွင်းစက်စာရင်းမှ ရရှိလာသော အင်တာနက်လိပ်စာတစ်ခုကို အသုံးပြုခြင်း)၊ သို့သော်
-စိတ်မကောင်းစရာမှာ ထိုအင်တာနက်လိပ်စာကို သင်၏ အင်တာနက်ဝန်ဆောင်မှုပေးသူက
-ပိတ်ထားပြီးဖြစ်နေပါသည်။ ကံကောင်းစွာဖြင့် ပေါင်းကူးလက်ခံစက်စာရင်းက
-ထိုးသွင်းစက်ထံသို့ ရောက်နိုင်သေးသည့် အခြားလက်ခံစက်နှစ်ခု၏ အင်တာနက်လိပ်စာများကို
-ပြပေးပါသည်။ သင့်လက်ခံစက်က ယင်းလက်ခံစက်တစ်ခုမှတစ်ဆင့် ထိုးသွင်းစက်ထံသို့
-ချိတ်ဆက်လှိုဏ်ခေါင်းဖွင့်၍ ရောက်ရှိပါသည်။ အကြောင်းအရာ <em>X</em> အား တောင်းဆိုမှုကို
-ထိုးသွင်းစက်က သင့်လက်ခံစက်ထံမှ ရရှိပြီး ထိုအကြောင်းအရာကို မူလဆာဗာမှ
-တောင်းပေးပါသည်။</p>
-<p><img src="concepts/images/user-flow-2.svg" alt="Figure: Client reaches for injector" /></p>
-<p>အကြောင်းအရာ <em>X</em> ကို ထိုးသွင်းစက်မှ လက်ခံရရှိသည်နှင့်တစ်ပြိုင်နက် ထိုးသွင်းစက်သည်
-အကြောင်းအရာတွင် ၎င်း၏သော့ဖြင့် လက်မှတ်ထိုးသည်။ ထိုးသွင်းစက်သည် ထိုအကြောင်းအရာကို
-ချိတ်ဆက်လိုဏ်ခေါင်းမှတစ်ဆင့် သင့်လက်ခံစက်ထံ ပြန်ပို့သည် (ပိတ်ဆို့ခြင်းမခံရသော
-လက်ခံစက်မှတစ်ဆင့်ပို့သည်ဟု ဆိုကြပါစို့)။ သင့်လက်ခံစက်ထံ အကြောင်းအရာ
-ရောက်သည်နှင့်တစ်ပြိုင်နက် ၎င်းသည် အချက်သုံးချက်ကို လုပ်ဆောင်သည် -</p>
-<ol>
-<li>အကြောင်းအရာကို သင့်ထံသို့ ပို့ဆောင်ပေးသည်။ (CENO တွင် ဖြစ်ခဲ့လျှင် ၎င်းသည်
-အကြောင်းအရာကို ဘရောက်ဇာတွင် ဖော်ပြသည်)</li>
-<li>ထိုးသွင်းစက်သည် အခြားလက်ခံစက်များထံသို့ အကြောင်းအရာများ ဆက်လက်တင်ပို့နိုင်ရန်
-၎င်းကို သင့်စက်ပေါ်တွင် သိမ်းထားသည်။ အကြောင်းအရာများသည် သတ်မှတ်ထားသော
-အချိန်အတိုင်းအတာတစ်ခုအထိ သို့မဟုတ် သိမ်းထားသော အကြောင်းအရာအားလုံးကို
-ဖျက်ပစ်လိုက်ရန် သင်ဆုံးဖြတ်သည့်အချိန်အထိ သင့်စက်ပေါ်တွင် ရှိနေပါမည်။</li>
-<li>ထိုးသွင်းစက်သည် အကြောင်းအရာမိတ္တူတစ်စုံ ပိုင်ဆိုင်ကြောင်း၊ ထို့ကြောင့်
-အခြားလက်ခံစက်များမှ ရှာတွေ့နိုင်ကြောင်းကို ဖြန့်ချိထားသော ယာယီမှတ်ဥာဏ်
-အညွှန်းကိန်းထဲတွင် ကြေညာလိုက်သည်။</li>
-</ol>
-<p>ပြန်ထုတ်ခြင်း၊ လက်မှတ်ထိုးခြင်း၊ သိုလှောင်ခန်းနှင့် ကြေညာချက်တို့
-ပေါင်းစည်းထားသော လုပ်ဆောင်ချက်တစ်ခုလုံးကို <strong>အကြောင်းအရာကို ထိုးသွင်းခြင်း</strong>
-ဟုခေါ်သည်။ အောက်ပါပုံတွင် ကြည့်ပါ။</p>
-<p><img src="concepts/images/user-flow-3.svg" alt="Figure: Client receives signed content from injector" /></p>
-<h2 id="အပြညအဝ-ပိတဆိုခံထားရချိနတွင-အကြောငးအရာ-ရှာဖွေခြငး"><a class="header" href="#အပြညအဝ-ပိတဆိုခံထားရချိနတွင-အကြောငးအရာ-ရှာဖွေခြငး">အပြည့်အဝ ပိတ်ဆို့ခံထားရချိန်တွင် အကြောင်းအရာ ရှာဖွေခြင်း</a></h2>
-<p>အထက်တွင်ဖော်ပြထားသော နည်းလမ်းများသည် ပိတ်ဆို့ထားသည့်အပိုင်းနှင့် ကျန်ရှိနေသော
-အင်တာနက်လမ်းတစ်လျှောက်တွင် <em>လမ်းကြောင်းတစ်ခုခု ရှိနေရန်</em> လိုအပ်နေသေးကြောင်း
-ကျေးဇူးပြုပြီး သတိပြုပါ။ သို့သော် တစ်ခါတစ်ရံတွင် ထိုလမ်းကြောင်းများသည်
-ပျောက်ကွယ်သွားနိုင်ပါသည်။ နိုင်ငံတကာ အဆက်အသွယ်ကွန်ရက်များ
-လုံးဝပြတ်တောက်သွားခြင်းများ၊ သဘာဝဘေးအန္တရာယ်များ၊ သို့မဟုတ်
-တည်ရှိနေသောလမ်းကြောင်းအနည်းငယ်တွင် ပြွတ်သိပ်စွာဝင်ရောက်ခြင်းများ (လူတိုင်းမှ
-ထိုလမ်းကြောင်းကို ဝင်ရောက်ကျော်ဖြတ်ရန် ကြိုးစားနေသောကြောင့်) ကို စဉ်းစားကြည့်ပါ။
-ဤနေရာတွင် ဖြန့်ချိထားသော ယာယီမှတ်ဉာဏ်ကို အမှန်အကန် အသုံးချရမည် ဖြစ်ပါသည်။</p>
-<p>ထိုးသွင်းစက်မှ အကြောင်းအရာ <em>X</em> ကို သင်လက်ခံရပြီးနောက် သင့်ဒေသမှာ
-ဘေးအန္တရာယ်တစ်ခုကြောင့် တစ်ကမ္ဘာလုံးနှင့် အဆက်အသွယ်ပြတ်သွားသည်ဟု
-တွေးကြည့်ကြပါစို့။ ထိုအခြေအနေတွင် အကြောင်းအရာ <em>X</em> သည် သင့်ပတ်ဝန်းကျင်ကို
-ကူညီနိုင်မည့် နည်းလမ်းအချို့ရှိသည်ကို ဖော်ပြနေသောကြောင့် အထူးတလည်
-သက်ဆိုင်လာသည်ကို တွေ့ရှိနိုင်ပါသည်။</p>
-<p>ထိုအခြေအနေတွင် နောက်ထပ်လူတစ်ယောက်က CENO ဘရောက်ဇာကို အသုံးပြုပြီး
-ထိုအကြောင်းအရာကို ရယူရန်ကြိုးစားနေသည်။ မူလဆာဗာ သို့မဟုတ် သင့်ဒေသတွင်
-မရရှိနိုင်သော အခြားတစ်ခုခုကို ဒုတိယလူမှ ဝင်ရောက်ကြည့်ရှုနိုင်မည်ဆိုပါက၊ CENO သည်
-ထိုအကြောင်းအရာကို ဖြန့်ချိထားသော ယာယီမှတ်ဉာဏ် အညွှန်းကိန်းတွင်
-ရှာဖွေစစ်ဆေးနိုင်ပြီး သင့်စက်သည် ထိုအကြောင်းအရာကိုရရှိနိုင်ပါသည်။ CENO သည်
-သင့်အင်တာနက် လိပ်စာကို အညွှန်းကိန်းမှ ရယူပြီး ထိုအကြောင်းအရာကို ချိတ်ဆက်ကာ
-တောင်းယူပုံကို အောက်တွင် ဖော်ပြထားပါသည်။</p>
-<p><img src="concepts/images/user-flow-4.svg" alt="Figure: Client receives signed content from client" /></p>
-<p>ဒုတိယစက်သည် အကြောင်းအရာ <em>X</em> ၏ မိတ္တူကို ရရှိထားပြီးနောက် ထိုအကြောင်းကို
-ဖြန့်ချိထားသော ယာယီမှတ်ဉာဏ်တွင် ကြေညာပေးခြင်းဖြင့် တင်ပို့သူ ဖြစ်လာပါသည်။
-ထိုအကြောင်းအရာကို စိတ်ဝင်စားသော တတိယပုဂ္ဂိုလ်တစ်ဦးက CENO ဘရောက်ဇာကို အသုံးပြု၍
-၎င်းကို ပြန်လည်ရယူရန် အသုံးပြုလျှင်၊ CENO သည် အကြောင်းအရာအတွက် အညွှန်းကိန်းတွင်
-လိပ်စာ <em>နှစ်ခု</em> ကို မြင်ရလိမ့်မည်။ ၎င်းတို့မှာ သင်၏စက်နှင့် ဒုတိယအသုံးပြုသူတို့၏
-လိပ်စာများဖြစ်သည်။ အကြောင်းအရာသည် အရွယ်အစားကြီးပါက (ဥပမာ - ဗီဒီယိုဖိုင်တစ်ခု)
-ဤတတိယကိရိယာသည် အခြားကိရိယာတစ်ခုစီမှ တစ်ဝက်စီကို ရရှိနိုင်အောင်
-ကြိုးစားလိမ့်မည်(အောက်တွင်ဖော်ပြထားသည့်အတိုင်း)။ ဤသို့ဖြင့်
-ဒေါင်းလုတ်ဆွဲသည့်နှုန်းမြန်စေပြီး အသုံးပြုနေသော ကူးသန်းသွားလာခြင်းကို
-လျှော့ချပေးနိုင်သည်။</p>
-<p><img src="concepts/images/user-flow-5.svg" alt="Figure: Client receives signed content from multiple clients" /></p>
-<p>နောက်ဆုံးတွင် အခြေအနေပိုဆိုးလာနိုင်ပြီး စီးပွားရေးနှင့် ပြည်နယ် ကွန်ရက်
-အဆောက်အအုံများအားလုံးသည် ပိတ်ခြင်းခံရနိုင်ပါသည်။ ဤအခြေအနေတွင် Ouinet နှင့် CENO
-ဘရောက်ဇာတွင် <em>စက်တစ်ခုမှတစ်ခုသို့</em> အကြောင်းအရာများကို မျှဝေခြင်းကို
-ထောက်ပံ့ပေးနိုင်ပါသည်။ လက်ခံစက်နှစ်ခုအကြား အကြောင်းအရာမျှဝေခြင်းတွင်
-တူညီသောကွန်ရက်ကို အသုံးပြုနိုင်ပြီး (ဥပမာ - တူညီသော
-ဝိုင်ဖိုင်ကွန်ရက်ကိုအသုံးပြုခြင်း) ထိုကွန်ရက်သည် အခြားကွန်ရက်များသို့
-မရောက်ရှိနိုင်သော်လည်း အကြောင်းအရာများကို မျှဝေနိုင်ပါသည်။</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="public-vs-personal-browsing"><a class="header" href="#public-vs-personal-browsing">Public vs. Personal browsing</a></h1>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="cenoouinet-အသုံးပြုခြငး-အားသာချကများ"><a class="header" href="#cenoouinet-အသုံးပြုခြငး-အားသာချကများ">Ceno/Ouinet အသုံးပြုခြင်း၏ အားသာချက်များ</a></h1>
-<p>အခြားရှောင်ရှားသည့် နည်းပညာများထက် Ceno နှင့် Ouinet ကို အသုံးပြုခြင်း၏ အဓိက
-အားသာချက်များသည် အချင်းချင်း အသွားအလာ ထပ်ဆင့်ပို့ရန်၊ နောက်ပိုင်းတွင်
-အတည်ပြုရန်အတွက် အကြောင်းအရာကို လက်မှတ်ထိုးရန်နှင့် အခြားသူများထံ တင်ပို့ဖို့
-လက်မှတ်ထိုးထားသော အကြောင်းအရာကို သိုလှောင်ရန် လက်ခံစက်များနှင့်
-ထိုးသွင်းဖိုင်များ၏ ပူးပေါင်းဆောင်ရွက်မှုမှ အရင်းခံသည်။ ဖော်ပြသင့်သော
-အားသာချက်အချို့မှာ -</p>
-<ul>
-<li>
-<p><strong>ရင်းနှီးသော သုံးစွဲပုံ -</strong> Ceno ဘရောက်ဇာ အသုံးပြု၍ ဝက်ဘ်အကြောင်းအရာကို
-ဝင်ရောက်သုံးစွဲခြင်းသည် သင်သုံးနေကျ ဘရောက်ဇာတွင် ဝက်ဘ်ကို
-ရှာဖွေကြည့်ခြင်းနှင့် အလွန်တူသည်ဟု ခံစားရပြီး လုံးဝ ပိတ်ဆို့ခံရသည့်
-အချိန်တွင်ပင် အလားတူ ခံစားရသည်။ လူကြိုက်များသော အကြောင်းအရာအတွက်
-စိတ်ကြိုက်လင့် အသစ်များ သို့မဟုတ် (အက်ပလီကေးရှင်းများ အကြား
-ဖိုင်လွှဲပြောင်းခြင်းကဲ့သို့) သုံးစွဲသူဘက်မှ အထူး လုပ်ဆောင်ချက်များ မလိုအပ်ပါ။</p>
-</li>
-<li>
-<p><strong>အကြောင်းအရာ ရရှိနိုင်မှု တိုးလာခြင်း -</strong> Ouinet သည် ကွန်ရက်
-ကြားဝင်နှောင့်ယှက်မှု လွန်ကဲသော အခြေအနေများတွင် လျင်မြန်ထိရောက်ပြီး
-ယုံကြည်ရသော နည်းလမ်းဖြင့် အကြောင်းအရာကို ပံ့ပိုးပေးနိုင်သည်။ အချို့သော
-အကြောင်းအရာကို ပိုမိုလူကြိုက်များလာလေလေ ၎င်း၏ မိတ္တူများကို Ceno/Ouinet
-လက်ခံများက ပိုမိုတင်ပို့လေလေဖြစ်ပြီး ၎င်းကို ပိုမိုရရှိနိုင်လေလေ ဖြစ်သည်။</p>
-<p>လက်မှတ်ထိုးထားသော အကြောင်းအရာကို ချိတ်ဆက်မှု ဖျက်ထားသော ဧရိယာရှိ အချို့သော
-လက်ခံစက်များထံ အော့ဖ်လိုင်း နည်းလမ်းများ (ဥပမာ - USB ဒရိုက်ဗ်) ဖြင့်
-ယူဆောင်လာခြင်းအားဖြင့် အခြား လက်ခံစက်များအတွက် ရရှိနိုင်အောင် ပြုလုပ်နိုင်သည်။</p>
-</li>
-<li>
-<p><strong>Faster browsing:</strong> Since your client can retrieve different parts of the
-same content from various clients at the same time, the load of delivering the
-content is distributed among different networks and devices, thus avoiding
-clogging the paths to a single client (especially when delivering a big
-resource like a video). This is not only useful when infrastructure connecting
-to other countries is limited, but also for publishers to avoid resource usage
-spikes at origin servers when some of their content becomes very popular (the
-so-called <a href="https://en.wikipedia.org/wiki/Slashdot_effect">Slashdot effect</a>).</p>
-</li>
-<li>
-<p><strong>Cheaper browsing:</strong> Content popular in a particular region tends to get
-copied in Ceno/Ouinet clients in that region, even if the origin server is
-abroad. If you are interested in that content, your client will probably get
-it from some other client in your region. In some countries where
-international traffic is more expensive than local one (e.g. in the presence
-of a <a href="https://en.wikipedia.org/wiki/National_intranet">national intranet</a>), this can actually save you money.</p>
-</li>
-</ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="cenoouinet-အသုံးပြုခြငး-စွနစားမှုများ"><a class="header" href="#cenoouinet-အသုံးပြုခြငး-စွနစားမှုများ">Ceno/Ouinet အသုံးပြုခြင်း၏ စွန့်စားမှုများ</a></h1>
-<p>အလွန်ရှုပ်ထွေးသော ကွန်ပျူတာစနစ်၊ အထူးသဖြင့် ဆန်းသစ်တီထွင်ထားသော ကွန်ပျူတာစနစ်ကို
-အသုံးပြုသကဲ့သို့ပင် Ceno ဘရောက်ဇာ (ယေဘုယျအားဖြင့် မည်သည့် Ouinet
-လက်ခံစက်ကိုမဆို) အသုံးပြုခြင်းဖြင့် အချို့သော စွန့်စားမှုများမှ
-ကင်းလွတ်မည်မဟုတ်ပါ။ Ceno ကို အသုံးပြုပုံပေါ် မူတည်၍ အကျိုးသက်ရောက်မှုများကို
-သင်နားလည်စေရန် ဤအပိုင်းတွင် စုစည်းဖော်ပြပေးပါမည် -</p>
-<ul>
-<li>ဝက်ဘ်ဆိုက်များကို ရှာဖွေသည့် <em>သုံးစွဲသူ</em> အနေနှင့်</li>
-<li>သင် ယခင်က ဝင်ကြည့်ခဲ့သော ဖြန့်ချိထားသည့် ယာယီသိမ်းဆည်းထားသော မှတ်ဉာဏ်ဖြင့်
-အကြောင်းအရာ မျှဝေသည့် <em>ပေးပို့သူ</em> အနေနှင့်</li>
-<li>အခြားသုံးစွဲသူများ ထိုးသွင်းဖိုင်သို့ ရောက်ရှိရန် ခွင့်ပြုသော <em>ပေါင်းကူး</em>
-အနေနှင့်</li>
-</ul>
-<h2 id="သုံးစွဲသူအနေနှင"><a class="header" href="#သုံးစွဲသူအနေနှင">သုံးစွဲသူအနေနှင့်</a></h2>
-<h3 id="ပေါငးကူးများသည-မူလ-ဆာဗာနှင-ကျွနုပ-ဆကသွယမှုကို-မြငနိုငသလား"><a class="header" href="#ပေါငးကူးများသည-မူလ-ဆာဗာနှင-ကျွနုပ-ဆကသွယမှုကို-မြငနိုငသလား">ပေါင်းကူးများသည် မူလ ဆာဗာနှင့် ကျွန်ုပ်၏ ဆက်သွယ်မှုကို မြင်နိုင်သလား။</a></h3>
-<p>မမြင်ရပါ။ ပေါင်းကူးတစ်ခု၏ တာဝန်မှာ လက်ခံစက်နှင့် ထိုးသွင်းစက်တို့အကြား သွားလာမှု
-အကြမ်းထည်ကို ပို့ပေးရန်သာဖြစ်သည်။ ဤကူးသန်းသွားလာမှုကို အမြဲတမ်း
-ကုဒ်ဖြင့်ပြောင်းလဲထားပြီး ပေါင်းကူးများတွင် ကူးသန်းသွားလာမှု၏ အကြောင်းအရာကို
-ကြည့်ရှုရန်လိုအပ်သော ကိုယ်ပိုင်သော့များ မရှိပါ။</p>
-<h3 id="ထိုးသွငးဖိုငများသည-မူလ-ဆာဗာနှင-ကျွနုပ-ဆကသွယမှုကို-မြငနိုငသလား"><a class="header" href="#ထိုးသွငးဖိုငများသည-မူလ-ဆာဗာနှင-ကျွနုပ-ဆကသွယမှုကို-မြငနိုငသလား">ထိုးသွင်းဖိုင်များသည် မူလ ဆာဗာနှင့် ကျွန်ုပ်၏ ဆက်သွယ်မှုကို မြင်နိုင်သလား။</a></h3>
-<p>Yes and no. When the user requests content <a href="concepts/public-private.html">in public browsing
-mode</a>, all private data (like passwords and cookies) is first
-removed from the request by the client, and only then is the request encrypted
-for and forwarded to the injector, which proceeds to decrypt it.</p>
-<p>အခြားတစ်ဖက်တွင်မူ တောင်းဆိုချက်သည် သီးသန့်ရှာဖွေခြင်းမုဒ်ကို အသုံးပြုသောအခါ
-ထိုအရာကို လက်ခံစက်မှ ပြုပြင်၍မရနိုင်ပါ။ သို့သော် မူလဆာဗာအတွက်
-ဆက်သွယ်မှုတစ်ခုလုံးကို ကုဒ်ဖြင့်ပြောင်းလဲထားပါသည်။ ဆိုလိုသည်မှာ ဤအခြေအနေတွင်
-ထိုးသွင်းစက်သည် အကြောင်းအရာကို ကုဒ်ဖြည်၍မရနိုင်ပါ။</p>
-<blockquote>
-<p><strong>နည်းပညာဆိုင်ရာ မှတ်ချက်</strong> HTTP <code>GET</code> တောင်းဆိုချက်များသည်သာ
-ထိုးသွင်းခြင်းအတွက် ကိုယ်စားလှယ်လောင်းများ ဖြစ်ကြပါသည်။ အခြေခံကျပြီး
-ကိုယ်ရေးအချက်အလက်များကို ထိန်းသိမ်းပေးသော HTTP ခေါင်းစီးတန်ဖိုးများ၏
-ကန့်သတ်ထားသော အစုံလိုက်မှလွဲ၍ ကျန်သော သတ်မှတ်ကိန်းများကို ဖယ်ထုတ်လိုက်ပါသည်။</p>
-</blockquote>
-<h3 id="ထိုးသွငးဖိုငများသည-ကျွနုပ-ip-လိပစာကို-မြငနိုငသလား"><a class="header" href="#ထိုးသွငးဖိုငများသည-ကျွနုပ-ip-လိပစာကို-မြငနိုငသလား">ထိုးသွင်းဖိုင်များသည် ကျွန်ုပ်၏ IP လိပ်စာကို မြင်နိုင်သလား။</a></h3>
-<p>မြင်နိုင်ပါသည်။ သို့သော် ထိုးသွင်းစက်များက တောင်းဆိုချက်များသည် Ceno အသုံးပြုသူ
-သို့မဟုတ် ပေါင်းကူး၊ မည်သည့်နေရာမှ ရောက်လာသည်ကို ခွဲခြားမသိနိုင်ပါ။ ထို့ကြောင့်
-ထိုးသွင်းစက်ဆီသွားသော တောင်းဆိုချက်များကို မူလအစပြုသော IP လိပ်စာအား
-ယုံကြည်စိတ်ချစွာ ပေးအပ်ရန်မဖြစ်နိုင်ပါ။</p>
-<h3 id="ကျွနုပ-သီးသန-ဒေတာသည-ဖြနချိထားသော-ယာယီသိမးဆညးထားသည-မှတဉာဏသို-ပေါကကြားနိုငသလား"><a class="header" href="#ကျွနုပ-သီးသန-ဒေတာသည-ဖြနချိထားသော-ယာယီသိမးဆညးထားသည-မှတဉာဏသို-ပေါကကြားနိုငသလား">ကျွန်ုပ်၏ သီးသန့် ဒေတာသည် ဖြန့်ချိထားသော ယာယီသိမ်းဆည်းထားသည့် မှတ်ဉာဏ်သို့ ပေါက်ကြားနိုင်သလား။</a></h3>
-<p>မပေါက်ကြားနိုင်ဟု မျှော်လင့်ပါသည်။ အထက်တွင် ဖော်ပြခဲ့သည့်အတိုင်း Ceno
-ဘရောက်ဇာသည် ထိုးသွင်းရန် တောင်းဆိုချက်မှ ကိုယ်ရေးကိုယ်တာအချက်အလက် (စကားဝှက်များ၊
-ကွတ်ကီများ စသည်ဖြင့်) ကို ဖယ်ရှားရန် ကြိုးစားပါသည်။ ထို့ပြင် ထိုးသွင်းစက်သည်
-၎င်းကိုယ်တိုင် မည်သည့်အရာကိုမျှ မတင်ပို့ပါ။ အကြောင်းမှာ ထိုးသွင်းစက်၏
-တစ်ခုတည်းသော ရည်ရွယ်ချက်သည် Ouinet လက်ခံစက်များ အကြောင်းအရာကို
-တင်ပို့နိုင်ရန်အတွက် ထိုအကြောင်းအရာတွင် လက်မှတ်ထိုးရန်သာဖြစ်သည်။ ဆိုလိုသည်မှာ
-လက်ခံစက်ထံသို့ အကြောင်းအရာ ပြန်ရောက်လာသောအခါ အကြောင်းအရာကို ထပ်မံ
-ခွဲခြမ်းစိတ်ဖြာပြီးနောက် မူလဆာဗာသည် သီးသန့်ဖြစ်သော သဘာဝကို ညွှန်ပြနေလျှင် Ceno
-သည် ထိုအကြာင်းအရာကို တင်ပို့မည် မဟုတ်ပါ။</p>
-<p>သို့တိုင်အောင် ညံ့ဖျင်းသော ဒီဇိုင်းနှင့် စာမျက်နှာများ သို့မဟုတ် အန္တရာယ်ရှိသော
-စာမျက်နှာများသည် သင့်ထံမှ အချက်အလက်တချို့ (ဖောင်တစ်ခုမှ အီးမေးလ်လိပ်စာ သို့မဟုတ်
-JavaScript ကို အသုံးပြုပြီး ရရှိလာသော ဘရောက်ဇာလက်ဗွေရာတချို့ ကဲ့သို့သော
-အချက်အလက်များ) ကို စုဆောင်းထားနိုင်သည့်အပြင် အခြား URL လင့်ထဲသို့ ပုံမှန်
-လမ်းကြောင်း အစိတ်အပိုင်းများ (ဥပမာ -
-<code>http://example.com/subscribe/you@example.org</code>) အဖြစ် သွတ်သွင်းခံရနိုင်ခြင်း
-အစရှိသော ကိစ္စရပ်များ ဖြစ်နိုင်ပါသည်။ အကယ်၍ သင်သည် စာမျက်နှာတစ်ခုမှ ထိုကဲ့သို့
-ပြုလုပ်နိုင်သည်ကို သံသယရှိပါက လုံခြံစေရန်အလို့ငှာ ယင်းစာမျက်နှာကို
-သီးသန့်ရှာဖွေ၍ သုံးခြင်းမှာ အကောင်းဆုံးဖြစ်ပါလိမ့်မယ်။</p>
-<h3 id="ကျွနုပက-ceno-ကို-အသုံးပြုနေလား-ဆိုတာကို-မူရငးဆာဗာက-သိနိုငပါသလား"><a class="header" href="#ကျွနုပက-ceno-ကို-အသုံးပြုနေလား-ဆိုတာကို-မူရငးဆာဗာက-သိနိုငပါသလား">ကျွန်ုပ်က Ceno ကို အသုံးပြုနေလား ဆိုတာကို မူရင်းဆာဗာက သိနိုင်ပါသလား။</a></h3>
-<p>မသိဖို့ များပါသည်။ Ceno မှ မူလဆာဗာကို တိုက်ရိုက်ဆက်သွယ်သောအခါတိုင်း ၎င်းသည်
-Android တွင်အလုပ်လုပ်သော ပုံမှန် Firefox ကဲ့သို့ အလုပ်လုပ်ပါသည်။ ထို့ကြောင့်
-သင့်သီးခြားကိရိယာသည် ဗားရှင်းတူညီသော ပုံမှန် Firefox အက်ပလီကေးရှင်းအဖြစ်
-ဖော်ပြနေပါတယ်။</p>
-<p>မည်သို့ပင်ဆိုစေကာမူ Ceno သည် မူလဆာဗာမှ အကြောင်းအရာတချို့ရယူရန် ထိုးသွင်းစက်ကို
-အသုံးပြုသောအခါ Ceno သို့မဟုတ် Ouinet တို့ ပါဝင်နေကြောင်း နောက်ပိုင်းတွင်
-သိနိုင်သည့် နည်းလမ်း (အနည်းဆုံး) နှစ်ခုရှိပါတယ်။</p>
-<ol>
-<li>မူလဆာဗာသို့ ရောက်ရှိလာသော ဆက်သွယ်မှု၏ ပင်ရင်းလိပ်စာကို ထိုးသွင်းစက်စာရင်းတွင်
-ရှာတွေ့နိုင်ပါသည် (ဆက်သွယ်မှုသည် ထိုးသွင်းစက်မှ အမှန်တကယ်လာသောကြောင့်
-ဖြစ်သည်)။</li>
-<li>အကြောင်းအရာတောင်းဆိုချက်တွင် တချို့သောအချက်အလက်များ ပါဝင်ခြင်း သို့မဟုတ်
-ပျောက်ဆုံးနေခြင်းသည် Ouinet ၏ ထူးခြားသော လက္ခဏာ ဖြစ်သည်။ သင့်လက်ခံစက်က
-အကြောင်းအရာကိုရယူပြီး လက်မှတ်ထိုးရန် တောင်းဆိုသောကြောင့် ထိုးသွင်းစက်သည်
-ထိုအကြောင်းအရာကို တောင်းဆိုချက်တွင် သင်၏ သီးသန့်ကိရိယာနှင့်သာ သက်ဆိုင်သော
-အချက်အလက်များကို ဖယ်ရှားလိုက်သောအခါတွင် ဖြစ်လေ့ရှိပါသည်။</li>
-</ol>
-<p>ကျေဇူးပြုပြီး သတိပြုရန်မှာ ထိုးသွင်းစက်များသည် တောင်းဆိုချက်ကို Ouinet မှ
-လာကြောင်းသာ မှတ်သားထားပါသည်။ ၎င်းတို့သည် သင့်ကို သို့မဟုတ် သင်၏ သီးသန့်ကိရိယာကို
-ထိုတောင်းဆိုချက်နှင့် မဆက်စပ်စေပါ။ မည်သို့ပင်ဆိုစေကာမူ ယခင်မေးခွန်းပါ
-အကြောင်းရင်းများကြောင့် တောင်းဆိုချက်တွင် မည်သူမည်ဝါဖြစ်ကြောင်း သတ်မှတ်နိုင်သော
-အချက်အလက်များ ပါဝင်သေးပါက သင့်ကို Ceno အသုံးပြုသူအဖြစ် မှတ်ယူနိုင်ပါသည်။</p>
-<p>In general, if a particular website (such as a governmental site) expects you to
-connect to it as an identifiable individual, from a specific region (or from a
-<a href="https://en.wikipedia.org/wiki/National_intranet">national intranet</a>), we recommend that you use a normal Web browser instead
-of Ceno.</p>
-<h2 id="တငပိုသူအဖြစ"><a class="header" href="#တငပိုသူအဖြစ">တင်ပို့သူအဖြစ်</a></h2>
-<h3 id="ကျွနုပစကမှ-မညသညဒေတာကို-စုဆောငးထားသနညး"><a class="header" href="#ကျွနုပစကမှ-မညသညဒေတာကို-စုဆောငးထားသနညး">ကျွန်ုပ်၏စက်မှ မည်သည့်ဒေတာကို စုဆောင်းထားသနည်း။</a></h3>
-<p>လက်ရှိတွင် Ceno မှ တင်ပို့သော အကြာင်းအရာများမှာ အများသုံးရှာဖွေခြင်းမုဒ်တွင်
-တောင်းဆိုထားသော သီးသန့်သုံးမဟုတ်သည့် ဝဘ်အကြောင်းအရာများသာ ဖြစ်ပါသည်။
-ဆိုလိုသည်မှာ အသုံးပြုသူများသည် လတ်တလောတွင် မသုံးထားသည့် မည်သည့်အကြောင်းအရာကိုမျှ
-မတင်ပို့ပါ။</p>
-<h3 id="ကျွနုပတငပိုထားသော-အကြောငးအရာကို-တစစုံတစယောကမှ-ရှာတွေနိုငပါသလား"><a class="header" href="#ကျွနုပတငပိုထားသော-အကြောငးအရာကို-တစစုံတစယောကမှ-ရှာတွေနိုငပါသလား">ကျွန်ုပ်တင်ပို့ထားသော အကြောင်းအရာကို တစ်စုံတစ်ယောက်မှ ရှာတွေ့နိုင်ပါသလား။</a></h3>
-<p>တချို့တစ်ဝက်ကို ရှာတွေ့နိုင်ပါသည်။ Ouinet ၏ အလုပ်လုပ်ပုံကို
-နားလည်နိုင်စွမ်းရှိသော မည်သူမဆိုသည် သီးခြား အကြောင်းအရာတစ်ခုကို မည်သည့် IP
-လိပ်စာမှ မျှဝေထားသည်ကို ရှာတွေ့နိုင်သည့် ကိရိယာတစ်ခု (BitTorrent တွင်ကဲ့သို့)
-တည်ဆောက်နိုင်ပါသည်။ မည်သို့ပင်ဆိုစေကာမူ တိကျသော IP လိပ်စာတစ်ခုကို
-ရှာတွေ့ရန်နှင့် နောက်ကွယ်တွင် လက်ခံစက်များမှ တင်ပို့ထားသော အကြောင်းအရာအားလုံး၏
-စာရင်းကို ရရန်မှာ မဖြစ်နိုင်ပါ။</p>
-<h2 id="ပေါငးကူးတစခု-အဖြစ"><a class="header" href="#ပေါငးကူးတစခု-အဖြစ">ပေါင်းကူးတစ်ခု အဖြစ်</a></h2>
-<h3 id="အခြားသောသူများက-ကျွနုပ-ip-လိပစာကို-ရှာတွေနိုငပါသလား"><a class="header" href="#အခြားသောသူများက-ကျွနုပ-ip-လိပစာကို-ရှာတွေနိုငပါသလား">အခြားသောသူများက ကျွန်ုပ်၏ IP လိပ်စာကို ရှာတွေ့နိုင်ပါသလား။</a></h3>
-<p>ရှာတွေ့နိုင်ပါသည်။ ထိုးသွင်းစက်များနှင့် ချိတ်ဆက်နိုင်သော Ceno ဘရောက်ဇာ
-အားလုံးသည် ၎င်း၏ IP လိပ်စာကို ပေါင်းကူးလက်ခံစက်စာရင်းတွင် မှတ်ပုံတင်ရပါမည်။
-ထိုပေါင်းကူးလက်ခံစက်စာရင်းတွင် အခြားသော Ouinet လက်ခံစက်များသည် IP လိပ်စာများကို
-ရှာတွေ့နိုင်ပါသည်။</p>
-<h3 id="ကျွနုပတိုနိုငငံတွင-ပိတထားသော-အကြောငးအရာကို-အခြားသူများ-ရယူရနအတွက-ကျွနုပ-ကူညီပေးနိုငရန-ဖြစနိုငပါသလား"><a class="header" href="#ကျွနုပတိုနိုငငံတွင-ပိတထားသော-အကြောငးအရာကို-အခြားသူများ-ရယူရနအတွက-ကျွနုပ-ကူညီပေးနိုငရန-ဖြစနိုငပါသလား">ကျွန်ုပ်တို့နိုင်ငံတွင် ပိတ်ထားသော အကြောင်းအရာကို အခြားသူများ ရယူရန်အတွက် ကျွန်ုပ် ကူညီပေးနိုင်ရန် ဖြစ်နိုင်ပါသလား။</a></h3>
-<p>ဖြစ်နိုင်ပါသည်။ သို့သော် ပေါင်းကူးများသည် Ouinet လက်ခံစက်နှင့်
-ထိုးသွင်းစက်တို့အကြား ကုဒ်ဖြင့်ပြောင်းလဲထားသော ဆက်သွယ်မှုများကိုသာ
-လက်ဆင့်ကမ်းနိုင်ပါသည်။ ဆိုလိုသည်မှာ ပေါင်းကူးတစ်ခုသည် တစ်ဦးတစ်ယောက်ကိုယ်စား
-အခြားဆာဗာတစ်ခုထံသို့ အကြောင်းအရာ တိုက်ရိုက်တောင်းဆိုချက်များကို လုံးဝ
-မပြုလုပ်ပါ။</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="ceno-ဘရောကဇာ-အသုံးပြုခြငး"><a class="header" href="#ceno-ဘရောကဇာ-အသုံးပြုခြငး">Ceno ဘရောက်ဇာ အသုံးပြုခြင်း</a></h1>
-<p>This chapter gives you some hints on the usage of Ceno Browser as far as its
-Ouinet-related capabilities are concerned. Please always keep in mind that Ceno
-is based on <a href="https://www.mozilla.org/firefox/android/">Firefox for Android</a>, so for all questions on generic browsing
-topics you should refer to Mozilla's <a href="https://support.mozilla.org/en-US/products/mobile">Firefox for Android Support</a> pages.</p>
-<p>သင့်လျော်သည့် အချိန်တွင် စာသားကို ပုံဖော်ရန် စခရင်ရှော့(တ်)များ ပါဝင်ပါမည်။
-အထူးသဖြင့် Ceno ၏ ဖန်တီးတီထွင်မှု တိုးတက်လာသည်နှင့်အမျှ ၎င်းတို့သည်
-သင့်စက်ပေါ်တွင် သင်မြင်သည့်အရာနှင့် အနည်းငယ် ကွာခြားနိုင်ကြောင်း ကျေးဇူးပြု၍
-သတိပြုပါ။ ဤစာရွက်စာတမ်းသည် Ceno ဗာရှင်း ၁.၆.၀ အတွက် ခေတ်မီပါသည်။</p>
-<p>If your application exhibits behaviors substantially different from those
-described here, do not hesitate to contact us at <a href="mailto:browser/cenoers@equalitie.org">cenoers@equalitie.org</a> and
-report the issue.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="ceno-ထညသွငးခြငး"><a class="header" href="#ceno-ထညသွငးခြငး">Ceno ထည့်သွင်းခြင်း</a></h1>
-<p>Ceno ဘရောက်ဇာကို အောက်ပါနည်းလမ်းများဖြင့် ထည့်သွင်းနိုင်သည် -</p>
-<ul>
-<li><a href="https://play.google.com/store/apps/details?id=ie.equalit.ceno">Google Play</a> (<em>Ceno Browser</em> from <em>eQualitie</em>): the recommended
-source for most Android users.</li>
-<li><a href="https://gitlab.com/ceno-app/ceno-android/-/releases">Gitlab</a>: for Android devices without Google Play.</li>
-<li><a href="https://paskoocheh.com/tools/124/android.html">Paskoocheh</a>: for users in countries blocking access to the
-previous channels.</li>
-</ul>
-<p>Ceno သည် အနည်းဆုံး ARM64 သို့မဟုတ် Neon-capable ARM32 ပါဝင်တဲ့ Android 4.1 Jelly
-Bean စက်အမျိုးအစားကို လိုအပ်ပါသည်။ ထို့ကြောင့် ၂၀၁၂ နောက်ပိုင်းထွက်တဲ့
-မိုဘိုင်းဖုန်းအမျိုးအစားတွေမှာ အလုပ်လုပ်နိုင်ပါသည်။ Ceno ကို အလုပ်လုပ်ဖို့အတွက်
-<em>အထူးခွင့်ပြုချက်များ မလိုအပ်ပါ</em>။</p>
-<blockquote>
-<p><strong>Warning:</strong> Please be <em>extremely skeptical</em> about installing Ceno Browser
-from sources other than the ones listed above. Because of the application's
-nature, their potential users may become a target for all kinds of fake or
-manipulated versions used to violate user privacy or attack other Ceno and
-Ouinet users. If in doubt, please contact <a href="mailto:browser/cenoers@equalitie.org">cenoers@equalitie.org</a> before
-installing a suspicious app.</p>
-</blockquote>
-<h2 id="ceno-ကို-လုံးဝ-ရပတနခြငး"><a class="header" href="#ceno-ကို-လုံးဝ-ရပတနခြငး">Ceno ကို လုံးဝ ရပ်တန့်ခြင်း</a></h2>
-<p>သင် အက်ပ်ကို စတင်သည့် အချိန်တိုင်းတွင် Ceno အိုင်ကွန်သည် သင့်စက်၏
-အသိပေးချက်ဘားတွင် ပေါ်လာပါမည်။ ဤအိုင်ကွန်သည် <em>Ceno ဝက်ဘ် ဘရောက်ဇာ ဝန်ဆောင်မှု</em>
-ကို ကိုယ်စားပြုပြီး ၎င်းသည် (သင်ရှာဖွေမနေသည့် အချိန်တွင်ပင်) အမြဲတမ်း
-လုပ်ဆောင်သည့် Ceno ၏ တစ်စိတ်တစ်ပိုင်းဖြစ်ပြီး အခြားလက်ခံစက်များအား သင့်စက်ကို
-ပေါင်းကူးအဖြစ် အသုံးပြု၍ ၎င်းထံမှ အချက်အလက်ကို အချိန်မရွေး ပြန်ထုတ်ရန်
-ခွင့်ပြုသည်။</p>
-<p>ထိုဝန်ဆောင်မှုကို လုပ်ဆောင်ခြင်းသည် ကွန်ရက်နှင့် ပရိုဆက်ဆာ ရင်းမြစ်များကို
-အသုံးပြုသည့်အတွက် သင်သည် လှုပ်ရှားသွားလာနေချိန်တွင် (ဆိုလိုသည်မှာ Wi-Fi နှင့်
-ချိတ်ဆက်မထားချိန် သို့မဟုတ် အားသွင်းကိရိယာနှင့် ဝေးနေချိန်တွင်) ၎င်းကို
-ရပ်တန့်လိုစိတ် ရှိနိုင်သည်။ အိုင်ကွန်တွင် တွဲချိတ်ထားသော အသိပေးချက်ကို
-နှိပ်ခြင်းဖြင့် Ceno နှင့် ၎င်း၏ ဝန်ဆောင်မှုကို (သင် Ceno ကို ထပ်မံဖွင့်သည့်
-အချိန်အထိ) ချက်ချင်း ရပ်တန့်ပါမည်။</p>
-<p><img src="browser/images/tap-stop.png" alt="Figure: Tap on the notification to stop the Ceno service" /></p>
-<h2 id="ceno-ဒေတာအားလုံးကို-ထုတပယခြငး-စိုးရိမမှု-ခလုတ"><a class="header" href="#ceno-ဒေတာအားလုံးကို-ထုတပယခြငး-စိုးရိမမှု-ခလုတ">Ceno ဒေတာအားလုံးကို ထုတ်ပယ်ခြင်း ("စိုးရိမ်မှု ခလုတ်")</a></h2>
-<p>အထက်ပါ <em>Ceno ဘရောက်ဇာ ဝန်ဆောင်မှု</em> အသိပေးချက်တွင် ၎င်းတို့ကို နှိပ်ခြင်းဖြင့်
-လှုံ့ဆော်နိုင်သော တွဲဖက်လုပ်ဆောင်ချက် အနည်းငယ် ပါဝင်သည်။ <em>ပင်မ</em> လုပ်ဆောင်ချက်သည်
-၎င်း၏ ပင်မ စာမျက်နှာကို ပြသသည့် အများသုံး ရှာဖွေမှု တပ်ဗ်အသစ်ဖြင့် Ceno ကို
-ဖွင့်ပါမည်။ <em>ဖျက်ရန်</em> လုပ်ဆောင်ချက်ကို ပိုမိုရှင်းပြရန် လိုအပ်သည်။</p>
-<blockquote>
-<p><strong>မှတ်ချက် -</strong> အသိပေးချက်အောက်ရှိ လုပ်ဆောင်ချက်များကို မမြင်နိုင်ပါက
-အသိပေးချက်ကို ဖြန့်ရန် ၎င်း၏ ဗဟိုမှ အောက်ခြေဘက်သို့ ဆွဲပါ။ <em>Home</em>
-လုပ်ဆောင်ချက်ကိုသာ မြင်နိုင်ပါက၊ သင်၏စက်ပစ္စည်းသည် <em>Erase</em> လုပ်ဆောင်ချက်ကို
-ပံ့ပိုးရန်အတွက် အလွန်ဟောင်းနေခြင်း ဖြစ်နိုင်သည်။</p>
-</blockquote>
-<p>သင်သည် Ceno ကို လျင်မြန်စွာ ရပ်တန့်ပြီး ၎င်းနှင့်သက်ဆိုင်သော (ယာယီ
-သိမ်းဆည်းထားသော အကြောင်းအရာသာမက အနှစ်သက်ဆုံးများ၊ စကားဝှက်များနှင့် ရှာဖွေမှု
-မှတ်တမ်း အားလုံးကိုပါ) ဒေတာအားလုံးကို လုံးဝ ရှင်းလင်းရန် လိုအပ်ပါက သင်သည်
-<em>ဖျက်ရန်</em> ကို နှိပ်နိုင်သည်။ သင့်ဒေတာ မတော်တဆ ဆုံးရှုံးခြင်းကို
-ရှောင်ရှားရန်အတွက် ယင်းသည် မည်သည့်အရာကိုမျှ မဖယ်ရှားသေးဘဲ အောက်ပါပုံတွင်
-ပြထားသည့်အတိုင်း ထပ်ဆောင်း လုပ်ဆောင်ချက်တစ်ခုကို ခဏ ပြသပါမည်-</p>
-<p><img src="browser/images/tap-purge.png" alt="Figure: The last action stops Ceno and clears all its data" /></p>
-<p>သင်သည် <em>လုပ်မည်</em> လုပ်ဆောင်ချက်ကို နှိပ်လျှင် Ceno ကို ရပ်တန့်ပြီး ၎င်း၏
-ဒေတာအားလုံးကို <em>နောက်ထပ် မေးခွန်း မမေးဘဲ</em> ဖယ်ရှားမည်ဖြစ်ပြီး သင့်စက်တွင် Ceno
-ကို လုံးဝ အသုံးမပြုဖူးသကဲ့သို့ ထိရောက်စွာ ချန်ခဲ့ပါမည်။</p>
-<p>သင်သည် လုပ်ဆောင်ချက်ကို မနှိပ်ပါက ၎င်းသည် စက္ကန့်အနည်းငယ်အကြာတွင်
-ပျောက်သွားပါမည်။</p>
-<blockquote>
-<p><strong>မှတ်ချက် -</strong> အထက်ပါနည်းလမ်းအတွက် သင့်စက်တွင် Ceno ကို လုပ်ဆောင်ထားရန်
-လိုအပ်သည်။ Ceno ကို ရပ်ထားချိန်တွင် တူညီသော အကျိုးသက်ရောက်မှု ရရှိရန် သင်သည်
-Android ၏ ယေဘုယျ <em>ဆက်တင်များ</em> စာမျက်နှာကို အသုံးပြုနိုင်ပြီး <em>အက်ပ်များ</em>
-အကြောင်းအရာအောက်တွင် Ceno ကို ရွေးချယ်ပြီးနောက် <em>ဒေတာရှင်းမည်</em> ကို ရွေးချယ်ပါ။</p>
-<p>ပိုမိုခက်ခဲသော ရွေးချယ်စရာအနေနှင့် သင်သည် အက်ပ်ကို လုံးဝ ဖျက်နိုင်သည်။</p>
-</blockquote>
-<blockquote>
-<p><strong>သတိပေးချက် -</strong> Android သည် ၎င်း၏ ဒေတာအပြင် အက်ပ်တစ်ခုကို အသုံးပြုထားကြောင်း
-အခြားသဲလွန်စများကို ဥပမာအားဖြင့် ၎င်း၏ စနစ်မှတ်တမ်းတွင်
-ဆက်လက်သိမ်းဆည်းထားနိုင်သည်။</p>
-</blockquote>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="public-and-personal-browsing-modes"><a class="header" href="#public-and-personal-browsing-modes">Public and Personal browsing modes</a></h1>
-<p>As described <a href="browser/../concepts/public-personal.html">in a previous section</a>, Ceno has
-two different modes of operation depending on whether you want to share the
-content that you browse with others (Public browsing) or not (Personal
-browsing).</p>
-<p>This setting applies <em>to each tab</em> that you open in the browser, i.e. you can
-have Public browsing tabs and Personal browsing tabs. Ceno's default whenever
-you start it or open a new tab (via the 'Public Tabs' option on the homepage or
-the Tabs icon next to the Clear icon in the address bar) is to use Public
-browsing. To open a new tab in Personal browsing mode, just choose <em>Personal
-Tabs</em> on the homepage or switch to the Personal mode icon in the Tabs menu.</p>
-<p>You can tell public tabs from personal ones because public tabs have a lighter
-(or white) tool bar:</p>
-<p><img src="browser/images/public-tab.png" alt="Figure: A Public browsing tab" /></p>
-<p>In contrast, private tabs have a darker tool bar:</p>
-<p><img src="browser/images/private-tab.png" alt="Figure: A Personal browsing tab" /></p>
-<p>Once you have loaded a page in a tab, the Ceno icon in the address bar will help
-you know how it actually retrieved the different elements of the content. We
-will cover this icon later on.</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="ceno-ဆကတငများ"><a class="header" href="#ceno-ဆကတငများ">Ceno ဆက်တင်များ</a></h1>
-<p>Ceno ဘရောက်ဇာသည် သင့်အား Ouinet သီးသန့် ဆက်တင်အချို့ကို ပြောင်းလဲပြီး
-ရိုးရှင်းသော နည်းလမ်းဖြင့် သင့်လက်ခံစက်အကြောင်း အချက်အလက် ရယူခွင့်ပြုသည်။
-ယင်းကို ပုံမှန်လည်ပတ်မှုအတွက် မလိုအပ်နိုင်သော်လည်း ကွန်ရက် ကြားဝင်
-နှောင့်ယှက်မှုကို တိုက်ဖျက်ရန် မတူညီသော မဟာဗျူဟာများကို စမ်းသပ်ရာတွင်
-ကူညီရန်နှင့် အက်ပ်နှင့် သက်ဆိုင်သော ပြဿနာများကို အစီရင်ခံရန် အသုံးဝင်နိုင်သည်။</p>
-<blockquote>
-<p><strong>နည်းပညာဆိုင်ရာ မှတ်ချက် -</strong> ဤရွေးချယ်စရာများကို <em>Ceno အဆက်</em> က ပံ့ပိုးသည်။
-၎င်းသည် Firefox အဆက်တစ်ခုဖြစ်ပြီး Ceno ၏ ကွဲလွဲသောအခြေအနေတွင် ထည့်သွင်းထားပြီး
-အကြောင်းအရာထိုးသွင်းခြင်းနှင့် အများသုံးရှာဖွေခြင်းတွင် အကြောင်းအရာ
-ပြန်လည်ရယူမှုတို့ကို ဖွင့်ခြင်း၊ မြင်သာသော အကြောင်းအရာ ရင်းမြစ်များကို
-အသုံးပြုသူအား အရိပ်အမြွက်ပေးခြင်းနှင့် Ouinet ၏ ဗားရှင်းအသစ်များကို
-အသိပေးခြင်း စသော သင့်တင့်သည့် Ouinet နှင့် ပေါင်းစပ်ခြင်းများကိုလည်း
-ကြပ်မတ်ပေးသည်။</p>
-</blockquote>
-<p>ဤလုပ်ဆောင်ချက်များကို အက်ပ်၏ အဓိက မီနူးရှိ <em>Ceno</em> ကို ရွေးချယ်ခြင်းဖြင့်
-ဝင်ရောက်သုံးစွဲနိုင်သော စာမျက်နှာတွင် ရရှိနိုင်သည်။ အက်ပ် စတင်ချိန်တွင်
-မီနူးအကြောင်းအရာ ပေါ်လာရန် စက္ကန့်အနည်းငယ် ကြာနိုင်ကြောင်း ကျေးဇူးပြု၍ သတိပြုပါ။
-စာမျက်နှာကို ဤသို့ တွေ့ရနိုင်သည် -</p>
-<p><img src="browser/images/settings.png" alt="Figure: The Ceno Settings page" /></p>
-<h2 id="ဝငရောကသုံးစွဲမှု-စကကိရိယာကို-ရွေးချယခြငး"><a class="header" href="#ဝငရောကသုံးစွဲမှု-စကကိရိယာကို-ရွေးချယခြငး">ဝင်ရောက်သုံးစွဲမှု စက်ကိရိယာကို ရွေးချယ်ခြင်း</a></h2>
-<p>The four checkboxes on the top of the page selectively enable or disable the
-different mechanisms or <em>sources</em> that Ceno as a Ouinet client uses to retrieve
-content while using either <a href="browser/public-personal.html">Public or Personal browsing</a>
-tabs. All boxes are enabled by default.</p>
-<ul>
-<li>
-<p><em>ဝက်ဘ်ဆိုက်မှ တိုက်ရိုက်</em> (သို့မဟုတ် <strong>မူလ ဝင်ရောက်သုံးစွဲမှု</strong>) သည် အောက်တွင်
-ဖွင့်ထားသော အခြားစက်ကိရိယာများကို မကြိုးစားခင် Ceno အား မူလဆာဗာထံ
-တိုက်ရိုက်ရောက်အောင် ကြိုးစားခွင့်ပြုသည်။</p>
-<p>ဤစက်ကိရိယာသည် သီးသန့်နှင့် အများသုံး ရှာဖွေခြင်းမုဒ် နှစ်ခုလုံးအတွက်
-အလုပ်လုပ်သည့်တိုင်အောင် ထိုသို့ ပြန်ထုတ်ထားသော အကြောင်းအရာကို အခြားသူများနှင့်
-မမျှဝေနိုင်ပါ။</p>
-<p>If getting most Web content is not particularly slow or expensive, this
-mechanism may be more than enough for most use cases. However, such direct
-connections may be tracked by your ISP or government. To some extent,
-disabling this option may avoid such connections and trivial tracking (but not
-completely, see <a href="browser/../concepts/risks.html">risks</a>).</p>
-<p>Also, when accessing a Web site over insecure HTTP (instead of the more secure
-HTTPS), a censor may intercept the connection and supply the user with a bogus
-site, a tampering which Ceno cannot detect by itself. In such cases, it may
-help to disable this option and thus always resort to other, safer Ceno
-mechanisms. Please check the section on <a href="browser/troubleshooting.html">troubleshooting</a>
-to learn more about this issue.</p>
-</li>
-<li>
-<p><em>Ceno ကွန်ရက် (သီးသန့်) မှတစ်ဆင့်</em> (သို့မဟုတ် <strong>ပရောက်စီ
-ဝင်ရောက်သုံးစွဲခွင့်</strong>) သည် မူလ ဆာဗာများသို့ ရောက်ရှိရန် Ceno အား
-ထိုးသွင်းဖိုင်များကို ပုံမှန် HTTP ပရောက်စီ ဆာဗာများအဖြစ် အသုံးပြုခွင့်ပေးသည်။</p>
-<p>ဤစက်ကိရိယာသည် သီးသန့် ရှာဖွေမှုမုဒ်တွင်သာ အလုပ်လုပ်သည်။</p>
-<p>HTTPS သုံး၍ အကြောင်းအရာကို ဝင်ရောက်သုံးစွဲချိန်တွင် မူလ ဆာဗာများသည်သာ
-အသွားအလာကို ကုဒ်ဖြေနိုင်ပါမည်။ ရိုးရိုး HTTP ကို အသုံးပြုချိန်တွင်
-ထိုးသွင်းဖိုင်သည်လည်း ကုဒ်ဖြေထားသော အသွားအလာကို မြင်နိုင်ပါမည် (သို့သော်
-၎င်းသည် ၎င်း၏ အကြောင်းအရာကို လက်မှတ်ထိုး သို့မဟုတ် အခြားသူများနှင့်
-မျှဝေနိုင်ဦးမည် မဟုတ်သေးပါ)။ ပေါင်းကူးများကဲ့သို့ အခြားပါဝင်ဆောင်ရွက်သူများသည်
-ကုဒ်ဖြေထားသော အသွားအလာကို လုံးဝမြင်ရမည် မဟုတ်ပါ။</p>
-</li>
-<li>
-<p><em>Ceno ကွန်ရက် (အများသုံး) မှတစ်ဆင့်</em> (သို့မဟုတ် <strong>ထိုးသွင်းဖိုင်
-ဝင်ရောက်သုံးစွဲခွင့်</strong>) သည် Ceno အား တောင်းဆိုမှုများမှ မည်သည့် သီးသန့်
-အချက်အလက်ကိုမဆို ထုတ်ယူပြီး ၎င်းတို့ကို ထိုးသွင်းဖိုင်တစ်ခုဆီသို့ ပေးပို့ခွင့်
-ပြုသည်။ ထိုးသွင်းဖိုင်သည် မူလ ဆာဗာထံမှ အကြောင်းအရာကို ရယူ၍ လက်မှတ်ထိုးပြီး
-Ceno ထံ ပြန်လည် ပေးပို့မည် ဖြစ်ကာ ၎င်းက ထိုအကြောင်းအရာကို စတင် တင်ပို့ပါမည်။</p>
-<p>ပေါင်းကူးများကဲ့သို့ အခြားပါဝင်ဆောင်ရွက်သူများသည် ကုဒ်ဖြေထားသော အသွားအလာကို
-မြင်ရမည် မဟုတ်ပါ။</p>
-<p>ဤစက်ကိရိယာသည် သီးသန့် ရှာဖွေမှုမုဒ်တွင်သာ အလုပ်လုပ်သည်။</p>
-</li>
-<li>
-<p><em>အခြား Ceno သုံးစွဲသူများက မျှဝေထားသည်</em> သည် Ceno အား အကြောင်းအရာကို
-<strong>ဖြန့်ချိထားသော ယာယီ သိမ်းဆည်းထားသည့် မှတ်ဉာဏ်</strong> မှ ပြန်ထုတ်ရန်
-ကြိုးစားခွင့်ပြုသည်။ ဆိုလိုသည်မှာ ၎င်းကို တင်ပို့သော အခြား Ceno နှင့် Ouinet
-လက်ခံစက်များထံမှ ဖြစ်သည်။</p>
-<p>ဤစက်ကိရိယာသည် သီးသန့် ရှာဖွေမှုမုဒ်တွင်သာ အလုပ်လုပ်သည်။</p>
-</li>
-</ul>
-<p>အများသုံး သို့မဟုတ် သီးသန့် ရှာဖွေမှုမုဒ်အတွက် ရရှိနိုင်သော စက်ကိရိယာအားလုံးကို
-ပိတ်ခြင်းသည် ၎င်းတို့ကို အသုံးမဝင် ဖြစ်စေလိမ့်မည်။ သင်သည် ထိုစီစဉ်သတ်မှတ်မှုကို
-တည်ဆောက်ပါက အောက်တွင် ဖော်ပြထားသည့်အတိုင်း သတိပေးချက်ကို ပြသပါမည်။</p>
-<p><img src="browser/images/settings-no-private.png" alt="Figure: Invalid settings for private browsing" /></p>
-<h2 id="သင-အကပအကြောငး"><a class="header" href="#သင-အကပအကြောငး">သင်၏ အက်ပ်အကြောင်း</a></h2>
-<p>ဤစာမျက်နှာသည် သင့် Ceno ဘရောက်ဇာ အက်ပ်နှင့် Ouinet လက်ခံစက်အကြောင်း
-အချက်အလက်အချို့ကိုလည်း သင့်အား ပေးသည် -</p>
-<ul>
-<li><em>စက်တွင်း ယာယီသိမ်းဆည်းထားသော မှတ်ဉာဏ် အရွယ်အစား</em> သည် သင့်စက်၏ စက်တွင်း
-ယာယီသိမ်းဆည်းထားသော မှတ်ဉာဏ်မှ တင်ပို့နေသော အကြောင်းအရာက သိုလှောင်မှုမည်မျှကို
-နေရာယူကြောင်း မှန်းခြေကို ပြသသည်။</li>
-<li><em>သင်မျှဝေထားသောအကြောင်းအရာ</em> သည် သင့်စက်မှ ကြေငြာထားသော အကြောင်းအရာများကို
-စစ်ဆေးခွင့်ပြုသည်။</li>
-<li><em>Ouinet သုံးစွဲသူ အခြေအနေ</em> အကယ်၍ <code>started</code>ကို ပြသပါက သင့် Ouinet သည်
-အောင်မြင်စွာ အလုပ်လုပ်နိုင်သည် ဟု အဓိပ္ပါယ်ရပါသည်။ သို့မဟုတ်လျှင်
-ချိတ်ဆက်မှုပြဿနာတစ်ခုခု သို့မဟုတ် စက်တွင်းပြဿနာတစ်ခုခု ဖြစ်နေနိုင်ပါသည်။
-ကျေးဇူးပြုပြီး ဤအချက်အလက်အား ပြန်လည်တင်ပြမှုအနေနဲ့ ထည့်သွင်းပေးပါ။</li>
-<li><em>ရောက်ရှိနိုင်မှု အခြေအနေ</em> သည် သင့်စက်က အခြားလက်ခံစက်များထံ အကြောင်းအရာကို
-ထိရောက်စွာ တင်ပို့ရန် မည်မျှဖြစ်နိုင်ခြေရှိကြောင်း ညွှန်ပြသည်။
-အစီရင်ခံစာများတွင်လည်း ထည့်ပါ။</li>
-<li><em>UPnP အခြေအနေ</em> သည် Ceno က သင့်ရောက်တာ သို့မဟုတ် ဝင်ရောက်သုံးစွဲမှု ပွိုင့်အား
-၎င်းထံလာသည့် အဝင်ချိတ်ဆက်မှုများကို ခွင့်ပြုရန် ပြောနိုင်ခဲ့ခြင်း ရှိ၊ မရှိကို
-ညွှန်ပြသည်။ အစီရင်ခံစာများတွင်လည်း ထည့်ပါ။</li>
-<li><em>စက်တွင်း UDP အဆုံးမှတ်များ</em> သည် Ceno က အခြားလက်ခံစက်များထံ လက်မှတ်ထိုးထားသော
-အကြောင်းအရာကို တင်ပို့ရန် အသုံးပြုသော သင့်စက်ပစ္စည်း၏အင်တာနက် လိပ်စာများ
-ဖြစ်သည်။ အက်ပ်ကို ကူညီစမ်းသပ်ရန်နှင့် ချို့ယွင်းချက် ပြုပြင်ရန်အတွက်
-၎င်းတို့ကို ပြသထားပြီး ယေဘုယျအားဖြင့် မထုတ်ဖော်သင့်ပါ။</li>
-<li><em>ပြင်ပ UDP အဆုံးမှတ်များ</em> သည် သင့်router က Ceno၏အသွားအလာတွင် ပြသပေးသော
-အင်တာနက် လိပ်စာများဖြစ်ကြသည်။ UPnP ကို ဖွင့်ထားသော router များတွင်သာ
-ရရှိနိုင်ပြီး အက်ပ်ကို ကူညီစမ်းသပ်ရန်နှင့် ချို့ယွင်းချက် ပြုပြင်ရန်အတွက်
-၎င်းတို့သည် အသုံးဝင်ပြီး ယေဘုယျအားဖြင့် မထုတ်ဖော်သင့်ပါ။</li>
-<li><em>ပြင်ပ UDP ဆုံမှတ်များ</em> သည် အင်တာနက် လိပ်စာများ ဖြစ်ကြသည်၊ ၎င်းတို့ကို
-သင့်ကွန်ရက်ပြင်ပမှ Ouinet သုံးစွဲသူများမှ သင့်စက်ပစ္စည်းနှင့်
-ဆက်သွယ်ချိတ်ဆက်လာသောအခါ ထို လိပ်စာကို မြင်နိုင်ပါတယ်။ ဆန်းစစ်ရှာဖွေရာတွင်လည်း
-သုံးပြီး ထုတ်ဖော်မပြောသင့်ပါ။</li>
-<li><em>အပို BitTorrent bootstrap များ</em> သည် သင်၏စက်ကို BitTorrent ကွန်ရက်တွင်းသို့
-ရောက်နိုင်အောင် ကူညီနိုင်သော ဆာဗာများဖြစ်ကြသည်။ မူလဆာဗာများသည်
-အလုပ်မလုပ်ခြင်းများ ဖြစ်နိုင်သည်။ အစီရင်ခံစာများတွင်လည်း
-ထည့်သွင်းဖော်ပြထားသည်။ သင်သည် စာလုံးခြားထားသော hosts စာရင်းများ(ရွေးချယ်စရာ
-ports များပါဝင်သော)ကို ပြန်လည်မွမ်းမံခြင်းများ ပြုလုပ်ရနိုင်သည် သို့မဟုတ်
-ကိုယ်တိုင် ထည့်သွင်းရနိုင်သည်၊ ထို့နောက် <em>သိမ်းမည်</em>ကို နှိပ်ပါ။
-အပြောင်းအလဲများသည် နောက်တစ်ကြိမ်တွင် Ouinet လက်ခံစက်ကို စတင်သောအခါ
-မြင်တွေ့ရမည်။</li>
-<li><em>Ceno ဘရောက်ဇာ</em> သည် သင်အသုံးပြုနေသော Ceno ဗားရှင်း အတိအကျကို ညွှန်ပြသည်။
-ပြန်လည်တင်ပြမှုတွင်လည်း ထည့်သွင်းပေးပါ။</li>
-<li><em>Ceno အဆက်</em> သည် Firefox ကို Ceno နှင့် ပေါင်းစည်းပေးသော အဆက်၏ ဗားရှင်းကို
-ပြသသည်။ အစီရင်ခံစာများတွင်လည်း ထည့်ပါ။</li>
-<li><em>Ouinet</em> သည် Ceno ကို ထောက်ခံသော Ouinet ၏ ဗားရှင်းကို ပြသသည်။
-အစီရင်ခံစာများတွင်လည်း ထည့်ပါ။</li>
-<li><em>Ouinet ပရိုတိုကော</em> သည် Ceno က အခြား Ouinet လက်ခံစက်များနှင့်
-ထိုးသွင်းဖိုင်များနှင့် ဆက်သွယ်ရန် အသုံးပြုသော ပရိုတိုကော၏ ဗားရှင်းနံပါတ်
-ဖြစ်သည်။ အစီရင်ခံစာများတွင်လည်း ထည့်ပါ။</li>
-</ul>
-<h2 id="စကတွငး-ယာယီသိမးဆညးထားသော-မှတဉာဏကို-ထုတပယခြငး"><a class="header" href="#စကတွငး-ယာယီသိမးဆညးထားသော-မှတဉာဏကို-ထုတပယခြငး">စက်တွင်း ယာယီသိမ်းဆည်းထားသော မှတ်ဉာဏ်ကို ထုတ်ပယ်ခြင်း</a></h2>
-<p>အထက်ပါ <em>စက်တွင်း ယာယီသိမ်းဆည်းထားသော မှတ်ဉာဏ် အရွယ်အစား</em> တန်ဖိုး၏ ဘေးတွင်
-သင့်စက်က Ouinet သုံး၍ မျှဝေထားသော အကြောင်းအရာအားလုံးကို တင်ပို့ခြင်း ရပ်ပြီး
-လွှတ်ချရန် ခွင့်ပြုသော ခလုတ်တစ်ခု ရှိသည်။ ယင်းသည် အနှစ်သက်ဆုံးများကဲ့သို့ အခြား
-Ceno ဆက်တင်များကို ထိန်းသိမ်းထားစဉ် သင့်အား သင့်စက်၏ သိုလှောင်ခန်းနေရာ အချို့ကို
-ရှင်းလင်းခွင့်ပြုသည်။</p>
-<p>သင်သည် Ceno ၏ ပုံမှန် ရှာဖွေခြင်းဆိုင်ရာ ယာယီသိမ်းဆည်းထားသော မှတ်ဉာဏ် (ဘရောက်ဇာက
-အသုံးပြုသော်လည်း အများနှင့် မမျှဝေထားသော မှတ်ဉာဏ်) သို့မဟုတ် ကွတ်ကီးများ၊
-ရှာဖွေမှုမှတ်တမ်း သို့မဟုတ် အနှစ်သက်ဆုံးများကဲ့သို့ အခြားအရာဝတ္ထုများကို
-ရှင်းလင်းလိုပါက သင်သည် အက်ပ်၏ အဓိက မီနူးရှိ <em>ဆက်တင်များ</em> ကို ရွေးချယ်ပြီးနောက်
-<em>သီးသန့်ဒေတာကို ရှင်းလင်းရန်</em> ကို ရွေးချယ်သင့်သည်။ မည်သည့် အရာဝတ္ထုများကို
-သင်ရှင်းလင်းလိုကြောင်း သင့်အား မေးပါမည်။</p>
-<p>To drop everything at the same time (especially if you are in a hurry), please
-learn how to use the "panic button" feature described in <a href="browser/install.html">Installing
-Ceno</a>.</p>
-<h2 id="စာရငး-မကဆေချများကို-စုဆောငးခြငး"><a class="header" href="#စာရငး-မကဆေချများကို-စုဆောငးခြငး">စာရင်း မက်ဆေ့ချ်များကို စုဆောင်းခြင်း</a></h2>
-<p>စာမျက်နှာ၏ အောက်ခြေတွင် သင့်အား Ouinet ၏ စက်တွင်း မက်ဆေ့ချ်အားလုံးကို
-စုဆောင်းပြီး ၎င်းတို့ကို ဖိုင်တစ်ခုထဲသို့ ဒေါင်းလုဒ်လုပ်ခွင့်ပြုသည့်
-<em>စာရင်းဖိုင် ဖွင့်မည်</em> အကွက်တစ်ခု ရှိသည်။ ယင်းကို Ceno တွင် ပြဿနာတစ်ခုခုကို
-အမျိုးအမည်သတ်မှတ်သည့် အချိန်တွင်သာ အသုံးပြုသင့်သည်။ အောက်ပါ အဆင့်များကိုသာ
-လိုက်နာပါ-</p>
-<ol>
-<li><em>Ceno ဆက်တင်များ</em> စာမျက်နှာတွင် <em>စာရင်းဖိုင် ဖွင့်မည်</em> ကို အမှန်ခြစ်ပါ။</li>
-<li>ရှာဖွေမှုသို့ ပြန်သွားပြီး ပြဿနာဖြစ်စေသော အပြုအမူကို လှုံ့ဆော်သည့် မည်သည့်
-လုပ်ဆောင်ချက်များကိုမဆို ပြုလုပ်ပါ။</li>
-<li><em>Ceno ဆက်တင်များ</em> စာမျက်နှာသို့ ပြန်သွားပြီး <em>စာရင်းဖိုင်ဖွင့်မည်</em>
-အကွက်ဘေးရှိ <em>ဒေါင်းလုဒ်လုပ်ရန်</em> လင့်ကို နှိပ်ပါ။ နောက်ပိုင်းတွင်
-အသုံးပြုရန်အတွက် ဖိုင်ကို သိမ်းဆည်းပါ။ ဤနေရာတွင် Android သည် သိုလှောင်ထားသော
-မီဒီယာသို့ Ceno အား ဝင်ရောက်သုံးစွဲခွင့် ပြု၊ မပြုကိုသင့်အား မေးနိုင်သည်-
-ဖိုင်ကို သိမ်းဆည်းနိုင်ရန် ၎င်းကို လိုအပ်ပါသည်။</li>
-<li>စာရင်းများ အလွန်အကျွံ ကြီးမားလာခြင်းကို ရှောင်ရှားရန် <em>စာရင်းဖိုင်ကို
-ဖွင့်မည်</em> ကို အမှန်ခြစ်ဖြုတ်ပါ။</li>
-</ol>
-<p>ယခု သင်သည် ပြဿနာ အစီရင်ခံစာတစ်ခုကို မှတ်တမ်းတင်ရန် သိမ်းဆည်းထားသော
-စာရင်းဖိုင်ကို အသုံးပြုနိုင်သော်လည်း ၎င်းတွင် သင်၏ ရှာဖွေမှုအကြောင်း
-ထိလွယ်ရှလွယ်သော အချက်အလက် ပါဝင်နိုင်သောကြောင့် ၎င်းကို အများသိအောင်
-ပြုလုပ်ခြင်းကို ကြိုးစားရှောင်ရှားပါ။</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="ဘရောကဇာ-စမးသပခြငး"><a class="header" href="#ဘရောကဇာ-စမးသပခြငး">ဘရောက်ဇာ စမ်းသပ်ခြင်း</a></h1>
-<p>Now that you know how to <a href="browser/install.html">install</a> and <a href="browser/settings.html">configure</a>
-Ceno, let us follow some steps to test whether different Ouinet-specific
-features work. This will involve selectively enabling and disabling different
-access mechanisms. Keep in mind however that in day-to-day usage of Ceno, you
-will seldom need to change the default settings at all.</p>
-<p>အောက်ပါ စမ်းသပ်မှုအားလုံးကို ပြီးမြောက်ရန် သင်သည် Wi-Fi ကွန်ရက် တစ်ခုတည်းသို့
-ချိတ်ဆက်ထားသော စက် အနည်းဆုံး နှစ်လုံး လိုအပ်မည်ဖြစ်ပြီး တတိယစက်ကို လုံးဝ
-ကွဲပြားသော ကွန်ရက်သို့ ချိတ်ဆက်ထားရမည်။</p>
-<p>All of the tests will be performed using <a href="browser/public-private.html">public browsing</a>.
-If something does not work as expected, please be patient and check the section
-on <a href="browser/troubleshooting.html">troubleshooting</a>. Specifically, if the browser gets
-stuck for more than a couple of minutes while loading a page, you may hit stop
-and reload it (although this may alter results slightly).</p>
-<h2 id="ထိုးသွငးဖိုင-ဝငရောကသုံးစွဲခြငး"><a class="header" href="#ထိုးသွငးဖိုင-ဝငရောကသုံးစွဲခြငး">ထိုးသွင်းဖိုင် ဝင်ရောက်သုံးစွဲခြင်း</a></h2>
-<p>ပထမဦးစွာ သင့် Ceno ဘရောက်ဇာသည် ထိုးသွင်းဖိုင်ကို ရောက်နိုင်ခြင်း ရှိ၊ မရှိ
-စစ်ဆေးကြည့်ရအောင်။ ယင်းသည် မပြောပလောက်ဟု ထင်ရသော်လည်း သင့်လက်ခံစက်သည်
-လုပ်ငန်းစဉ်တွင် Ouinet လုပ်ဆောင်ချက် အနည်းငယ်ကို ကျင့်သုံးပြီး ဖြစ်နေပါမည် -
-ထိုးသွင်းဖိုင် အုပ်စုတွင် ထိုးသွင်းဖိုင် လိပ်စာကို ရှာကြည့်ခြင်း၊ ၎င်းကို
-တိုက်ရိုက် ဆက်သွယ်ရန် ကြိုးစားခြင်းနှင့် ၎င်းကို သင်၏ ဝင်ရောက် သုံးစွဲခွင့်ပေးသူ
-သို့မဟုတ် နိုင်ငံက ပိတ်ဆို့ထားပါက ပေါင်းကူး အုပ်စုတွင် ရှာကြည့်ပြီး
-ထိုးသွင်းဖိုင်ကို အခြား Ouinet လက်ခံစက် တစ်ခုခုမှတစ်ဆင့် ဆက်သွယ်ရန်
-ကြိုးစားခြင်း။</p>
-<p>ပထမစက်တွင် အောက်ပါ အဆင့်များကို လုပ်ဆောင်ပါ -</p>
-<ol>
-<li>ပထမဆုံးအနေဖြင့် Ceno ကို ထည့်သွင်းပါ၊ စတင်ပါ၊ ၎င်း၏ ပင်မစာမျက်နှာ
-ပေါ်လာပါလိမ့်မယ်။</li>
-<li><em>Ceno ဆက်တင်များ</em> စာမျက်နှာကို ဖွင့်ရန် အက်ပ်၏ အဓိက မီနူးကို ဖွင့်ပြီး
-<em>ဆက်တင်များ</em> ကို ရွေးချယ်ပါ။ ကျွန်ုပ်တို့သည် ထိုးသွင်းဖိုင်
-ဝင်ရောက်သုံးစွဲခွင့်ကိုသာ စမ်းသပ်လိုသောကြောင့် ဝင်ရောက်သုံးစွဲခွင့်
-စက်ကိရိယာများအတွက် <em>Ceno ကွန်ရက်မှတစ်ဆင့် (အများသုံး)</em> မှလွဲ၍ အကွက်အားလုံးကို
-အမှန်ခြစ်ဖြုတ်ပါ။</li>
-<li>Ceno ၏ ပင်မ စာမျက်နှာသို့ ပြန်သွားပါ။ အကြံပြုထားသော ဝက်ဘ်ဆိုက်များမှ တစ်ခုကို
-ရွေးချယ်ပါ သို့မဟုတ် ဝင်းဒိုး၏ ထိပ်ဘက်ရှိ လိပ်စာဘားတွင် အခြားဆိုက်တစ်ခုခု၏
-URL ကို ရိုက်ထည့်ပါ။ သင့်အတွက် ပိတ်ဆို့ထားလေ့ရှိသော ဆိုက်တစ်ခုအကြောင်း သိပါက
-ရှေ့ဆက်ပြီး ၎င်းကို ရိုက်ထည့်ပါ။</li>
-<li>ရွေးချယ်ထားသော ဆိုက်သည် နောက်ဆုံးတွင် ပေါ်လာပါမည်။</li>
-</ol>
-<p><strong>မှတ်ချက်</strong> အကယ်၍သင်သည် စိတ်ချရသော တရားဝင် စာမျက်နှာတစ်ခုအစား
-စာမျက်နှာအတုတစ်ခုကို ရောက်ရှိသွားသောအခါ ဆိုက်၏ URLအစတွင် <code>https://</code>ကို
-(<code>http://</code>အစား) လိပ်စာဘားတွင် ရိုက်ထည့်ပြီး ပြန်စမ်းကြည့်ပါ။</p>
-<p>ဆိုက် အမှန်တကယ် တင်ပါက သင့်စက်သည် ထိုးသွင်းဖိုင်ကို ရောက်ရှိနိုင်သဖြင့် သင်
-ဝမ်းသာနိုင်ပါပြီ။ သင်သည် အုပ်စုများကို မေးမြန်းပြီး အခြားလက်ခံစက်များကို
-ဆက်သွယ်နိုင်သောကြောင့် သင်သည် ဖြန့်ချိထားသော ယာယီ သိမ်းဆည်းထားသည့် မှတ်ဉာဏ်မှ
-အကြောင်းအရာကို ပြန်ထုတ်နိုင်ရန်လည်း ဖြစ်နိုင်ခြေရှိသည်။</p>
-<p>စကားမစပ် သင်သည် လိပ်စာဘားရှိ Ceno အိုင်ကွန်ကို နှိပ်ပါက ၎င်းသည် အောက်ပါ
-သတိပေးချက်ကဲ့သို့ သတိပေးချက်တစ်ခုကို ပွင့်စေပြီး ကွဲပြားသော
-ဝင်ရောက်သုံးစွဲခွင့်ဆိုင်ရာ စက်ကိရိယာများမှ တစ်ခုစီကို အသုံးပြု၍ ဆိုက်မှ
-အကြောင်းအရာ မည်မျှကို ပြန်ထုတ်ခဲ့ကြောင်း ပြသပါမည်။ အခြားစက်ကိရိယာများကို
-ပိတ်ထားသောကြောင့် <em>Ceno ကွန်ရက်မှတစ်ဆင့် (အများသုံး)</em> တွင်သာ သုညမဟုတ်သော တန်ဖိုး
-ရှိသင့်သည်။</p>
-<p><img src="browser/images/sources-inject.png" alt="Figure: Sources used when testing injection" /></p>
-<p>ဆန့်ကျင်ဘက်အနေဖြင့် သင်သည် ပုံသေ ဆက်တင်များဖြင့် သီးသန့် ရှာဖွေမှုကို
-အသုံးပြုခဲ့ပါက သင်သည် အောက်ပါ သတိပေးချက်ကဲ့သို့ သတိပေးချက်တစ်ခုကို
-မြင်ခဲ့နိုင်ပြီး <em>ဝက်ဘ်ဆိုက်မှ တိုက်ရိုက်</em> သို့မဟုတ် <em>Ceno ကွန်ရက်မှတစ်ဆင့်
-(သီးသန့်)</em> တွင် သုည မဟုတ်သော အရေအတွက်များ ရှိပါသည်။</p>
-<p><img src="browser/images/sources-proxy.png" alt="Figure: Sources used with private browsing" /></p>
-<h2 id="နီးကပသော-သုံးစွဲသူများထံမှ-အကြောငးအရာ-ရယူခြငး"><a class="header" href="#နီးကပသော-သုံးစွဲသူများထံမှ-အကြောငးအရာ-ရယူခြငး">နီးကပ်သော သုံးစွဲသူများထံမှ အကြောင်းအရာ ရယူခြင်း</a></h2>
-<p>သင်၏ ပထမစက်က ထိုးသွင်းဖိုင်တစ်ခုထံမှ အကြောင်းအရာအချို့ကို ရယူနိုင်ခဲ့သည့်အတွက်
-ဖြန့်ချိထားသော ယာယီသိမ်းဆည်းထားသည့် မှတ်ဉာဏ် သုံး၍ ၎င်းကို သင့်စက်က
-အခြားစက်နှင့် မျှဝေနိုင်ခြင်း ရှိ၊ မရှိ စမ်းသပ်ကြည့်ရအောင်။ အရိုးရှင်းဆုံး
-နည်းလမ်းမှာ Ceno ၏ စက်အချင်းချင်း ပံ့ပိုးမှုကို အသုံးပြု၍ လက်မှတ်ထိုးထားသော
-အကြောင်းအရာကို ရယူပြီး မှန်ကန်ကြောင်း စစ်ဆေးခြင်း အလုပ်လုပ်၊ မလုပ် စစ်ဆေးရန်
-ဖြစ်သည်။</p>
-<p>အထက်ပါ စမ်းသပ်မှုကို ပထမစက်တွင် ပြီးစီးပြီးနောက် Ceno ကို ၎င်းတွင်
-လုပ်ဆောင်ထားပါ (သတိပေးအချက်ပြမှုဘားတွင် Ceno အိုင်ကွန် ပေါ်နေရပါမည်)။ ထို့နောက်
-ဒုတိယစက်ကို ယူပြီး (သင်သည် စမ်းသပ်မှု ပြုလုပ်ရန် သူငယ်ချင်းတစ်ယောက်ကို
-ဖိတ်နိုင်သည်) ၎င်းကို တူညီသော Wi-Fi ကွန်ရက်သို့ ချိတ်ဆက်ပါ။ ထို့နောက် ထိုစက်တွင်
-အောက်ပါအဆင့်များကို လုပ်ဆောင်ပါ -</p>
-<ol>
-<li>လိုအပ်ပါက Ceno ကို ထည့်သွင်းပါ၊ ၎င်းကို စတင်ပြီး အထက်ပါအတိုင်း Ceno ၏ ပင်မ
-စာမျက်နှာသို့ ဆက်သွားပါ။</li>
-<li><em>Ceno ဆက်တင်များ</em> စာမျက်နှာကို အထက်ပါအတိုင်း ဖွင့်ပါ။ ကျွန်ုပ်တို့သည်
-ဖြန့်ချိထားသော ယာယီသိမ်းဆည်းထားသည့် မှတ်ဉာဏ် ဝင်ရောက်သုံးစွဲခွင့်ကိုသာ
-စမ်းသပ်လိုသောကြောင့် <em>အခြား Ceno သုံးစွဲသူများက မျှဝေထားသည်</em> မှလွဲ၍
-ဝင်ရောက်သုံးစွဲခွင့် စက်ကိရိယာများအတွက် အကွက်အားလုံးကို အမှန်ခြစ်ဖြုတ်ပါ။</li>
-<li>Ceno ၏ ပင်မ စာမျက်နှာသို့ ပြန်သွားပြီး သင် အထက်တွင် ပြုလုပ်ခဲ့သည့်အတိုင်း
-တူညီသော အပြုအမူဖြင့် တူညီသော ဆိုက်သို့ ဝင်ကြည့်ပါ (ဆိုလိုသည်မှာ အကြံပြုထားသော
-ဝက်ဘ်ဆိုက်များမှတစ်ခုကို ရွေးချယ်ခြင်းဖြင့် ဖြစ်စေ၊ လိပ်စာဘားတွင် ၎င်း၏ URL
-ကို ရိုက်ထည့်ခြင်းဖြင့် ဖြစ်စေ)။</li>
-<li>ရွေးချယ်ထားသော ဆိုက်သည် နောက်ဆုံးတွင် ပေါ်လာပါမည်။</li>
-</ol>
-<p>အကယ်၍ အလုပ်မလုပ်ပါက သင့် Wi-Fi ကွန်ရက်က စက်များကြားထဲက တိုက်ရိုက်ချိတ်ဆက်မှုကို
-ပိတ်ထားခြင်း ဖြစ်နိုင်ပါသည်။ ဤ လက်ခံစက် သီးသန့်ဖြစ်မှုသည် ပန်းခြံ၊ ဘား၊
-သို့မဟုတ် ဟိုတယ် စသော အများသုံးကွန်ရက်များတွင် ဖြစ်နိုင်ပါသည်။ ကျေးဇူးပြုပြီး
-မတူညီသော ကွန်ရက်တစ်ခုခုကို အသုံးပြုပြီး ထပ်မံ ကြိုးစားကြည့်ပါ။</p>
-<p>၎င်းသည် အလုပ်လုပ်ပါက စက်နှစ်ခုလုံးသည် ထိုအကြောင်းအရာကို အခြားလက်ခံစက်များသို့
-ပို့ဆောင်နိုင်သည်ဟု ဆိုလိုသည်။ Ceno လိပ်စာဘား အိုင်ကွန်ကို နှိပ်လျှင် အောက်ပါ
-အသိပေးချက်ကဲ့သို့ အသိပေးချက်တစ်ခု ပေါ်လာမည်ဖြစ်ပြီး <em>အခြား Ceno သုံးစွဲသူများက
-မျှဝေထားသည်</em> တွင်သာ သုည မဟုတ်သော တန်ဖိုး ရှိသည်။</p>
-<p><img src="browser/images/sources-dcache.png" alt="Figure: Sources used when testing distributed cache retrieval" /></p>
-<p>နောက်ဆုံးတွင် <em>သင်မျှဝေထားသည်</em> ဆိုသော ရေတွက်ပြသည့် ကိရိယာတစ်ခုရှိနေသည်ကို
-သတိပြုမိပါလိမ့်မည်။ ဤအရာသည် <em>per se</em> နှင့်တူညီသော နည်းပညာတစ်ခုဖြစ်ပါသည်။
-ဤနေရာတွင် ရေတွက်သောအရာများသည် ဖြန့်ချိထားသော ယာယီမှတ်ဉာဏ်၏ တစ်စိတ်တစ်ပိုင်း
-ဖြစ်ပါသည်။ သို့သော် ၎င်းတို့ကို သင်၏စက်တွင် သိုလှောင်ထားပြီးဖြစ်သဖြင့် Ceno သည်
-၎င်းတို့အား ကွန်ရက်မှ ပြန်လည်ရယူရန် မလိုအပ်ပါ။</p>
-<h2 id="ဝေးလံသော-သုံးစွဲသူများထံမှ-အကြောငးအရာ-ရယူခြငး"><a class="header" href="#ဝေးလံသော-သုံးစွဲသူများထံမှ-အကြောငးအရာ-ရယူခြငး">ဝေးလံသော သုံးစွဲသူများထံမှ အကြောင်းအရာ ရယူခြင်း</a></h2>
-<p>ကျွန်ုပ်တို့သည် ဖြန့်ချိထားသော ယာယီသိမ်းဆည်းထားသည့် မှတ်ဉာဏ်ကို အသေးစား
-စမ်းသပ်မှု ပြုလုပ်ပြီးပါပြီ။ ယခု အင်တာနက် သုံး၍ ၎င်းမည်သို့ အလုပ်လုပ်ကြောင်း
-စမ်းသပ်ကြည့်ရအောင်။</p>
-<p>အထက်ပါ စမ်းသပ်မှုကို အောင်မြင်စွာ ပြီးဆုံးသွားပါက ပထမစက်တွင် Ceno ကို
-ယခင်စမ်းသပ်မှုအတိုင်း အလုပ်လုပ်ထားလိုက်ပါ၊ ဒုတိယစက်တွင် Ceno လုပ်ဆောင်ချက်ကို
-ရပ်တန့်လိုက်ပါ(၎င်း၏ အသိပေးချက်တွင် "ရပ်ရန်နှိပ်ပါ" ကို နှိပ်ပါ)။</p>
-<p>ဤအကြိမ်တွင် သင်သည် တတိယစက်ကို လိုအပ်မည် ဖြစ်သော်လည်း ၎င်းကို ကွဲပြားသော Wi-Fi
-ကွန်ရက်သို့ ချိဆက်ထားရမည် (အခြားသူငယ်ချင်းတစ်ဦးက အိမ်မှ ကူညီကောင်း
-ကူညီနိုင်ပါမည်)။ ထိုစက်အတွက် လုပ်ဆောင်ရမည့် အဆင့်များမှာ ယခင် စမ်းသပ်မှုမှ
-အဆင့်များနှင့် လုံးဝ တူညီပါသည်။</p>
-<p>တတိယစက်သည် စမ်းသပ်မှုအတွက် အသုံးပြုသော ဆိုက်ကို တင်နိုင်ပါက သင်သည်
-အသင့်ဖြစ်နေပါပြီ။ ပထမစက်သည် အခြားစက်များသို့ အကြောင်းအရာ တင်ပို့နိုင်ပြီး
-၎င်းသည် ပေါင်းကူးအဖြစ်လည်း လုပ်ဆောင်နိုင်ခြေများသည်။</p>
-<p>ဂုဏ်ယူပါတယ်။</p>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="အခြား-ceno-သုံးစွဲသူများအား-ဝဘရှာဖွေရာတွင-ကူညီခြငး"><a class="header" href="#အခြား-ceno-သုံးစွဲသူများအား-ဝဘရှာဖွေရာတွင-ကူညီခြငး">အခြား Ceno သုံးစွဲသူများအား ဝဘ်ရှာဖွေရာတွင် ကူညီခြင်း</a></h1>
-<p>အချင်းချင်း ချိတ်ဆက်သည့် ကွန်ရက်ကို ၎င်းနှင့် ချိတ်ဆက်ထားသည့် ဆက်သွယ်ရေးပွိုင့်
-တစ်ခုစီဖြင့် တည်ဆောက်ထားသည် (ဟုတ်ပါသည်၊ သင်လည်း ပါဝင်သည်ဟု ဆိုလိုပါသည်)။
-ဆက်သွယ်ရေးပွိုင့် များလေလေ ကွန်ရက် ပိုမိုအားကောင်းပြီး ပိုမိုဘက်စုံ
-အသုံးပြုနိုင်လေလေ ဖြစ်သည်။ သင်သည် အင်တာနက်ကို ဆင်ဆာမလုပ်သော (သို့မဟုတ်
-အချို့ကဲ့သို့ အလွန်အကျွံ ဆင်ဆာမလုပ်သော) နိုင်ငံတစ်ခုမှနေ၍ Ceno ဘရောက်ဇာကို
-လုပ်ဆောင်နေလျှင် <strong>ပေါင်းကူး</strong> ဆက်သွယ်ရေးပွိုင့် ဖြစ်လာခြင်းဖြင့် အခြား Ceno
-သုံးစွဲသူများကို ကူညီနေသည်ဟု စဥ်းစားကြည့်ပါ။ ထို့နောက် သင်သည် အလွန်အကျွံ
-ဆင်ဆာလုပ်ထားသော နိုင်ငံများရှိ လက်ခံစက်များနှင့် Ceno ထိုးသွင်းဖိုင်များအကြား
-အသွားအလာကို လမ်းကြောင်းအတိုင်း စတင်ပို့ပေးပါမည်။ သင်သည် ၎င်းတို့၏ အသွားအလာကို
-မြင်နိုင်မည် မဟုတ်သကဲ့သို့ (၎င်းကို ကုဒ်ဖြင့် ပြောင်းလဲထားသော လိုင်းကို ဖြတ်၍
-ပေးပို့ပါမည်) ဤအသွားအလာသည် သင့်စက်တွင် လုံးဝ ကျန်ခဲ့မည် မဟုတ်ပါ။</p>
-<blockquote>
-<p><strong>Note:</strong> The configuration described in this section may also help your
-device to effectively seed content to others on the distributed cache, so
-please consider applying it as well when using Ceno in a censoring country
-(but keep in mind the <a href="browser/../concepts/risks.html">risks</a> of serving such content to
-others).</p>
-</blockquote>
-<h2 id="ceno-ပေါငးကူး-ဖြစလာနညး"><a class="header" href="#ceno-ပေါငးကူး-ဖြစလာနညး">Ceno ပေါင်းကူး ဖြစ်လာနည်း</a></h2>
-<p>ဤအသုံးချမှုကို Ceno ဘရောက်ဇာထံသို့ ထည့်သွင်းတည်ဆောက်ပြီးသား ဖြစ်သည်။ သင့်စက်ကို
-UPnP ဖွင့်ထားသော သို့မဟုတ် Ceno အတွက် သိသာသည့် ပေါ့တ် တစ်ဆင့်ပို့ခြင်းကို
-စီစဉ်သတ်မှတ်ထားသော Wi-Fi ကွန်ရက်သို့ ချိတ်ဆက်ထားရန် လိုအပ်ပါမည်။ နောက်ထပ်
-အသေးစိတ် အချက်အလက်များအတွက် လာမည့် အပိုင်းများကို ကြည့်ပါ။</p>
-<p>သို့သော် Android သည် ၎င်းကို တက်ကြွစွာ အသုံးပြုနေချိန်တွင်သာ သင့်လျော်သော
-ပေါင်းကူးအဖြစ် လုပ်ဆောင်ရန် မိုဘိုင်းစက်ကို ခွင့်ပြုမည်ဖြစ်ကြောင်း ကျေးဇူးပြု၍
-သတိပြုပါ။ ထိုသို့မဟုတ်ပါက ပါ‌ဝါချွေတာရေး လုပ်ဆောင်ချက်များသည် Ceno ၏
-လည်ပတ်မှုကို ထိခိုက်စေမည် ဖြစ်သည်။</p>
-<blockquote>
-<p><strong>Technical note:</strong> This is mainly due to Android's <a href="https://developer.android.com/training/monitoring-device-state/doze-standby" title="Android Developers – Optimize for Doze and App Standby">Doze mode</a> slowing down
-the operation of the native Ouinet library. Unfortunately, disabling battery
-optimization for Ceno does not seem to exclude Ouinet from it. Your particular
-device may also include its own power-saving features which may interfere with
-Ceno; please check <a href="https://dontkillmyapp.com/">Don't kill my app!</a> for your device's brand.</p>
-</blockquote>
-<p>ထို့ကြောင့် သင်သည် Ceno ကို အဆုံးတိုင် အမြဲရောက်ရှိနိုင်သော ပေါင်းကူးအဖြစ်
-လုပ်ဆောင်ရန် ရည်ရွယ်ပါက မှန်ကန်စွာ စီစဉ်သတ်မှတ်ထားသော Wi-Fi ကွန်ရက်အပြင် သင်သည်
-အောက်ပါတို့ကို လိုအပ်ပါမည် -</p>
-<ol>
-<li>
-<p>သင့်စက်ကို အချိန်ပြည့် အားသွင်းထားရန်။</p>
-</li>
-<li>
-<p>စက်၏ မျက်နှာပြင်ကို အချိန်ပြည့် ဖွင့်ထားရန်။</p>
-<p>ဤသို့ပြုလုပ်ရာတွင် ပါဝါသုံးစွဲမှုများခြင်းနှင့် မလိုလားအပ်သော အမြဲတမ်း
-မီးလင်းနေခြင်း မရှိမည့် အဆင်ပြေသည့် နည်းလမ်းတစ်ခုမှာ Android ၏ မျက်နှာပြင်
-ရုပ်ပုံပြောင်းလဲပြသမှုကို အသုံးပြုခြင်း ဖြစ်သည် - ၎င်းကို <em>ဆက်တင်များ /
-ပြသမှု / မျက်နှာပြင် ရုပ်ပုံပြောင်းလဲပြသမှု</em> (သို့မဟုတ်
-အချို့ဗားရှင်းများတွင် <em>စိတ်ကူးယဉ်မှု</em>) အောက်တွင် ဖွင့်ပါ၊ <em>နာရီ</em> ဝစ်ဂျက်ကို
-ရွေးချယ်ပါ၊ မီနူးရှိ <em>မျက်နှာပြင် ရုပ်ပုံပြောင်းလဲပြသမှု စတင်ချိန်</em> ကို
-ရွေးချယ်ပြီး <em>အားသွင်းစဉ်</em> သို့မဟုတ် <em>နှစ်ခုမှတစ်ခု</em> ကို ရွေးချယ်ပါ။ စက်ကို
-အသုံးပြုမနေသည့်အချိန်တွင် အနက်ရောင် နောက်ခံ၌ အလွန်အရောင်မှိန်သော နာရီ
-ပေါ်လာပါမည်။</p>
-<p>စက်ကို လော့ခ်ချရန် ပါဝါခလုတ်ကို အသုံးပြုခြင်းသည် မျက်နှာပြင်ကို
-ပိတ်စေမည်ဖြစ်သောကြောင့် ယင်းသို့ မပြုလုပ်သင့်ကြောင်း သတိပြုပါ။ ထိုအစား
-မျက်နှာပြင် ဖွင့်ထားလျက်နှင့် စက်ကို ၎င်းကိုယ်တိုင် လော့ခ်ချရန်သာ
-စောင့်ဆိုင်းပါ။</p>
-</li>
-</ol>
-<p>ထိုပြင်ဆင်မှုသည် သင့်အတွက် ရွေးချယ်စရာတစ်ခုမဟုတ်ပါက လက်မလျှော့ပါနဲ့ဦး။ အကယ်၍
-သင့်မှာ ကွန်ပျူတာနှင့် အင်တာနက်ချိတ်ဆက်မှု ကောင်းမွန်စွာလည်းရှိနေပါက
-ကျေးဇူးပြုပြီး ဆက်လက်ဖတ်ရှုပေးပါ။</p>
+<h3 id="injectors"><a class="header" href="#injectors">Injectors</a></h3>
+<p><strong>Injectors</strong> are secure servers responsible for injecting the commonly accessed
+content into the Ceno network, and for verifying its authenticity and signing
+it. The injectors are placed in strategic locations, so that they remain
+reachable by the users in restricted areas and can also reach the origin
+websites . They help retrieve the desired content either from the origin website
+or from the Ceno network and return it to the user who requested it. They are
+run by eQualitie.</p>
+<p>As a user, you don't need to do anything to connect to an <strong>Injector</strong> - the app
+does it automatically when you request a website that it cannot access directly.</p>
+<h3 id="bridges"><a class="header" href="#bridges">Bridges</a></h3>
+<p><strong>Bridges</strong> are devices belonging to individual Ceno users based in locations
+that enjoy relatively unrestrictied connectivity and internet access. They are
+reachable by Ceno users who are unable to reach the websites directly. These
+devices are responsible for forwarding encrypted user requests to <strong>Injectors</strong>
+and the encrypted responses back to the users.</p>
+<p>Bridges are not able to read the requests and responses they forward.</p>
+<p>Every Ceno user can configure their device to become a bridge.</p>
+<p>The <strong>Enable bridge mode</strong> toggle can be reached either from the link on the
+home page, or from the vertical three dot menu, to the right of the address bar.</p>
+<img src="./images/bridge_mode.png" alt="Bridge mode" width="70%"/>
+<p>In the Settings page, moving the <strong>Enable bridge mode</strong> toggle to ON position</p>
+<img src="./images/bridge_toggle_off.png" alt="Bridge mode toggle is off" width="400"/>
+<img src="./images/bridge_toggle_on.png" alt="Bridge mode toggle is on" width="400"/>
+<p>will make your device a bridge for other Ceno users whose access to internet is
+more restricted. This requires Ceno services to restart</p>
+<img src="./images/bridge_starting.png" alt="Bridge mode is starting" width="400"/>
+<p>Once the bridge mode is successfully established, you will receive a
+confirmation message.</p>
+<img src="./images/bridge_success.png" alt="Bridge success" width="400"/>
+<p>From this point on, the Ceno app on your device can act as a bridge to help Ceno
+users in restricted areas reach desired content.</p>
+<p>However, bridging also requires specific settings of your router or network,
+which are described in the <a href="./bridge-configuration.html">Bridge Configuration</a>
+section.</p>
+<h3 id="ceno-cache"><a class="header" href="#ceno-cache">Ceno cache</a></h3>
+<p>And last but not least, the <strong>Ceno cache</strong>. All Ceno users are members of this
+peer-to-peer network, and they store the website content retrieved via Ceno
+public network and share it between each other.</p>
+<p>In <strong>Public browsing mode</strong>, Ceno retrieves the requested content using any of
+these communication channels. It strips down all private data (like passwords
+and cookies) from Web traffic to ensure that it does not leak it to other users.</p>
+<h2 id="public-browsing---when-to-use-it"><a class="header" href="#public-browsing---when-to-use-it">Public browsing - when to use it</a></h2>
+<p>This option is conceived for you, the user, to access most things that don’t
+require you to log in or input any personal data. You can use it to browse,
+listen to podcasts, watch the news, read blogs or articles, follow sports,
+science, music, events or other content. In P<strong>ublic browsing mode</strong>, Ceno may
+try to access the requested content <strong>directly from the websites</strong>, from <strong>Ceno
+public network</strong> (<strong>injectors</strong> and <strong>bridges</strong>) or from other Ceno users
+(<strong>distributed cache</strong>).</p>
+<p><em>Please note that some content which is not considered safe for sharing will
+never be injected, no matter how many people retrieve it using public browsing.
+This includes content marked as private by the origin server, content that
+requires authentication, and some traffic exchanged by certain dynamic web
+applications.</em></p>
+<h2 id="website-sources-in-public-browsing-mode"><a class="header" href="#website-sources-in-public-browsing-mode">Website sources in Public browsing mode</a></h2>
+<p>When you want to access a website using Ceno Public browsing mode, the app may
+try to retrieve the content either from the website directly or via Ceno public
+network. In the following chapter we describe this process in more detail.</p>
+<h3 id="content-retrieved-directly-from-the-website"><a class="header" href="#content-retrieved-directly-from-the-website">Content retrieved directly from the website</a></h3>
+<p>Ceno will retrieve the desired content directly from the origin server when that
+server is reachable. This is the same way you access any website through most
+other popular browsers.</p>
+<img src="./images/ceno_direct_access.png" alt="Direct access" width="700"/>
+<p>When you access websites this way, they are not stored in your cache and you
+cannot share them with other members of the Ceno network. When Ceno retrieves
+the content from the origin server, the small Ceno button on your the address
+bar will have a green dot.</p>
+<img src="./images/green_dot.png" alt="Green dot" width="300"/>
+<p>If you tap on that button, you will see how many components of the requested
+website were retrieved from the website, Ceno network or Ceno cache.</p>
+<img src="./images/green_dot_tap.png" alt="Tap on green dot" width="400"/>
+<p>If you go to Settings &gt; Data you can verfiy verify that no data is stored in
+your cache after you have accessed a website directly from its server.</p>
+<img src="./images/no_data.png" alt="No data in cache" width="60%"/>
+<p>In this case, the risks for you as a user are similar to the risks associated
+with using any other browser. Learn more.</p>
+<h3 id="content-retrieved-via-ceno-public-network"><a class="header" href="#content-retrieved-via-ceno-public-network">Content retrieved via Ceno public network</a></h3>
+<p>When Ceno is not able to reach the origin server it will try to access them via
+Ceno public network.</p>
+<img src="./images/ceno_public_network.png" alt="Ceno public network" width="700"/>
+<p>This network contains secure servers called <strong>Injectors</strong>, which have direct
+access to the origin websites, and which inject the content of those websites
+into the Ceno network. When website content is retrieved via Ceno public
+network, this will be indicated by an orange dot on the small Ceno button on
+your address bar.</p>
+<img src="./images/orange_dot.png" alt="Orange dot" width="300"/>
+<p>Tapping on this button will open a small window which will inform you how many
+website components were retrieved from public Ceno network.</p>
+<img src="./images/orange_dot_tap.png" alt="Tap on orange dot" width="400"/>
+<p>Any website that you access this way will be stored in the local cache of your
+Ceno browser, and will be made available to other members of the Ceno network.</p>
+<p>You can see which websites are stored in your cache by going to Settings &gt; Data
+section.</p>
+<p>There are three entries within that section: <strong>Local cache</strong>, <strong>Content shred by
+you</strong>, and <strong>Clear cached content</strong>.<br />
+The <strong>Local cache</strong> section shows you how much data has been stored in the Ceno
+cache on your device.</p>
+<img src="./images/data_in_cache.png" alt="Data in cache" width="400"/>
+<p>If you tap on <strong>Content shared by you</strong>, you will be able to see the websites
+that your device can make available to Ceno network.</p>
+<img src="./images/content_shared_by_you.png" alt="Content shared by you" width="400"/>
+<p>Tapping <strong>Clear cached content</strong> option will allow you to delete all cached
+data.</p>
+<img src="./images/clear_cached_content.png" alt="Clear cached content" width="400"/>
+<h3 id="cached-content"><a class="header" href="#cached-content">Cached Content</a></h3>
+<p>This way of accessing websites is useful when other components of Ceno public
+network are not reachable, or when you decide to access a website from your
+peers’ devices for other reasons.<br />
+Below image illustrates the requests and responses exhcanged exchanged between
+members of Ceno network who have previsously accessed and cached the desired
+websites.</p>
+<img src="./images/ceno_cache.png" alt="Ceno cache" width="700"/>
+<p>If a website content is retrieved via <strong>Ceno cache</strong>, the Ceno button will have
+a small blue dot to indicate that.</p>
+<img src="./images/blue_dot.png" alt="Blue dot" width="400"/>
+<p>Clicking on the Ceno button will open the information screen that indicates the
+same.</p>
+<img src="./images/blue_dot_tap.png" alt="Blue dot tap" width="400"/>
+<p>In this case, the website content will be cached on your device and will be
+shared with other Ceno users when requested. You can verify that by going to
+Settings &gt; Data &gt; Content shared by you.</p>
+<p>It can also happen that ceno browser opens a website that was stored in your own
+cache when you accessed it before. When that happens, Ceno will inform you by
+displaying the wbesite sources in grey colour.</p>
+<img src="./images/grey_dot_tap.png" alt="Grey dot tap" width="400"/>
+<p>In Ceno Settings &gt; Developer tools &gt; Website sources you can check or uncheck
+these four settings.</p>
+<img src="./images/website_sources.png" alt="Website sources" width="60%"/>
+<p>If they are all checked, depending on the browsing mode, Ceno tries to fetch the
+website via all applicable mechanisms, at the same time. We call it a "mixed
+fetch". Whichever mechanism responds first is the one that is used and the rest
+of the requests are cancelled.</p>
+<p>For best results, we recomment that all 4 of these boxes remain checked at all
+times.</p>
+<h2 id="personal-browsing---when-to-use-it"><a class="header" href="#personal-browsing---when-to-use-it">Personal Browsing - when to use it</a></h2>
+<p>You can select personal browsing by tapping on the Personal button on the main
+screen.</p>
+<img src="./images/personal_button.png" alt="Personal button" width="60%"/>
+<p>When you select this option, even if all four <strong>Website sources</strong> settings are
+checked, your Ceno app will attempt to access the desired websites only directly
+or via <strong>Ceno private network</strong>.</p>
+<p>This browsing mode can be used for websites where you need to log in and enter
+other personal data. Examples are: shopping websites, email, social media sites
+or other websites that you do not wish to share with the rest of the Ceno
+network.</p>
+<h3 id="accessing-websites-via-private-ceno-network"><a class="header" href="#accessing-websites-via-private-ceno-network">Accessing websites via Private ceno network</a></h3>
+<p>The following image shows the flow of website requests and responses between
+<strong>Ceno private network</strong> elements.</p>
+<img src="./images/personal_browsing.png" alt="Personal browsing" width="700"/>
+<p>In <strong>Personal browsing mode</strong>, when a website is requested, Ceno will retrieve
+it directly from the origin servers, or via Ceno Injectors. However, in Personal
+mode, the Injectors do not cache the content like they do in Public browsing
+mode. They simply forward the request to the origin server and forward the
+response to the user, but cannot see the encrypted content. Learn more about
+Personal browsing mode.</p>
+<p>Sometimes, if a website is unreachable in Public browsing mode, because of
+differences in how these two modes operate, we suggest attempting to reach it
+via Personal browsing mode instead.</p>
+<p>For this mechanism to work, it is necessary that the Website sources
+<strong>Privately</strong> and <strong>Website</strong> remain checked.</p>
+<div style="break-before: page; page-break-before: always;"></div><h2 id="why-become-a-ceno-bridge"><a class="header" href="#why-become-a-ceno-bridge">Why become a Ceno bridge?</a></h2>
+<p>A peer-to-peer network is built from every node connected to it (yes, that means
+you as well!). The more nodes, the stronger and more versatile the network
+becomes.</p>
+<p>If you are running Ceno Browser from a country that does not censor the Internet
+(or not as heavily as some), consider helping other Ceno users by becoming a
+bridge node. You will then begin to route traffic between clients living in
+heavily censored countries and Ceno injectors.</p>
+<p>You will not be able to see their traffic (it will be sent through an encrypted
+tunnel), nor will any of this traffic remain on your device.</p>
+<p><em>Note: The configuration described in this section may also help your device to
+effectively seed content to others on the distributed cache, so please consider
+applying it as well when using Ceno in a censoring country (but keep in mind the
+<a href="https://ceno.app/en/faq.html#bridgemode">risks</a> of serving such content to
+others)</em></p>
+<h2 id="how-to-become-a-ceno-bridge"><a class="header" href="#how-to-become-a-ceno-bridge">How to become a Ceno bridge?</a></h2>
+<p>As stated in <a href="./public-or-personal.html?#bridges">this section</a>, Ceno app
+provides some functionlaity that allows you to easily become a Ceno bridge, if
+your network configuration allows it.</p>
+<p>If you have checked your <strong>Reachability</strong> and your <strong>UPnP status</strong> and it looks
+like this</p>
+<p><img src="./images/reachability.png" alt="Reachability status" /></p>
+<p>You will need to configure your router by either enabling the UPnP or setting up
+the port forwarding. In the following sections we describe the steps to perform.</p>
+<h3 id="သင-wi-fi-ရောကတာတွင-upnp-ကို-ဖွငခြငး"><a class="header" href="#သင-wi-fi-ရောကတာတွင-upnp-ကို-ဖွငခြငး">သင့် Wi-Fi ‌ရောက်တာတွင် UPnP ကို ဖွင့်ခြင်း</a></h3>
+<p>UPnP is the easiest way of making your Ceno browser (or computer client)
+reachable to the Ceno network.</p>
+<p><em>Note: Enabling UPnP on the Wi-Fi router may expose devices on your network to
+external interference. Please be <a href="https://www.howtogeek.com/122487/htg-explains-is-upnp-a-security-risk/">aware of the
+risks</a>
+and also consider using alternative methods as explained below.</em></p>
+<p>The first thing you will need to do is log in to your router's web interface. To
+find out how to do that, please refer to your router's manual which will tell
+you which user and password to use to log in.</p>
+<p>After that, the steps to perform are similar, but might not be identical for all
+router models.</p>
+<p>Here is a nice article with <a href="https://www.lifewire.com/enable-upnp-on-a-router-5206124">step by step
+instructions</a> for
+enabling the UPnP on different routers.</p>
+<p>Please find instructions for your router type and perform the necessary steps.</p>
+<p>If you prefer, though, you can choose to set up the port forwarding instead of
+the UPnP.</p>
+<h3 id="use-port-forwarding-as-an-alternative-to-upnp"><a class="header" href="#use-port-forwarding-as-an-alternative-to-upnp">Use port forwarding as an alternative to UPnP</a></h3>
+<p>The first step is the same as before: log in to the router's web interface.</p>
+<p>Then, please locate **port forwarding **option.</p>
+<p>To see which IP address you need to forward the connections to and the relevant
+port, open the <strong>Ceno Settings</strong> page and look under the <strong>Local UDP
+endpoints</strong>.</p>
+<p><img src="./images/UDP_endpoint.png" alt="Local UDP endpoint" /></p>
+<p>The port forwarding must be for the UDP protocol (not TCP).</p>
+<p>Ceno chooses a random port on first run and keeps it for subsequent runs, but
+your device's local network IP address may change from time to time. Thus you
+should periodically review the <strong>Ceno Settings</strong> page to see that your device is
+reachable to the Ceno network.</p>
+<p>Your device is reachable if its</p>
+<p><strong>Reachability status</strong> is <strong>likely reachable</strong> or <strong>reachable</strong></p>
+<p><strong>UPnP status</strong> is <strong>enabled</strong></p>
+<p><em><strong>Technical note</strong>: Alternatively, you can make sure that the router always
+assigns the same IP address to your device (e.g. via a static DHCP lease for the
+device's MAC address)</em></p>
+<p>If you have a computer with good connectivity that stays on most of the time,
+and you'd like to set it up as a <strong>Ceno bridge</strong>, please continue reading.</p>
 <h2 id="ကွနပျူတာပေါတွင-ပေါငးကူးကို-လုပဆောငခြငး"><a class="header" href="#ကွနပျူတာပေါတွင-ပေါငးကူးကို-လုပဆောငခြငး">ကွန်ပျူတာပေါ်တွင် ပေါင်းကူးကို လုပ်ဆောင်ခြင်း</a></h2>
-<p>If your computer supports <a href="https://en.wikipedia.org/wiki/Docker_(software)">Docker containers</a>, you can run a
-pre-configured Ceno client on it to act as a bridge. If Docker is not yet
-installed, please follow the instructions to <a href="https://docs.docker.com/engine/install/">install the Docker
-Engine</a> in your platform. For Debian derivatives like Ubuntu or
-Linux Mint, you can just run: <code>sudo apt install docker.io</code></p>
-<p>Ceno client ကွန်တိန်နာကို ထိထိရောက်ရောက်အသုံးချနိုင်ဖို့အတွက် သင့်အနေဖြင့်
+<p>If your computer supports Docker containers, you can run a pre-configured Ceno
+client on it to act as a bridge. If Docker is not yet installed, please follow
+the instructions to install the Docker Engine in your platform. For Debian
+derivatives like Ubuntu or Linux Mint, you can just run: <code>sudo apt install docker.io</code></p>
+<p>Ceno အသုံးပြုသူ ကွန်တိန်နာကို ထိထိရောက်ရောက်အသုံးချနိုင်ဖို့အတွက် သင့်အနေဖြင့်
 terminal တွင် ညွှန်ကြားချက်တစ်ခုကို ရိုက်ထည့်လိုက်ဖို့ပဲ လိုအပ်ပါတယ်။ (ထိုအရာက
 အနည်းငယ် ထိတ်လန့်စရာကောင်းတယ်လို့ ထင်ရသော်လည်း ညွှန်ကြားချက်စာကို ကူးယူပြီး
 command line တွင် ရိုက်ထည့်ဖို့ပဲလိုအပ်ပါတယ်။) -</p>
-<pre><code class="language-sh">sudo docker run --name ceno-client \
+<pre><code>sudo docker run --name ceno-client \
   -dv Ceno:/var/opt/ouinet --network host \
   --restart unless-stopped equalitie/Ceno-client
 </code></pre>
 <p>အကယ်၍ သင့်ကွန်ပျူတာသည် GNU/Linux တွင် အခြေခံထားခြင်းမဟုတ်ပါက ညွှန်ကြားချက်သည်
 အနည်းငယ်ပြောင်းလဲရန် လိုအပ်ပါသည်။</p>
-<pre><code class="language-sh">sudo docker run --name ceno-client \
+<pre><code>sudo docker run --name ceno-client \
   -dv ceno:/var/opt/ouinet \
   -p 127.0.0.1:8077-8078:8077-8078 -p 28729:28729/udp \
   --restart unless-stopped equalitie/ceno-client
 </code></pre>
-<p>The command will start a container named <code>ceno-client</code> that will run on every
-boot unless you explicitly tell it to stop. Please check the <a href="https://gitlab.com/ceno-app/ceno-docker-client#running-the-client">Ceno Docker client
-documentation</a> for more information on how to manipulate the
-container.</p>
-<blockquote>
-<p><strong>Note:</strong> This client has no <em>Ceno Settings</em>: when instructed below to access
-that page, open instead the <a href="browser/../client/front-end.html">client front-end</a>, which
-contains mostly equivalent information.</p>
-</blockquote>
-<h2 id="သင-wi-fi-ရောကတာတွင-upnp-ကို-ဖွငခြငး"><a class="header" href="#သင-wi-fi-ရောကတာတွင-upnp-ကို-ဖွငခြငး">သင့် Wi-Fi ‌ရောက်တာတွင် UPnP ကို ဖွင့်ခြင်း</a></h2>
-<p><a href="https://en.wikipedia.org/wiki/Universal_Plug_and_Play">UPnP</a> is the easiest way of making your Ceno Browser (or computer client)
-reachable to the Ceno network. The <a href="browser/settings.html">Ceno Settings</a> page will
-indicate the UPnP status on your local network.</p>
-<blockquote>
-<p><strong>Note:</strong> Enabling UPnP on the Wi-Fi router may expose devices on your network
-to external interference. Please make yourself <a href="https://www.howtogeek.com/122487/htg-explains-is-upnp-a-security-risk">aware of the
-risks</a> and also consider using alternative methods as explained
-below.</p>
-</blockquote>
-<p>အောက်တွင် ပြထားသည့် အခြေအနေသည် သင့် WiFi ရောက်တာတွင် UPnP သည် အလုပ်မလုပ်ကြောင်း
-သို့မဟုတ် မရရှိနိုင်ကြောင်း ညွှန်ပြနေသည်။</p>
-<blockquote>
-<p><strong>ရောက်ရှိနိုင်မှု အခြေအနေ</strong></p>
-<pre><code>undecided
-</code></pre>
-<p><strong>UPnP အခြေအနေ</strong></p>
-<pre><code>disabled / inactive
-</code></pre>
-</blockquote>
-<p>အထက်ပါ အခြေအနေသည် UPnP အလုပ်လုပ်နိုင်ခြေရှိပြီး Ceno က လက်ရှိတွင်
-ချိတ်ဆက်နိုင်မှုကို မှန်ကန်ကြောင်း စစ်ဆေးနေသည်ဟု ညွှန်ပြသည် -</p>
-<blockquote>
-<p><strong>ရောက်ရှိနိုင်မှု အခြေအနေ</strong></p>
-<pre><code>undecided
-</code></pre>
-<p><strong>UPnP အခြေအနေ</strong></p>
-<pre><code>enabled
-</code></pre>
-</blockquote>
-<p>အထက်ပါ အခြေအနေသည် UPnP အလုပ်လုပ်နေပြီး သင်သည် အခြား Ceno သုံးစွဲသူများအတွက်
-ချိတ်ဆက်မှုများကို ပေါင်းကူးနိုင်ကြောင်း ညွှန်ပြသည် -</p>
-<blockquote>
-<p><strong>ရောက်ရှိနိုင်မှု အခြေအနေ</strong></p>
-<pre><code>likely reachable / reachable
-</code></pre>
-<p><strong>UPnP အခြေအနေ</strong></p>
-<pre><code>enabled
-</code></pre>
-</blockquote>
-<blockquote>
-<p><strong>Note:</strong> Even if UPnP is working, your router may still not be reachable from
-the outside. This can be the case when <em>Ceno Settings</em> reports <em>External UDP
-endpoints</em> which look like <a href="https://en.wikipedia.org/wiki/Carrier-grade_NAT">CGNAT</a> addresses <code>100.X.Y.Z:N</code> with X between 64
-and 127 (increasingly common among home ISPs), or like private addresses
-<code>10.X.Y.Z:N</code>, <code>172.X.Y.Z:N</code> with X between 16 and 31, and <code>192.168.X.Y:N</code>. If
-so, please contact your ISP or network administrator to get a public address
-on your router or to establish port forwardings to the external endpoint.</p>
-</blockquote>
-<p>ဈေးကွက်တွင် Wi-Fi ရောက်တာများစွာ ရှိပြီး တစ်ခုစီတွင် ၎င်းတို့၏ တိကျသော
-ကိုယ်ပိုင် လုပ်ဆောင်ချက်များ ရှိသည်။ ဤသည်တို့မှာ UPnP ဖွင့်ရန်အတွက်
-ထုတ်လုပ်သူအချို့၏ လမ်းညွှန်ချက် စာရင်း ဖြစ်သည်-</p>
+<p>The command will start a container named ceno-client that will run on every boot
+unless you explicitly tell it to stop.</p>
+<p>Please check the <a href="https://gitlab.com/ceno-app/ceno-docker-client#running-the-client">Ceno Docker client
+documentation</a>
+for more information on how to manipulate the container.</p>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="features"><a class="header" href="#features">Features</a></h1>
+<h2 id="toolbar"><a class="header" href="#toolbar">Toolbar</a></h2>
+<p>At the bottom of the screen, you will see the bar containing various buttons. Some of them are probably self-explanatory, but others less so.  Let’s take a quick look at each of them:</p>
+<h3 id="home-button"><a class="header" href="#home-button">Home button</a></h3>
+<p>The first is the familiar Home button.</p>
+<img src="./images/home_button.png" alt="Home button" width="400"/>
+<p>You can configure this button to be either shown or hidden, but going to <strong>Settings &gt; Customisations &gt; Show home button</strong></p>
+<img src="./images/show_home_button.png" alt="Show home button" width="400"/>
+<h3 id="ceno-button"><a class="header" href="#ceno-button">Ceno button</a></h3>
+<p>Next is the Ceno button.  Tapping on it will open an information screen that shows where the website components were retrieved from. We describe this screen in more detail in Personal and Public browsing sections.</p>
+<h3 id="secure-connection-button"><a class="header" href="#secure-connection-button">Secure connection button</a></h3>
+<p>When you enter the website address you want to access, you will see the <strong>Secure connection button</strong>, represented by a small padlock or a small shield, which indicate that your connection to a particular website is secure.<br />
+If the padlock or shield is crossed with a line, it means that connection to that particular website is not secure.  This is the same as in other browsers.</p>
+<img src="./images/connection_not_secure.png" alt="Connection not secure" width="400"/>
+<p><em>Note: even though connection to this particular website is not secure, the Ceno icon has a small green dot.  This dot does not indicate that the connection is secure, but that the data was retrieved directly from the origin website.</em></p>
+<p>If you tap on it, you will see the details of this connection.  As an illustration, we include example screenshots of secure versus not secure connection.</p>
+<p><img src="./images/compare_not_secure.png" alt="Compare not secure page" width="50%"/><img src="./images/compare_secure.png" alt="Compare secure page" width="50%"/></p>
+<h3 id="clear-button"><a class="header" href="#clear-button">Clear button</a></h3>
+<p>The first button on the right hand side of the address bar is the Clear button, in the shape of a small broom.</p>
+<img src="./images/home_button.png" alt="Clear button" width="400"/>
+<p>Tapping on it gives the user a choice to clear all Ceno data, as if Ceno was never used, or to clear only what Ceno stored in Cache. The first option clears all the preferences, bookmarks, setttings and customisations, whereas the second one will only clear the websites that the Ceno app stored in the cache on your device.</p>
+<img src="./images/clear_button.png" alt="Clear button" width="400"/>
+<p>If you go to <strong>Settings &gt; Customisations &gt; Clear button</strong> you can choose whether you want the clear button to show in the toolbar or in the menu.</p>
+<img src="./images/clear_button_settings.png" alt="Clear button in settings" width="60%"/>
+<p>Tapping on the option <strong>Default behavior</strong> will open a dialog box that offers you to choose what you want your Clear button to do when you tap it.  It can offer you a prompt, like on the above screenshot, or it can immediately delete all cached content or even all Ceno data.</p>
+<img src="./images/clear_button_default.png" alt="Clear button behavior" width="60%"/>
+<h3 id="tabs-button"><a class="header" href="#tabs-button">Tabs button</a></h3>
+<p>Next is a small rectangle with a number in it. This number indicates how many tabs the user has opened.</p>
+<p>Tapping on it  opens a screen where you can see all the tabs that you have open.</p>
+<img src="./images/tab_view.png" alt="Tab view" width="400"/>
+<p>You can close them one by one, if you tap on the vertical menu in the bottom right corner, you will get the option to close them all together.</p>
+<img src="./images/close_tabs.png" alt="Close all tabs" width="400"/>
+<p>When viewing the tab screen, at the top of that screen you will see the icons for Public or Personal browsing, and you can easily switch between them.</p>
+<p>View when Public browsing icon is selected</p>
+<img src="./images/view_public.png" alt="Public browsing selected" width="400"/>
+<p>View when Personal browsing is selected.</p>
+<img src="./images/view_personal.png" alt="Personal browsing selected" width="400"/>
+<h3 id="vertical-menu"><a class="header" href="#vertical-menu">Vertical menu</a></h3>
+<p>What the three dot vertical menu on the far right hand side of the toolbar displays depends on the context.</p>
+<img src="./images/home_button.png" alt="Clear button" width="400"/>
 <ul>
-<li><a href="https://www.linksys.com/us/support-article?articleNum=138290">Linksys</a></li>
-<li><a href="https://eu.dlink.com/uk/en/support/faq/routers/wired-routers/di-series/how-do-i-enable-upnp-on-my-router">D-Link</a></li>
-<li><a href="https://consumer.huawei.com/ph/support/content/en-us00275342/">Huawei</a></li>
-<li><a href="https://www.xfinity.com/support/articles/configure-device-discovery-for-wifi">Xfinity</a></li>
-<li><a href="https://community.tp-link.com/us/home/kb/detail/348">TP-Link</a></li>
-<li><a href="https://kb.netgear.com/24306/How-do-I-enable-Universal-Plug-and-Play-on-my-Nighthawk-router">Netgear</a></li>
-<li><a href="https://www.geekzone.co.nz/forums.asp?forumid=66&amp;topicid=205740&amp;page_no=5#1725168">Ubiquiti</a></li>
+<li>when you have a website page open, this menu will display options relevant to that page.</li>
 </ul>
-<h2 id="upnp-အစား-ပေါတ-တစဆငပိုခြငးကို-အသုံးပြုခြငး"><a class="header" href="#upnp-အစား-ပေါတ-တစဆငပိုခြငးကို-အသုံးပြုခြငး">UPnP အစား ပေါ့တ် တစ်ဆင့်ပို့ခြင်းကို အသုံးပြုခြင်း</a></h2>
-<p>သင့်ရောက်တာတွင် UPnP ကို ဖွင့်မည့်အစား သင်သည် Ceno ကွန်ရက်မှ ချိတ်ဆက်မှုများကို
-သင့်စက်သို့ တစ်ဆင့်ပို့ကြောင်း သေချာစေရန် ပေါ့တ်တစ်ဆင့်ပို့ခြင်း
-စည်းကမ်းတစ်ခုကို သတ်မှတ်နိုင်သည်။ သင်သည် ရောက်တာ၏ စီမံခန့်ခွဲမှု ကြားခံစနစ်သို့
-ဝင်ရောက်ပြီး <em>ပေါ့တ်တစ်ဆင့်ပို့ခြင်း</em> ရွေးချယ်စရာကို ရှာဖွေရန် လိုအပ်ပါမည်။ သင်
-ချိတ်ဆက်မှုများ တစ်ဆင့်ပို့ရန် လိုအပ်သည့် IP လိပ်စာကို ကြည့်ရန် <em>Ceno
-ဆက်တင်များ</em> စာမျက်နှာကို ဖွင့်ပြီး <em>ဒေသတွင်း UDP အဆုံးမှတ်(များ)</em> အောက်တွင်
-ကြည့်ပါ။</p>
-<blockquote>
-<p><strong>စက်တွင်း UDP အဆုံးမှတ်များ</strong></p>
-<pre><code>192.168.1.132:28729
-</code></pre>
-</blockquote>
-<p>ပေါ့တ်တစ်ဆင့်ပို့ခြင်းသည် UDP ပရိုတိုကောအတွက် ဖြစ်ရမည် (TCP မဖြစ်ရပါ)။ Ceno သည်
-ပထမအကြိမ် လုပ်ဆောင်ချိန်တွင် အလျဉ်းသင့်သော ပေါ့တ်တစ်ခုကို ရွေးချယ်ပြီး
-နောင်လာမည့် လုပ်ဆောင်ချက်များအတွက် ၎င်းကို သိမ်းထားသော်လည်း သင့်စက်၏ ဒေသတွင်း
-ကွန်ရက် IP လိပ်စာသည် မကြာခဏ ပြောင်းလဲနိုင်သည်။ ထို့ကြောင့် သင်သည် Ceno ကွန်ရက်က
-သင့်စက်ထံ ရောက်ရှိနိုင်ကြောင်း ကြည့်ရန် <em>Ceno ဆက်တင်များ</em> စာမျက်နှာကို ပုံမှန်
-စစ်ဆေးသင့်သည်။</p>
-<blockquote>
-<p><strong>နည်းပညာဆိုင်ရာ မှတ်ချက်-</strong> တစ်နည်းအားဖြင့် သင်သည် ရောက်တာက သင့်စက်ကို
-တူညီသော IP လိပ်စာ အမြဲသတ်မှတ်ပေးရန် (ဥပမာ- စက်၏ MAC လိပ်စာအတွက် တည်တံ့သော DHCP
-အငှားမှတစ်ဆင့်) သေချာအောင်ပြုလုပ်နိုင်သည်။</p>
-</blockquote>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="ပြဿနာ-ဖြေရှငးခြငး"><a class="header" href="#ပြဿနာ-ဖြေရှငးခြငး">ပြဿနာ ဖြေရှင်းခြင်း</a></h1>
-<p>ဤအပိုင်းတွင် Ceno နှင့် Ouinet သုံးရာတွင် ကွဲပြားသော၊ သိပြီးဖြစ်သည့် ပြဿနာများ
-ပေါ်ပေါက်ချိန်တွင် ဘာလုပ်ရမည်နှင့် ပတ်သက်ပြီး သင့်အား အကြံဉာဏ်အချို့ ပေးပါမည်။
-၎င်းတို့သည် စမ်းသပ်ဆဲ ပရောဂျက်များ ဖြစ်ပြီး ၎င်းတို့၏ လည်ပတ်မှုသည် ကျွန်ုပ်တို့၏
-ထိန်းချုပ်မှုအောက်တွင် မရှိသော တိကျသည့် စီစဉ်သတ်မှတ်မှုနှင့် ကွန်ရက်
-အခြေခံအဆောက်အအုံ၏ အခြေအနေအပြင် အခြားသုံးစွဲသူများက မည်သည့်အကြောင်းအရာကို
-ပြန်ထုတ်ထားကြောင်းနှင့် ၎င်းတို့ ချိတ်ဆက်မှုများ၏ လက္ခဏာရပ်များကဲ့သို့
-အကြောင်းခြင်းရာများစွာပေါ် မူတည်ကြောင်း ကျေးဇူးပြု၍ မှတ်သားထားပါ။</p>
-<p>If problems still persist, please report them to <a href="mailto:browser/cenoers@equalitie.org">cenoers@equalitie.org</a>. We
-will try to help you with them.</p>
-<h2 id="အကပ-မီနူးတွင-ceno-ကို-ထညထားခြငး-မရှိပါ"><a class="header" href="#အကပ-မီနူးတွင-ceno-ကို-ထညထားခြငး-မရှိပါ">အက်ပ် မီနူးတွင် Ceno ကို ထည့်ထားခြင်း မရှိပါ</a></h2>
-<p>Ceno အဆက်သည် တင်နေဆဲ ဖြစ်နိုင်သည်။ ကျေးဇူးပြု၍ စိတ်ရှည်ပါ။</p>
-<h2 id="ceno-ဆကတငများ-စာမျကနှာတွင-ဝစဂျကအားလုံးသည-အရောငမှိနနေသည"><a class="header" href="#ceno-ဆကတငများ-စာမျကနှာတွင-ဝစဂျကအားလုံးသည-အရောငမှိနနေသည"><em>Ceno ဆက်တင်များ</em> စာမျက်နှာတွင် ဝစ်ဂျက်အားလုံးသည် အရောင်မှိန်နေသည်</a></h2>
-<p>Ceno အဆက်ကို တင်ပြီးသော်လည်း ၎င်းသည် Ouinet မှ အခြေအနေကို ပြန်မထုတ်နိုင်သေးပါ။
-Ouinet အနေနှင့် အသင့်ဖြစ်ရန် အချိန်အနည်းငယ် ကြာနိုင်သောကြောင့် ကျေးဇူးပြု၍
-စိတ်ရှည်ပါ။</p>
-<p>ဆက်တင်များ စာမျက်နှာသည် နှစ်မိနစ်ကျော် ကြာပြီးနောက် ထိုအတိုင်း ဆက်ဖြစ်နေပါက
-Ouinet ကို စတင်စဉ် ပြဿနာတစ်ခုခု ကြုံရခြင်း ဖြစ်နိုင်သည်။</p>
-<p>စာမျက်နှာတစ်ခုခုကို ဝင်ကြည့်ရန် ကြိုးစားပါ၊ ဖြစ်နိုင်ပါက အများအားဖြင့်
-ရရှိနိုင်သော စာမျက်နှာကို ဝင်ကြည့်ပါ။ "စီစဉ်သတ်မှတ်ထားသော စက်ကိရိယာအားလုံးကို
-ကြိုးစားပြီးနောက်) ရင်းမြစ်ကို ပြန်ထုတ်၍ မရနိုင်ပါ" ကဲ့သို့ အမှားကို သင် ရရှိပါက
-Ceno သည် (BitTorrent ကွန်ရက်တွင် မပါဝင်နိုင်ခြင်းကဲ့သို့) ယေဘုယျ
-ချိတ်ဆက်နိုင်မှုတွင် ပြဿနာအချို့ ကြုံရခြင်း ဖြစ်နိုင်သည်။ သင်သည် မိုဘိုင်း
-ချိတ်ဆက်မှုကို အသုံးပြုနေပါက Wi-Fi သုံး၍ ထပ်မံ ကြိုးစားကြည့်ပါ။</p>
-<p>သင်သည် စာမျက်နှာသို့ ဝင်ကြည့်စဉ် "ပရောက်စီ ဆာဗာသည် ချိတ်ဆက်မှုများကို
-ငြင်းပယ်နေသည်" ကဲ့သို့ အမှားကို ရရှိပါက စက်အား ဝန်ဆောင်မှု ပေးနေနိုင်သော
-အခြားအက်ပလီကေးရှင်းများကို ရပ်တန့်ရန် ကြိုးစားပြီးနောက် Ceno ကို ပြန်လည်စတင်ပါ။</p>
-<blockquote>
-<p><strong>နည်းပညာဆိုင်ရာ မှတ်ချက် -</strong> အခြားအက်ပလီကေးရှင်းက TCP ပေါ့တ်များ
-<code>127.0.0.1:8077</code> သို့မဟုတ် <code>127.0.0.1:8078</code> တွင် နားထောင်နေပြီး ဖြစ်ပါက ဤသို့
-ဖြစ်ပွားနိုင်သည်။</p>
-</blockquote>
-<h2 id="ceno-ဆကတငတွငရှိသော-ouinet-သုံးစွဲသူ-အခြေအနေမှာ-started-မဖြစသေးပါ"><a class="header" href="#ceno-ဆကတငတွငရှိသော-ouinet-သုံးစွဲသူ-အခြေအနေမှာ-started-မဖြစသေးပါ">Ceno ဆက်တင်တွင်ရှိသော <em>Ouinet သုံးစွဲသူ အခြေအနေ</em>မှာ <code>started</code> မဖြစ်သေးပါ။</a></h2>
-<p>Ouinet သုံးစွဲသူမှ Ceno ကို စတင်အလုပ်လုပ်လိုက်သည်နှင့် သင့်စက်ပစ္စည်းတွင်
-ပြဿနာများကို စတင်ရှာဖွေပါသည်။</p>
-<p>Ceno ကို စတင်လိုက်သောအခါ <code>စတင်ခြင်း</code> အဆင့်တွင် စက္ကန့်အနည်းငယ်ရှိနေခြင်းက
-ပုံမှန်ဖြစ်ပါသည်။ အကယ်၍များ <code>စတင်ခြင်း</code> အဆင့်တွင် အတော်ကြာနေပါက ချိတ်ဆက်မှုတွင်
-ပြဿနာတစ်ခုခုရှိနေတာဖြစ်နိုင်ပါတယ်၊ BitTorrent ကွန်ရက်ကို ရောက်ရှိဖို့အတွက်
-အပ်ပလီကေးရှင်းကို တားမြစ်တဲ့ ချိတ်ဆက်မှု ပြဿနာမျိုးတွေဖြစ်နိုင်ပါသည်။
-ကျေးဇူးပြုပြီး သင့် ကွန်ရက်ချိတ်ဆက်မှုကို စစ်ဆေးပါ၊ ပြီးနောက်မှ Ceno ကို
-ပြန်လည်စတင်ကြည့်ပါ။ အကယ်၍ သင့်တွင် အလုပ်လုပ်တဲ့ ကွန်ရက်ချိတ်ဆက်မှုရှိပေမယ့်
-<code>စတင်ခြင်း</code> အဆင့်တွင်သာရှိနေပါက (အထူးသဖြင့် ယခင်လုပ်ဆောင်မှုအချို့တွင်
-<code>စတင်ခြင်း</code> သာဖြစ်နေပါက) ကျေးဇူးပြုပြီး ကျွန်ုပ်တို့ကို ဆက်သွယ်ပေးပါ။</p>
-<p>One possible reason for not being able to get into BitTorrent (more so when you
-run Ceno for the first time), is that the default bootstrap servers used by the
-Ouinet client are blocked or unreachable. In that case you may want to try
-providing Ceno with extra BitTorrent bootstrap servers in the <a href="browser/settings.html">Settings
-page</a>. You can ask us if you do not know of any such server. After
-setting the extra bootstraps, please restart the application. If the problem
-persists, contact us.</p>
-<p>အကယ်၍ အခြားသောအခြေအနေများကို မြင်ရပါက Ouinet သုံးစွဲသူတွင်
-စက်တွင်းပြဿနာတစ်ခုခုရှိနေခြင်း ဖြစ်နိုင်သည်။ ‌ကျေးဇူးပြုပြီး ကျွန်ုပ်တို့အား
-ပြဿနာအကြောင်းကို ပြောပြပေးပါ။</p>
-<h2 id="အချိုအကြောငးအရာများကို-ဝငရောကကြညရှုရာတွင-ရငးမြစကို-ရယူရန-မအောငမြငပါ-ကို-ပြသသည"><a class="header" href="#အချိုအကြောငးအရာများကို-ဝငရောကကြညရှုရာတွင-ရငးမြစကို-ရယူရန-မအောငမြငပါ-ကို-ပြသသည">အချို့အကြောင်းအရာများကို ဝင်ရောက်ကြည့်ရှုရာတွင် "ရင်းမြစ်ကို ရယူရန် မအောင်မြင်ပါ" ကို ပြသသည်</a></h2>
-<p>ဆိုလိုသည်မှာ Ceno သည် အကြောင်းအရာကို ဝင်ရောက်သုံးစွဲရန် ရရှိနိုင်သော
-စက်ကိရိယာအားလုံးကို ကြိုးစားခဲ့သော်လည်း တစ်ခုမျှ မအောင်မြင်ခဲ့ပါ။</p>
-<p>သင်သည် Ceno အလုပ်လုပ်စေရန် အောက်ပါ လိုအပ်ချက်များကို ပြည့်မီကြောင်း သေချာအောင်
-ပြုလုပ်ရမည်-</p>
+<img src="./images/menu_webpage.png" alt="Webpage menu" width="40%"/>
+<p>Most of the elements in this menu are self explanatory.  But if you’re not familiar with the uBlock Origin, it is an ad and tracker blocker.</p>
+<p>The reason we bundle it up with our Ceno browser is  mostly to prevent unnecessarily  caching advertisements and to avoid possibly caching unique identifiers  associated with trackers.</p>
+<p>To learn more about this ad and tracker blocker, please visit <a href="https://ublockorigin.com/">their webpage</a>.</p>
 <ul>
-<li>You are running a recent version of Ceno Browser. Obsolete versions may not be
-able to communicate with newer injectors or other clients. Check the
-<a href="browser/install.html">installation instructions</a> to know where to get new versions.</li>
-<li>All access mechanisms in the <a href="browser/settings.html">Settings page</a> are enabled.
-Otherwise Ceno will not be able to circumvent some connectivity issues when
-accessing content.</li>
-<li>သင့်စက်တွင် အလုပ်လုပ်နေသည့် ကွန်ရက်သို့ ချိတ်ဆက်မှု ရှိသည်။ ဆိုလိုသည်မှာ သင်၏
-ပုံမှန် ဝက်ဘ် ဘရောက်ဇာသည် ဝက်ဘ်ဆိုက်အချို့ကို ဖွင့်နိုင်ရမည်။
-(သုံးစွဲသူများသည် စက်အချင်းချင်း မျှဝေမှု ပြုလုပ်ရန် ဘုံဖြစ်သော Wi-Fi
-ဝင်ရောက်သုံးစွဲခွင့် ပွိုင့်ကို ရှာတွေ့နိုင်သေးသော်လည်း) Ceno နှင့် Ouinet သည်
-ကွန်ရက် ချိတ်ဆက်မှုအားလုံးကို ပိတ်ထားချိန်တွင် အလုပ် မလုပ်နိုင်ပါ။</li>
+<li>If you tap on this menu when on the Ceno homepage, you will be able to see the item that allows you to clear Ceno (its action is the same as the small broom on the home screen).</li>
 </ul>
-<p>ဤကိစ္စရပ်တွင် ဝင်ရောက်ရယူခွင့် ယန္တရားများအားလုံး ဘာကြောင့်
-မအောင်မြင်ရခြင်းဖြစ်နိုင်ကြောင်း ရှင်းပြသင့်သည်။ သို့မှသာ သင်သည် Ceno ကို
-အသုံးပြု၍ အကြောင်းအရာ ရယူရာတွင် အောင်မြင်နိုင်ခြေကို သိရှိမည်ဖြစ်သည်။</p>
-<h3 id="မူလ-ဝငရောကသုံးစွဲခွင"><a class="header" href="#မူလ-ဝငရောကသုံးစွဲခွင">မူလ ဝင်ရောက်သုံးစွဲခွင့်</a></h3>
-<p>သင့် Ceno ဘရောက်ဇာသည် အကြောင်းအရာ၏ မူလ ဆာဗာသို့ တိုက်ရိုက် မရောက်ရှိနိုင်ပါ။
-ဆာဗာကိုယ်တိုင်တွင် အခက်အခဲအချို့ ရှိနေသည် (ဥပမာ- ဆာဗာကျနေသည် သို့မဟုတ်
-တိုက်ခိုက်ခံရသည်) သို့မဟုတ် တစ်စုံတစ်ယောက်က ဆာဗာသို့ သင်၏ ချိတ်ဆက်မှုကို ကြားဝင်
-နှောင့်ယှက်နေသည်။</p>
-<p>ယင်းသည် Ceno အတွက် အဓိက သုံးစွဲမှု ကိစ္စရပ် ဖြစ်ပြီး အခြားစက်ကိရိယာများက ၎င်းကို
-ဖြည့်ဆည်းပေးသင့်သည်။</p>
-<h3 id="ပရောကစီထိုးသွငးဖိုင-ဝငရောကသုံးစွဲခွင"><a class="header" href="#ပရောကစီထိုးသွငးဖိုင-ဝငရောကသုံးစွဲခွင">ပရောက်စီ/ထိုးသွင်းဖိုင် ဝင်ရောက်သုံးစွဲခွင့်</a></h3>
-<p>တစ်စုံတစ်ယောက်က ထိုးသွင်းစက်စာရင်းရှိ အင်တာနက် လိပ်စာများသို့ သင်၏
-ချိတ်ဆက်မှုကို ကြားဝင်နှောင့်ယှက်နေသည်။ Ceno (နှင့် Ouinet)
-အားကောင်းလာသည်နှင့်အမျှ နောက်ဆုံးတွင် ဤသို့ဖြစ်လာနိုင်ကြောင်း
-မျှော်လင့်ထားသည့်အတွက် Ceno သည် ပေါင်းကူးများအဖြစ် ဆောင်ရွက်သော
-အခြားလက်ခံစက်များမှတစ်ဆင့် ထိုးသွင်းဖိုင်များသို့ ရောက်ရှိအောင် ကြိုးစားသည်။</p>
-<p>Ceno သည် ထိုလက်ခံစက်များသို့ မရောက်ရှိနိုင်သည့် ကွဲပြားသော အကြောင်းရင်းများ
-ရှိသည်-</p>
+<img src="./images/menu_homepage.png" alt="Homepage menu" width="400"/>
 <ul>
-<li>
-<p>သင်သည် အခြားမည်သည့် လက်ခံစက်ထံသို့မျှ မရောက်ရှိနိုင်ပါ။ Ouinet လက်ခံစက်
-အနည်းငယ်သာ အွန်လိုင်းတွင် ရှိနေလျှင် ၎င်းတို့သည် ပြင်ပမှ ရောက်ရှိနိုင်သော
-ကွန်ရက်တွင် ရှိမနေခြင်း ဖြစ်နိုင်သည်။ Ceno နှင့် Ouinet ကို လူကြိုက်များလာပြီး
-ကွဲပြားသော ချိတ်ဆက်နိုင်မှုဖြင့် ပိုများသော လက်ခံစက်များ အွန်လိုင်းတွင်
-ရှိလာသောအခါ ၎င်းသည် ဖြစ်နိုင်ခြေ နည်းလာနိုင်သည်။</p>
-<p>လွန်ကဲသော ကိစ္စရပ်တွင် Ouinet လက်ခံစက်များအကြား ချိတ်ဆက်မှုများကို
-စိစစ်ရေးအဖွဲ့က ထိုသို့ ရှာဖွေထောက်လှမ်းပြီး ပိတ်ဆို့နိုင်သည်။ ယင်းသည်
-(BitTorrent အသွားအလာအားလုံးကို ပိတ်ဆို့ရန် မရှိမဖြစ် လိုအပ်နိုင်သောကြောင့်)
-ဖြစ်နိုင်ခြေ မရှိသည့်အပြင် လက်ရှိတွင် Ouinet က ပံ့ပိုးနိုင်သည်ထက်
-ပိုနေသော်လည်း ကျွန်ုပ်တို့သည် ဤတိုက်ခိုက်မှုများကို ပိုမိုဒဏ်ခံနိုင်အောင်
-ပြုလုပ်ရန် အစီအစဉ် ရှိသည်။</p>
-</li>
-<li>
-<p>အခြား မည်သည့်လက်ခံစက်ကမျှ ထိုးသွင်းဖိုင်သို့ မရောက်ရှိနိုင်ပါ။
-ထိုးသွင်းဖိုင်အားလုံး တစ်ပြိုင်တည်း ပျက်ခြင်းမှာ မဖြစ်နိုင်သောကြောင့်
-သင့်စက်ကဲ့သို့ အလားတူ ကွန်ရက် ကြားဝင်နှောင့်ယှက်မှုကြောင့် အကျိုးသက်ရောက်မှု
-ခံရသည့် Ouinet လက်ခံစက်များကိုသာ သင် ရောက်ရှိနိုင်ခြင်း ဖြစ်နိုင်သည်။</p>
-<p>ယင်းသည် သင်ရှိနေသော နိုင်ငံမှ ထွက်ခွာသော သို့မဟုတ် ၎င်းသို့ ဝင်ရောက်သော
-အသွားအလာ အားလုံးကို ကြားဝင်နှောင့်ယှက်သည့်အချိန်တွင် ဖြစ်ပွားနိုင်သည်။
-ဤကိစ္စရပ်တွင် Ceno သည် ဖြန့်ချိထားသော ယာယီသိမ်းဆည်းထားသည့် မှတ်ဉာဏ်မှ
-အကြောင်းအရာသည် ခေတ်မမီတော့သည့်တိုင်အောင် ၎င်းကို ရယူပြီး သုံးစွဲပါလိမ့်မည်။</p>
-<p>ထပ်မံ၍ Ceno နှင့် Ouinet ပိုမိုလူကြိုက်များလာသည်နှင့်အမျှ နိုင်ငံတကာ
-ဆိုက်များသို့ ဝင်ရောက်သုံးစွဲခွင့် အမျိုးအစားတစ်ခုခု ရှိသော လက်ခံစက်အနည်းငယ်
-အနည်းဆုံး ရှိနိုင်ခြေ မြင့်တက်လာသည်။ ဝင်ရောက်သုံးစွဲခွင့်က
-စိတ်မချရသည့်တိုင်အောင် နိုင်ငံတွင်းသို့ အကြောင်းအရာ အချို့ကို
-ထိုးသွင်းနိုင်သည့် Ouinet လက်ခံစက်တစ်ခုသည် ပြင်ပကမ္ဘာသို့ ထပ်မံ
-ဝင်ရောက်သုံးစွဲခွင့် မလိုအပ်ဘဲ (ဖြန့်ချိထားသော ယာယီသိမ်းဆည်းထားသည့်
-မှတ်ဉာဏ်ကို သုံး၍) ၎င်းကို ဖြန့်ဝေရန် လုံလောက်နိုင်သည်။</p>
-</li>
+<li>When you are on the tabs screen, tapping this menu will only give you the option to Close all tabs</li>
 </ul>
-<p>နောက်ဆုံးတွင် ကျွန်ုပ်တို့သည် ထိုအခြေအနေနှစ်ရပ်ကို ကြိုးစားရှောင်ရှားရန်
-ဆင်ဆာမလုပ်သည့် (မျှော်လင့်ရသော) နိုင်ငံများတွင် ချိတ်ဆက်မှုအားကောင်းသော Ouinet
-လက်ခံစက်အချို့ကို လုပ်‌ဆောင်သော်လည်း ထိုကဲ့သို့ တည်ငြိမ်သော အင်တာနက် လိပ်စာများ
-ရှိသည့် လက်ခံစက်များသည်လည်း ပိတ်ဆို့ခံရနိုင်ကြောင်း ကျေးဇူးပြု၍ သတိပြုပါ။</p>
-<h3 id="ဖြနချိထားသော-ယာယီသိမးဆညးထားသည-မှတဉာဏ"><a class="header" href="#ဖြနချိထားသော-ယာယီသိမးဆညးထားသည-မှတဉာဏ">ဖြန့်ချိထားသော ယာယီသိမ်းဆည်းထားသည့် မှတ်ဉာဏ်</a></h3>
-<p>Keep in mind that an absolute requirement to be able to retrieve any content
-from the distributed cache is that it has already been injected by some other
-Ceno or Ouinet user. This means that popular content is more likely to
-eventually get injected and replicated in a natural manner, while more obscure
-content is less so, unless someone takes care of using Ceno or some other Ouinet
-client to inject and keep seeding it (which may further expose them to some
-<a href="browser/../concepts/risks.html">risks</a>).</p>
-<p>မျှဝေရန် ဘေးမကင်းဟု ယူဆရသော အကြောင်းအရာအချို့ကို အများသုံး ရှာဖွေမှု အသုံးပြု၍
-ပြန်ထုတ်သည့်လူ မည်မျှများသည်ဖြစ်စေ လုံးဝ ထိုးသွင်းမည် မဟုတ်ကြောင်း သတိပြုပါ။
-ယင်းတွင် မူလ ဆာဗာမှ သီးသန့်အဖြစ် မှတ်သားထားသော အကြောင်းအရာ၊ စစ်မှန်ကြောင်း
-သက်သေပြရန် လိုအပ်သော အကြောင်းအရာနှင့် အချို့သော တက်ကြွသည့် ဝက်ဘ်
-အက်ပလီကေးရှင်းများက ဖလှယ်ထားသော အသွားအလာအချို့ ပါဝင်သည်။</p>
-<p>ထို့ပြင် ထိုးသွင်းထားသော အကြောင်းအရာ၏ မိတ္တူများ ရှိသည့် လက်ခံစက်များကို
-သင့်အနေနှင့် ရောက်ရှိနိုင်ရန် လိုအပ်ကြောင်း သတိပြုပါ။ ပေါင်းကူး လက်ခံစက်များသို့
-ရောက်ရှိရန် ယခင်က ဆွေးနွေးချက်တွင် ဖော်ပြခဲ့သော တူညီသည့် လေ့လာတွေ့ရှိမှုများသည်
-ဤကိစ္စရပ်နှင့် သက်ဆိုင်သည်။</p>
-<h3 id="http-သီးသန-ဆိုကများအတွက-မှတချက"><a class="header" href="#http-သီးသန-ဆိုကများအတွက-မှတချက">HTTP သီးသန့် ဆိုက်များအတွက် မှတ်ချက်</a></h3>
-<p>Ceno automatically switches to the more secure HTTPS protocol to access sites
-which would otherwise be accessed using plain, insecure HTTP. This is done by
-the embedded <a href="https://github.com/Rob--W/https-by-default">HTTPS by default</a> extension when you enter a bare domain name
-like <code>example.com</code> or an HTTP URL like <code>http://example.com/…</code> in the location
-bar, or when you follow a link with such a URL in a page.</p>
-<p>HTTPS သို့ အလိုအလျောက် ပြောင်းလဲပေးခြင်းသည် HTTP ချိတ်ဆက်မှုတွင်
-တစ်စုံတစ်ယောက်ထံမှ ကြားဖြတ်ခံရခြင်း နှင့် တရားမဝင်သော ဆာဗာများသို့
-ရောက်ရှိသွားခြင်းမှ အကြောင်းအရာအတုများ ရရှိလာခြင်း (ဥပမာ - ပိတ်ဆို့ခံရကြောင်း
-မက်ဆေ့ချ်)တို့ကို ကာကွယ်ပေးရန်အတွက် ပြုလုပ်ထားခြင်းဖြစ်ပါသည်။ ယခုကဲ့သို့
-အပိုင်စီးခြင်းလုပ်ရပ်သည် HTTPS နှင့် စမ်းသပ်ရှာဖွေလျှင် အသေးအဖွဲမျှသာ ဖြစ်ပါသည်၊
-ထို့ကြောင့် Ceno သည် အကြောင်းအရာအတုများ ပေါ်လာခြင်းကဲ့သို့သော
-လှည့်စားခြင်းမျိုးတို့မခံရဘဲ အလုပ်လုပ်နိုင်ပါသည်။</p>
-<p>ဖြစ်လေ့ဖြစ်ထမရှိသော်လည်း တချို့သောဆိုက်များသည် HTTPS ကို မထောက်ပံ့ပါ၊
-၎င်းတို့အတွက် ဝင်ရောက်သုံးစွဲခွင့် စက်ကိရိယာများကိုလည်း အလုပ်လုပ်ခွင့်မပေးပါ။
-အကယ်၍များ သင့်အနေဖြင့် Ceno တွင် ဤကဲ့သို့သော ကိစ္စမျိုးဖြင့် ဆိုက်တစ်ခုကို
-ဝင်ရောက်ကြည့်ရှုလို့မရသောအခါ တည်နေရာဘားတွင် <code>https://</code> အစား<code>http://</code>ဟုပြောင်းလဲ
-ပြင်ဆင်လိုက်ပြီးမှ ပြန်လည် စမ်းကြည့်ပါ။</p>
-<p>အကယ်၍ သင်က HTTP ကိုသုံးပြီး သီးခြားဆိုက်တစ်ခုကို အမြဲတမ်း ရယူလိုပါက သင့်အနေဖြင့်
-ဤကဲ့သို့သော အမြဲတမ်းအတွက်ခြွင်းချက်တစ်ခုကို ထည့်ထားနိုင်ပါသည်။</p>
-<ol>
-<li>အက်ပ်၏အဓိကမီနူးထဲတွင် <em>HTTPS by default</em>ကို နှိပ်ပါ။ ထိုအဆက်၏
-ဆက်တင်စာမျက်နှာကို မြင်ရပါမည်။</li>
-<li>ဆိုက်၏ ဒိုမိန်းနာမည်ကို စာသားထည့်ရမည့်နေရာ၌ အောက်တွင်ပြထားသည့်အတိုင်း
-ရိုက်ထည့်ပါ။ သင့်အနေဖြင့် များစွာသော ဆိုက်များကို spaces သို့မဟုတ်
-စာကြောင်းအသစ်များဖြင့် ခွဲပြီး ထည့်နိုင်တာကို မြင်နိုင်ပါသည်။
-<code>example.com</code>ကို ထည့်သွင်းခြင်းက ထို ဒိုမိန်းအောက်မှာရှိနေတဲ့
-<code>www.example.com</code> သို့မဟုတ် <code>x.y.example.com</code>ကဲ့သို့သော
-ဆိုက်များအားလုံးပါဝင်သွားမှာဖြစ်ကြောင်းကို ကျေးဇူးပြုပြီး သတိပြုပါ။</li>
-<li>အကယ်၍ ပြီးသွားတဲ့အခါ နောက်ပြန်သွားပါ သို့မဟုတ် တက်ဘ်ကို ပိတ်ပါ။</li>
-</ol>
-<p><img src="browser/images/httpsbd-exceptions.png" alt="Figure: Adding exceptions for HTTP-only sites" /></p>
-<p><strong>Note:</strong> In the unfortunate case that a site is only accessible via HTTP, and
-it is also being hijacked by a censor, you will need to go to the <a href="browser/settings.html">Settings
-page</a>, disable Origin access, and try again. Please note that this
-setting affects all sites, and it is not remembered by Ceno for subsequent runs.
-We encourage you to contact the site administrators and tell them to enable
-HTTPS support.</p>
-<h2 id="အတုအယောင-အကြောငးအရာများကို-စာမျကနှာမှ-ဖောပြခြငး-ဥပမာ---ပိတဆိုခံရကြောငး-မကဆေချ"><a class="header" href="#အတုအယောင-အကြောငးအရာများကို-စာမျကနှာမှ-ဖောပြခြငး-ဥပမာ---ပိတဆိုခံရကြောငး-မကဆေချ">အတုအယောင် အကြောင်းအရာများကို စာမျက်နှာမှ ဖော်ပြခြင်း (ဥပမာ - ပိတ်ဆို့ခံရကြောင်း မက်ဆေ့ချ်)</a></h2>
-<p>ပိတ်ထားသော ဆိုက်တစ်ခုကို ကြည့်ရှုဖို့ Ceno ဗားရှင်းအဟောင်းကို အသုံးပြုသောအခါ
-တစ်စုံတစ်ယောက်က ဆက်သွယ်မှုကို ကြားဖြတ်ပြီး တရားမဝင်သော ဆာဗာတစ်ခုဆီသို့
-လမ်းကြောင်းလွှဲလိုက်ခြင်းများ ဖြစ်ပေါ်နိုင်ပါသည်။ နောက်ပိုင်းတွင် Ceno မှ
-လမ်းကြောင်းလွှဲခြင်းကို မှတ်မိပြီး အရင်ဆိုက်တစ်ခုကို ကြည့်ရှုဖို့ကြိုးစားတိုင်း
-လမ်းကြောင်းလွှဲသော ဆိုက် ကို အလိုအလျောက်ဖွင့်ပေးခြင်းများ ဖြစ်နိုင်ပါသည်။</p>
-<p>ထိုပြဿနာကို ဖြေရှင်းရန် တစ်ခုတည်းသောနည်းလမ်းမှာ Ceno၏ ပုံမှန်ရှာဖွေခြင်း
-ယာယီမှတ်ဥာဏ်ကို ဖျက်ပစ်ရပါမည်။ အက်ပ်၏ အဓိက မီနူးထဲမှ <em>အပြင်အဆင်များ</em>ကိုရွေးပါ၊
-ပြီးနောက် <em>တစ်ကိုယ်ရည်သုံး အချက်အလက်များရှင်းပါ</em> ကိုရွေးပါ၊ ထို့နောက်
-<em>ယာယီမှတ်တမ်းမ</em>ဆိုသောအရာတစ်ခုတည်းကိုသာရွေးပြီး <em>အချက်အလက်ကို ရှင်းပါ</em>
-ကိုနှိပ်ပါ။</p>
-<p>Ceno ဗားရှင်း 1.3.0 နှင့်အထက်တွင် နောက်ဆုံးကြည့်ရှုခဲ့သောဆိုက်များ၏
-ထိန်းချုပ်ခံရခြင်းကို HTTPS ကို အမြဲတမ်းသုံးပြီး ဖယ်ရှားလိုက်ပြီဖြစ်ကြောင်း
-ပြီးခဲ့သောအခန်းတွင် ရှင်းပြခဲ့ကြောင်းကို ကျေးဇူးပြုပြီး သတိရပါ။</p>
-<h2 id="အခြားစကများသည-ကျွနုပ-စကက-တငပိုထားသော-အကြောငးအရာကို-ပြနမထုတနိုငပါ"><a class="header" href="#အခြားစကများသည-ကျွနုပ-စကက-တငပိုထားသော-အကြောငးအရာကို-ပြနမထုတနိုငပါ">အခြားစက်များသည် ကျွန်ုပ်၏ စက်က တင်ပို့ထားသော အကြောင်းအရာကို ပြန်မထုတ်နိုင်ပါ</a></h2>
-<p>First, make sure that your device is still seeding the content by going to the
-<a href="browser/settings.html"><em>Ceno Settings</em> page</a>, only leaving the <em>Shared by other Ceno
-users</em> source box checked, then accessing that content again: it should load (at
-least partially), and tapping the Ceno address bar icon should only show
-non-zero values under <em>Shared by other Ceno users</em> or <em>Shared by you</em>.</p>
-<p>အကြောင်းအရာ တက်မလာလျှင် Ceno က ၎င်းကို ဖယ်ရှားပြီးသောကြောင့် ဖြစ်နိုင်သည်။
-၎င်းသည် ဟောင်းသော အကြောင်းအရာ (ပုံသေအားဖြင့် တစ်ပတ်ထက် ပိုကြာသော အကြောင်းအရာ)
-ကို သင်၏ စက်တွင်း ယာယီသိမ်းဆည်းထားသော မှတ်ဉာဏ်မှ အလိုအလျောက် ရှင်းလင်းပစ်သည်။
-ဆက်တင်များ စာမျက်နှာတွင် <em>Ceno ကွန်ရက်မှတစ်ဆင့် (အများသုံး)</em> ရင်းမြစ်ကို
-ဖွင့်ပြီး အကြောင်းအရာကို ပြန်လည်ဝင်ရောက်သုံးစွဲပါ။ စက်က အကြောင်းအရာကို
-ဖြန့်ချိထားသော ယာယီသိမ်းဆည်းထားသည့် မှတ်ဉာဏ် အညွှန်းတွင် ကြေညာရန် နှစ်မိနစ်ခန့်
-စောင့်ပေးပါ။ <em>အခြား Ceno သုံးစွဲသူများက မျှဝေထားသည်</em> ကို အမှန်ခြစ်ထားသည့်
-တစ်ခုတည်းသော အကွက်ဖြစ်အောင် ထပ်မံပြုလုပ်ပြီး အကြောင်းအရာကို ထပ်မံ
-ဝင်ရောက်သုံးစွဲပါ။ ၎င်းသည် တက်မလာသေးပါက ထိုအကြောင်းအရာကို မျှဝေရန် ဘေးမကင်းဟု
-Ouinet က ယူဆခြင်း ဖြစ်နိုင်သည်။</p>
-<p>ယခင် အဆင့်က အလုပ်ဖြစ်သော်လည်း <em>အခြား Ceno သုံးစွဲသူများက မျှဝေထားသည်</em>
-ရင်းမြစ်ကိုသာ ဖွင့်ထားသော အခြားစက်တွင် "ရင်းမြစ်ကို ပြန်ထုတ်၍ မရပါ…" ကို
-ပြသသေးလျှင် ဖြစ်နိုင်ခြေ နှစ်မျိုးရှိသည်။ စက်နှစ်လုံးစလုံးသည်
-ကွန်ရက်တစ်ခုတည်းတွင် ရှိနေလျှင် (ဥပမာ- တူညီသော Wi-Fi ဝင်ရောက်သုံးစွဲမှု
-ပွိုင့်တွင် ရှိနေလျှင်) ကွန်ရက်က ၎င်းနှင့် ချိတ်ဆက်ထားသော စက်များအကြား
-တိုက်ရိုက် ဆက်သွယ်ခွင့် မပြုခြင်း ဖြစ်နိုင်သည်။ ယင်းသည် အများသုံး Wi-Fi
-ကွန်ရက်အချို့တွင် ဖြစ်ပွားသောကြောင့် သီးသန့်ကွန်ရက်ကို အသုံးပြုကြည့်ပါ။</p>
-<p>စက်များသည် ကွဲပြားသော ကွန်ရက်များတွင် ရှိနေပါက အကြောင်းရင်း အမျိုးမျိုးကြောင့်
-ဖြစ်နိုင်သည်။ ၎င်းတို့ထဲမှ တစ်ခုမှာ ပထမစက်၏ ကွန်ရက်သည် အဝင် ချိတ်ဆက်မှုများကို
-ခွင့်မပြုခြင်း ဖြစ်သည်။ သင်သည် ၎င်း၏ <em>Ceno ဆက်တင်များ</em> စာမျက်နှာကို ဖွင့်လျှင်
-<em>ရောက်ရှိနိုင်မှု အခြေအနေ</em> အောက်တွင် <em>ရောက်ရှိနိုင်သည်</em> သို့မဟုတ်
-<em>ရောက်ရှိနိုင်ခြေ ရှိသည်</em> ကို တွေ့သင့်သည်။ ထိုသို့ မဟုတ်ပါက ထိုကွန်ရက်မှ
-တင်ပို့ရန် မဖြစ်နိုင်ပါ။</p>
-<blockquote>
-<p><strong>Technical note:</strong> If your device reports <em>undecided</em> reachability and you
-can change the configuration of the access point, you may create a permanent
-port forwarding rule towards your client. See <a href="browser/bridging.html">here</a> for further
-instructions.</p>
-</blockquote>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="နောကဆကတွဲ---ouinet-သုံးစွဲသူအတွက-စာမျကနှာ"><a class="header" href="#နောကဆကတွဲ---ouinet-သုံးစွဲသူအတွက-စာမျကနှာ">နောက်ဆက်တွဲ - Ouinet သုံးစွဲသူအတွက် စာမျက်နှာ</a></h1>
-<p>The Ouinet client (as run by e.g. Ceno Browser) offers a front-end page with
-some information and actions which may be useful for debugging the client. Many
-of them are also offered by the Ceno Extension via the <a href="client/../browser/settings.html"><em>Ceno Settings</em>
-page</a>, though others are only available here.</p>
-<p>The front-end is accessible using any plain Web browser running on the same
-device (you can use Ceno too). Its default address is <a href="http://127.0.0.1:8078/">http://127.0.0.1:8078/</a>.
-If you open it, you will see something like the figure below.</p>
-<p><img src="client/images/front-end.png" alt="Figure: The client front-end" /></p>
-<p>စာမျက်နှာတွင် ပြသထားသော အကြောင်းအရာများတွင် အောက်ပါတို့ ပါဝင်သည် -</p>
-<ul>
-<li>
-<p>သင့်ဘရောက်ဇာတွင် အက်အပလီကေးရှင်းကို HTTPS ဖြင့် ချိတ်ဆက်နိုင်ရန် လိုအပ်သည့်
-ခွင့်ပြုချက်လက်မှတ် (CA) ရယူရန် လင့်ခ်</p>
-<p>You only need this to use a plain browser for testing the Ouinet client, in
-which case you will also have to configure its HTTP/HTTPS proxies to
-<code>127.0.0.1:8077</code>, and manually enable the <a href="https://gitlab.com/ceno-app/ceno-ext-settings/">Ceno Extension</a> for injection to
-work. We very strongly recommend using a <em>separate, specific browser profile</em>
-for this purpose.</p>
-<p>အထူးသတိပြုရမည်မှာ Ceno ဘရောက်ဇာကို အသုံးပြုထားလျှင် ရှေ့တွင် ဖော်ပြထားသည့်
-လမ်းညွှန်ချက်များကို လုပ်ဆောင်ရန် မလိုပါ။ Ceno ဘရောက်ဇာများတွင်
-လမ်းညွှန်ချက်များအတိုင်း အဆင်သင့် ပြောင်းလဲထားပြီးဖြစ်သည်။</p>
-</li>
-<li>
-<p>ပါဝင်သည့် အကြောင်းအရာများကို အသုံးပြုရာတွင် လိုအပ်သည့်
-ထိန်းချုပ်မှုများလုပ်ဆောင်နိုင်ရန် အဖွင့် အပိတ် လုပ်နိုင်သည့် ခလုတ်များ။</p>
-</li>
-<li>
-<p>လုပ်ဆောင်ချက်များကို အဆင့်အလိုက် ရွေးချယ်နိုင်သည့် သေတ္တာများ။ ဥပမာ - စနစ်က
-အလိုအလျောက် ရွေးချယ်ထား သော <code>INFO</code> (သတင်းအချက်အလက် မက်ဆေ့ချ်များ၊
-သတိပြုစရာများနှင့် အမှားများ) သို့မဟုတ် <code>DEBUG</code> (အမှားများကို သတင်းပို့ရာတွင်
-အသုံးဝင်သည့် လုပ်ဆောင်ချက်) စသည်ဖြင့် ရွေးချယ်နိုင်သည်။ စာရင်းဖိုင်ကိုလည်း
-သည်နေရာတွင် ဖွင့်ပြီး ရယူနိုင်ပါသည်။</p>
-<p>စာရင်းဖိုင်ကို ဖွင့်လိုက်သောအခါ စာရင်းအဆင့်ကို အလိုအလျောက် <code>DEBUG</code> သို့
-ပြောင်းလဲသတ်မှတ်လိုက်သည် (ဒီနေရာတွင် သင် ပြန်လည်ပြောင်းလဲနိုင်သော်လည်း)။
-စာရင်းဖိုင်ကို ပိတ်လိုက်သောအခါ မူလစာရင်းအဆင့်ကို ပြန်လည် ပြောင်းလဲသွားသည်။</p>
-</li>
-<li>
-<p>ကမ္ဘာလုံးဆိုင်ရာ သုံးစွဲသူအခြေအနေနှင့် ဗားရှင်းသတင်းအချက်အလက်များ။
-အမှားများကို အစီရင်ခံသည့်အခါ အသုံးဝင်သည်။</p>
-</li>
-<li>
-<p>Information about client connectivity and injector addressing. The default
-<code>bep5</code> method looks up Internet addresses in a BitTorrent injector swarm, as
-explained <a href="client/../concepts/how.html">here</a>.</p>
-</li>
-<li>
-<p>ဖြန့်ချိထားသော ယာယီမှတ်ဉာဏ်မှ ထိုးသွင်းစက်များတွင်ရှိနေသည့် လက်မှတ်များကို
-အတည်ပြုစစ်ဆေးရန်အတွက် အများသုံးသော့များကို အသုံးပြုသည်။</p>
-</li>
-<li>
-<p>သင့်စက်တွင် ယာယီ သိမ်းဆည်းထားသောမှတ်ဉာဏ် အချက်အလက်များတွင် ယာယီ
-သိမ်းဆည်းထားသောအကြောင်းအရာ၏ အကြာဆုံးသိမ်းနိုင်သော သက်တမ်း၊
-ယာယီသိမ်းဆည်းထားသောမှတ်ဉာဏ်၏ ခန့်မှန်းခြေအရွယ်အစားနှင့်
-ထိုမှတ်ဉာဏ်အချက်အလက်များအားလုံးကို လုံးဝပိတ်ပစ်နိုင်သော
-ခလုတ်တစ်ခုတို့ပါဝင်သည်။</p>
-</li>
-<li>
-<p>အကယ်၍ ဖွင့်ထားပါက ပြင်ပ၊ တည်တံ့သော ယာယီမှတ်ဥာဏ်၏ လမ်းကြောင်း (Ceno သည်
-ဒီအရာကို လက်ရှိတွင် အသုံးမပြုပါ)။</p>
-</li>
-</ul>
+<img src="./images/close_tabs.png" alt="Close all tabs" width="400"/>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="အပြငအဆငများ"><a class="header" href="#အပြငအဆငများ">အပြင်အဆင်များ</a></h1>
+<p>Settings are accessed via the vertical three dot menu and then selecting
+Settings option.</p>
+<img src="./images/settings.png" alt="Settings" width="40%"/>
+<p>They are divided in 5 groups:</p>
+<p><a href="./settings.html#settings-general">General</a><br />
+<a href="./settings.html#settings-permissions">Permissions</a><br />
+<a href="./settings.html#settings-data">Data</a><br />
+<a href="./settings.html#settings-developer-tools">Developer tools</a><br />
+<a href="./settings.html#settings-about">About</a></p>
+<p>Let’s look at each of those.</p>
+<h2 id="settings-general"><a class="header" href="#settings-general">Settings: General</a></h2>
+<img src="./images/settings_general.png" alt="Settings general" width="60%"/>
+<p>You are probably familiar with most of these settings as they are similar to the
+options available in other browsers. In the following sections we will briefly
+describe the main ones.</p>
+<h3 id="ရှာဖွေရေး-အငဂျငကို-ပုံသေသတမှတပါ"><a class="header" href="#ရှာဖွေရေး-အငဂျငကို-ပုံသေသတမှတပါ">ရှာဖွေရေး အင်ဂျင်ကို ပုံသေသတ်မှတ်ပါ</a></h3>
+<img src="./images/default_search_engine.png" alt="Default search engine" width="60%"/>
+<p>This setting allows you to set the default search engine for Ceno browser, by
+checking or unchecking the options provided.</p>
+<h3 id="စိတကြိုကလုပပါ"><a class="header" href="#စိတကြိုကလုပပါ">စိတ်ကြိုက်လုပ်ပါ</a></h3>
+<img src="./images/customisations.png" alt="Customizations" width="60%"/>
+<p>Again, these options are mostly self-explanatory.</p>
+<p>We would just draw your attention to an option that may not exist in other apps.
+Ceno allows you to change its launch icon which can be useful in some
+circumstances. We provide several options for you to choose from.</p>
+<img src="./images/app_icon.png" alt="Choose app icon" width="60%"/>
+<h3 id="တံတားမုဒကို-ဖွငပါ"><a class="header" href="#တံတားမုဒကို-ဖွငပါ">တံတားမုဒ်ကို ဖွင့်ပါ</a></h3>
+<img src="./images/bridge_toggle_on.png" alt="Bridge toggle on" width="400"/>
+<p>The purpose and high level functionality of the Bridge Mode is described in the
+<a href="./public-or-personal.html#bridges">Bridge Mode section</a>. Here you are able to
+enable or disable this setting.</p>
+<h3 id="background-metrics"><a class="header" href="#background-metrics">Background metrics</a></h3>
+<img src="./images/metrics_setting.png" alt="Background metrics" width="60%"/>
+<p>These are metrics that help us understand any issues that might happen from time
+to time while you are using the Ceno browser. Tapping on the Background metrics
+will open the screen giving you an options to turn the metrics off.</p>
+<img src="./images/metrics_toggle.png" alt="Metrics toggle" width="400"/>
+<p>We recommend these settings to be kept in On position, as they help us
+understand problems that some users may encounter while using Ceno. The more we
+are able to understand the problems, the more we are able to solve them.</p>
+<p>We do no collect any personal data and we do not sell any data to any third
+parties. To read our Privacy policy, please tap on Privacy policy button.</p>
+<h3 id="ချိုယွငးမှုအကြောငး-ပေးပိုခြငး"><a class="header" href="#ချိုယွငးမှုအကြောငး-ပေးပိုခြငး">ချို့ယွင်းမှုအကြောင်း ပေးပို့ခြင်း</a></h3>
+<p>The circumstances, network conditions and devices in which Ceno is used are
+different for different users, which sometimes can cause the Ceno app to crash.
+To understand what caused a crash in a particular situation, Ceno has been
+designed to generate crash reports and send them to the development team. You,
+as a user, can enable or disable the crash rerport report sending.</p>
+<p>These reports do not contain any personally identifiable data. If you experience
+Ceno crashes, we recommend this setting to be enabled</p>
+<h3 id="delete-browsing-data"><a class="header" href="#delete-browsing-data">Delete Browsing Data</a></h3>
+<img src="./images/delete_browsing_data_setting.png" alt="Delete browsing data setting" width="60%"/>
+<p>Tapping on this option provides you with the possibility to select what Ceno
+data you want to delete.</p>
+<img src="./images/delete_browsing_data.png" alt="Delete browsing data" width="400"/>
+<p>The Clear button on the home screen deletes all Ceno data, but here you can pick
+and choose what to delete and what to keep.</p>
+<h3 id="ဘာသာစကားပြောငးပါ"><a class="header" href="#ဘာသာစကားပြောငးပါ">ဘာသာစကားပြောင်းပါ</a></h3>
+<img src="./images/languages.png" alt="Languages" width="400"/>
+<p>Ceno app has been translated into many languages. If there is a language you’d
+like to see added to this already extensive list, please let us know. You can
+contact us by email support [at] ceno [dot] app or via our <a href="https://gitlab.com/ceno-app">gitlab
+repository</a> .</p>
+<h2 id="settings-permissions"><a class="header" href="#settings-permissions">Settings: Permissions</a></h2>
+<img src="./images/settings_permissions.png" alt="Permissions section" width="400"/>
+<p>Ceno needs only two permissions: sending the user notifications and stopping the
+battery optimisation. You have probably been asked to give Ceno those
+permissions when you first started the Ceno app, or after a restart following
+clearing of all Ceno data.</p>
+<p>You can read more about them in the <a href="url">section Permissions</a>.</p>
+<h2 id="settings-data"><a class="header" href="#settings-data">Settings: Data</a></h2>
+<img src="./images/settings_data.png" alt="Data section" width="60%"/>
+<p>In this section, you can view which content your Ceno app can share with other
+Ceno users when they request it .</p>
+<p><strong>Content shared by you</strong> lists the websites that you your Ceno app is able to
+share with other Ceno users.</p>
+<p><strong>Local cache</strong> informs you how much data may be uploaded from your device onto
+the Ceno network when other users request it.</p>
+<p>Tapping on the <strong>Clear cached content</strong> option will delete the data from your
+cache and there will be nothing left to share with your peers. To cache websites
+and be able to share them with your peers again, you will need to access them
+via Ceno Public network once more.</p>
+<p>More information about the purpose of these settings is available in the section
+<a href="./public-or-personal.html">Public or Personal</a>.</p>
+<h2 id="settings-developer-tools"><a class="header" href="#settings-developer-tools">Settings: Developer Tools</a></h2>
+<img src="./images/settings_developers.png" alt="Developer tools section" width="60%"/>
+<h3 id="ဝဘဆိုက-ရငးမြစများ"><a class="header" href="#ဝဘဆိုက-ရငးမြစများ">ဝဘ်ဆိုက် ရင်းမြစ်များ</a></h3>
+<p>Ceno is able to retrieve website content that you request from different
+sources: directly from the origin website, Ceno public network, Ceno private
+network and Ceno cache. More details about these options are available in the
+sections detailing the Public and Personal browsing modes.<br />
+By default all these options are checked and for best results you can just leave
+them as they are.</p>
+<p>You can read more detailed information regarding these options in the section
+<a href="./public-or-personal.html">Public or Personal</a>.</p>
+<h3 id="tracking-protection"><a class="header" href="#tracking-protection">Tracking protection</a></h3>
+<p>These two settings prevent your online activities being tracked by third party
+trackers.</p>
+<h3 id="network-details"><a class="header" href="#network-details">Network details</a></h3>
+<p>This section contains details of your network settings, which may be helpful to
+our development team if we need to investigate any issues that you report to us.</p>
+<h3 id="စာရငးဖိုငကို-ဖွငပါ"><a class="header" href="#စာရငးဖိုငကို-ဖွငပါ">စာရင်းဖိုင်ကို ဖွင့်ပါ</a></h3>
+<p>Enabling and exporting the Ceno log file can be helpful when investigating
+issues. These files do not contain any personally identifiable data. If you
+export them to the file system on your device, you can view their contents. You
+can also share them with our development team when you experience issues that
+may require investigation by our technical experts.</p>
+<h2 id="settings-about"><a class="header" href="#settings-about">Settings: About</a></h2>
+<img src="./images/settings_about.png" alt="About section" width="60%"/>
+<p>Contains additional information about your installation of Ceno, including its
+version number, the status of the backround Ceno service, and the version number
+of the Ouinet library that is built into Ceno.</p>
 
                     </main>
 
@@ -1655,6 +779,7 @@ explained <a href="client/../concepts/how.html">here</a>.</p>
             window.setTimeout(window.print, 100);
         });
         </script>
+
 
     </div>
     </body>
