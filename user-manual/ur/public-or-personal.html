@@ -1,0 +1,319 @@
+<!DOCTYPE HTML>
+<html lang="ur" class="light sidebar-visible" dir="rtl">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Public or Personal? - Ceno User Manual</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "light";
+            window.path_to_searchindex_js = "searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Ceno User Manual</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="public-or-personal"><a class="header" href="#public-or-personal">Public or Personal?</a></h1>
+<p>After the onboarding and permissions screens, the app displays its  main screen. As soon as the screen appears, you will notice two prominent buttons called Public and Personal. They allow you to choose between the Public and Personal browsing mode.</p>
+<img src="./images/main.png" alt="Main screen" width="50%"/>
+<h2 id="public-browsing"><a class="header" href="#public-browsing">Public Browsing</a></h2>
+<img src="./images/public_button.png" alt="Public button" width="60%"/>
+<p>Below image illustrates the way Ceno retrieves website content in Public browsing mode.</p>
+<img src="./images/public_browsing.png" alt="Public browsing" width="700"/>
+<p>Dotted lines on this image represent the website content requests and responses, and the asterisks represent encrypted content.</p>
+<p>In <strong>Public browsing mode</strong>, the users’ requests are handled by the <strong>Ceno public network</strong>. In this mode, the users request some website content the same way they do that when using any other browser.  If Ceno is able to access the origin website directly, it will retrieve its content and deliver it to the user - this is the same as most other browsers.<br />
+However,  if Ceno is not able to reach the desired website, then it will try to reach it via injectors.</p>
+<h3 id="injectors"><a class="header" href="#injectors">Injectors</a></h3>
+<p><strong>Injectors</strong> are secure servers responsible for injecting the commonly accessed content into the Ceno network, and for verifying its authenticity and signing it.  The injectors are placed in strategic locations, so that they remain reachable by the users in restricted areas and can also reach the origin websites  .  They help retrieve the desired content either from the origin website or from the Ceno network and return it to the user who requested it.  They are run by eQualitie.</p>
+<p>As a user, you don't need to do anything to connect to an <strong>Injector</strong> - the app does it automatically when you request a website that it cannot access directly.</p>
+<h3 id="bridges"><a class="header" href="#bridges">Bridges</a></h3>
+<p><strong>Bridges</strong> are devices belonging to individual Ceno users based in locations that enjoy relatively unrestrictied connectivity and internet access. They are reachable by Ceno users who are unable to reach the websites directly.  These devices are responsible for forwarding encrypted user requests to <strong>Injectors</strong> and the encrypted responses back to the users.</p>
+<p>Bridges are not able to read the requests and responses they forward.</p>
+<p>Every Ceno user can configure their device to become a bridge.</p>
+<p>The <strong>Enable bridge mode</strong> toggle can be reached either from the link on the home page, or from the vertical three dot menu, to the right of the address bar.</p>
+<img src="./images/bridge_mode.png" alt="Bridge mode" width="70%"/>
+<p>In the Settings page, moving the <strong>Enable bridge mode</strong> toggle to ON position</p>
+<img src="./images/bridge_toggle_off.png" alt="Bridge mode toggle is off" width="400"/>
+<img src="./images/bridge_toggle_on.png" alt="Bridge mode toggle is on" width="400"/>
+<p>will make your device a bridge for other Ceno users whose access to internet is more restricted.  This requires Ceno services to restart</p>
+<img src="./images/bridge_starting.png" alt="Bridge mode is starting" width="400"/>
+<p>Once the bridge mode is successfully established, you will receive a confirmation message.</p>
+<img src="./images/bridge_success.png" alt="Bridge success" width="400"/>
+<p>From this point on, the Ceno app on your device can act as a bridge to help Ceno users in restricted areas reach desired content.</p>
+<p>However, bridging also requires specific settings of your router or network, which are described in the <a href="./bridge-configuration.html">Bridge Configuration</a> section.</p>
+<h3 id="ceno-cache"><a class="header" href="#ceno-cache">Ceno cache</a></h3>
+<p>And last but not least, the <strong>Ceno cache</strong>.  All Ceno users are members of this peer-to-peer network, and they store the website content retrieved via Ceno public network and share it between each other.</p>
+<p>In <strong>Public browsing mode</strong>, Ceno retrieves the requested content using any of these communication channels.   It strips down all private data (like passwords and cookies) from Web traffic to ensure that it does not leak it to other users.</p>
+<h2 id="public-browsing---when-to-use-it"><a class="header" href="#public-browsing---when-to-use-it">Public browsing - when to use it</a></h2>
+<p>This option is conceived for you, the user, to access most things that don’t require you to log in or input any personal data. You can use it to browse, listen to podcasts, watch the news, read blogs or articles, follow sports, science, music, events or other content.
+In P<strong>ublic browsing mode</strong>, Ceno may try to access the requested content <strong>directly from the websites</strong>, from <strong>Ceno public network</strong> (<strong>injectors</strong> and <strong>bridges</strong>) or from other Ceno users (<strong>distributed cache</strong>).</p>
+<p><em>Please note that some content which is not considered safe for sharing will never be injected, no matter how many people retrieve it using public browsing. This includes content marked as private by the origin server, content that requires authentication, and some traffic exchanged by certain dynamic web applications.</em></p>
+<h2 id="website-sources-in-public-browsing-mode"><a class="header" href="#website-sources-in-public-browsing-mode">Website sources in Public browsing mode</a></h2>
+<p>When you want to access a website using Ceno Public browsing mode, the app may try to retrieve the  content either from the website directly or via Ceno public network.  In the following chapter we describe this process in more detail.</p>
+<h3 id="content-retrieved-directly-from-the-website"><a class="header" href="#content-retrieved-directly-from-the-website">Content retrieved directly from the website</a></h3>
+<p>Ceno will retrieve the desired content directly from the origin server when that server is reachable. This is the same way you access any website through most other popular browsers.</p>
+<img src="./images/ceno_direct_access.png" alt="Direct access" width="700"/>
+<p>When you access websites this way, they are not stored in your cache and you cannot share them with other members of the Ceno network. When Ceno retrieves the content from the origin server, the small Ceno button on your the address bar will have a green dot.</p>
+<img src="./images/green_dot.png" alt="Green dot" width="300"/>
+<p>If you tap on that button, you will see how many components of the requested website were retrieved from the website, Ceno network or Ceno cache.</p>
+<img src="./images/green_dot_tap.png" alt="Tap on green dot" width="400"/>
+<p>If you go to Settings &gt; Data you can verfiy verify  that no data is stored in your cache after you have accessed a website directly from its server.</p>
+<img src="./images/no_data.png" alt="No data in cache" width="60%"/>
+<p>In this case, the risks for you as a user are similar to the risks associated with using any other browser.  Learn more.</p>
+<h3 id="content-retrieved-via-ceno-public-network"><a class="header" href="#content-retrieved-via-ceno-public-network">Content retrieved via Ceno public network</a></h3>
+<p>When Ceno is not able to reach the origin server it will try to access them via Ceno public network.</p>
+<img src="./images/ceno_public_network.png" alt="Ceno public network" width="700"/>
+<p>This network contains secure servers called <strong>Injectors</strong>, which have direct access to the origin websites, and which inject the content of those websites into the Ceno network.   When website content is retrieved via Ceno public network, this will be indicated by an orange dot on the small Ceno button on your address bar.</p>
+<img src="./images/orange_dot.png" alt="Orange dot" width="300"/>
+<p>Tapping on this button will open a small window which will inform you how many website components were retrieved from public Ceno network.</p>
+<img src="./images/orange_dot_tap.png" alt="Tap on orange dot" width="400"/>
+<p>Any website that you access this way will be stored in the local cache of your Ceno browser, and will be made available to other members of the Ceno network.</p>
+<p>You can see which websites are stored in your cache by going to Settings &gt; Data section.</p>
+<p>There are three entries within that section: <strong>Local cache</strong>, <strong>Content shred by you</strong>, and <strong>Clear cached content</strong>.<br />
+The <strong>Local cache</strong> section shows you how much data has been stored in the Ceno cache on your device.</p>
+<img src="./images/data_in_cache.png" alt="Data in cache" width="400"/>
+<p>If you tap on <strong>Content shared by you</strong>, you will be able to see the websites that your device can make available to Ceno network.</p>
+<img src="./images/content_shared_by_you.png" alt="Content shared by you" width="400"/>
+<p>Tapping <strong>Clear cached content</strong> option will allow you to delete all cached data.</p>
+<img src="./images/clear_cached_content.png" alt="Clear cached content" width="400"/>
+<h3 id="cached-content"><a class="header" href="#cached-content">Cached Content</a></h3>
+<p>This way of accessing websites is useful when other components of Ceno public network are not reachable, or when you decide to access a website from your peers’ devices for other reasons.<br />
+Below image illustrates the requests and responses exhcanged exchanged between members of Ceno network who have previsously accessed and cached the desired websites.</p>
+<img src="./images/ceno_cache.png" alt="Ceno cache" width="700"/>
+<p>If a website content is retrieved via <strong>Ceno cache</strong>, the Ceno button will have a small blue dot to indicate that.</p>
+<img src="./images/blue_dot.png" alt="Blue dot" width="400"/>
+<p>Clicking on the Ceno button will open the information screen that indicates the same.</p>
+<img src="./images/blue_dot_tap.png" alt="Blue dot tap" width="400"/>
+<p>In this case, the website content will be cached on your device and will be shared with other Ceno users when requested. You can verify that by going to Settings &gt; Data &gt; Content shared by you.</p>
+<p>It can also happen that ceno browser opens a website that was stored in your own cache when you accessed it before.  When that happens, Ceno will inform you by displaying the wbesite sources in grey colour.</p>
+<img src="./images/grey_dot_tap.png" alt="Grey dot tap" width="400"/>
+<p>In Ceno Settings &gt; Developer tools &gt; Website sources you can check or uncheck these four settings.</p>
+<img src="./images/website_sources.png" alt="Website sources" width="60%"/>
+<p>If they are all checked, depending on the browsing mode, Ceno tries to fetch the website via all applicable  mechanisms, at the same time. We call  it a "mixed fetch". Whichever mechanism responds first is the one that  is used and the rest of the requests are cancelled.</p>
+<p>For best results, we recomment that all 4 of these boxes remain checked at all times.</p>
+<h2 id="personal-browsing---when-to-use-it"><a class="header" href="#personal-browsing---when-to-use-it">Personal Browsing - when to use it</a></h2>
+<p>You can select personal browsing by tapping on the Personal button on the main screen.</p>
+<img src="./images/personal_button.png" alt="Personal button" width="60%"/>
+<p>When you select this option, even if all four <strong>Website sources</strong> settings are checked, your Ceno app will attempt to access the desired websites only directly or via <strong>Ceno private network</strong>.</p>
+<p>This browsing mode  can be used for websites where you need to log in and enter other personal data.  Examples are: shopping websites, email, social media sites or other websites that you do not wish to share with the rest of the Ceno network.</p>
+<h3 id="accessing-websites-via-private-ceno-network"><a class="header" href="#accessing-websites-via-private-ceno-network">Accessing websites via Private ceno network</a></h3>
+<p>The following image shows the flow of website requests and responses between <strong>Ceno private network</strong> elements.</p>
+<img src="./images/personal_browsing.png" alt="Personal browsing" width="700"/>
+<p>In <strong>Personal browsing mode</strong>, when a website is requested, Ceno will retrieve it directly from the origin servers, or via Ceno Injectors.  However, in Personal mode, the Injectors do not cache the content like they do in Public browsing mode.  They simply forward the request to the origin server and forward the response to the user, but cannot see the encrypted content.   Learn more about Personal browsing mode.</p>
+<p>Sometimes, if a website is unreachable in Public browsing mode, because of differences in how these two modes operate, we suggest attempting to reach it via Personal browsing mode instead.</p>
+<p>For this mechanism to work, it is necessary that the Website sources <strong>Privately</strong> and <strong>Website</strong> remain checked.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="first-time-run.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="bridge-configuration.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="first-time-run.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="bridge-configuration.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

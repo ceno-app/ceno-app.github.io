@@ -1,0 +1,286 @@
+<!DOCTYPE HTML>
+<html lang="fa" class="light sidebar-visible" dir="rtl">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>اولین اجرا - Ceno User Manual</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "light";
+            window.path_to_searchindex_js = "searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Ceno User Manual</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="اولین-اجرا"><a class="header" href="#اولین-اجرا">اولین اجرا</a></h1>
+<h2 id="راهنمای-گامبهگام"><a class="header" href="#راهنمای-گامبهگام">راهنمای گام‌به‌گام</a></h2>
+<p>هنگامی که برای نخستین بار برنامه سنو را اجرا می‌کنید، به یک تور راهنمای
+گام‌به‌گام و کوتاه از ویژگی‌های اصلی سنو دعوت می‌شوید. می‌توانید آن را بپذیرید
+(با زدن رو «شروع کنید») یا رد کنید (با لمس «صرف‌نظر از تور»)</p>
+<img src="./screenshots/start_tour.png" alt="Start the tour" width="400"/>
+<p>این تور شما را همان طور که در تصاویر زیر نشان داده شده، یر با مهم‌ترین ویژگی‌های
+برنامه آشنا می‌کند.</p>
+<img src="./screenshots/tour1.png" alt="Tour part 1" width="45%"/>
+<img src="./screenshots/tour2.png" alt="Tour part 1" width="45%"/>
+<img src="./screenshots/tour3.png" alt="Tour part 1" width="45%"/>
+<img src="./screenshots/tour4.png" alt="Tour part 1" width="45%"/>
+<h2 id="مجوزها"><a class="header" href="#مجوزها">مجوزها</a></h2>
+<p>در پایان تور از شما درخواست می‌شود تا برای عملکرد بهینه‌، مجوزهای لازم را به سنو
+بدهید:</p>
+<img src="./screenshots/permissions_needed.png" alt="Permissions needed" width="60%"/>
+<p>وقتی روی «ادامه» بزنید، بسته به نسخه اندروید گوشی‌تان، لازم است مجوز ارسال
+اعلان‌ها و غیرفعال کردن بهینه‌سازی باتری را به سنو بدهید. بعضی نسخه‌های اندروید
+هر دو را نیاز دارند و بعضی فقط مجوز غیرفعال کردن بهینه‌سازی باتری را می‌خواهند.</p>
+<h3 id="اعلانها"><a class="header" href="#اعلانها">اعلان‌ها</a></h3>
+<img src="./screenshots/notifications.png" alt="Notifications" width="60%"/>
+<p>وقتی به سنو اجازه ارسال اعلان بدهید، برنامه آیکون سنو را در نوار اعلان‌ها نمایش
+خواهد داد.</p>
+<img src="./images/notification_bar.png" alt="Notifications bar" width="400"/>
+<p>این آیکون هنگام دسترسی به نخستین وب‌سایت ظاهر خواهد شد.</p>
+<p>این آیکون نشان‌دهنده سرویس مرورگر سنو است، یعنی آن بخشی از سنو که به‌طور دائمی
+اجرا می‌شود (حتی زمانی که مشغول مرور نیستید) و به دیگر کاربران سنو امکان می‌دهد
+در هر زمانی محتوایی را از آن دریافت کنند. از آن‌جا که اجرای چنین سرویسی منابع
+شبکه و پردازنده را مصرف می‌کند، ممکن است بخواهید هر زمان که در حال جابه‌جایی
+هستید (مثلا وقتی به وای‌فای متصل نیستید یا از شارژر دورید) آن را متوقف کنید.<br />
+با زدن روی دکمه «توقف»، هم سنو و هم سرویس آن به‌طور هم‌زمان متوقف می‌شوند (تا
+زمانی که دوباره سنو را باز کنید).</p>
+<img src="./images/ceno_notification1.png" alt="Ceno notification 1" width="400"/>
+<p>زدن روی دکمه «پاک کردن» یک اعلان کوچک دیگر باز می‌کند</p>
+<img src="./images/ceno_notification2.png" alt="Ceno notification 2" width="400"/>
+<p>زدن روی «بله» نه‌تنها داده‌های ذخیره‌شده در برنامه سنو روی دستگاه شما را حذف
+می‌کند، بلکه تمام تنظیمات سفارشی مانند موقعیت پیش‌فرض نوار آدرس، یا تم روشن، یا
+موارد دلخواه و سایر تنظیماتی را که انتخاب کرده‌اید نیز پاک خواهد کرد. اگر روی
+گزینه «بله» بزنید، سنو متوقف شده و همه داده‌های آن بدون پرسش بیش‌تر حذف می‌شود و
+دستگاه شما عملا در وضعیتی قرار می‌گیرد که انگار هرگز از سنو استفاده نشده است.</p>
+<p><em>هشدار: اندروید ممکن است جدا از داده‌های یک برنامه، ردهای دیگری از استفاده از آن
+را هم مثلا در گزارش سیستمی نگه دارد</em></p>
+<h3 id="توقف-بهینهسازی-مصرف-باتری"><a class="header" href="#توقف-بهینهسازی-مصرف-باتری">توقف بهینه‌سازی مصرف باتری</a></h3>
+<img src="./screenshots/optimise_battery.png" alt="Optimise battery" width="60%"/>
+<p>این گزینه معمولا در برنامه‌هایی وجود دارد که نیاز دارند حتی زمانی که به‌طور فعال
+استفاده نمی‌شوند در پس‌زمینه اجرا شوند، مانند برنامه سنو. در شرایط عادی، گوشی
+اندرویدی شما تلاش می‌کند مصرف باتری برنامه‌های مختلفی را که ممکن است روی
+دستگاه‌‌تان اجرا شوند بهینه کند. سیستم‌عامل گوشی این کار را برای طولانی‌تر کردن
+عمر باتری بین دو بار شارژ انجام می‌دهد. برای این منظور، گاهی برنامه‌هایی را که
+در حال اجرا و مصرف باتری هستند اما به‌طور فعال از آن‌ها استفاده نمی‌کنید، متوقف
+می‌کند. وقتی به سنو اجازه می‌دهید که بهینه‌سازی مصرف باتری متوقف شود، احتمال
+کمتری هست که سیستم‌عامل گوشی شما برنامه سنو را موقعی که به‌طور فعال از آن
+استفاده نمی‌کنید متوقف کند. اجازه دادن به اجرای برنامه سنو حتی در زمانی که
+فعالانه استفاده نمی‌شود، به کل شبکه همتابه‌همتای سنو کمک می‌کند بهتر کار کند و
+به درخواست‌های کاربران بیش‌تری پاسخ دهد. با فعال کردن این گزینه، شما به همه
+کاربران در شبکه سنو کمک می‌کنید.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="installation.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="public-or-personal.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="installation.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="public-or-personal.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

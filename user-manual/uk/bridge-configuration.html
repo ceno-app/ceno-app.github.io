@@ -1,0 +1,323 @@
+<!DOCTYPE HTML>
+<html lang="uk" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Конфігурація мосту - Ceno User Manual</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "light";
+            window.path_to_searchindex_js = "searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Ceno User Manual</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h2 id="Чому-варто-стати-мостом-Сено"><a class="header" href="#Чому-варто-стати-мостом-Сено">Чому варто стати мостом Сено?</a></h2>
+<p>Однорангова мережа будується з кожного підключеного до неї вузла (так, це
+стосується і вас!). Чим більше вузлів, тим сильнішою та універсальнішою стає
+мережа.</p>
+<p>Якщо ви використовуєте браузер Ceno в країні, де не застосовується цензура в
+Інтернеті (або вона не така сувора, як в інших країнах), розгляньте можливість
+допомогти іншим користувачам Ceno, ставши проміжним вузлом. Ви почнете
+маршрутизувати трафік між клієнтами, які проживають у країнах з суворою
+цензурою, та інжекторами Ceno.</p>
+<p>Ви не зможете бачити їхній трафік (він надсилатиметься через зашифрований
+тунель), а також жодна частина цього трафіку не залишатиметься на вашому
+пристрої.</p>
+<p><em>Примітка: Конфігурація, описана в цьому розділі, також може допомогти вашому
+пристрою ефективно поширювати контент іншим користувачам у розподіленому кеші,
+тому, будь ласка, розгляньте можливість її застосування, якщо ви використовуєте
+Ceno в країні, де діє цензура (але майте на увазі
+<a href="https://ceno.app/en/faq.html#bridgemode">ризики</a> поширення такого контенту
+іншим користувачам)</em></p>
+<h2 id="Як-стати-мостом-Сено"><a class="header" href="#Як-стати-мостом-Сено">Як стати мостом Сено?</a></h2>
+<p>Як зазначено в <a href="./public-or-personal.html?#bridges">цьому розділі</a>, додаток Ceno
+надає деякі функції, які дозволяють вам легко стати мостом Ceno, якщо це
+дозволяє конфігурація вашої мережі.</p>
+<p>Якщо ви перевірили свою <strong>досяжність</strong> та <strong>статус UPnP</strong>, і вони виглядають так</p>
+<p><img src="./images/reachability.png" alt="Стан досяжності" /></p>
+<p>Вам потрібно буде налаштувати маршрутизатор, або ввімкнувши UPnP, або
+налаштувавши переадресацію портів. У наступних розділах ми опишемо кроки, які
+необхідно виконати.</p>
+<h3 id="Увімкнення-upnp-на-маршрутизаторі-wi-fi"><a class="header" href="#Увімкнення-upnp-на-маршрутизаторі-wi-fi">Увімкнення UPnP на маршрутизаторі Wi-Fi</a></h3>
+<p>UPnP — це найпростіший спосіб зробити ваш браузер Ceno (або комп’ютерний клієнт)
+доступним для мережі Ceno.</p>
+<p><em>Примітка. Увімкнення UPnP на маршрутизаторі Wi-Fi може наражати пристрої у
+вашій мережі на зовнішні перешкоди. Будь ласка, <a href="https://www.howtogeek.com/122487/htg-explains-is-upnp-a-security-risk/">усвідомте
+ризики</a>,
+а також розгляньте можливість використання альтернативних методів, як описано
+нижче.</em></p>
+<p>Перше, що вам потрібно зробити, це увійти в веб-інтерфейс вашого маршрутизатора.
+Щоб дізнатися, як це зробити, зверніться до посібника користувача
+маршрутизатора, в якому вказано, який логін і пароль потрібно використовувати
+для входу.</p>
+<p>Після цього кроки, які потрібно виконати, схожі, але можуть відрізнятися для
+всіх моделей маршрутизаторів.</p>
+<p>Ось гарна стаття з <a href="https://www.lifewire.com/enable-upnp-on-a-router-5206124">покроковими
+інструкціями</a> щодо
+ввімкнення UPnP на різних маршрутизаторах.</p>
+<p>Будь ласка, знайдіть інструкції для вашого типу маршрутизатора та виконайте
+необхідні кроки.</p>
+<p>Однак, якщо хочете, можете налаштувати переадресацію портів замість UPnP.</p>
+<h3 id="Використання-переадресація-портів-як-альтернативи-upnp"><a class="header" href="#Використання-переадресація-портів-як-альтернативи-upnp">Використання переадресація портів як альтернативи UPnP</a></h3>
+<p>Перший крок такий самий, як і раніше: увійдіть у веб-інтерфейс маршрутизатора.</p>
+<p>Потім, будь ласка, знайдіть опцію <strong>переадресація портів</strong>.</p>
+<p>Щоб побачити, на яку IP-адресу потрібно переадресовувати з’єднання та
+відповідний порт, відкрийте сторінку <strong>Налаштування Ceno</strong> та знайдіть розділ
+<strong>Локальні кінцеві точки UDP</strong>.</p>
+<p><img src="./images/UDP_endpoint.png" alt="Локальна кінцева точка UDP" /></p>
+<p>Переадресація портів має бути для протоколу UDP (не TCP).</p>
+<p>Ceno вибирає випадковий порт при першому запуску і зберігає його для наступних
+запусків, але локальна мережева IP-адреса вашого пристрою може час від часу
+змінюватися. Тому вам слід періодично перевіряти сторінку <strong>Налаштування Ceno</strong>,
+щоб переконатися, що ваш пристрій доступний для мережі Ceno.</p>
+<p>Ваш пристрій доступний, якщо його</p>
+<p><strong>Статус досяжності</strong> – <strong>ймовірно досяжний</strong> або <strong>досяжний</strong></p>
+<p><strong>Статус UPnP</strong>: <strong>увімкнено</strong></p>
+<p><em><strong>Технічне зауваження</strong>: Або ж ви можете переконатися, що маршрутизатор завжди
+призначає вашому пристрою однакову IP-адресу (наприклад, через статичну оренду
+DHCP для MAC-адреси пристрою)</em></p>
+<p>Якщо у вас є комп’ютер із хорошим підключенням, який залишається ввімкненим
+більшу частину часу, і ви хочете налаштувати його як <strong>міст Ceno</strong>, будь ласка,
+продовжуйте читати.</p>
+<h2 id="Запуск-моста-на-компʼютері"><a class="header" href="#Запуск-моста-на-компʼютері">Запуск моста на компʼютері</a></h2>
+<p>Якщо ваш комп'ютер підтримує контейнери Docker, ви можете запустити на ньому
+попередньо налаштований клієнт Ceno, який буде виконувати функцію моста. Якщо
+Docker ще не встановлено, дотримуйтесь інструкцій, щоб встановити Docker Engine
+на вашій платформі. Для похідних Debian, таких як Ubuntu або Linux Mint, просто
+запустіть: <code>sudo apt install docker.io</code></p>
+<p>Щоб розпакувати контейнер клієнта Ceno, достатньо виконати наступну команду в
+терміналі (вона виглядає лячно, але Ви можете просто скопіювати та вставити її в
+командний рядок):</p>
+<pre><code>sudo docker run --name ceno-client \
+  -dv Ceno:/var/opt/ouinet --network host \
+  --restart unless-stopped equalitie/Ceno-client
+</code></pre>
+<p>Якщо операційна система Вашого компʼютера не GNU/Linux, команда повинна бути
+трохи іншою:</p>
+<pre><code>sudo docker run --name ceno-client \
+  -dv ceno:/var/opt/ouinet \
+  -p 127.0.0.1:8077-8078:8077-8078 -p 28729:28729/udp \
+  --restart unless-stopped equalitie/ceno-client
+</code></pre>
+<p>Команда запустить контейнер з назвою ceno-client, який працюватиме під час
+кожного завантаження, якщо ви явно не накажете йому зупинитися.</p>
+<p>Будь ласка, перегляньте <a href="https://gitlab.com/ceno-app/ceno-docker-client#running-the-client">документацію клієнта Ceno
+Docker</a> для
+отримання додаткової інформації про те, як маніпулювати контейнером.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="public-or-personal.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next prefetch" href="features.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="public-or-personal.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next prefetch" href="features.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>

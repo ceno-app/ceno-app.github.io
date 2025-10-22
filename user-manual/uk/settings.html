@@ -1,0 +1,341 @@
+<!DOCTYPE HTML>
+<html lang="uk" class="light sidebar-visible" dir="ltr">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Налаштування - Ceno User Manual</title>
+
+
+        <!-- Custom HTML head -->
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff">
+
+        <link rel="icon" href="favicon.svg">
+        <link rel="shortcut icon" href="favicon.png">
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" id="highlight-css" href="highlight.css">
+        <link rel="stylesheet" id="tomorrow-night-css" href="tomorrow-night.css">
+        <link rel="stylesheet" id="ayu-highlight-css" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+
+
+        <!-- Provide site root and default themes to javascript -->
+        <script>
+            const path_to_root = "";
+            const default_light_theme = "light";
+            const default_dark_theme = "light";
+            window.path_to_searchindex_js = "searchindex.js";
+        </script>
+        <!-- Start loading toc.js asap -->
+        <script src="toc.js"></script>
+    </head>
+    <body>
+    <div id="mdbook-help-container">
+        <div id="mdbook-help-popup">
+            <h2 class="mdbook-help-title">Keyboard shortcuts</h2>
+            <div>
+                <p>Press <kbd>←</kbd> or <kbd>→</kbd> to navigate between chapters</p>
+                <p>Press <kbd>S</kbd> or <kbd>/</kbd> to search in the book</p>
+                <p>Press <kbd>?</kbd> to show this help</p>
+                <p>Press <kbd>Esc</kbd> to hide this help</p>
+            </div>
+        </div>
+    </div>
+    <div id="body-container">
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                let theme = localStorage.getItem('mdbook-theme');
+                let sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            const default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? default_dark_theme : default_light_theme;
+            let theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            const html = document.documentElement;
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add("js");
+        </script>
+
+        <input type="checkbox" id="sidebar-toggle-anchor" class="hidden">
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            let sidebar = null;
+            const sidebar_toggle = document.getElementById("sidebar-toggle-anchor");
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            } else {
+                sidebar = 'hidden';
+                sidebar_toggle.checked = false;
+            }
+            if (sidebar === 'visible') {
+                sidebar_toggle.checked = true;
+            } else {
+                html.classList.remove('sidebar-visible');
+            }
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <!-- populated by js -->
+            <mdbook-sidebar-scrollbox class="sidebar-scrollbox"></mdbook-sidebar-scrollbox>
+            <noscript>
+                <iframe class="sidebar-iframe-outer" src="toc.html"></iframe>
+            </noscript>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle">
+                <div class="sidebar-resize-indicator"></div>
+            </div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky">
+                    <div class="left-buttons">
+                        <label id="sidebar-toggle" class="icon-button" for="sidebar-toggle-anchor" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </label>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="default_theme">Auto</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search (`/`)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">Ceno User Manual</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <div class="search-wrapper">
+                            <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                            <div class="spinner-wrapper">
+                                <i class="fa fa-spinner fa-spin"></i>
+                            </div>
+                        </div>
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <h1 id="Налаштуваннях"><a class="header" href="#Налаштуваннях">Налаштуваннях</a></h1>
+<p>Доступ до налаштувань здійснюється через вертикальне меню з трьома крапками, а
+потім вибирається опція «Налаштування».</p>
+<img src="./images/settings.png" alt="Settings" width="40%"/>
+<p>Вони поділяються на 5 груп:</p>
+<p><a href="./settings.html#settings-general">Загальне</a><br />
+<a href="./settings.html#settings-permissions">Дозволи</a><br />
+<a href="./settings.html#settings-data">Дані</a><br />
+<a href="./settings.html#settings-developer-tools">Інструменти розробника</a><br />
+<a href="./settings.html#settings-about">Про нас</a></p>
+<p>Давайте розглянемо кожен з них.</p>
+<h2 id="Налаштування-Загальні"><a class="header" href="#Налаштування-Загальні">Налаштування: Загальні</a></h2>
+<img src="./images/settings_general.png" alt="Settings general" width="60%"/>
+<p>Ви, ймовірно, знайомі з більшістю цих налаштувань, оскільки вони схожі на опції,
+доступні в інших браузерах. У наступних розділах ми коротко опишемо основні з
+них.</p>
+<h3 id="Встановіть-пошукову-систему-за-замовчуванням"><a class="header" href="#Встановіть-пошукову-систему-за-замовчуванням">Встановіть пошукову систему за замовчуванням</a></h3>
+<img src="./images/default_search_engine.png" alt="Default search engine" width="60%"/>
+<p>Цей параметр дозволяє встановити пошукову систему за замовчуванням для браузера
+Ceno, встановивши або знявши прапорці з наданих опцій.</p>
+<h3 id="Персоналізація"><a class="header" href="#Персоналізація">Персоналізація</a></h3>
+<img src="./images/customisations.png" alt="Customizations" width="60%"/>
+<p>Знову ж таки, ці варіанти здебільшого зрозумілі самі по собі.</p>
+<p>Хочемо звернути вашу увагу на опцію, якої може не бути в інших додатках. Ceno
+дозволяє змінювати іконку запуску, що може бути корисно в деяких випадках. Ми
+пропонуємо кілька варіантів на вибір.</p>
+<img src="./images/app_icon.png" alt="Choose app icon" width="60%"/>
+<h3 id="Увімкнути-режим-мости"><a class="header" href="#Увімкнути-режим-мости">Увімкнути режим мости</a></h3>
+<img src="./images/bridge_toggle_on.png" alt="Bridge toggle on" width="400"/>
+<p>Призначення та функціональність режиму мосту високого рівня описано в розділі
+<a href="./public-or-personal.html#bridges">Режим мосту</a>. Тут ви можете ввімкнути або
+вимкнути цей параметр.</p>
+<h3 id="Фонові-показники"><a class="header" href="#Фонові-показники">Фонові показники</a></h3>
+<img src="./images/metrics_setting.png" alt="Background metrics" width="60%"/>
+<p>Це показники, які допомагають нам зрозуміти будь-які проблеми, що можуть час від
+часу виникати під час використання браузера Ceno. Натиснувши на «Показники
+фону», ви відкриєте екран, на якому можна вимкнути показники.</p>
+<img src="./images/metrics_toggle.png" alt="Metrics toggle" width="400"/>
+<p>Ми рекомендуємо залишити ці налаштування у положенні «Увімкнено», оскільки вони
+допомагають нам зрозуміти проблеми, з якими можуть зіткнутися деякі користувачі
+під час використання Ceno. Чим краще ми розуміємо проблеми, тим ефективніше
+можемо їх вирішувати.</p>
+<p>Ми не збираємо жодних персональних даних і не продаємо жодних даних третім
+особам. Щоб ознайомитися з нашою політикою конфіденційності, натисніть кнопку
+«Політика конфіденційності».</p>
+<h3 id="Звіт-про-збої"><a class="header" href="#Звіт-про-збої">Звіт про збої</a></h3>
+<p>Обставини, умови мережі та пристрої, на яких використовується Ceno,
+відрізняються для різних користувачів, що іноді може призвести до збою програми
+Ceno. Щоб зрозуміти, що спричинило збій у конкретній ситуації, Ceno було
+розроблено таким чином, щоб генерувати звіти про збій та надсилати їх команді
+розробників. Ви, як користувач, можете увімкнути або вимкнути надсилання звітів
+про збій.</p>
+<p>Ці звіти не містять жодних персональних даних. Якщо у вас виникають збої Ceno,
+радимо ввімкнути цей параметр</p>
+<h3 id="Видалити-Дані-Перегляду"><a class="header" href="#Видалити-Дані-Перегляду">Видалити Дані Перегляду</a></h3>
+<img src="./images/delete_browsing_data_setting.png" alt="Delete browsing data setting" width="60%"/>
+<p>Натискання на цю опцію надає вам можливість вибрати, які дані Ceno ви хочете
+видалити.</p>
+<img src="./images/delete_browsing_data.png" alt="Delete browsing data" width="400"/>
+<p>Кнопка «Очистити» на головному екрані видаляє всі дані Ceno, але тут ви можете
+вибрати, що видалити, а що зберегти.</p>
+<h3 id="Змінити-мову"><a class="header" href="#Змінити-мову">Змінити мову</a></h3>
+<img src="./images/languages.png" alt="Languages" width="400"/>
+<p>Додаток Ceno перекладено багатьма мовами. Якщо ви хочете, щоб до цього вже
+досить великого списку додали ще одну мову, повідомте нас про це. Ви можете
+зв’язатися з нами електронною поштою support [at] ceno [dot] app або через наш
+<a href="https://gitlab.com/ceno-app">репозиторій gitlab</a> .</p>
+<h2 id="Налаштування-Дозволи"><a class="header" href="#Налаштування-Дозволи">Налаштування: Дозволи</a></h2>
+<img src="./images/settings_permissions.png" alt="Permissions section" width="400"/>
+<p>Ceno потребує лише двох дозволів: надсилання повідомлень користувачеві та
+зупинення оптимізації батареї. Ймовірно, вас попросили надати Ceno ці дозволи,
+коли ви вперше запустили додаток Ceno або після перезапуску після очищення всіх
+даних Ceno.</p>
+<p>Ви можете дізнатися більше про них у <a href="url">розділі Дозволи</a>.</p>
+<h2 id="Налаштування-Дані"><a class="header" href="#Налаштування-Дані">Налаштування: Дані</a></h2>
+<img src="./images/settings_data.png" alt="Data section" width="60%"/>
+<p>У цьому розділі ви можете переглянути, яким контентом ваш додаток Ceno може
+ділитися з іншими користувачами Ceno, коли вони цього запитують.</p>
+<p><strong>Контент, яким ви поділилися</strong> містить список вебсайтів, якими ви можете
+ділитися з іншими користувачами Ceno через ваш додаток Ceno.</p>
+<p><strong>Локальний кеш</strong> повідомляє вам, скільки даних може бути завантажено з вашого
+пристрою в мережу Ceno, коли інші користувачі цього запитують.</p>
+<p>Натиснувши на опцію <strong>Очистити кешований вміст</strong>, ви видалите дані з кешу, і вам
+не залишиться нічого, що можна було б поділитися з друзями. Щоб зберегти
+веб-сайти в кеші і мати можливість знову поділитися ними з друзями, вам потрібно
+буде ще раз зайти на них через мережу Ceno Public.</p>
+<p>Більше інформації про призначення цих налаштувань доступно в розділі <a href="./public-or-personal.html">Публічний
+або особистий доступ</a>.</p>
+<h2 id="Налаштування-Інструменти-розробника"><a class="header" href="#Налаштування-Інструменти-розробника">Налаштування: Інструменти розробника</a></h2>
+<img src="./images/settings_developers.png" alt="Developer tools section" width="60%"/>
+<h3 id="Джерела-веб-сайтів"><a class="header" href="#Джерела-веб-сайтів">Джерела веб-сайтів</a></h3>
+<p>Ceno може отримувати вміст веб-сайтів, який ви запитуєте, з різних джерел:
+безпосередньо з веб-сайту-джерела, публічної мережі Ceno, приватної мережі Ceno
+та кешу Ceno. Більш детальна інформація про ці опції наведена в розділах, що
+описують режими публічного та особистого перегляду.<br />
+За замовчуванням усі ці опції відмічені, і для досягнення найкращих результатів
+ви можете просто залишити їх без змін.</p>
+<p>Більш детальну інформацію щодо цих опцій можна знайти в розділі <a href="./public-or-personal.html">Публічний або
+особистий</a>.</p>
+<h3 id="Захист-від-відстеження"><a class="header" href="#Захист-від-відстеження">Захист від відстеження</a></h3>
+<p>Ці два налаштування запобігають відстеженню вашої онлайн-активності сторонніми
+трекерами.</p>
+<h3 id="Деталі-Мережі"><a class="header" href="#Деталі-Мережі">Деталі Мережі</a></h3>
+<p>У цьому розділі містяться відомості про налаштування вашої мережі, які можуть
+бути корисними для нашої команди розробників, якщо нам потрібно буде дослідити
+будь-які проблеми, про які ви нам повідомляєте.</p>
+<h3 id="Увімкнути-файл-журналу-логи"><a class="header" href="#Увімкнути-файл-журналу-логи">Увімкнути файл журналу (логи)</a></h3>
+<p>Увімкнення та експорт файлу журналу Ceno може бути корисним під час
+розслідування проблем. Ці файли не містять жодних даних, що дозволяють
+ідентифікувати особу. Якщо ви експортуєте їх до файлової системи на своєму
+пристрої, ви зможете переглянути їхній вміст. Ви також можете поділитися ними з
+нашою командою розробників, якщо у вас виникли проблеми, які можуть потребувати
+розслідування нашими технічними експертами.</p>
+<h2 id="Налаштування-Про-нас"><a class="header" href="#Налаштування-Про-нас">Налаштування: Про нас</a></h2>
+<img src="./images/settings_about.png" alt="About section" width="60%"/>
+<p>Містить додаткову інформацію про вашу інсталяцію Ceno, включаючи номер версії,
+стан фонової служби Ceno та номер версії бібліотеки Ouinet, вбудованої в Ceno.</p>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="features.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="features.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="elasticlunr.min.js"></script>
+        <script src="mark.min.js"></script>
+        <script src="searcher.js"></script>
+
+        <script src="clipboard.min.js"></script>
+        <script src="highlight.js"></script>
+        <script src="book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+
+    </div>
+    </body>
+</html>
