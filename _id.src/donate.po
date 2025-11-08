@@ -3,18 +3,20 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-09-10 14:53-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2025-11-08 17:51+0000\n"
+"Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
+"Language-Team: Indonesian <https://hosted.weblate.org/projects/ceno-app/"
+"website-v2/website-v2-donate/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.15.1\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #: donate.html%2Bmain.section.div.div.h1:5-17
 msgid "Support Ceno"
-msgstr ""
+msgstr "Dukung Ceno"
 
 #: donate.html%2Bmain.section.div.div.p:6-17
 msgid ""
@@ -24,39 +26,45 @@ msgid ""
 "getting involved and contributing, please visit <a href=\"community."
 "html\">the Community page!</a>"
 msgstr ""
+"Ceno Browser adalah perangkat lunak bebas dan sumber terbuka yang sepenuhnya "
+"didanai melalui hibah dan donasi. Berikut adalah beberapa cara Anda dapat "
+"mendukung pengembangan berkelanjutannya melalui kontribusi finansial. Untuk "
+"cara lain untuk berpartisipasi dan berkontribusi, silakan kunjungi <a href="
+"\"community.html\">halaman Komunitas!</a>"
 
 #: donate.html%2Bmain.section.div.div.div.div.h2:12-25
 msgid "Make a Donation"
-msgstr ""
+msgstr "Berikan Donasi"
 
 #: donate.html%2Bmain.section.div.div.div.div.p:13-25
 msgid "Make a one-time donation using our Paypal payment portal."
-msgstr ""
+msgstr "Lakukan donasi sekali saja melalui portal pembayaran PayPal kami."
 
 #: donate.html%2Bmain.section.div.div.div.div.div:14-25
 msgid "Donate via PayPal"
-msgstr ""
+msgstr "Donasi melalui PayPal"
 
 #: donate.html%2Bmain.section.div.div.div.div.h2:20-25
 msgid "Become a Sponsor"
-msgstr ""
+msgstr "Jadilah Sponsor"
 
 #: donate.html%2Bmain.section.div.div.div.div.p:21-25
 msgid "We are currently exploring fundraising platforms and communities:"
 msgstr ""
+"Saat ini kami sedang menjajaki platform penggalangan dana dan komunitas:"
 
 #: donate.html%2Bmain.section.div.div.div.div.div:22-25
 msgid "Sponsor on Github"
-msgstr ""
+msgstr "Sponsor di GitHub"
 
 #: donate.html%2Bmain.section.div.div.div.div.h2:28-25
 msgid "Donate Bitcoin"
-msgstr ""
+msgstr "Donasikan Bitcoin"
 
 #: donate.html%2Bmain.section.div.div.div.div.p:29-25
 msgid "Our wallet address is:"
-msgstr ""
+msgstr "Alamat dompet kami adalah:"
 
 #: donate.html%2Bmain.section.div.div.div.div:29-50
 msgid "bc1q2r70hf0jks43jyykpua6uqv907zegplgfacauc"
-msgstr ""
+msgstr "bc1q2r70hf0jks43jyykpua6uqv907zegplgfacauc"
