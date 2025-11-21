@@ -1,4 +1,4 @@
-<?xml version='1.0' encoding='UTF-8'?>
+<?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
 <channel>
 <title>Ceno Browser Announcements</title>
@@ -6,20 +6,13 @@
 <description>RSS feed of announcements from the team behind Ceno Browser</description>
 
 <item>
-<title>Ceno 2.4 Publicado</title>
-<link>announcements/23-12-2024.html</link>
-<guid>announcements/23-12-2024.html</guid>
-<pubDate>2024-12-23</pubDate>
+<title>Ceno 2.7.1 Publicado</title>
+<link>announcements/21-11-2025.html</link>
+<guid>announcements/21-11-2025.html</guid>
+<pubDate>2025-11-21</pubDate>
 <description>
-Este mes, presentamos algunas características nuevas y emocionantes en Ceno Browser.
-
-En un esfuerzo por aprender más sobre sus experiencias con Ceno y cómo podemos mejorar, ahora puede compartir (opcionalmente) métricas que preserven la privacidad con el equipo de desarrollo. ¡Opte por participar para ayudarnos a mejorar Ceno!
-
-Se agregó un nuevo indicador de estado de red en la página de inicio para mostrar en un vistazo si está conectado a la red Ceno. Haga clic en el ícono para obtener más información, exportar registros o comunicarse con soporte en caso de problemas.
-
-Como siempre, agradecemos sus valiosos comentarios mientras trabajamos para mejorar Ceno. ¡Gracias por ayudarnos a hacer que la web sea más abierta y accesible para todos!
-
-¡Actualice a la última versión de Ceno Browser visitando nuestra <a href="https://ceno.app/es/download">página de descargas</a>!</description>
+Esta versión corrige un error crítico con el Modo de Navegación Personal. Por favor, actualice a la versión más reciente visitando nuestra <a href="https://ceno.app/es/download">página de descargas</a>. Y por favor, recuérdele a sus amigos también instalar y actualizar Ceno!
+</description>
 </item>
 
 </channel>
