@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-10 14:53-0400\n"
+"POT-Creation-Date: 2025-10-22 13:37-0400\n"
 "PO-Revision-Date: 2025-10-01 18:02+0000\n"
 "Last-Translator: Jane Kong <myonjane@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -26,11 +26,11 @@ msgstr ""
 msgid "December, 2022"
 msgstr "2022年12月"
 
-#: case-studies/index.html%2Bmain.section.article.h1:12-5
+#: case-studies/index.html%2Bmain.section.article.h1:13-5
 msgid "Highlights from the Ground in Iran"
 msgstr "伊朗实地动态聚焦"
 
-#: case-studies/index.html%2Bmain.section.article.div:15-5
+#: case-studies/index.html%2Bmain.section.article.div:17-5
 msgid ""
 "User experiences have varied from region to region as ISPs have applied "
 "Internet censorship and disruption measures inconsistently. Where Iran’s "
@@ -42,6 +42,6 @@ msgstr ""
 "差异。在伊朗境内，当国家信息网络（NIN）成为唯一可用连接时，Ceno用户仍可访问被"
 "封锁的网络内容。用户能够访问……"
 
-#: case-studies/index.html%2Bmain.section.article:15-337
+#: case-studies/index.html%2Bmain.section.article:21-54
 msgid "Read more"
 msgstr "阅读更多"
