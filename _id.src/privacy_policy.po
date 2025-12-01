@@ -1,14 +1,30 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-10-22 13:37-0400\n"
+"PO-Revision-Date: 2025-11-08 17:51+0000\n"
+"Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
+"Language-Team: Indonesian <https://hosted.weblate.org/projects/ceno-app/"
+"website-v2/website-v2-privacy-policy/id/>\n"
+"Language: id\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.15-dev\n"
+
 #: privacy_policy.html%2Btitle:1-1
 msgid "Ceno Browser | Privacy Policy"
-msgstr ""
+msgstr "Ceno Browser | Kebijakan Privasi"
 
 #: privacy_policy.html%2Bsection.div.h1:4-1
 msgid "Ceno Browser Terms of Use & Privacy Notice"
-msgstr ""
+msgstr "Syarat Penggunaan dan Kebijakan Privasi Ceno Browser"
 
 #: privacy_policy.html%2Bsection.div.h2:6-1
 msgid "1. Overview"
-msgstr ""
+msgstr "1. Gambaran Umum"
 
 #: privacy_policy.html%2Bsection.div.p:7-1
 msgid ""
@@ -20,10 +36,19 @@ msgid ""
 "\"we\", or \"us\"). Usage of the Ceno Browser application and associated "
 "services is provided by eQualitie at no cost and are provided for use as is."
 msgstr ""
+"Syarat Penggunaan Ceno Browser (\"Ceno\") ini (selanjutnya disebut "
+"\"Perjanjian\"), bersama dengan Kebijakan Privasi ini (secara kolektif "
+"disebut \"Syarat\"), mengikat semua pengguna Ceno - sebuah browser web "
+"seluler peer-to-peer. Dengan menginstal dan menjalankan aplikasi Ceno "
+"Browser (layanan \"Layanan\"), Anda menyetujui untuk terikat oleh dan "
+"mematuhi Perjanjian ini antara Anda dan eQualitie Inc. (\"eQualitie\", "
+"\"kami\", atau \"kita\"). Penggunaan aplikasi Ceno Browser dan layanan "
+"terkait disediakan oleh eQualitie secara gratis dan disediakan untuk "
+"digunakan apa adanya."
 
 #: privacy_policy.html%2Bsection.div.h2:9-1
 msgid "2. Terms of use"
-msgstr ""
+msgstr "2. Ketentuan Penggunaan"
 
 #: privacy_policy.html%2Bsection.div.p:10-1
 msgid ""
@@ -33,6 +58,12 @@ msgid ""
 "the applicable laws of Quebec or Canada or the International Bill of Human "
 "Rights. This includes, but is not limited to, content that:"
 msgstr ""
+"Aplikasi Ceno Browser dikembangkan sesuai dengan nilai-nilai eQualitie. "
+"Dengan menggunakan perangkat lunak ini, Anda setuju bahwa Anda tidak akan "
+"menggunakan Ceno untuk mempublikasikan, membagikan, atau menyimpan materi "
+"yang bertentangan dengan nilai-nilai dasar eQualitie, undang-undang yang "
+"berlaku di Quebec atau Kanada, atau Deklarasi Hak Asasi Manusia "
+"Internasional. Hal ini termasuk, namun tidak terbatas pada, konten yang:"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:12-1
 msgid ""
@@ -40,6 +71,9 @@ msgid ""
 "underlying values or the letter of Canada's Privacy Act or PIPEDA (the "
 "Personal Information Protection and Electronic Documents Act);"
 msgstr ""
+"Melanggar hak perlindungan informasi pribadi, termasuk nilai-nilai dasar "
+"atau ketentuan undang-undang Kanada tentang Perlindungan Privasi atau PIPEDA "
+"(Undang-Undang Perlindungan Informasi Pribadi dan Dokumen Elektronik);"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:13-1
 msgid ""
@@ -48,12 +82,18 @@ msgid ""
 "sexually exploits or promotes the sexual exploitation of minors), unlawful "
 "pornography, or is otherwise indecent;"
 msgstr ""
+"Merupakan materi eksploitasi seksual anak (termasuk materi yang mungkin "
+"tidak termasuk dalam kategori materi pelecehan seksual anak yang ilegal, "
+"namun tetap mengeksploitasi secara seksual atau mempromosikan eksploitasi "
+"seksual terhadap anak-anak), pornografi ilegal, atau bersifat tidak senonoh;"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:14-1
 msgid ""
 "Contains or promotes extreme acts of violence or terrorist activity, "
 "including terror or violent extremist propaganda;"
 msgstr ""
+"Mengandung atau mempromosikan tindakan kekerasan ekstrem atau aktivitas "
+"teroris, termasuk propaganda teror atau ekstremisme kekerasan;"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:15-1
 msgid ""
@@ -63,16 +103,23 @@ msgid ""
 "any other characteristic(s) associated with systemic discrimination or "
 "marginalization;"
 msgstr ""
+"Mendorong prasangka, kebencian, atau provokasi kekerasan terhadap siapa pun "
+"atau kelompok orang berdasarkan ras, agama, etnis, asal negara, jenis "
+"kelamin, identitas gender, orientasi seksual, kecacatan, keterbatasan, atau "
+"karakteristik lain yang terkait dengan diskriminasi sistemik atau "
+"marginalisasi;"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:16-1
 msgid ""
 "Contains files with viruses, trojans, worms, logic bombs or other material "
 "that is malicious or technologically harmful."
 msgstr ""
+"Mengandung berkas yang mengandung virus, trojan, worm, bom logika, atau "
+"materi lain yang bersifat berbahaya atau merugikan secara teknis."
 
 #: privacy_policy.html%2Bsection.div.p:19-1
 msgid "Content Responsibility"
-msgstr ""
+msgstr "Tanggung Jawab Konten"
 
 #: privacy_policy.html%2Bsection.div.p:21-1
 msgid ""
@@ -87,10 +134,21 @@ msgid ""
 "of Use, including the promotion of illegal, harmful, or otherwise prohibited "
 "material."
 msgstr ""
+"eQualitie tidak bertanggung jawab atas konten yang dibagikan atau "
+"didistribusikan oleh pengguna melalui jaringan BitTorrent atau server pihak "
+"ketiga lainnya. Meskipun Ceno memfasilitasi berbagi konten secara "
+"terdesentralisasi, tanggung jawab atas legalitas dan etika konten yang "
+"dibagikan sepenuhnya ada pada pengguna. Pengguna disarankan untuk mematuhi "
+"hukum yang berlaku dan pedoman komunitas saat menggunakan Layanan. Ceno "
+"tidak secara aktif memantau atau memoderasi konten yang dibagikan oleh "
+"pengguna, tetapi kami berhak untuk menyelidiki dan mengambil tindakan "
+"(seperti menonaktifkan akses ke fitur tertentu) jika diberitahu tentang "
+"penyalahgunaan yang melanggar Ketentuan Penggunaan ini, termasuk promosi "
+"materi ilegal, berbahaya, atau dilarang lainnya."
 
 #: privacy_policy.html%2Bsection.div.h2:23-1
 msgid "3. Privacy Notice"
-msgstr ""
+msgstr "3. Pemberitahuan Privasi"
 
 #: privacy_policy.html%2Bsection.div.p:25-1
 msgid ""
@@ -98,10 +156,13 @@ msgid ""
 "the collection, use, and disclosure of Personal Information for all users of "
 "this Service."
 msgstr ""
+"Bagian ini digunakan untuk memberitahukan kepada pengunjung mengenai "
+"kebijakan eQualitie terkait pengumpulan, penggunaan, dan pengungkapan "
+"Informasi Pribadi bagi semua pengguna Layanan ini."
 
 #: privacy_policy.html%2Bsection.div.h3:27-1
 msgid "3.1 Data Collection"
-msgstr ""
+msgstr "3.1 Pengumpulan Data"
 
 #: privacy_policy.html%2Bsection.div.p:29-1
 msgid ""
@@ -111,6 +172,12 @@ msgid ""
 "eQualitie does not know who uses Ceno, nor with whom users synchronize or "
 "share content."
 msgstr ""
+"Ceno Browser dirancang dengan privasi sebagai prioritas utama dan tidak "
+"memerlukan informasi pribadi apa pun untuk beroperasi. Anda tidak perlu "
+"memberikan nama, ID pengguna, nama panggilan, akun, atau data pribadi "
+"lainnya untuk menggunakan aplikasi ini. eQualitie tidak mengetahui siapa "
+"yang menggunakan Ceno, maupun dengan siapa pengguna menyinkronkan atau "
+"berbagi konten."
 
 #: privacy_policy.html%2Bsection.div.p:31-1
 msgid ""
@@ -118,89 +185,112 @@ msgid ""
 "the application. This information is stripped of any personally identifiable "
 "elements before collection and is never shared with third parties."
 msgstr ""
+"Kami menghargai privasi Anda dan hanya mengumpulkan data penggunaan yang "
+"dianonimkan untuk membantu meningkatkan aplikasi. Informasi ini dihilangkan "
+"dari unsur-unsur yang dapat diidentifikasi secara pribadi sebelum "
+"pengumpulan dan tidak pernah dibagikan kepada pihak ketiga."
 
 #: privacy_policy.html%2Bsection.div.p:33-1
 msgid ""
 "By default, Ceno collects anonymized usage metrics using our own, self-"
 "hosted, analytics server. This process is designed to be privacy-preserving:"
 msgstr ""
+"Secara default, Ceno mengumpulkan metrik penggunaan yang dianonimkan "
+"menggunakan server analitik yang dihosting sendiri. Proses ini dirancang "
+"untuk melindungi privasi:"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:35-1
 msgid "IP addresses are not stored"
-msgstr ""
+msgstr "Alamat IP tidak disimpan"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:36-1
 msgid "No personal information is collected"
-msgstr ""
+msgstr "Tidak ada informasi pribadi yang dikumpulkan"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:37-1
 msgid "Data is associated with a per-device randomly generated ID"
-msgstr ""
+msgstr "Data dikaitkan dengan ID yang dihasilkan secara acak per perangkat"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:38-1
 msgid ""
 "The randomly generated ID is not associated with any user or device "
 "identifiers (e.g. IP, MAC, IMEI, MEID)"
 msgstr ""
+"ID yang dihasilkan secara acak tidak terkait dengan identifikasi pengguna "
+"atau perangkat apa pun (misalnya IP, MAC, IMEI, MEID)"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:39-1
 msgid "The ID is replaced with a new random ID every 30 days or less"
-msgstr ""
+msgstr "ID diganti dengan ID acak baru setiap 30 hari atau kurang"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:40-1
 msgid "Past, current and future random device IDs are not associated"
 msgstr ""
+"ID perangkat acak dari masa lalu, sekarang, dan masa depan tidak terkait"
 
 #: privacy_policy.html%2Bsection.div.p:43-1
 msgid "The following anonymized data may be collected:"
-msgstr ""
+msgstr "Data anonim berikut ini dapat dikumpulkan:"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:45-1
 msgid ""
 "Peer to peer network statistics, e.g. data volume transferred, count of peer "
 "connections made"
 msgstr ""
+"Statistik jaringan peer-to-peer, misalnya volume data yang ditransfer, "
+"jumlah koneksi peer yang dibuat"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:46-1
 msgid "Application performance data, e.g. connection success and latency"
-msgstr ""
+msgstr "Data kinerja aplikasi, misalnya keberhasilan koneksi dan latensi"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:47-1
 msgid ""
 "Application usage statistics, e.g. time spent in public vs. personal "
 "browsing modes"
 msgstr ""
+"Statistik penggunaan aplikasi, misalnya waktu yang dihabiskan dalam mode "
+"penelusuran publik versus mode penelusuran pribadi"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:48-1
 msgid ""
 "Country where device is located (Inferred. No GPS or specific location is "
 "sent)"
 msgstr ""
+"Negara tempat perangkat berada (Diperkirakan. Tidak ada data GPS atau lokasi "
+"spesifik yang dikirimkan)"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:49-1
 msgid "Device settings relating to country, language, and locale"
-msgstr ""
+msgstr "Pengaturan perangkat yang berkaitan dengan negara, bahasa, dan wilayah"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:50-1
 msgid ""
 "Whether the device is using a VPN (but no further information about the VPN)"
 msgstr ""
+"Apakah perangkat tersebut menggunakan VPN (tetapi tidak ada informasi lebih "
+"lanjut tentang VPN tersebut)"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:51-1
 msgid "The cellular service provider name (if applicable)"
-msgstr ""
+msgstr "Nama penyedia layanan seluler (jika berlaku)"
 
 #: privacy_policy.html%2Bsection.div.p:53-1
 msgid ""
 "Note: country inference is based on device locale, VPN presence, and "
 "cellular provider data."
 msgstr ""
+"Catatan: Penentuan negara didasarkan pada pengaturan wilayah perangkat, "
+"keberadaan VPN, dan data penyedia layanan seluler."
 
 #: privacy_policy.html%2Bsection.div.p:55-1
 msgid ""
 "All collected data is automatically deleted after 90 days. Users may opt out "
 "of metrics collection at any time via the app settings."
 msgstr ""
+"Semua data yang dikumpulkan akan dihapus secara otomatis setelah 90 hari. "
+"Pengguna dapat memilih untuk tidak berpartisipasi dalam pengumpulan metrik "
+"kapan saja melalui pengaturan aplikasi."
 
 #: privacy_policy.html%2Bsection.div.p:57-1
 msgid ""
@@ -208,6 +298,10 @@ msgid ""
 "measurements to help us understand the number of users, including the "
 "network origin ASN and country, based on browsing in Public mode."
 msgstr ""
+"Kami mengumpulkan berbagai pengukuran agregat secara berkala setiap jam, "
+"harian, dan bulanan untuk membantu kami memahami jumlah pengguna, termasuk "
+"asal jaringan ASN dan negara, berdasarkan aktivitas penelusuran dalam mode "
+"Publik."
 
 #: privacy_policy.html%2Bsection.div.p:59-1
 msgid ""
@@ -219,6 +313,13 @@ msgid ""
 "Injectors are run and managed by the Ceno team. eQualitie deletes all access "
 "logs every 24 hours."
 msgstr ""
+"Injectors adalah server yang dapat memantau permintaan konten di jaringan, "
+"termasuk alamat IP pengguna yang melakukan permintaan dan nama domain situs "
+"web yang diminta. Injectors merupakan komponen jaringan yang diperlukan "
+"untuk 1) memasukkan konten web ke dalam jaringan terdesentralisasi, dan 2) "
+"memverifikasi keaslian konten yang dimasukkan. Di jaringan Ceno, Injectors "
+"dijalankan dan dikelola oleh tim Ceno. eQualitie menghapus semua log akses "
+"setiap 24 jam."
 
 #: privacy_policy.html%2Bsection.div.p:61-1
 msgid ""
@@ -229,21 +330,32 @@ msgid ""
 "are checked for liveliness every so often and are removed when they are no "
 "longer responsive to BitTorrent traffic."
 msgstr ""
+"Server Bootstrap adalah server yang digunakan untuk membantu perangkat Anda "
+"terhubung ke jaringan BitTorrent. Kami mengirimkan alamat IP pengguna ke "
+"server bootstrap yang kami host sendiri dan ke server bootstrap pihak "
+"ketiga. Untuk server bootstrap yang kami host sendiri, kami menyimpan alamat "
+"IP dalam cache di memori. Alamat IP diperiksa secara berkala untuk "
+"memastikan keaktifannya dan dihapus ketika tidak lagi merespons lalu lintas "
+"BitTorrent."
 
 #: privacy_policy.html%2Bsection.div.h3:63-1
 msgid "3.2 Data Sharing"
-msgstr ""
+msgstr "3.2 Pembagian Data"
 
 #: privacy_policy.html%2Bsection.div.p:65-1
 msgid ""
 "Ceno Browser (and eQualitie) does not share any data with any third parties."
 msgstr ""
+"Ceno Browser (dan eQualitie) tidak membagikan data apa pun dengan pihak "
+"ketiga mana pun."
 
 #: privacy_policy.html%2Bsection.div.p:67-1
 msgid ""
 "The application offers two modes of operation - <strong>Public</strong> and "
 "<strong>Personal</strong>."
 msgstr ""
+"Aplikasi ini menawarkan dua mode operasi - <strong>Publik</strong> dan "
+"<strong>Pribadi</strong>."
 
 #: privacy_policy.html%2Bsection.div.p:68-1
 msgid ""
@@ -254,6 +366,12 @@ msgid ""
 "user's device inside a Public tab will be shared with other Ceno users via "
 "the BitTorrent network."
 msgstr ""
+"<strong>Tab Publik</strong> menggunakan semua metode koneksi yang tersedia "
+"di jaringan Ceno untuk mendapatkan konten yang diinginkan. Saat menjelajah "
+"menggunakan Tab Publik, pengguna akan meninggalkan catatan aktivitas mereka "
+"di jaringan BitTorrent publik (alamat IP dan situs web yang diminta). Konten "
+"yang telah diunduh oleh perangkat pengguna di dalam Tab Publik akan "
+"dibagikan dengan pengguna Ceno lainnya melalui jaringan BitTorrent."
 
 #: privacy_policy.html%2Bsection.div.p:70-1
 msgid ""
@@ -262,6 +380,10 @@ msgid ""
 "to the BitTorrent network and will not attempt to locate the content on "
 "other users' devices."
 msgstr ""
+"Dalam mode <strong>Pribadi</strong>, Anda hanya akan terhubung ke Injectors "
+"untuk mengambil dan mengirimkan situs web tersebut kepada Anda. Pencarian "
+"tidak akan terhubung ke jaringan BitTorrent dan tidak akan mencoba mencari "
+"konten di perangkat pengguna lain."
 
 #: privacy_policy.html%2Bsection.div.p:72-1
 msgid ""
@@ -276,10 +398,21 @@ msgid ""
 "and forward this request. <strong>Bridge operators will have their device's "
 "IP address listed in the BitTorrent network as an accessible Bridge.</strong>"
 msgstr ""
+"Untuk memastikan bahwa klien Ceno Anda selalu dapat terhubung ke Injector, "
+"kami juga telah membuat <strong>Jembatan</strong>. Jika Injector diblokir di "
+"jaringan Anda, aplikasi Ceno akan mencari Jembatan yang tersedia, yang akan "
+"meneruskan permintaan pengguna ke Injector. Pengguna dapat mengaktifkan Mode "
+"Jembatan di Ceno Browser untuk meningkatkan aksesibilitas konten web bagi "
+"orang lain. Aktivitas Jembatan tidak terlihat oleh operator Jembatan "
+"(kecuali mereka secara aktif memantau perangkat mereka untuk koneksi masuk "
+"dan keluar). Tugas mereka adalah menerima permintaan jaringan dari pengguna "
+"Ceno lain untuk mengakses Injector dan meneruskan permintaan tersebut. "
+"<strong>Operator Jembatan akan memiliki alamat IP perangkat mereka terdaftar "
+"di jaringan BitTorrent sebagai Jembatan yang dapat diakses.</strong>"
 
 #: privacy_policy.html%2Bsection.div.h3:74-1
 msgid "3.3 Log Data"
-msgstr ""
+msgstr "3.3 Data Log"
 
 #: privacy_policy.html%2Bsection.div.p:76-1
 msgid ""
@@ -291,16 +424,27 @@ msgid ""
 "device unless the user decides to send it to us for support purposes, and is "
 "automatically deleted when its sizes reaches 15 MB."
 msgstr ""
+"Pengguna dapat mengaktifkan pencatatan log melalui menu Pengaturan di Ceno "
+"Browser. Saat diaktifkan, Ceno Browser akan membuat berkas log di perangkat "
+"pengguna. Tujuan berkas-berkas ini hanyalah untuk mencatat aktivitas "
+"perangkat guna memudahkan proses debugging jika pengguna mengalami kesulitan "
+"dalam terhubung dengan rekan-rekannya atau dalam menggunakan Ceno. Berkas "
+"log tetap tersimpan di perangkat pengguna kecuali jika pengguna memutuskan "
+"untuk mengirimkannya kepada kami untuk tujuan dukungan, dan akan dihapus "
+"secara otomatis ketika ukurannya mencapai 15 MB."
 
 #: privacy_policy.html%2Bsection.div.p:78-1
 msgid ""
 "If the user does decide to contact us, the personally identifiable data we "
 "may collect is:"
 msgstr ""
+"Jika pengguna memutuskan untuk menghubungi kami, data pribadi yang mungkin "
+"kami kumpulkan adalah:"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:80-1
 msgid "Email address - if the user decided to contact us by email;"
 msgstr ""
+"Alamat email - jika pengguna memutuskan untuk menghubungi kami melalui email;"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:81-1
 msgid ""
@@ -308,18 +452,21 @@ msgid ""
 "eQualitie websites, and associated metadata - for the purposes of providing "
 "technical support;"
 msgstr ""
+"Informasi yang dapat disediakan oleh pengguna melalui email, melalui tiket "
+"bantuan, atau melalui situs web eQualitie, beserta metadata yang terkait - "
+"untuk tujuan memberikan dukungan teknis;"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:82-1
 msgid "Web browsing activity and history."
-msgstr ""
+msgstr "Aktivitas dan riwayat penelusuran web."
 
 #: privacy_policy.html%2Bsection.div.p:85-1
 msgid "None of this data is shared with any third parties."
-msgstr ""
+msgstr "Tidak ada data ini yang dibagikan kepada pihak ketiga mana pun."
 
 #: privacy_policy.html%2Bsection.div.h3:87-1
 msgid "3.4 Crash Reporting"
-msgstr ""
+msgstr "3.4 Pelaporan Kecelakaan"
 
 #: privacy_policy.html%2Bsection.div.p:89-1
 msgid ""
@@ -329,6 +476,11 @@ msgid ""
 "run by eQualitie. We use <a href=\"https://sentry.io/\">Sentry</a> for crash "
 "reporting."
 msgstr ""
+"Pengguna dapat mengaktifkan pelaporan crash melalui menu Pengaturan di Ceno "
+"Browser. Saat diaktifkan, Ceno Browser akan mengirimkan laporan crash jika "
+"terjadi masalah saat menjalankan aplikasi. Laporan crash akan diteruskan "
+"secara otomatis ke server yang dioperasikan oleh eQualitie. Kami menggunakan "
+"<a href=\"https://sentry.io/\">Sentry</a> untuk pelaporan crash."
 
 #: privacy_policy.html%2Bsection.div.p:91-1
 msgid ""
@@ -336,18 +488,22 @@ msgid ""
 "aggregated into broader issues, and are deleted after the above retention "
 "period. Issues are deleted when all associated events are deleted."
 msgstr ""
+"Sentry menyimpan data peristiwa di lingkungan produksi selama 90 hari. "
+"Peristiwa individu digabungkan menjadi masalah yang lebih luas, dan dihapus "
+"setelah periode penyimpanan di atas. Masalah dihapus ketika semua peristiwa "
+"terkait dihapus."
 
 #: privacy_policy.html%2Bsection.div.h3:93-1
 msgid "3.5 Cookies"
-msgstr ""
+msgstr "3.5 Cookie"
 
 #: privacy_policy.html%2Bsection.div.p:95-1
 msgid "The Ceno Browser app does not use cookies."
-msgstr ""
+msgstr "Aplikasi Ceno Browser tidak menggunakan cookie."
 
 #: privacy_policy.html%2Bsection.div.h3:97-1
 msgid "3.6 Links to Other Sites"
-msgstr ""
+msgstr "3.6 Tautan ke Situs Lain"
 
 #: privacy_policy.html%2Bsection.div.p:99-1
 msgid ""
@@ -356,57 +512,77 @@ msgid ""
 "and we do not make any representations or warranties regarding their "
 "content, security, or privacy practices."
 msgstr ""
+"Layanan ini mungkin mengandung tautan ke situs web atau layanan yang "
+"dioperasikan oleh pihak ketiga. Situs eksternal tersebut tidak dikendalikan "
+"atau dipantau oleh eQualitie, dan kami tidak memberikan jaminan atau "
+"pernyataan apa pun mengenai konten, keamanan, atau praktik privasi mereka."
 
 #: privacy_policy.html%2Bsection.div.p:101-1
 msgid "By clicking on a third-party link, you acknowledge and agree that:"
 msgstr ""
+"Dengan mengklik tautan pihak ketiga, Anda mengakui dan menyetujui bahwa:"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:103-1
 msgid ""
 "Your interactions with third-party sites are governed solely by their "
 "respective terms of use and privacy policies."
 msgstr ""
+"Interaksi Anda dengan situs pihak ketiga sepenuhnya diatur oleh syarat dan "
+"ketentuan serta kebijakan privasi masing-masing situs tersebut."
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:104-1
 msgid ""
 "eQualitie is not responsible for any content, data collection, or practices "
 "of third-party websites or services."
 msgstr ""
+"eQualitie tidak bertanggung jawab atas konten, pengumpulan data, atau "
+"praktik yang dilakukan oleh situs web atau layanan pihak ketiga."
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:105-1
 msgid "Visiting external sites linked from Ceno is entirely at your own risk."
 msgstr ""
+"Mengunjungi situs eksternal yang terhubung dari Ceno sepenuhnya menjadi "
+"tanggung jawab Anda sendiri."
 
 #: privacy_policy.html%2Bsection.div.p:107-1
 msgid "We strongly recommend that you:"
-msgstr ""
+msgstr "Kami sangat menyarankan agar Anda:"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:109-1
 msgid ""
 "Exercise caution when clicking on links to unfamiliar or untrusted sites."
 msgstr ""
+"Berhati-hatilah saat mengklik tautan ke situs yang tidak dikenal atau tidak "
+"tepercaya."
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:110-1
 msgid ""
 "Review the privacy policies and terms of use of any third-party website you "
 "visit."
 msgstr ""
+"Periksa kebijakan privasi dan syarat penggunaan dari setiap situs web pihak "
+"ketiga yang Anda kunjungi."
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:111-1
 msgid ""
 "Refrain from providing personal or sensitive information to external sites "
 "unless you are confident in their security and intent."
 msgstr ""
+"Hindari memberikan informasi pribadi atau sensitif ke situs eksternal "
+"kecuali Anda yakin akan keamanan dan niat mereka."
 
 #: privacy_policy.html%2Bsection.div.p:113-1
 msgid ""
 "eQualitie disclaims all liability for any harm, loss, or damage arising from "
 "your use of third-party links or services."
 msgstr ""
+"eQualitie tidak bertanggung jawab atas segala kerugian, kerusakan, atau "
+"kerugian yang timbul akibat penggunaan tautan atau layanan pihak ketiga oleh "
+"Anda."
 
 #: privacy_policy.html%2Bsection.div.h3:115-1
 msgid "3.7 Children's Privacy"
-msgstr ""
+msgstr "3.7 Privasi Anak-Anak"
 
 #: privacy_policy.html%2Bsection.div.p:117-1
 msgid ""
@@ -423,30 +599,48 @@ msgid ""
 "information in your country (in some countries we may allow your parent or "
 "guardian to do so on your behalf)."
 msgstr ""
+"Kami tidak secara sengaja mengumpulkan informasi pribadi yang dapat "
+"diidentifikasi dari anak-anak. Kami mendorong semua anak untuk tidak pernah "
+"mengirimkan informasi pribadi yang dapat diidentifikasi melalui Aplikasi dan/"
+"atau Layanan. Kami mendorong orang tua dan wali hukum untuk memantau "
+"penggunaan Internet anak-anak mereka dan membantu menegakkan Kebijakan ini "
+"dengan menginstruksikan anak-anak mereka untuk tidak pernah memberikan "
+"informasi pribadi yang dapat diidentifikasi melalui Aplikasi dan/atau "
+"Layanan tanpa izin mereka. Jika Anda memiliki alasan untuk percaya bahwa "
+"seorang anak telah memberikan informasi pribadi kepada kami melalui Aplikasi "
+"dan/atau Layanan, silakan hubungi kami. Anda juga harus berusia minimal 16 "
+"tahun untuk memberikan persetujuan atas pengolahan informasi pribadi Anda di "
+"negara Anda (di beberapa negara, kami mungkin mengizinkan orang tua atau "
+"wali Anda untuk melakukannya atas nama Anda)."
 
 #: privacy_policy.html%2Bsection.div.h3:119-1
 msgid "3.8 Changes to these Terms"
-msgstr ""
+msgstr "3.8 Perubahan pada Ketentuan ini"
 
 #: privacy_policy.html%2Bsection.div.p:121-1
 msgid ""
 "We may update these Terms from time to time. Thus, you are advised to review "
 "this page periodically for any changes."
 msgstr ""
+"Kami dapat memperbarui Ketentuan ini dari waktu ke waktu. Oleh karena itu, "
+"Anda disarankan untuk memeriksa halaman ini secara berkala untuk mengetahui "
+"perubahan apa pun."
 
 #: privacy_policy.html%2Bsection.div.p:123-1
 msgid "This policy is effective as of 2025-07-24."
-msgstr ""
+msgstr "Kebijakan ini berlaku mulai tanggal 24 Juli 2025."
 
 #: privacy_policy.html%2Bsection.div.h2:125-1
 msgid "4. Glossary"
-msgstr ""
+msgstr "4. Daftar Istilah"
 
 #: privacy_policy.html%2Bsection.div.p:127-1
 msgid ""
 "<b>Bootstrap Servers:</b> Servers used to help your device get into the "
 "BitTorrent network."
 msgstr ""
+"<b>Server Bootstrap:</b> Server yang digunakan untuk membantu perangkat Anda "
+"terhubung ke jaringan BitTorrent."
 
 #: privacy_policy.html%2Bsection.div.p:129-1
 msgid ""
@@ -454,18 +648,28 @@ msgid ""
 "running Ceno Browser that serve to route web content requests if other "
 "connectivity mechanisms are inaccessible or unavailable."
 msgstr ""
+"<b>Jembatan:</b> Server (termasuk perangkat pengguna jika Mode Jembatan "
+"diaktifkan) yang menjalankan Ceno Browser dan berfungsi untuk mengarahkan "
+"permintaan konten web jika mekanisme konektivitas lain tidak dapat diakses "
+"atau tidak tersedia."
 
 #: privacy_policy.html%2Bsection.div.p:131-1
 msgid ""
 "<b>Injectors:</b> Servers run by eQualitie that route web content from "
 "origin servers to Ceno users' devices requesting that content."
 msgstr ""
+"<b>Injectors:</b> Server yang dioperasikan oleh eQualitie yang mengarahkan "
+"konten web dari server asal ke perangkat pengguna Ceno yang meminta konten "
+"tersebut."
 
 #: privacy_policy.html%2Bsection.div.p:133-1
 msgid ""
 "<b>Personal Mode:</b> Browsing activity in Personal Mode is not shared with "
 "anyone else. Web content is securely retrieved from origin or via Injectors."
 msgstr ""
+"<b>Mode Pribadi:</b> Aktivitas penelusuran dalam Mode Pribadi tidak "
+"dibagikan dengan orang lain. Konten web diambil secara aman dari sumber "
+"aslinya atau melalui Injectors."
 
 #: privacy_policy.html%2Bsection.div.p:135-1
 msgid ""
@@ -474,23 +678,32 @@ msgid ""
 "this content with other Ceno users via the BitTorrent network, and leaves a "
 "public record of your device's IP address and content retrieved."
 msgstr ""
+"<b>Mode Publik:</b> Aktivitas penelusuran dalam Mode Publik menggunakan "
+"semua metode koneksi yang tersedia untuk mengunduh konten web dari jaringan "
+"Ceno, berbagi konten ini dengan pengguna Ceno lainnya melalui jaringan "
+"BitTorrent, dan meninggalkan catatan publik tentang alamat IP perangkat Anda "
+"dan konten yang diunduh."
 
 #: privacy_policy.html%2Bsection.div.h2:137-1
 msgid "Contact Us"
-msgstr ""
+msgstr "Hubungi Kami"
 
 #: privacy_policy.html%2Bsection.div.p:138-1
 msgid ""
 "If you have any questions or suggestions about this Privacy Policy, do not "
 "hesitate to contact us at: support [at] ceno [dot] app."
 msgstr ""
+"Jika Anda memiliki pertanyaan atau saran mengenai Kebijakan Privasi ini, "
+"jangan ragu untuk menghubungi kami di: support [at] ceno [dot] app."
 
 #: privacy_policy.html%2Bsection.div.h2:140-1
 msgid "Notes"
-msgstr ""
+msgstr "Catatan"
 
 #: privacy_policy.html%2Bsection.div.p:141-1
 msgid ""
 "Translations in other languages are provided for convenience. The English "
 "version shall prevail in case of conflict."
 msgstr ""
+"Terjemahan dalam bahasa lain disediakan untuk kemudahan. Versi bahasa "
+"Inggris akan berlaku jika terjadi ketidaksesuaian."

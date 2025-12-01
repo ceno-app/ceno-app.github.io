@@ -2,17 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-10 14:53-0400\n"
-"PO-Revision-Date: 2025-07-11 21:01+0000\n"
-"Last-Translator: \"Alioc.\" <hit.177411245@gmail.com>\n"
+"POT-Creation-Date: 2025-10-22 13:37-0400\n"
+"PO-Revision-Date: 2025-10-01 18:01+0000\n"
+"Last-Translator: Jane Kong <myonjane@gmail.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
-"projects/censorship-no/website-v2/website-v2-index/zh_Hans/>\n"
+"projects/ceno-app/website-v2/website-v2-index/zh_Hans/>\n"
 "Language: zh_Hans\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.13-dev\n"
+"X-Generator: Weblate 5.14-dev\n"
 
 #: index.html%2Bmain.section.div.div:5-7
 msgid "Share the web!"
@@ -90,10 +90,12 @@ msgid ""
 "peer-to-peer networks, while still providing you with circumvention "
 "capability."
 msgstr ""
+"您支付的数据费用更低，因为Ceno浏览器通过点对点网络路由用户流量，同时仍为您提"
+"供绕过限制的能力。"
 
 #: index.html%2Bmain.div.div.section.div.h2:63-11
 msgid "Free and open source"
-msgstr ""
+msgstr "自由且开源"
 
 #: index.html%2Bmain.div.div.section.div.p:64-11
 msgid ""
@@ -110,7 +112,7 @@ msgstr ""
 msgid ""
 "Don't wait until the next time the internet is blocked to find a solution. "
 "Download Ceno now."
-msgstr ""
+msgstr "别等到下次网络被屏蔽时才寻找解决方案。立即下载Ceno。"
 
 #: index.html%2Bmain.section.div.div.div.p:81-11
 msgid "Help yourself and others. Keep Ceno installed and use it frequently."
@@ -120,11 +122,11 @@ msgstr ""
 msgid ""
 "Share websites you access to help build resilience against internet "
 "blockages."
-msgstr ""
+msgstr "分享您访问的网站，以共同提升抵御网络封锁的能力。"
 
 #: index.html%2Bmain.section.div.div.a.div:89-51
 msgid "Learn how it works"
-msgstr ""
+msgstr "了解其运作原理"
 
 #: index.html%2Bmain.section.div.div:95-7
 msgid ""
@@ -133,6 +135,9 @@ msgid ""
 "of speech, facilitate information exchange, & promote self-expression on the "
 "internet."
 msgstr ""
+"Ceno由<a href=\"https://equalitie.org\">eQualitie</a>设计，该非营利组织致力于"
+"开发自由且开源的工具，以保护言论自由、促进信息交流，并在互联网上推动自我表"
+"达。"
 
 #: index.html%2Bmain.section.div.div.a.div:97-56
 msgid "Get Ceno"
@@ -140,7 +145,7 @@ msgstr "获取 Ceno"
 
 #: index.html%2Bmain.section.div.h2:107-7
 msgid "What Ceno users say"
-msgstr ""
+msgstr "Ceno用户的评价"
 
 #: index.html%2Bmain.section.div.div.div.p:110-11
 msgid ""
@@ -160,6 +165,9 @@ msgid ""
 "is blocked here for more than a year now because of a single picture, so "
 "great to see album covers there again - and without VPN!\""
 msgstr ""
+"“超赞的技术，完全免费，在俄罗斯也能顺畅使用——这里很多网站都被屏蔽了。大型音乐"
+"平台Bandcamp的整个图片托管服务被封锁了一年多，就因为一张图片。现在终于能再次"
+"看到专辑封面了，而且不用VPN！”"
 
 #: index.html%2Bmain.section.div.div.div.div:118-11
 msgid "Tim Six"

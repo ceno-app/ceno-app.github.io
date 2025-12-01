@@ -2,21 +2,21 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-10 14:53-0400\n"
-"PO-Revision-Date: 2025-05-06 19:53+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
-"Language-Team: Indonesian <https://hosted.weblate.org/projects/censorship-no/"
+"POT-Creation-Date: 2025-10-22 13:37-0400\n"
+"PO-Revision-Date: 2025-11-08 17:51+0000\n"
+"Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
+"Language-Team: Indonesian <https://hosted.weblate.org/projects/ceno-app/"
 "website-v2/website-v2-index/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.12-dev\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #: index.html%2Bmain.section.div.div:5-7
 msgid "Share the web!"
-msgstr ""
+msgstr "Bagikan situs web!"
 
 #: index.html%2Bmain.section.div.p:6-7
 msgid ""
@@ -24,38 +24,49 @@ msgid ""
 "information, even when your internet access has been interrupted or cut off. "
 "With the help of other users, Ceno helps you sidestep internet censorship."
 msgstr ""
+"Ceno adalah browser seluler gratis yang memungkinkan Anda mengakses dan "
+"berbagi informasi web, bahkan ketika akses internet Anda terputus atau "
+"dihentikan. Dengan bantuan pengguna lain, Ceno membantu Anda menghindari "
+"sensor internet."
 
 #: index.html%2Bmain.section.div:6-232
 msgid "Join 566,565 other users"
-msgstr ""
+msgstr "Bergabunglah dengan 566.565 pengguna lainnya"
 
 #: index.html%2Bmain.section.div.h2:23-7
 msgid "Ceno in Media"
-msgstr ""
+msgstr "Ceno di Media"
 
 #: index.html%2Bmain.div.section.div.h1:35-9
 msgid "Browser with a superpower"
-msgstr ""
+msgstr "Browser dengan kekuatan super"
 
 #: index.html%2Bmain.div.section.div.p:36-9
 msgid ""
 "Ceno is the world's first browser that allows people to access blocked "
 "content with the help of other Ceno users."
 msgstr ""
+"Ceno adalah browser pertama di dunia yang memungkinkan pengguna mengakses "
+"konten yang diblokir dengan bantuan pengguna Ceno lainnya."
 
 #: index.html%2Bmain.div.section.div.ul.li:38-11
 msgid ""
 "Is your internet down or censored? You can still access content with Ceno. "
 "<a href=\"/@LANG@/faq.html\">Learn how.</a>"
 msgstr ""
+"Apakah koneksi internet Anda terputus atau diblokir? Anda tetap dapat "
+"mengakses konten dengan Ceno. <a href=\"/@LANG@/faq.html\">Pelajari caranya."
+"</a>"
 
 #: index.html%2Bmain.div.section.div.ul.li:39-11
 msgid "VPNs blocked? You can access the web with Ceno."
-msgstr ""
+msgstr "VPN diblokir? Anda tetap bisa mengakses internet dengan Ceno."
 
 #: index.html%2Bmain.div.section.div.ul.li:40-11
 msgid "The more that people use it, the better it gets for everyone!"
 msgstr ""
+"Semakin banyak orang yang menggunakannya, semakin baik hasilnya untuk semua "
+"orang!"
 
 #: index.html%2Bmain.div.section.div.div.a.div:43-58
 msgctxt "./index.html+main.div.section.div.div.a.div:43-58"
@@ -64,7 +75,7 @@ msgstr "Unduh Ceno"
 
 #: index.html%2Bmain.div.div.section.div.h2:53-11
 msgid "Resilient"
-msgstr ""
+msgstr "Tangguh"
 
 #: index.html%2Bmain.div.div.section.div.p:54-11
 msgid ""
@@ -72,10 +83,13 @@ msgid ""
 "distributed cache for availability when traditional networks are blocked or "
 "go down."
 msgstr ""
+"Situs web dibagikan melalui jaringan global peer-to-peer dan disimpan dalam "
+"cache terdistribusi untuk memastikan ketersediaan saat jaringan tradisional "
+"diblokir atau mengalami gangguan."
 
 #: index.html%2Bmain.div.div.section.div.h2:58-11
 msgid "Lower data cost"
-msgstr ""
+msgstr "Biaya data lebih rendah"
 
 #: index.html%2Bmain.div.div.section.div.p:59-11
 msgid ""
@@ -83,10 +97,13 @@ msgid ""
 "peer-to-peer networks, while still providing you with circumvention "
 "capability."
 msgstr ""
+"Anda membayar biaya data yang lebih rendah karena Ceno Browser mengarahkan "
+"lalu lintas pengguna melalui jaringan peer-to-peer, sambil tetap memberikan "
+"kemampuan untuk menghindari pembatasan."
 
 #: index.html%2Bmain.div.div.section.div.h2:63-11
 msgid "Free and open source"
-msgstr ""
+msgstr "Bebas dan sumber terbuka"
 
 #: index.html%2Bmain.div.div.section.div.p:64-11
 msgid ""
@@ -94,30 +111,40 @@ msgid ""
 "ouinet.work\">Ouinet</a> that enables third party developers to incorporate "
 "the Ceno network into their apps for peer-to-peer connectivity."
 msgstr ""
+"Ceno Browser didukung oleh perpustakaan sumber terbuka bernama <a "
+"href=\"https://ouinet.work\">Ouinet</a> yang memungkinkan pengembang pihak "
+"ketiga untuk mengintegrasikan jaringan Ceno ke dalam aplikasi mereka untuk "
+"konektivitas peer-to-peer."
 
 #: index.html%2Bmain.section.div.h2:73-7
 msgid "Be prepared with Ceno"
-msgstr ""
+msgstr "Siapkan diri Anda dengan Ceno"
 
 #: index.html%2Bmain.section.div.div.div.p:77-11
 msgid ""
 "Don't wait until the next time the internet is blocked to find a solution. "
 "Download Ceno now."
 msgstr ""
+"Jangan tunggu sampai internet diblokir lagi untuk mencari solusi. Unduh Ceno "
+"sekarang."
 
 #: index.html%2Bmain.section.div.div.div.p:81-11
 msgid "Help yourself and others. Keep Ceno installed and use it frequently."
 msgstr ""
+"Bantu diri sendiri dan orang lain. Tetap instal Ceno dan gunakan secara "
+"rutin."
 
 #: index.html%2Bmain.section.div.div.div.p:85-11
 msgid ""
 "Share websites you access to help build resilience against internet "
 "blockages."
 msgstr ""
+"Bagikan situs web yang Anda akses untuk membantu membangun ketahanan "
+"terhadap pemblokiran internet."
 
 #: index.html%2Bmain.section.div.div.a.div:89-51
 msgid "Learn how it works"
-msgstr ""
+msgstr "Pelajari cara kerjanya"
 
 #: index.html%2Bmain.section.div.div:95-7
 msgid ""
@@ -126,6 +153,10 @@ msgid ""
 "of speech, facilitate information exchange, & promote self-expression on the "
 "internet."
 msgstr ""
+"Ceno dirancang oleh <a href=\"https://equalitie.org\">eQualitie</a>, sebuah "
+"organisasi nirlaba yang mengembangkan alat-alat bebas dan sumber terbuka "
+"untuk melindungi kebebasan berekspresi, memfasilitasi pertukaran informasi, "
+"dan mempromosikan ekspresi diri di internet."
 
 #: index.html%2Bmain.section.div.div.a.div:97-56
 msgid "Get Ceno"
@@ -133,7 +164,7 @@ msgstr "Dapatkan Ceno"
 
 #: index.html%2Bmain.section.div.h2:107-7
 msgid "What Ceno users say"
-msgstr ""
+msgstr "Apa yang dikatakan pengguna Ceno"
 
 #: index.html%2Bmain.section.div.div.div.p:110-11
 msgid ""
@@ -141,10 +172,14 @@ msgid ""
 "think people of the free world should also use it more often to create a "
 "cache of pages. loads faster than other browsers.\""
 msgstr ""
+"\"Program yang sangat penting. Dan tidak hanya untuk negara-negara "
+"totaliter, saya pikir orang-orang di dunia bebas juga sebaiknya lebih sering "
+"menggunakannya untuk membuat cache halaman. Memuat lebih cepat daripada "
+"browser lain.\""
 
 #: index.html%2Bmain.section.div.div.div.div:111-11
 msgid "Yuriy Karetin"
-msgstr ""
+msgstr "Yuriy Karetin"
 
 #: index.html%2Bmain.section.div.div.div.p:117-11
 msgid ""
@@ -153,10 +188,15 @@ msgid ""
 "is blocked here for more than a year now because of a single picture, so "
 "great to see album covers there again - and without VPN!\""
 msgstr ""
+"\"Teknologi yang luar biasa, gratis, dan berfungsi dengan baik di Rusia "
+"meskipun banyak situs diblokir. Layanan hosting gambar dari platform musik "
+"besar Bandcamp telah diblokir di sini selama lebih dari setahun karena satu "
+"gambar, jadi sangat menyenangkan melihat sampul album di sana lagi - dan "
+"tanpa VPN!\""
 
 #: index.html%2Bmain.section.div.div.div.div:118-11
 msgid "Tim Six"
-msgstr ""
+msgstr "Tim Six"
 
 #: index.html%2Bmain.section.div.div.a.div:125-56
 msgctxt "./index.html+main.section.div.div.a.div:125-56"
