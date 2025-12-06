@@ -6,6 +6,13 @@
 <description>RSS feed of announcements from the team behind Ceno Browser</description>
 
 <item>
+<title>Ceno 2.7.1 Publicado</title>
+<link>announcements/21-11-2025.html</link>
+<guid>announcements/21-11-2025.html</guid>
+<pubDate>2025-11-21</pubDate>
+<description>
+Esta versión corrige un error crítico con el Modo de Navegación Personal. Por favor, actualice a la versión más reciente visitando nuestra <a href="https://ceno.app/es/download">página de descargas</a>. Y por favor, recuérdele a sus amigos también instalar y actualizar Ceno!
+</description>
 </item>
 
 </channel>
