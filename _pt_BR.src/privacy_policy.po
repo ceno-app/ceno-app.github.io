@@ -1,19 +1,18 @@
-#, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-10-22 13:37-0400\n"
-"PO-Revision-Date: 2025-04-21 23:09+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
-"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
-"censorship-no/website-v2/website-v2-privacy-policy/pt_BR/>\n"
+"PO-Revision-Date: 2025-12-12 15:00+0000\n"
+"Last-Translator: Mateus Liberale Gomes <sergiogomes209403@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/ceno-"
+"app/website-v2/website-v2-privacy-policy/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
-"Content-Transfer-Encoding: ENCODING\n"
+"Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #: privacy_policy.html%2Btitle:1-1
 msgid "Ceno Browser | Privacy Policy"
@@ -21,11 +20,11 @@ msgstr "Navegador Ceno | Política de Privacidade"
 
 #: privacy_policy.html%2Bsection.div.h1:4-1
 msgid "Ceno Browser Terms of Use & Privacy Notice"
-msgstr ""
+msgstr "Termos de Uso e Aviso de Privacidade do Ceno Browser"
 
 #: privacy_policy.html%2Bsection.div.h2:6-1
 msgid "1. Overview"
-msgstr ""
+msgstr "1. Visão geral"
 
 #: privacy_policy.html%2Bsection.div.p:7-1
 msgid ""
