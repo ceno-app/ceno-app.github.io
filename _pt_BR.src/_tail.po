@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-10-22 13:37-0400\n"
-"PO-Revision-Date: 2025-12-12 15:00+0000\n"
-"Last-Translator: Mateus Liberale Gomes <sergiogomes209403@gmail.com>\n"
+"PO-Revision-Date: 2025-12-14 23:00+0000\n"
+"Last-Translator: Tarsis <br.tmvdl@gmail.com>\n"
 "Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/ceno-"
 "app/website-v2/website-v2-footer/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -34,12 +34,17 @@ msgid "© eQualitie 2018-2025"
 msgstr "© eQualitie 2018-2025"
 
 #: _tail.html%2Bfooter.div.div.div.div:13-13
+#, fuzzy
 msgid ""
 "<a href=\"/@LANG@/about.html\">About</a> <a href=\"/@LANG@/"
 "community.html\">Community</a> <a href=\"/@LANG@/faq.html\">FAQs</a> <a "
 "href=\"/@LANG@/support.html\" hidden>Get Support</a> <a href=\"/@LANG@/"
 "donate.html\" class=\"link-btn blue-bg\">Donate</a>"
 msgstr ""
+"<a href=\"/@LANG@/about.html\">Sobre</a> <a href=\"/@LANG@/community.html\">"
+"Comunidade</a> <a href=\"/@LANG@/faq.html\">FAQs</a> <a href=\"/@LANG@/"
+"support.html\" hidden>Obter Suporte</a> <a href=\"/@LANG@/donate.html\" "
+"class=\"link-btn blue-bg\">Doar</a>"
 
 #: _tail.html%2Bfooter.div.div.div.div:20-13
 msgid ""
