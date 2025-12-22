@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-10-22 13:37-0400\n"
-"PO-Revision-Date: 2025-05-14 23:11+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
-"Language-Team: French <https://hosted.weblate.org/projects/censorship-no/"
-"website-v2/website-v2-community/fr/>\n"
+"PO-Revision-Date: 2025-12-23 15:00+0000\n"
+"Last-Translator: Pose marto <weblate.drainage895@passmail.net>\n"
+"Language-Team: French <https://hosted.weblate.org/projects/ceno-app/website-"
+"v2/website-v2-community/fr/>\n"
 "Language: fr\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.12-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: community.html%2Bmain.section.h1:3-9
 msgid "Let's build a better internet together"
@@ -42,7 +42,7 @@ msgstr "En savoir plus sur le fait de devenir un pont."
 
 #: community.html%2Bmain.section.div.div.h4:12-17
 msgid "The simple way:"
-msgstr "La manière simple:"
+msgstr "La manière simple :"
 
 #: community.html%2Bmain.section.div.div.p:13-17
 msgid ""
@@ -53,7 +53,7 @@ msgstr ""
 
 #: community.html%2Bmain.section.div.div.h4:14-17
 msgid "Run the Ceno Docker Client:"
-msgstr "Courez le client Ceno Docker:"
+msgstr "Lancer le client Ceno Docker :"
 
 #: community.html%2Bmain.section.div.div.ol.li:16-21
 msgid ""
@@ -62,7 +62,7 @@ msgid ""
 "network host --restart unless-stopped equalitie/ceno-client</code>"
 msgstr ""
 "Avec une seule commande vous pouvez configurer un pont sur votre ordinateur "
-"ou VPS: <br /> <code>sudo docker run --name ceno-client -dv ceno:/var/opt/"
+"ou VPS : <br /> <code>sudo docker run --name ceno-client -dv ceno :/var/opt/"
 "ouinet --network host --restart unless-stopped equalitie/ceno-client</code>"
 
 #: community.html%2Bmain.section.div.div.ol.li:18-21
@@ -82,17 +82,12 @@ msgstr ""
 "définir le proxy à localhost, port 8077."
 
 #: community.html%2Bmain.section.div.div.ol.li:20-21
-#, fuzzy
-#| msgid ""
-#| "Install the <a href=\"https://gitlab.com/censorship-no/ceno-ext-"
-#| "settings\">Ceno Web Extension</a> and the provided certificate to test it "
-#| "out!"
 msgid ""
 "Install the <a href=\"https://gitlab.com/ceno-app/ceno-ext-settings\">Ceno "
 "Web Extension</a> and the provided certificate to test it out!"
 msgstr ""
-"Installez le <a href=\"https://gitlab.com/censorship-no/ceno-ext-"
-"settings\">Ceno Web Extension</a> et le certificat fourni pour le tester !"
+"Installez la <a href=\"https://gitlab.com/ceno-app/ceno-ext-settings\">Ceno "
+"Web Extension</a> et le certificat fourni pour le tester !"
 
 #: community.html%2Bmain.section.div.div.h2:30-17
 msgid "Contribute to our code"
@@ -106,7 +101,7 @@ msgid ""
 msgstr ""
 "Ceno est un outil libre et open source, l'un des nombreux développés et "
 "entretenus par eQualitie. Si vous êtes intéressé par le code source de Ceno, "
-"veuillez consulter les dépôts Git suivants:"
+"veuillez consulter les dépôts Git suivants :"
 
 #: community.html%2Bmain.section.div.div.ul.li:33-21
 msgid "Ceno for Android"
@@ -129,21 +124,15 @@ msgid "Ceno Docker Client"
 msgstr "le client Docker de Ceno"
 
 #: community.html%2Bmain.section.div.div.p:39-17
-#, fuzzy
-#| msgid ""
-#| "You may also be interested in the (no longer maintained) <a "
-#| "href=\"https://gitlab.com/censorship-no/ceno-archives\">previous "
-#| "incarnation of Ceno</a>, built on the Freenet anonymous file sharing and "
-#| "content publishing network."
 msgid ""
 "You may also be interested in the (no longer maintained) <a href=\"https://"
 "gitlab.com/ceno-app/ceno-archives\">previous incarnation of Ceno</a>, built "
 "on the Freenet anonymous file sharing and content publishing network."
 msgstr ""
-"Vous pourriez également être intéressé par l'incarnation (non maintenu) <a "
-"href=\"https://gitlab.com/censorship-no/ceno-archives\">prévieuse de Ceno</"
-"a>, construite sur le réseau de partage de fichiers anonymes Freenet et de "
-"publication de contenu."
+"Vous pourriez également être intéressé par <a href=\"https://gitlab.com/"
+"censorship-no/ceno-archives\">une version antérieure de Ceno</a>(non "
+"maintenu), construite sur le réseau de partage de fichiers anonymes Freenet "
+"et de publication de contenu."
 
 #: community.html%2Bmain.section.div.div.h2:46-17
 msgid "Share your feedback"
@@ -160,17 +149,15 @@ msgstr ""
 "besoins de nos utilisateurs, suggérer des améliorations et identifier de "
 "nouvelles fonctionnalités. Partager votre histoire aide également à diffuser "
 "le mot sur Ceno, qui développe le réseau. Avec votre consentement, nous "
-"pouvons également mettre en évidence votre histoire sur notre site Web!"
+"pouvons également mettre en évidence votre histoire sur notre site Web !"
 
 #: community.html%2Bmain.section.div.div.ul.li:49-21
 msgid "Write a review on the Play Store"
 msgstr "Donnez votre avis sur Play Store"
 
 #: community.html%2Bmain.section.div.div.ul.li:50-21
-#, fuzzy
-#| msgid "Get in touch with the team: support [at] censorship [dot] no"
 msgid "Get in touch with the team: support [at] ceno [dot] app"
-msgstr "Entrez en contact avec l'équipe : soutien [à] la censure [point] non"
+msgstr "Entrez en contact avec l'équipe :  support [at] ceno [dot] app"
 
 #: community.html%2Bmain.section.div.div.ul.li:51-21
 msgid "Take a survey"
@@ -209,18 +196,13 @@ msgid "Join our Weblate"
 msgstr "Joignez-vous à notre Weblate"
 
 #: community.html%2Bmain.section.div.div.p:72-17
-#, fuzzy
-#| msgid ""
-#| "Please contact the Ceno team at support [at] censorship [dot] no if "
-#| "you're interested in becoming a reviewer for translation(s) in your "
-#| "language(s)."
 msgid ""
 "Please contact the Ceno team at support [at] ceno [dot] app if you're "
 "interested in becoming a reviewer for translation(s) in your language(s)."
 msgstr ""
-"Veuillez contacter l’équipe de Ceno à support [arobase] censorship [point] "
-"no (ou remplissez le formulaire de contact ci-dessous) si vous souhaitez "
-"réviser les traductions dans vôtre langue."
+"Veuillez contacter l’équipe de Ceno à support [at] ceno [dot] app (ou "
+"remplissez le formulaire de contact ci-dessous) si vous souhaitez réviser "
+"les traductions dans votre/vos langue(s)."
 
 #: community.html%2Bmain.section.div.div.p:73-17
 msgid ""
