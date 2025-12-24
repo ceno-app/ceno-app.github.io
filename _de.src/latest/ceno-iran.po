@@ -4,7 +4,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-04-15 23:57-0400\n"
 "PO-Revision-Date: 2025-12-25 09:00+0000\n"
-"Last-Translator: Julia Kraus <julkra185@gmail.com>\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: German <https://hosted.weblate.org/projects/ceno-app/website-"
 "v2/website-v2-ceno-in-iran/de/>\n"
 "Language: de\n"
@@ -26,7 +26,7 @@ msgstr "hauptimg { max-breite: 400px; rand-inline: auto; }"
 #: latest/ceno-iran.html%2Bmain.h1:8-1
 msgctxt "./latest/ceno-iran.html+main.h1:8-1"
 msgid "Ceno proves itself in Iran during Internet shutdowns"
-msgstr ""
+msgstr "Ceno bewährt sich im Iran während Internet-Sperren"
 
 #: latest/ceno-iran.html%2Bmain.h2:10-1
 msgid ""
