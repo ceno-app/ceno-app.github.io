@@ -3,8 +3,8 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-10-22 13:37-0400\n"
-"PO-Revision-Date: 2025-08-28 17:15+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"PO-Revision-Date: 2025-12-23 15:00+0000\n"
+"Last-Translator: Pose marto <weblate.drainage895@passmail.net>\n"
 "Language-Team: French <https://hosted.weblate.org/projects/ceno-app/website-"
 "v2/website-v2-privacy-policy/fr/>\n"
 "Language: fr\n"
@@ -12,7 +12,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.13.1-dev\n"
+"X-Generator: Weblate 5.15.1\n"
 
 #: privacy_policy.html%2Btitle:1-1
 msgid "Ceno Browser | Privacy Policy"
@@ -20,11 +20,11 @@ msgstr "Navigateur Ceno | Politique de confidentialité"
 
 #: privacy_policy.html%2Bsection.div.h1:4-1
 msgid "Ceno Browser Terms of Use & Privacy Notice"
-msgstr ""
+msgstr "Termes d'utilisation et notice de confidentialité du navigateur Ceno"
 
 #: privacy_policy.html%2Bsection.div.h2:6-1
 msgid "1. Overview"
-msgstr ""
+msgstr "1. Vue d'ensemble"
 
 #: privacy_policy.html%2Bsection.div.p:7-1
 msgid ""
@@ -36,10 +36,18 @@ msgid ""
 "\"we\", or \"us\"). Usage of the Ceno Browser application and associated "
 "services is provided by eQualitie at no cost and are provided for use as is."
 msgstr ""
+"Les conditions d'utilisation du navigateur Ceno (\"Ceno\"), ainsi que la "
+"notice de confidentialité (référée collectivement comme les \"Termes\"), "
+"s'appliquent à tous les utilisateurs de Ceno - un navigateur web pair-à-"
+"pair. En installant et exécutant le navigateur Ceno (le \"navigateur\"), "
+"vous consentez et vous engagez à respecter ce contrat entre vous et "
+"eQualities Inc (\"eQualitie\", \"we\", or \"us\"). L'utilisation du "
+"navigateur Ceno et ses services associés est permise par eQualitie sans cout "
+"associée, et fournie tel-quel."
 
 #: privacy_policy.html%2Bsection.div.h2:9-1
 msgid "2. Terms of use"
-msgstr ""
+msgstr "2. Termes d'utilisation"
 
 #: privacy_policy.html%2Bsection.div.p:10-1
 msgid ""
@@ -49,6 +57,12 @@ msgid ""
 "the applicable laws of Quebec or Canada or the International Bill of Human "
 "Rights. This includes, but is not limited to, content that:"
 msgstr ""
+"L'application Ceno Browser est construite en respectant les valeurs "
+"d'eQualitie. En utilisant ce logiciel, vous acceptez de ne pas utiliser Ceno "
+"pour publier, partager ou stocker des documents qui sont contraires aux "
+"valeurs sous-jacentes d'eQualitie, aux lois applicables du Québec ou du "
+"Canada ou à la Charte internationale des droits de la personne. Cela "
+"comprend, mais ne se limite pas , au contenu qui :"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:12-1
 msgid ""
@@ -56,6 +70,10 @@ msgid ""
 "underlying values or the letter of Canada's Privacy Act or PIPEDA (the "
 "Personal Information Protection and Electronic Documents Act);"
 msgstr ""
+"Porte atteinte aux droits à la protection des renseignements personnels, y "
+"compris aux valeurs fondamentales ou à la lettre de la Loi sur la protection "
+"des renseignements personnels ou LPRPDE (Loi sur la protection des "
+"renseignements personnels et les documents électroniques) du Canada ;"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:13-1
 msgid ""
@@ -64,12 +82,18 @@ msgid ""
 "sexually exploits or promotes the sexual exploitation of minors), unlawful "
 "pornography, or is otherwise indecent;"
 msgstr ""
+"Constitue des matériels d'exploitation sexuelle d'enfants (y compris des "
+"matériels qui ne sont pas des matériels illégaux d'abus sexuels d'enfants, "
+"mais qui exploitent sexuellement ou promeuvent l'exploitation sexuelle de "
+"mineurs), la pornographie illicite ou qui sont autrement indécents ;"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:14-1
 msgid ""
 "Contains or promotes extreme acts of violence or terrorist activity, "
 "including terror or violent extremist propaganda;"
 msgstr ""
+"Contient ou promeut des actes de violence extrêmes ou des activités "
+"terroristes, incluant la propagande violente ou extrémiste ;"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:15-1
 msgid ""
@@ -79,16 +103,24 @@ msgid ""
 "any other characteristic(s) associated with systemic discrimination or "
 "marginalization;"
 msgstr ""
+"Fait la promotion de la bigoterie, la haine ou l'incitation à la violence "
+"contre toute personne ou groupe de personnes fondée sur leur race, leur "
+"religion, leur appartenance ethnique, leur origine nationale, le sexe, "
+"l'identité de genre, l'orientation sexuelle, le handicap, la déficience ou "
+"toute autre caractéristique associée à la discrimination ou à la "
+"marginalisation systémiques ;"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:16-1
 msgid ""
 "Contains files with viruses, trojans, worms, logic bombs or other material "
 "that is malicious or technologically harmful."
 msgstr ""
+"Contient des fichiers avec des virus, troyens, vers, bombes logiques ou tout "
+"autre matériel qui soit technologiquement dangereux."
 
 #: privacy_policy.html%2Bsection.div.p:19-1
 msgid "Content Responsibility"
-msgstr ""
+msgstr "Responsabilité du contenu"
 
 #: privacy_policy.html%2Bsection.div.p:21-1
 msgid ""
@@ -103,10 +135,21 @@ msgid ""
 "of Use, including the promotion of illegal, harmful, or otherwise prohibited "
 "material."
 msgstr ""
+"eQualitie n'est pas responsable du contenu partagé ou distribué par les "
+"utilisateurs via le réseau BitTorrent ou d'autres serveurs tiers. Bien que "
+"Ceno facilite le partage décentralisé des contenus, la responsabilité de la "
+"légalité et de l'éthique du contenu partagé incombe uniquement aux "
+"utilisateurs. Il est recommandé aux utilisateurs de se conformer aux lois et "
+"aux lignes directrices communautaires applicables lorsqu'ils utilisent le "
+"Service. Ceno ne surveille pas activement ou ne distribue pas de contenu "
+"modéré, mais nous nous réservons le droit d'enquêter et de prendre des "
+"mesures (tels que le manque d'accès à certaines caractéristiques) en cas de "
+"mauvais usage qui viole ces Conditions d'utilisation, y compris la promotion "
+"de matériel illicite, nuisible ou autrement interdit."
 
 #: privacy_policy.html%2Bsection.div.h2:23-1
 msgid "3. Privacy Notice"
-msgstr ""
+msgstr "3. Notice de confidentialité"
 
 #: privacy_policy.html%2Bsection.div.p:25-1
 msgid ""
@@ -114,10 +157,14 @@ msgid ""
 "the collection, use, and disclosure of Personal Information for all users of "
 "this Service."
 msgstr ""
+"Cette section est utilisée pour informé les visiteur de la politique "
+"d'eQualities concernant la collecte de données, leur utilisation et la "
+"divulgation d'information personnelle pour tous les utilisateurs de ce "
+"service."
 
 #: privacy_policy.html%2Bsection.div.h3:27-1
 msgid "3.1 Data Collection"
-msgstr ""
+msgstr "3.1 Collecte de données"
 
 #: privacy_policy.html%2Bsection.div.p:29-1
 msgid ""
@@ -127,6 +174,12 @@ msgid ""
 "eQualitie does not know who uses Ceno, nor with whom users synchronize or "
 "share content."
 msgstr ""
+"Le navigateur Ceno est conçu avec la vie privée à son cœur et n'exige aucune "
+"information d'identification personnelle pour fonctionner. Vous n'avez pas "
+"besoin de fournir un nom, un identifiant d'utilisateur, un pseudo, un compte "
+"ou toute autre donnée personnelle pour utiliser l'application. eQualitie ne "
+"sait pas qui utilise Ceno, ni avec qui les utilisateurs synchronisent ou "
+"partagent du contenu."
 
 #: privacy_policy.html%2Bsection.div.p:31-1
 msgid ""
@@ -134,89 +187,118 @@ msgid ""
 "the application. This information is stripped of any personally identifiable "
 "elements before collection and is never shared with third parties."
 msgstr ""
+"Nous respectons votre vie privée et ne collectons que des données "
+"anonymisées pour améliorer l'application. Cette information est filtrée de "
+"tout élément permettant une identification individuelle avant collecte, et "
+"n'est jamais partagée avec des tierces parties."
 
 #: privacy_policy.html%2Bsection.div.p:33-1
 msgid ""
 "By default, Ceno collects anonymized usage metrics using our own, self-"
 "hosted, analytics server. This process is designed to be privacy-preserving:"
 msgstr ""
+"Par défaut, Ceno collecte des données d'usage anonymisées en utilisant notre "
+"propre, auto-hébergé, serveur d'analyses. Ce processus est conçu pour "
+"préserver la vie privée :"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:35-1
 msgid "IP addresses are not stored"
-msgstr ""
+msgstr "Les adresses IP ne sont pas stockées"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:36-1
 msgid "No personal information is collected"
-msgstr ""
+msgstr "Aucune information personnelle n'est collectée"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:37-1
 msgid "Data is associated with a per-device randomly generated ID"
 msgstr ""
+"Les données sont associées avec un identifiant d'appareil généré "
+"aléatoirement"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:38-1
 msgid ""
 "The randomly generated ID is not associated with any user or device "
 "identifiers (e.g. IP, MAC, IMEI, MEID)"
 msgstr ""
+"L'identifiant généré aléatoirement n'est pas associé avec des identifiants "
+"utilisateur ou appareil (ex : IP, MAC, IMEI, MEID)"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:39-1
 msgid "The ID is replaced with a new random ID every 30 days or less"
 msgstr ""
+"L'identifiant est remplacé avec un nouvel identifiant tous les 30 jours ou "
+"plus fréquemment"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:40-1
 msgid "Past, current and future random device IDs are not associated"
 msgstr ""
+"Les identifiants d'appareils aléatoires passés, présents et futures ne sont "
+"pas associés"
 
 #: privacy_policy.html%2Bsection.div.p:43-1
 msgid "The following anonymized data may be collected:"
-msgstr ""
+msgstr "Les données anonymisées suivantes peuvent être collectées :"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:45-1
 msgid ""
 "Peer to peer network statistics, e.g. data volume transferred, count of peer "
 "connections made"
 msgstr ""
+"Statistiques de réseau pair à pair, par exemple les volumes de données "
+"transférées, le nombre de connections aux pairs réalisés"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:46-1
 msgid "Application performance data, e.g. connection success and latency"
 msgstr ""
+"Données de performance de l'application, par exemple le taux de succès des "
+"connexions et la latence"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:47-1
 msgid ""
 "Application usage statistics, e.g. time spent in public vs. personal "
 "browsing modes"
 msgstr ""
+"Statistiques d'usage de l'application, par exemple le temps passé sur les "
+"modes de navigation personnel et public"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:48-1
 msgid ""
 "Country where device is located (Inferred. No GPS or specific location is "
 "sent)"
 msgstr ""
+"Pays dans lequel l'appareil est localisé (supposé. Aucune donnée GPS ou "
+"localisation exacte n'est envoyée)"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:49-1
 msgid "Device settings relating to country, language, and locale"
-msgstr ""
+msgstr "Paramètres d'appareils relatifs au pays, langage et local"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:50-1
 msgid ""
 "Whether the device is using a VPN (but no further information about the VPN)"
 msgstr ""
+"Si l'appareil utilise un VPN (mais pas plus d'information concernant le VPN)"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:51-1
 msgid "The cellular service provider name (if applicable)"
-msgstr ""
+msgstr "Le nom de l'opérateur de service téléphonique (si applicable)"
 
 #: privacy_policy.html%2Bsection.div.p:53-1
 msgid ""
 "Note: country inference is based on device locale, VPN presence, and "
 "cellular provider data."
 msgstr ""
+"Note : la supposition du pays est basée sur le local de l'appareil, la "
+"présence d'un VPN, et les données de l'opérateur téléphonique."
 
 #: privacy_policy.html%2Bsection.div.p:55-1
 msgid ""
 "All collected data is automatically deleted after 90 days. Users may opt out "
 "of metrics collection at any time via the app settings."
 msgstr ""
+"Toutes les données collectées sont automatiquement supprimées après 90 "
+"jours. Les utilisateurs peuvent désactiver la collecte de statistiques à "
+"tout moment depuis les réglages de l'application."
 
 #: privacy_policy.html%2Bsection.div.p:57-1
 msgid ""
@@ -224,6 +306,9 @@ msgid ""
 "measurements to help us understand the number of users, including the "
 "network origin ASN and country, based on browsing in Public mode."
 msgstr ""
+"Nous collectons des données de manière horaire, journalière et mensuelle "
+"pour nous aider à mesurer le nombre d'utilisateur, incluant le réseau ASN "
+"d'origine et le pays, basé sur la navigation en mode public."
 
 #: privacy_policy.html%2Bsection.div.p:59-1
 msgid ""
@@ -235,6 +320,13 @@ msgid ""
 "Injectors are run and managed by the Ceno team. eQualitie deletes all access "
 "logs every 24 hours."
 msgstr ""
+"Les injecteurs sont des serveurs qui peuvent voir des demandes de contenu "
+"sur le réseau, y compris l'adresse IP de l'utilisateur faisant la demande et "
+"le nom du domaine du site Web demandé. Les injecteurs sont une composante "
+"réseau nécessaire pour 1) introduire du contenu web dans un réseau "
+"décentralisé, et 2) authentifier l'intégrité du contenu introduit. Sur le "
+"réseau Ceno, les injecteurs sont administrés et gérés par l'équipe Ceno. "
+"eQualitie supprime tous les journaux d'accès toutes les 24 heures."
 
 #: privacy_policy.html%2Bsection.div.p:61-1
 msgid ""
@@ -245,21 +337,32 @@ msgid ""
 "are checked for liveliness every so often and are removed when they are no "
 "longer responsive to BitTorrent traffic."
 msgstr ""
+"Les serveurs Bootstrap sont des serveurs utilisés pour introduire votre "
+"appareil sur le réseau BitTorrent. Nous envoyons les adresses IP des "
+"utilisateurs à nos serveurs de bootstrap auto-hébergés et aux serveurs de "
+"bootstrap tiers. Pour les serveurs auto-hébergés bootstrap, nous conservons "
+"les adresses IP dans un cache en mémoire. Les adresses IP sont vérifiées "
+"pour la réactivité de manière fréquent et sont retirées lorsqu'elles ne sont "
+"plus actives au trafic BitTorrent."
 
 #: privacy_policy.html%2Bsection.div.h3:63-1
 msgid "3.2 Data Sharing"
-msgstr ""
+msgstr "3.2 Partage des données"
 
 #: privacy_policy.html%2Bsection.div.p:65-1
 msgid ""
 "Ceno Browser (and eQualitie) does not share any data with any third parties."
 msgstr ""
+"Le navigateur Ceno (et eQualities) ne partagent aucune données avec des "
+"tierces partis."
 
 #: privacy_policy.html%2Bsection.div.p:67-1
 msgid ""
 "The application offers two modes of operation - <strong>Public</strong> and "
 "<strong>Personal</strong>."
 msgstr ""
+"Cette application propose deux modes de fonctionnement -<strong>Public</"
+"strong> et<strong>Personnel</strong>."
 
 #: privacy_policy.html%2Bsection.div.p:68-1
 msgid ""
@@ -270,6 +373,13 @@ msgid ""
 "user's device inside a Public tab will be shared with other Ceno users via "
 "the BitTorrent network."
 msgstr ""
+"Les onglets <strong>Public</strong> utilisent toutes les méthodes de "
+"connectivité disponibles dans le réseau Ceno pour obtenir le contenu "
+"souhaité. Lors de la navigation en utilisant un onglet public, les "
+"utilisateurs laisseront un enregistrement de leur activité sur le réseau "
+"public BitTorrent (adresse IP et site Web demandés). Le contenu qui a été "
+"récupéré par un appareil d'utilisateur dans un onglet public sera partagé "
+"avec d'autres utilisateurs de Ceno via le réseau BitTorrent."
 
 #: privacy_policy.html%2Bsection.div.p:70-1
 msgid ""
@@ -296,10 +406,23 @@ msgid ""
 "and forward this request. <strong>Bridge operators will have their device's "
 "IP address listed in the BitTorrent network as an accessible Bridge.</strong>"
 msgstr ""
+"Pour que votre client Ceno puisse toujours contacter un injecteur, nous "
+"avons également créé des <strong>Passerelles</strong>. Si les Injecteurs "
+"sont bloqués sur votre réseau, l'application Ceno cherchera les Passerelles "
+"disponibles, qui transmettront la demande d'un utilisateur aux Injecteurs. "
+"Les utilisateurs peuvent autoriser l'activation du mode passerelles dans "
+"Ceno Browser pour améliorer l'accessibilité du contenu Web pour d'autres. "
+"L'activité de la passerelle est invisible pour l'opérateur de la passerelle "
+"(sauf s'ils surveillent activement leur dispositif pour les connexions "
+"entrantes et sortantes). Leur travail consiste à recevoir des demandes de "
+"réseau d'autres utilisateurs de Ceno pour accéder à un Injecteur et "
+"transmettre cette demande. <strong>Les exploitants de passerelles auront "
+"l'adresse IP de leur appareil indiquée dans le réseau BitTorrent en tant que "
+"passerelle accessible.</strong>"
 
 #: privacy_policy.html%2Bsection.div.h3:74-1
 msgid "3.3 Log Data"
-msgstr ""
+msgstr "3.3 Données de connexion"
 
 #: privacy_policy.html%2Bsection.div.p:76-1
 msgid ""
@@ -311,16 +434,27 @@ msgid ""
 "device unless the user decides to send it to us for support purposes, and is "
 "automatically deleted when its sizes reaches 15 MB."
 msgstr ""
+"Les utilisateurs peuvent opter pour la connexion via le menu Paramètres dans "
+"le navigateur Ceno. Lorsque activé, le navigateur Ceno crée des fichiers "
+"journaux sur les périphériques de l'utilisateur. L'objectif de ces fichiers "
+"est seulement de loger l'activité de l'appareil pour faciliter le processus "
+"de débogage dans le cas où un utilisateur éprouve des difficultés à se "
+"connecter avec ses pairs ou autrement à utiliser Ceno. Le fichier journal "
+"reste sur le périphérique d'un utilisateur à moins que l'utilisateur ne "
+"décide de nous l'envoyer à des fins de support, et est automatiquement "
+"supprimé lorsque sa taille atteint 15 Mo."
 
 #: privacy_policy.html%2Bsection.div.p:78-1
 msgid ""
 "If the user does decide to contact us, the personally identifiable data we "
 "may collect is:"
 msgstr ""
+"Si l'utilisateur décide de nous contacter, les données d'identification "
+"personnelles que nous pouvons collecter sont :"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:80-1
 msgid "Email address - if the user decided to contact us by email;"
-msgstr ""
+msgstr "Adresse mail - si l'utilisateur décide de nous contacter par mail ;"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:81-1
 msgid ""
@@ -328,18 +462,21 @@ msgid ""
 "eQualitie websites, and associated metadata - for the purposes of providing "
 "technical support;"
 msgstr ""
+"Information que l'utilisateur peu fournir par mail, par les tickets de "
+"support, ou par les sites web de eQualities, et ces méta-data associées - "
+"dans l'objectif de fournir un support technique ;"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:82-1
 msgid "Web browsing activity and history."
-msgstr ""
+msgstr "Activité de navigation internet et historique."
 
 #: privacy_policy.html%2Bsection.div.p:85-1
 msgid "None of this data is shared with any third parties."
-msgstr ""
+msgstr "Aucune de ces données n'est partagée avec une tierce partie."
 
 #: privacy_policy.html%2Bsection.div.h3:87-1
 msgid "3.4 Crash Reporting"
-msgstr ""
+msgstr "3.4 Rapport de plantage"
 
 #: privacy_policy.html%2Bsection.div.p:89-1
 msgid ""
@@ -349,6 +486,12 @@ msgid ""
 "run by eQualitie. We use <a href=\"https://sentry.io/\">Sentry</a> for crash "
 "reporting."
 msgstr ""
+"Les utilisateurs peuvent opter pour la déclaration de crash via le menu "
+"Paramètres dans le navigateur Ceno. Lorsque activé, le navigateur Ceno "
+"enverra des rapports de crash en cas de problème lors de l'exécution de "
+"l'application. Les rapports de crash sont transmis automatiquement à un "
+"serveur géré par eQualitie. Nous utilisons <a href=\"https://sentry.io/\">"
+"Sentry</a> pour la déclaration de crash."
 
 #: privacy_policy.html%2Bsection.div.p:91-1
 msgid ""
@@ -412,7 +555,7 @@ msgstr "Visiter des sites externes liés à Ceno est entièrement à vos risques
 
 #: privacy_policy.html%2Bsection.div.p:107-1
 msgid "We strongly recommend that you:"
-msgstr "Nous vous recommandons fortement:"
+msgstr "Nous vous recommandons fortement :"
 
 #: privacy_policy.html%2Bsection.div.p.ul.li:109-1
 msgid ""
@@ -492,10 +635,8 @@ msgstr ""
 "est conseillé de revoir cette page périodiquement pour tout changement."
 
 #: privacy_policy.html%2Bsection.div.p:123-1
-#, fuzzy
-#| msgid "This policy is effective as of 2024-12-18."
 msgid "This policy is effective as of 2025-07-24."
-msgstr "Cette politique est en vigueur à compter de 2024-12-18."
+msgstr "Cette politique est en vigueur à compter de 2025-07-27."
 
 #: privacy_policy.html%2Bsection.div.h2:125-1
 msgid "4. Glossary"
@@ -556,27 +697,25 @@ msgid "Contact Us"
 msgstr "Nous contacter"
 
 #: privacy_policy.html%2Bsection.div.p:138-1
-#, fuzzy
-#| msgid ""
-#| "If you have any questions or suggestions about this Privacy Policy, do "
-#| "not hesitate to contact us at: support [at] censorship [dot] no."
 msgid ""
 "If you have any questions or suggestions about this Privacy Policy, do not "
 "hesitate to contact us at: support [at] ceno [dot] app."
 msgstr ""
 "Si vous avez des questions ou des suggestions à propos de cette Politique de "
-"confidentialité, n'hésitez pas à nous contacter à : support [at] censure "
-"[dot] no."
+"confidentialité, n'hésitez pas à nous contacter à : support [at] ceno[dot] "
+"app."
 
 #: privacy_policy.html%2Bsection.div.h2:140-1
 msgid "Notes"
-msgstr ""
+msgstr "Notes"
 
 #: privacy_policy.html%2Bsection.div.p:141-1
 msgid ""
 "Translations in other languages are provided for convenience. The English "
 "version shall prevail in case of conflict."
 msgstr ""
+"Les traductions dans d'autres langages sont fournies par praticité. La "
+"version anglaise fait fois en cas de conflit."
 
 #~ msgid ""
 #~ "Users sharing retrieved content with others may also incur additional "

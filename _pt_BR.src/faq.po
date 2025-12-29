@@ -3,16 +3,16 @@ msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2025-10-22 13:37-0400\n"
-"PO-Revision-Date: 2025-08-01 19:01+0000\n"
-"Last-Translator: Bernardo Gomes <bernardo.gomes@bebitterbebetter.com.br>\n"
-"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
-"censorship-no/website-v2/website-v2-faq/pt_BR/>\n"
+"PO-Revision-Date: 2025-12-12 15:00+0000\n"
+"Last-Translator: Mateus Liberale Gomes <sergiogomes209403@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/ceno-"
+"app/website-v2/website-v2-faq/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.13-dev\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #: faq.html%2Bmain.section.div.h1:4-13
 msgid "Frequently<br>Asked<br>Questions"
@@ -20,7 +20,7 @@ msgstr "Preguntas<br>frequentes"
 
 #: faq.html%2Bmain.section.form.input[value]:9-13
 msgid "(ceno.network OR ceno.website OR ceno.app)"
-msgstr ""
+msgstr "(ceno.network OU ceno.website OU ceno.app)"
 
 #: faq.html%2Bmain.section:6-9
 msgid "Search"
@@ -28,7 +28,7 @@ msgstr "Pesquisar"
 
 #: faq.html%2Bmain.section.div.a.div:13-45
 msgid "Read user manual"
-msgstr ""
+msgstr "Leia o manual do usuário"
 
 #: faq.html%2Bmain.section.div.a.div:14-104
 msgid "Read technical, in-depth whitepaper"
