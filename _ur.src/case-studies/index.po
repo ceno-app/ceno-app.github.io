@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-10 14:53-0400\n"
+"POT-Creation-Date: 2025-12-29 09:20-0400\n"
 "PO-Revision-Date: 2025-05-15 13:37+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Urdu <https://hosted.weblate.org/projects/censorship-no/"
@@ -26,11 +26,11 @@ msgstr ""
 msgid "December, 2022"
 msgstr ""
 
-#: case-studies/index.html%2Bmain.section.article.h1:12-5
+#: case-studies/index.html%2Bmain.section.article.h1:13-5
 msgid "Highlights from the Ground in Iran"
 msgstr "ایران کے علاقے سے جھلکیاں"
 
-#: case-studies/index.html%2Bmain.section.article.div:15-5
+#: case-studies/index.html%2Bmain.section.article.div:17-5
 msgid ""
 "User experiences have varied from region to region as ISPs have applied "
 "Internet censorship and disruption measures inconsistently. Where Iran’s "
@@ -39,6 +39,6 @@ msgid ""
 "able to access…"
 msgstr ""
 
-#: case-studies/index.html%2Bmain.section.article:15-337
+#: case-studies/index.html%2Bmain.section.article:21-54
 msgid "Read more"
 msgstr ""

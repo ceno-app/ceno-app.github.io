@@ -2,21 +2,22 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-10 14:53-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2025-12-29 09:20-0400\n"
+"PO-Revision-Date: 2025-12-16 08:00+0000\n"
+"Last-Translator: Kuba <weblate.undercut450@passmail.net>\n"
+"Language-Team: Polish <https://hosted.weblate.org/projects/ceno-app/website-"
+"v2/website-v2-faq/pl/>\n"
 "Language: pl\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.15.1\n"
 "Plural-Forms: nplurals=3; plural=(n==1 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 "
 "|| n%100>=20) ? 1 : 2);\n"
+"X-Generator: Weblate 5.15.1-dev\n"
 
 #: faq.html%2Bmain.section.div.h1:4-13
 msgid "Frequently<br>Asked<br>Questions"
-msgstr ""
+msgstr "Najczęściej<br>Zadawane<br>Pytania"
 
 #: faq.html%2Bmain.section.form.input[value]:9-13
 msgid "(ceno.network OR ceno.website OR ceno.app)"
@@ -58,9 +59,9 @@ msgstr ""
 
 #: faq.html%2Bmain.section.div.details.p:30-17
 msgid ""
-"When a website is accessible from your network (e.g. accessing <i>www.canada."
-"ca</i> from your home internet), Ceno will connect to it like a normal web "
-"browser."
+"When a website is accessible from your network (e.g. accessing "
+"<i>www.canada.ca</i> from your home internet), Ceno will connect to it like "
+"a normal web browser."
 msgstr ""
 
 #: faq.html%2Bmain.section.div.details.p:32-17
@@ -105,8 +106,8 @@ msgstr ""
 
 #: faq.html%2Bmain.section.div.details.p:48-17
 msgid ""
-"For a simpler explanation of how Ceno works, <a href=\"/@LANG@/about."
-"html\">please read this</a>."
+"For a simpler explanation of how Ceno works, <a href=\"/@LANG@/"
+"about.html\">please read this</a>."
 msgstr ""
 
 #: faq.html%2Bmain.section.div.details:48-115
@@ -257,8 +258,8 @@ msgstr ""
 
 #: faq.html%2Bmain.section.div.details.p:108-17
 msgid ""
-"Some of their other projects include <a href=\"https://ouisync."
-"net\">Ouisync</a>, a service for decentralized file sharing; <a "
+"Some of their other projects include <a href=\"https://"
+"ouisync.net\">Ouisync</a>, a service for decentralized file sharing; <a "
 "href=\"https://deflect.ca\">Deflect</a>, a tool for DDoS protection; "
 "Baskerville, a machine learning-based attack detection system; and the "
 "dComms deployment toolkit for setting up decentralized and federated network "

@@ -2,23 +2,27 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-10 14:53-0400\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"POT-Creation-Date: 2025-12-29 09:20-0400\n"
+"PO-Revision-Date: 2025-11-03 08:51+0000\n"
+"Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
+"Language-Team: Indonesian <https://hosted.weblate.org/projects/ceno-app/"
+"website-v2/website-v2-about/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Translate Toolkit 3.15.1\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 5.14.1-dev\n"
 
 #: about.html%2Bmain.section.div.div:4-13
 msgid "Ceno is building a borderless internet"
-msgstr ""
+msgstr "Ceno sedang membangun internet tanpa batas"
 
 #: about.html%2Bmain.section.div.p:5-13
 msgid "Our motto is ‘Share the Web!' because that is what our users do."
 msgstr ""
+"Motto kami adalah 'Bagikan Web!' karena itulah yang dilakukan oleh pengguna "
+"kami."
 
 #: about.html%2Bmain.section.div.p:12-13
 msgid ""
@@ -28,6 +32,12 @@ msgid ""
 "People using Ceno Browser are able to access a library of saved internet "
 "content that continues to be available during service interruptions."
 msgstr ""
+"Ada banyak alat yang tersedia bagi orang-orang yang menghadapi pembatasan "
+"internet, tetapi alat-alat ini seringkali tidak membantu orang-orang yang "
+"sedang mengalami pemadaman internet, pemblokiran, gangguan VPN, dan gangguan "
+"lainnya.<br><b>Ceno berbeda.</b> Pengguna Ceno Browser dapat mengakses "
+"perpustakaan konten internet yang disimpan, yang tetap tersedia selama "
+"gangguan layanan."
 
 #: about.html%2Bmain.section.div.div.div.p:16-21
 msgid ""
@@ -40,18 +50,27 @@ msgid ""
 "Bridges can share content with people using Ceno in heavily restricted "
 "networks."
 msgstr ""
+"Di situlah peran berbagi konten web: pengguna yang memiliki akses ke konten "
+"atau jaringan yang stabil membantu mengumpulkan dan berbagi konten dengan "
+"mereka yang tidak memiliki akses. Artinya, misalnya, <b>seorang pengguna "
+"Ceno di Azerbaijan dapat membaca artikel yang diblokir jika pengguna Ceno "
+"lain di Italia telah mengakses artikel yang sama. </b> Hal ini dimungkinkan "
+"oleh orang-orang yang menjalankan Ceno dari negara-negara dengan akses "
+"internet yang lebih andal dan terbuka – kami menyebut pengguna ini "
+"\"<b>Jembatan</b>\". Jembatan dapat membagikan konten dengan orang-orang "
+"yang menggunakan Ceno di jaringan yang sangat dibatasi."
 
 #: about.html%2Bmain.section.div.div.div.div.a.div:19-89
 msgid "Become a bridge"
-msgstr ""
+msgstr "Jadilah jembatan"
 
 #: about.html%2Bmain.section.div.div.div.div.a.div:20-67
 msgid "Learn how Ceno works"
-msgstr ""
+msgstr "Pelajari cara kerja Ceno"
 
 #: about.html%2Bmain.section.div.h2:28-13
 msgid "The team behind Ceno"
-msgstr ""
+msgstr "Tim di balik Ceno"
 
 #: about.html%2Bmain.section.div.div.p:30-17
 msgid ""
@@ -62,6 +81,12 @@ msgid ""
 "speech, facilitate information exchange, and promote self-expression on the "
 "internet."
 msgstr ""
+"Ceno dikembangkan dan dikelola oleh organisasi nirlaba Kanada <a "
+"href=\"https://equalitie.org\">eQualitie</a> sebagai dukungan terhadap Pasal "
+"18, 19, dan 20 Deklarasi Universal Hak Asasi Manusia. Kami memiliki lebih "
+"dari sepuluh tahun pengalaman dalam mengembangkan dan meningkatkan alat-alat "
+"untuk melindungi kebebasan berekspresi, memfasilitasi pertukaran informasi, "
+"dan mempromosikan ekspresi diri di internet."
 
 #: about.html%2Bmain.section.div.div.p:31-17
 msgid ""
@@ -70,16 +95,23 @@ msgid ""
 "You can <a href=\"https://gitlab.com/ceno-app\">inspect our code</a> or re-"
 "create the entire network yourself!"
 msgstr ""
+"Ceno — beserta semua komponen pendukungnya yang bersama-sama membentuk "
+"jaringan terdesentralisasi dari peer dan node — adalah perangkat lunak bebas "
+"dan sumber terbuka. Anda dapat <a href=\"https://gitlab.com/ceno-"
+"app\">melihat kode sumber kami</a> atau membangun kembali seluruh jaringan "
+"sendiri!"
 
 #: about.html%2Bmain.section.div.div.h2:44-17
 msgid "Is Ceno for me?"
-msgstr ""
+msgstr "Apakah Ceno cocok untuk saya?"
 
 #: about.html%2Bmain.section.div.div.div.p:46-21
 msgid ""
 "Ceno is for everyone. It can replace your existing mobile browser as it "
 "shares many of the same functions and features."
 msgstr ""
+"Ceno untuk semua orang. Aplikasi ini dapat menggantikan browser seluler Anda "
+"yang sudah ada karena memiliki banyak fungsi dan fitur yang sama."
 
 #: about.html%2Bmain.section.div.div.div.p:47-21
 msgid ""
@@ -88,57 +120,63 @@ msgid ""
 "benefit is that you can choose to help other Ceno users while you browse by "
 "becoming a Bridge."
 msgstr ""
+"Jika Anda menggunakan Ceno dari wilayah dengan akses internet terbuka, Anda "
+"akan mengakses konten dengan cara yang sama seperti saat menggunakan browser "
+"utama. Keuntungannya adalah Anda dapat memilih untuk membantu pengguna Ceno "
+"lainnya saat berselancar dengan menjadi Bridge."
 
 #: about.html%2Bmain.section.div.div.div.p:48-21
 msgid ""
 "Ceno is especially useful for people facing internet censorship or "
 "connectivity issues."
 msgstr ""
+"Ceno sangat berguna bagi orang-orang yang menghadapi sensor internet atau "
+"masalah konektivitas."
 
 #: about.html%2Bmain.section.div.div:54-13
 msgctxt "./about.html+main.section.div.div:54-13"
 msgid "Citizen"
-msgstr ""
+msgstr "Warga Negara"
 
 #: about.html%2Bmain.section.div.div:58-13
 msgctxt "./about.html+main.section.div.div:58-13"
 msgid "Student"
-msgstr ""
+msgstr "Mahasiswa"
 
 #: about.html%2Bmain.section.div.div:62-13
 msgid "Human rights defender"
-msgstr ""
+msgstr "Pembela hak asasi manusia"
 
 #: about.html%2Bmain.section.div.div:66-13
 msgctxt "./about.html+main.section.div.div:66-13"
 msgid "Journalist"
-msgstr ""
+msgstr "Jurnalis"
 
 #: about.html%2Bmain.section.div.div:70-13
 msgctxt "./about.html+main.section.div.div:70-13"
 msgid "Technologist"
-msgstr ""
+msgstr "Teknolog"
 
 #: about.html%2Bmain.section.div.div:74-13
 msgid "Diaspora user"
-msgstr ""
+msgstr "Pengguna Diaspora"
 
 #: about.html%2Bmain.section.div.div.div:79-17
 msgctxt "./about.html+main.section.div.div.div:79-17"
 msgid "Citizen"
-msgstr ""
+msgstr "Warga Negara"
 
 #: about.html%2Bmain.section.div.div.div:83-17
 msgctxt "./about.html+main.section.div.div.div:83-17"
 msgid "Student"
-msgstr ""
+msgstr "Mahasiswa"
 
 #: about.html%2Bmain.section.div.div.div:87-17
 msgctxt "./about.html+main.section.div.div.div:87-17"
 msgid "Technologist"
-msgstr ""
+msgstr "Teknolog"
 
 #: about.html%2Bmain.section.div.div.div:91-17
 msgctxt "./about.html+main.section.div.div.div:91-17"
 msgid "Journalist"
-msgstr ""
+msgstr "Jurnalis"

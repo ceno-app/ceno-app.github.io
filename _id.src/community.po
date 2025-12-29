@@ -2,25 +2,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-10 14:53-0400\n"
-"PO-Revision-Date: 2025-04-21 23:12+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
-"Language-Team: Indonesian <https://hosted.weblate.org/projects/censorship-no/"
+"POT-Creation-Date: 2025-12-29 09:20-0400\n"
+"PO-Revision-Date: 2025-11-08 17:51+0000\n"
+"Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
+"Language-Team: Indonesian <https://hosted.weblate.org/projects/ceno-app/"
 "website-v2/website-v2-community/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #: community.html%2Bmain.section.h1:3-9
 msgid "Let's build a better internet together"
-msgstr ""
+msgstr "Mari kita bangun internet yang lebih baik bersama-sama"
 
 #: community.html%2Bmain.section.div.div.h2:9-17
 msgid "Become a Bridge"
-msgstr ""
+msgstr "Jadilah Jembatan"
 
 #: community.html%2Bmain.section.div.div.p:10-17
 msgid ""
@@ -30,23 +30,31 @@ msgid ""
 "Running a Bridge is a very simple yet powerful action, enabling you to share "
 "internet content with others."
 msgstr ""
+"Orang yang menggunakan Ceno dari negara-negara dengan akses internet "
+"terbuka, atau dari wilayah di dunia di mana akses internet dapat diandalkan, "
+"dapat membantu mereka yang berada di jaringan yang sangat terbatas untuk "
+"mengakses internet dengan menjadi \"Jembatan\". Menjalankan Jembatan adalah "
+"tindakan yang sangat sederhana namun berdaya guna, memungkinkan Anda untuk "
+"berbagi konten internet dengan orang lain."
 
 #: community.html%2Bmain.section.div.div.p:11-17
 msgid "Learn more about becoming a Bridge."
-msgstr ""
+msgstr "Pelajari lebih lanjut tentang menjadi Bridge."
 
 #: community.html%2Bmain.section.div.div.h4:12-17
 msgid "The simple way:"
-msgstr ""
+msgstr "Cara yang sederhana:"
 
 #: community.html%2Bmain.section.div.div.p:13-17
 msgid ""
 "Run Ceno Browser on your Android device, and/or on a spare, always-on device."
 msgstr ""
+"Jalankan Ceno Browser di perangkat Android Anda, dan/atau di perangkat "
+"cadangan yang selalu aktif."
 
 #: community.html%2Bmain.section.div.div.h4:14-17
 msgid "Run the Ceno Docker Client:"
-msgstr ""
+msgstr "Jalankan Klien Docker Ceno:"
 
 #: community.html%2Bmain.section.div.div.ol.li:16-21
 msgid ""
@@ -54,28 +62,37 @@ msgid ""
 "> <code>sudo docker run --name ceno-client -dv ceno:/var/opt/ouinet --"
 "network host --restart unless-stopped equalitie/ceno-client</code>"
 msgstr ""
+"Dengan satu perintah saja, Anda dapat mengatur jembatan di komputer atau VPS "
+"Anda: <br /> <code>sudo docker run --name ceno-client -dv ceno:/var/opt/"
+"ouinet --network host --restart unless-stopped equalitie/ceno-client</code>"
 
 #: community.html%2Bmain.section.div.div.ol.li:18-21
 msgid ""
 "Open a portal to the internet: Ensure UPnP is enabled on your router, or set "
 "up port forwarding."
 msgstr ""
+"Buka akses ke internet: Pastikan UPnP diaktifkan pada router Anda, atau atur "
+"pengalihan port."
 
 #: community.html%2Bmain.section.div.div.ol.li:19-21
 msgid ""
 "To see if it's working, create and open a new Firefox Profile, and set the "
 "proxy to localhost, port 8077."
 msgstr ""
+"Untuk memastikan apakah ini berfungsi, buat dan buka Profil Firefox baru, "
+"lalu atur proxy ke localhost, port 8077."
 
 #: community.html%2Bmain.section.div.div.ol.li:20-21
 msgid ""
 "Install the <a href=\"https://gitlab.com/ceno-app/ceno-ext-settings\">Ceno "
 "Web Extension</a> and the provided certificate to test it out!"
 msgstr ""
+"Instal <a href=\"https://gitlab.com/ceno-app/ceno-ext-settings\">Ekstensi "
+"Web Ceno</a> dan sertifikat yang disediakan untuk mencobanya!"
 
 #: community.html%2Bmain.section.div.div.h2:30-17
 msgid "Contribute to our code"
-msgstr ""
+msgstr "Berpartisipasi dalam pengembangan kode kami"
 
 #: community.html%2Bmain.section.div.div.p:31-17
 msgid ""
@@ -83,18 +100,21 @@ msgid ""
 "eQualitie. If you are interested in Ceno's source code please check the "
 "following Git repositories:"
 msgstr ""
+"Ceno adalah alat gratis dan sumber terbuka, salah satu dari banyak alat yang "
+"dikembangkan dan dipelihara oleh eQualitie. Jika Anda tertarik dengan kode "
+"sumber Ceno, silakan periksa repositori Git berikut:"
 
 #: community.html%2Bmain.section.div.div.ul.li:33-21
 msgid "Ceno for Android"
-msgstr ""
+msgstr "Ceno untuk Android"
 
 #: community.html%2Bmain.section.div.div.ul.li:34-21
 msgid "Ceno for Desktop"
-msgstr ""
+msgstr "Ceno untuk Desktop"
 
 #: community.html%2Bmain.section.div.div.ul.li:35-21
 msgid "Ceno for iOS"
-msgstr ""
+msgstr "Ceno untuk iOS"
 
 #: community.html%2Bmain.section.div.div.ul.li:36-21
 msgid "Ouinet"
@@ -102,7 +122,7 @@ msgstr ""
 
 #: community.html%2Bmain.section.div.div.ul.li:37-21
 msgid "Ceno Docker Client"
-msgstr ""
+msgstr "Klien Docker Ceno"
 
 #: community.html%2Bmain.section.div.div.p:39-17
 msgid ""
@@ -110,10 +130,13 @@ msgid ""
 "gitlab.com/ceno-app/ceno-archives\">previous incarnation of Ceno</a>, built "
 "on the Freenet anonymous file sharing and content publishing network."
 msgstr ""
+"Anda mungkin juga tertarik dengan (tidak lagi dipelihara) <a href=\"https://"
+"gitlab.com/ceno-app/ceno-archives\">versi sebelumnya dari Ceno</a>, yang "
+"dibangun di atas jaringan berbagi file anonim dan penerbitan konten Freenet."
 
 #: community.html%2Bmain.section.div.div.h2:46-17
 msgid "Share your feedback"
-msgstr ""
+msgstr "Berikan masukan Anda"
 
 #: community.html%2Bmain.section.div.div.p:47-17
 msgid ""
@@ -122,22 +145,27 @@ msgid ""
 "helps spread the word about Ceno, which grows the network. With your "
 "consent, we may also highlight your story on our website!"
 msgstr ""
+"Ceno mengandalkan umpan balik pengguna untuk memahami kebutuhan pengguna "
+"kami, mengusulkan perbaikan, dan mengidentifikasi fitur baru. Berbagi cerita "
+"Anda juga membantu menyebarkan informasi tentang Ceno, yang memperluas "
+"jaringan kami. Dengan persetujuan Anda, kami juga dapat menampilkan cerita "
+"Anda di situs web kami!"
 
 #: community.html%2Bmain.section.div.div.ul.li:49-21
 msgid "Write a review on the Play Store"
-msgstr ""
+msgstr "Tulis ulasan di Play Store"
 
 #: community.html%2Bmain.section.div.div.ul.li:50-21
 msgid "Get in touch with the team: support [at] ceno [dot] app"
-msgstr ""
+msgstr "Hubungi tim kami: support [at] ceno [dot] app"
 
 #: community.html%2Bmain.section.div.div.ul.li:51-21
 msgid "Take a survey"
-msgstr ""
+msgstr "Ikuti survei"
 
 #: community.html%2Bmain.section.div.div.h2:61-17
 msgid "Tell your community about Ceno"
-msgstr ""
+msgstr "Beritahukan kepada komunitas Anda tentang Ceno"
 
 #: community.html%2Bmain.section.div.div.p:62-17
 msgid ""
@@ -146,29 +174,42 @@ msgid ""
 "by helping them download and use Ceno. Promote Ceno at community events by "
 "sharing materials or hosting a panel or meetup."
 msgstr ""
+"Ceno semakin baik dan andal seiring dengan bertambahnya pengguna. Ajarkan "
+"teman dan keluarga Anda cara menjadi Bridges atau mengakses konten yang "
+"dibatasi dengan membantu mereka mengunduh dan menggunakan Ceno. Promosikan "
+"Ceno di acara komunitas dengan membagikan materi atau mengadakan panel "
+"diskusi atau pertemuan."
 
 #: community.html%2Bmain.section.div.div.h2:69-17
 msgid "Help translate"
-msgstr ""
+msgstr "Bantu terjemahkan"
 
 #: community.html%2Bmain.section.div.div.p:70-17
 msgid ""
 "Help translate the Ceno Browser app, web extension, user manual and website! "
 "We use Weblate to crowdsource translations."
 msgstr ""
+"Bantu terjemahkan aplikasi Ceno Browser, ekstensi web, panduan pengguna, dan "
+"situs web! Kami menggunakan Weblate untuk mengumpulkan terjemahan secara "
+"kolaboratif."
 
 #: community.html%2Bmain.section.div.div.p:71-17
 msgid "Join our Weblate"
-msgstr ""
+msgstr "Bergabunglah dengan Weblate kami"
 
 #: community.html%2Bmain.section.div.div.p:72-17
 msgid ""
 "Please contact the Ceno team at support [at] ceno [dot] app if you're "
 "interested in becoming a reviewer for translation(s) in your language(s)."
 msgstr ""
+"Silakan hubungi tim Ceno di support [at] ceno [dot] app jika Anda tertarik "
+"untuk menjadi peninjau terjemahan dalam bahasa Anda."
 
 #: community.html%2Bmain.section.div.div.p:73-17
 msgid ""
-"For more information about how to use Weblate, see <a href=\"https://docs."
-"weblate.org/en/latest/index.html\">the Weblate documentation.</a>"
+"For more information about how to use Weblate, see <a href=\"https://"
+"docs.weblate.org/en/latest/index.html\">the Weblate documentation.</a>"
 msgstr ""
+"Untuk informasi lebih lanjut tentang cara menggunakan Weblate, lihat <a "
+"href=\"https://docs.weblate.org/en/latest/index.html\">dokumentasi Weblate.</"
+"a>"

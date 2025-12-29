@@ -2,17 +2,17 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-10 14:53-0400\n"
-"PO-Revision-Date: 2025-08-01 20:09+0000\n"
-"Last-Translator: Bernardo Gomes <bernardo.gomes@bebitterbebetter.com.br>\n"
-"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/"
-"censorship-no/website-v2/website-v2-case-studies/pt_BR/>\n"
+"POT-Creation-Date: 2025-12-29 09:20-0400\n"
+"PO-Revision-Date: 2025-12-12 15:00+0000\n"
+"Last-Translator: Mateus Liberale Gomes <sergiogomes209403@gmail.com>\n"
+"Language-Team: Portuguese (Brazil) <https://hosted.weblate.org/projects/ceno-"
+"app/website-v2/website-v2-case-studies/pt_BR/>\n"
 "Language: pt_BR\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: Weblate 5.13-dev\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #: case-studies/index.html%2Bmain.h1:2-1
 msgid "case studies"
@@ -20,17 +20,17 @@ msgstr "Estudos de caso"
 
 #: case-studies/index.html%2Bmain.section.article:9-5
 msgid "Case Study"
-msgstr ""
+msgstr "Estudo de Caso"
 
 #: case-studies/index.html%2Bmain.section.article.div:11-5
 msgid "December, 2022"
-msgstr ""
+msgstr "Dezembro de 2022"
 
-#: case-studies/index.html%2Bmain.section.article.h1:12-5
+#: case-studies/index.html%2Bmain.section.article.h1:13-5
 msgid "Highlights from the Ground in Iran"
 msgstr "Destaques diretamente do Irã"
 
-#: case-studies/index.html%2Bmain.section.article.div:15-5
+#: case-studies/index.html%2Bmain.section.article.div:17-5
 msgid ""
 "User experiences have varied from region to region as ISPs have applied "
 "Internet censorship and disruption measures inconsistently. Where Iran’s "
@@ -39,6 +39,6 @@ msgid ""
 "able to access…"
 msgstr ""
 
-#: case-studies/index.html%2Bmain.section.article:15-337
+#: case-studies/index.html%2Bmain.section.article:21-54
 msgid "Read more"
 msgstr ""

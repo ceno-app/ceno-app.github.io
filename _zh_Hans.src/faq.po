@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-10 14:53-0400\n"
+"POT-Creation-Date: 2025-12-29 09:20-0400\n"
 "PO-Revision-Date: 2025-09-08 07:01+0000\n"
 "Last-Translator: jiahao <tjh541885201314@outlook.com>\n"
 "Language-Team: Chinese (Simplified Han script) <https://hosted.weblate.org/"
@@ -62,12 +62,12 @@ msgstr "Ceno 是怎么工作的？"
 
 #: faq.html%2Bmain.section.div.details.p:30-17
 msgid ""
-"When a website is accessible from your network (e.g. accessing <i>www.canada."
-"ca</i> from your home internet), Ceno will connect to it like a normal web "
-"browser."
+"When a website is accessible from your network (e.g. accessing "
+"<i>www.canada.ca</i> from your home internet), Ceno will connect to it like "
+"a normal web browser."
 msgstr ""
-"当一个网站从你的网络是可以访问的时候（例如从你的家庭网络访问<i>www.canada."
-"ca</i>），Ceno会像一个普通的游览器一样连接它。"
+"当一个网站从你的网络是可以访问的时候（例如从你的家庭网络访问"
+"<i>www.canada.ca</i>），Ceno会像一个普通的游览器一样连接它。"
 
 #: faq.html%2Bmain.section.div.details.p:32-17
 msgid ""
@@ -125,8 +125,8 @@ msgstr ""
 
 #: faq.html%2Bmain.section.div.details.p:48-17
 msgid ""
-"For a simpler explanation of how Ceno works, <a href=\"/@LANG@/about."
-"html\">please read this</a>."
+"For a simpler explanation of how Ceno works, <a href=\"/@LANG@/"
+"about.html\">please read this</a>."
 msgstr ""
 
 #: faq.html%2Bmain.section.div.details:48-115
@@ -314,8 +314,8 @@ msgstr ""
 
 #: faq.html%2Bmain.section.div.details.p:108-17
 msgid ""
-"Some of their other projects include <a href=\"https://ouisync."
-"net\">Ouisync</a>, a service for decentralized file sharing; <a "
+"Some of their other projects include <a href=\"https://"
+"ouisync.net\">Ouisync</a>, a service for decentralized file sharing; <a "
 "href=\"https://deflect.ca\">Deflect</a>, a tool for DDoS protection; "
 "Baskerville, a machine learning-based attack detection system; and the "
 "dComms deployment toolkit for setting up decentralized and federated network "

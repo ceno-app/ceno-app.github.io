@@ -2,25 +2,25 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2025-09-10 14:53-0400\n"
-"PO-Revision-Date: 2025-04-21 23:09+0000\n"
-"Last-Translator: Anonymous <noreply@weblate.org>\n"
-"Language-Team: Indonesian <https://hosted.weblate.org/projects/censorship-no/"
+"POT-Creation-Date: 2025-12-29 09:20-0400\n"
+"PO-Revision-Date: 2025-11-08 17:51+0000\n"
+"Last-Translator: Arif Budiman <arifpedia@gmail.com>\n"
+"Language-Team: Indonesian <https://hosted.weblate.org/projects/ceno-app/"
 "website-v2/website-v2-factsheet/id/>\n"
 "Language: id\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Generator: Weblate 5.11.1-dev\n"
+"X-Generator: Weblate 5.15-dev\n"
 
 #: factsheet.html%2Btitle:1-1
 msgid "Ceno Browser | Fact Sheet"
-msgstr ""
+msgstr "Ceno Browser | Lembar Fakta"
 
 #: factsheet.html%2Bdiv.h1:3-5
 msgid "Ceno Fact Sheet"
-msgstr ""
+msgstr "Lembar Fakta Ceno"
 
 #: factsheet.html%2Bdiv.section.p:7-1
 msgid "Download PDF"
@@ -28,11 +28,11 @@ msgstr "Unduh PDF"
 
 #: factsheet.html%2Bdiv.section.h2:9-1
 msgid "Overview"
-msgstr ""
+msgstr "Ringkasan"
 
 #: factsheet.html%2Bdiv.section.h3:10-2
 msgid "What is Ceno?"
-msgstr ""
+msgstr "Apa itu Ceno?"
 
 #: factsheet.html%2Bdiv.section.p:11-2
 msgid ""
@@ -42,40 +42,51 @@ msgid ""
 "intrusive and unjustified surveillance, censorship and oppression. It is "
 "developed by <a href=\"https://equalitie.org\">eQualitie</a>"
 msgstr ""
+"Browser seluler pertama di dunia yang mengatasi metode sensor internet saat "
+"ini dan gangguan internet lokal menggunakan teknologi peer-to-peer (p2p). "
+"Ceno dirancang sebagai bagian dari internet yang bebas dari pengawasan yang "
+"mengganggu dan tidak beralasan, sensor, dan penindasan. Aplikasi ini "
+"dikembangkan oleh <a href=\"https://equalitie.org\">eQualitie</a>"
 
 #: factsheet.html%2Bdiv.section.h3:13-2
 msgid "Works on:"
-msgstr ""
+msgstr "Bekerja pada:"
 
 #: factsheet.html%2Bdiv.section.ul.li:15-9
 msgid "Android mobile devices"
-msgstr ""
+msgstr "Perangkat seluler Android"
 
 #: factsheet.html%2Bdiv.section.ul.li:16-9
 msgid "Windows desktop devices"
-msgstr ""
+msgstr "Perangkat desktop Windows"
 
 #: factsheet.html%2Bdiv.section.h3:19-2
 msgid "Get it on:"
-msgstr ""
+msgstr "Ayo mulai:"
 
 #: factsheet.html%2Bdiv.section.ul.li:21-9
 msgid ""
 "<a href=\"https://ceno.app/en/download.html\">Ceno website</a>, <a "
-"href=\"https://play.google.com/store/apps/details?id=ie.equalit."
-"ceno\">Google Play</a>, <a href=\"https://github.com/ceno-app/ceno-android/"
-"releases\">Github</a>, <a href=\"https://paskoocheh.com/tools/124/android."
-"html?\">Paskoocheh</a>, and <a href=\"https://zanga.tech/tools/166/android."
-"html\">Zanga.tech</a>"
+"href=\"https://play.google.com/store/apps/details?"
+"id=ie.equalit.ceno\">Google Play</a>, <a href=\"https://github.com/ceno-app/"
+"ceno-android/releases\">Github</a>, <a href=\"https://paskoocheh.com/tools/"
+"124/android.html?\">Paskoocheh</a>, and <a href=\"https://zanga.tech/tools/"
+"166/android.html\">Zanga.tech</a>"
 msgstr ""
+"<a href=\"https://ceno.app/en/download.html\">Situs web Ceno</a>, <a "
+"href=\"https://play.google.com/store/apps/details?"
+"id=ie.equalit.ceno\">Google Play</a>, <a href=\"https://github.com/ceno-app/"
+"ceno-android/releases\">Github</a>, <a href=\"https://paskoocheh.com/tools/"
+"124/android.html?\">Paskoocheh</a>, dan <a href=\"https://zanga.tech/tools/"
+"166/android.html\">Zanga.tech</a>"
 
 #: factsheet.html%2Bdiv.section.ul.li:22-2
 msgid "No special permissions are required"
-msgstr ""
+msgstr "Tidak diperlukan izin khusus"
 
 #: factsheet.html%2Bdiv.section.h3:24-2
 msgid "Why:"
-msgstr ""
+msgstr "Mengapa:"
 
 #: factsheet.html%2Bdiv.section.ul.li:26-9
 msgid ""
@@ -83,22 +94,29 @@ msgid ""
 "censored or Internet-restricted regions, and in countries where connectivity "
 "is unreliable or costly"
 msgstr ""
+"Dirancang untuk memungkinkan orang di mana pun di dunia mengakses konten web "
+"di wilayah yang diblokir atau memiliki pembatasan internet, serta di negara-"
+"negara di mana konektivitas tidak dapat diandalkan atau mahal"
 
 #: factsheet.html%2Bdiv.section.ul.li:27-2
 msgid ""
 "Can be used to create a bridge for others to access censored or restricted "
 "content"
 msgstr ""
+"Dapat digunakan untuk membuat jembatan agar orang lain dapat mengakses "
+"konten yang diblokir atau dibatasi"
 
 #: factsheet.html%2Bdiv.section.h3:29-2
 msgid "So what?"
-msgstr ""
+msgstr "Lalu apa?"
 
 #: factsheet.html%2Bdiv.section.ul.li:31-2
 msgid ""
 "Already helping thousands of civilians, NGOs, investigative journalists and "
 "independent media globally to access and share web content"
 msgstr ""
+"Sudah membantu ribuan warga sipil, LSM, jurnalis investigasi, dan media "
+"independen di seluruh dunia untuk mengakses dan berbagi konten web"
 
 #: factsheet.html%2Bdiv.section.ul.li:32-2
 msgid ""
@@ -106,47 +124,63 @@ msgid ""
 "agents, even during media censorship events, shutdowns, natural disruptions, "
 "unrest, conflict, and war"
 msgstr ""
+"Konten Ceno tetap stabil dan tidak dapat dihapus secara paksa oleh pihak "
+"eksternal, bahkan selama peristiwa sensor media, pemadaman, gangguan alam, "
+"kerusuhan, konflik, dan perang"
 
 #: factsheet.html%2Bdiv.section.ul.li:33-2
 msgid ""
 "Ceno's p2p routing and distribution of storage can reduce bandwidth and "
 "energy use"
 msgstr ""
+"Routing dan distribusi penyimpanan peer-to-peer (P2P) Ceno dapat mengurangi "
+"penggunaan bandwidth dan energi"
 
 #: factsheet.html%2Bdiv.section.ul.li:34-2
 msgid ""
 "Performance improves with scale (unlike the proxy/virtual private network "
 "(VPN) model); more users reduces latency and increases storage"
 msgstr ""
+"Kinerja meningkat seiring dengan skala (berbeda dengan model proxy/jaringan "
+"pribadi virtual (VPN)); semakin banyak pengguna, semakin rendah latensi dan "
+"semakin besar kapasitas penyimpanan"
 
 #: factsheet.html%2Bdiv.section.h3:36-2
 msgid "How:"
-msgstr ""
+msgstr "Bagaimana:"
 
 #: factsheet.html%2Bdiv.section.ul.li:38-2
 msgid ""
 "Works like BitTorrent - pulling, reserving and sharing content from many "
 "networked sources rather than from one web server source - but is a browser"
 msgstr ""
+"Berfungsi seperti BitTorrent - mengunduh, menyimpan, dan berbagi konten dari "
+"banyak sumber jaringan daripada dari satu sumber server web - tetapi "
+"merupakan browser"
 
 #: factsheet.html%2Bdiv.section.ul.li:39-2
 msgid ""
 "Underlying decentralized p2p network uses established open-source Ouinet "
 "library and BitTorrent protocols, making it resilient and reliable"
 msgstr ""
+"Jaringan peer-to-peer (P2P) terdesentralisasi yang mendasarinya menggunakan "
+"perpustakaan open-source Ouinet yang telah teruji dan protokol BitTorrent, "
+"sehingga menjadikannya tangguh dan andal"
 
 #: factsheet.html%2Bdiv.section.ul.li:40-2
 msgid "Looks and feels like other browsers"
-msgstr ""
+msgstr "Tampil dan terasa seperti browser lainnya"
 
 #: factsheet.html%2Bdiv.section.ul.li:41-2
 msgid ""
 "Equipped to share cached content offline and on local area networks (LANs)"
 msgstr ""
+"Dilengkapi untuk berbagi konten yang disimpan dalam cache secara offline dan "
+"di jaringan area lokal (LAN)"
 
 #: factsheet.html%2Bdiv.section.h3:43-2
 msgid "Who is eQualitie?"
-msgstr ""
+msgstr "Siapa eQualitie?"
 
 #: factsheet.html%2Bdiv.section.ul.li:45-9
 msgid ""
@@ -154,104 +188,122 @@ msgid ""
 "reusable systems and tools since 2010, with a focus on online privacy, "
 "resilience and self-determination"
 msgstr ""
+"Perusahaan keamanan digital berbasis di Montreal yang telah mengembangkan "
+"sistem dan alat sumber terbuka yang dapat digunakan kembali sejak 2010, "
+"dengan fokus pada privasi online, ketahanan, dan otonomi"
 
 #: factsheet.html%2Bdiv.section.ul.li:46-2
 msgid "Maintains the <a href=\"https://deflect.ca\">Deflect.ca</a> service"
-msgstr ""
+msgstr "Menjaga layanan <a href=\"https://deflect.ca\">Deflect.ca</a>"
 
 #: factsheet.html%2Bdiv.section.ul.li:47-2
 msgid ""
 "Leads several initiatives focused on free and secure communications in "
 "authoritarian states"
 msgstr ""
+"Memimpin beberapa inisiatif yang berfokus pada komunikasi bebas dan aman di "
+"negara-negara otoriter"
 
 #: factsheet.html%2Bdiv.section.ul.li:48-2
 msgid "Founded by Dmitri Vitaliev"
-msgstr ""
+msgstr "Didirikan oleh Dmitri Vitaliev"
 
 #: factsheet.html%2Bdiv.section.h3:50-2
 msgid "In use today:"
-msgstr ""
+msgstr "Digunakan saat ini:"
 
 #: factsheet.html%2Bdiv.section.ul.li:52-9
 msgid "<strong>Average monthly users:</strong> 10,000+"
-msgstr ""
+msgstr "<strong>Pengguna bulanan rata-rata:</strong> 10.000+"
 
 #: factsheet.html%2Bdiv.section.ul.li:53-2
 msgid "<strong>New monthly users:</strong> 10,000"
-msgstr ""
+msgstr "<strong>Pengguna baru bulanan:</strong> 10.000"
 
 #: factsheet.html%2Bdiv.section.ul.li:54-2
 msgid ""
 "<strong>Majority users by country:</strong> Ukraine 48%; Russia 17%; Iran "
 "15%; Myanmar 5%; Poland, US and Germany 3%"
 msgstr ""
+"<strong>Pengguna mayoritas berdasarkan negara:</strong> Ukraina 48%; Rusia "
+"17%; Iran 15%; Myanmar 5%; Polandia, AS, dan Jerman 3%"
 
 #: factsheet.html%2Bdiv.section.h2:58-1
 msgid "How Ceno Works"
-msgstr ""
+msgstr "Bagaimana Ceno Berfungsi"
 
 #: factsheet.html%2Bdiv.section.div.div.div.div.div.p:65-17
 msgid "A mobile user in NYC reads a BBC.com news article on her Ceno Browser."
 msgstr ""
+"Seorang pengguna ponsel di NYC membaca artikel berita BBC.com di browser "
+"Ceno-nya."
 
 #: factsheet.html%2Bdiv.section.div.div.div.div.div.p:74-17
 msgid "Ceno signs, caches and decentralizes the article content."
 msgstr ""
+"Ceno menandatangani, menyimpan, dan mendesentralisasikan konten artikel."
 
 #: factsheet.html%2Bdiv.section.div.div.div.div.div.p:83-17
 msgid ""
 "Ceno users everywhere access and read the same article on their mobiles, "
 "despite censorship or outages, and thereby share it with other Ceno users."
 msgstr ""
+"Pengguna Ceno di mana pun dapat mengakses dan membaca artikel yang sama di "
+"perangkat seluler mereka, meskipun ada sensor atau gangguan layanan, dan "
+"dengan demikian membagikannya dengan pengguna Ceno lainnya."
 
 #: factsheet.html%2Bdiv.section.div:87-2
 msgid "Learn more in the User Manual!"
-msgstr ""
+msgstr "Pelajari lebih lanjut di Manual Pengguna!"
 
 #: factsheet.html%2Bdiv.section.h2:93-1
 msgid "Numbers"
-msgstr ""
+msgstr "Angka"
 
 #: factsheet.html%2Bdiv.section.h3:95-1
 msgid "Ceno to April 2022"
-msgstr ""
+msgstr "Ceno hingga April 2022"
 
 #: factsheet.html%2Bdiv.section.ul.li:97-2
 msgid "Downloads from Google Play Store: 33,297"
-msgstr ""
+msgstr "Unduhan dari Google Play Store: 33.297"
 
 #: factsheet.html%2Bdiv.section.ul.li:98-2
 msgid "Installs from alternative marketplaces: 6,514"
-msgstr ""
+msgstr "Instalasi dari pasar alternatif: 6.514"
 
 #: factsheet.html%2Bdiv.section.ul.li:99-2
 msgid "Pulls from Docker Hub: 597"
-msgstr ""
+msgstr "Unduhan dari Docker Hub: 597"
 
 #: factsheet.html%2Bdiv.section.ul.li:100-2
 msgid "Cloned from GitHub repositories: 1,768"
-msgstr ""
+msgstr "Dicloning dari repositori GitHub: 1.768"
 
 #: factsheet.html%2Bdiv.section.ul.li:101-2
 msgid "Unique participants in March 2022: 28,914"
-msgstr ""
+msgstr "Peserta unik pada Maret 2022: 28.914"
 
 #: factsheet.html%2Bdiv.section.ul.li:102-2
 msgid ""
 "Ceno bridges worldwide: 25 (6 in Ukraine, 9 in Russia and others in the "
 "Middle East, Eastern Europe and Asia)"
 msgstr ""
+"Ceno menghubungkan jembatan di seluruh dunia: 25 (6 di Ukraina, 9 di Rusia, "
+"dan lainnya di Timur Tengah, Eropa Timur, dan Asia)"
 
 #: factsheet.html%2Bdiv.section.ul.li:103-2
 msgid ""
 "Bootstrap servers to ensure that in-country nodes can use BitTorrent during "
 "complete network shutdowns: 8 (in Eastern Europe, Myanmar, Iran and Russia)"
 msgstr ""
+"Mengaktifkan server Bootstrap untuk memastikan bahwa node di dalam negeri "
+"dapat menggunakan BitTorrent selama pemadaman jaringan total: 8 (di Eropa "
+"Timur, Myanmar, Iran, dan Rusia)"
 
 #: factsheet.html%2Bdiv.section.h3:105-1
 msgid "Ceno Analytics"
-msgstr ""
+msgstr "Analisis Ceno"
 
 #: factsheet.html%2Bdiv.section.p:106-2
 msgid ""
@@ -259,6 +311,10 @@ msgid ""
 "each user (served via injectors and received from the p2p network) and how "
 "much each user's specific device has shared with other users."
 msgstr ""
+"Browser Ceno menampilkan sumber daya yang disediakan langsung dari sumbernya "
+"kepada setiap pengguna (dikirim melalui injector dan diterima dari jaringan "
+"peer-to-peer) serta seberapa banyak perangkat spesifik setiap pengguna telah "
+"berbagi dengan pengguna lain."
 
 #: factsheet.html%2Bdiv.section.p:107-2
 msgid ""
@@ -266,6 +322,9 @@ msgid ""
 "number of reachable bridge nodes and origin sources in the DHT, and (ii) the "
 "bandwidth and number of distinct web resources served by injector servers."
 msgstr ""
+"Metrik kinerja utama untuk rilis white-label Ceno meliputi (i) jumlah node "
+"jembatan yang dapat diakses dan sumber asal dalam DHT, serta (ii) bandwidth "
+"dan jumlah sumber daya web unik yang disajikan oleh server injeksi."
 
 #: factsheet.html%2Bdiv.section.p:108-2
 msgid ""
@@ -276,6 +335,12 @@ msgid ""
 "of network injectors, (ii) country of origin and (iii) queries of the "
 "distributed hash table for unique device identifiers."
 msgstr ""
+"Metrik lain dapat dirancang dan dikembangkan untuk meningkatkan visibilitas "
+"dan pengukuran kinerja, dengan mempertimbangkan fungsi desentralisasi Ceno. "
+"Tanpa mengidentifikasi pengguna, partisipasi dapat diperkirakan secara "
+"akurat melalui (i) identifikasi jaringan pseudonim dan penggunaan mereka "
+"terhadap injektor jaringan, (ii) negara asal, dan (iii) kueri tabel hash "
+"terdistribusi untuk identifikasi perangkat unik."
 
 #: factsheet.html%2Bdiv.section.p:109-2
 msgid ""
@@ -283,10 +348,14 @@ msgid ""
 "users robust privacy-respecting analytics that measure metrics including "
 "distributed cache usage from the user's vantage point."
 msgstr ""
+"Integrasi SDK Clean Insights sedang dieksplorasi sebagai cara untuk "
+"memberikan pengguna analitik yang kuat dan menghormati privasi, yang "
+"mengukur metrik termasuk penggunaan cache terdistribusi dari sudut pandang "
+"pengguna."
 
 #: factsheet.html%2Bdiv.section.h3:111-1
 msgid "Ouinet in April 2022"
-msgstr ""
+msgstr "Ouinet pada April 2022"
 
 #: factsheet.html%2Bdiv.section.p:112-2
 msgid ""
@@ -294,10 +363,13 @@ msgid ""
 "to the decentralized content-sharing network, from more than 30,000 unique "
 "websites."
 msgstr ""
+"Injektor Ouinet telah menyumbangkan sekitar 2 juta halaman (602 GB data) ke "
+"jaringan berbagi konten terdesentralisasi, dari lebih dari 30.000 situs web "
+"unik."
 
 #: factsheet.html%2Bdiv.section.h2:116-1
 msgid "Internet shutdowns"
-msgstr ""
+msgstr "Pemadaman internet"
 
 #: factsheet.html%2Bdiv.section.p:117-9
 msgid ""
@@ -305,17 +377,28 @@ msgid ""
 "restriction scenarios. Precise technical information on shutdowns is often "
 "missing from media coverage. A shutdown can refer to the following:"
 msgstr ""
+"Pemadaman internet adalah istilah umum yang mencakup berbagai skenario "
+"pembatasan akses internet. Informasi teknis yang tepat tentang pemadaman "
+"seringkali tidak tercantum dalam liputan media. Pemadaman dapat merujuk pada "
+"hal-hal berikut:"
 
 #: factsheet.html%2Bdiv.section.p.ul.li:119-9
 msgid ""
 "<strong>Level 1:</strong> A complete or partial failure of Internet "
 "services, occurring due to censorship, cyberattacks, natural disasters, "
 "police or security services actions or errors. Ceno deals with scenarios of "
-"extreme network censorship, when VPNs are generally no longer available (e."
-"g., Russia in 2022, Belarus in 2020 and Iran in 2019) or when international "
-"transit connections are artificially throttled (e.g., Indian Kashmir in 2019–"
-"2020 and Cuba)."
+"extreme network censorship, when VPNs are generally no longer available "
+"(e.g., Russia in 2022, Belarus in 2020 and Iran in 2019) or when "
+"international transit connections are artificially throttled (e.g., Indian "
+"Kashmir in 2019–2020 and Cuba)."
 msgstr ""
+"<strong>Level 1:</strong> Gangguan total atau sebagian pada layanan "
+"internet, yang terjadi akibat sensor, serangan siber, bencana alam, tindakan "
+"atau kesalahan dari pihak kepolisian atau layanan keamanan. Ceno menangani "
+"skenario sensor jaringan ekstrem, ketika VPN umumnya tidak lagi tersedia "
+"(misalnya Rusia pada 2022, Belarus pada 2020, dan Iran pada 2019) atau "
+"ketika koneksi transit internasional secara buatan dibatasi (misalnya "
+"Kashmir India pada 2019–2020 dan Kuba)."
 
 #: factsheet.html%2Bdiv.section.p.ul.li:120-9
 msgid ""
@@ -324,6 +407,11 @@ msgid ""
 "country are accessible, yet the local or national network continues to "
 "function. Ceno continues to work in these localized scenarios."
 msgstr ""
+"<strong>Level 2:</strong> Larangan terhadap koneksi transit internasional "
+"(misalnya, Kazakhstan pada tahun 2021), sehingga tidak ada server atau "
+"layanan yang berlokasi di luar negeri yang dapat diakses, namun jaringan "
+"lokal atau nasional tetap berfungsi. Ceno tetap beroperasi dalam skenario "
+"lokal ini."
 
 #: factsheet.html%2Bdiv.section.p.ul.li:121-9
 msgid ""
@@ -332,6 +420,10 @@ msgid ""
 "still works peer to peer when devices remain powered and are in close "
 "proximity."
 msgstr ""
+"<strong>Level 3:</strong> Ketika listrik tidak lagi berfungsi, seperti "
+"selama bencana nasional dan dalam perang (misalnya, Mariupol pada tahun "
+"2022). Ceno tetap berfungsi secara peer-to-peer ketika perangkat masih "
+"terhubung ke sumber daya dan berada dalam jarak dekat."
 
 #: factsheet.html%2Bdiv.section.p:123-9
 msgid ""
@@ -342,6 +434,12 @@ msgid ""
 "networks – across neighborhoods, regions and nations – from international "
 "connectivity."
 msgstr ""
+"Semakin banyak negara yang telah memperkenalkan teknologi pengawasan dan "
+"penyaringan jaringan yang canggih untuk melemahkan metode-metode yang "
+"digunakan untuk menghindari sensor yang sudah ada, serta untuk membatasi "
+"komunikasi dan aliran informasi bebas di Internet. Beberapa negara bahkan "
+"telah memutuskan koneksi jaringan secara keseluruhan – mencakup wilayah "
+"perumahan, daerah, dan negara – dari konektivitas internasional."
 
 #: factsheet.html%2Bdiv.section.p:124-9
 msgid ""
@@ -352,10 +450,17 @@ msgid ""
 "partnerships with ISP for refraction networking, and so on) is no longer "
 "sufficient to ensure connectivity and digital content propagation."
 msgstr ""
+"Sebagian besar teknik pengelakan yang digunakan saat ini mengharuskan "
+"pengguna untuk terlebih dahulu terhubung ke server relay yang berlokasi di "
+"zona yang tidak diblokir. Permainan \"kucing-kucingan\" antara sensor dan "
+"metode pengelakan (dengan metode pengelakan yang beralih ke distribusi proxy "
+"kreatif, penyamaran lalu lintas, kerusakan sampingan, kemitraan dengan ISP "
+"untuk jaringan refraksi, dan sebagainya) tidak lagi cukup untuk memastikan "
+"konektivitas dan penyebaran konten digital."
 
 #: factsheet.html%2Bdiv.section.h3:127-1
 msgid "How Ceno side-steps censorship"
-msgstr ""
+msgstr "Bagaimana Ceno menghindari sensor"
 
 #: factsheet.html%2Bdiv.section.p:128-9
 msgid ""
@@ -368,20 +473,31 @@ msgid ""
 "environments. Wider adoption will ensure more efficient, low latency and "
 "effective decentralized peer-to-peer communications and distributed caching."
 msgstr ""
+"Pada akhirnya, metode sensor yang ada memiliki satu titik kelemahan: "
+"pengguna harus menembus firewall di mana sensor sedang memantau. Seperti "
+"yang terlihat di Iran pada November 2019, Belarus pada 2020, Kazakhstan pada "
+"2021, dan selama pemutusan akses Internet tanpa batasan di Rusia tahun ini, "
+"metode pengelakan semakin tidak efektif bagi pengguna di negara-negara "
+"tersebut. Ceno telah terbukti sebagai solusi yang berfungsi di lingkungan-"
+"lingkungan tersebut. Penerapan yang lebih luas akan memastikan komunikasi "
+"peer-to-peer terdesentralisasi yang lebih efisien, latensi rendah, dan "
+"efektif, serta penyimpanan cache terdistribusi."
 
 #: factsheet.html%2Bdiv.section.h2:132-1
 msgid "User comments"
-msgstr ""
+msgstr "Komentar pengguna"
 
 #: factsheet.html%2Bdiv.section.h3:133-1
 msgid "Russia"
-msgstr ""
+msgstr "Rusia"
 
 #: factsheet.html%2Bdiv.section.p:134-9
 msgid ""
 "\"Nice browser. Without VPN I was able to open blocked resources. But it's "
 "also useful when you don't have connection.\""
 msgstr ""
+"\"Browser yang bagus. Tanpa VPN, saya bisa membuka sumber daya yang "
+"diblokir. Tapi juga berguna saat tidak ada koneksi.\""
 
 #: factsheet.html%2Bdiv.section.p:135-2
 msgid ""
@@ -396,16 +512,30 @@ msgid ""
 "besides helping to access websites, it also looks quite innocent which is "
 "great.\""
 msgstr ""
+"\"Karena Rusia mengancam akan memblokir VPN, Ceno menjadi pilihan yang "
+"menjanjikan. Selain itu, bagi penyedia layanan internet (ISP) Anda, lalu "
+"lintas VPN mirip dengan lalu lintas Torrent, dan Torrent adalah hal yang "
+"sangat umum di Rusia, berbeda dengan negara-negara Barat di mana hak cipta "
+"sangat dihormati. Di Moskow, polisi mulai meminta orang untuk menunjukkan "
+"ponsel mereka dan memeriksa aplikasi yang terpasang. Saya pernah mengalami "
+"hal seperti itu. Mereka memeriksa VPN atau aplikasi pesan seperti Signal "
+"atau Telegram. Dan Ceno terlihat seperti browser biasa, jadi ketika mereka "
+"bertanya apa itu, saya menjawab bahwa itu adalah browser, tidak ada masalah, "
+"tidak ada pertanyaan. Saya hanya memilih untuk secara rutin menghapus "
+"riwayat penelusuran saat keluar. Jadi selain membantu mengakses situs web, "
+"Ceno juga terlihat cukup tidak mencurigakan, yang sangat bagus.\""
 
 #: factsheet.html%2Bdiv.section.p:136-2
 msgid ""
 "\"Thanks for a great product. Your browser opens the site http://meduza.io "
 "much faster than the app from @meduzaproject.\""
 msgstr ""
+"\"Terima kasih atas produk yang hebat. Browser Anda membuka situs http://"
+"meduza.io jauh lebih cepat daripada aplikasi dari @meduzaproject.\""
 
 #: factsheet.html%2Bdiv.section.h3:138-1
 msgid "Myanmar"
-msgstr ""
+msgstr "Myanmar"
 
 #: factsheet.html%2Bdiv.section.p:139-2
 msgid ""
@@ -413,22 +543,30 @@ msgid ""
 "see that it works well with this app. This is our digital rights. So I will "
 "continue to use it sometimes.\""
 msgstr ""
+"\"Ada banyak ketidaknyamanan akibat situs web yang diblokir. Senang melihat "
+"bahwa aplikasi ini berfungsi dengan baik. Ini adalah hak digital kita. Jadi, "
+"saya akan terus menggunakannya sesekali.\""
 
 #: factsheet.html%2Bdiv.section.p:140-2
 msgid ""
 "\"There are more features I'd like to see in the app, but it is totally a "
 "convenient and useful application.\""
 msgstr ""
+"\"Ada beberapa fitur lain yang ingin saya lihat di aplikasi ini, tetapi "
+"secara keseluruhan, ini adalah aplikasi yang sangat praktis dan berguna.\""
 
 #: factsheet.html%2Bdiv.section.h3:142-1
 msgid "Iran"
-msgstr ""
+msgstr "Iran"
 
 #: factsheet.html%2Bdiv.section.p:143-2
 msgid ""
 "\"This app is one of our few hopes in times of serious Internet disruptions "
 "in Iran. Please keep it going and make it better and better. Thank you.\""
 msgstr ""
+"\"Aplikasi ini merupakan salah satu harapan kami di tengah gangguan internet "
+"yang serius di Iran. Mohon terus kembangkan dan perbaiki aplikasi ini agar "
+"semakin baik. Terima kasih.\""
 
 #: factsheet.html%2Bdiv.section.p:144-2
 msgid ""
@@ -436,3 +574,6 @@ msgid ""
 "possibility of free use of the Internet and everything is filtered by the "
 "government, even filter breakers.\""
 msgstr ""
+"\"Ini adalah browser yang bagus, terutama bagi kita orang Iran, yang tidak "
+"memiliki akses bebas ke internet dan semuanya disaring oleh pemerintah, "
+"bahkan alat pemecah filter.\""
