@@ -3,7 +3,7 @@
     <head>
         <!-- Book generated using mdBook -->
         <meta charset="UTF-8">
-        <title>Bridge Configuration - Ceno User Manual</title>
+        <title>Configuration de la passerelle - Ceno Manual</title>
 
 
         <!-- Custom HTML head -->
@@ -138,7 +138,7 @@
                         </button>
                     </div>
 
-                    <h1 class="menu-title">Ceno User Manual</h1>
+                    <h1 class="menu-title">Ceno Manual</h1>
 
                     <div class="right-buttons">
                         <a href="print.html" title="Print this book" aria-label="Print this book">
@@ -175,73 +175,81 @@
 
                 <div id="content" class="content">
                     <main>
-                        <h2 id="why-become-a-ceno-bridge"><a class="header" href="#why-become-a-ceno-bridge">Why become a Ceno bridge?</a></h2>
-<p>A peer-to-peer network is built from every node connected to it (yes, that means
-you as well!). The more nodes, the stronger and more versatile the network
-becomes.</p>
-<p>If you are running Ceno Browser from a country that does not censor the Internet
-(or not as heavily as some), consider helping other Ceno users by becoming a
-bridge node. You will then begin to route traffic between clients living in
-heavily censored countries and Ceno injectors.</p>
-<p>You will not be able to see their traffic (it will be sent through an encrypted
-tunnel), nor will any of this traffic remain on your device.</p>
-<p><em>Note: The configuration described in this section may also help your device to
-effectively seed content to others on the distributed cache, so please consider
-applying it as well when using Ceno in a censoring country (but keep in mind the
-<a href="https://ceno.app/en/faq.html#bridgemode">risks</a> of serving such content to
-others)</em></p>
-<h2 id="how-to-become-a-ceno-bridge"><a class="header" href="#how-to-become-a-ceno-bridge">How to become a Ceno bridge?</a></h2>
-<p>As stated in <a href="./public-or-personal.html#bridges">this section</a>, Ceno app
-provides some functionlaity that allows you to easily become a Ceno bridge, if
-your network configuration allows it.</p>
-<p>If you have checked your <strong>Reachability</strong> and your <strong>UPnP status</strong> and it looks
-like this</p>
+                        <h2 id="pourquoi-devenir-une-passerelle-ceno-"><a class="header" href="#pourquoi-devenir-une-passerelle-ceno-">Pourquoi devenir une passerelle Ceno ?</a></h2>
+<p>Un réseau pair à pair est construit à partir de chacun des nœuds qui y sont
+connectés (oui, ça veut dire vous aussi !). Plus il y a de nœuds, plus robuste
+et versatile le réseau sera.</p>
+<p>Si vous lancez le navigateur Ceno depuis un pays qui ne censure pas Internet (ou
+pas aussi lourdement que certains), envisagez d'aider d'autres utilisateurs de
+Ceno en devenant une passerelle. Vous commencerez alors à gérer le trafic entre
+les clients vivant dans des pays fortement censurés et les injecteurs de Ceno.</p>
+<p>Vous ne serez pas en mesure de voir leur trafic (il sera envoyé à travers un
+tunnel crypté), pas plus que des traces de ce trafic ne resteront sur votre
+appareil.</p>
+<p><em>Note : La configuration décrite dans cette section peut également aider votre
+appareil à partager efficacement le contenu vers d'autres sur le cache
+distribué, alors veuillez envisager de l'appliquer aussi bien lors de
+l'utilisation de Ceno dans un pays pratiquant la censure (mais garder à l'esprit
+les [risks] (https://ceno.app/en/faq.html#bridgemode) de donner accès à ce
+contenu à d'autres)</em></p>
+<h2 id="comment-devenir-une-passerelle-de-ceno-"><a class="header" href="#comment-devenir-une-passerelle-de-ceno-">Comment devenir une passerelle de Ceno ?</a></h2>
+<p>Comme indiqué dans [this section] (./public-or-personal.html#bridges),
+l'application Ceno fournit certaines fonctionnalités qui vous permettent de
+devenir facilement une passerelle Ceno, si votre configuration réseau le permet.</p>
+<p>Si vous avez vérifié votre <strong>Reachability</strong> et votre statut <strong>UPnP status</strong> et
+il ressemble à ceci</p>
 <p><img src="./images/reachability.png" alt="Reachability status" width="400"></img></p>
-<p>You will need to configure your router by either enabling the UPnP or setting up
-the port forwarding. In the following sections we describe the steps to perform.</p>
+<p>Vous devrez configurer votre routeur en permettant UPnP ou en configurant la
+redirection de port. Dans les sections suivantes, nous décrivons les étapes à
+suivre.</p>
 <h3 id="activer-lupnp-sur-votre-routeur-wi-fi"><a class="header" href="#activer-lupnp-sur-votre-routeur-wi-fi">Activer l’UPnP sur votre routeur Wi-Fi</a></h3>
-<p>UPnP is the easiest way of making your Ceno browser (or computer client)
-reachable to the Ceno network.</p>
-<p><em>Note: Enabling UPnP on the Wi-Fi router may expose devices on your network to
-external interference. Please be <a href="https://www.howtogeek.com/122487/htg-explains-is-upnp-a-security-risk/">aware of the
-risks</a>
-and also consider using alternative methods as explained below.</em></p>
-<p>The first thing you will need to do is log in to your router's web interface. To
-find out how to do that, please refer to your router's manual which will tell
-you which user and password to use to log in.</p>
-<p>After that, the steps to perform are similar, but might not be identical for all
-router models.</p>
-<p>Here is a nice article with <a href="https://www.lifewire.com/enable-upnp-on-a-router-5206124">step by step
-instructions</a> for
-enabling the UPnP on different routers.</p>
-<p>Please find instructions for your router type and perform the necessary steps.</p>
-<p>If you prefer, though, you can choose to set up the port forwarding instead of
-the UPnP.</p>
-<h3 id="use-port-forwarding-as-an-alternative-to-upnp"><a class="header" href="#use-port-forwarding-as-an-alternative-to-upnp">Use port forwarding as an alternative to UPnP</a></h3>
-<p>The first step is the same as before: log in to the router's web interface.</p>
-<p>Then, please locate **port forwarding **option.</p>
-<p>To see which IP address you need to forward the connections to and the relevant
-port, open the <strong>Ceno Settings</strong> page and look under the <strong>Local UDP
-endpoints</strong>.</p>
+<p>UPnP est la meilleure façon de rendre votre navigateur Ceno (ou client de
+bureau) accessible au réseau Ceno.</p>
+<p><em>Note : L'activation de UPnP sur le routeur Wi-Fi peut exposer des dispositifs
+sur votre réseau à des interférences externes. Veuillez prendre connaissance des
+risques (https://www.howtogeek.com/122487/htg-explains-is-upnp-a-security-risk/)
+et envisager d'utiliser d'autres méthodes comme expliqué ci-dessous</em></p>
+<p>La première chose à faire est de vous connecter à l'interface web de votre
+routeur. Pour savoir comment faire, veuillez consulter le manuel de votre
+routeur qui vous indiquera quel utilisateur et mot de passe utiliser pour vous
+connecter.</p>
+<p>Après cela, les étapes à effectuer sont similaires, mais peuvent ne pas être
+identiques pour tous les modèles de routeur.</p>
+<p>Voici un bel article avec <a href="https://www.lifewire.com/enable-upnp-on-a-router-5206124">des instructions étape par
+étape</a> pour activer
+UPnP sur différents routeurs.</p>
+<p>Veuillez trouver les instructions pour votre type de routeur et effectuer les
+étapes nécessaires.</p>
+<p>Si vous préférez, cependant, vous pouvez choisir de configurer la redirection de
+port au lieu de l'UPnP.</p>
+<h3 id="utilisez-la-redirection-de-port-comme-alternative-à-upnp"><a class="header" href="#utilisez-la-redirection-de-port-comme-alternative-à-upnp">Utilisez la redirection de port comme alternative à UPnP</a></h3>
+<p>La première étape est la même qu'avant : connectez-vous à l'interface web du
+routeur.</p>
+<p>Ensuite, veuillez localiser l'option <strong>redirection de port</strong>.</p>
+<p>Pour voir vers quelle adresse IP vous devez transférer les connexions et le port
+pertinent, ouvrez la page ** Paramètres Ceno** et regardez sous les <strong>paramètres
+UDP locaux</strong>.</p>
 <p><img src="./images/UDP_endpoint.png" alt="Local UDP endpoint" width="400"></img></p>
-<p>The port forwarding must be for the UDP protocol (not TCP).</p>
-<p>Ceno chooses a random port on first run and keeps it for subsequent runs, but
-your device's local network IP address may change from time to time. Thus you
-should periodically review the <strong>Ceno Settings</strong> page to see that your device is
-reachable to the Ceno network.</p>
-<p>Your device is reachable if its</p>
-<p><strong>Reachability status</strong> is <strong>likely reachable</strong> or <strong>reachable</strong></p>
-<p><strong>UPnP status</strong> is <strong>enabled</strong></p>
-<p><em><strong>Technical note</strong>: Alternatively, you can make sure that the router always
-assigns the same IP address to your device (e.g. via a static DHCP lease for the
-device's MAC address)</em></p>
-<p>If you have a computer with good connectivity that stays on most of the time,
-and you'd like to set it up as a <strong>Ceno bridge</strong>, please continue reading.</p>
+<p>La redirection de port doit concerner le protocole UDP (pas TCP).</p>
+<p>Ceno choisit un port aléatoire en première exécution et le conserve pour les
+exécutions ultérieures, mais l'adresse IP réseau local de votre appareil peut
+changer de temps à autre. Vous devriez donc revoir périodiquement la page
+<strong>Paramètres Ceno</strong> pour voir que votre appareil est accessible au réseau Ceno.</p>
+<p>Votre appareil est accessible si son</p>
+<p><strong>Le statut d'accessibilité</strong> est ** probablement accessible** ou <strong>accessible</strong></p>
+<p>** Le status UPnP** est <strong>activé</strong></p>
+<p><em>** Note technique** : Sinon, vous pouvez vous assurer que le routeur attribue
+toujours la même adresse IP à votre appareil (p. ex. via un bail DHCP statique
+pour l'adresse MAC du périphérique)</em></p>
+<p>Si vous avez un ordinateur avec une bonne connexion qui reste la plupart du
+temps allumé, et vous souhaitez le configurer comme une <strong>passerelle Ceno</strong>,
+veuillez continuer à lire.</p>
 <h2 id="faire-tourner-un-pont-sur-un-ordinateur"><a class="header" href="#faire-tourner-un-pont-sur-un-ordinateur">Faire tourner un pont sur un ordinateur</a></h2>
-<p>If your computer supports Docker containers, you can run a pre-configured Ceno
-client on it to act as a bridge. If Docker is not yet installed, please follow
-the instructions to install the Docker Engine in your platform. For Debian
-derivatives like Ubuntu or Linux Mint, you can just run: <code>sudo apt install docker.io</code></p>
+<p>Si votre ordinateur supporte les conteneurs Docker, vous pouvez lancer un client
+Ceno préconfiguré sur celui-ci pour agir comme une passerelle. Si Docker n'est
+pas encore installé, veuillez suivre les instructions pour installer le moteur
+Docker dans votre plateforme. Pour les dérivés Debian comme Ubuntu ou Linux
+Mint, vous pouvez simplement lancer : <code>sudo apt install docker.io</code></p>
 <p>Pour déployer un conteneur client Ceno, il vous suffit d’exécuter la commande
 suivante dans un terminal (n’ayez pas peur, il vous suffit de la copier et de la
 coller telle quelle sur la ligne de commande) :</p>
@@ -256,11 +264,11 @@ la commande doit être légèrement différente :</p>
   -p 127.0.0.1:8077-8078:8077-8078 -p 28729:28729/udp \
   --restart unless-stopped equalitie/ceno-client
 </code></pre>
-<p>The command will start a container named ceno-client that will run on every boot
-unless you explicitly tell it to stop.</p>
-<p>Please check the <a href="https://gitlab.com/ceno-app/ceno-docker-client#running-the-client">Ceno Docker client
-documentation</a>
-for more information on how to manipulate the container.</p>
+<p>La commande va démarrer un conteneur nommé ceno-client qui fonctionnera sur
+chaque démarrage, à moins que vous lui disiez explicitement d'arrêter.</p>
+<p>Veuillez consulter la <a href="https://gitlab.com/ceno-app/ceno-docker-client#running-the-client">Ceno Docker documentation
+client</a> pour
+plus d'informations sur la façon de manipuler le conteneur.</p>
 
                     </main>
 
